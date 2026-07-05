@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader Queue — The Clinical Perspective</title>
+<meta name="description" content="Every study suggested by readers of The Clinical Perspective, ranked by votes. Suggest a study or upvote the ones you want covered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-queue-page="archive">
+
+<div class="bg-decor" aria-hidden="true">
+  <div class="decor" style="top: 10%; left: -3%; width: min(300px, 32vw);">
+    <svg viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <path d="M15 5 C45 25, 45 35, 15 55 C45 75, 45 85, 15 105"/>
+      <path d="M45 5 C15 25, 15 35, 45 55 C15 75, 15 85, 45 105"/>
+      <line x1="20" y1="18" x2="40" y2="18"/>
+      <line x1="17" y1="30" x2="43" y2="30"/>
+      <line x1="20" y1="42" x2="40" y2="42"/>
+      <line x1="20" y1="68" x2="40" y2="68"/>
+      <line x1="17" y1="80" x2="43" y2="80"/>
+      <line x1="20" y1="92" x2="40" y2="92"/>
+    </svg>
+  </div>
+  <div class="decor" style="top: 20%; right: -2%; width: min(340px, 34vw);">
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4">
+      <ellipse cx="50" cy="50" rx="42" ry="16"/>
+      <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(60 50 50)"/>
+      <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(120 50 50)"/>
+      <circle cx="50" cy="50" r="4" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="decor" style="top: 62%; left: 4%; width: min(260px, 28vw);">
+    <svg viewBox="0 0 90 100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="15" y="8" width="50" height="66" rx="3"/>
+      <line x1="24" y1="22" x2="56" y2="22"/>
+      <line x1="24" y1="32" x2="56" y2="32"/>
+      <line x1="24" y1="42" x2="46" y2="42"/>
+      <circle cx="58" cy="62" r="14"/>
+      <line x1="68" y1="72" x2="80" y2="84"/>
+    </svg>
+  </div>
+  <div class="decor" style="top: 74%; right: 4%; width: min(420px, 42vw);">
+    <svg viewBox="0 0 160 60" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,30 30,30 42,30 50,10 58,50 66,22 72,30 110,30 160,30"/>
+    </svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="The Clinical Perspective logo">
+      <span class="brand-name">The Clinical<br>Perspective</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#submit">Submit Research</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener" class="nav-ig">Instagram</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="archive">
+    <div class="container archive-inner">
+      <div class="section-heading">
+        <p class="eyebrow">Reader Queue</p>
+        <h2>All Submitted Studies</h2>
+        <p>
+          Every study suggested by readers, ranked by votes. Upvote the ones
+          you'd like to see covered, or add a new suggestion below — the top
+          requests each month are featured on the homepage.
+        </p>
+      </div>
+
+      <div class="archive-layout">
+        <div class="archive-list-wrap">
+          <ol id="queue-list" class="queue-list queue-list-archive" aria-live="polite">
+            <li class="queue-empty">Loading suggestions…</li>
+          </ol>
+        </div>
+
+        <aside class="queue queue-archive-form">
+          <h3 class="queue-title">Suggest a Study</h3>
+          <form id="queue-form" class="queue-form" autocomplete="off">
+            <label class="queue-label" for="queue-title-input">Study title</label>
+            <input id="queue-title-input" type="text" maxlength="200" placeholder="e.g. GLP-1 agonists and cardiovascular outcomes" required>
+            <label class="queue-label" for="queue-link-input">DOI or article link</label>
+            <input id="queue-link-input" type="text" maxlength="500" placeholder="10.1001/jama.2026.1234 or https://…" required>
+            <button class="btn btn-primary btn-small" type="submit">Add to the queue</button>
+            <p class="queue-msg" id="queue-msg" role="status"></p>
+          </form>
+          <p class="queue-note" id="queue-note"></p>
+          <a class="btn btn-secondary btn-small" href="index.html#research">&larr; Back to Latest Research</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="The Clinical Perspective logo">
+      <span>The Clinical Perspective</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">Instagram</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#submit">Submit Research</a>
+    </div>
+    <p class="footer-note">&copy; <span id="year"></span> The Clinical Perspective. All summaries link back to original sources.</p>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.getElementById("nav-toggle");
+  const mainNav = document.getElementById("main-nav");
+  navToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+</script>
+<script src="js/queue.js"></script>
+</body>
+</html>

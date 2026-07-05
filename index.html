@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Clinical Perspective</title>
+<meta name="description" content="The Clinical Perspective — accessible summaries and commentary on clinical research, medicine, and public health.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true">
+  <div class="decor" data-speed="0.16" data-drift="0.03" data-rot="0.006" style="top: 6%; left: -3%; width: min(320px, 34vw);">
+    <!-- DNA helix -->
+    <svg viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <path d="M15 5 C45 25, 45 35, 15 55 C45 75, 45 85, 15 105"/>
+      <path d="M45 5 C15 25, 15 35, 45 55 C15 75, 15 85, 45 105"/>
+      <line x1="20" y1="18" x2="40" y2="18"/>
+      <line x1="17" y1="30" x2="43" y2="30"/>
+      <line x1="20" y1="42" x2="40" y2="42"/>
+      <line x1="20" y1="68" x2="40" y2="68"/>
+      <line x1="17" y1="80" x2="43" y2="80"/>
+      <line x1="20" y1="92" x2="40" y2="92"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="-0.11" data-drift="-0.04" data-rot="-0.008" style="top: 4%; right: -2%; width: min(260px, 28vw);">
+    <!-- Erlenmeyer flask -->
+    <svg viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 8 h16 M35 8 v30 L58 82 a6 6 0 0 1 -5 9 H27 a6 6 0 0 1 -5 -9 L45 38 V8" transform="translate(-5,0)"/>
+      <line x1="28" y1="62" x2="52" y2="62"/>
+      <circle cx="36" cy="72" r="2.5"/>
+      <circle cx="45" cy="78" r="2"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="0.08" data-drift="0.05" data-rot="0.012" style="top: 30%; left: 30%; width: min(360px, 36vw);">
+    <!-- Atom -->
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4">
+      <ellipse cx="50" cy="50" rx="42" ry="16"/>
+      <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(60 50 50)"/>
+      <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(120 50 50)"/>
+      <circle cx="50" cy="50" r="4" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="-0.14" data-drift="0.02" data-rot="0" style="top: 48%; right: -4%; width: min(480px, 48vw);">
+    <!-- EKG pulse -->
+    <svg viewBox="0 0 160 60" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,30 30,30 42,30 50,10 58,50 66,22 72,30 110,30 160,30"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="0.12" data-drift="-0.03" data-rot="-0.01" style="top: 62%; left: 2%; width: min(280px, 30vw);">
+    <!-- Microscope -->
+    <svg viewBox="0 0 90 100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M42 10 l14 14 -20 20 -14 -14 z"/>
+      <path d="M36 44 l6 6"/>
+      <path d="M56 24 c14 10 18 30 8 44 -7 10 -20 15 -32 12"/>
+      <line x1="20" y1="88" x2="70" y2="88"/>
+      <line x1="30" y1="80" x2="55" y2="80"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="-0.07" data-drift="0.04" data-rot="0.009" style="top: 82%; right: 8%; width: min(240px, 26vw);">
+    <!-- Research paper + magnifier -->
+    <svg viewBox="0 0 90 100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="15" y="8" width="50" height="66" rx="3"/>
+      <line x1="24" y1="22" x2="56" y2="22"/>
+      <line x1="24" y1="32" x2="56" y2="32"/>
+      <line x1="24" y1="42" x2="46" y2="42"/>
+      <circle cx="58" cy="62" r="14"/>
+      <line x1="68" y1="72" x2="80" y2="84"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="0.1" data-drift="0.06" data-rot="0.015" style="top: 18%; left: 58%; width: min(220px, 24vw);">
+    <!-- Pill capsule -->
+    <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <rect x="8" y="18" width="84" height="26" rx="13" transform="rotate(-18 50 30)"/>
+      <line x1="50" y1="14" x2="50" y2="46" transform="rotate(-18 50 30)"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="-0.09" data-drift="-0.05" data-rot="-0.012" style="top: 40%; left: -4%; width: min(300px, 32vw);">
+    <!-- Molecule -->
+    <svg viewBox="0 0 110 100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <circle cx="30" cy="30" r="9"/>
+      <circle cx="72" cy="22" r="7"/>
+      <circle cx="88" cy="58" r="9"/>
+      <circle cx="52" cy="72" r="7"/>
+      <circle cx="18" cy="68" r="6"/>
+      <line x1="38" y1="33" x2="65" y2="24"/>
+      <line x1="78" y1="28" x2="84" y2="50"/>
+      <line x1="80" y1="62" x2="59" y2="69"/>
+      <line x1="45" y1="70" x2="24" y2="68"/>
+      <line x1="24" y1="62" x2="27" y2="39"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="0.13" data-drift="-0.02" data-rot="0.007" style="top: 72%; left: 44%; width: min(200px, 22vw);">
+    <!-- Test tube -->
+    <svg viewBox="0 0 50 110" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 6 v78 a10 10 0 0 0 20 0 V6"/>
+      <line x1="10" y1="6" x2="40" y2="6"/>
+      <line x1="15" y1="48" x2="35" y2="48"/>
+      <circle cx="22" cy="62" r="2.5"/>
+      <circle cx="29" cy="74" r="2"/>
+    </svg>
+  </div>
+  <div class="decor" data-speed="-0.05" data-drift="0.03" data-rot="-0.006" style="top: 92%; left: 10%; width: min(260px, 28vw);">
+    <!-- Data chart -->
+    <svg viewBox="0 0 100 90" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="8" x2="12" y2="78"/>
+      <line x1="12" y1="78" x2="92" y2="78"/>
+      <rect x="24" y="52" width="12" height="26"/>
+      <rect x="44" y="38" width="12" height="40"/>
+      <rect x="64" y="24" width="12" height="54"/>
+      <polyline points="20,48 44,32 66,18 88,10"/>
+    </svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="The Clinical Perspective logo">
+      <span class="brand-name">The Clinical<br>Perspective</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+      <a href="#newsletter" id="nav-newsletter" hidden>Newsletter</a>
+      <a href="#submit">Submit Research</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener" class="nav-ig">Instagram</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">A Journal-Style Digest of Clinical Research</p>
+      <h1 class="reveal" style="transition-delay: 0.1s;">Making clinical research legible, one study at a time.</h1>
+      <p class="hero-lede reveal" style="transition-delay: 0.2s;">
+        The Clinical Perspective distills published research in clinical psychology and
+        mental health into clear, accurate, and accessible summaries. Browse the latest
+        posts, follow every study back to its original source, and help decide what gets
+        covered next — suggest a study or upvote others' picks in the Reader Queue.
+      </p>
+      <div class="hero-actions reveal" style="transition-delay: 0.3s;">
+        <a class="btn btn-primary" href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">
+          Follow on Instagram
+        </a>
+        <a class="btn btn-secondary" href="#submit">Submit Your Research</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="research">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Latest Research</h2>
+        <p>Posts are embedded directly from Instagram, so you're always viewing the original, up-to-date post. Tap any entry to open it on Instagram.</p>
+      </div>
+      <div class="research-layout">
+        <div class="research-main">
+          <div id="posts-grid" class="posts-grid" aria-live="polite">
+            <p class="posts-loading">Loading latest posts…</p>
+          </div>
+          <div class="research-footer reveal">
+            <a class="btn btn-secondary" href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">
+              See all posts on Instagram &rarr;
+            </a>
+          </div>
+        </div>
+        <aside class="queue reveal" id="queue" style="transition-delay: 0.15s;">
+          <h3 class="queue-title">Reader Queue</h3>
+          <p class="queue-eyebrow">Top 3 requests &middot; past 30 days</p>
+          <p class="queue-sub">
+            Seen a study we should cover? Add its DOI or link below.
+            Upvote the ones you want covered — the most requested rise to the top.
+          </p>
+          <form id="queue-form" class="queue-form" autocomplete="off">
+            <label class="queue-label" for="queue-title-input">Study title</label>
+            <input id="queue-title-input" type="text" maxlength="200" placeholder="e.g. GLP-1 agonists and cardiovascular outcomes" required>
+            <label class="queue-label" for="queue-link-input">DOI or article link</label>
+            <input id="queue-link-input" type="text" maxlength="500" placeholder="10.1001/jama.2026.1234 or https://…" required>
+            <button class="btn btn-primary btn-small" type="submit">Add to the queue</button>
+            <p class="queue-msg" id="queue-msg" role="status"></p>
+          </form>
+          <ol id="queue-list" class="queue-list" aria-live="polite">
+            <li class="queue-empty">Loading suggestions…</li>
+          </ol>
+          <a class="btn btn-secondary btn-small queue-all-link" href="queue.html">
+            View all submitted studies &rarr;
+          </a>
+          <p class="queue-note" id="queue-note"></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="section-heading reveal">
+        <h2>About The Clinical Perspective</h2>
+      </div>
+      <div class="about-content reveal" style="transition-delay: 0.15s;">
+        <p>
+          The Clinical Perspective exists to close the gap between published clinical
+          research and the people it affects. Each post distills a study — its methods,
+          findings, and limitations — into a summary that is rigorous enough for
+          clinicians and clear enough for anyone else.
+        </p>
+        <p>
+          This site serves as a standing archive of that work: a place to browse past
+          coverage, verify sources against the original posts, and get in touch about
+          new research worth covering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter" hidden>
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <p class="eyebrow eyebrow-light">The Weekly Digest</p>
+        <h2>One email a week. Every study that matters.</h2>
+        <p class="newsletter-lede">
+          The week's covered research, the key takeaways, and what's rising in
+          the Reader Queue — delivered every week. No spam, unsubscribe anytime.
+        </p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input id="newsletter-email" type="email" name="fields[email]" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn btn-cream" type="submit">Subscribe</button>
+        <p class="newsletter-msg" id="newsletter-msg" role="status"></p>
+      </form>
+    </div>
+    <iframe name="ml-hidden" title="hidden" style="display:none;"></iframe>
+  </section>
+
+  <section id="submit" class="submit">
+    <div class="container submit-inner">
+      <div class="section-heading reveal">
+        <h2>Submit Your Research</h2>
+        <p>
+          Researchers, clinicians, and authors are welcome to submit published or
+          in-press work for consideration. Priority is given to peer-reviewed studies
+          with clear clinical or public health relevance.
+        </p>
+      </div>
+      <div class="submit-grid">
+        <div class="submit-step reveal">
+          <span class="step-number">1</span>
+          <h3>Prepare your materials</h3>
+          <p>A link or PDF of the paper (or preprint), plus 2–3 sentences on why it matters clinically.</p>
+        </div>
+        <div class="submit-step reveal" style="transition-delay: 0.14s;">
+          <span class="step-number">2</span>
+          <h3>Reach out</h3>
+          <p>Send it by email or Instagram DM using the links below. Include your name, affiliation, and role on the paper, if any.</p>
+        </div>
+        <div class="submit-step reveal" style="transition-delay: 0.28s;">
+          <span class="step-number">3</span>
+          <h3>Hear back</h3>
+          <p>Submissions are reviewed on a rolling basis. Not every submission is covered, but every submission is read.</p>
+        </div>
+      </div>
+      <div class="submit-actions reveal" id="contact" style="transition-delay: 0.2s;">
+        <a class="btn btn-primary" id="email-btn" href="#">Email a Submission</a>
+        <a class="btn btn-secondary" href="https://ig.me/m/the_clinical_perspective" target="_blank" rel="noopener">
+          Message on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="The Clinical Perspective logo">
+      <span>The Clinical Perspective</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#research">Research</a>
+      <a href="#submit">Submit Research</a>
+    </div>
+    <p class="footer-note">&copy; <span id="year"></span> The Clinical Perspective. All summaries link back to original sources.</p>
+  </div>
+</footer>
+
+<script async src="//www.instagram.com/embed.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/newsletter-config.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/queue.js"></script>
+</body>
+</html>
