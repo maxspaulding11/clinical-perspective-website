@@ -1,6 +1,6 @@
 // The Clinical Perspective — site behavior
 
-const CONTACT_EMAIL = "maxspaulding33@yahoo.com";
+const CONTACT_EMAIL = "theclinicalperspective@gmail.com";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 

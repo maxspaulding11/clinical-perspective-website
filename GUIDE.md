@@ -97,7 +97,7 @@ drag folder to Netlify.* About 2 minutes per post.
 
 Nothing for you to do — it's automatic:
 - **"Email a Submission"** opens an email addressed to you
-  (maxspaulding33@yahoo.com) with a pre-filled template.
+  (theclinicalperspective@gmail.com) with a pre-filled template.
 - **"Message on Instagram"** opens a DM to @the_clinical_perspective.
 
 Submissions just arrive in your inbox / DMs like normal messages.
