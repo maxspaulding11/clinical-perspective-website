@@ -494,6 +494,92 @@ a:hover { text-decoration: underline; }
   margin: 14px 0 0;
 }
 
+/* ---------- Interior pages (about.html, legal.html) ---------- */
+
+.page { padding: 90px 0; }
+
+.page-inner { max-width: 780px; }
+
+.prose {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 44px 48px;
+}
+
+.prose h3 {
+  font-family: var(--serif);
+  color: var(--navy);
+  font-size: 1.3rem;
+  margin: 34px 0 12px;
+}
+
+.prose h3:first-child { margin-top: 0; }
+
+.prose p {
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.prose ul {
+  margin: 0 0 16px;
+  padding-left: 22px;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.prose li { margin-bottom: 10px; }
+
+.prose a { text-decoration: underline; text-underline-offset: 3px; }
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+@media (max-width: 640px) {
+  .prose { padding: 30px 24px; }
+}
+
+/* ---------- 404 page ---------- */
+
+.notfound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.notfound-logo {
+  width: 90px;
+  margin-bottom: 24px;
+  filter: sepia(0.55) hue-rotate(-15deg) saturate(1.15) brightness(1.06) contrast(1.05);
+}
+
+.notfound h1 {
+  font-family: var(--serif);
+  color: var(--navy);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 10px 0 14px;
+  max-width: 560px;
+}
+
+.notfound-lede {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  margin: 0 0 28px;
+  max-width: 460px;
+}
+
+.notfound .page-actions { justify-content: center; margin-top: 0; }
+
 /* ---------- Archive page (queue.html) ---------- */
 
 .archive { padding: 90px 0; }
