@@ -117,6 +117,19 @@ a:hover { text-decoration: underline; }
   color: var(--cream) !important;
 }
 
+.nav-spare-change {
+  background: var(--maroon);
+  border: 1px solid var(--maroon);
+  border-radius: 999px;
+  padding: 7px 18px;
+  color: var(--cream) !important;
+}
+.nav-spare-change:hover {
+  background: #8a3c1c;
+  border-color: #8a3c1c;
+  text-decoration: none;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
