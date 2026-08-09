@@ -1,0 +1,8 @@
+https://theclinicalperspective.netlify.app/*  https://theclinicalperspective.org/:splat  301!
+
+# The citation tool moved under /tools/
+/citations.html  /tools/citations.html  301!
+
+# Build scripts live in the repo but must never be served.
+# Netlify publishes the repo root, so moving them isn't enough — block the path.
+/scripts/*  /404.html  404

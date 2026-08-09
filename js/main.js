@@ -136,10 +136,19 @@ if (reduceMotion) {
 const grid = document.getElementById("posts-grid");
 
 function formatDate(dateStr) {
-  const d = new Date(dateStr);
+  // "2026-08-25" passed to new Date() is parsed as UTC midnight, which renders
+  // as the previous day in any timezone behind UTC. Build a local date instead.
+  const parts = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(dateStr).trim());
+  const d = parts
+    ? new Date(Number(parts[1]), Number(parts[2]) - 1, Number(parts[3]))
+    : new Date(dateStr);
   if (isNaN(d)) return dateStr;
   return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }
+
+// How many of the most recent studies to show on the homepage. The rest
+// live in the full archive at research.html.
+const HOMEPAGE_POST_LIMIT = 9;
 
 function renderPosts(posts) {
   if (!Array.isArray(posts) || posts.length === 0) {
@@ -149,25 +158,44 @@ function renderPosts(posts) {
 
   grid.innerHTML = "";
 
+  // Safety net: the build already withholds studies dated in the future, but
+  // if the site isn't rebuilt for a while, never show a study before the day
+  // it's posted.
+  const today = new Date();
+  const todayIso = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, "0"),
+    String(today.getDate()).padStart(2, "0"),
+  ].join("-");
+
   posts
     .slice()
-    .reverse()
+    .filter((post) => !post.date || String(post.date) <= todayIso)
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    .slice(0, HOMEPAGE_POST_LIMIT)
     .forEach((post, index) => {
       const card = document.createElement("article");
       card.className = "post-card reveal";
       card.style.transitionDelay = `${(index % 3) * 0.12}s`;
 
+      // Only Instagram permalinks (…/p/… or …/reel/…) can be embedded; a bare
+      // profile link would render every card as the same profile widget.
+      const igEmbeddable = /instagram\.com\/(p|reel)\//.test(post.instagram || "");
+
       card.innerHTML = `
-        <div class="post-card-meta">
-          ${post.tag ? `<span class="post-tag">${escapeHtml(post.tag)}</span>` : ""}
-          <h3>${escapeHtml(post.title || "Untitled")}</h3>
-          ${post.date ? `<span class="post-date">${formatDate(post.date)}</span>` : ""}
-        </div>
-        ${post.blurb ? `<p class="post-blurb">${escapeHtml(post.blurb)}</p>` : ""}
+        <a class="post-card-link" href="${escapeAttr(post.url)}">
+          <div class="post-card-meta">
+            ${post.tag ? `<span class="post-tag">${escapeHtml(post.tag)}</span>` : ""}
+            <h3>${escapeHtml(post.title || "Untitled")}</h3>
+            ${post.date ? `<span class="post-date">${formatDate(post.date)}</span>` : ""}
+          </div>
+          ${post.blurb ? `<p class="post-blurb">${escapeHtml(post.blurb)}</p>` : ""}
+        </a>
+        ${igEmbeddable ? `
         <div class="post-embed">
-          <blockquote class="instagram-media" data-instgrm-permalink="${escapeAttr(post.url)}" data-instgrm-version="14"></blockquote>
-        </div>
-        <a class="post-fallback-link" href="${escapeAttr(post.url)}" target="_blank" rel="noopener">View on Instagram &rarr;</a>
+          <blockquote class="instagram-media" data-instgrm-permalink="${escapeAttr(post.instagram)}" data-instgrm-version="14"></blockquote>
+        </div>` : ""}
+        <a class="post-fallback-link" href="${escapeAttr(post.url)}">Read the summary &rarr;</a>
       `;
 
       grid.appendChild(card);

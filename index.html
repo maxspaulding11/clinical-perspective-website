@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Clinical Perspective</title>
 <meta name="description" content="The Clinical Perspective — clear, accurate summaries of clinical psychology and mental health research, with every study linked back to its original source.">
-<link rel="canonical" href="https://theclinicalperspective.netlify.app/">
+<link rel="canonical" href="https://theclinicalperspective.org/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Clinical Perspective">
 <meta property="og:title" content="The Clinical Perspective">
 <meta property="og:description" content="Making clinical research legible, one study at a time. Summaries of clinical psychology and mental health research, linked to their original sources.">
-<meta property="og:url" content="https://theclinicalperspective.netlify.app/">
-<meta property="og:image" content="https://theclinicalperspective.netlify.app/assets/logo.png">
+<meta property="og:url" content="https://theclinicalperspective.org/">
+<meta property="og:image" content="https://theclinicalperspective.org/assets/logo.png">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#f7efe1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,13 +133,15 @@
       <span class="brand-name">The Clinical<br>Perspective</span>
     </a>
     <nav class="main-nav" id="main-nav">
-      <a href="#research">Research</a>
+      <a href="research.html">Research</a>
       <a href="about.html">About</a>
+      <a href="queue.html">Reader Queue</a>
+      <a href="tools/index.html">Tools</a>
       <a href="#newsletter" id="nav-newsletter" hidden>Newsletter</a>
       <a href="#submit">Submit Research</a>
-      <a href="#contact">Contact</a>
-      <a href="https://spare-change-delta.vercel.app" target="_blank" rel="noopener" class="nav-spare-change">🪙 Spare Change</a>
+      <a href="https://spare.theclinicalperspective.org" target="_blank" rel="noopener" class="nav-spare-change">🪙 Spare Change</a>
       <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener" class="nav-ig">Instagram</a>
+      <span class="nav-account" id="nav-account"></span>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -172,7 +174,7 @@
     <div class="container">
       <div class="section-heading reveal">
         <h2>Latest Research</h2>
-        <p>Posts are embedded directly from Instagram, so you're always viewing the original, up-to-date post. Tap any entry to open it on Instagram.</p>
+        <p>The most recent studies covered, each summarized in plain English and linked back to the original paper. Tap any entry to read the full summary.</p>
       </div>
       <div class="research-layout">
         <div class="research-main">
@@ -180,14 +182,15 @@
             <p class="posts-loading">Loading latest posts…</p>
           </div>
           <div class="research-footer reveal">
+            <a class="btn btn-primary" href="research.html">Browse all research &rarr;</a>
             <a class="btn btn-secondary" href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">
-              See all posts on Instagram &rarr;
+              See all posts on Instagram
             </a>
           </div>
         </div>
         <aside class="queue reveal" id="queue" style="transition-delay: 0.15s;">
           <h3 class="queue-title">Reader Queue</h3>
-          <p class="queue-eyebrow">Top 3 requests &middot; past 30 days</p>
+          <p class="queue-eyebrow">Top 3 requests &middot; past 60 days</p>
           <p class="queue-sub">
             Seen a study we should cover? Add its DOI or link below.
             Upvote the ones you want covered — the most requested rise to the top.
@@ -304,6 +307,7 @@
       <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">Instagram</a>
       <a href="#research">Research</a>
       <a href="about.html">About</a>
+      <a href="tools/index.html">Tools</a>
       <a href="#submit">Submit Research</a>
       <a href="legal.html">Disclaimer &amp; Privacy</a>
     </div>
@@ -312,11 +316,12 @@
 </footer>
 
 <script async src="//www.instagram.com/embed.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="js/newsletter-config.js"></script>
-<script src="js/firebase-config.js"></script>
+<script src="js/spare-change-config.js"></script>
+<script src="js/auth-status.js"></script>
 <script src="js/main.js"></script>
 <script src="js/queue.js"></script>
+<script src="js/analytics-config.js"></script>
+<script src="js/analytics.js"></script>
 </body>
 </html>

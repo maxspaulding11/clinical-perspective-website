@@ -1,9 +1,245 @@
 [
   {
-    "url": "https://www.instagram.com/the_clinical_perspective/",
-    "tag": "Study of the Week!",
-    "title": "The Wound Comes First",
+    "slug": "childhood-trauma-is-the-norm-not-the-exception",
+    "url": "studies/childhood-trauma-is-the-norm-not-the-exception.html",
+    "instagram": "",
+    "tag": "Trauma",
+    "title": "Childhood trauma is the norm, not the exception, in prison psychiatric care",
     "date": "2026-07-12",
-    "blurb": "Check it out on our instagram!."
+    "blurb": "Records from 3,400+ adults in Dutch prison psychiatry found over half of men and nearly two-thirds of women had repeated trauma before 18."
+  },
+  {
+    "slug": "how-many-teens-develop-ptsd-after-an-earthquake",
+    "url": "studies/how-many-teens-develop-ptsd-after-an-earthquake.html",
+    "instagram": "",
+    "tag": "Trauma",
+    "title": "How many teens develop PTSD after an earthquake?",
+    "date": "2026-07-13",
+    "blurb": "A survey of 234 adolescents found most were resilient — but a meaningful minority showed real distress, with hyperarousal the most common symptom."
+  },
+  {
+    "slug": "cluster-b-personality-disorders-what-they-are-and",
+    "url": "studies/cluster-b-personality-disorders-what-they-are-and.html",
+    "instagram": "",
+    "tag": "Personality",
+    "title": "Cluster B personality disorders: what they are and what actually helps",
+    "date": "2026-07-14",
+    "blurb": "A review of borderline, histrionic, and narcissistic PD — their origins, the therapies with real evidence, and why culture shapes both."
+  },
+  {
+    "slug": "kids-with-adhd-and-autism-face-far-higher",
+    "url": "studies/kids-with-adhd-and-autism-face-far-higher.html",
+    "instagram": "",
+    "tag": "Neurodevelopmental",
+    "title": "Kids with ADHD and autism face far higher mental-health risk",
+    "date": "2026-07-15",
+    "blurb": "Across 14,000+ young people, those with neurodevelopmental disorders were 3 to 15 times more likely to also have anxiety, depression, or behavioral conditions."
+  },
+  {
+    "slug": "who-drops-out-of-dbt-and-who-improves",
+    "url": "studies/who-drops-out-of-dbt-and-who-improves.html",
+    "instagram": "",
+    "tag": "Personality",
+    "title": "Who drops out of DBT — and who improves?",
+    "date": "2026-07-16",
+    "blurb": "Following 85 people through a DBT program, personality dimensions predicted both improvement and dropout better than symptoms alone."
+  },
+  {
+    "slug": "bpd-brain-is-less-flexible-and-more-variable",
+    "url": "studies/bpd-brain-is-less-flexible-and-more-variable.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "The BPD brain is less flexible — and more variable",
+    "date": "2026-07-17",
+    "blurb": "fMRI comparing 47 women with BPD to 28 controls found altered brain dynamics tied to childhood trauma and emotion dysregulation."
+  },
+  {
+    "slug": "can-machine-learning-tell-bipolar-disorder-from-bpd",
+    "url": "studies/can-machine-learning-tell-bipolar-disorder-from-bpd.html",
+    "instagram": "",
+    "tag": "Diagnosis",
+    "title": "Can machine learning tell bipolar disorder from BPD?",
+    "date": "2026-07-18",
+    "blurb": "Five studies, 591 participants: models beat traditional methods, but were far better at spotting bipolar than borderline."
+  },
+  {
+    "slug": "do-demonstration-videos-actually-teach-therapy-skills",
+    "url": "studies/do-demonstration-videos-actually-teach-therapy-skills.html",
+    "instagram": "",
+    "tag": "Training",
+    "title": "Do demonstration videos actually teach therapy skills?",
+    "date": "2026-07-19",
+    "blurb": "123 psychology students were randomized to watch a video or reread the text — with a clear winner for learning technique."
+  },
+  {
+    "slug": "what-a-violent-hostage-incident-did-to-responders",
+    "url": "studies/what-a-violent-hostage-incident-did-to-responders.html",
+    "instagram": "",
+    "tag": "Trauma",
+    "title": "What a violent hostage incident did to responders' mental health",
+    "date": "2026-07-20",
+    "blurb": "Six months on, 192 police special forces and emergency personnel were assessed for quality of life and psychological impact."
+  },
+  {
+    "slug": "million-genomes-reveal-what-mental-illnesses-share",
+    "url": "studies/million-genomes-reveal-what-mental-illnesses-share.html",
+    "instagram": "",
+    "tag": "Genetics",
+    "title": "A million genomes reveal what mental illnesses share",
+    "date": "2026-07-21",
+    "blurb": "Rather than treating diagnoses as separate boxes, this study mapped the genetic architecture connecting them beneath the surface."
+  },
+  {
+    "slug": "what-drives-stigma-against-tattooed-people",
+    "url": "studies/what-drives-stigma-against-tattooed-people.html",
+    "instagram": "",
+    "tag": "Stigma",
+    "title": "What drives stigma against tattooed people?",
+    "date": "2026-07-22",
+    "blurb": "An Ecuadorian survey used factor analysis to unpack how tattoo stigma operates, especially within the justice system."
+  },
+  {
+    "slug": "what-separates-forensic-from-general-psychiatric-patients-with",
+    "url": "studies/what-separates-forensic-from-general-psychiatric-patients-with.html",
+    "instagram": "",
+    "tag": "Forensic",
+    "title": "What separates forensic from general psychiatric patients with schizophrenia?",
+    "date": "2026-07-23",
+    "blurb": "Machine learning compared the two groups to find what actually distinguishes them — beyond the offense itself."
+  },
+  {
+    "slug": "pinpointing-where-autism-and-schizophrenia-genes-switch-on",
+    "url": "studies/pinpointing-where-autism-and-schizophrenia-genes-switch-on.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "Pinpointing where autism and schizophrenia genes switch on",
+    "date": "2026-07-24",
+    "blurb": "A preprint mapping risk-gene activity to specific brain regions, not just broad cell types. Not yet peer-reviewed."
+  },
+  {
+    "slug": "thalamus-different-in-schizoaffective-disorder",
+    "url": "studies/thalamus-different-in-schizoaffective-disorder.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "Is the thalamus different in schizoaffective disorder?",
+    "date": "2026-07-25",
+    "blurb": "Detailed imaging broke the thalamus into sub-regions across schizophrenia, schizoaffective disorder, and healthy controls."
+  },
+  {
+    "slug": "two-low-cost-interventions-for-grandiose-delusions",
+    "url": "studies/two-low-cost-interventions-for-grandiose-delusions.html",
+    "instagram": "",
+    "tag": "Psychosis",
+    "title": "Two low-cost interventions for grandiose delusions",
+    "date": "2026-07-26",
+    "blurb": "Indonesian nurse-researchers tested simple non-pharmacological approaches in a single case of schizophrenia with grandiose delusions."
+  },
+  {
+    "slug": "new-14-item-scale-for-antisocial-personality-disorder",
+    "url": "studies/new-14-item-scale-for-antisocial-personality-disorder.html",
+    "instagram": "",
+    "tag": "Assessment",
+    "title": "A new 14-item scale for antisocial personality disorder",
+    "date": "2026-07-27",
+    "blurb": "The SEPBA-APD aims to bridge categorical and dimensional approaches to diagnosing ASPD."
+  },
+  {
+    "slug": "virtual-reality-art-therapy-for-borderline-personality-disorder",
+    "url": "studies/virtual-reality-art-therapy-for-borderline-personality-disorder.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "Virtual reality art therapy for borderline personality disorder",
+    "date": "2026-07-28",
+    "blurb": "Eight participants completed four weekly VR-based art sessions, with wellbeing measured throughout. A small pilot, not proof."
+  },
+  {
+    "slug": "can-a-single-dose-of-psilocybin-help-people",
+    "url": "studies/can-a-single-dose-of-psilocybin-help-people.html",
+    "instagram": "",
+    "tag": "Psychedelics",
+    "title": "Can a single dose of psilocybin help people quit cocaine?",
+    "date": "2026-07-29",
+    "blurb": "A randomized controlled trial tested psilocybin plus structured psychotherapy for a disorder with no approved medications."
+  },
+  {
+    "slug": "what-glp-1-drugs-do-to-depression-and",
+    "url": "studies/what-glp-1-drugs-do-to-depression-and.html",
+    "instagram": "",
+    "tag": "Psychopharmacology",
+    "title": "What GLP-1 drugs do to depression and anxiety",
+    "date": "2026-07-30",
+    "blurb": "Swedish records for ~100,000 people compared periods when the same individuals were and weren't taking GLP-1 medications."
+  },
+  {
+    "slug": "how-early-life-stress-rewires-the-gut",
+    "url": "studies/how-early-life-stress-rewires-the-gut.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "How early-life stress rewires the gut",
+    "date": "2026-07-31",
+    "blurb": "A mouse model of maternal separation traced the actual mechanism linking early stress to long-term digestive problems."
+  },
+  {
+    "slug": "brain-chemistry-differences-across-anxiety-disorders",
+    "url": "studies/brain-chemistry-differences-across-anxiety-disorders.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "Brain chemistry differences across anxiety disorders",
+    "date": "2026-08-01",
+    "blurb": "25 brain-imaging studies pooled to compare choline and other chemical levels across social, generalized, and panic anxiety."
+  },
+  {
+    "slug": "why-some-people-hear-voices-testing-the-inner",
+    "url": "studies/why-some-people-hear-voices-testing-the-inner.html",
+    "instagram": "",
+    "tag": "Psychosis",
+    "title": "Why some people hear voices: testing the inner-speech theory",
+    "date": "2026-08-02",
+    "blurb": "A long-standing but hard-to-prove idea about how the brain fails to recognize its own inner speech, finally put to the test."
+  },
+  {
+    "slug": "schizophrenia-genetics-beyond-european-ancestry",
+    "url": "studies/schizophrenia-genetics-beyond-european-ancestry.html",
+    "instagram": "",
+    "tag": "Genetics",
+    "title": "Schizophrenia genetics beyond European ancestry",
+    "date": "2026-08-03",
+    "blurb": "Most schizophrenia genetics has studied European populations. This study set out to close a major gap in the science."
+  },
+  {
+    "slug": "finding-the-brain-basis-of-bpd-identity-disturbance",
+    "url": "studies/finding-the-brain-basis-of-bpd-identity-disturbance.html",
+    "instagram": "",
+    "tag": "Neuroscience",
+    "title": "Finding the brain basis of BPD identity disturbance",
+    "date": "2026-08-04",
+    "blurb": "Researchers studied identity disturbance as early as possible — before medication or comorbidity could muddy the picture."
+  },
+  {
+    "slug": "crying-in-therapy-predicts-better-outcomes",
+    "url": "studies/crying-in-therapy-predicts-better-outcomes.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "Crying in therapy predicts better outcomes",
+    "date": "2026-08-05",
+    "blurb": "Across 58 patients, those who cried more intensely and longer in early sessions reported better results later."
+  },
+  {
+    "slug": "cognitive-training-in-mandated-treatment",
+    "url": "studies/cognitive-training-in-mandated-treatment.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "Cognitive training in mandated treatment",
+    "date": "2026-08-06",
+    "blurb": "A 10-session group program combining cognitive and goal-management training, tested with 35 participants before and after."
+  },
+  {
+    "slug": "does-the-ptsd-checklist-catch-symptom-exaggeration-across",
+    "url": "studies/does-the-ptsd-checklist-catch-symptom-exaggeration-across.html",
+    "instagram": "",
+    "tag": "Assessment",
+    "title": "Does the PTSD checklist catch symptom exaggeration across cultures?",
+    "date": "2026-08-07",
+    "blurb": "115 contractors were evaluated to test whether a common PTSD measure works outside Western populations."
   }
 ]

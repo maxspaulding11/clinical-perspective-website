@@ -1,9 +1,10 @@
-// Reader Queue — visitors suggest studies (DOI or link) and upvote them.
-// Runs against Firestore when configured; otherwise falls back to a
-// per-browser "preview mode" using localStorage.
+// Reader Queue — visitors sign in (shared login with Spare Change) to
+// suggest studies (DOI or link) and upvote each other's suggestions.
+// Falls back to a per-browser "preview mode" only if Spare Change itself
+// can't be reached (e.g. its dev server isn't running, or it's briefly down).
 //
 // Two display modes, detected from the page:
-//   - homepage: top 3 most-voted suggestions from the last 30 days
+//   - homepage: top 3 most-voted suggestions from the last 60 days
 //   - archive (queue.html): every suggestion, sorted by votes
 
 (function () {
@@ -17,15 +18,15 @@
 
   if (!list) return;
 
-  const VOTED_KEY = "tcp-queue-voted";
   const DEMO_KEY = "tcp-queue-demo";
-  const LAST_SUBMIT_KEY = "tcp-queue-last-submit";
   const HOME_LIMIT = 3;
-  const MONTH_MS = 30 * 24 * 60 * 60 * 1000;
+  const WINDOW_MS = 60 * 24 * 60 * 60 * 1000;
+  const origin = window.SPARE_CHANGE_ORIGIN;
 
-  const votedIds = new Set(JSON.parse(localStorage.getItem(VOTED_KEY) || "[]"));
+  let signedIn = false;
+  let rerender, submitFn, upvote;
 
-  // ---------- link validation ----------
+  // ---------- link validation (matches Spare Change's server-side check) ----------
   function normalizeLink(raw) {
     const value = raw.trim();
     const doiMatch = value.match(/^(?:doi:\s*)?(10\.\d{4,9}\/\S+)$/i);
@@ -45,20 +46,11 @@
   }
 
   // ---------- sorting / filtering ----------
-  function timestampOf(item) {
-    if (item.createdAt && typeof item.createdAt.toMillis === "function") {
-      return item.createdAt.toMillis();
-    }
-    if (typeof item.createdAt === "number") return item.createdAt;
-    return Date.now(); // pending server timestamp on a just-added doc
-  }
-
   function prepare(items) {
-    const withTs = items.map((i) => ({ ...i, ts: timestampOf(i) }));
-    withTs.sort((a, b) => b.votes - a.votes || b.ts - a.ts);
-    if (isArchive) return withTs;
-    const cutoff = Date.now() - MONTH_MS;
-    return withTs.filter((i) => i.ts >= cutoff).slice(0, HOME_LIMIT);
+    const sorted = [...items].sort((a, b) => b.votes - a.votes || b.createdAt - a.createdAt);
+    if (isArchive) return sorted;
+    const cutoff = Date.now() - WINDOW_MS;
+    return sorted.filter((i) => i.createdAt >= cutoff).slice(0, HOME_LIMIT);
   }
 
   // ---------- rendering ----------
@@ -69,7 +61,7 @@
       li.className = "queue-empty";
       li.textContent = isArchive
         ? "No suggestions yet — be the first to add one."
-        : "No suggestions in the past 30 days — add the first one!";
+        : "No suggestions in the past 60 days — add the first one!";
       list.appendChild(li);
       return;
     }
@@ -87,10 +79,12 @@
       const voteBtn = document.createElement("button");
       voteBtn.type = "button";
       voteBtn.className = "queue-vote";
-      const hasVoted = votedIds.has(item.id);
+      const hasVoted = !!item.votedByMe;
       if (hasVoted) voteBtn.classList.add("voted");
-      voteBtn.disabled = hasVoted;
-      voteBtn.setAttribute("aria-label", hasVoted ? "Already upvoted" : "Upvote this study");
+      voteBtn.disabled = hasVoted || !signedIn;
+      const voteLabel = hasVoted ? "Already upvoted" : signedIn ? "Upvote this study" : "Sign in to upvote";
+      voteBtn.setAttribute("aria-label", voteLabel);
+      if (!signedIn && !hasVoted) voteBtn.title = voteLabel;
       voteBtn.innerHTML = `<span class="queue-arrow">&#9650;</span><span class="queue-count">${item.votes}</span>`;
       voteBtn.addEventListener("click", () => upvote(item.id));
 
@@ -116,102 +110,110 @@
     });
   }
 
-  function rememberVote(id) {
-    votedIds.add(id);
-    localStorage.setItem(VOTED_KEY, JSON.stringify([...votedIds]));
+  function setFormEnabled(enabled) {
+    if (!form) return;
+    titleInput.disabled = !enabled;
+    linkInput.disabled = !enabled;
+    const btn = form.querySelector("button[type=submit]");
+    if (btn) btn.disabled = !enabled;
+    if (note) note.textContent = enabled ? "" : "Sign in (top of page) to submit or upvote a study.";
   }
 
-  function rateLimited() {
-    const last = parseInt(localStorage.getItem(LAST_SUBMIT_KEY) || "0", 10);
-    return Date.now() - last < 60000;
-  }
-
-  // ---------- backend selection ----------
-  const config = window.firebaseConfig || {};
-  const isConfigured =
-    config.apiKey && config.apiKey !== "PASTE_YOUR_CONFIG_HERE" &&
-    typeof firebase !== "undefined";
-
-  let submitFn, upvote;
-
-  if (isConfigured) {
-    // ----- live shared database (Firestore) -----
-    firebase.initializeApp(config);
-    const db = firebase.firestore();
-    const col = db.collection("suggestions");
-
-    col.orderBy("createdAt", "desc").limit(200).onSnapshot(
-      (snap) => {
-        const items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-        render(prepare(items));
-      },
-      () => {
-        list.innerHTML = "";
-        const li = document.createElement("li");
-        li.className = "queue-empty";
-        li.textContent = "Couldn't load the queue right now. Please refresh.";
-        list.appendChild(li);
-      }
-    );
-
-    submitFn = async (title, url) => {
-      const ref = await col.add({
-        title: title,
-        url: url,
-        votes: 1,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp()
-      });
-      rememberVote(ref.id);
-    };
-
-    upvote = async (id) => {
-      if (votedIds.has(id)) return;
-      rememberVote(id);
-      try {
-        await col.doc(id).update({
-          votes: firebase.firestore.FieldValue.increment(1)
-        });
-      } catch (e) { /* snapshot listener keeps UI consistent */ }
-    };
-  } else {
-    // ----- preview mode (this browser only) -----
+  // ---------- offline fallback (this browser only, Spare Change unreachable) ----------
+  function useOfflineFallback() {
+    if (form) {
+      titleInput.disabled = false;
+      linkInput.disabled = false;
+      const btn = form.querySelector("button[type=submit]");
+      if (btn) btn.disabled = false;
+    }
     if (note) {
       note.textContent =
-        "Preview mode: suggestions currently save only in your own browser. " +
-        "They'll be shared with all visitors once the site's database is connected.";
+        "Couldn't reach the shared queue right now — showing a local preview instead.";
     }
+    signedIn = true;
 
     const load = () => JSON.parse(localStorage.getItem(DEMO_KEY) || "[]");
     const save = (items) => localStorage.setItem(DEMO_KEY, JSON.stringify(items));
-    const rerender = () => render(prepare(load()));
+    rerender = () => render(prepare(load()));
 
     submitFn = async (title, url) => {
       const items = load();
-      const id = "demo-" + Date.now();
-      items.push({ id, title, url, votes: 1, createdAt: Date.now() });
+      items.push({ id: "demo-" + Date.now(), title, url, votes: 1, createdAt: Date.now(), votedByMe: true });
       save(items);
-      rememberVote(id);
       rerender();
     };
 
     upvote = (id) => {
-      if (votedIds.has(id)) return;
       const items = load();
       const item = items.find((i) => i.id === id);
-      if (!item) return;
+      if (!item || item.votedByMe) return;
       item.votes += 1;
+      item.votedByMe = true;
       save(items);
-      rememberVote(id);
       rerender();
     };
 
     rerender();
   }
 
+  // ---------- backend selection ----------
+  if (origin) {
+    // ----- live shared database, via Spare Change's API -----
+    const api = (path, options) =>
+      fetch(origin + path, { credentials: "include", ...options }).then((res) => {
+        if (!res.ok) return res.json().catch(() => ({})).then((body) => Promise.reject(body));
+        return res.json();
+      });
+
+    rerender = () =>
+      api("/api/queue")
+        .then((items) => render(prepare(items)))
+        .catch((err) => {
+          if (err instanceof TypeError) {
+            // Network/CORS failure — Spare Change isn't reachable right now.
+            useOfflineFallback();
+            return;
+          }
+          list.innerHTML = "";
+          const li = document.createElement("li");
+          li.className = "queue-empty";
+          li.textContent = "Couldn't load the queue right now. Please refresh.";
+          list.appendChild(li);
+        });
+
+    submitFn = (title, url) =>
+      api("/api/queue", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, url }),
+      }).then(() => rerender());
+
+    upvote = (id) => {
+      api(`/api/queue/${id}/vote`, { method: "POST" }).then(() => rerender());
+    };
+
+    setFormEnabled(false); // enabled once we know the visitor is signed in
+    rerender();
+    Promise.resolve(window.spareChangeSession)
+      .then((user) => {
+        signedIn = !!user;
+        setFormEnabled(signedIn);
+        rerender();
+      })
+      .catch(() => {});
+  } else {
+    useOfflineFallback();
+  }
+
   // ---------- form handling ----------
   if (form) {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      if (!signedIn) {
+        showMsg("Sign in first to submit a study.", true);
+        return;
+      }
 
       const title = titleInput.value.trim();
       const url = normalizeLink(linkInput.value);
@@ -224,18 +226,13 @@
         showMsg("That doesn't look like a DOI or link. Try e.g. 10.1001/jama.2026.1234", true);
         return;
       }
-      if (rateLimited()) {
-        showMsg("Please wait a minute between submissions.", true);
-        return;
-      }
 
       try {
         await submitFn(title, url);
-        localStorage.setItem(LAST_SUBMIT_KEY, String(Date.now()));
         form.reset();
         showMsg("Added — thanks for the suggestion!");
       } catch (err) {
-        showMsg("Couldn't submit right now. Please try again.", true);
+        showMsg((err && err.error) || "Couldn't submit right now. Please try again.", true);
       }
     });
   }

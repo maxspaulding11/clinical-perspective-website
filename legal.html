@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Disclaimer &amp; Privacy — The Clinical Perspective</title>
 <meta name="description" content="Disclaimer and privacy notice for The Clinical Perspective.">
-<link rel="canonical" href="https://theclinicalperspective.netlify.app/legal.html">
+<link rel="canonical" href="https://theclinicalperspective.org/legal.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Clinical Perspective">
 <meta property="og:title" content="Disclaimer &amp; Privacy — The Clinical Perspective">
 <meta property="og:description" content="Disclaimer and privacy notice for The Clinical Perspective.">
-<meta property="og:url" content="https://theclinicalperspective.netlify.app/legal.html">
-<meta property="og:image" content="https://theclinicalperspective.netlify.app/assets/logo.png">
+<meta property="og:url" content="https://theclinicalperspective.org/legal.html">
+<meta property="og:image" content="https://theclinicalperspective.org/assets/logo.png">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,12 @@
       <span class="brand-name">The Clinical<br>Perspective</span>
     </a>
     <nav class="main-nav" id="main-nav">
-      <a href="index.html#research">Research</a>
+      <a href="research.html">Research</a>
       <a href="about.html">About</a>
+      <a href="queue.html">Reader Queue</a>
+      <a href="tools/index.html">Tools</a>
       <a href="index.html#submit">Submit Research</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="https://spare-change-delta.vercel.app" target="_blank" rel="noopener" class="nav-spare-change">🪙 Spare Change</a>
+      <a href="https://spare.theclinicalperspective.org" target="_blank" rel="noopener" class="nav-spare-change">🪙 Spare Change</a>
       <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener" class="nav-ig">Instagram</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -79,7 +80,14 @@
         </p>
 
         <h3>What information this site collects</h3>
-        <p>This site has no accounts, no ads, and no tracking of its own. Three features involve data you choose to provide:</p>
+        <p>
+          This site has no ads and no advertising trackers. To understand how many
+          people visit and which summaries get read, it uses Cloudflare Web
+          Analytics, which counts page views without cookies, without following you
+          across other sites, and without collecting personal information — so
+          there's nothing here for you to consent to or opt out of.
+        </p>
+        <p>Beyond that, three features involve data you choose to provide:</p>
         <ul>
           <li>
             <strong>Newsletter.</strong> If you subscribe to the Weekly Digest, your
@@ -88,10 +96,13 @@
             unsubscribing removes you from the list.
           </li>
           <li>
-            <strong>Reader Queue.</strong> Study titles and links you submit, and the
-            votes you cast, are stored in Google Firebase and displayed publicly on
-            this site. Don't include personal information in a submission. Your
-            browser locally remembers which entries you've voted on.
+            <strong>Reader Queue.</strong> Submitting a study or upvoting requires
+            signing in with Google, through the same account used by our companion
+            app, Spare Change (one login works on both). Your name, email, and
+            profile photo are used only to identify your account; study titles,
+            links, and vote counts are stored in Spare Change's database and
+            displayed publicly on this site. Don't include personal information in
+            a submission.
           </li>
           <li>
             <strong>Email contact.</strong> If you email us, we see your address and
@@ -130,8 +141,10 @@
     </div>
     <div class="footer-links">
       <a href="https://www.instagram.com/the_clinical_perspective/" target="_blank" rel="noopener">Instagram</a>
-      <a href="index.html#research">Research</a>
+      <a href="research.html">Research</a>
       <a href="about.html">About</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="queue.html">Reader Queue</a>
       <a href="index.html#submit">Submit Research</a>
       <a href="legal.html">Disclaimer &amp; Privacy</a>
     </div>
@@ -148,5 +161,7 @@
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 </script>
+<script src="js/analytics-config.js"></script>
+<script src="js/analytics.js"></script>
 </body>
 </html>
