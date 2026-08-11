@@ -1635,6 +1635,18 @@ a:hover { text-decoration: underline; }
 .fac-badge.unverified { background: var(--cream); color: var(--ink-soft); }
 .fac-badge.closed { background: rgba(91,76,64,0.14); color: var(--ink-soft); }
 
+.fac-pcsas {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: rgba(31,58,92,0.1);
+  color: var(--navy);
+  cursor: help;
+}
+
 .fac-group { margin-bottom: 12px; }
 .fac-group-label {
   font-size: 0.72rem;

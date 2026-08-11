@@ -21,6 +21,7 @@
   function matches(p) {
     if (filter === 'posted'  && p.status !== 'posted')  return false;
     if (filter === 'pending' && p.status === 'posted')  return false;
+    if (filter === 'pcsas'   && !p.pcsas)               return false;
     if (!query) return true;
     const hay = [p.school, p.program, p.state,
                  ...(p.accepting || []), ...(p.maybe || [])].join(' ').toLowerCase();
@@ -46,7 +47,9 @@
       '<div class="fac-head">' +
         '<div>' +
           '<h3>' + esc(p.school) + '</h3>' +
-          '<p class="fac-sub">' + esc(p.program) + (p.state ? ' · ' + esc(p.state) : '') + '</p>' +
+          '<p class="fac-sub">' + esc(p.program) + (p.state ? ' · ' + esc(p.state) : '') +
+            (p.pcsas ? ' · <span class="fac-pcsas" title="Accredited by the Psychological Clinical Science Accreditation System">PCSAS accredited</span>' : '') +
+          '</p>' +
         '</div>' + badge +
       '</div>' +
       nameList(p.accepting, 'yes', 'Accepting students') +

@@ -24,7 +24,8 @@
         "Lara Ray"
       ],
       "maybe": [],
-      "notAccepting": []
+      "notAccepting": [],
+      "pcsas": true
     },
     {
       "id": "fiu-clinical-child",
@@ -80,7 +81,8 @@
       "maybe": [],
       "notAccepting": [
         "Thomas P. Harding"
-      ]
+      ],
+      "pcsas": true
     },
     {
       "id": "gsu-clinical",
@@ -149,7 +151,8 @@
         "Santiago Morales",
         "Amy West"
       ],
-      "note": "USC publishes two pages with different confidence language about the same three faculty: the student-admissions-outcomes page says they \"are interested in recruiting\" (which this entry originally used), while USC's actual clinical-faculty roster page individually flags them only \"*May be considering applications for Fall 2027*\" and explicitly lists everyone else as not currently flagged (read here as not accepting, per that page's own convention). Updated to the more granular, more cautious roster page — moved from accepting to maybe, and added the notAccepting list the original source didn't provide."
+      "note": "USC publishes two pages with different confidence language about the same three faculty: the student-admissions-outcomes page says they \"are interested in recruiting\" (which this entry originally used), while USC's actual clinical-faculty roster page individually flags them only \"*May be considering applications for Fall 2027*\" and explicitly lists everyone else as not currently flagged (read here as not accepting, per that page's own convention). Updated to the more granular, more cautious roster page — moved from accepting to maybe, and added the notAccepting list the original source didn't provide.",
+      "pcsas": true
     },
     {
       "id": "unc-clinical",
@@ -165,7 +168,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Not posted yet as of the check date. Application deadline also listed as TBD."
+      "note": "Not posted yet as of the check date. Application deadline also listed as TBD.",
+      "pcsas": true
     },
     {
       "id": "adelphi-university-phd",
@@ -412,7 +416,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: November 16, 2026. The clinical PhD faculty/labs page currently tags only one faculty member (Dr. Abigail Gewirtz) with a recruiting notice, and that notice is explicitly for Fall 2026, not Fall 2027 — the Fall 2027 faculty recruiting list has not yet been posted/updated as of this check (Aug 2026). Page separately states Fall 2027 application opens September 1 and the deadline is November 16 (2026)."
+      "note": "Deadline: November 16, 2026. The clinical PhD faculty/labs page currently tags only one faculty member (Dr. Abigail Gewirtz) with a recruiting notice, and that notice is explicitly for Fall 2026, not Fall 2027 — the Fall 2027 faculty recruiting list has not yet been posted/updated as of this check (Aug 2026). Page separately states Fall 2027 application opens September 1 and the deadline is November 16 (2026).",
+      "pcsas": true
     },
     {
       "id": "auburn-university-phd",
@@ -524,7 +529,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1. The page's current mentor-availability list is explicitly for the 2026-2027 class (i.e., students entering Fall 2026), not Fall 2027. BU's own admissions FAQ indicates applications for the next cycle (Fall 2027 entry) are expected to open in September 2026, so the Fall-2027-specific list is not yet posted. Left accepting/notAccepting empty per instructions rather than carrying forward the stale (Fall 2026) names."
+      "note": "Deadline: December 1. The page's current mentor-availability list is explicitly for the 2026-2027 class (i.e., students entering Fall 2026), not Fall 2027. BU's own admissions FAQ indicates applications for the next cycle (Fall 2027 entry) are expected to open in September 2026, so the Fall-2027-specific list is not yet posted. Left accepting/notAccepting empty per instructions rather than carrying forward the stale (Fall 2026) names.",
+      "pcsas": true
     },
     {
       "id": "bowling-green-state-university-phd",
@@ -862,7 +868,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page (opened directly) lists Dorsa Amir, Tobias Enger, Sarah Gaither, Kevin LaBar, Rick Hoyle, Eve Puffer, Zach Rosenthal, and Phia Salter, but explicitly labels this as the Fall 2026 admission cycle, not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check (Aug 2026)."
+      "note": "Page (opened directly) lists Dorsa Amir, Tobias Enger, Sarah Gaither, Kevin LaBar, Rick Hoyle, Eve Puffer, Zach Rosenthal, and Phia Salter, but explicitly labels this as the Fall 2026 admission cycle, not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check (Aug 2026).",
+      "pcsas": true
     },
     {
       "id": "duquesne-university-phd",
@@ -978,7 +985,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Emory's Clinical Science (CS) concentration is the APA/PCSAS-accredited clinical psychology PhD track within the broader Psychology PhD program. List taken from the official PDF of faculty mentors by concentration area (Clinical Science column). Corrected during verification: PDF loads from psychology.emory.edu and the quoted heading '**Faculty mentors considering applications for the Fall 2027 Admission Cycle**' appears verbatim. However, in the Clinical Science (CS) column, 'Peter Hitchcock' and 'Jared Medina' are rendered in a visually distinct (greyed-out) style from the other six names, matching the document's own note that some listed names are only potential co-mentors, not faculty actively considering applications in that concentration. The claim's accepting list includes these two without qualification, likely overstating who is actually accepting in Clinical Science."
+      "note": "Emory's Clinical Science (CS) concentration is the APA/PCSAS-accredited clinical psychology PhD track within the broader Psychology PhD program. List taken from the official PDF of faculty mentors by concentration area (Clinical Science column). Corrected during verification: PDF loads from psychology.emory.edu and the quoted heading '**Faculty mentors considering applications for the Fall 2027 Admission Cycle**' appears verbatim. However, in the Clinical Science (CS) column, 'Peter Hitchcock' and 'Jared Medina' are rendered in a visually distinct (greyed-out) style from the other six names, matching the document's own note that some listed names are only potential co-mentors, not faculty actively considering applications in that concentration. The claim's accepting list includes these two without qualification, likely overstating who is actually accepting in Clinical Science.",
+      "pcsas": true
     },
     {
       "id": "fairleigh-dickinson-university-phd",
@@ -1245,7 +1253,8 @@
       "notAccepting": [
         "John Weisz"
       ],
-      "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. Mahzarin Banaji is social-psychology faculty, not part of the Clinical concentration, so she is omitted from notAccepting here; John Weisz is Clinical/child-clinical faculty and is retained. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty per instructions. Page states the list 'is dynamic and subject to ongoing updates.'"
+      "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. Mahzarin Banaji is social-psychology faculty, not part of the Clinical concentration, so she is omitted from notAccepting here; John Weisz is Clinical/child-clinical faculty and is retained. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty per instructions. Page states the list 'is dynamic and subject to ongoing updates.'",
+      "pcsas": true
     },
     {
       "id": "hofstra-university-phd",
@@ -1365,7 +1374,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Each Clinical Science faculty profile carries its own individual accepting-status tag rather than one introducing sentence; every tag observed (for Bates, Brown, Chaku, D'Onofrio, Finn, Hansen, Hetrick, Holtzworth-Munroe, James, James, Kennedy, Lorenzo-Luaces, Moussa-Tooks, Newman, and others) references 'Fall 2026', a cohort already decided as of this Aug 2026 check. The roster has not yet been updated with Fall 2027 statuses, so marked pending rather than posted."
+      "note": "Each Clinical Science faculty profile carries its own individual accepting-status tag rather than one introducing sentence; every tag observed (for Bates, Brown, Chaku, D'Onofrio, Finn, Hansen, Hetrick, Holtzworth-Munroe, James, James, Kennedy, Lorenzo-Luaces, Moussa-Tooks, Newman, and others) references 'Fall 2026', a cohort already decided as of this Aug 2026 check. The roster has not yet been updated with Fall 2027 statuses, so marked pending rather than posted.",
+      "pcsas": true
     },
     {
       "id": "indiana-university-indianapolis-phd",
@@ -1694,7 +1704,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "This sentence appears under a 'List of Clinical Faculty Accepting New Students' heading but only addresses the (now past) Fall 2026 cohort; the page contains no Fall 2027 information or names, so it appears not yet updated for the current cycle."
+      "note": "This sentence appears under a 'List of Clinical Faculty Accepting New Students' heading but only addresses the (now past) Fall 2026 cohort; the page contains no Fall 2027 information or names, so it appears not yet updated for the current cycle.",
+      "pcsas": true
     },
     {
       "id": "midwestern-university-psyd",
@@ -1844,7 +1855,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source."
+      "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source.",
+      "pcsas": true
     },
     {
       "id": "nova-southeastern-university-phd",
@@ -1919,7 +1931,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1. The department's Faculty and Staff page tags each clinical faculty member individually as accepting or not accepting, but the label says '2026 admission' (not Fall 2027 or 2027 admission), which as of today (Aug 8, 2026) most plausibly refers to the already-completed Fall 2026 entering cohort, not the cycle now open for Fall 2027. Per the ambiguity rule, not reporting as posted for Fall 2027. Observed 2026 tags (for reference only, not to be relied on for 2027): accepting - Ciciolla, Cole, Duncan, Grant, Sweatt, Wingate; not accepting - Chaney, Kerr, Leffingwell, Wells. The main /psychology/graduate_studies/clinical_program.html page returned HTTP 403 and did not load."
+      "note": "Deadline: December 1. The department's Faculty and Staff page tags each clinical faculty member individually as accepting or not accepting, but the label says '2026 admission' (not Fall 2027 or 2027 admission), which as of today (Aug 8, 2026) most plausibly refers to the already-completed Fall 2026 entering cohort, not the cycle now open for Fall 2027. Per the ambiguity rule, not reporting as posted for Fall 2027. Observed 2026 tags (for reference only, not to be relied on for 2027): accepting - Ciciolla, Cole, Duncan, Grant, Sweatt, Wingate; not accepting - Chaney, Kerr, Leffingwell, Wells. The main /psychology/graduate_studies/clinical_program.html page returned HTTP 403 and did not load.",
+      "pcsas": true
     },
     {
       "id": "oregon-health-science-university-phd",
@@ -1999,7 +2012,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "This page cross-references faculty across MULTIPLE program areas (Clinical (Adult and Child), Cognitive, Developmental, Industrial-Organizational, and Social) sharing one accepting-students list. Clinical (Adult and Child) area faculty listed as accepting for Fall 2026 were: Peter Arnett, Katie Burkhouse, Cynthia Huang-Pollock, Kenneth Levy, Jose Soto, Stephen Wilson (non-clinical-area names such as Michele Diaz, Janet van Hell, Kristin Buss, etc. were excluded as they belong to Cognitive/Developmental/I-O/Social areas, not Clinical). However, the page explicitly says 'fall 2026' not Fall 2027/2027 admission, so as of Aug 8, 2026 this is the prior cycle's list, not yet updated for Fall 2027 — reporting pending rather than posted, and leaving accepting empty per the ambiguity/staleness rule."
+      "note": "This page cross-references faculty across MULTIPLE program areas (Clinical (Adult and Child), Cognitive, Developmental, Industrial-Organizational, and Social) sharing one accepting-students list. Clinical (Adult and Child) area faculty listed as accepting for Fall 2026 were: Peter Arnett, Katie Burkhouse, Cynthia Huang-Pollock, Kenneth Levy, Jose Soto, Stephen Wilson (non-clinical-area names such as Michele Diaz, Janet van Hell, Kristin Buss, etc. were excluded as they belong to Cognitive/Developmental/I-O/Social areas, not Clinical). However, the page explicitly says 'fall 2026' not Fall 2027/2027 admission, so as of Aug 8, 2026 this is the prior cycle's list, not yet updated for Fall 2027 — reporting pending rather than posted, and leaving accepting empty per the ambiguity/staleness rule.",
+      "pcsas": true
     },
     {
       "id": "pepperdine-university-psyd",
@@ -2095,7 +2109,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1 (online application deadline, for enrollment the following fall). Page explicitly labels the recruiting list as for 'Fall 2026 admission,' not Fall 2027, so as of Aug 8, 2026 this is the prior cycle's list and not yet updated for the Fall 2027 cycle. Reporting pending and leaving names out of accepting per the staleness rule."
+      "note": "Deadline: December 1 (online application deadline, for enrollment the following fall). Page explicitly labels the recruiting list as for 'Fall 2026 admission,' not Fall 2027, so as of Aug 8, 2026 this is the prior cycle's list and not yet updated for the Fall 2027 cycle. Reporting pending and leaving names out of accepting per the staleness rule.",
+      "pcsas": true
     },
     {
       "id": "regent-university-psyd",
@@ -2213,7 +2228,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: Applications for admission in September are due December 1 of the previous year (i.e., Dec 1, 2026 for Fall 2027).. This is the Psychology Department's own Clinical PhD program overview page. It explicitly frames the list around Fall 2027 admission, but the faculty list itself is a literal placeholder ('TBD') as of this check (Aug 2026), meaning the list has not been posted yet. Also checked the separate faculty directory pages (psych.rutgers.edu core-faculty listing and ruclinpsychadmissions.org/clinical-faculty) which list faculty names/labs but carry no current-cycle acceptance statements (one stale note referenced 'Fall of 2019')."
+      "note": "Deadline: Applications for admission in September are due December 1 of the previous year (i.e., Dec 1, 2026 for Fall 2027).. This is the Psychology Department's own Clinical PhD program overview page. It explicitly frames the list around Fall 2027 admission, but the faculty list itself is a literal placeholder ('TBD') as of this check (Aug 2026), meaning the list has not been posted yet. Also checked the separate faculty directory pages (psych.rutgers.edu core-faculty listing and ruclinpsychadmissions.org/clinical-faculty) which list faculty names/labs but carry no current-cycle acceptance statements (one stale note referenced 'Fall of 2019').",
+      "pcsas": true
     },
     {
       "id": "saint-louis-university-phd",
@@ -2357,7 +2373,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "This is the department's official 'Faculty Recruitment Intentions' document, linked directly from the graduate application-instructions page on stonybrook.edu. It uses the ambiguous phrase 'for the 2026-2027 academic year' without stating a semester/year like 'Fall 2027,' and the document is titled 'Recruitment Intentions 2026,' suggesting it likely refers to students matriculating Fall 2026 (a stale, already-decided cycle) rather than being recruited during 2026-2027 for a Fall 2027 start. Per the disambiguation rule this is reported as pending rather than guessing. For reference, faculty listed as reviewing (under the ambiguous label) were Candice Alfano, Kristin Bernard, Julian Burger, Lu Dong, Briana Last, and Brady Nelson; listed as not reviewing were Dan Klein and Aprajita Mohanty; Nicholas Eaton's status was listed as conditional/see his website."
+      "note": "This is the department's official 'Faculty Recruitment Intentions' document, linked directly from the graduate application-instructions page on stonybrook.edu. It uses the ambiguous phrase 'for the 2026-2027 academic year' without stating a semester/year like 'Fall 2027,' and the document is titled 'Recruitment Intentions 2026,' suggesting it likely refers to students matriculating Fall 2026 (a stale, already-decided cycle) rather than being recruited during 2026-2027 for a Fall 2027 start. Per the disambiguation rule this is reported as pending rather than guessing. For reference, faculty listed as reviewing (under the ambiguous label) were Candice Alfano, Kristin Bernard, Julian Burger, Lu Dong, Briana Last, and Brady Nelson; listed as not reviewing were Dan Klein and Aprajita Mohanty; Nicholas Eaton's status was listed as conditional/see his website.",
+      "pcsas": true
     },
     {
       "id": "suffolk-university-phd",
@@ -2435,7 +2452,8 @@
         "Lauren Ellman, PhD",
         "Robert Fauber, PhD"
       ],
-      "note": "Deadline: November 15, 2026. Per-faculty cells explicitly say 'Accepting a clinical student for 2027' / 'Will be accepting a clinical student for 2027' / 'May be accepting a clinical student for 2027' / 'Not accepting clinical students for 2027', clearly confirming the Fall 2027 cycle. Michael McCloskey ('May be accepting') placed in maybe per the three-state rule. The sourceQuote above describes the table's structure rather than quoting a single sentence verbatim (Temple presents this as a table, not prose). Independent verification also could not re-confirm Johanna Jarcho's specific not-accepting status on a second read of the page, though the rest of the list matched."
+      "note": "Deadline: November 15, 2026. Per-faculty cells explicitly say 'Accepting a clinical student for 2027' / 'Will be accepting a clinical student for 2027' / 'May be accepting a clinical student for 2027' / 'Not accepting clinical students for 2027', clearly confirming the Fall 2027 cycle. Michael McCloskey ('May be accepting') placed in maybe per the three-state rule. The sourceQuote above describes the table's structure rather than quoting a single sentence verbatim (Temple presents this as a table, not prose). Independent verification also could not re-confirm Johanna Jarcho's specific not-accepting status on a second read of the page, though the rest of the list matched.",
+      "pcsas": true
     },
     {
       "id": "texas-a-m-university-phd",
@@ -2621,7 +2639,8 @@
         "Jeremy Grant"
       ],
       "notAccepting": [],
-      "note": "'AU27' unambiguously denotes the Autumn 2027 entering cohort, so treated as posted for the requested cycle. Jeremy Grant appears under the department's 'AU27 Admitting Faculty' Clinical-area list, but his own lab page (chill-lab.org/join-our-lab_1/ph-d-applicants) states verbatim: 'I have NOT YET DECIDED if I will accept a PhD student for the Ph.D. program in clinical psychology at The Ohio State University for the 2026-2027 application cycle (starting classes in Fall 2027),' directing applicants to check back by September 14, 2026 — so he is recorded as 'maybe' rather than 'accepting' based on his more specific, individually-authored statement. Corrected during verification: Page loads and belongs to OSU; quote 'AU27 Admitting Faculty' appears verbatim under the Clinical Psychology section. However, the accepting list is missing a name: the page also lists Jeremy Grant as AU27 admitting faculty for Clinical Psychology, who was omitted from the claim's list. Also note 'AU27' denotes Autumn 2027, which is equivalent to Fall 2027, so the semester/year itself is fine once the name list is corrected. DATA FLAG: Jeremy Grant appeared in more than one category (e.g. both accepting and maybe) in the raw sweep data — kept in the more cautious category and removed from 'accepting'."
+      "note": "'AU27' unambiguously denotes the Autumn 2027 entering cohort, so treated as posted for the requested cycle. Jeremy Grant appears under the department's 'AU27 Admitting Faculty' Clinical-area list, but his own lab page (chill-lab.org/join-our-lab_1/ph-d-applicants) states verbatim: 'I have NOT YET DECIDED if I will accept a PhD student for the Ph.D. program in clinical psychology at The Ohio State University for the 2026-2027 application cycle (starting classes in Fall 2027),' directing applicants to check back by September 14, 2026 — so he is recorded as 'maybe' rather than 'accepting' based on his more specific, individually-authored statement. Corrected during verification: Page loads and belongs to OSU; quote 'AU27 Admitting Faculty' appears verbatim under the Clinical Psychology section. However, the accepting list is missing a name: the page also lists Jeremy Grant as AU27 admitting faculty for Clinical Psychology, who was omitted from the claim's list. Also note 'AU27' denotes Autumn 2027, which is equivalent to Fall 2027, so the semester/year itself is fine once the name list is corrected. DATA FLAG: Jeremy Grant appeared in more than one category (e.g. both accepting and maybe) in the raw sweep data — kept in the more cautious category and removed from 'accepting'.",
+      "pcsas": true
     },
     {
       "id": "the-university-of-memphis-phd",
@@ -2736,7 +2755,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1."
+      "note": "Deadline: December 1.",
+      "pcsas": true
     },
     {
       "id": "university-of-alabama-at-birmingham-phd",
@@ -2800,7 +2820,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "The just-closed 2026-27 cycle was for Fall 2026 admission. The next cycle (which would cover Fall 2027 admission) does not open until October 2026, so no faculty accepting/not-accepting information for Fall 2027 exists yet on this page or the Clinical Faculty page."
+      "note": "The just-closed 2026-27 cycle was for Fall 2026 admission. The next cycle (which would cover Fall 2027 admission) does not open until October 2026, so no faculty accepting/not-accepting information for Fall 2027 exists yet on this page or the Clinical Faculty page.",
+      "pcsas": true
     },
     {
       "id": "university-of-arkansas-phd",
@@ -2832,7 +2853,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page header says 'Fall 2025' while the body names faculty admitting for 'Fall 2026' — internally stale/inconsistent, and in any case not the Fall 2027 cycle requested. Not reporting these names as current."
+      "note": "Page header says 'Fall 2025' while the body names faculty admitting for 'Fall 2026' — internally stale/inconsistent, and in any case not the Fall 2027 cycle requested. Not reporting these names as current.",
+      "pcsas": true
     },
     {
       "id": "university-of-california-irvine-phd",
@@ -2985,7 +3007,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Names listed under this heading are Jean-Philippe Laurenceau, Naomi Samimi-Sadeh, Jeffrey Spielberg, and the Institute for Community Mental Health (co-mentorship). However, per the disambiguation rule, '2026-2027' is an academic-year label, not an explicit 'Fall 2027' statement, and could mean the cohort matriculating Fall 2026 (which would be stale) rather than the cycle recruiting for Fall 2027. The page does not disambiguate, so left as pending rather than assumed. No application deadline was stated on this page."
+      "note": "Names listed under this heading are Jean-Philippe Laurenceau, Naomi Samimi-Sadeh, Jeffrey Spielberg, and the Institute for Community Mental Health (co-mentorship). However, per the disambiguation rule, '2026-2027' is an academic-year label, not an explicit 'Fall 2027' statement, and could mean the cohort matriculating Fall 2026 (which would be stale) rather than the cycle recruiting for Fall 2027. The page does not disambiguate, so left as pending rather than assumed. No application deadline was stated on this page.",
+      "pcsas": true
     },
     {
       "id": "university-of-denver-phd",
@@ -3065,7 +3088,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: November 15, 2026. This page and the Clinical Faculty directory (https://psychology.uga.edu/directory/clinical-faculty) confirm the Fall 2027 cycle is active (deadline November 15) but do not publish a per-faculty accepting/not-accepting list; applicants are simply told to identify a clinical faculty mentor based on published research interests. No faculty-specific acceptance page was found."
+      "note": "Deadline: November 15, 2026. This page and the Clinical Faculty directory (https://psychology.uga.edu/directory/clinical-faculty) confirm the Fall 2027 cycle is active (deadline November 15) but do not publish a per-faculty accepting/not-accepting list; applicants are simply told to identify a clinical faculty mentor based on published research interests. No faculty-specific acceptance page was found.",
+      "pcsas": true
     },
     {
       "id": "university-of-hartford-psyd",
@@ -3145,7 +3169,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: November 15, 2026. The page is internally inconsistent: it labels the admissions cycle 'Fall 2026' but gives a deadline of November 15, 2026, which cannot logically apply to a Fall 2026 start (already past as of Aug 2026) and instead matches a Fall 2027 cycle whose 'Fall 2026' label appears to be an un-updated leftover from last year's text. Per the disambiguation rule, this was not resolved by guessing; left as pending. The 5 named faculty (Fairbairn, Hankin, Hunter, Rodriguez, Todd) are quoted above for reference but not asserted as the confirmed Fall 2027 list."
+      "note": "Deadline: November 15, 2026. The page is internally inconsistent: it labels the admissions cycle 'Fall 2026' but gives a deadline of November 15, 2026, which cannot logically apply to a Fall 2026 start (already past as of Aug 2026) and instead matches a Fall 2027 cycle whose 'Fall 2026' label appears to be an un-updated leftover from last year's text. Per the disambiguation rule, this was not resolved by guessing; left as pending. The 5 named faculty (Fairbairn, Hankin, Hunter, Rodriguez, Todd) are quoted above for reference but not asserted as the confirmed Fall 2027 list.",
+      "pcsas": true
     },
     {
       "id": "university-of-indianapolis-psyd",
@@ -3177,7 +3202,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "This three-tier (yes/maybe/no) list is explicitly for Fall 2026 entry, which is stale relative to the Fall 2027 target (that cohort is already decided as of Aug 2026); the page had not yet been updated for the new cycle at time of check. Quoted verbatim for reference but not reported as the current Fall 2027 status. Note: Ece Demir-Lira appears in the 'not recruiting' sentence but does not appear in the separate 'Faculty in clinical science' roster lower on the same page, an inconsistency in the source page itself."
+      "note": "This three-tier (yes/maybe/no) list is explicitly for Fall 2026 entry, which is stale relative to the Fall 2027 target (that cohort is already decided as of Aug 2026); the page had not yet been updated for the new cycle at time of check. Quoted verbatim for reference but not reported as the current Fall 2027 status. Note: Ece Demir-Lira appears in the 'not recruiting' sentence but does not appear in the separate 'Faculty in clinical science' roster lower on the same page, an inconsistency in the source page itself.",
+      "pcsas": true
     },
     {
       "id": "university-of-kansas-phd",
@@ -3209,7 +3235,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page explicitly covers the Fall 2026 cohort, not Fall 2027, and as of today (Aug 8, 2026) has not been updated for the new cycle (confirmed via a follow-up search that found no Fall 2027 version). For reference only, the Fall-2026-labeled names are Christal Badour, Michelle Martel, Justin Karr, Marta Stojanovic, Megan Davis, and Frances Griffith (Clinical Psychology primary faculty), plus Matt Kim (developmental, occasional mentor) and Meghan Marsac (outside psychology, occasional mentor) -- these are stale and not reported as current."
+      "note": "Page explicitly covers the Fall 2026 cohort, not Fall 2027, and as of today (Aug 8, 2026) has not been updated for the new cycle (confirmed via a follow-up search that found no Fall 2027 version). For reference only, the Fall-2026-labeled names are Christal Badour, Michelle Martel, Justin Karr, Marta Stojanovic, Megan Davis, and Frances Griffith (Clinical Psychology primary faculty), plus Matt Kim (developmental, occasional mentor) and Meghan Marsac (outside psychology, occasional mentor) -- these are stale and not reported as current.",
+      "pcsas": true
     },
     {
       "id": "university-of-la-verne-psyd",
@@ -3281,7 +3308,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1, 2026. The apply-admission page lists 14 faculty recruiting department-wide across ALL program areas, not just Clinical (full list: Caroline Charpentier, Andrea Chronis-Tuscano, Lea Dougherty, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Alexander Shackman, Terrill Taylor, Fanita Tyrell, Henry Willis). I cross-referenced this against the Clinical (CLIN) area faculty roster at https://psyc.umd.edu/clin-faculty (Edward Bernat, Jack Blanchard, Colleen Byrne, Andrea Chisolm, Andrea Chronis-Tuscano, Andres De Los Reyes, Lea Dougherty, Jessica Magidson, Alexander Shackman) to isolate the clinical-area names. Excluded as non-clinical: Caroline Charpentier, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Terrill Taylor, Fanita Tyrell, Henry Willis. CORRECTED BACK: verification reverted this to the full 14-name department-wide list without confirming the excluded 11 actually belong to the Clinical concentration (the repair note admits this itself: \"should be independently verified... before finalizing\"). Restored to the clinical-only subset (cross-referenced against psyc.umd.edu/clin-faculty) that the original find-stage check had already isolated correctly. Corrected during verification: URL loads and quote matches, but the accepting list is incomplete — the page lists 14 faculty hoping to recruit for Fall 2027, not just 3. The claim omitted Caroline Charpentier, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Terrill Taylor, Fanita Tyrell, and Henry Willis. Note some of these may belong to non-clinical concentrations sharing the page; this should be independently verified against the Clinical program's specific faculty list before finalizing, but as given the list is missing many names."
+      "note": "Deadline: December 1, 2026. The apply-admission page lists 14 faculty recruiting department-wide across ALL program areas, not just Clinical (full list: Caroline Charpentier, Andrea Chronis-Tuscano, Lea Dougherty, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Alexander Shackman, Terrill Taylor, Fanita Tyrell, Henry Willis). I cross-referenced this against the Clinical (CLIN) area faculty roster at https://psyc.umd.edu/clin-faculty (Edward Bernat, Jack Blanchard, Colleen Byrne, Andrea Chisolm, Andrea Chronis-Tuscano, Andres De Los Reyes, Lea Dougherty, Jessica Magidson, Alexander Shackman) to isolate the clinical-area names. Excluded as non-clinical: Caroline Charpentier, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Terrill Taylor, Fanita Tyrell, Henry Willis. CORRECTED BACK: verification reverted this to the full 14-name department-wide list without confirming the excluded 11 actually belong to the Clinical concentration (the repair note admits this itself: \"should be independently verified... before finalizing\"). Restored to the clinical-only subset (cross-referenced against psyc.umd.edu/clin-faculty) that the original find-stage check had already isolated correctly. Corrected during verification: URL loads and quote matches, but the accepting list is incomplete — the page lists 14 faculty hoping to recruit for Fall 2027, not just 3. The claim omitted Caroline Charpentier, Arianna Gard, Evan Hart, Derek Iwamoto, Atsushi Kikumoto, Edward Lemay, Elizabeth Redcay, Matthew Roesch, Terrill Taylor, Fanita Tyrell, and Henry Willis. Note some of these may belong to non-clinical concentrations sharing the page; this should be independently verified against the Clinical program's specific faculty list before finalizing, but as given the list is missing many names.",
+      "pcsas": true
     },
     {
       "id": "university-of-maryland-baltimore-county-phd",
@@ -3354,7 +3382,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Directly opened psy.miami.edu/graduate/clinical-program/people.html (lists clinical faculty by division - Adult, Child, Health - with no acceptance status shown) and the clinical-program overview and how-to-apply pages; none currently post a Fall 2027 accepting-students list. General web information indicates the department typically posts this information by late August each year, so it may not be up yet."
+      "note": "Directly opened psy.miami.edu/graduate/clinical-program/people.html (lists clinical faculty by division - Adult, Child, Health - with no acceptance status shown) and the clinical-program overview and how-to-apply pages; none currently post a Fall 2027 accepting-students list. General web information indicates the department typically posts this information by late August each year, so it may not be up yet.",
+      "pcsas": true
     },
     {
       "id": "university-of-michigan-phd",
@@ -3370,7 +3399,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "lsa.umich.edu/psych/program-areas/clinical-science/clinical-science-admissions.html returned HTTP 403 Forbidden on direct fetch (bot-blocked); could not open or read the page to verify any faculty accepting-students list."
+      "note": "lsa.umich.edu/psych/program-areas/clinical-science/clinical-science-admissions.html returned HTTP 403 Forbidden on direct fetch (bot-blocked); could not open or read the page to verify any faculty accepting-students list.",
+      "pcsas": true
     },
     {
       "id": "university-of-mississippi-phd",
@@ -3487,7 +3517,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1st (for best consideration). The only faculty-acceptance list on the program's site currently names Fall 2026 recruiters (Cassandra Boness, James Cavanagh, Benjamin Clark, Vincent Clark, Joshua Grubbs, Cecilia Hinojosa, Kent Kiehl, Colin Mahoney, Geoffrey Miller, Laura Ornelas, Eric Ruthruff, Kamilla Venner, Jacob Vigil, Elizabeth Yeater) -- a prior, already-decided cycle, not Fall 2027. The page has not yet been updated for the Fall 2027 cycle, so status is pending rather than posted; leaving name arrays empty per instructions."
+      "note": "Deadline: December 1st (for best consideration). The only faculty-acceptance list on the program's site currently names Fall 2026 recruiters (Cassandra Boness, James Cavanagh, Benjamin Clark, Vincent Clark, Joshua Grubbs, Cecilia Hinojosa, Kent Kiehl, Colin Mahoney, Geoffrey Miller, Laura Ornelas, Eric Ruthruff, Kamilla Venner, Jacob Vigil, Elizabeth Yeater) -- a prior, already-decided cycle, not Fall 2027. The page has not yet been updated for the Fall 2027 cycle, so status is pending rather than posted; leaving name arrays empty per instructions.",
+      "pcsas": true
     },
     {
       "id": "university-of-north-carolina-at-charlotte-phd",
@@ -3599,7 +3630,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Checked naturalsciences.uoregon.edu/psychology/apply/graduate-admissions and .../psychology/research/research-areas. The admissions page states 'Not all professors are accepting graduate students for fall, so please view their research bios for the latest information' -- acceptance status is tracked per faculty member on individual bio/lab pages, not on one consolidated program list, and no working single directory of current statuses was found on the department's site. Application deadline: November 23, 2026 (per the graduate admissions page)."
+      "note": "Checked naturalsciences.uoregon.edu/psychology/apply/graduate-admissions and .../psychology/research/research-areas. The admissions page states 'Not all professors are accepting graduate students for fall, so please view their research bios for the latest information' -- acceptance status is tracked per faculty member on individual bio/lab pages, not on one consolidated program list, and no working single directory of current statuses was found on the department's site. Application deadline: November 23, 2026 (per the graduate admissions page).",
+      "pcsas": true
     },
     {
       "id": "university-of-pennsylvania-phd",
@@ -3615,7 +3647,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 8, 2026, 11:59 PM Eastern. Page explicitly confirms the Fall 2027 faculty list is not yet posted and will appear before the application opens October 1, 2026."
+      "note": "Deadline: December 8, 2026, 11:59 PM Eastern. Page explicitly confirms the Fall 2027 faculty list is not yet posted and will appear before the application opens October 1, 2026.",
+      "pcsas": true
     },
     {
       "id": "university-of-pittsburgh-phd",
@@ -3641,7 +3674,8 @@
         "Rebecca G. Reed",
         "Sophia Choukas-Bradley"
       ],
-      "note": "Deadline: December 1. Pitt's People directory can be filtered by Program='Clinical' and 'Accepting Graduate Students?'=Yes/No; I read the Yes-filtered and No-filtered results for Program=Clinical, then spot-verified the cycle year on an individual profile (Julie Fiez, https://psychology.pitt.edu/people/julie-fiez-phd), which explicitly says 'For Fall 2027 applications...', confirming the directory reflects the Fall 2027 cycle. A number of 'Affiliate of the Clinical Program' faculty who are primarily Psychiatry-department appointments (e.g., Jill Cyranowski, Erika Forbes, Tina Goldstein, Cecile Ladouceur, Michele Levine, Brooke Molina, Judith Morgan, Kenneth Perkins, Rebecca Thurston, Lauren Bylsma, Kasey Creswell, Shirley Hill) appeared in the unfiltered Clinical list but had no accepting/not-accepting value set in either filter and were excluded from both arrays rather than guessed. Corrected during verification: The URL loads and belongs to Pitt Psychology, and the accepting list of names matches the filtered results shown on that page. However, the quoted sentence ('For Fall 2027 applications, Dr. Fiez is recruiting for both Clinical and Cognitive programs.') does not appear anywhere on this list page — the page only shows Fiez's name/title/contact info with no such statement. That sentence likely comes from a different page (e.g. Fiez's individual bio) and should not be attributed to this URL."
+      "note": "Deadline: December 1. Pitt's People directory can be filtered by Program='Clinical' and 'Accepting Graduate Students?'=Yes/No; I read the Yes-filtered and No-filtered results for Program=Clinical, then spot-verified the cycle year on an individual profile (Julie Fiez, https://psychology.pitt.edu/people/julie-fiez-phd), which explicitly says 'For Fall 2027 applications...', confirming the directory reflects the Fall 2027 cycle. A number of 'Affiliate of the Clinical Program' faculty who are primarily Psychiatry-department appointments (e.g., Jill Cyranowski, Erika Forbes, Tina Goldstein, Cecile Ladouceur, Michele Levine, Brooke Molina, Judith Morgan, Kenneth Perkins, Rebecca Thurston, Lauren Bylsma, Kasey Creswell, Shirley Hill) appeared in the unfiltered Clinical list but had no accepting/not-accepting value set in either filter and were excluded from both arrays rather than guessed. Corrected during verification: The URL loads and belongs to Pitt Psychology, and the accepting list of names matches the filtered results shown on that page. However, the quoted sentence ('For Fall 2027 applications, Dr. Fiez is recruiting for both Clinical and Cognitive programs.') does not appear anywhere on this list page — the page only shows Fiez's name/title/contact info with no such statement. That sentence likely comes from a different page (e.g. Fiez's individual bio) and should not be attributed to this URL.",
+      "pcsas": true
     },
     {
       "id": "university-of-puerto-rico-phd",
@@ -3689,7 +3723,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: Not stated on this page (page notes 'Applications are not considered for the spring semester'); no specific December date given here. Page names Dr. Christie Petrenko, Dr. Ron Rogge, and Dr. Chad Shenk under the heading 'for the 2026-2027 academic year' but never uses a disambiguating 'Fall 2027' phrase. Given the current date (Aug 2026), '2026-2027 academic year' most plausibly denotes the cohort entering Fall 2026 (already decided), not the Fall 2027 cycle we need. The same page also has leftover stale text referencing 'the Fall 2025 admissions cycle' and 'the Fall 2026 admissions cycle' for GRE policy, confirming the page is not fully updated. Marking pending rather than asserting these three names apply to Fall 2027."
+      "note": "Deadline: Not stated on this page (page notes 'Applications are not considered for the spring semester'); no specific December date given here. Page names Dr. Christie Petrenko, Dr. Ron Rogge, and Dr. Chad Shenk under the heading 'for the 2026-2027 academic year' but never uses a disambiguating 'Fall 2027' phrase. Given the current date (Aug 2026), '2026-2027 academic year' most plausibly denotes the cohort entering Fall 2026 (already decided), not the Fall 2027 cycle we need. The same page also has leftover stale text referencing 'the Fall 2025 admissions cycle' and 'the Fall 2026 admissions cycle' for GRE policy, confirming the page is not fully updated. Marking pending rather than asserting these three names apply to Fall 2027.",
+      "pcsas": true
     },
     {
       "id": "university-of-san-francisco-psyd",
@@ -3737,7 +3772,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The only recruiting list currently posted is explicitly for Fall 2026 (last cycle), and the page itself instructs applicants to check back in October for the updated list -- i.e., the Fall 2027 list is not posted yet. Not reporting the Fall 2026 asterisked names (which included Bornovalova, Chenneville, Clayson, Gabbidon, Karver, McCrae, Spiegel, Verona, Schlauch) as current."
+      "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The only recruiting list currently posted is explicitly for Fall 2026 (last cycle), and the page itself instructs applicants to check back in October for the updated list -- i.e., the Fall 2027 list is not posted yet. Not reporting the Fall 2026 asterisked names (which included Bornovalova, Chenneville, Clayson, Gabbidon, Karver, McCrae, Spiegel, Verona, Schlauch) as current.",
+      "pcsas": true
     },
     {
       "id": "university-of-southern-mississippi-phd",
@@ -3903,7 +3939,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: Not restated on this page (department-wide PhD deadline is typically December 1). This page's posted recruiting list is explicitly for Fall 2026 entry, not Fall 2027 -- it has not yet been updated for the cycle requested. Hurd, Sequeira, and Teachman are therefore not reported as current Fall 2027 accepters."
+      "note": "Deadline: Not restated on this page (department-wide PhD deadline is typically December 1). This page's posted recruiting list is explicitly for Fall 2026 entry, not Fall 2027 -- it has not yet been updated for the cycle requested. Hurd, Sequeira, and Teachman are therefore not reported as current Fall 2027 accepters.",
+      "pcsas": true
     },
     {
       "id": "university-of-washington-phd",
@@ -3935,7 +3972,8 @@
         "Vibh Forsythe Cox",
         "William George"
       ],
-      "note": "Deadline: December 1, 2026. UW's faculty directory covers all 129 department faculty across 7 advising areas (Adult Clinical, Child Clinical, Cognition and Perception, Developmental, Neural Systems and Behavior, Quantitative Psychology, Social and Personality). Filtered to only Adult Clinical (12 faculty) and Child Clinical (8 faculty) to isolate the Clinical Psychology PhD program. The table itself has no 'Fall 2027' label, but the Prospective Students page confirms the current live cycle is Autumn 2027 admissions, so these live accepting statuses were read as pertaining to that cycle. Emeritus/N-A faculty (Corey Fagan, Marsha Linehan, Ronald Smith, Katherine Comtois, Lynn Fainsilber Katz, Wendy Stone) excluded as not applicable."
+      "note": "Deadline: December 1, 2026. UW's faculty directory covers all 129 department faculty across 7 advising areas (Adult Clinical, Child Clinical, Cognition and Perception, Developmental, Neural Systems and Behavior, Quantitative Psychology, Social and Personality). Filtered to only Adult Clinical (12 faculty) and Child Clinical (8 faculty) to isolate the Clinical Psychology PhD program. The table itself has no 'Fall 2027' label, but the Prospective Students page confirms the current live cycle is Autumn 2027 admissions, so these live accepting statuses were read as pertaining to that cycle. Emeritus/N-A faculty (Corey Fagan, Marsha Linehan, Ronald Smith, Katherine Comtois, Lynn Fainsilber Katz, Wendy Stone) excluded as not applicable.",
+      "pcsas": true
     },
     {
       "id": "university-of-wisconsin-madison-phd",
@@ -3951,7 +3989,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "The department's own page explicitly warns that the lists currently displayed (both 'considering' and 'not considering' faculty) are stale and not yet updated for the Fall 2027 cycle, so no names were extracted from it. Separately, the Clinical Psychology Program page (https://psych.wisc.edu/graduate-program/clinical-psychology-program/) names the 7 core clinical faculty with admitting privileges as Ammerman, Curtin, Davidson, Gooding, Howell, Li, and Walsh, but does not give current accepting status for Fall 2027."
+      "note": "The department's own page explicitly warns that the lists currently displayed (both 'considering' and 'not considering' faculty) are stale and not yet updated for the Fall 2027 cycle, so no names were extracted from it. Separately, the Clinical Psychology Program page (https://psych.wisc.edu/graduate-program/clinical-psychology-program/) names the 7 core clinical faculty with admitting privileges as Ammerman, Curtin, Davidson, Gooding, Howell, Li, and Walsh, but does not give current accepting status for Fall 2027.",
+      "pcsas": true
     },
     {
       "id": "university-of-wisconsin-milwaukee-phd",
@@ -3999,7 +4038,8 @@
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "Checked the Clinical Science program page, Applications and Admissions page, How to Apply page, Prospective Students FAQ, and the Clinical Science faculty roster (vanderbilt.edu/psychological_sciences/people/?group=clinical_science&who=faculty, which lists Compas, Dykens, Garber, Hollon, Humphreys, Kaczkurkin, Kujawa, Olatunji, Park, Schaefer, Schlundt, Watts with no accepting indicator). Vanderbilt's central site does not publish a faculty-by-faculty accepting/not-accepting list for Fall 2027 and instead directs applicants to 'contact directly the faculty in whose research they are interested to learn more about whether they may be admitting new students.' No dedicated 'faculty accepting students' page could be located."
+      "note": "Checked the Clinical Science program page, Applications and Admissions page, How to Apply page, Prospective Students FAQ, and the Clinical Science faculty roster (vanderbilt.edu/psychological_sciences/people/?group=clinical_science&who=faculty, which lists Compas, Dykens, Garber, Hollon, Humphreys, Kaczkurkin, Kujawa, Olatunji, Park, Schaefer, Schlundt, Watts with no accepting indicator). Vanderbilt's central site does not publish a faculty-by-faculty accepting/not-accepting list for Fall 2027 and instead directs applicants to 'contact directly the faculty in whose research they are interested to learn more about whether they may be admitting new students.' No dedicated 'faculty accepting students' page could be located.",
+      "pcsas": true
     },
     {
       "id": "virginia-commonwealth-university-phd",
@@ -4064,7 +4104,8 @@
         "Rosanna Breaux",
         "Samantha Kempke"
       ],
-      "note": "Deadline: December 1. Confirmed current cycle is Fall 2027 via the department's Admissions and Funding page, which states 'GRE Policy for Fall 2027 Admissions.' Excluded Pearl Chiu, who is labeled 'Accepting students in Cognitive Neuroscience & Biopsychology' (a different concentration, per rule about shared faculty pages). Brooks Casas, Heather Davis, and John Richey are listed on the same Clinical Science Faculty page but carry no accepting/not-accepting label at all, so they were omitted from all three buckets rather than guessed."
+      "note": "Deadline: December 1. Confirmed current cycle is Fall 2027 via the department's Admissions and Funding page, which states 'GRE Policy for Fall 2027 Admissions.' Excluded Pearl Chiu, who is labeled 'Accepting students in Cognitive Neuroscience & Biopsychology' (a different concentration, per rule about shared faculty pages). Brooks Casas, Heather Davis, and John Richey are listed on the same Clinical Science Faculty page but carry no accepting/not-accepting label at all, so they were omitted from all three buckets rather than guessed.",
+      "pcsas": true
     },
     {
       "id": "w-post-campus-psyd",
@@ -4127,7 +4168,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page organizes considering-faculty by area (Aging & Development, Behavior/Brain/Cognition, Clinical, Social & Personality/Cognitive Sciences); only names listed under the 'Clinical' heading were used here, per the rule requiring isolation of the clinical-specific sublist from a shared cross-program page. Juston Osborne is annotated on the source page as '(incoming Clinical faculty, so he does not have a staff page yet).' A combined, department-wide 'NOT Considering FL27 Admission' list also appears on the page (Renee Thompson, Andrew Butler, Lori Markson, Jason Hassenstab, Chad Sylvester, Jeff Zacks, Derek Isaacowitz, Kirsten Gilbert, Richard Abrams, Len Green, Patrick Hill, Julie Bugg, Tamara Hershey, Brian Carpenter, Emily Willroth) but is NOT broken out by area, so none of those names could be reliably confirmed as Clinical-area (vs. one of the department's other four areas) -- per instructions not to guess, notAccepting is left empty rather than including this undifferentiated list."
+      "note": "Page organizes considering-faculty by area (Aging & Development, Behavior/Brain/Cognition, Clinical, Social & Personality/Cognitive Sciences); only names listed under the 'Clinical' heading were used here, per the rule requiring isolation of the clinical-specific sublist from a shared cross-program page. Juston Osborne is annotated on the source page as '(incoming Clinical faculty, so he does not have a staff page yet).' A combined, department-wide 'NOT Considering FL27 Admission' list also appears on the page (Renee Thompson, Andrew Butler, Lori Markson, Jason Hassenstab, Chad Sylvester, Jeff Zacks, Derek Isaacowitz, Kirsten Gilbert, Richard Abrams, Len Green, Patrick Hill, Julie Bugg, Tamara Hershey, Brian Carpenter, Emily Willroth) but is NOT broken out by area, so none of those names could be reliably confirmed as Clinical-area (vs. one of the department's other four areas) -- per instructions not to guess, notAccepting is left empty rather than including this undifferentiated list.",
+      "pcsas": true
     },
     {
       "id": "wayne-state-university-phd",
@@ -4345,7 +4387,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1. (Roster listed this school's name with a garbled \"Withdrawn, effective ...\" prefix — confirmed this is stray text from an adjacent row in the source PDF, not an actual accreditation withdrawal; this program's accreditation is active.) The roster 'school' field carries an apparent parsing artifact ('Withdrawn, effective October 19, 2024...') prefixed onto the name; this program's APA accreditation does not appear to actually be withdrawn (an active, current faculty-advisees page for the Fall 2027 cycle exists), so this is very likely stray text from an adjacent row in the source roster. Substantively: this is a single department-wide 'Faculty Considering New Advisees' page covering multiple PhD areas (Clinical Science and Psychopathology Research (CSPR), Cognitive and Brain Sciences, Counseling Psychology, Personality/Individual Differences/Behavior Genetics, and Social Psychology) that share one faculty roster. I isolated the CSPR (clinical) faculty only. Excluded as non-clinical: Fletcher (Randy) Charles, Gordon Legge, Paul Schrater (Cognitive and Brain Sciences); Richard M. Lee (Counseling Psychology); Matt McGue (Personality/Individual Differences/Behavior Genetics); Eugene Borgida, Christopher Federico, Alexander Rothman, Jeffry Simpson (Social Psychology) -- all listed on the same page as NOT accepting new advisees, but not in the Clinical Science area. The page explicitly disambiguates the cycle: 'the applications cycle due in Fall [2026] to begin the PhD in Fall 2027' equivalent framing -- page states this is 'as of now' for the current cycle leading to Fall 2027 matriculation."
+      "note": "Deadline: December 1. (Roster listed this school's name with a garbled \"Withdrawn, effective ...\" prefix — confirmed this is stray text from an adjacent row in the source PDF, not an actual accreditation withdrawal; this program's accreditation is active.) The roster 'school' field carries an apparent parsing artifact ('Withdrawn, effective October 19, 2024...') prefixed onto the name; this program's APA accreditation does not appear to actually be withdrawn (an active, current faculty-advisees page for the Fall 2027 cycle exists), so this is very likely stray text from an adjacent row in the source roster. Substantively: this is a single department-wide 'Faculty Considering New Advisees' page covering multiple PhD areas (Clinical Science and Psychopathology Research (CSPR), Cognitive and Brain Sciences, Counseling Psychology, Personality/Individual Differences/Behavior Genetics, and Social Psychology) that share one faculty roster. I isolated the CSPR (clinical) faculty only. Excluded as non-clinical: Fletcher (Randy) Charles, Gordon Legge, Paul Schrater (Cognitive and Brain Sciences); Richard M. Lee (Counseling Psychology); Matt McGue (Personality/Individual Differences/Behavior Genetics); Eugene Borgida, Christopher Federico, Alexander Rothman, Jeffry Simpson (Social Psychology) -- all listed on the same page as NOT accepting new advisees, but not in the Clinical Science area. The page explicitly disambiguates the cycle: 'the applications cycle due in Fall [2026] to begin the PhD in Fall 2027' equivalent framing -- page states this is 'as of now' for the current cycle leading to Fall 2027 matriculation.",
+      "pcsas": true
     },
     {
       "id": "wright-state-university-psyd",
@@ -4401,7 +4444,8 @@
         "Shirley Wang",
         "Tyrone Cannon"
       ],
-      "note": "Deadline: December 1. This is a single department-wide faculty acceptance table covering all Psychology PhD areas (Clinical, Cognitive, Developmental, Neuroscience, Social/Personality). I cross-referenced it against the separate Clinical Psychology area page (https://psychology.yale.edu/research/clinical-psychology), which names the actual clinical-area supervising faculty as: Arielle Baskin-Sommers, Tyrone Cannon, Dylan Gee, Jutta Joormann, Brenden Tervo-Clemmens, and Shirley Wang. Only these six were used to populate accepting/notAccepting; all other names on the department-wide list (e.g. Woo-kyoung Ahn, Dani Bassett, Wendy Berry Mendes, Margaret Clark, Peter Salovey, Brian Scholl, etc.) are primary in other areas (cognitive, social, developmental) and were excluded as non-clinical. Shirley Wang's entry read 'No, but available as a secondary advisor' -- placed in notAccepting since she is not accepting as a primary mentor, with this caveat noted here rather than fabricating a fourth category."
+      "note": "Deadline: December 1. This is a single department-wide faculty acceptance table covering all Psychology PhD areas (Clinical, Cognitive, Developmental, Neuroscience, Social/Personality). I cross-referenced it against the separate Clinical Psychology area page (https://psychology.yale.edu/research/clinical-psychology), which names the actual clinical-area supervising faculty as: Arielle Baskin-Sommers, Tyrone Cannon, Dylan Gee, Jutta Joormann, Brenden Tervo-Clemmens, and Shirley Wang. Only these six were used to populate accepting/notAccepting; all other names on the department-wide list (e.g. Woo-kyoung Ahn, Dani Bassett, Wendy Berry Mendes, Margaret Clark, Peter Salovey, Brian Scholl, etc.) are primary in other areas (cognitive, social, developmental) and were excluded as non-clinical. Shirley Wang's entry read 'No, but available as a secondary advisor' -- placed in notAccepting since she is not accepting as a primary mentor, with this caveat noted here rather than fabricating a fourth category.",
+      "pcsas": true
     },
     {
       "id": "yeshiva-university-phd",
@@ -4450,6 +4494,74 @@
       "maybe": [],
       "notAccepting": [],
       "note": "Deadline: January 1. This is the 'Clinical Psychology, PsyD' program at Ferkauf Graduate School of Psychology (distinct from the separate 'School-Clinical Child Psychology, PsyD' program, which was excluded as non-clinical). Checked the program page, the Ferkauf-wide Admissions page, and the combined faculty listing page -- all list PsyD faculty (e.g. Kenneth Critchfield, Vera Bekes, Sarah Bloch-Elkouby, Peter Franz, Gabriela Khazanov, Lata K. McGinn, Leanne Quigley, Kailey Roberts, Margaret Sala, Jamie Schumpf, Richard Zweig) but none indicate accepting/not-accepting status for Fall 2027. Deadline (Jan 1) confirmed on the Ferkauf Admissions page."
+    },
+    {
+      "id": "colorado-state-university-phd",
+      "school": "Colorado State University",
+      "program": "Clinical Psychology PhD",
+      "state": "CO",
+      "degree": "PhD",
+      "url": "https://psychology.colostate.edu/clinicalscience/",
+      "status": "pending",
+      "cycle": "Fall 2027",
+      "checked": "2026-08-10",
+      "sourceQuote": "Applications are due December 1, 2025.",
+      "accepting": [],
+      "maybe": [],
+      "notAccepting": [],
+      "note": "Page (opened directly) lists faculty recruiting for the Fall 2026 admissions cycle — Core Faculty: Silvia Canetto, Reagan Miller-Chagnon, Bradley Conner, Noah Emery; Associated Faculty: Emily Merz, Niccole Nelson — not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check (Aug 2026).",
+      "pcsas": true
+    },
+    {
+      "id": "university-of-texas-at-austin-phd",
+      "school": "University of Texas at Austin",
+      "program": "Clinical Psychology PhD",
+      "state": "TX",
+      "degree": "PhD",
+      "url": "https://liberalarts.utexas.edu/psychology/graduate-program/clinical-phd-program/",
+      "status": "unverified",
+      "cycle": "Fall 2027",
+      "checked": "2026-08-10",
+      "sourceQuote": "Applicants are strongly encouraged to contact prospective mentors to learn whether or not that faculty member plans to accept new students for the coming year.",
+      "accepting": [],
+      "maybe": [],
+      "notAccepting": [],
+      "note": "UT Austin's clinical program does not publish a centralized per-faculty accepting/not-accepting list; the page directs applicants to check individual faculty websites or contact mentors directly to learn recruiting status.",
+      "pcsas": true
+    },
+    {
+      "id": "university-of-texas-at-dallas-phd",
+      "school": "University of Texas at Dallas",
+      "program": "Clinical Psychological Science PhD",
+      "state": "TX",
+      "degree": "PhD",
+      "url": "https://bbs.utdallas.edu/departments/psychology/graduate-programs/psychology-phd/",
+      "status": "unverified",
+      "cycle": "Fall 2027",
+      "checked": "2026-08-10",
+      "sourceQuote": "Beginning in Fall 2026, there will be a clinical psychological sciences concentration available in the Psychology PhD program.",
+      "accepting": [],
+      "maybe": [],
+      "notAccepting": [],
+      "note": "This is a newer concentration (added Fall 2026) within UT Dallas's general Psychology PhD; no per-faculty accepting-students list is published. Prospective applicants are directed to email psysciencesphd@utdallas.edu directly.",
+      "pcsas": true
+    },
+    {
+      "id": "university-of-missouri-phd",
+      "school": "University of Missouri",
+      "program": "Clinical Psychology PhD",
+      "state": "MO",
+      "degree": "PhD",
+      "url": "https://psychology.missouri.edu/grad/clinical-faculty-mentors",
+      "status": "pending",
+      "cycle": "Fall 2027",
+      "checked": "2026-08-10",
+      "sourceQuote": "The following Clinical Psychology faculty WILL be accepting students for the fall 2026 admissions class",
+      "accepting": [],
+      "maybe": [],
+      "notAccepting": [],
+      "note": "Page (opened directly) lists faculty recruiting for the Fall 2026 admissions cycle — Ian Gizer, Kristin Hawley, Sean Lane, Denis McCarthy (clinical), plus Ashley Groh (developmental, requires clinical co-mentor) — not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check (Aug 2026). This is the Columbia (Mizzou) flagship campus, distinct from the separately-listed Kansas City and St. Louis campus entries.",
+      "pcsas": true
     }
   ]
 }
