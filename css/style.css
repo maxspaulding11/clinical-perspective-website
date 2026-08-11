@@ -118,11 +118,18 @@ a:hover { text-decoration: underline; }
 .main-nav a:hover { color: var(--maroon); text-decoration: none; }
 
 .nav-ig {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
   border: 1px solid var(--navy);
-  border-radius: 999px;
-  padding: 7px 14px;
+  border-radius: 50%;
+  padding: 0;
   color: var(--navy) !important;
 }
+.nav-ig svg { display: block; }
 .nav-ig:hover {
   background: var(--navy);
   color: var(--cream) !important;
@@ -142,6 +149,7 @@ a:hover { text-decoration: underline; }
 }
 
 .nav-account {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -154,17 +162,21 @@ a:hover { text-decoration: underline; }
   align-items: center;
   gap: 8px;
   font-size: 0.9rem;
+  font-family: inherit;
   color: var(--ink-soft) !important;
+  background: none;
   border: 1px solid var(--navy);
   border-radius: 999px;
   padding: 5px 12px 5px 6px;
+  cursor: pointer;
   /* Long names truncate with an ellipsis rather than pushing the account
      pill onto its own row below Spare Change / Instagram. */
   max-width: 124px;
   min-width: 0;
   flex: 0 1 auto;
 }
-.nav-account-name:hover {
+.nav-account-name:hover,
+.nav-account.open .nav-account-name {
   color: var(--maroon) !important;
   border-color: var(--maroon);
 }
@@ -173,6 +185,62 @@ a:hover { text-decoration: underline; }
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 0;
+}
+.nav-account-caret {
+  font-size: 0.6rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  transition: transform 0.15s ease;
+}
+.nav-account.open .nav-account-caret {
+  transform: rotate(180deg);
+}
+
+.nav-account-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  z-index: 50;
+}
+.nav-account.open .nav-account-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-account-menu a {
+  padding: 9px 12px;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  color: var(--ink) !important;
+  white-space: nowrap;
+}
+.nav-account-menu a:hover {
+  background: var(--navy);
+  color: var(--cream) !important;
+  text-decoration: none;
+}
+.nav-account-menu a.nav-signout {
+  color: var(--maroon) !important;
+  border-top: 1px solid var(--rule);
+  border-radius: 0 0 7px 7px;
+  margin-top: 4px;
+  padding-top: 11px;
+}
+.nav-account-menu a.nav-signout:hover {
+  background: var(--maroon);
+  color: var(--cream) !important;
 }
 
 .nav-account-avatar {
@@ -192,13 +260,13 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
 }
 
-.nav-signin, .nav-signout {
+.nav-signin {
   border: 1px solid var(--navy);
   border-radius: 999px;
   padding: 7px 14px;
   color: var(--navy) !important;
 }
-.nav-signin:hover, .nav-signout:hover {
+.nav-signin:hover {
   background: var(--navy);
   color: var(--cream) !important;
   text-decoration: none;

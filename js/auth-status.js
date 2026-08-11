@@ -23,35 +23,62 @@ window.spareChangeSession = (function () {
     if (user) {
       const firstName = (user.name || user.email || "Account").trim().split(/\s+/)[0];
 
-      const name = document.createElement("a");
-      name.className = "nav-account-name";
-      name.href = "queue.html#my-activity";
-      name.title = "See your submitted and upvoted studies";
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "nav-account-name";
+      toggle.setAttribute("aria-haspopup", "true");
+      toggle.setAttribute("aria-expanded", "false");
 
       if (user.image) {
         const avatar = document.createElement("img");
         avatar.className = "nav-account-avatar";
         avatar.src = user.image;
         avatar.alt = "";
-        name.appendChild(avatar);
+        toggle.appendChild(avatar);
       } else {
         const avatar = document.createElement("span");
         avatar.className = "nav-account-avatar nav-account-avatar-fallback";
         avatar.textContent = firstName.charAt(0).toUpperCase();
-        name.appendChild(avatar);
+        toggle.appendChild(avatar);
       }
       const nameText = document.createElement("span");
       nameText.className = "nav-account-name-text";
       nameText.textContent = firstName;
-      name.appendChild(nameText);
+      toggle.appendChild(nameText);
+
+      const caret = document.createElement("span");
+      caret.className = "nav-account-caret";
+      caret.setAttribute("aria-hidden", "true");
+      caret.textContent = "▾";
+      toggle.appendChild(caret);
+
+      const menu = document.createElement("div");
+      menu.className = "nav-account-menu";
+
+      const activity = document.createElement("a");
+      activity.href = "/queue.html#my-activity";
+      activity.title = "See your submitted and upvoted studies";
+      activity.textContent = "My activity";
+      menu.appendChild(activity);
 
       const signOut = document.createElement("a");
       signOut.className = "nav-signout";
       signOut.href = origin + "/signout?callbackUrl=" + callbackUrl;
       signOut.textContent = "Sign out";
+      menu.appendChild(signOut);
 
-      slot.appendChild(name);
-      slot.appendChild(signOut);
+      slot.appendChild(toggle);
+      slot.appendChild(menu);
+
+      toggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const isOpen = slot.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
+      document.addEventListener("click", () => {
+        slot.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     } else {
       const signIn = document.createElement("a");
       signIn.className = "nav-signin";

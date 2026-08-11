@@ -1,73 +1,124 @@
-# How to Use Your Website — Plain English Guide
+# Managing The Clinical Perspective — Complete Guide
 
-No coding experience needed. This covers everything: viewing the site, putting
-it online, adding new posts, and changing things later.
+No coding experience needed for the day-to-day sections. The parts that
+genuinely require Claude Code's help say so explicitly — for those, just
+open a session and describe what you want in plain English.
+
+**Last reviewed:** 2026-08-09.
 
 ---
+
+## 0. The big picture — what you actually have
+
+Two separate projects, connected by one shared login:
+
+| | What it is | Where it lives | Where it's hosted |
+|---|---|---|---|
+| **The Clinical Perspective** | The public content site — studies, About, Tools, legal pages | `Desktop\The Clinical Perspective\Website` | Netlify, deployed by dragging this folder onto the Netlify Deploys page |
+| **Spare Change** | A separate Next.js app with real user accounts (Google sign-in) that also powers the Reader Queue's shared login | `Desktop\The Clinical Perspective\spare-change` | Vercel, deployed from the CLI (no GitHub repo) |
+
+They talk to each other over the network (the Website calls Spare Change's
+API for sign-in and the Reader Queue), but they are edited, tested, and
+deployed completely separately. Nothing you do to one automatically touches
+the other.
+
+**Confirmed manually (2026-08-09):** this site is on Netlify's manual
+deploy model, not continuous deployment. There **is** a real git repo with a
+GitHub remote, and Claude Code can commit and push to it — but pushing to
+GitHub by itself does **not** update the live site. GitHub is being used
+here purely as version history, not as Netlify's deploy source. **Every
+change still needs the drag-and-drop step in Section 2 to actually go
+live**, even after a successful git push. This is the opposite of what an
+earlier version of this guide assumed — if anything here ever seems to
+contradict what actually happens when you deploy, trust what you observe
+and tell Claude Code, since this can drift out of date again.
+
+---
+
+## PART A — The Clinical Perspective (the main site)
 
 ## 1. What's in this folder (and what you can ignore)
 
-Your website lives in this folder (`Desktop\CP`). Only **one file matters**
-for day-to-day use:
-
-| File | What it is | Do you touch it? |
+| File / folder | What it is | Do you touch it? |
 |---|---|---|
 | `scripts\studies-source.json` | The master list of every study you've covered | **Yes — every time you post** |
-| `research.html` | The full research archive page | No — it's generated |
-| `studies\` | One page per study (45 of them) | No — they're generated |
-| `data\posts.json` | Feeds the homepage "Latest Research" | No — it's generated |
-| `index.html` | The homepage | No |
+| `scripts\build.py` | Regenerates the site from that file | Run it, don't edit it |
+| `research.html`, `studies\`, `data\posts.json`, `data\studies.json`, `sitemap.xml` | Generated from `studies-source.json` | No — rebuilt automatically, edits get wiped |
+| `data\programs.json` | The "who's accepting doctoral students" data | No — see Part A, Section 4 |
+| `tools\` | The Citation Generator, PhD guide, and faculty directory pages | No, unless asking Claude to change wording |
+| `index.html`, `about.html`, `legal.html`, etc. | The main pages | Only with Claude's help, or careful manual HTML edits |
 | `css\style.css` | Colors and fonts | No |
-| `js\main.js` | Makes the site work | Only to change your email |
-| `js\analytics-config.js` | Turns on visitor stats | Once, in section 9 |
-| `js\spare-change-config.js` | Points the Reader Queue at Spare Change | Only once you buy a custom domain (section 6) |
-| `assets\logo.jpg` | Your CP logo | No |
+| `js\main.js` | Site behavior | Only to change your contact email |
+| `js\analytics-config.js` | Cloudflare visitor stats — already turned on | No, unless the token needs replacing |
+| `js\spare-change-config.js` | Points the Reader Queue at Spare Change | Only when the Spare Change URL changes |
+| `assets\logo.png` | Your logo | No |
 
-> **Important:** anything marked *generated* is rebuilt from
-> `scripts\studies-source.json`. If you edit those files by hand, your changes
-> get wiped the next time the site is rebuilt. Always edit the source file.
-
----
-
-## 2. Put your website online (one-time setup, ~10 minutes)
-
-We'll use **Netlify** — it's free and doesn't require any coding.
-
-1. Go to **https://app.netlify.com/signup** in your browser.
-2. Sign up with your email (free — no credit card).
-3. Once logged in, go to **https://app.netlify.com/drop**.
-4. Open File Explorer, find your `CP` folder on your Desktop.
-5. **Drag the whole CP folder** onto the Netlify page where it says
-   "Drag and drop your site output folder here."
-6. Wait about 30 seconds. Netlify gives you a link like
-   `https://random-name-12345.netlify.app` — **that's your live website.**
-7. To make the link nicer: in Netlify, click **Site configuration →
-   Change site name** and pick something like `theclinicalperspective`
-   → your site becomes `https://theclinicalperspective.netlify.app`.
-8. Copy that link and paste it into your **Instagram bio**
-   (Edit profile → Website).
-
-> Want a custom address like `theclinicalperspective.com`? You can buy one
-> later (~$12/year) through Netlify: **Domain management → Add a domain**.
-> Everything else stays the same.
+> **Rule of thumb:** if a file is described as "generated" anywhere in this
+> guide, never hand-edit it. Edit the source file and rebuild instead.
 
 ---
 
-## 3. Add a new study to the site (do this each time you post on Instagram)
+## 2. Deploying changes — two separate steps, both required
 
-Every study now gets its **own page** on your site with the full summary on
-it — that's what Google can find and index. All of those pages are built
-automatically from one file, so you only ever edit that one file.
+There are genuinely two different systems here, and doing only one of them
+leaves the live site unchanged. This is easy to miss because git makes it
+*feel* like something happened.
 
-**The easy way: ask Claude Code.** Say *"add this study to the site"* and
-paste your summary + citation. It'll add the entry and rebuild everything.
+**Step 1 — git (version history only, does NOT go live):**
+1. Changes are made to files in this folder.
+2. `git add` stages them, `git commit` saves a labeled checkpoint, and
+   `git push origin main` sends that history to GitHub.
+3. This is useful — it's a real backup and changelog of everything ever
+   done to the site — but **GitHub is not connected to Netlify's deploy
+   process here**. Pushing does nothing to the live site by itself.
+
+**Step 2 — the actual deploy, done by hand every time:**
+1. Log into **app.netlify.com** and open your site.
+2. Click the **Deploys** tab.
+3. Open File Explorer to `Desktop\The Clinical Perspective\Website`.
+4. **Drag the whole `Website` folder** onto the Netlify page, where it says
+   to drop your site's folder.
+5. Wait about 30 seconds — Netlify shows the new deploy as "Published."
+
+**To check the live result:** visit **theclinicalperspective.org** directly.
+
+**The practical rule:** whenever Claude Code says a change is "committed" or
+"pushed," that only means Step 1 happened. Nothing is actually live until
+someone does Step 2. Claude Code cannot do Step 2 itself — it requires your
+own logged-in Netlify session and an OS-level drag-and-drop, neither of
+which Claude Code can perform. Always do the drag-and-drop after any commit
+you want to see on the real site.
+
+**Worth considering:** Netlify can link directly to your GitHub repo so that
+`git push` alone triggers a real deploy, permanently removing Step 2. That's
+a one-time change in **Site configuration → Build & deploy → Link repository**
+on Netlify's side — ask Claude Code if you'd like help thinking through it,
+since it would make the git-based workflow actually match what this guide
+described before this correction. Not urgent, just worth knowing it's an
+option.
+
+If you ever want to make a small wording change yourself without asking
+Claude: edit the file in Notepad, save it, then drag the `Website` folder
+onto Netlify's Deploys page (Section 2, Step 2) — that's the part that
+actually matters for the live site. Committing to git is good practice but
+optional for a quick manual edit like this.
+
+---
+
+## 3. Add a new study (do this each time you post on Instagram)
+
+Every study gets its own real page — that's what Google indexes; Instagram
+embeds alone are invisible to search engines.
+
+**The easy way: ask Claude Code.** Say *"add this study to the site and
+deploy it"* and paste your summary + citation.
 
 **The manual way:**
 
-1. Open `CP\scripts\studies-source.json` in Notepad.
-2. Copy an existing entry (from `{` to `}`) and paste it at the end of the
-   list, just before the final `]`. Add a **comma** after the `}` above it.
-3. Fill in your new study:
+1. Open `scripts\studies-source.json` in Notepad.
+2. Copy an existing entry (`{` to `}`) and paste it before the final `]`.
+   Add a comma after the entry above it.
+3. Fill in the new study:
 
    ```
    {
@@ -75,8 +126,8 @@ paste your summary + citation. It'll add the entry and rebuild everything.
      "date": "2026-08-26",
      "title": "Does EMDR really work?",
      "tag": "Myth Check",
-     "blurb": "One sentence teaser — this shows on the homepage and in Google results.",
-     "summary": "Your full lay summary paragraph goes here.",
+     "blurb": "One sentence teaser for the homepage and Google results.",
+     "summary": "Your full lay summary paragraph.",
      "journal": "Cureus",
      "authors": "Peji et al.",
      "pubdate": "June 2026",
@@ -87,227 +138,217 @@ paste your summary + citation. It'll add the entry and rebuild everything.
    }
    ```
 
-   - `pmid`, `doi`, and `url` — fill in whichever you have, put `null` for
-     the rest. The "Read the original study" button uses the DOI first, then
-     the PMID, then the URL.
-   - `instagram` — optional. Paste the post's Instagram link
-     (`https://www.instagram.com/p/ABC123xyz/`) and the homepage card will
-     embed the actual post. Leave it as `""` if you'd rather not.
-   - `tag` — reuse an existing one where you can (they become the filter
-     buttons on the archive page).
+   - Fill in whichever of `pmid` / `doi` / `url` you have; `null` for the rest.
+   - `instagram` is optional — paste the post link to embed it on the homepage card.
+   - Reuse an existing `tag` where possible (they become the archive filter buttons).
 
-4. **Save** (Ctrl+S) and close Notepad.
-5. Rebuild the site — open the `CP` folder, type `cmd` in the address bar,
-   press Enter, then run:
-
+4. Save and close.
+5. Open a terminal in this folder and run:
    ```
    python scripts\build.py
    ```
+   You should see `N study pages written`.
+6. Drag the `Website` folder onto Netlify's Deploys page (Section 2) to
+   actually publish it. Commit and push to git too if you want it in your
+   version history, but that step alone won't make it live.
 
-   You should see `46 study pages written`.
+⚠️ The two mistakes that break the build: a missing **comma** between
+entries, or a missing **quote mark**.
 
-⚠️ The two mistakes that break it (if the build fails or the page goes
-blank, it's one of these):
-- A missing **comma** between entries
-- A missing **quote mark** around any of the text
-
-Newest always shows first — you never need to reorder anything.
-
-**Scheduling ahead is fine.** `studies-source.json` holds your whole
-schedule, including studies you haven't posted yet. A study with a future
-`date` is **not** published — no page, not on the homepage, not in the
-archive, not in the sitemap. It's released automatically the first time you
-run the build on or after its date. So the build output normally looks like:
-
-```
-Published 22 studies (through 2026-08-02).
-Holding back 23 scheduled studies dated after 2026-08-02.
-  Next up: 2026-08-03 — Schizophrenia genetics beyond European ancestry
-```
-
-That's why the count on the site is lower than the number of entries in the
-file — the rest are queued, not missing. Since you re-upload after each
-Instagram post anyway, each day's study goes live right on schedule.
-
-**Step C — update the live website:**
-1. Log in to **netlify.com** and click your site.
-2. Click the **Deploys** tab.
-3. Drag your whole `CP` folder onto the page again (same as before).
-4. Done — the live site updates in about 30 seconds.
-
-That's the whole routine: *post on Instagram → add the entry → run the
-build → drag folder to Netlify.*
+**Scheduling ahead is fine.** A study dated in the future stays hidden
+everywhere (no page, no homepage card, not in the sitemap) until you run the
+build on or after its date — so you can queue up weeks of content at once
+and it releases itself on schedule as you post.
 
 ---
 
-## 4. When someone wants to submit research to you
+## 4. The Tools section (`/tools/`)
 
-Nothing for you to do — it's automatic:
-- **"Email a Submission"** opens an email addressed to you
-  (theclinicalperspective@gmail.com) with a pre-filled template.
-- **"Message on Instagram"** opens a DM to @the_clinical_perspective.
+Three tools live here, linked from the nav as **Tools**:
 
-Submissions just arrive in your inbox / DMs like normal messages.
+**Citation Generator** (`tools/citations.html`) — paste a DOI, PubMed ID, or
+ISBN and it produces a correct APA 7 reference, both in-text forms, and a
+downloadable Word reference page. Nothing to maintain; the underlying logic
+is in `js/apa.js` and `js/citations.js`.
 
----
+**Applying to Clinical Psychology PhD Programs** (`tools/applying-to-clinical-psychology-phd-programs.html`)
+— a static how-to guide. Update it the same way as any other page: ask
+Claude Code, or edit the HTML directly.
 
-## 5. Common changes
+**Who's Accepting Doctoral Students** (`tools/faculty-accepting-students.html`)
+— a directory of which clinical psychology faculty are accepting doctoral
+students, sourced from ~253 APA-accredited programs' own admissions pages.
+The data lives in `data/programs.json`.
 
-**Change the contact email:** open `js\main.js` in Notepad, find the line
-near the top that says `const CONTACT_EMAIL = "..."` and change the address
-between the quotes. Save, then re-upload to Netlify (Step 3C).
+**This one needs periodic re-checking, and it needs Claude Code's help to do
+it properly** — the whole point of this tool is that every name is read
+directly from a program's own page (never from search results, which were
+tested and found to be wrong or incomplete on every program checked). That
+verification process can't be done by hand at this scale. To refresh it:
 
-**Remove or correct a study:** open `scripts\studies-source.json`, edit or
-delete that study's entry (from its `{` to its `}`, including the comma that
-separated it from its neighbor), then run `python scripts\build.py` and
-re-upload. Don't edit files in `studies\` or `data\` directly — they get
-overwritten by the build.
-
-**Issue a correction:** your editorial policy is that corrections are public,
-not quietly edited. Add a line at the end of that study's `summary` such as
-*"Correction (Sept 3, 2026): an earlier version said X; the study actually
-found Y."* Then rebuild and re-upload.
-
-**Change any wording on the page:** tell Claude (that's me) what to change —
-or open `index.html` in Notepad and carefully edit the text you see between
-the tags. Save, re-upload.
-
-**Something looks broken:** don't panic — nothing on the live site changes
-until you upload to Netlify. Undo your edit (Ctrl+Z in Notepad), save, and
-try again. Or come back to Claude Code and ask me to fix it.
+- Say *"re-check the schools marked pending in the faculty-accepting-students
+  data"* — most useful **August through October**, since that's when
+  programs actually post their Fall admissions lists. A school currently
+  showing "pending" or "no page found" isn't necessarily wrong — it may
+  simply not have posted yet.
+- If you spot a specific school that's outdated or wrong, tell Claude Code
+  which one and it'll re-verify just that program.
 
 ---
 
-## 6. Connecting the Reader Queue to Spare Change (one-time, once you have a domain)
+## 5. Seeing who visits your site
 
-The "Reader Queue" panel lets visitors suggest studies (by DOI or link) and
-upvote each other's suggestions. Submitting or voting now requires signing
-in with Google — the same account works here and on Spare Change (your other
-site), so it's one login for both.
+**Already turned on** — Cloudflare Web Analytics, free, no cookies, no
+cookie banner needed. It went live with the deployment described in Section
+2, so numbers only start counting from that point forward (no history from
+before).
 
-That sign-in only works once both sites live under one custom domain (e.g.
-`www.yourdomain.com` for this site and `spare.yourdomain.com` for Spare
-Change) — browsers won't share a login between two free `.netlify.app` /
-`.vercel.app` addresses. Until you buy a domain, the Reader Queue shows a
-local-only preview instead (same as before — nothing is broken in the
-meantime).
+**To check it:** go to **dash.cloudflare.com**, log in, then
+**Analytics & Logs → Web Analytics**. You'll see page views, which pages get
+read most, and where visitors came from (e.g. a spike right after an
+Instagram post pointing to it).
 
-**Once you've bought a domain and pointed both sites at it:**
-1. On your computer, open `CP → js → spare-change-config.js` in Notepad.
-2. Replace the `http://localhost:3000` value with your Spare Change
-   subdomain, e.g. `window.SPARE_CHANGE_ORIGIN = "https://spare.yourdomain.com";`
-3. Save the file and re-upload the folder to Netlify (section 3, Step C).
-
-Ask Claude Code to walk you through the domain/DNS setup itself when you're
-ready to buy one — it's a short one-time step on both the domain registrar's
-site and Spare Change's Vercel dashboard.
-
-**Removing spam or junk suggestions:** ask Claude Code to remove a specific
-suggestion from Spare Change's database, or delete it directly from the
-database's dashboard (Neon/Vercel Postgres). Only you have access to that.
+If you're not sure whether you already have a Cloudflare account: try
+logging in with whatever email you'd use for this project. If an account
+exists, "Forgot password" will find it and let you reset it.
 
 ---
 
-## 7. Setting up the weekly newsletter (one-time, ~15 minutes)
+## 6. Setting up the weekly newsletter (one-time)
 
-The site has a hidden "Weekly Digest" signup section. It appears
-automatically once you connect your free MailerLite account.
+The site has a hidden "Weekly Digest" section that appears automatically
+once MailerLite is connected.
 
-**Part 1 — create the account:**
-1. Go to **https://www.mailerlite.com** and click **Sign up free**
-   (free up to 1,000 subscribers).
-2. Sign up with your email. They'll ask a few questions about your
-   "business" — answer honestly (content creator / education is fine).
-   They may take up to a day to approve new accounts; that's normal.
+1. Sign up free at **mailerlite.com** (free up to 1,000 subscribers).
+2. **Forms → Embedded forms → Create embedded form.** Design doesn't matter
+   — click through to the code screen and find the URL inside
+   `action="https://assets.mailerlite.com/jsonp/..."` (ends in `/subscribe`).
+3. Paste that URL into `js\newsletter-config.js`, replacing the placeholder.
+4. Drag the `Website` folder onto Netlify's Deploys page (Section 2, Step 2) to
+   actually publish it. Committing and pushing to git is optional and doesn't
+   put it live by itself.
 
-**Part 2 — create the signup form:**
-1. In MailerLite, click **Forms** in the left menu → **Embedded forms** →
-   **Create embedded form**. Name it `Website signup`.
-2. Design doesn't matter (your website has its own design) — click
-   through to the final step, which shows you code.
-3. On the code screen, look for the **HTML** code and find the line that
-   contains `action="https://assets.mailerlite.com/jsonp/...`
-4. Copy just that URL — everything between the quotes after `action=`.
-   It ends in `/subscribe`.
-
-**Part 3 — connect it to your website:**
-1. Open `CP → js → newsletter-config.js` in Notepad.
-2. Replace `PASTE_YOUR_MAILERLITE_URL_HERE` with the URL you copied
-   (keep the quote marks).
-3. Save, then re-upload the folder to Netlify (section 3, Step C).
-
-The navy "Weekly Digest" section now appears on the site between About
-and Submit Research, with a Newsletter link in the menu.
-
-**Sending your weekly email:**
-1. In MailerLite, click **Campaigns → Create campaign**.
-2. Give it a subject like "This Week in Clinical Research — Jan 12".
-3. Use the drag-and-drop editor: paste in the studies you covered,
-   what's leading the Reader Queue, and a link to your site + Instagram.
-4. Click **Send** (or schedule it for the same time each week —
-   consistency is what builds the habit for readers).
-
-New subscribers get a confirmation email automatically (this "double
-opt-in" is a good thing — it keeps your list clean and legal).
+**Sending an issue:** MailerLite → **Campaigns → Create campaign**. Paste in
+the week's studies, what's leading the Reader Queue, and links to the site
+and Instagram. Sending consistently on the same day each week is what builds
+the reading habit.
 
 ---
 
-## 8. Viewing the site on your own computer (optional)
+## 7. Legal, redirects, and things that stay hidden on purpose
 
-The site needs a small local "server" to preview before uploading — opening
-`index.html` by double-clicking won't load the Instagram embeds. The easiest
-way to preview: ask Claude Code to "start the preview" — or just upload to
-Netlify and check the live link, since uploads are instant and unlimited.
+- **`_redirects`** handles two things: the old `netlify.app` address
+  forwarding to the real domain, and blocking `/scripts/*` from ever being
+  served publicly (the build script and study-source file aren't meant to be
+  visible to visitors).
+- **`robots.txt`** and **`sitemap.xml`** tell Google what to index —
+  `sitemap.xml` regenerates automatically every time you run `build.py`.
+- **Every Tools page carries structured data** (invisible to visitors, read
+  by Google) describing what each page actually is — this is what makes
+  the citation tool and faculty directory eligible to show up richly in
+  search results rather than as a plain blue link.
 
----
-
-## 9. Seeing who visits your site (one-time, ~5 minutes)
-
-Right now you have no idea how many people read the site or which studies
-they open. This turns that on, using **Cloudflare Web Analytics** — it's
-free, it doesn't use cookies, and it doesn't track people across other
-sites, so it needs no cookie banner.
-
-**Part 1 — get your token:**
-1. Go to **https://dash.cloudflare.com/sign-up** and make a free account
-   (no credit card).
-2. In the left menu, click **Analytics & Logs → Web Analytics**.
-3. Click **Add a site**, and enter your site's address — your Netlify link
-   (e.g. `theclinicalperspective.netlify.app`) or your custom domain.
-4. Cloudflare shows you a snippet of code. Inside it you'll see
-   `token: "abc123..."`. **Copy just that long token string** (the part
-   between the quotes).
-
-**Part 2 — connect it:**
-1. Open `CP\js\analytics-config.js` in Notepad.
-2. Replace `PASTE_YOUR_CLOUDFLARE_TOKEN_HERE` with your token
-   (keep the quote marks).
-3. Save, then re-upload the folder to Netlify (section 3, Step C).
-
-Within a few minutes, the Cloudflare dashboard starts showing page views,
-which pages are most read, and where visitors came from (e.g. Instagram).
-
-Until you paste a real token, analytics stay completely off — nothing loads
-and nothing is sent. Visits from your own computer while previewing locally
-are never counted.
-
-> **Note:** your Disclaimer & Privacy page already tells visitors the site
-> uses Cloudflare Web Analytics. If you decide *not* to turn this on, ask
-> Claude Code to remove that paragraph so the page stays accurate.
+None of this needs regular attention — it's here so you know it exists and
+why, in case something looks unusually quiet in analytics or search results.
 
 ---
 
-## 10. Why each study has its own page
+## PART B — Spare Change & shared accounts
 
-Every study you cover gets a real page at `yoursite.com/studies/<name>.html`
-with the whole summary written out as text, plus the journal, authors, and a
-link to the original paper.
+## 8. What Spare Change is, and how it connects here
 
-This matters because Instagram embeds are invisible to Google — search
-engines can't read inside them. With real pages, someone searching *"does
-EMDR really work"* can actually land on your summary. Each new study you add
-becomes another door into the site.
+Spare Change is a separate app with real user accounts (Google sign-in),
+built on Next.js + a Postgres database (hosted on **Neon**) + Prisma. It's
+the identity provider for this site's Reader Queue — when someone signs in
+to suggest or vote on a study here, they're actually signing into Spare
+Change, and the two sites share that login via a cookie that works across
+both domains.
 
-The archive at `research.html` lists all of them, with filter buttons by
-topic, and `sitemap.xml` (the file that tells Google what exists) is
-rebuilt automatically every time you run the build.
+**You never edit Spare Change's code to manage the Website**, but you will
+occasionally want to look at its data — who's signed up, streaks, queue
+suggestions.
+
+## 9. Looking at user accounts, streaks, and submissions
+
+The database has no built-in dashboard, but Prisma (already installed)
+ships with a free visual browser called **Prisma Studio** that needs no
+setup beyond what already exists.
+
+**To open it:**
+1. Open a terminal in `Desktop\The Clinical Perspective\spare-change`.
+2. Run:
+   ```
+   npx prisma studio
+   ```
+3. Open **http://localhost:5555** in your own browser.
+4. Click any table on the left — **User** shows every account (name, email,
+   when they joined, current streak, best streak); **Suggestion** and
+   **Vote** show Reader Queue activity.
+
+This only runs on your own computer (`localhost`) — it is never reachable
+from the internet, which is deliberate: Prisma Studio has no password
+protection of its own, so anyone who could reach it would have full access
+to every user's data. Keep it local-only.
+
+**Removing spam or bad suggestions:** open Prisma Studio, click
+**Suggestion**, find the row, and delete it directly — or ask Claude Code to
+do it for you.
+
+**Note on account dates:** `createdAt` was added to the User table on
+2026-08-09. Accounts created before that date all show that same date,
+since there's no way to recover when they actually signed up — but every
+account created from now on will show its real join date.
+
+## 10. Deploying changes to Spare Change
+
+This project has **no GitHub repository** — it deploys straight from this
+computer to Vercel via the command line. Ask Claude Code to deploy it when
+something changes; the short version of what happens is `vercel --prod` run
+from inside the `spare-change` folder. Database schema changes (like the one
+in Section 9) apply directly to the live Neon database the moment they're
+run — they don't wait for a separate deploy step.
+
+## 11. Domain and DNS
+
+You own **theclinicalperspective.org**. The matching `.com` is owned by a
+third party; a broker-assisted purchase path exists for later if you want
+it, but isn't urgent. Ask Claude Code for the current status if you're
+picking this back up — it changes infrequently enough that it's not worth
+duplicating here.
+
+---
+
+## 12. The recurring checklist
+
+The only things worth doing on a schedule, roughly in order of how often:
+
+| How often | What | How |
+|---|---|---|
+| Each time you post on Instagram | Add the study to the site | Section 3 |
+| Weekly (if running it) | Send the newsletter | Section 6 |
+| Occasionally | Check traffic | Section 5 |
+| **August–October** | Re-check pending schools in the faculty directory | Section 4 — ask Claude Code |
+| As needed | Remove spam Reader Queue suggestions | Section 9 |
+| As needed | Check who's signed up / streak activity | Section 9 |
+
+Everything else in this guide is one-time setup or reference material for
+when something needs fixing.
+
+---
+
+## 13. When something looks broken
+
+Nothing on the live site changes until a deploy actually happens (Section
+2) — so if you're mid-edit and something looks wrong locally, nothing is
+at risk yet. If the *live* site is broken:
+
+1. Check **Netlify → Deploys** for a failed build and read the error.
+2. Come back to Claude Code, describe what's wrong (or paste the error),
+   and ask for a fix.
+3. Once fixed, drag the `Website` folder onto Netlify's Deploys page again
+   (Section 2, Step 2) to publish the fix. There is no auto-deploy — every
+   fix requires that manual drag-and-drop.
+
+Git history means nothing is ever truly lost — even a bad deploy can be
+rolled back to the previous working commit if needed. Ask Claude Code if
+that's ever necessary; it's not a routine operation.

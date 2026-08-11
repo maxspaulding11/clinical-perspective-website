@@ -430,5 +430,53 @@
     "doi": "10.1080/13854046.2026.2667298",
     "sourceUrl": "https://doi.org/10.1080/13854046.2026.2667298",
     "instagram": ""
+  },
+  {
+    "slug": "changing-the-wording-changes-your-depression-score",
+    "index": 28,
+    "title": "Changing the wording changes your depression score",
+    "tag": "Assessment",
+    "blurb": "A randomized trial altered only the instructions on the PHQ-9 and GAD-7 — and the same people scored differently.",
+    "date": "2026-08-08",
+    "summary": "We treat depression and anxiety questionnaires like neutral rulers, but this randomized trial shows the ruler can bend. Researchers recruited 200 U.S. adults who had been diagnosed with or treated for major depression or generalized anxiety, and had each person complete the two most widely used screeners, the PHQ-9 (depression) and GAD-7 (anxiety), twice in one sitting. The control group got standard instructions both times. The intervention group got standard instructions first, but before the second round they were simply reminded to pay attention to the wording of the instructions, with emphasis on the word “bothered” (as in, how often have you been bothered by these problems). That tiny nudge produced a real drop: intervention participants scored about 2.6 points lower on both the PHQ-9 and GAD-7, and were roughly 14 times more likely to show a greater-than-20% reduction in their depression score. The point isn’t that anyone was faking, it’s that these tools aren’t perfectly objective, and small differences in how they’re administered can move scores enough to matter in clinics, research, and mental-health apps. A strong case for standardizing exactly how screeners are delivered.",
+    "journal": "JAMA Network Open",
+    "authors": "Sean D. Young, et al.",
+    "pubdate": "July 2026",
+    "pmid": null,
+    "doi": "10.1001/jamanetworkopen.2026.23952",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.23952",
+    "instagram": ""
+  },
+  {
+    "slug": "self-esteem-myth",
+    "index": 29,
+    "title": "The self-esteem myth",
+    "tag": "Myth Check",
+    "blurb": "A longitudinal meta-analysis of 27 studies found no robust evidence that low self-esteem causes later behavior problems.",
+    "date": "2026-08-09",
+    "summary": "“Boost a kid’s self-esteem and their behavior problems will fade” is one of the most durable ideas in pop psychology. This longitudinal meta-analysis put it to the test, and didn’t find the causal link. Researchers pooled 27 studies (25 independent samples) following 38,489 young people, average age 12, over time. At first glance, low self-esteem and “externalizing” problems (aggression, rule-breaking, acting out) did travel together, showing a weak negative correlation. But correlation isn’t cause. When the researchers used cross-lagged models, the approach that asks whether earlier self-esteem actually predicts later behavior problems after accounting for starting levels, the effect vanished in both directions. Earlier self-esteem did not predict later externalizing problems, and earlier behavior problems did not predict later self-esteem. These null results held steady across age, sex, and study methods. The practical point for educators and parents: don’t expect self-esteem programs to fix behavior problems, and don’t assume that curbing misbehavior will automatically build self-worth. They’re related, but neither reliably drives the other, a useful myth to retire.",
+    "journal": "Journal of Youth and Adolescence",
+    "authors": "Xiaowei Chu, et al.",
+    "pubdate": "July 2026",
+    "pmid": null,
+    "doi": "10.1007/s10964-026-02394-x",
+    "sourceUrl": "https://doi.org/10.1007/s10964-026-02394-x",
+    "instagram": ""
+  },
+  {
+    "slug": "does-vitamin-d-help-depression",
+    "index": 30,
+    "title": "Does vitamin D help depression?",
+    "tag": "Myth Check",
+    "blurb": "108 young people with both major depression and low vitamin D were given supplements. The effect was real but modest.",
+    "date": "2026-08-10",
+    "summary": "Vitamin D gets talked about as a natural mood fix, so this trial is a useful, careful reality check. Researchers in Taiwan studied 108 young people (ages 10–24) who had both major depression and low vitamin D, giving them either 4,800 IU of vitamin D3 daily for 8 weeks or a placebo. The headline result is nuanced: overall, vitamin D did NOT beat placebo for depression itself. It did modestly reduce anxiety in the randomized vitamin D group. And when researchers zoomed in on participants with moderate-to-severe depression, that subgroup showed reductions in both depression and anxiety versus placebo, though the adolescent slice of that subgroup didn’t clearly benefit. No safety problems (like high calcium) appeared. So what does it mean? For a young person who is genuinely vitamin-D deficient and more severely depressed, supplementation might help as one piece of care. But this is a small, exploratory study, and it does not show that vitamin D lifts depression for everyone. It’s a promising lead worth bigger trials, not a standalone treatment, and definitely not a reason to skip established care. Helpful for some, not a cure.",
+    "journal": "European Journal of Nutrition",
+    "authors": "Yi-Ting Lee, et al.",
+    "pubdate": "July 2026",
+    "pmid": null,
+    "doi": "10.1007/s00394-026-04061-0",
+    "sourceUrl": "https://doi.org/10.1007/s00394-026-04061-0",
+    "instagram": ""
   }
 ]

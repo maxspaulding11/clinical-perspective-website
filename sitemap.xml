@@ -37,6 +37,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://theclinicalperspective.org/studies/does-vitamin-d-help-depression.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/studies/self-esteem-myth.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/studies/changing-the-wording-changes-your-depression-score.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://theclinicalperspective.org/studies/does-the-ptsd-checklist-catch-symptom-exaggeration-across.html</loc>
     <priority>0.8</priority>
   </url>
