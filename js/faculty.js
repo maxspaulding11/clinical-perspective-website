@@ -9,7 +9,8 @@
 
   let DATA = { programs: [] };
   let query = '';
-  let filter = 'all';
+  let accred = 'apa';
+  let statusFilter = 'all';
 
   const STATUS_LABEL = {
     posted:     'List posted',
@@ -19,9 +20,9 @@
   };
 
   function matches(p) {
-    if (filter === 'posted'  && p.status !== 'posted')  return false;
-    if (filter === 'pending' && p.status === 'posted')  return false;
-    if (filter === 'pcsas'   && !p.pcsas)               return false;
+    if (accred === 'pcsas' && !p.pcsas) return false;
+    if (statusFilter === 'posted'  && p.status !== 'posted')  return false;
+    if (statusFilter === 'pending' && p.status === 'posted')  return false;
     if (!query) return true;
     const hay = [p.school, p.program, p.state,
                  ...(p.accepting || []), ...(p.maybe || [])].join(' ').toLowerCase();
@@ -104,10 +105,18 @@
     query = e.target.value.trim().toLowerCase();
     render();
   });
-  document.querySelectorAll('[data-filter]').forEach(b => {
+  document.querySelectorAll('[data-accred]').forEach(b => {
     b.addEventListener('click', () => {
-      filter = b.dataset.filter;
-      document.querySelectorAll('[data-filter]').forEach(x =>
+      accred = b.dataset.accred;
+      document.querySelectorAll('[data-accred]').forEach(x =>
+        x.setAttribute('aria-pressed', String(x === b)));
+      render();
+    });
+  });
+  document.querySelectorAll('[data-status]').forEach(b => {
+    b.addEventListener('click', () => {
+      statusFilter = b.dataset.status;
+      document.querySelectorAll('[data-status]').forEach(x =>
         x.setAttribute('aria-pressed', String(x === b)));
       render();
     });

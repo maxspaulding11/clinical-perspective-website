@@ -1592,6 +1592,7 @@ a:hover { text-decoration: underline; }
 #fac-search:focus { outline: 2px solid rgba(165,74,36,0.32); border-color: var(--maroon); }
 
 .fac-filters { display: flex; gap: 6px; }
+.fac-filters + .fac-filters { border-left: 1px solid var(--rule); padding-left: 12px; }
 .fac-filters button {
   font-family: var(--sans);
   font-size: 0.85rem;

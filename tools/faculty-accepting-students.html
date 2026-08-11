@@ -113,11 +113,14 @@
       <div class="fac-controls">
         <input type="text" id="fac-search" placeholder="Search school, program, or faculty name…"
                aria-label="Search programs and faculty">
-        <div class="fac-filters" role="group" aria-label="Filter programs">
-          <button data-filter="all" aria-pressed="true">All</button>
-          <button data-filter="posted" aria-pressed="false">List posted</button>
-          <button data-filter="pending" aria-pressed="false">Awaiting list</button>
-          <button data-filter="pcsas" aria-pressed="false" title="Also accredited by the Psychological Clinical Science Accreditation System — a research-focused clinical science model">PCSAS accredited</button>
+        <div class="fac-filters" role="group" aria-label="Filter by accreditation">
+          <button data-accred="apa" aria-pressed="true">APA</button>
+          <button data-accred="pcsas" aria-pressed="false" title="Also accredited by the Psychological Clinical Science Accreditation System — a research-focused clinical science model">PCSAS</button>
+        </div>
+        <div class="fac-filters" role="group" aria-label="Filter by status">
+          <button data-status="all" aria-pressed="true">All</button>
+          <button data-status="posted" aria-pressed="false">List posted</button>
+          <button data-status="pending" aria-pressed="false">Awaiting list</button>
         </div>
       </div>
       <p class="fac-showing" id="fac-showing"></p>
