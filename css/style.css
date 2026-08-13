@@ -1557,7 +1557,8 @@ a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   Faculty accepting students (tools/faculty-accepting-students.html)
+   Faculty/professor directory tools
+   (tools/faculty-accepting-students.html, tools/professor-search.html)
    ============================================================ */
 
 .fac-banner {
@@ -1670,6 +1671,10 @@ a:hover { text-decoration: underline; }
 .fac-names li.yes   { background: rgba(44,107,65,0.08); border-color: rgba(44,107,65,0.25); color: #245634; }
 .fac-names li.maybe { background: rgba(176,106,18,0.08); border-color: rgba(176,106,18,0.25); color: #8a5410; }
 .fac-names li.no    { background: var(--cream); color: var(--ink-soft); text-decoration: line-through; }
+
+.prof-interests { margin: 12px 0 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 7px; }
+.prof-interests li { font-size: 0.88rem; color: var(--ink); line-height: 1.5; }
+.prof-interests li::marker { color: var(--maroon); }
 
 .fac-note { font-size: 0.82rem; color: var(--ink-soft); margin: 10px 0 0; }
 .fac-quote {

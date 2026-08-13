@@ -438,6 +438,7 @@ urls = [
     (f'{BASE_URL}/tools/citations.html', '0.7'),
     (f'{BASE_URL}/tools/applying-to-clinical-psychology-phd-programs.html', '0.8'),
     (f'{BASE_URL}/tools/faculty-accepting-students.html', '0.8'),
+    (f'{BASE_URL}/tools/professor-search.html', '0.8'),
     (f'{BASE_URL}/legal.html', '0.3'),
 ]
 for s in newest_first:
