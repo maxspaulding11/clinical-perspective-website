@@ -148,6 +148,37 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+.nav-saved {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--maroon);
+  border-radius: 999px;
+  padding: 6px 13px;
+  color: var(--maroon) !important;
+  font-weight: 600;
+}
+.nav-saved:hover {
+  background: var(--maroon);
+  color: var(--cream) !important;
+  text-decoration: none;
+}
+.nav-saved-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--maroon);
+  color: var(--cream);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.nav-saved:hover .nav-saved-count { background: var(--cream); color: var(--maroon); }
+
 .nav-account {
   position: relative;
   display: flex;
@@ -1707,8 +1738,53 @@ a:hover { text-decoration: underline; }
   padding: 30px 10px;
 }
 
+.fac-head-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+.star-btn {
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--rule);
+  padding: 0 2px;
+}
+.star-btn:hover { color: var(--maroon); }
+.star-btn.is-saved { color: var(--maroon); }
+
 @media (max-width: 640px) {
   .fac-card { padding: 18px; }
   .fac-head { flex-direction: column; }
   .fac-controls { flex-direction: column; align-items: stretch; }
 }
+
+/* ============================================================
+   My List (tools/saved.html)
+   ============================================================ */
+
+.saved-note {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm, 10px);
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.saved-note strong { color: var(--ink); }
+
+.saved-group + .saved-group { margin-top: 40px; }
+
+.saved-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 10px;
+}
+.saved-group-head h3 { font-family: var(--serif); color: var(--navy); font-size: 1.3rem; margin: 0; }
+.saved-group-count { font-size: 0.85rem; color: var(--ink-soft); flex-shrink: 0; }

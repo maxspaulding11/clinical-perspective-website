@@ -38,6 +38,15 @@
       '</ul></div>';
   }
 
+  function starBtn(p) {
+    const saved = window.TCPSaved && window.TCPSaved.isSchoolSaved(p.id);
+    return '<button type="button" class="star-btn' + (saved ? ' is-saved' : '') + '" ' +
+      'data-star-school="' + esc(p.id) + '" aria-pressed="' + (saved ? 'true' : 'false') + '" ' +
+      'aria-label="' + (saved ? 'Remove from my list' : 'Save to my list') + '" ' +
+      'title="' + (saved ? 'Saved — click to remove' : 'Save to my list') + '">' +
+      (saved ? '★' : '☆') + '</button>';
+  }
+
   function card(p) {
     const count = (p.accepting || []).length;
     const badge = p.status === 'posted'
@@ -51,7 +60,8 @@
           '<p class="fac-sub">' + esc(p.program) + (p.state ? ' · ' + esc(p.state) : '') +
             (p.pcsas ? ' · <span class="fac-pcsas" title="Accredited by the Psychological Clinical Science Accreditation System">PCSAS accredited</span>' : '') +
           '</p>' +
-        '</div>' + badge +
+        '</div>' +
+        '<div class="fac-head-right">' + starBtn(p) + badge + '</div>' +
       '</div>' +
       nameList(p.accepting, 'yes', 'Accepting students') +
       nameList(p.maybe, 'maybe', 'Undecided — contact directly') +
@@ -121,4 +131,17 @@
       render();
     });
   });
+
+  $('#fac-list').addEventListener('click', e => {
+    const btn = e.target.closest('[data-star-school]');
+    if (!btn || !window.TCPSaved) return;
+    const saved = window.TCPSaved.toggleSchool(btn.dataset.starSchool);
+    btn.classList.toggle('is-saved', saved);
+    btn.setAttribute('aria-pressed', String(saved));
+    btn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
+    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+    btn.textContent = saved ? '★' : '☆';
+  });
+
+  document.addEventListener('tcp-saved-synced', render);
 })();

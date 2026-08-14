@@ -15,6 +15,15 @@
     return p._hay.indexOf(query) !== -1;
   }
 
+  function starBtn(p) {
+    const saved = window.TCPSaved && window.TCPSaved.isProfSaved(p.id);
+    return '<button type="button" class="star-btn' + (saved ? ' is-saved' : '') + '" ' +
+      'data-star-prof="' + esc(p.id) + '" aria-pressed="' + (saved ? 'true' : 'false') + '" ' +
+      'aria-label="' + (saved ? 'Remove from my list' : 'Save to my list') + '" ' +
+      'title="' + (saved ? 'Saved — click to remove' : 'Save to my list') + '">' +
+      (saved ? '★' : '☆') + '</button>';
+  }
+
   function card(p) {
     const interests = (p.interests || [])
       .map(i => '<li>' + esc(i) + '</li>')
@@ -26,6 +35,7 @@
           '<h3>' + esc(p.name) + '</h3>' +
           '<p class="fac-sub">' + esc(p.school) + (p.program ? ' · ' + esc(p.program) : '') + '</p>' +
         '</div>' +
+        starBtn(p) +
       '</div>' +
       '<ul class="prof-interests">' + interests + '</ul>' +
       '<div class="fac-foot">' +
@@ -73,4 +83,17 @@
     query = e.target.value.trim().toLowerCase();
     render();
   });
+
+  $('#prof-list').addEventListener('click', e => {
+    const btn = e.target.closest('[data-star-prof]');
+    if (!btn || !window.TCPSaved) return;
+    const saved = window.TCPSaved.toggleProf(btn.dataset.starProf);
+    btn.classList.toggle('is-saved', saved);
+    btn.setAttribute('aria-pressed', String(saved));
+    btn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
+    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+    btn.textContent = saved ? '★' : '☆';
+  });
+
+  document.addEventListener('tcp-saved-synced', render);
 })();
