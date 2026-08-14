@@ -7,6 +7,24 @@
   const $ = s => document.querySelector(s);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 
+  const STATUS_LABEL = {
+    pending:    'List not posted yet',
+    unverified: 'No page found yet',
+    closed:     'Program closed this cycle'
+  };
+
+  // Names in programs.json's accepting/maybe/notAccepting lists sometimes carry
+  // credentials or punctuation a professor's own record doesn't — normalize
+  // both sides the same way before comparing so those don't cause a miss.
+  function normName(s) {
+    return String(s)
+      .toLowerCase()
+      .replace(/\b(dr|phd|psyd|ph\.d|psy\.d)\b\.?/g, '')
+      .replace(/[.,]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
   let DATA = { professors: [] };
   let query = '';
 
@@ -24,6 +42,25 @@
       (saved ? '★' : '☆') + '</button>';
   }
 
+  function acceptingBadge(p) {
+    const rec = p._prog;
+    if (!rec) return '';
+    if (rec.status !== 'posted') {
+      const label = STATUS_LABEL[rec.status];
+      return label ? '<span class="fac-badge ' + rec.status + '">' + label + '</span>' : '';
+    }
+    if (rec._acceptingNorm.indexOf(p._normName) !== -1) {
+      return '<span class="fac-badge posted">Accepting this cycle</span>';
+    }
+    if (rec._maybeNorm.indexOf(p._normName) !== -1) {
+      return '<span class="fac-badge pending">Maybe — contact directly</span>';
+    }
+    if (rec._notAcceptingNorm.indexOf(p._normName) !== -1) {
+      return '<span class="fac-badge closed">Not accepting this cycle</span>';
+    }
+    return '';
+  }
+
   function card(p) {
     const interests = (p.interests || [])
       .map(i => '<li>' + esc(i) + '</li>')
@@ -35,7 +72,7 @@
           '<h3>' + esc(p.name) + '</h3>' +
           '<p class="fac-sub">' + esc(p.school) + (p.program ? ' · ' + esc(p.program) : '') + '</p>' +
         '</div>' +
-        starBtn(p) +
+        '<div class="fac-head-right">' + starBtn(p) + acceptingBadge(p) + '</div>' +
       '</div>' +
       '<ul class="prof-interests">' + interests + '</ul>' +
       '<div class="fac-foot">' +
@@ -58,10 +95,20 @@
       : '<li class="fac-empty">Nothing matches that search.</li>';
   }
 
-  function boot(data) {
+  function boot(data, programs) {
+    const programIndex = {};
+    (programs || []).forEach(rec => {
+      rec._acceptingNorm = (rec.accepting || []).map(normName);
+      rec._maybeNorm = (rec.maybe || []).map(normName);
+      rec._notAcceptingNorm = (rec.notAccepting || []).map(normName);
+      programIndex[rec.school + '|||' + rec.program] = rec;
+    });
+
     data.professors.sort((a, b) => a.name.localeCompare(b.name));
     data.professors.forEach(p => {
       p._hay = [p.name, p.school, p.program, ...(p.interests || [])].join(' ').toLowerCase();
+      p._normName = normName(p.name);
+      p._prog = programIndex[p.school + '|||' + p.program] || null;
     });
     DATA = data;
     const schools = new Set(data.professors.map(p => p.school));
@@ -71,9 +118,11 @@
     render();
   }
 
-  fetch('../data/professors.json')
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(boot)
+  Promise.all([
+    fetch('../data/professors.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('../data/programs.json').then(r => r.ok ? r.json() : { programs: [] }).catch(() => ({ programs: [] }))
+  ])
+    .then(([profData, progData]) => boot(profData, progData.programs))
     .catch(() => {
       $('#prof-list').innerHTML =
         '<li class="fac-empty">Could not load the professor list. Please refresh.</li>';
