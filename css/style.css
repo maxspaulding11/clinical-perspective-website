@@ -1623,7 +1623,7 @@ a:hover { text-decoration: underline; }
 }
 #fac-search:focus { outline: 2px solid rgba(165,74,36,0.32); border-color: var(--maroon); }
 
-.fac-filters { display: flex; gap: 6px; }
+.fac-filters { display: flex; gap: 6px; flex-wrap: wrap; }
 .fac-filters + .fac-filters { border-left: 1px solid var(--rule); padding-left: 12px; }
 .fac-filters button {
   font-family: var(--sans);
@@ -1653,6 +1653,8 @@ a:hover { text-decoration: underline; }
 
 .fac-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
 .fac-card h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); margin: 0 0 3px; }
+.measure-full { font-weight: 400; font-size: 0.85em; color: var(--ink-soft); }
+.measure-desc { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.6; margin: 12px 0 0; }
 .fac-sub { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
 
 .fac-badge {

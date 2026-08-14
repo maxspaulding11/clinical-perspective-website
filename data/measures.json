@@ -1,0 +1,1312 @@
+{
+  "updated": "2026-08-14",
+  "note": "A growing directory of validated clinical assessment instruments. Citations verified against original validation publications or official source pages.",
+  "measures": [
+    {
+      "id": "ace-questionnaire",
+      "name": "ACE Questionnaire",
+      "fullName": "Adverse Childhood Experiences Questionnaire",
+      "categories": [
+        "Adverse Childhood Experiences (ACEs) / Childhood Trauma History"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A retrospective self-report questionnaire assessing exposure to 10 categories of childhood abuse, neglect, and household dysfunction before age 18, yielding a cumulative ACE score used to study links between childhood adversity and adult health outcomes.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.cdc.gov/aces/about/index.html",
+      "citation": "Felitti, V. J., Anda, R. F., Nordenberg, D., Williamson, D. F., Spitz, A. M., Edwards, V., Koss, M. P., & Marks, J. S. (1998). Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults: The Adverse Childhood Experiences (ACE) Study. American Journal of Preventive Medicine, 14(4), 245-258. https://doi.org/10.1016/S0749-3797(98)00017-8",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "acq",
+      "name": "ACQ",
+      "fullName": "Agoraphobic Cognitions Questionnaire",
+      "categories": [
+        "Panic Disorder"
+      ],
+      "population": "Adults",
+      "items": 14,
+      "description": "A self-report measure of the frequency of catastrophic thoughts about the consequences of anxiety (e.g., fear of losing control or dying) that commonly accompany panic attacks and agoraphobia.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://web.sas.upenn.edu/dchamb/questionnaires/",
+      "citation": "Chambless, D. L., Caputo, G. C., Bright, P., & Gallagher, R. (1984). Assessment of fear in agoraphobics: The Body Sensations Questionnaire and the Agoraphobic Cognitions Questionnaire. Journal of Consulting and Clinical Psychology, 52(6), 1090–1097. https://doi.org/10.1037/0022-006X.52.6.1090",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "adi-r",
+      "name": "ADI-R",
+      "fullName": "Autism Diagnostic Interview-Revised",
+      "categories": [
+        "Autism Spectrum"
+      ],
+      "population": "All ages",
+      "items": 93,
+      "description": "A comprehensive, semi-structured diagnostic interview conducted with a parent or caregiver, covering early developmental history and current behavior across social interaction, communication, and restricted/repetitive behaviors. Clinician-administered and typically used alongside the ADOS-2 in gold-standard autism diagnostic evaluations.",
+      "access": "Copyrighted — requires purchase/license from Western Psychological Services (WPS)",
+      "url": "https://www.wpspublish.com/adi-r-autism-diagnostic-interviewrevised.html",
+      "citation": "Lord, C., Rutter, M., & Le Couteur, A. (1994). Autism Diagnostic Interview-Revised: A revised version of a diagnostic interview for caregivers of individuals with possible pervasive developmental disorders. Journal of Autism and Developmental Disorders, 24(5), 659–685. https://doi.org/10.1007/BF02172145",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "activities-of-daily-living-hoarding",
+      "name": "ADL-H",
+      "fullName": "Activities of Daily Living Scale in Hoarding Disorder",
+      "categories": [
+        "Hoarding Disorder"
+      ],
+      "population": "Adults",
+      "items": 15,
+      "description": "A self-report scale assessing the degree to which hoarding-related clutter interferes with basic activities of daily living (e.g., cooking, sleeping, moving through the home).",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://scholarworks.smith.edu/psy_facpubs/44/",
+      "citation": "Frost, R. O., Hristova, V., Steketee, G., & Tolin, D. F. (2013). Activities of Daily Living Scale in Hoarding Disorder. Journal of Obsessive-Compulsive and Related Disorders, 2(2), 85–90. https://doi.org/10.1016/j.jocrd.2012.12.004",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ados-2",
+      "name": "ADOS-2",
+      "fullName": "Autism Diagnostic Observation Schedule, Second Edition",
+      "categories": [
+        "Autism Spectrum"
+      ],
+      "population": "All ages",
+      "description": "A semi-structured, standardized series of structured and unstructured activities used to directly observe communication, social interaction, play, and restricted/repetitive behaviors. Clinician-administered and widely regarded as a diagnostic gold-standard component of autism spectrum disorder evaluation.",
+      "access": "Copyrighted — requires purchase/license from Western Psychological Services (WPS)",
+      "url": "https://www.wpspublish.com/ados-2-autism-diagnostic-observation-schedule-second-edition",
+      "citation": "Lord, C., Risi, S., Lambrecht, L., Cook, E. H., Jr., Leventhal, B. L., DiLavore, P. C., Pickles, A., & Rutter, M. (2000). The Autism Diagnostic Observation Schedule—Generic: A standard measure of social and communication deficits associated with the spectrum of autism. Journal of Autism and Developmental Disorders, 30(3), 205–223. https://doi.org/10.1023/A:1005592401947",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "aq",
+      "name": "AQ",
+      "fullName": "Autism-Spectrum Quotient",
+      "categories": [
+        "Autism Spectrum"
+      ],
+      "population": "Adults",
+      "items": 50,
+      "description": "A self-report questionnaire measuring the degree to which an adult of average intelligence displays traits associated with the autism spectrum, spanning social skill, attention switching, attention to detail, communication, and imagination. Used as a brief screening measure rather than a diagnostic instrument.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.autismresearchcentre.com/tests/autism-spectrum-quotient-aq-adult/",
+      "citation": "Baron-Cohen, S., Wheelwright, S., Skinner, R., Martin, J., & Clubley, E. (2001). The Autism-Spectrum Quotient (AQ): Evidence from Asperger syndrome/high-functioning autism, males and females, scientists and mathematicians. Journal of Autism and Developmental Disorders, 31(1), 5–17. https://doi.org/10.1023/A:1005653411471",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "asdi",
+      "name": "ASDI",
+      "fullName": "Acute Stress Disorder Interview",
+      "categories": [
+        "Acute Stress Disorder"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A structured clinical interview, dichotomously scored, that assesses DSM-IV acute stress disorder criteria; used as a clinician-administered diagnostic gold-standard measure.",
+      "access": "Copyrighted — requires purchase/license from American Psychological Association",
+      "url": "https://icmglt.org/acute-stress-disorder-structured-interview-asdi/",
+      "citation": "Bryant, R. A., Harvey, A. G., Dang, S. T., & Sackville, T. (1998). Assessing acute stress disorder: Psychometric properties of a structured clinical interview. Psychological Assessment, 10(3), 215–220. https://doi.org/10.1037/1040-3590.10.3.215",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "asds",
+      "name": "ASDS",
+      "fullName": "Acute Stress Disorder Scale",
+      "categories": [
+        "Acute Stress Disorder"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A self-report inventory based on DSM-IV criteria that indexes acute stress disorder symptoms and predicts later development of PTSD; used as a brief screening measure.",
+      "access": "Copyrighted — requires purchase/license from American Psychological Association",
+      "url": "https://www.sralab.org/rehabilitation-measures/acute-stress-disorder-scale",
+      "citation": "Bryant, R. A., Moulds, M. L., & Guthrie, R. M. (2000). Acute Stress Disorder Scale: A self-report measure of acute stress disorder. Psychological Assessment, 12(1), 61–68. https://doi.org/10.1037/1040-3590.12.1.61",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "asrm",
+      "name": "ASRM",
+      "fullName": "Altman Self-Rating Mania Scale",
+      "categories": [
+        "Bipolar Disorder"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A 5-item self-report scale measuring the current severity of manic/hypomanic symptoms (mood, self-confidence, sleep, speech, activity level) over the past week; used for symptom monitoring and screening rather than formal diagnosis.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf",
+      "citation": "Altman, E. G., Hedeker, D., Peterson, J. L., & Davis, J. M. (1997). The Altman Self-Rating Mania Scale. Biological Psychiatry, 42(10), 948–955. https://doi.org/10.1016/S0006-3223(96)00548-3",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "asrs-v1-1",
+      "name": "ASRS v1.1",
+      "fullName": "Adult ADHD Self-Report Scale",
+      "categories": [
+        "ADHD"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item self-report symptom checklist developed with the World Health Organization corresponding to DSM-IV ADHD criteria for adults; the 6-item Part A subset is a validated brief screener, while the full 18 items support broader symptom review, and it is not a standalone diagnostic instrument.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.hcp.med.harvard.edu/ncs/asrs.php",
+      "citation": "Kessler, R. C., Adler, L., Ames, M., Demler, O., Faraone, S., Hiripi, E., Howes, M. J., Jin, R., Secnik, K., Spencer, T., Ustun, T. B., & Walters, E. E. (2005). The World Health Organization Adult ADHD Self-Report Scale (ASRS): A short screening scale for use in the general population. Psychological Medicine, 35(2), 245–256. https://doi.org/10.1017/S0033291704002892",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "assist",
+      "name": "ASSIST",
+      "fullName": "Alcohol, Smoking and Substance Involvement Screening Test",
+      "categories": [
+        "Substance Use"
+      ],
+      "population": "Adults",
+      "items": 8,
+      "description": "A structured clinician-administered (or self-report) interview developed by the WHO to screen for hazardous, harmful, and dependent use across 10 substance classes, including tobacco and alcohol alongside illicit drugs.",
+      "access": "Free for clinical/research use — published by the World Health Organization and freely downloadable; non-commercial reproduction permitted",
+      "url": "https://iris.who.int/bitstream/handle/10665/44320/9789241599382_eng.pdf",
+      "citation": "WHO ASSIST Working Group. (2002). The Alcohol, Smoking and Substance Involvement Screening Test (ASSIST): Development, reliability and feasibility. Addiction, 97(9), 1183–1194. https://doi.org/10.1046/j.1360-0443.2002.00185.x",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "audit",
+      "name": "AUDIT",
+      "fullName": "Alcohol Use Disorders Identification Test",
+      "categories": [
+        "Alcohol Use"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A 10-item self-report screening questionnaire developed by the World Health Organization to identify hazardous and harmful patterns of alcohol consumption, covering alcohol intake, drinking behavior, and alcohol-related problems. Used for screening rather than diagnosis.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.who.int/publications/i/item/WHO-MSD-MSB-01.6a",
+      "citation": "Saunders, J. B., Aasland, O. G., Babor, T. F., de la Fuente, J. R., & Grant, M. (1993). Development of the Alcohol Use Disorders Identification Test (AUDIT): WHO Collaborative Project on Early Detection of Persons with Harmful Alcohol Consumption—II. Addiction, 88(6), 791–804. https://doi.org/10.1111/j.1360-0443.1993.tb02093.x",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "audit-c",
+      "name": "AUDIT-C",
+      "fullName": "Alcohol Use Disorders Identification Test – Consumption",
+      "categories": [
+        "Alcohol Use"
+      ],
+      "population": "Adults",
+      "items": 3,
+      "description": "A 3-item abbreviated version of the AUDIT consisting only of its alcohol-consumption questions. Self-report or clinician-administered as a brief screen for hazardous drinking, commonly used in primary care settings.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://auditscreen.org/cmsb/uploads/1998-the-audit-alcohol-consumption-questions-(audit-c)an-effective-brief-screening-test-for-problem-drinking.pdf",
+      "citation": "Bush, K., Kivlahan, D. R., McDonell, M. B., Fihn, S. D., & Bradley, K. A. (1998). The AUDIT alcohol consumption questions (AUDIT-C): An effective brief screening test for problem drinking. Archives of Internal Medicine, 158(16), 1789–1795. https://doi.org/10.1001/archinte.158.16.1789",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "babs",
+      "name": "BABS",
+      "fullName": "Brown Assessment of Beliefs Scale",
+      "categories": [
+        "Body Dysmorphic Disorder"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "Clinician-administered scale assessing insight and delusionality of disorder-related beliefs, such as the conviction that a perceived appearance flaw is real. Widely used in BDD (as well as OCD and other conditions) to gauge insight severity.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/",
+      "citation": "Eisen, J. L., Phillips, K. A., Baer, L., Beer, D. A., Atala, K. D., & Rasmussen, S. A. (1998). The Brown Assessment of Beliefs Scale: Reliability and validity. American Journal of Psychiatry, 155(1), 102–108. https://doi.org/10.1176/ajp.155.1.102",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "bdd-ybocs",
+      "name": "BDD-YBOCS",
+      "fullName": "Yale-Brown Obsessive Compulsive Scale Modified for Body Dysmorphic Disorder",
+      "categories": [
+        "Body Dysmorphic Disorder"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "Clinician-administered, semi-structured interview adapted from the Y-BOCS that rates BDD symptom severity (preoccupation, compulsive behaviors, insight, avoidance) over the past week. It is the most widely used severity measure in BDD research and clinical treatment trials.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/",
+      "citation": "Phillips, K. A., Hollander, E., Rasmussen, S. A., Aronowitz, B. R., DeCaria, C., & Goodman, W. K. (1997). A severity rating scale for body dysmorphic disorder: Development, reliability, and validity of a modified version of the Yale-Brown Obsessive Compulsive Scale. Psychopharmacology Bulletin, 33(1), 17–22.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "bdi-ii",
+      "name": "BDI-II",
+      "fullName": "Beck Depression Inventory-II",
+      "categories": [
+        "Depression"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A self-report inventory in which respondents rate the severity of 21 depressive symptoms over the past two weeks; validated for ages 13–80 and widely used in clinical and research settings to assess depression severity.",
+      "access": "Copyrighted — requires purchase/license from Pearson",
+      "url": "https://www.pearsonassessments.com/store/en/usd/p/100000159.html",
+      "citation": "Beck, A. T., Steer, R. A., & Brown, G. K. (1996). Manual for the Beck Depression Inventory-II. Psychological Corporation.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "binge-eating-scale",
+      "name": "BES",
+      "fullName": "Binge Eating Scale",
+      "categories": [
+        "Eating Disorders"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A 16-item self-report questionnaire assessing the behavioral, cognitive, and emotional features of binge eating (originally developed with obese patients); used to gauge binge eating severity as a screening aid, not a standalone diagnostic tool for binge eating disorder.",
+      "access": "Free for clinical/research use with permission from the original authors",
+      "url": "https://eprovide.mapi-trust.org/instruments/binge-eating-scale",
+      "citation": "Gormally, J., Black, S., Daston, S., & Rardin, D. (1982). The assessment of binge eating severity among obese persons. Addictive Behaviors, 7(1), 47–55. https://doi.org/10.1016/0306-4603(82)90024-7",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "bprs",
+      "name": "BPRS",
+      "fullName": "Brief Psychiatric Rating Scale",
+      "categories": [
+        "Psychosis / Schizophrenia"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "A clinician-administered rating scale (commonly used in its 18-item expanded form) assessing the severity of a broad range of psychiatric symptoms, including psychotic symptoms such as hallucinations, unusual thought content, and suspiciousness, alongside mood and behavioral symptoms.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.cymha.ca/Modules/MeasuresDatabase/en/Home/Detail/55",
+      "citation": "Overall, J. E., & Gorham, D. R. (1962). The Brief Psychiatric Rating Scale. Psychological Reports, 10(3), 799–812. https://doi.org/10.2466/pr0.1962.10.3.799",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "bsq",
+      "name": "BSQ",
+      "fullName": "Body Sensations Questionnaire",
+      "categories": [
+        "Panic Disorder"
+      ],
+      "population": "Adults",
+      "items": 17,
+      "description": "A self-report companion measure to the ACQ that assesses fear of specific bodily sensations (e.g., racing heart, dizziness) associated with panic attacks; the two scales together operationalize 'fear of fear' in panic disorder and agoraphobia.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://web.sas.upenn.edu/dchamb/questionnaires/",
+      "citation": "Chambless, D. L., Caputo, G. C., Bright, P., & Gallagher, R. (1984). Assessment of fear in agoraphobics: The Body Sensations Questionnaire and the Agoraphobic Cognitions Questionnaire. Journal of Consulting and Clinical Psychology, 52(6), 1090–1097. https://doi.org/10.1037/0022-006X.52.6.1090",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "bss",
+      "name": "BSS",
+      "fullName": "Beck Scale for Suicide Ideation",
+      "categories": [
+        "Suicide Risk"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A 21-item scale, completed via self-report or clinician interview, that quantifies the current intensity and severity of a person's suicidal ideation, attitudes, and plans to help gauge acute suicide risk.",
+      "access": "Copyrighted — requires purchase/license from Pearson",
+      "url": "https://www.pearsonassessments.com/store/en/usd/p/100000157.html",
+      "citation": "Beck, A. T., Kovacs, M., & Weissman, A. (1979). Assessment of suicidal intention: The Scale for Suicide Ideation. Journal of Consulting and Clinical Psychology, 47(2), 343–352. https://doi.org/10.1037/0022-006X.47.2.343",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "c-ssrs",
+      "name": "C-SSRS",
+      "fullName": "Columbia-Suicide Severity Rating Scale",
+      "categories": [
+        "Suicide Risk"
+      ],
+      "population": "All ages",
+      "description": "A semi-structured interview that assesses the presence, severity, and recency of suicidal ideation and behavior; designed to be administered by clinicians or trained non-clinicians and is widely used across healthcare, research, and community settings to screen for and track suicide risk.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://cssrs.columbia.edu/the-columbia-scale-c-ssrs/about-the-scale/",
+      "citation": "Posner, K., Brown, G. K., Stanley, B., Brent, D. A., Yershova, K. V., Oquendo, M. A., Currier, G. W., Melvin, G. A., Greenhill, L., Shen, S., & Mann, J. J. (2011). The Columbia-Suicide Severity Rating Scale: Initial validity and internal consistency findings from three multisite studies with adolescents and adults. American Journal of Psychiatry, 168(12), 1266–1277. https://doi.org/10.1176/appi.ajp.2011.10111704",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "cage",
+      "name": "CAGE",
+      "fullName": "CAGE Questionnaire",
+      "categories": [
+        "Alcohol Use"
+      ],
+      "population": "Adults",
+      "items": 4,
+      "description": "A 4-item self-report or clinician-administered screening questionnaire (Cut down, Annoyed, Guilty, Eye-opener) used to quickly identify probable alcohol misuse or dependence. A brief screening tool, not a diagnostic instrument.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.hopkinsmedicine.org/-/media/johns-hopkins-health-plans/documents/all_plans/cage-substance-screening-tool.pdf",
+      "citation": "Ewing, J. A. (1984). Detecting alcoholism: The CAGE questionnaire. JAMA, 252(14), 1905–1907. https://doi.org/10.1001/jama.1984.03350140051025",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "caps-5",
+      "name": "CAPS-5",
+      "fullName": "Clinician-Administered PTSD Scale for DSM-5",
+      "categories": [
+        "Posttraumatic Stress Disorder (PTSD) / Trauma"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A structured clinician-administered diagnostic interview considered the gold standard for assessing DSM-5 PTSD diagnostic status and symptom severity.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.ptsd.va.gov/professional/assessment/adult-int/caps.asp",
+      "citation": "Weathers, F. W., Bovin, M. J., Lee, D. J., Sloan, D. M., Schnurr, P. P., Kaloupek, D. G., Keane, T. M., & Marx, B. P. (2018). The Clinician-Administered PTSD Scale for DSM-5 (CAPS-5): Development and initial psychometric evaluation in military veterans. Psychological Assessment, 30(3), 383–395. https://doi.org/10.1037/pas0000486",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "cbcl",
+      "name": "CBCL",
+      "fullName": "Child Behavior Checklist",
+      "categories": [
+        "Child & Adolescent Behavioral/Emotional Problems"
+      ],
+      "population": "Children and Adolescents",
+      "items": 113,
+      "description": "A widely used parent-report rating scale assessing a broad range of behavioral, emotional, and social problems in children and adolescents ages 6-18; part of the Achenbach System of Empirically Based Assessment (ASEBA) and used for screening rather than diagnosis.",
+      "access": "Copyrighted — requires purchase/license from ASEBA (University of Vermont)",
+      "url": "https://aseba.org/",
+      "citation": "Achenbach, T. M., & Rescorla, L. A. (2001). Manual for the ASEBA School-Age Forms & Profiles. University of Vermont, Research Center for Children, Youth, & Families.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "cerq",
+      "name": "CERQ",
+      "fullName": "Cognitive Emotion Regulation Questionnaire",
+      "categories": [
+        "Emotion Regulation"
+      ],
+      "population": "Adults",
+      "items": 36,
+      "description": "A self-report questionnaire assessing nine cognitive coping strategies used in response to threatening or stressful life events (e.g., self-blame, rumination, catastrophizing, positive reappraisal); a validated child/adolescent version (CERQ-k) is also available.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.universiteitleiden.nl/en/research/research-projects/social-and-behavioural-sciences/cognitive-emotion-regulation-questionnaire-cerq",
+      "citation": "Garnefski, N., Kraaij, V., & Spinhoven, P. (2001). Negative life events, cognitive emotion regulation and depression. Personality and Individual Differences, 30(8), 1311-1327. https://doi.org/10.1016/S0191-8869(00)00113-6",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "clutter-image-rating",
+      "name": "CIR",
+      "fullName": "Clutter Image Rating",
+      "categories": [
+        "Hoarding Disorder"
+      ],
+      "population": "Adults",
+      "items": 3,
+      "description": "A pictorial self-report (or observer-rated) tool using photographs of rooms with progressively greater clutter (rated 1-9) to help individuals rate the severity of clutter in their living room, kitchen, and bedroom.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://hoarding.iocdf.org/wp-content/uploads/sites/7/2016/12/Clutter-Image-Rating-3-18-16.pdf",
+      "citation": "Frost, R. O., Steketee, G., Tolin, D. F., & Renaud, S. (2008). Development and validation of the Clutter Image Rating. Journal of Psychopathology and Behavioral Assessment, 30(3), 193–203. https://doi.org/10.1007/s10862-007-9068-7",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "conners-rating-scales-revised",
+      "name": "CRS-R",
+      "fullName": "Conners' Rating Scales-Revised",
+      "categories": [
+        "ADHD"
+      ],
+      "population": "Children and Adolescents",
+      "description": "Parent and teacher rating scales assessing ADHD symptoms (inattention, hyperactivity-impulsivity) and associated problem behaviors in children and adolescents, used by clinicians alongside interviews and observation as part of an ADHD diagnostic workup rather than as a standalone diagnostic test.",
+      "access": "Copyrighted — requires purchase/license from Multi-Health Systems (MHS)",
+      "url": "https://www.mhs.com/",
+      "citation": "Conners, C. K., Sitarenios, G., Parker, J. D. A., & Epstein, J. N. (1998). The revised Conners' Parent Rating Scale (CPRS-R): Factor structure, reliability, and criterion validity. Journal of Abnormal Child Psychology, 26(4), 257–268. https://doi.org/10.1023/A:1022602400621",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ctq",
+      "name": "CTQ",
+      "fullName": "Childhood Trauma Questionnaire (Short Form)",
+      "categories": [
+        "Adverse Childhood Experiences (ACEs) / Childhood Trauma History"
+      ],
+      "population": "Adults",
+      "items": 28,
+      "description": "A retrospective self-report inventory assessing five types of childhood maltreatment (emotional, physical, and sexual abuse; emotional and physical neglect) plus a minimization/denial validity scale; the 28-item short form is the version most widely used today.",
+      "access": "Copyrighted — requires purchase/license from Pearson (NCS Pearson, Inc.)",
+      "url": "https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Personality-&-Biopsychosocial/Childhood-Trauma-Questionnaire:-A-Retrospective-Self-Report/p/100000446",
+      "citation": "Bernstein, D. P., Stein, J. A., Newcomb, M. D., Walker, E., Pogge, D., Ahluvalia, T., Stokes, J., Handelsman, L., Medrano, M., Desmond, D., & Zule, W. (2003). Development and validation of a brief screening version of the Childhood Trauma Questionnaire. Child Abuse & Neglect, 27(2), 169-190. https://doi.org/10.1016/S0145-2134(02)00541-0",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "cy-bocs",
+      "name": "CY-BOCS",
+      "fullName": "Children's Yale-Brown Obsessive Compulsive Scale",
+      "categories": [
+        "Obsessive-Compulsive Disorder (OCD)"
+      ],
+      "population": "Children and Adolescents",
+      "items": 10,
+      "description": "Clinician-administered, semi-structured interview adapted from the Y-BOCS to rate the severity of obsessions and compulsions in children and adolescents with OCD.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://iocdf.org/expert-opinions/expert-opinion-measuring-oc-symptoms/",
+      "citation": "Scahill, L., Riddle, M. A., McSwiggin-Hardin, M., Ort, S. I., King, R. A., Goodman, W. K., Cicchetti, D., & Leckman, J. F. (1997). Children's Yale-Brown Obsessive Compulsive Scale: Reliability and validity. Journal of the American Academy of Child and Adolescent Psychiatry, 36(6), 844–852. https://doi.org/10.1097/00004583-199706000-00023",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "dast-10",
+      "name": "DAST-10",
+      "fullName": "Drug Abuse Screening Test (10-item version)",
+      "categories": [
+        "Substance Use"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A brief yes/no self-report screener assessing drug-related problems and consequences (excluding alcohol and tobacco) over the past 12 months, widely used in primary care and addiction treatment settings.",
+      "access": "Copyrighted — free to reproduce for non-commercial clinical/research/training use with attribution; contact Dr. Harvey Skinner or CAMH (Centre for Addiction and Mental Health, Toronto) for other uses",
+      "url": "https://cde.drugabuse.gov/instrument/e9053390-ee9c-9140-e040-bb89ad433d69",
+      "citation": "Skinner, H. A. (1982). The drug abuse screening test. Addictive Behaviors, 7(4), 363–371. https://doi.org/10.1016/0306-4603(82)90005-3",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "dcq",
+      "name": "DCQ",
+      "fullName": "Dysmorphic Concern Questionnaire",
+      "categories": [
+        "Body Dysmorphic Disorder"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "Brief self-report screening questionnaire measuring dysmorphic concern (excessive appearance-related preoccupation and associated distress). Used as a first-line screener for BDD-related symptoms in clinical and cosmetic-treatment-seeking populations.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/",
+      "citation": "Oosthuizen, P., Lambert, T., & Castle, D. J. (1998). Dysmorphic concern: Prevalence and associations with clinical variables. Australian and New Zealand Journal of Psychiatry, 32, 129–132. https://doi.org/10.3109/00048679809062719",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ders",
+      "name": "DERS",
+      "fullName": "Difficulties in Emotion Regulation Scale",
+      "categories": [
+        "Emotion Regulation"
+      ],
+      "population": "Adults",
+      "items": 36,
+      "description": "A self-report measure assessing multiple dimensions of emotion dysregulation, including nonacceptance of emotional responses, difficulty engaging in goal-directed behavior, impulse control difficulties, limited access to regulation strategies, and lack of emotional clarity and awareness.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.nctsn.org/measures/difficulties-emotion-regulation-scale",
+      "citation": "Gratz, K. L., & Roemer, L. (2004). Multidimensional assessment of emotion regulation and dysregulation: Development, factor structure, and initial validation of the difficulties in emotion regulation scale. Journal of Psychopathology and Behavioral Assessment, 26(1), 41-54. https://doi.org/10.1023/B:JOBA.0000007455.08539.94",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "docs",
+      "name": "DOCS",
+      "fullName": "Dimensional Obsessive-Compulsive Scale",
+      "categories": [
+        "Obsessive-Compulsive Disorder (OCD)"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "Self-report measure assessing OCD symptom severity across four empirically supported symptom dimensions: contamination, responsibility for harm/mistakes, incompleteness/symmetry, and unacceptable (taboo) thoughts.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.swc.edu/wp-content/uploads/Dimensional-Obsessive-Compulsive-Scale-Scoring-Instructions.pdf",
+      "citation": "Abramowitz, J. S., Deacon, B. J., Olatunji, B. O., Wheaton, M. G., Berman, N. C., Losardo, D., Timpano, K. R., McGrath, P. B., Riemann, B. C., Adams, T., Björgvinsson, T., Storch, E. A., & Hale, L. R. (2010). Assessment of obsessive-compulsive symptom dimensions: Development and evaluation of the Dimensional Obsessive-Compulsive Scale. Psychological Assessment, 22(1), 180–198. https://doi.org/10.1037/a0018260",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "dudit",
+      "name": "DUDIT",
+      "fullName": "Drug Use Disorders Identification Test",
+      "categories": [
+        "Substance Use"
+      ],
+      "population": "Adults",
+      "items": 11,
+      "description": "An 11-item self-report screener modeled on the AUDIT that identifies drug-related problems and likely dependence across substances other than alcohol, used widely in criminal justice, detoxification, and general population settings.",
+      "access": "Free for clinical/research use — item content is in the public domain; contact Karolinska Institutet for the formatted manual/layout",
+      "url": "https://www.emcdda.europa.eu/publications/topic-overviews/dudit_en",
+      "citation": "Berman, A. H., Bergman, H., Palmstierna, T., & Schlyter, F. (2005). Evaluation of the Drug Use Disorders Identification Test (DUDIT) in criminal justice and detoxification settings and in a Swedish population sample. European Addiction Research, 11(1), 22–31. https://doi.org/10.1159/000081413",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "eat-26",
+      "name": "EAT-26",
+      "fullName": "Eating Attitudes Test-26",
+      "categories": [
+        "Eating Disorders"
+      ],
+      "population": "Adults",
+      "items": 26,
+      "description": "A 26-item self-report screening questionnaire measuring dieting behavior, bulimic symptoms/food preoccupation, and oral control related to eating disorder risk; used to flag individuals (e.g., in high school, college, or athlete samples) who may need further clinical evaluation, not a diagnostic instrument.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.eat-26.com/",
+      "citation": "Garner, D. M., Olmsted, M. P., Bohr, Y., & Garfinkel, P. E. (1982). The Eating Attitudes Test: Psychometric features and clinical correlates. Psychological Medicine, 12(4), 871–878. https://doi.org/10.1017/S0033291700049163",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ede-q",
+      "name": "EDE-Q",
+      "fullName": "Eating Disorder Examination Questionnaire",
+      "categories": [
+        "Eating Disorders"
+      ],
+      "population": "Adults",
+      "items": 28,
+      "description": "A self-report questionnaire adapted from the interview-based Eating Disorder Examination that assesses the frequency and severity of eating disorder attitudes and behaviors (restraint, eating concern, shape concern, weight concern) over the past 28 days; used for screening and monitoring treatment progress rather than formal diagnosis.",
+      "access": "Free for clinical/research use (non-commercial) — copyrighted by the authors, downloadable without registration from the official CREDO Oxford site",
+      "url": "https://www.credo-oxford.com/7.2.html",
+      "citation": "Fairburn, C. G., & Beglin, S. J. (1994). Assessment of eating disorders: Interview or self-report questionnaire? International Journal of Eating Disorders, 16(4), 363–370. https://doi.org/10.1002/1098-108X(199412)16:4<363::AID-EAT2260160405>3.0.CO;2-#",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "erq",
+      "name": "ERQ",
+      "fullName": "Emotion Regulation Questionnaire",
+      "categories": [
+        "Emotion Regulation"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A self-report questionnaire measuring individual differences in the habitual use of two emotion regulation strategies: cognitive reappraisal and expressive suppression.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://spl.stanford.edu/resources",
+      "citation": "Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85(2), 348-362. https://doi.org/10.1037/0022-3514.85.2.348",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ess",
+      "name": "ESS",
+      "fullName": "Epworth Sleepiness Scale",
+      "categories": [
+        "Sleep Disorders"
+      ],
+      "population": "Adults",
+      "items": 8,
+      "description": "A self-report scale measuring general level of daytime sleepiness by having respondents rate their usual chance of dozing off in eight common everyday situations; widely used to screen for excessive daytime sleepiness in insomnia, sleep apnea, and other sleep disorders.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://epworthsleepinessscale.com/about-the-ess/",
+      "citation": "Johns, M. W. (1991). A new method for measuring daytime sleepiness: The Epworth sleepiness scale. Sleep, 14(6), 540–545. https://doi.org/10.1093/sleep/14.6.540",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "fq",
+      "name": "FQ",
+      "fullName": "Fear Questionnaire (Marks-Mathews Fear Questionnaire)",
+      "categories": [
+        "Specific Phobia",
+        "Social Anxiety Disorder",
+        "Panic Disorder"
+      ],
+      "population": "Adults",
+      "items": 15,
+      "description": "A self-report scale in which patients rate avoidance across 15 phobic situations grouped into three 5-item subscales (agoraphobia, blood-injury-illness phobia, and social phobia), plus an associated anxiety-depression scale; a brief standard tool for tracking phobic symptom change over treatment.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.psychdb.com/_media/anxiety/fear_questionnaire.pdf",
+      "citation": "Marks, I. M., & Mathews, A. M. (1979). Brief standard self-rating for phobic patients. Behaviour Research and Therapy, 17(3), 263–267. https://doi.org/10.1016/0005-7967(79)90041-X",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "gad-7",
+      "name": "GAD-7",
+      "fullName": "Generalized Anxiety Disorder 7-item scale",
+      "categories": [
+        "Generalized Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A brief self-report screening and severity measure asking respondents to rate how often they've been bothered by seven core generalized anxiety symptoms over the past two weeks; widely used in primary care and research settings.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.phqscreeners.com",
+      "citation": "Spitzer, R. L., Kroenke, K., Williams, J. B. W., & Löwe, B. (2006). A brief measure for assessing generalized anxiety disorder: The GAD-7. Archives of Internal Medicine, 166(10), 1092–1097. https://doi.org/10.1001/archinte.166.10.1092",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ham-a",
+      "name": "HAM-A",
+      "fullName": "Hamilton Anxiety Rating Scale",
+      "categories": [
+        "Generalized Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 14,
+      "description": "A clinician-administered rating scale assessing the severity of psychic anxiety (mental agitation and distress) and somatic anxiety (physical complaints) via a structured interview; one of the earliest and most widely used anxiety severity measures in clinical trials.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://dcf.psychiatry.ufl.edu/files/2011/05/HAMILTON-ANXIETY.pdf",
+      "citation": "Hamilton, M. (1959). The assessment of anxiety states by rating. British Journal of Medical Psychology, 32(1), 50–55. https://doi.org/10.1111/j.2044-8341.1959.tb00467.x",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ham-d",
+      "name": "HAM-D",
+      "fullName": "Hamilton Rating Scale for Depression (Hamilton Depression Rating Scale)",
+      "categories": [
+        "Depression"
+      ],
+      "population": "Adults",
+      "items": 17,
+      "description": "A clinician-administered interview-based rating scale, considered the historical gold standard for measuring depression severity in treatment trials; the clinician scores symptoms based on the interview and observation rather than patient self-report.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC495331/",
+      "citation": "Hamilton, M. (1960). A rating scale for depression. Journal of Neurology, Neurosurgery, and Psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "hcl-32",
+      "name": "HCL-32",
+      "fullName": "Hypomania Checklist-32",
+      "categories": [
+        "Bipolar Disorder"
+      ],
+      "population": "Adults",
+      "items": 32,
+      "description": "A 32-item self-report checklist screening for a lifetime history of hypomanic symptoms and associated functional impact, designed to help distinguish bipolar II disorder and bipolar spectrum conditions from unipolar depression.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://sabi.unc.edu/pdf/Hypomania%20Checklist_Angst.pdf",
+      "citation": "Angst, J., Adolfsson, R., Benazzi, F., Gamma, A., Hantouche, E., Meyer, T. D., Skeppar, P., Vieta, E., & Scott, J. (2005). The HCL-32: Towards a self-assessment tool for hypomanic symptoms in outpatients. Journal of Affective Disorders, 88(2), 217–233. https://doi.org/10.1016/j.jad.2005.05.011",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "hoarding-rating-scale-interview",
+      "name": "HRS-I",
+      "fullName": "Hoarding Rating Scale-Interview",
+      "categories": [
+        "Hoarding Disorder"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A brief (5-10 minute) semi-structured clinician-administered interview that assesses clutter, difficulty discarding, acquisition, distress, and functional impairment associated with hoarding.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://scholarworks.smith.edu/psy_facpubs/52/",
+      "citation": "Tolin, D. F., Frost, R. O., & Steketee, G. (2010). A brief interview for assessing compulsive hoarding: The Hoarding Rating Scale-Interview. Psychiatry Research, 178(1), 147–152. https://doi.org/10.1016/j.psychres.2009.05.001",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ies-r",
+      "name": "IES-R",
+      "fullName": "Impact of Event Scale – Revised",
+      "categories": [
+        "Posttraumatic Stress Disorder (PTSD) / Trauma"
+      ],
+      "population": "Adults",
+      "items": 22,
+      "description": "A self-report measure of subjective distress related to a specific traumatic event, covering intrusion, avoidance, and hyperarousal symptom clusters; widely used as a screening tool.",
+      "access": "Copyrighted — requires permission from author/Guilford Press",
+      "url": "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_19.pdf",
+      "citation": "Weiss, D. S., & Marmar, C. R. (1997). The Impact of Event Scale—Revised. In J. P. Wilson & T. M. Keane (Eds.), Assessing psychological trauma and PTSD: A practitioner's handbook (pp. 399–411). Guilford Press.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "isas",
+      "name": "ISAS",
+      "fullName": "Inventory of Statements About Self-Injury",
+      "categories": [
+        "Self-Harm"
+      ],
+      "population": "Adults",
+      "items": 39,
+      "description": "A self-report measure of non-suicidal self-injury (NSSI): an initial checklist documents the type, frequency, and characteristics of self-injurious behaviors, followed by a 39-item section (3 items each) rating 13 perceived intrapersonal and interpersonal functions the behavior serves, such as affect regulation and self-punishment.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www2.psych.ubc.ca/~klonsky/publications/ISASmeasure.pdf",
+      "citation": "Klonsky, E. D., & Glenn, C. R. (2009). Assessing the functions of non-suicidal self-injury: Psychometric properties of the Inventory of Statements About Self-Injury (ISAS). Journal of Psychopathology and Behavioral Assessment, 31(3), 215–219. https://doi.org/10.1007/s10862-008-9107-z",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "isi",
+      "name": "ISI",
+      "fullName": "Insomnia Severity Index",
+      "categories": [
+        "Sleep Disorders"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A brief self-report scale that assesses the perceived severity of sleep-onset and sleep-maintenance difficulties, satisfaction with current sleep, interference with daily functioning, noticeability of impairment, and distress caused by the sleep problem.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://eprovide.mapi-trust.org/instruments/insomnia-severity-index",
+      "citation": "Bastien, C. H., Vallières, A., & Morin, C. M. (2001). Validation of the Insomnia Severity Index as an outcome measure for insomnia research. Sleep Medicine, 2(4), 297–307. https://doi.org/10.1016/S1389-9457(00)00065-4",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "lsas",
+      "name": "LSAS",
+      "fullName": "Liebowitz Social Anxiety Scale",
+      "categories": [
+        "Social Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 24,
+      "description": "Rates fear/anxiety and avoidance across 24 social interaction and performance situations; originally designed as a clinician-administered scale and later validated as a self-report measure, it is the most widely used outcome measure in social anxiety disorder treatment trials.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://nationalsocialanxietycenter.com/liebowitz-sa-scale/",
+      "citation": "Liebowitz, M. R. (1987). Social phobia. Modern Problems of Pharmacopsychiatry, 22, 141–173.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "madrs",
+      "name": "MADRS",
+      "fullName": "Montgomery-Åsberg Depression Rating Scale",
+      "categories": [
+        "Depression"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A 10-item clinician-administered scale drawn from the broader Comprehensive Psychopathological Rating Scale, selected specifically for sensitivity to treatment-related change in depression severity; commonly used as an outcome measure in antidepressant trials.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.psychdb.com/_media/mood/madrs.pdf",
+      "citation": "Montgomery, S. A., & Åsberg, M. (1979). A new depression scale designed to be sensitive to change. The British Journal of Psychiatry, 134(4), 382–389. https://doi.org/10.1192/bjp.134.4.382",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "mast",
+      "name": "MAST",
+      "fullName": "Michigan Alcoholism Screening Test",
+      "categories": [
+        "Alcohol Use"
+      ],
+      "population": "Adults",
+      "items": 25,
+      "description": "A 25-item yes/no self-report questionnaire assessing lifetime alcohol-related problems and consequences, used to screen for alcohol dependence in adults.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.oregon.gov/oha/HSD/AMH/docs/MAST.pdf",
+      "citation": "Selzer, M. L. (1971). The Michigan Alcoholism Screening Test: The quest for a new diagnostic instrument. American Journal of Psychiatry, 127(12), 1653–1658. https://doi.org/10.1176/ajp.127.12.1653",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "mdq",
+      "name": "MDQ",
+      "fullName": "Mood Disorder Questionnaire",
+      "categories": [
+        "Bipolar Disorder"
+      ],
+      "population": "Adults",
+      "items": 13,
+      "description": "A brief self-report screening questionnaire asking about lifetime experiences of manic/hypomanic symptoms, whether they co-occurred, and the resulting functional impairment; it identifies people who may fall on the bipolar spectrum but is not diagnostic on its own.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.dbsalliance.org/education/mental-health-screening-center/",
+      "citation": "Hirschfeld, R. M. A., Williams, J. B. W., Spitzer, R. L., Calabrese, J. R., Flynn, L., Keck, P. E., Jr., Lewis, L., McElroy, S. L., Post, R. M., Rapport, D. J., Russell, J. M., Sachs, G. S., & Zajecka, J. (2000). Development and validation of a screening instrument for bipolar spectrum disorder: The Mood Disorder Questionnaire. American Journal of Psychiatry, 157(11), 1873–1875. https://doi.org/10.1176/appi.ajp.157.11.1873",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "msi-bpd",
+      "name": "MSI-BPD",
+      "fullName": "McLean Screening Instrument for Borderline Personality Disorder",
+      "categories": [
+        "Borderline Personality Disorder",
+        "Personality Disorders"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A brief self-report questionnaire with 10 yes/no items designed to identify individuals who may warrant further clinical evaluation for borderline personality disorder; it is a screening tool, not a diagnostic instrument.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14744082/",
+      "citation": "Zanarini, M. C., Vujanovic, A. A., Parachini, E. A., Boulanger, J. L., Frankenburg, F. R., & Hennen, J. (2003). A screening measure for BPD: The McLean Screening Instrument for Borderline Personality Disorder (MSI-BPD). Journal of Personality Disorders, 17(6), 568–573. https://doi.org/10.1521/pedi.17.6.568.25355",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "vanderbilt-adhd-diagnostic-rating-scale",
+      "name": "NICHQ Vanderbilt",
+      "fullName": "Vanderbilt ADHD Diagnostic Rating Scale",
+      "categories": [
+        "ADHD"
+      ],
+      "population": "Children",
+      "items": 55,
+      "description": "Parent (55-item) and teacher (43-item) rating scales assessing DSM-IV/DSM-5 inattentive and hyperactive-impulsive ADHD symptoms plus common comorbid screens (oppositional-defiant, conduct, anxiety/depression) in children ages 6–12; used by clinicians as a diagnostic-support and monitoring tool, completed by parents/teachers rather than the child.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://nichq.org/downloadable/nichq-vanderbilt-assessment-scales/",
+      "citation": "Wolraich, M. L., Lambert, W., Doffing, M. A., Bickman, L., Simmons, T., & Worley, K. (2003). Psychometric properties of the Vanderbilt ADHD Diagnostic Parent Rating Scale in a referred population. Journal of Pediatric Psychology, 28(8), 559–568. https://doi.org/10.1093/jpepsy/jsg046",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "oci-r",
+      "name": "OCI-R",
+      "fullName": "Obsessive-Compulsive Inventory-Revised",
+      "categories": [
+        "Obsessive-Compulsive Disorder (OCD)"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "Self-report questionnaire measuring distress from OCD symptoms across six dimensions (washing, checking, ordering, obsessing, hoarding, neutralizing) over the past month. Used as a screening and symptom-severity tracking tool rather than a diagnostic instrument.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psychology-tools.com/test/obsessive-compulsive-inventory-revised",
+      "citation": "Foa, E. B., Huppert, J. D., Leiberg, S., Langner, R., Kichic, R., Hajcak, G., & Salkovskis, P. M. (2002). The Obsessive-Compulsive Inventory: Development and validation of a short version. Psychological Assessment, 14(4), 485–495. https://doi.org/10.1037/1040-3590.14.4.485",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pai-bor",
+      "name": "PAI-BOR",
+      "fullName": "Personality Assessment Inventory — Borderline Features Scale",
+      "categories": [
+        "Borderline Personality Disorder",
+        "Personality Disorders"
+      ],
+      "population": "Adults",
+      "items": 24,
+      "description": "A 24-item self-report subscale of the Personality Assessment Inventory that measures borderline personality features across four facets: affective instability, identity problems, negative relationships, and self-harm.",
+      "access": "Copyrighted — requires purchase/license from Psychological Assessment Resources (PAR)",
+      "url": "https://www.parinc.com/products/pai",
+      "citation": "Trull, T. J. (1995). Borderline personality disorder features in nonclinical young adults: 1. Identification and validation. Psychological Assessment, 7(1), 33–41. https://doi.org/10.1037/1040-3590.7.1.33",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "panss",
+      "name": "PANSS",
+      "fullName": "Positive and Negative Syndrome Scale",
+      "categories": [
+        "Psychosis / Schizophrenia"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item, clinician-administered semi-structured interview rating the severity of positive symptoms (e.g., delusions, hallucinations), negative symptoms (e.g., blunted affect, social withdrawal), and general psychopathology in schizophrenia; widely used to track symptom severity and treatment response.",
+      "access": "Copyrighted — requires purchase/license from Mapi Research Trust",
+      "url": "https://eprovide.mapi-trust.org/instruments/positive-and-negative-syndrome-scale-for-schizophrenia",
+      "citation": "Kay, S. R., Fiszbein, A., & Opler, L. A. (1987). The Positive and Negative Syndrome Scale (PANSS) for schizophrenia. Schizophrenia Bulletin, 13(2), 261–276. https://doi.org/10.1093/schbul/13.2.261",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pcl-5",
+      "name": "PCL-5",
+      "fullName": "PTSD Checklist for DSM-5",
+      "categories": [
+        "Posttraumatic Stress Disorder (PTSD) / Trauma"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A self-report measure assessing the 20 DSM-5 symptoms of PTSD, used for screening, diagnosis support, and monitoring symptom change over time.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp",
+      "citation": "Blevins, C. A., Weathers, F. W., Davis, M. T., Witte, T. K., & Domino, J. L. (2015). The Posttraumatic Stress Disorder Checklist for DSM-5 (PCL-5): Development and initial psychometric evaluation. Journal of Traumatic Stress, 28(6), 489–498. https://doi.org/10.1002/jts.22059",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pdss",
+      "name": "PDSS",
+      "fullName": "Panic Disorder Severity Scale",
+      "categories": [
+        "Panic Disorder"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A clinician-administered (with a validated self-report version) scale rating panic frequency, distress, anticipatory anxiety, avoidance, and functional impairment; developed as a standardized outcome measure for panic disorder treatment studies.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psychiatryonline.org/doi/10.1176/ajp.154.11.1571",
+      "citation": "Shear, M. K., Brown, T. A., Barlow, D. H., Money, R., Sholomskas, D. E., Woods, S. W., Gorman, J. M., & Papp, L. A. (1997). Multicenter collaborative panic disorder severity scale. American Journal of Psychiatry, 154(11), 1571–1575. https://doi.org/10.1176/ajp.154.11.1571",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pedsql",
+      "name": "PedsQL",
+      "fullName": "Pediatric Quality of Life Inventory",
+      "categories": [
+        "Quality of Life / Well-Being"
+      ],
+      "population": "Children and Adolescents",
+      "items": 23,
+      "description": "A modular instrument measuring health-related quality of life in children and adolescents ages 2-18 across physical, emotional, social, and school functioning domains, completed via child self-report and/or parent proxy-report.",
+      "access": "Copyrighted — requires purchase/license from Mapi Research Trust / James W. Varni",
+      "url": "https://www.pedsql.org/",
+      "citation": "Varni, J. W., Seid, M., & Kurtin, P. S. (2001). PedsQL 4.0: Reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Medical Care, 39(8), 800-812. https://doi.org/10.1097/00005650-200108000-00006",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "phq-15",
+      "name": "PHQ-15",
+      "fullName": "Patient Health Questionnaire-15",
+      "categories": [
+        "Health Anxiety / Somatic Symptoms"
+      ],
+      "population": "Adults",
+      "items": 15,
+      "description": "A brief self-report measure of somatic symptom severity assessing 15 common physical complaints over the past four weeks; part of the PHQ family of measures used for screening in primary care and research.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.phqscreeners.com/",
+      "citation": "Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2002). The PHQ-15: Validity of a new measure for evaluating the severity of somatic symptoms. Psychosomatic Medicine, 64(2), 258-266. https://doi.org/10.1097/00006842-200203000-00008",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "phq-9",
+      "name": "PHQ-9",
+      "fullName": "Patient Health Questionnaire-9",
+      "categories": [
+        "Depression"
+      ],
+      "population": "Adults",
+      "items": 9,
+      "description": "A brief self-report screening and severity measure that scores each DSM-IV depressive symptom on frequency over the past two weeks; widely used in primary care and research to screen for and track major depressive disorder.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.phqscreeners.com",
+      "citation": "Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ-9: Validity of a brief depression severity measure. Journal of General Internal Medicine, 16(9), 606–613. https://doi.org/10.1046/j.1525-1497.2001.016009606.x",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pq-16",
+      "name": "PQ-16",
+      "fullName": "16-Item Prodromal Questionnaire",
+      "categories": [
+        "Psychosis / Schizophrenia"
+      ],
+      "population": "Adolescents",
+      "items": 16,
+      "description": "A brief self-report screening tool used primarily with adolescents and young adults to identify psychotic-like experiences and distress associated with them, flagging individuals who may be at clinical high risk for psychosis and warrant further evaluation; it is a screener, not a diagnostic instrument.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.mcpap.com/pdf/PQ-16.pdf",
+      "citation": "Ising, H. K., Veling, W., Loewy, R. L., Rietveld, M. W., Rietdijk, J., Dragt, S., Klaassen, R. M. C., Nieman, D. H., Wunderink, L., Linszen, D. H., & van der Gaag, M. (2012). The validity of the 16-item version of the Prodromal Questionnaire (PQ-16) to screen for ultra high risk of developing psychosis in the general help-seeking population. Schizophrenia Bulletin, 38(6), 1288–1296. https://doi.org/10.1093/schbul/sbs068",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "psc",
+      "name": "PSC",
+      "fullName": "Pediatric Symptom Checklist",
+      "categories": [
+        "Child & Adolescent Behavioral/Emotional Problems"
+      ],
+      "population": "Children and Adolescents",
+      "items": 35,
+      "description": "A brief parent-report (with a youth self-report version, Y-PSC) psychosocial screening questionnaire used in pediatric primary care to identify school-age children who may benefit from further mental health evaluation.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.massgeneral.org/psychiatry/treatments-and-services/pediatric-symptom-checklist",
+      "citation": "Jellinek, M. S., Murphy, J. M., Robinson, J., Feins, A., Lamb, S., & Fenton, T. (1988). Pediatric Symptom Checklist: Screening school-age children for psychosocial dysfunction. The Journal of Pediatrics, 112(2), 201-209. https://doi.org/10.1016/S0022-3476(88)80056-8",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "psq",
+      "name": "PSQ",
+      "fullName": "Perceived Stress Questionnaire",
+      "categories": [
+        "Perceived Stress"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A self-report questionnaire measuring subjectively experienced stress at a cognitive level, assessed either over the past month (Recent version) or the past one to two years (General version); originally developed for psychosomatic research.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.med.upenn.edu/cbti/assets/user-content/documents/Perceived%20Stress%20Questionnaire%20(PSQ).pdf",
+      "citation": "Levenstein, S., Prantera, C., Varvo, V., Scribano, M. L., Berto, E., Luzi, C., & Andreoli, A. (1993). Development of the Perceived Stress Questionnaire: A new tool for psychosomatic research. Journal of Psychosomatic Research, 37(1), 19-32. https://doi.org/10.1016/0022-3999(93)90120-5",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "psqi",
+      "name": "PSQI",
+      "fullName": "Pittsburgh Sleep Quality Index",
+      "categories": [
+        "Sleep Disorders"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A self-report questionnaire assessing sleep quality and disturbances over the preceding month across seven components (subjective quality, latency, duration, habitual efficiency, disturbances, use of sleep medication, and daytime dysfunction), combined into a global score.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.sleep.pitt.edu/psqi",
+      "citation": "Buysse, D. J., Reynolds, C. F., Monk, T. H., Berman, S. R., & Kupfer, D. J. (1989). The Pittsburgh Sleep Quality Index: A new instrument for psychiatric practice and research. Psychiatry Research, 28(2), 193–213. https://doi.org/10.1016/0165-1781(89)90047-4",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pss",
+      "name": "PSS",
+      "fullName": "Perceived Stress Scale",
+      "categories": [
+        "Perceived Stress"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A widely used self-report measure of the degree to which situations in one's life are appraised as stressful, unpredictable, and uncontrollable over the past month; available in 14-, 10-, and 4-item versions.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/index.html",
+      "citation": "Cohen, S., Kamarck, T., & Mermelstein, R. (1983). A global measure of perceived stress. Journal of Health and Social Behavior, 24(4), 385-396.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "pswq",
+      "name": "PSWQ",
+      "fullName": "Penn State Worry Questionnaire",
+      "categories": [
+        "Generalized Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A self-report trait measure of the tendency to worry excessively and uncontrollably, the central feature of generalized anxiety disorder; frequently used alongside diagnostic interviews in GAD research.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://osf.io/k642b/",
+      "citation": "Meyer, T. J., Miller, M. L., Metzger, R. L., & Borkovec, T. D. (1990). Development and validation of the Penn State Worry Questionnaire. Behaviour Research and Therapy, 28(6), 487–495. https://doi.org/10.1016/0005-7967(90)90135-6",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "sans",
+      "name": "SANS",
+      "fullName": "Scale for the Assessment of Negative Symptoms",
+      "categories": [
+        "Psychosis / Schizophrenia"
+      ],
+      "population": "Adults",
+      "items": 24,
+      "description": "A clinician-administered rating scale, organized into five subscales (affective flattening, alogia, avolition-apathy, anhedonia-asociality, and attention), that measures the severity of negative symptoms in schizophrenia; often paired with the companion SAPS for positive symptoms.",
+      "access": "Copyrighted — requires purchase/license from Mapi Research Trust",
+      "url": "https://eprovide.mapi-trust.org/instruments/scale-for-assessing-negative-symptoms",
+      "citation": "Andreasen, N. C. (1989). The Scale for the Assessment of Negative Symptoms (SANS): Conceptual and theoretical foundations. British Journal of Psychiatry, 155(S7), 49–52.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "sasrq",
+      "name": "SASRQ",
+      "fullName": "Stanford Acute Stress Reaction Questionnaire",
+      "categories": [
+        "Acute Stress Disorder"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A self-report measure evaluating dissociative, re-experiencing, avoidance, arousal, and impairment symptoms following a traumatic event, based on DSM-IV acute stress disorder criteria.",
+      "access": "Copyrighted — requires purchase/license from Mapi Research Trust",
+      "url": "https://eprovide.mapi-trust.org/instruments/stanford-acute-stress-reaction-questionnaire",
+      "citation": "Cardeña, E., Koopman, C., Classen, C., Waelde, L. C., & Spiegel, D. (2000). Psychometric properties of the Stanford Acute Stress Reaction Questionnaire (SASRQ): A valid and reliable measure of acute stress. Journal of Traumatic Stress, 13(4), 719–734. https://doi.org/10.1023/A:1007822603186",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "sbq-r",
+      "name": "SBQ-R",
+      "fullName": "Suicidal Behaviors Questionnaire-Revised",
+      "categories": [
+        "Suicide Risk"
+      ],
+      "population": "Adults",
+      "items": 4,
+      "description": "A brief 4-item self-report screening measure of suicide risk that assesses lifetime suicidal ideation and attempts, frequency of ideation in the past year, threatened or communicated suicidal intent, and self-reported likelihood of future suicidal behavior.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK571017/box/ch3.b10/?report=objectonly",
+      "citation": "Osman, A., Bagge, C. L., Gutierrez, P. M., Konick, L. C., Kopper, B. A., & Barrios, F. X. (2001). The Suicidal Behaviors Questionnaire-Revised (SBQ-R): Validation with clinical and nonclinical samples. Assessment, 8(4), 443–454. https://doi.org/10.1177/107319110100800409",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "scid-5-pd",
+      "name": "SCID-5-PD",
+      "fullName": "Structured Clinical Interview for DSM-5 Personality Disorders",
+      "categories": [
+        "Personality Disorders"
+      ],
+      "population": "Adults",
+      "description": "A semi-structured, clinician-administered diagnostic interview used to systematically assess and diagnose all ten DSM-5 personality disorders plus other specified personality disorder; widely regarded as a gold-standard diagnostic instrument for research and clinical use.",
+      "access": "Copyrighted — requires purchase/license from American Psychiatric Association Publishing",
+      "url": "https://www.appi.org/structured_clinical_interview_for_dsm-5_personality_disorders_scid-5-pd",
+      "citation": "First, M. B., Williams, J. B. W., Benjamin, L. S., & Spitzer, R. L. (2016). Structured Clinical Interview for DSM-5 Personality Disorders (SCID-5-PD). American Psychiatric Association Publishing.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "scoff",
+      "name": "SCOFF",
+      "fullName": "SCOFF Questionnaire",
+      "categories": [
+        "Eating Disorders"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A brief 5-item yes/no self-report screening tool for possible anorexia nervosa or bulimia nervosa, designed for rapid use in primary care and non-specialist settings; a score of 2 or more suggests the need for further clinical assessment and is not itself diagnostic.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC28290/",
+      "citation": "Morgan, J. F., Reid, F., & Lacey, J. H. (1999). The SCOFF questionnaire: Assessment of a new screening tool for eating disorders. BMJ, 319(7223), 1467–1468. https://doi.org/10.1136/bmj.319.7223.1467",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "sdq",
+      "name": "SDQ",
+      "fullName": "Strengths and Difficulties Questionnaire",
+      "categories": [
+        "Child & Adolescent Behavioral/Emotional Problems"
+      ],
+      "population": "Children and Adolescents",
+      "items": 25,
+      "description": "A brief behavioral screening questionnaire covering emotional symptoms, conduct problems, hyperactivity/inattention, peer relationship problems, and prosocial behavior in children and adolescents ages 2-17; completed by parents, teachers, or (age 11+) via self-report.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.sdqinfo.org/",
+      "citation": "Goodman, R. (1997). The Strengths and Difficulties Questionnaire: A research note. Journal of Child Psychology and Psychiatry, 38(5), 581-586. https://doi.org/10.1111/j.1469-7610.1997.tb01545.x",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "shai",
+      "name": "SHAI",
+      "fullName": "Short Health Anxiety Inventory",
+      "categories": [
+        "Health Anxiety / Somatic Symptoms"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item self-report measure of health anxiety independent of actual physical health status, assessing worry about illness, awareness of bodily sensations, and feared negative consequences of illness; derived as the short form of the longer Health Anxiety Inventory (HAI).",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12171372/",
+      "citation": "Salkovskis, P. M., Rimes, K. A., Warwick, H. M. C., & Clark, D. M. (2002). The Health Anxiety Inventory: Development and validation of scales for the measurement of health anxiety and hypochondriasis. Psychological Medicine, 32(5), 843-853. https://doi.org/10.1017/S0033291702005822",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "saving-inventory-revised",
+      "name": "SI-R",
+      "fullName": "Saving Inventory-Revised",
+      "categories": [
+        "Hoarding Disorder"
+      ],
+      "population": "Adults",
+      "items": 23,
+      "description": "A self-report questionnaire measuring the three core features of hoarding disorder: difficulty discarding, excessive clutter, and excessive acquisition.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://hoarding.iocdf.org/professionals/clinical-assessment/",
+      "citation": "Frost, R. O., Steketee, G., & Grisham, J. (2004). Measurement of compulsive hoarding: Saving Inventory-Revised. Behaviour Research and Therapy, 42(10), 1163–1182. https://doi.org/10.1016/j.brat.2003.07.006",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "sias",
+      "name": "SIAS",
+      "fullName": "Social Interaction Anxiety Scale",
+      "categories": [
+        "Social Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A self-report measure of anxiety experienced during dyadic and group social interactions (as distinct from performance/scrutiny fears), often used alongside its companion Social Phobia Scale to assess social anxiety disorder.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9670605/",
+      "citation": "Mattick, R. P., & Clarke, J. C. (1998). Development and validation of measures of social phobia scrutiny fear and social interaction anxiety. Behaviour Research and Therapy, 36(4), 455–470. https://doi.org/10.1016/S0005-7967(97)10031-6",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "smsp",
+      "name": "SMSP",
+      "fullName": "Severity Measure for Specific Phobia—Adult",
+      "categories": [
+        "Specific Phobia"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A DSM-5-linked self-report dimensional severity measure rating how often specific-phobia symptoms (fear, avoidance, physical reactions, interference) occurred in the past seven days; intended as a brief cross-cutting tool to track symptom severity over time.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_Severity-Measure-For-Specific-Phobia-Adult.pdf",
+      "citation": "MacLeod, S., Schneider, L. H., & McCabe, R. E. (2022). Investigating the psychometric properties of the Severity Measure for Specific Phobia. Journal of Psychopathology and Behavioral Assessment, 44(3), 826–835. https://doi.org/10.1007/s10862-022-09976-6",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "spin",
+      "name": "SPIN",
+      "fullName": "Social Phobia Inventory",
+      "categories": [
+        "Social Anxiety Disorder"
+      ],
+      "population": "Adults",
+      "items": 17,
+      "description": "A self-report screening and severity scale covering fear, avoidance, and physiological symptoms of social anxiety, rated on a 5-point intensity scale; a score above 19 suggests likely social anxiety disorder.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10827888/",
+      "citation": "Connor, K. M., Davidson, J. R. T., Churchill, L. E., Sherwood, A., Foa, E., & Weisler, R. H. (2000). Psychometric properties of the Social Phobia Inventory (SPIN): New self-rating scale. The British Journal of Psychiatry, 176(4), 379–386. https://doi.org/10.1192/bjp.176.4.379",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "spq-spider",
+      "name": "SPQ",
+      "fullName": "Spider Questionnaire (Spider Phobia Questionnaire)",
+      "categories": [
+        "Specific Phobia"
+      ],
+      "population": "Adults",
+      "items": 31,
+      "description": "A 31-item true/false self-report questionnaire quantifying the intensity of spider fear/phobia; one of the most widely used subtype-specific instruments in specific phobia treatment and exposure-therapy research.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0005789474800080",
+      "citation": "Klorman, R., Weerts, T. C., Hastings, J. E., Melamed, B. G., & Lang, P. J. (1974). Psychometric description of some specific-fear questionnaires. Behavior Therapy, 5(3), 401–409. https://doi.org/10.1016/S0005-7894(74)80008-0",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "srs-2",
+      "name": "SRS-2",
+      "fullName": "Social Responsiveness Scale, Second Edition",
+      "categories": [
+        "Autism Spectrum"
+      ],
+      "population": "All ages",
+      "items": 65,
+      "description": "A rating scale completed by a parent, teacher, or the individual (self-report for adults) that quantifies the severity of social impairment associated with autism spectrum disorder across social awareness, cognition, communication, motivation, and restricted/repetitive behavior. A dimensional screening and severity measure rather than a stand-alone diagnostic tool.",
+      "access": "Copyrighted — requires purchase/license from Western Psychological Services (WPS)",
+      "url": "https://www.wpspublish.com/srs-2-social-responsiveness-scale-second-edition.html",
+      "citation": "Constantino, J. N., & Gruber, C. P. (2012). Social Responsiveness Scale, Second Edition (SRS-2). Western Psychological Services.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "swls",
+      "name": "SWLS",
+      "fullName": "Satisfaction with Life Scale",
+      "categories": [
+        "Quality of Life / Well-Being"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A brief self-report scale measuring global cognitive judgments of overall life satisfaction, rated on a 7-point agreement scale; one of the most widely used general subjective well-being measures.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://eddiener.com/scales/9",
+      "citation": "Diener, E., Emmons, R. A., Larsen, R. J., & Griffin, S. (1985). The satisfaction with life scale. Journal of Personality Assessment, 49(1), 71-75. https://doi.org/10.1207/s15327752jpa4901_13",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "whiteley-index",
+      "name": "Whiteley Index",
+      "fullName": "Whiteley Index",
+      "categories": [
+        "Health Anxiety / Somatic Symptoms"
+      ],
+      "population": "Adults",
+      "items": 14,
+      "description": "One of the earliest and most widely used self-report screening measures of hypochondriasis and health anxiety, assessing disease phobia, bodily preoccupation, and disease conviction.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.cambridge.org/core/journals/the-british-journal-of-psychiatry/article/abs/dimensions-of-hypochondriasis/12B6AAA027180900F0BAEBADFDA14F2D",
+      "citation": "Pilowsky, I. (1967). Dimensions of hypochondriasis. British Journal of Psychiatry, 113(494), 89-93.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "who-5",
+      "name": "WHO-5",
+      "fullName": "World Health Organization-Five Well-Being Index",
+      "categories": [
+        "Quality of Life / Well-Being"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A short self-report measure of current subjective mental well-being over the preceding two weeks, using five positively worded items; widely used as a screening tool for depression and general well-being in clinical and research settings.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf",
+      "citation": "World Health Organization Regional Office for Europe. (1998). Wellbeing measures in primary health care/the DepCare Project: Report on a WHO meeting, Stockholm, Sweden, 12-13 February 1998. WHO Regional Office for Europe.",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "whoqol-bref",
+      "name": "WHOQOL-BREF",
+      "fullName": "World Health Organization Quality of Life Assessment - Brief Version",
+      "categories": [
+        "Quality of Life / Well-Being"
+      ],
+      "population": "Adults",
+      "items": 26,
+      "description": "A cross-culturally validated self-report measure of quality of life across four domains (physical health, psychological, social relationships, and environment), abbreviated from the 100-item WHOQOL-100.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.who.int/tools/whoqol",
+      "citation": "The WHOQOL Group. (1998). Development of the World Health Organization WHOQOL-BREF quality of life assessment. Psychological Medicine, 28(3), 551-558. https://doi.org/10.1017/S0033291798006667",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ybocs",
+      "name": "Y-BOCS",
+      "fullName": "Yale-Brown Obsessive Compulsive Scale",
+      "categories": [
+        "Obsessive-Compulsive Disorder (OCD)"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "Clinician-administered, semi-structured interview rating the severity of OCD symptoms (obsessions and compulsions) over the past week. It tracks illness severity and treatment response rather than establishing diagnosis, and is considered the gold-standard OCD severity measure.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://iocdf.org/expert-opinions/expert-opinion-measuring-oc-symptoms/",
+      "citation": "Goodman, W. K., Price, L. H., Rasmussen, S. A., Mazure, C., Fleischmann, R. L., Hill, C. L., Heninger, G. R., & Charney, D. S. (1989). The Yale-Brown Obsessive Compulsive Scale: I. Development, use, and reliability. Archives of General Psychiatry, 46(11), 1006–1011. https://doi.org/10.1001/archpsyc.1989.01810110048007",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "ymrs",
+      "name": "YMRS",
+      "fullName": "Young Mania Rating Scale",
+      "categories": [
+        "Bipolar Disorder"
+      ],
+      "population": "Adults",
+      "items": 11,
+      "description": "An 11-item clinician-administered scale that rates the severity of manic symptoms (elevated mood, increased activity, irritability, thought disorder, etc.) based on the patient's report and observed behavior over the preceding 48 hours; used to track symptom severity rather than to diagnose.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.mdcalc.com/calc/1730/young-mania-rating-scale-ymrs",
+      "citation": "Young, R. C., Biggs, J. T., Ziegler, V. E., & Meyer, D. A. (1978). A rating scale for mania: Reliability, validity and sensitivity. British Journal of Psychiatry, 133(5), 429–435. https://doi.org/10.1192/bjp.133.5.429",
+      "checked": "2026-08-14"
+    },
+    {
+      "id": "zan-bpd",
+      "name": "ZAN-BPD",
+      "fullName": "Zanarini Rating Scale for Borderline Personality Disorder",
+      "categories": [
+        "Borderline Personality Disorder",
+        "Personality Disorders"
+      ],
+      "population": "Adults",
+      "items": 9,
+      "description": "A clinician-administered, semi-structured interview that rates the severity of each of the nine DSM-IV/DSM-5 borderline personality disorder criteria on a 0-4 scale, producing a continuous measure used to track symptom severity and change over time (e.g., in treatment trials).",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12839102/",
+      "citation": "Zanarini, M. C., Vujanovic, A. A., Parachini, E. A., Boulanger, J. L., Frankenburg, F. R., & Hennen, J. (2003). Zanarini Rating Scale for Borderline Personality Disorder (ZAN-BPD): A continuous measure of DSM-IV borderline psychopathology. Journal of Personality Disorders, 17(3), 233–242. https://doi.org/10.1521/pedi.17.3.233.22147",
+      "checked": "2026-08-14"
+    }
+  ]
+}
