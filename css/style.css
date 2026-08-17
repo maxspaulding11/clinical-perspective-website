@@ -1494,6 +1494,16 @@ a:hover { text-decoration: underline; }
    Tools hub (tools/index.html)
    ============================================================ */
 
+.tool-section + .tool-section { margin-top: 44px; }
+.tool-section-head {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
 .tool-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
