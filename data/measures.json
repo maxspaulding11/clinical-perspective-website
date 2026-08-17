@@ -3,6 +3,21 @@
   "note": "A growing directory of validated clinical assessment instruments. Citations verified against original validation publications or official source pages.",
   "measures": [
     {
+      "id": "4at",
+      "name": "4AT",
+      "fullName": "4AT Rapid Clinical Test for Delirium",
+      "categories": [
+        "Delirium"
+      ],
+      "population": "Older Adults",
+      "items": 4,
+      "description": "A short bedside screening tool requiring no special training that rates alertness, orientation (via the Abbreviated Mental Test-4), attention, and acute or fluctuating change in mental status to quickly flag possible delirium.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.the4at.com/",
+      "citation": "Bellelli, G., Morandi, A., Davis, D. H. J., Mazzola, P., Turco, R., Gentile, S., Ryan, T., Cash, H., Guerini, F., Torpilliesi, T., Del Santo, F., Trabucchi, M., Annoni, G., & MacLullich, A. M. J. (2014). Validation of the 4AT, a new instrument for rapid delirium screening: A study in 234 hospitalised older people. Age and Ageing, 43(4), 496–502. https://doi.org/10.1093/ageing/afu021",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "aas",
       "name": "AAS",
       "fullName": "Adult Attachment Scale",
@@ -121,6 +136,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "aes",
+      "name": "AES",
+      "fullName": "Apathy Evaluation Scale",
+      "categories": [
+        "Apathy"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item scale measuring emotional, behavioral, and cognitive indicators of goal-directed behavior loss, available in clinician-rated, informant-rated, and self-rated versions to assess apathy across neurological and psychiatric conditions.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.sralab.org/rehabilitation-measures/apathy-evaluation-scale-self-informant-and-clinician-versions",
+      "citation": "Marin, R. S., Biedrzycki, R. C., & Firinciogullari, S. (1991). Reliability and validity of the Apathy Evaluation Scale. Psychiatry Research, 38(2), 143–162. https://doi.org/10.1016/0165-1781(91)90040-V",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "aq",
       "name": "AQ",
       "fullName": "Autism-Spectrum Quotient",
@@ -134,6 +164,21 @@
       "url": "https://www.autismresearchcentre.com/tests/autism-spectrum-quotient-aq-adult/",
       "citation": "Baron-Cohen, S., Wheelwright, S., Skinner, R., Martin, J., & Clubley, E. (2001). The Autism-Spectrum Quotient (AQ): Evidence from Asperger syndrome/high-functioning autism, males and females, scientists and mathematicians. Journal of Autism and Developmental Disorders, 31(1), 5–17. https://doi.org/10.1023/A:1005653411471",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "arsma-ii",
+      "name": "ARSMA-II",
+      "fullName": "Acculturation Rating Scale for Mexican Americans-II",
+      "categories": [
+        "Acculturation"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item self-report scale assessing acculturation among Mexican Americans along two independent dimensions—orientation to Mexican culture and orientation to Anglo/American culture—yielding acculturation type classifications such as assimilated, bicultural, separated, or marginalized.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/acculturation-scale",
+      "citation": "Cuéllar, I., Arnold, B., & Maldonado, R. (1995). Acculturation Rating Scale for Mexican Americans-II: A revision of the original ARSMA scale. Hispanic Journal of Behavioral Sciences, 17(3), 275–304. https://doi.org/10.1177/07399863950173001",
+      "checked": "2026-08-17"
     },
     {
       "id": "asdi",
@@ -346,6 +391,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "body-esteem-scale",
+      "name": "BES",
+      "fullName": "Body Esteem Scale",
+      "categories": [
+        "Body Image"
+      ],
+      "population": "Adults",
+      "items": 35,
+      "description": "A 35-item self-report scale measuring body esteem—feelings about one's body and appearance—using separate factor structures and scoring for men and women.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "http://www.yorku.ca/rokada/psyctest/bodest.pdf",
+      "citation": "Franzoi, S. L., & Shields, S. A. (1984). The Body Esteem Scale: Multidimensional structure and sex differences in a college population. Journal of Personality Assessment, 48(2), 173–178.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "bfi",
       "name": "BFI",
       "fullName": "Big Five Inventory",
@@ -495,6 +555,21 @@
       "checked": "2026-08-17"
     },
     {
+      "id": "bsas",
+      "name": "BSAS",
+      "fullName": "Bergen Shopping Addiction Scale",
+      "categories": [
+        "Compulsive Buying / Shopping Addiction"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A 7-item self-report scale that screens for problematic/addictive shopping using seven core addiction criteria (salience, mood modification, tolerance, withdrawal, conflict, relapse, and problems), each rated on a 5-point agreement scale.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4584995/",
+      "citation": "Andreassen, C. S., Griffiths, M. D., Pallesen, S., Bilder, R. M., Torsheim, T., & Aboujaoude, E. (2015). The Bergen Shopping Addiction Scale: Reliability and validity of a brief screening test. Frontiers in Psychology, 6, 1374.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "bsi",
       "name": "BSI",
       "fullName": "Brief Symptom Inventory",
@@ -538,6 +613,21 @@
       "url": "https://web.sas.upenn.edu/dchamb/questionnaires/",
       "citation": "Chambless, D. L., Caputo, G. C., Bright, P., & Gallagher, R. (1984). Assessment of fear in agoraphobics: The Body Sensations Questionnaire and the Agoraphobic Cognitions Questionnaire. Journal of Consulting and Clinical Psychology, 52(6), 1090–1097. https://doi.org/10.1037/0022-006X.52.6.1090",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "body-shape-questionnaire",
+      "name": "BSQ",
+      "fullName": "Body Shape Questionnaire",
+      "categories": [
+        "Body Image"
+      ],
+      "population": "Adults",
+      "items": 34,
+      "description": "A 34-item self-report questionnaire measuring concerns about body shape and the subjective experience of 'feeling fat' over the preceding four weeks, widely used in eating-disorder and body-image research.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.psyctc.org/psyctc/root/tools/bsq/",
+      "citation": "Cooper, P. J., Taylor, M. J., Cooper, Z., & Fairburn, C. G. (1987). The development and validation of the Body Shape Questionnaire. International Journal of Eating Disorders, 6(4), 485–494. https://doi.org/10.1002/1098-108X(198707)6:4<485::AID-EAT2260060405>3.0.CO;2-O",
+      "checked": "2026-08-17"
     },
     {
       "id": "bss",
@@ -597,6 +687,21 @@
       "url": "https://www.hopkinsmedicine.org/-/media/johns-hopkins-health-plans/documents/all_plans/cage-substance-screening-tool.pdf",
       "citation": "Ewing, J. A. (1984). Detecting alcoholism: The CAGE questionnaire. JAMA, 252(14), 1905–1907. https://doi.org/10.1001/jama.1984.03350140051025",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "cam",
+      "name": "CAM",
+      "fullName": "Confusion Assessment Method",
+      "categories": [
+        "Delirium"
+      ],
+      "population": "Adults",
+      "items": 4,
+      "description": "A brief, standardized bedside instrument that lets non-psychiatrist clinicians rapidly identify delirium using a four-feature diagnostic algorithm derived from DSM criteria: acute onset with fluctuating course, inattention, and either disorganized thinking or altered level of consciousness.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://cgatoolkit.ca/Uploads/ContentDocuments/camshortform.pdf",
+      "citation": "Inouye, S. K., van Dyck, C. H., Alessi, C. A., Balkin, S., Siegal, A. P., & Horwitz, R. I. (1990). Clarifying confusion: The confusion assessment method. A new method for detection of delirium. Annals of Internal Medicine, 113(12), 941–948. https://doi.org/10.7326/0003-4819-113-12-941",
+      "checked": "2026-08-17"
     },
     {
       "id": "caps-5",
@@ -659,6 +764,21 @@
       "checked": "2026-08-17"
     },
     {
+      "id": "cbs",
+      "name": "CBS",
+      "fullName": "Compulsive Buying Scale",
+      "categories": [
+        "Compulsive Buying / Shopping Addiction"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A 7-item self-report screener assessing buying-related feelings, cognitions, and behaviors (e.g., guilt after shopping, buying to feel better); a weighted scoring formula classifies respondents as compulsive or non-compulsive buyers.",
+      "access": "Copyrighted — requires purchase/license from Oxford University Press (Journal of Consumer Research)",
+      "url": "https://academic.oup.com/jcr/article-abstract/19/3/459/1786752",
+      "citation": "Faber, R. J., & O'Guinn, T. C. (1992). A clinical screener for compulsive buying. Journal of Consumer Research, 19(3), 459–469.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "cd-risc",
       "name": "CD-RISC",
       "fullName": "Connor-Davidson Resilience Scale",
@@ -702,6 +822,36 @@
       "url": "https://www.universiteitleiden.nl/en/research/research-projects/social-and-behavioural-sciences/cognitive-emotion-regulation-questionnaire-cerq",
       "citation": "Garnefski, N., Kraaij, V., & Spinhoven, P. (2001). Negative life events, cognitive emotion regulation and depression. Personality and Individual Differences, 30(8), 1311-1327. https://doi.org/10.1016/S0191-8869(00)00113-6",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "cfq",
+      "name": "CFQ",
+      "fullName": "Chalder Fatigue Scale (Fatigue Questionnaire)",
+      "categories": [
+        "Fatigue"
+      ],
+      "population": "Adults",
+      "items": 14,
+      "description": "A self-administered questionnaire measuring the severity of physical and mental fatigue symptoms over the past month, widely used in clinical and epidemiological research on chronic fatigue.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8463991/",
+      "citation": "Chalder, T., Berelowitz, G., Pawlikowska, T., Watts, L., Wessely, S., Wright, D., & Wallace, E. P. (1993). Development of a fatigue scale. Journal of Psychosomatic Research, 37(2), 147–153. https://doi.org/10.1016/0022-3999(93)90081-P",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "cheat",
+      "name": "ChEAT",
+      "fullName": "Children's Eating Attitudes Test",
+      "categories": [
+        "Child Eating Attitudes"
+      ],
+      "population": "Children",
+      "items": 26,
+      "description": "A 26-item self-report questionnaire, adapted from the adult Eating Attitudes Test, that measures disordered eating attitudes and dieting behaviors in children ages 8 to 13; each item is rated on a 6-point frequency scale.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://scales.arabpsychology.com/s/childrens-eating-attitudes-test-cheat/",
+      "citation": "Maloney, M. J., McGuire, J. B., & Daniels, S. R. (1988). Reliability testing of a children's version of the Eating Attitude Test. Journal of the American Academy of Child & Adolescent Psychiatry, 27(5), 541–543.",
+      "checked": "2026-08-17"
     },
     {
       "id": "clutter-image-rating",
@@ -763,6 +913,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "csdd",
+      "name": "CSDD",
+      "fullName": "Cornell Scale for Depression in Dementia",
+      "categories": [
+        "Geriatric Depression"
+      ],
+      "population": "Older Adults",
+      "items": 19,
+      "description": "A clinician-administered scale that rates depressive symptoms in people with dementia by combining a brief caregiver/informant interview with direct observation of the patient across mood, behavioral, physical, cyclic, and ideational disturbance signs.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://ofd.med.utoronto.ca/sites/default/files/assets/resource/document/cornell-scale-depression-dementia.pdf",
+      "citation": "Alexopoulos, G. S., Abrams, R. C., Young, R. C., & Shamoian, C. A. (1988). Cornell Scale for Depression in Dementia. Biological Psychiatry, 23(3), 271–284. https://doi.org/10.1016/0006-3223(88)90038-8",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "cshq",
+      "name": "CSHQ",
+      "fullName": "Children's Sleep Habits Questionnaire",
+      "categories": [
+        "Child Sleep Problems"
+      ],
+      "population": "Children",
+      "items": 33,
+      "description": "A 33-item parent-report retrospective survey covering the past week that screens for common pediatric sleep problems across eight subscales, including bedtime resistance, sleep anxiety, night wakings, and sleep-disordered breathing.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://depts.washington.edu/dbpeds/Screening%20Tools/CSHQ%20article.pdf",
+      "citation": "Owens, J. A., Spirito, A., & McGuinn, M. (2000). The Children's Sleep Habits Questionnaire (CSHQ): Psychometric properties of a survey instrument for school-aged children. Sleep, 23(8), 1043–1051.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "csi",
       "name": "CSI",
       "fullName": "Couples Satisfaction Index",
@@ -775,6 +955,21 @@
       "url": "https://couples-research.com/measures/",
       "citation": "Funk, J. L., & Rogge, R. D. (2007). Testing the ruler with item response theory: Increasing precision of measurement for relationship satisfaction with the Couples Satisfaction Index. Journal of Family Psychology, 21(4), 572-583. https://doi.org/10.1037/0893-3200.21.4.572",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "ctas",
+      "name": "CTAS",
+      "fullName": "Cognitive Test Anxiety Scale",
+      "categories": [
+        "Test / Academic Anxiety"
+      ],
+      "population": "Adults",
+      "items": 27,
+      "description": "A 27-item self-report scale focused specifically on the cognitive dimension of test anxiety, such as intrusive worry and task-irrelevant thinking during test preparation and test-taking; freely downloadable for research use.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://sites.bsu.edu/aarc/research/cognitive-test-anxiety-scale-2nd-edition/",
+      "citation": "Cassady, J. C., & Johnson, R. E. (2002). Cognitive test anxiety and academic performance. Contemporary Educational Psychology, 27(2), 270–295. https://doi.org/10.1006/ceps.2001.1094",
+      "checked": "2026-08-17"
     },
     {
       "id": "ctq",
@@ -882,6 +1077,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "dheq",
+      "name": "DHEQ",
+      "fullName": "Daily Heterosexist Experiences Questionnaire",
+      "categories": [
+        "Sexual Minority Stress"
+      ],
+      "population": "Adults",
+      "items": 50,
+      "description": "A 50-item self-report measure assessing the frequency of everyday heterosexist and anti-LGBT experiences (e.g., vigilance, discrimination, family rejection) across nine subscales, capturing minority stress specific to lesbian, gay, bisexual, and transgender adults.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://paloaltou.edu/sites/default/files/The%20Daily%20Heterosexist%20Experiences%20Questionnaire%20(DHEQ).pdf",
+      "citation": "Balsam, K. F., Beadnell, B., & Molina, Y. (2013). The Daily Heterosexist Experiences Questionnaire: Measuring minority stress among lesbian, gay, bisexual, and transgender adults. Measurement and Evaluation in Counseling and Development, 46(1), 3–25.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "djgls",
       "name": "DJGLS",
       "fullName": "De Jong Gierveld Loneliness Scale",
@@ -910,6 +1120,51 @@
       "url": "https://www.swc.edu/wp-content/uploads/Dimensional-Obsessive-Compulsive-Scale-Scoring-Instructions.pdf",
       "citation": "Abramowitz, J. S., Deacon, B. J., Olatunji, B. O., Wheaton, M. G., Berman, N. C., Losardo, D., Timpano, K. R., McGrath, P. B., Riemann, B. C., Adams, T., Björgvinsson, T., Storch, E. A., & Hale, L. R. (2010). Assessment of obsessive-compulsive symptom dimensions: Development and evaluation of the Dimensional Obsessive-Compulsive Scale. Psychological Assessment, 22(1), 180–198. https://doi.org/10.1037/a0018260",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "dpss-r",
+      "name": "DPSS-R",
+      "fullName": "Disgust Propensity and Sensitivity Scale-Revised",
+      "categories": [
+        "Disgust Sensitivity"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A 16-item self-report scale distinguishing disgust propensity (frequency of experiencing disgust) from disgust sensitivity (negative appraisal of and coping with disgust experiences), rated on a 5-point frequency scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/223731541_Disgust_propensity_and_disgust_sensitivity_Separate_constructs_that_are_differentially_related_to_specific_fears",
+      "citation": "van Overveld, M., de Jong, P. J., Peters, M. L., Cavanagh, K., & Davey, G. C. L. (2006). Disgust propensity and disgust sensitivity: Separate constructs that are differentially related to specific fears. Personality and Individual Differences, 41(7), 1241–1252. https://doi.org/10.1016/j.paid.2006.04.021",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "drs-r-98",
+      "name": "DRS-R-98",
+      "fullName": "Delirium Rating Scale-Revised-98",
+      "categories": [
+        "Delirium"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A clinician-rated scale comprising 13 severity items and 3 diagnostic items that measures the breadth and severity of delirium symptoms, including perceptual disturbances, cognitive deficits, and temporal onset, for both diagnosis and monitoring symptom change over time.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://deliriumnetwork.org/wp-content/uploads/2018/05/DRS-R-98.pdf",
+      "citation": "Trzepacz, P. T., Mittal, D., Torres, R., Kanary, K., Norton, J., & Jimerson, N. (2001). Validation of the Delirium Rating Scale-revised-98: Comparison with the Delirium Rating Scale and the Cognitive Test for Delirium. Journal of Neuropsychiatry and Clinical Neurosciences, 13(2), 229–242. https://doi.org/10.1176/jnp.13.2.229",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ds-r",
+      "name": "DS-R",
+      "fullName": "Disgust Scale-Revised",
+      "categories": [
+        "Disgust Sensitivity"
+      ],
+      "population": "Adults",
+      "items": 25,
+      "description": "A 25-item self-report scale measuring individual differences in disgust sensitivity across three domains—core disgust, animal-reminder disgust, and contamination-based disgust—using a mix of true/false and 3-point rating items.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://earlatvanderbilt.wordpress.com/resources/measures/disgust-scale-revised-ds-r/",
+      "citation": "Olatunji, B. O., Williams, N. L., Tolin, D. F., Abramowitz, J. S., Sawchuk, C. N., Lohr, J. M., & Elwood, L. S. (2007). The disgust scale: Item analysis, factor structure, and suggestions for refinement. Psychological Assessment, 19(3), 281–297. https://doi.org/10.1037/1040-3590.19.3.281",
+      "checked": "2026-08-17"
     },
     {
       "id": "dsm-5-ccsm",
@@ -942,6 +1197,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "durel",
+      "name": "DUREL",
+      "fullName": "Duke University Religion Index",
+      "categories": [
+        "Religiosity / Spirituality"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A brief 5-item self-report measure of religious involvement covering organizational religious activity, non-organizational (private) religious activity, and intrinsic religiosity, designed for use in clinical and epidemiological research.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.mdpi.com/2077-1444/1/1/78",
+      "citation": "Koenig, H. G., & Büssing, A. (2010). The Duke University Religion Index (DUREL): A five-item measure for use in epidemiological studies. Religions, 1(1), 78–85. https://doi.org/10.3390/rel1010078",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "duwas",
       "name": "DUWAS",
       "fullName": "Dutch Work Addiction Scale",
@@ -954,6 +1224,21 @@
       "access": "Free for clinical/research use with registration",
       "url": "https://www.wilmarschaufeli.nl/publications/Schaufeli/Tests/DUWAS_10_EN.pdf",
       "citation": "Schaufeli, W. B., Shimazu, A., & Taris, T. W. (2009). Being driven to work excessively hard: The evaluation of a two-factor measure of workaholism in the Netherlands and Japan. Cross-Cultural Research, 43(4), 320-348. https://doi.org/10.1177/1069397109337239",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "eai",
+      "name": "EAI",
+      "fullName": "Exercise Addiction Inventory",
+      "categories": [
+        "Exercise Addiction"
+      ],
+      "population": "Adults",
+      "items": 6,
+      "description": "A brief 6-item self-report screening tool that captures six core components of behavioral addiction (salience, mood modification, tolerance, withdrawal, conflict, and relapse) as they apply to exercise; each item is rated on a 5-point agreement scale and takes about one minute to complete.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10941438/",
+      "citation": "Terry, A., Szabo, A., & Griffiths, M. (2004). The exercise addiction inventory: A new brief screening tool. Addiction Research & Theory, 12(5), 489–499.",
       "checked": "2026-08-17"
     },
     {
@@ -1000,6 +1285,21 @@
       "url": "https://www.credo-oxford.com/7.2.html",
       "citation": "Fairburn, C. G., & Beglin, S. J. (1994). Assessment of eating disorders: Interview or self-report questionnaire? International Journal of Eating Disorders, 16(4), 363–370. https://doi.org/10.1002/1098-108X(199412)16:4<363::AID-EAT2260160405>3.0.CO;2-#",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "eds-21",
+      "name": "EDS-21",
+      "fullName": "Exercise Dependence Scale-21",
+      "categories": [
+        "Exercise Addiction"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A 21-item self-report scale modeled on DSM-IV substance dependence criteria that classifies exercisers as at-risk for exercise dependence, nondependent-symptomatic, or nondependent-asymptomatic across seven symptom dimensions such as tolerance, withdrawal, and continuance despite injury.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.phenxtoolkit.org/protocols/view/650201",
+      "citation": "Hausenblas, H. A., & Downs, D. S. (2002). How much is too much? The development and validation of the Exercise Dependence Scale. Psychology & Health, 17(4), 387–404.",
+      "checked": "2026-08-17"
     },
     {
       "id": "epds",
@@ -1059,6 +1359,21 @@
       "access": "Copyrighted — requires purchase/license from Life Innovations, Inc.",
       "url": "http://www.facesiv.com/",
       "citation": "Olson, D. (2011). FACES IV and the circumplex model: Validation study. Journal of Marital and Family Therapy, 37(1), 64–80.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "facit-sp-12",
+      "name": "FACIT-Sp-12",
+      "fullName": "Functional Assessment of Chronic Illness Therapy – Spiritual Well-Being Scale",
+      "categories": [
+        "Religiosity / Spirituality"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "A 12-item self-report scale measuring spiritual well-being in people facing illness, covering a sense of meaning/peace and the role of faith, often used alongside quality-of-life assessments in medical populations.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.facit.org/measures/facit-sp",
+      "citation": "Peterman, A. H., Fitchett, G., Brady, M. J., Hernandez, L., & Cella, D. (2002). Measuring spiritual well-being in people with cancer: The Functional Assessment of Chronic Illness Therapy—Spiritual Well-Being Scale (FACIT-Sp). Annals of Behavioral Medicine, 24(1), 49–58. https://doi.org/10.1207/S15324796ABM2401_06",
       "checked": "2026-08-17"
     },
     {
@@ -1169,6 +1484,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "fsfi",
+      "name": "FSFI",
+      "fullName": "Female Sexual Function Index",
+      "categories": [
+        "Sexual Functioning"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A 19-item self-report questionnaire that assesses six domains of female sexual function over the past four weeks—desire, arousal, lubrication, orgasm, satisfaction, and pain—typically completed as a paper or online questionnaire.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://eprovide.mapi-trust.org/instruments/female-sexual-function-index",
+      "citation": "Rosen, R., Brown, C., Heiman, J., Leiblum, S., Meston, C., Shabsigh, R., Ferguson, D., & D'Agostino, R., Jr. (2000). The Female Sexual Function Index (FSFI): A multidimensional self-report instrument for the assessment of female sexual function. Journal of Sex & Marital Therapy, 26(2), 191–208. https://doi.org/10.1080/009262300278597",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "fss",
+      "name": "FSS",
+      "fullName": "Fatigue Severity Scale",
+      "categories": [
+        "Fatigue"
+      ],
+      "population": "Adults",
+      "items": 9,
+      "description": "A brief self-report questionnaire measuring the severity of fatigue and its impact on daily functioning and motivation, with each of 9 items rated on a 7-point agreement scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.med.upenn.edu/cbti/assets/user-content/documents/Fatigue%20Severity%20Scale%20(FSS).pdf",
+      "citation": "Krupp, L. B., LaRocca, N. G., Muir-Nash, J., & Steinberg, A. D. (1989). The fatigue severity scale: Application to patients with multiple sclerosis and systemic lupus erythematosus. Archives of Neurology, 46(10), 1121–1123. https://doi.org/10.1001/archneur.1989.00520460115022",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "ftnd",
       "name": "FTND",
       "fullName": "Fagerström Test for Nicotine Dependence",
@@ -1199,6 +1544,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "gai",
+      "name": "GAI",
+      "fullName": "Geriatric Anxiety Inventory",
+      "categories": [
+        "Geriatric Anxiety"
+      ],
+      "population": "Older Adults",
+      "items": 20,
+      "description": "A 20-item self-report measure using a simple agree/disagree format to assess the severity of anxiety symptoms over the past week in older adults, designed to minimize confusion with somatic symptoms of general medical conditions.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://gai.net.au/",
+      "citation": "Pachana, N. A., Byrne, G. J., Siddle, H., Koloski, N., Harley, E., & Arnold, E. (2007). Development and validation of the Geriatric Anxiety Inventory. International Psychogeriatrics, 19(1), 103–114. https://doi.org/10.1017/S1041610206003504",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "gas",
+      "name": "GAS",
+      "fullName": "Geriatric Anxiety Scale",
+      "categories": [
+        "Geriatric Anxiety"
+      ],
+      "population": "Older Adults",
+      "items": 30,
+      "description": "A 30-item self-report measure assessing somatic, cognitive, and affective symptoms of anxiety in older adults plus common areas of worry, yielding a total score and three subscale scores.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://agingandmentalhealthlab.uccs.edu/scale",
+      "citation": "Segal, D. L., June, A., Payne, M., Coolidge, F. L., & Yochim, B. (2010). Development and initial validation of a self-report assessment tool for anxiety among older adults: The Geriatric Anxiety Scale. Journal of Anxiety Disorders, 24(7), 709–714. https://doi.org/10.1016/j.janxdis.2010.05.002",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "gasp",
       "name": "GASP",
       "fullName": "Guilt and Shame Proneness Scale",
@@ -1211,6 +1586,36 @@
       "access": "Public domain — free to use and reproduce",
       "url": "https://kilthub.cmu.edu/articles/journal_contribution/Introducing_the_GASP_Scale_A_New_Measure_of_Guilt_and_Shame_Proneness/6706226",
       "citation": "Cohen, T. R., Wolf, S. T., Panter, A. T., & Insko, C. A. (2011). Introducing the GASP scale: A new measure of guilt and shame proneness. Journal of Personality and Social Psychology, 100(5), 947–966. https://doi.org/10.1037/a0022641",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "gcs",
+      "name": "GCS",
+      "fullName": "Greene Climacteric Scale",
+      "categories": [
+        "Menopause Symptoms"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A 21-item self-report scale measuring the severity of psychological (anxiety and depression), somatic, vasomotor, and sexual dysfunction symptoms associated with the menopausal transition.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9643514/",
+      "citation": "Greene, J. G. (1998). Constructing a standard climacteric scale. Maturitas, 29(1), 25–31. https://doi.org/10.1016/S0378-5122(98)00025-5",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "gds",
+      "name": "GDS",
+      "fullName": "Geriatric Depression Scale",
+      "categories": [
+        "Geriatric Depression"
+      ],
+      "population": "Older Adults",
+      "items": 30,
+      "description": "A self-report yes/no questionnaire that screens for depressive symptoms in older adults, emphasizing affective and cognitive symptoms over somatic complaints; a 15-item short form (GDS-15) is also widely used alongside the original 30-item version.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://web.stanford.edu/~yesavage/GDS.html",
+      "citation": "Yesavage, J. A., Brink, T. L., Rose, T. L., Lum, O., Huang, V., Adey, M., & Leirer, V. O. (1982). Development and validation of a geriatric depression screening scale: A preliminary report. Journal of Psychiatric Research, 17(1), 37–49. https://doi.org/10.1016/0022-3956(82)90033-4",
       "checked": "2026-08-17"
     },
     {
@@ -1272,6 +1677,21 @@
       "url": "https://scholarworks.smith.edu/psy_facpubs/52/",
       "citation": "Tolin, D. F., Frost, R. O., & Steketee, G. (2010). A brief interview for assessing compulsive hoarding: The Hoarding Rating Scale-Interview. Psychiatry Research, 178(1), 147–152. https://doi.org/10.1016/j.psychres.2009.05.001",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "hsps",
+      "name": "HSPS",
+      "fullName": "Highly Sensitive Person Scale",
+      "categories": [
+        "Sensory Processing"
+      ],
+      "population": "Adults",
+      "items": 27,
+      "description": "A 27-item self-report scale measuring trait sensory-processing sensitivity—the degree to which a person is physiologically and emotionally reactive to sensory and environmental stimuli.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.hsperson.com/pdf/JPSP_Aron_and_Aron_97_Sensitivity_vs_I_and_N.pdf",
+      "citation": "Aron, E. N., & Aron, A. (1997). Sensory-processing sensitivity and its relation to introversion and emotionality. Journal of Personality and Social Psychology, 73(2), 345–368. https://doi.org/10.1037/0022-3514.73.2.345",
+      "checked": "2026-08-17"
     },
     {
       "id": "iadq",
@@ -1347,6 +1767,21 @@
       "url": "https://www.halleypontes.com/tests/igds9-sf/",
       "citation": "Pontes, H. M., & Griffiths, M. D. (2015). Measuring DSM-5 internet gaming disorder: Development and validation of a short psychometric scale. Computers in Human Behavior, 45, 137–143. https://doi.org/10.1016/j.chb.2014.12.006",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "iief",
+      "name": "IIEF",
+      "fullName": "International Index of Erectile Function",
+      "categories": [
+        "Sexual Functioning"
+      ],
+      "population": "Adults",
+      "items": 15,
+      "description": "A 15-item self-administered questionnaire evaluating male erectile function across five domains—erectile function, orgasmic function, sexual desire, intercourse satisfaction, and overall satisfaction—over the preceding four weeks.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://eprovide.mapi-trust.org/instruments/international-index-of-erectile-function",
+      "citation": "Rosen, R. C., Riley, A., Wagner, G., Osterloh, I. H., Kirkpatrick, J., & Mishra, A. (1997). The international index of erectile function (IIEF): A multidimensional scale for assessment of erectile dysfunction. Urology, 49(6), 822–830. https://doi.org/10.1016/S0090-4295(97)00238-0",
+      "checked": "2026-08-17"
     },
     {
       "id": "iip-32",
@@ -1451,6 +1886,51 @@
       "access": "Copyrighted — requires purchase/license from Multi-Health Systems (MHS)",
       "url": "https://contextualscience.org/internalized_shame_scale_iss",
       "citation": "Cook, D. R. (1994). Internalized Shame Scale: Professional manual. Multi-Health Systems.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ius",
+      "name": "IUS",
+      "fullName": "Intolerance of Uncertainty Scale",
+      "categories": [
+        "Intolerance of Uncertainty"
+      ],
+      "population": "Adults",
+      "items": 27,
+      "description": "A 27-item self-report scale measuring emotional, cognitive, and behavioral reactions to uncertainty and ambiguous situations, originally developed in the context of worry and generalized anxiety disorder research, rated on a 5-point agreement scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/230864669_The_Intolerance_of_Uncertainty_Scale",
+      "citation": "Freeston, M. H., Rhéaume, J., Letarte, H., Dugas, M. J., & Ladouceur, R. (1994). Why do people worry? Personality and Individual Differences, 17(6), 791–802. https://doi.org/10.1016/0191-8869(94)90048-5",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ius-12",
+      "name": "IUS-12",
+      "fullName": "Intolerance of Uncertainty Scale—Short Form",
+      "categories": [
+        "Intolerance of Uncertainty"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "A 12-item short form of the IUS capturing prospective (anxious anticipation) and inhibitory (avoidance) responses to uncertainty, rated on a 5-point agreement scale; widely used as a briefer alternative to the full 27-item scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/7133147_Fearing_the_unknown_A_short_version_of_the_Intolerance_of_Uncertainty_Scale",
+      "citation": "Carleton, R. N., Norton, M. A. P., & Asmundson, G. J. G. (2007). Fearing the unknown: A short version of the Intolerance of Uncertainty Scale. Journal of Anxiety Disorders, 21(1), 105–117. https://doi.org/10.1016/j.janxdis.2006.03.014",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "lars",
+      "name": "LARS",
+      "fullName": "Lille Apathy Rating Scale",
+      "categories": [
+        "Apathy"
+      ],
+      "population": "Adults",
+      "items": 33,
+      "description": "A structured-interview scale that quantifies apathy across nine domains (everyday productivity, interests, taking initiative, novelty seeking, motivation, emotional responses, concern, social life, and self-awareness); originally validated in Parkinson's disease and later extended to dementia populations.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.cmrr-nice.fr/doc/LARS_patient_english.pdf",
+      "citation": "Sockeel, P., Dujardin, K., Devos, D., Denève, C., Destée, A., & Defebvre, L. (2006). The Lille apathy rating scale (LARS), a new instrument for detecting and quantifying apathy: Validation in Parkinson's disease. Journal of Neurology, Neurosurgery & Psychiatry, 77(5), 579–584. https://doi.org/10.1136/jnnp.2005.075929",
       "checked": "2026-08-17"
     },
     {
@@ -1559,6 +2039,21 @@
       "checked": "2026-08-17"
     },
     {
+      "id": "mbsrq",
+      "name": "MBSRQ",
+      "fullName": "Multidimensional Body-Self Relations Questionnaire",
+      "categories": [
+        "Body Image"
+      ],
+      "population": "Adults",
+      "items": 69,
+      "description": "A 69-item self-report inventory assessing attitudinal body image across ten subscales spanning appearance, fitness, and health/illness evaluation and orientation, plus body-area satisfaction and weight preoccupation.",
+      "access": "Copyrighted — requires purchase/license from Thomas F. Cash",
+      "url": "http://www.body-images.com/assessments/mbsrq.html",
+      "citation": "Brown, T. A., Cash, T. F., & Mikulka, P. J. (1990). Attitudinal body-image assessment: Factor analysis of the Body-Self Relations Questionnaire. Journal of Personality Assessment, 55(1–2), 135–144.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "mdi",
       "name": "MDI",
       "fullName": "Multiscale Dissociation Inventory",
@@ -1589,6 +2084,67 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "menqol",
+      "name": "MENQOL",
+      "fullName": "Menopause-Specific Quality of Life Questionnaire",
+      "categories": [
+        "Menopause Symptoms"
+      ],
+      "population": "Adults",
+      "items": 29,
+      "description": "A 29-item self-administered questionnaire measuring how bothersome menopausal symptoms are across vasomotor, psychosocial, physical, and sexual domains, used to assess quality of life during the menopausal transition.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://eprovide.mapi-trust.org/instruments/menopause-specific-quality-of-life-questionnaire",
+      "citation": "Hilditch, J. R., Lewis, J., Peter, A., van Maris, B., Ross, A., Franssen, E., Guyatt, G. H., Norton, P. G., & Dunn, E. (1996). A menopause-specific quality of life questionnaire: Development and psychometric properties. Maturitas, 24(3), 161–175. https://doi.org/10.1016/0378-5122(96)82006-8",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "mfi-20",
+      "name": "MFI-20",
+      "fullName": "Multidimensional Fatigue Inventory",
+      "categories": [
+        "Fatigue"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item self-report questionnaire assessing five dimensions of fatigue—general fatigue, physical fatigue, mental fatigue, reduced motivation, and reduced activity—commonly used in medical and psychological research.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.med.upenn.edu/cbti/assets/user-content/documents/Multidimensional%20Fatigue%20Inventory%20(MFI).pdf",
+      "citation": "Smets, E. M. A., Garssen, B., Bonke, B., & De Haes, J. C. J. M. (1995). The Multidimensional Fatigue Inventory (MFI) psychometric qualities of an instrument to assess fatigue. Journal of Psychosomatic Research, 39(3), 315–325. https://doi.org/10.1016/0022-3999(94)00125-O",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "mgh-hps",
+      "name": "MGH-HPS",
+      "fullName": "Massachusetts General Hospital Hairpulling Scale",
+      "categories": [
+        "Trichotillomania (Hair-Pulling Disorder)",
+        "Body-Focused Repetitive Behaviors"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A brief 7-item self-report questionnaire rating the frequency and intensity of urges to pull hair, actual pulling behavior, perceived control over pulling, and associated distress over the past week.",
+      "access": "Free for clinical/research use",
+      "url": "https://www.bfrb.org/_files/ugd/000827_bfe1d92f40c74b59813da6586db486da.pdf",
+      "citation": "Keuthen, N. J., O'Sullivan, R. L., Ricciardi, J. N., Shera, D., Savage, C. R., Borgmann, A., Jenike, M. A., & Baer, L. (1995). The Massachusetts General Hospital (MGH) Hairpulling Scale: 1. Development and factor analyses. Psychotherapy and Psychosomatics, 64(3–4), 141–145. https://doi.org/10.1159/000289003",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "mies",
+      "name": "MIES",
+      "fullName": "Moral Injury Events Scale",
+      "categories": [
+        "Moral Injury"
+      ],
+      "population": "Adults",
+      "items": 9,
+      "description": "A 9-item self-report scale assessing service members' exposure to potentially morally injurious military experiences, including perceived transgressions by self or others and perceived betrayals by leaders or trusted individuals, rated on a 6-point agreement scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://sites.bu.edu/litzlab/files/2023/05/Psychometric-Evaluation-of-the-Moral-Injury-Events-Scale.pdf",
+      "citation": "Nash, W. P., Marino Carper, T. L., Mills, M. A., Au, T., Goldsmith, A., & Litz, B. T. (2013). Psychometric evaluation of the Moral Injury Events Scale. Military Medicine, 178(6), 646–652. https://doi.org/10.7205/MILMED-D-13-00017",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "mini-cog",
       "name": "Mini-Cog",
       "fullName": "Mini-Cog",
@@ -1601,6 +2157,36 @@
       "url": "https://mini-cog.com/",
       "citation": "Borson, S., Scanlan, J., Brush, M., Vitaliano, P., & Dokmak, A. (2000). The mini-cog: A cognitive 'vital signs' measure for dementia screening in multi-lingual elderly. International Journal of Geriatric Psychiatry, 15(11), 1021–1027. https://doi.org/10.1002/1099-1166(200011)15:11<1021::AID-GPS234>3.0.CO;2-6",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "miss-lg",
+      "name": "MISS-LG",
+      "fullName": "Measure of Internalized Sexual Stigma for Lesbians and Gay Men",
+      "categories": [
+        "Sexual Minority Stress"
+      ],
+      "population": "Adults",
+      "items": 17,
+      "description": "A 17-item self-report scale that measures internalized sexual stigma (internalized homonegativity) among lesbian and gay adults across three dimensions: identity, social discomfort, and sexuality.",
+      "access": "Copyrighted — requires purchase/license from Taylor & Francis",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00918369.2012.712850",
+      "citation": "Lingiardi, V., Baiocco, R., & Nardelli, N. (2012). Measure of internalized sexual stigma for lesbians and gay men: A new scale. Journal of Homosexuality, 59(8), 1191–1210.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "miss-m",
+      "name": "MISS-M",
+      "fullName": "Moral Injury Symptom Scale—Military Version",
+      "categories": [
+        "Moral Injury"
+      ],
+      "population": "Adults",
+      "items": 45,
+      "description": "A 45-item self-report measure assessing symptoms of moral injury across ten domains (e.g., guilt, shame, spiritual/religious struggle, loss of meaning and trust) in military service members and veterans, with each item rated on a 10-point agreement scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/321442165_The_Moral_Injury_Symptom_Scale-Military_Version",
+      "citation": "Koenig, H. G., Ames, D., Youssef, N. A., Oliver, J. P., Volk, F., Teng, E. J., Haynes, K., Erickson, Z. D., Arnold, I., O'Garo, K., & Pearce, M. (2018). The Moral Injury Symptom Scale-Military Version. Journal of Religion and Health, 57(1), 249–265. https://doi.org/10.1007/s10943-017-0531-9",
+      "checked": "2026-08-17"
     },
     {
       "id": "mmse",
@@ -1660,6 +2246,21 @@
       "url": "https://hewittlab.psych.ubc.ca/measures-3/multidimensional-perfectionism-scale-2/",
       "citation": "Hewitt, P. L., & Flett, G. L. (1991). Perfectionism in the self and social contexts: Conceptualization, assessment, and association with psychopathology. Journal of Personality and Social Psychology, 60(3), 456-470.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "mrs",
+      "name": "MRS",
+      "fullName": "Menopause Rating Scale",
+      "categories": [
+        "Menopause Symptoms"
+      ],
+      "population": "Adults",
+      "items": 11,
+      "description": "An 11-item self-administered scale assessing the severity of somatic, psychological, and urogenital menopausal symptoms and their impact on health-related quality of life.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "http://www.menopause-rating-scale.info/",
+      "citation": "Hauser, G. A., Huber, I. C., Keller, P. J., Lauritzen, C., & Schneider, H. P. G. (1994). Evaluation der klinischen Beschwerden (Menopause Rating Scale). Zentralblatt für Gynäkologie, 116(1), 16–23.",
+      "checked": "2026-08-17"
     },
     {
       "id": "msi-bpd",
@@ -2068,6 +2669,22 @@
       "url": "https://www.mcpap.com/pdf/PQ-16.pdf",
       "citation": "Ising, H. K., Veling, W., Loewy, R. L., Rietveld, M. W., Rietdijk, J., Dragt, S., Klaassen, R. M. C., Nieman, D. H., Wunderink, L., Linszen, D. H., & van der Gaag, M. (2012). The validity of the 16-item version of the Prodromal Questionnaire (PQ-16) to screen for ultra high risk of developing psychosis in the general help-seeking population. Schizophrenia Bulletin, 38(6), 1288–1296. https://doi.org/10.1093/schbul/sbs068",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "proqol",
+      "name": "ProQOL",
+      "fullName": "Professional Quality of Life Scale (ProQOL-5)",
+      "categories": [
+        "Compassion Fatigue",
+        "Secondary Traumatic Stress"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item self-report questionnaire measuring the positive and negative effects of caring for people who have experienced trauma or suffering, yielding three subscale scores: Compassion Satisfaction, Burnout, and Secondary Traumatic Stress. It is self-administered on paper or online, typically with helping professionals.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://proqol.org/proqol-measure",
+      "citation": "Stamm, B. H. (2010). The Concise ProQOL Manual (2nd ed.). ProQOL.org.",
+      "checked": "2026-08-17"
     },
     {
       "id": "psc",
@@ -2530,6 +3147,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "sensory-profile",
+      "name": "Sensory Profile",
+      "fullName": "Sensory Profile (Child Sensory Profile)",
+      "categories": [
+        "Sensory Processing"
+      ],
+      "population": "Children",
+      "items": 125,
+      "description": "A caregiver-report questionnaire measuring how children respond to everyday sensory experiences across home, school, and community settings, used to identify sensory processing patterns relevant to attention, behavior, and development.",
+      "access": "Copyrighted — requires purchase/license from Pearson",
+      "url": "https://www.pearsonassessments.com/store/en/usd/p/100000822.html",
+      "citation": "Dunn, W., & Brown, C. (1997). Factor analysis on the Sensory Profile from a national sample of children without disabilities. American Journal of Occupational Therapy, 51(7), 490–495. https://doi.org/10.5014/ajot.51.7.490",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "shai",
       "name": "SHAI",
       "fullName": "Short Health Anxiety Inventory",
@@ -2575,6 +3207,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "sl-asia",
+      "name": "SL-ASIA",
+      "fullName": "Suinn-Lew Asian Self-Identity Acculturation Scale",
+      "categories": [
+        "Acculturation"
+      ],
+      "population": "All ages",
+      "items": 21,
+      "description": "A 21-item multiple-choice self-report questionnaire measuring behavioral and attitudinal acculturation to mainstream Western culture among Asian Americans, covering language use, identity, friendships, and cultural behaviors.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.columbia.edu/cu/ssw/projects/pmap/docs/suinn_slasia.pdf",
+      "citation": "Suinn, R. M., Rickard-Figueroa, K., Lew, S., & Vigil, P. (1987). The Suinn-Lew Asian Self-Identity Acculturation Scale: An initial report. Educational and Psychological Measurement, 47(2), 401–407.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "slums",
       "name": "SLUMS",
       "fullName": "Saint Louis University Mental Status Examination",
@@ -2602,6 +3249,21 @@
       "access": "Public domain — free to use and reproduce",
       "url": "https://www.uu.nl/sites/default/files/social-media-disorder-scale-development-and-validation.pdf",
       "citation": "van den Eijnden, R. J. J. M., Lemmens, J. S., & Valkenburg, P. M. (2016). The Social Media Disorder Scale. Computers in Human Behavior, 61, 478-487. https://doi.org/10.1016/j.chb.2016.03.038",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "smq",
+      "name": "SMQ",
+      "fullName": "Selective Mutism Questionnaire",
+      "categories": [
+        "Selective Mutism"
+      ],
+      "population": "Children",
+      "items": 17,
+      "description": "A 17-item parent/caregiver-report questionnaire rating how often a child speaks in various settings (school, home/family, and public/community) over the preceding two weeks, plus items assessing associated interference and distress.",
+      "access": "Free for clinical/research use",
+      "url": "https://www.selectivemutism.org/wp-content/uploads/2022/07/Selective_Mutism_Questionnaire.pdf",
+      "citation": "Bergman, R. L., Keller, M. L., Piacentini, J., & Bergman, A. J. (2008). The development and psychometric properties of the Selective Mutism Questionnaire. Journal of Clinical Child & Adolescent Psychology, 37(2), 456–464. https://doi.org/10.1080/15374410801955805",
       "checked": "2026-08-17"
     },
     {
@@ -2679,6 +3341,22 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0005789474800080",
       "citation": "Klorman, R., Weerts, T. C., Hastings, J. E., Melamed, B. G., & Lang, P. J. (1974). Psychometric description of some specific-fear questionnaires. Behavior Therapy, 5(3), 401–409. https://doi.org/10.1016/S0005-7894(74)80008-0",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "sps-r",
+      "name": "SPS-R",
+      "fullName": "Skin Picking Scale-Revised",
+      "categories": [
+        "Excoriation (Skin-Picking) Disorder",
+        "Body-Focused Repetitive Behaviors"
+      ],
+      "population": "Adults",
+      "items": 8,
+      "description": "An 8-item self-report scale assessing severity of skin-picking symptoms (urges, time spent picking, control, and emotional distress) and associated impairment (social/occupational interference, avoidance, and skin damage) over the past week.",
+      "access": "Free for clinical/research use",
+      "url": "https://www.bfrb.org/_files/ugd/000827_13f2bb975aa349a2a1a5c7bc2a9e56ef.pdf",
+      "citation": "Snorrason, I., Ólafsson, R. P., Flessner, C. A., Keuthen, N. J., Franklin, M. E., & Woods, D. W. (2012). The Skin Picking Scale-Revised: Factor structure and psychometric properties. Journal of Obsessive-Compulsive and Related Disorders, 1(2), 133–137. https://doi.org/10.1016/j.jocrd.2012.03.001",
+      "checked": "2026-08-17"
     },
     {
       "id": "sre",
@@ -2771,6 +3449,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "stss",
+      "name": "STSS",
+      "fullName": "Secondary Traumatic Stress Scale",
+      "categories": [
+        "Secondary Traumatic Stress"
+      ],
+      "population": "Adults",
+      "items": 17,
+      "description": "A 17-item self-report scale measuring intrusion, avoidance, and arousal symptoms resulting from indirect exposure to traumatic material through professional relationships with traumatized clients, rated on a 5-point frequency scale over the past 7 days.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/254364576_The_Secondary_Traumatic_Stress_Scale_STSS",
+      "citation": "Bride, B. E., Robinson, M. M., Yegidis, B., & Figley, C. R. (2004). Development and validation of the Secondary Traumatic Stress Scale. Research on Social Work Practice, 14(1), 27–35. https://doi.org/10.1177/1049731503254106",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "swbs",
+      "name": "SWBS",
+      "fullName": "Spiritual Well-Being Scale",
+      "categories": [
+        "Religiosity / Spirituality"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item self-report scale measuring global spiritual well-being through two subscales—religious well-being (relationship with God) and existential well-being (sense of life purpose and satisfaction).",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.westmont.edu/psychology/raymond-paloutzian-spiritual-wellbeing-scale",
+      "citation": "Paloutzian, R. F., & Ellison, C. W. (1982). Loneliness, spiritual well-being and the quality of life. In L. A. Peplau & D. Perlman (Eds.), Loneliness: A sourcebook of current theory, research and therapy (pp. 224–236). Wiley.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "swls",
       "name": "SWLS",
       "fullName": "Satisfaction with Life Scale",
@@ -2801,6 +3509,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "tai",
+      "name": "TAI",
+      "fullName": "Test Anxiety Inventory",
+      "categories": [
+        "Test / Academic Anxiety"
+      ],
+      "population": "All ages",
+      "items": 20,
+      "description": "A 20-item self-report inventory assessing individual differences in test anxiety as a situation-specific trait, yielding Worry and Emotionality subscale scores plus a Total score; administered via paper or online survey.",
+      "access": "Copyrighted — requires purchase/license from Mind Garden, Inc.",
+      "url": "https://www.mindgarden.com/150-test-anxiety-inventory",
+      "citation": "Spielberger, C. D. (1980). Test Anxiety Inventory: Preliminary professional manual. Consulting Psychologists Press.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "tas-20",
       "name": "TAS-20",
       "fullName": "Twenty-Item Toronto Alexithymia Scale",
@@ -2813,6 +3536,21 @@
       "access": "Copyrighted — requires purchase/license from Dr. Graeme J. Taylor, University of Toronto",
       "url": "https://www.phenxtoolkit.org/protocols/view/650901",
       "citation": "Bagby, R. M., Parker, J. D. A., & Taylor, G. J. (1994). The twenty-item Toronto Alexithymia Scale—I. Item selection and cross-validation of the factor structure. Journal of Psychosomatic Research, 38(1), 23–32. https://doi.org/10.1016/0022-3999(94)90005-1",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "tdds",
+      "name": "TDDS",
+      "fullName": "Three Domain Disgust Scale",
+      "categories": [
+        "Disgust Sensitivity"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A 21-item self-report scale assessing individual differences in disgust sensitivity across pathogen, sexual, and moral domains, with respondents rating how disgusting they find each of 21 concepts or scenarios on a 7-point scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/26655634_Microbes_Mating_and_Morality_Individual_Differences_in_Three_Functional_Domains_of_Disgust",
+      "citation": "Tybur, J. M., Lieberman, D., & Griskevicius, V. (2009). Microbes, mating, and morality: Individual differences in three functional domains of disgust. Journal of Personality and Social Psychology, 97(1), 103–122. https://doi.org/10.1037/a0015474",
       "checked": "2026-08-17"
     },
     {
@@ -2889,6 +3627,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "ugds-gs",
+      "name": "UGDS-GS",
+      "fullName": "Utrecht Gender Dysphoria Scale - Gender Spectrum",
+      "categories": [
+        "Gender Dysphoria"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item self-report scale measuring gender dysphoria along a single, gender-neutral continuum, capturing both dissatisfaction with one's assigned sex/gender and comfort with one's affirmed gender identity.",
+      "access": "Free for clinical/research use",
+      "url": "https://s3.eu-west-2.amazonaws.com/www.hra.nhs.uk/media/documents/Utrecht_gender_dysphoria_scale_VgK9PrX.pdf",
+      "citation": "McGuire, J. K., Berg, D., Catalpa, J. M., Morrow, Q. J., Fish, J. N., Nic Rider, G., Steensma, T., Cohen-Kettenis, P. T., & Spencer, K. (2020). Utrecht Gender Dysphoria Scale - Gender Spectrum (UGDS-GS): Construct validity among transgender, nonbinary, and LGBQ samples. International Journal of Transgender Health, 21(2), 194–208. https://doi.org/10.1080/26895269.2020.1723460",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "upps-p",
       "name": "UPPS-P",
       "fullName": "UPPS-P Impulsive Behavior Scale",
@@ -2901,6 +3654,21 @@
       "access": "Free for clinical/research use with registration",
       "url": "https://www.impulsivity.org/measurement/upps_p/",
       "citation": "Cyders, M. A., Smith, G. T., Spillane, N. S., Fischer, S., Annus, A. M., & Peterson, C. (2007). Integration of impulsivity and positive mood to predict risky behavior: Development and validation of a measure of positive urgency. Psychological Assessment, 19(1), 107–118. https://doi.org/10.1037/1040-3590.19.1.107",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "via",
+      "name": "VIA",
+      "fullName": "Vancouver Index of Acculturation",
+      "categories": [
+        "Acculturation"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item self-report scale that independently measures orientation toward one's heritage culture and orientation toward the mainstream/host culture, based on a bidimensional model of acculturation.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www2.psych.ubc.ca/~dpaulhus/research/CULTURE/articles/JPSP%202000%20Ryder-Alden-Paulhus%20.pdf",
+      "citation": "Ryder, A. G., Alden, L. E., & Paulhus, D. L. (2000). Is acculturation unidimensional or bidimensional? A head-to-head comparison in the prediction of personality, self-identity, and adjustment. Journal of Personality and Social Psychology, 79(1), 49–65. https://doi.org/10.1037/0022-3514.79.1.49",
       "checked": "2026-08-17"
     },
     {
@@ -3068,6 +3836,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "wtas",
+      "name": "WTAS",
+      "fullName": "Westside Test Anxiety Scale",
+      "categories": [
+        "Test / Academic Anxiety"
+      ],
+      "population": "All ages",
+      "items": 10,
+      "description": "A brief 10-item self-report scale that identifies students with impairing test anxiety by measuring self-assessed anxiety symptoms and performance-impairing cognitions; free to administer and score in classroom or clinical settings.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://eric.ed.gov/?id=ED495968",
+      "citation": "Driscoll, R. (2007). Westside Test Anxiety Scale validation. Online Submission (ERIC Document Reproduction Service No. ED495968).",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "ybocs",
       "name": "Y-BOCS",
       "fullName": "Yale-Brown Obsessive Compulsive Scale",
@@ -3081,6 +3864,22 @@
       "url": "https://iocdf.org/expert-opinions/expert-opinion-measuring-oc-symptoms/",
       "citation": "Goodman, W. K., Price, L. H., Rasmussen, S. A., Mazure, C., Fleischmann, R. L., Hill, C. L., Heninger, G. R., & Charney, D. S. (1989). The Yale-Brown Obsessive Compulsive Scale: I. Development, use, and reliability. Archives of General Psychiatry, 46(11), 1006–1011. https://doi.org/10.1001/archpsyc.1989.01810110048007",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "ygtss",
+      "name": "YGTSS",
+      "fullName": "Yale Global Tic Severity Scale",
+      "categories": [
+        "Tic Disorders",
+        "Tourette's Syndrome"
+      ],
+      "population": "All ages",
+      "items": 10,
+      "description": "A clinician-administered semi-structured interview that rates the number, frequency, intensity, complexity, and interference of motor and phonic tics over the past week, yielding separate Motor and Phonic Tic scores plus an overall impairment rating.",
+      "access": "Free for clinical/research use",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7949908/",
+      "citation": "Leckman, J. F., Riddle, M. A., Hardin, M. T., Ort, S. I., Swartz, K. L., Stevenson, J., & Cohen, D. J. (1989). The Yale Global Tic Severity Scale: Initial testing of a clinician-rated scale of tic severity. Journal of the American Academy of Child and Adolescent Psychiatry, 28(4), 566–573. https://doi.org/10.1097/00004583-198907000-00015",
+      "checked": "2026-08-17"
     },
     {
       "id": "ymrs",
