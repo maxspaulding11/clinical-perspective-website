@@ -78,9 +78,9 @@
     DATA.measures.forEach(m => (m.categories || []).forEach(c => cats.add(c)));
     const sorted = Array.from(cats).sort((a, b) => a.localeCompare(b));
 
-    const wrap = $('#measures-categories');
-    wrap.innerHTML = '<button data-cat="" aria-pressed="true">All</button>' +
-      sorted.map(c => '<button data-cat="' + esc(c) + '" aria-pressed="false">' + esc(c) + '</button>').join('');
+    const select = $('#measures-category');
+    select.innerHTML = '<option value="">All categories</option>' +
+      sorted.map(c => '<option value="' + esc(c) + '">' + esc(c) + '</option>').join('');
   }
 
   function toast(msg) {
@@ -119,12 +119,8 @@
     render();
   });
 
-  $('#measures-categories').addEventListener('click', e => {
-    const btn = e.target.closest('[data-cat]');
-    if (!btn) return;
-    category = btn.dataset.cat;
-    $('#measures-categories').querySelectorAll('[data-cat]').forEach(x =>
-      x.setAttribute('aria-pressed', String(x === btn)));
+  $('#measures-category').addEventListener('change', e => {
+    category = e.target.value;
     render();
   });
 

@@ -1623,6 +1623,22 @@ a:hover { text-decoration: underline; }
 }
 #fac-search:focus { outline: 2px solid rgba(165,74,36,0.32); border-color: var(--maroon); }
 
+.fac-controls input[type="text"],
+.fac-controls select {
+  width: auto;
+  flex: 1 1 280px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 11px 18px;
+}
+.fac-controls select { flex: 0 1 240px; cursor: pointer; }
+.fac-controls input[type="text"]:focus,
+.fac-controls select:focus { outline: 2px solid rgba(165,74,36,0.32); border-color: var(--maroon); }
+
 .fac-filters { display: flex; gap: 6px; flex-wrap: wrap; }
 .fac-filters + .fac-filters { border-left: 1px solid var(--rule); padding-left: 12px; }
 .fac-filters button {
