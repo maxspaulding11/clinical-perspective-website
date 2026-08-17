@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-17",
   "note": "A growing directory of validated clinical assessment instruments. Citations verified against original validation publications or official source pages.",
   "measures": [
     {
@@ -16,6 +16,20 @@
       "url": "https://doi.org/10.1037/0022-3514.58.4.644",
       "citation": "Collins, N. L., & Read, S. J. (1990). Adult attachment, working models, and relationship quality in dating couples. Journal of Personality and Social Psychology, 58(4), 644-663. https://doi.org/10.1037/0022-3514.58.4.644",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "abas-3",
+      "name": "ABAS-3",
+      "fullName": "Adaptive Behavior Assessment System, Third Edition",
+      "categories": [
+        "Adaptive Behavior"
+      ],
+      "population": "All ages",
+      "description": "A rating-scale system completed by parents, teachers, or the individual that measures conceptual, social, and practical adaptive skills across ten skill areas, used from birth through age 89 to help diagnose intellectual disability and evaluate adaptive functioning.",
+      "access": "Copyrighted — requires purchase/license from Western Psychological Services (WPS)",
+      "url": "https://www.wpspublish.com/abas-3-adaptive-behavior-assessment-system-third-edition",
+      "citation": "Harrison, P. L., & Oakland, T. (2015). Adaptive Behavior Assessment System, Third Edition (ABAS-3). Western Psychological Services.",
+      "checked": "2026-08-17"
     },
     {
       "id": "ace-questionnaire",
@@ -76,6 +90,21 @@
       "url": "https://scholarworks.smith.edu/psy_facpubs/44/",
       "citation": "Frost, R. O., Hristova, V., Steketee, G., & Tolin, D. F. (2013). Activities of Daily Living Scale in Hoarding Disorder. Journal of Obsessive-Compulsive and Related Disorders, 2(2), 85–90. https://doi.org/10.1016/j.jocrd.2012.12.004",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "adnm-20",
+      "name": "ADNM-20",
+      "fullName": "Adjustment Disorder–New Module 20",
+      "categories": [
+        "Adjustment Disorder"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item self-report screening measure for ICD-11 adjustment disorder that assesses core preoccupation and failure-to-adapt symptoms following a stressful life event along with associated symptom clusters, and provides empirically derived cut-off scores.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.psychology.uzh.ch/dam/jcr:15220404-d1b2-4d9a-9661-f1709b4ca3f4/ADNM_20_Homepage_English.pdf",
+      "citation": "Lorenz, L., Bachem, R. C., & Maercker, A. (2016). The Adjustment Disorder–New Module 20 as a screening instrument: Cluster analysis and cut-off values. International Journal of Occupational and Environmental Medicine, 7(4), 215–220. https://doi.org/10.15171/ijoem.2016.775",
+      "checked": "2026-08-17"
     },
     {
       "id": "ados-2",
@@ -165,6 +194,21 @@
       "url": "https://arc.psych.wisc.edu/self-report/anxiety-sensitivity-index-asi/",
       "citation": "Taylor, S., Zvolensky, M. J., Cox, B. J., Deacon, B., Heimberg, R. G., Ledley, D. R., Abramowitz, J. S., Holaway, R. M., Sandin, B., Stewart, S. H., Coles, M., Eng, W., Daly, E. S., Arrindell, W. A., Bouvard, M., & Cardenas, S. J. (2007). Robust dimensions of anxiety sensitivity: Development and initial validation of the Anxiety Sensitivity Index-3. Psychological Assessment, 19(2), 176-188.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "asq",
+      "name": "ASQ",
+      "fullName": "Attributional Style Questionnaire",
+      "categories": [
+        "Optimism",
+        "Explanatory Style"
+      ],
+      "population": "Adults",
+      "description": "Presents 12 hypothetical positive and negative events; respondents identify a likely cause for each and rate that cause on internality, stability, and globality dimensions, yielding a composite explanatory/optimism style score.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://ppc.sas.upenn.edu/resources/questionnaires-researchers/attributional-style-questionnaire",
+      "citation": "Peterson, C., Semmel, A., von Baeyer, C., Abramson, L. Y., Metalsky, G. I., & Seligman, M. E. P. (1982). The attributional style questionnaire. Cognitive Therapy and Research, 6(3), 287–299. https://doi.org/10.1007/BF01173577",
+      "checked": "2026-08-17"
     },
     {
       "id": "asrm",
@@ -302,6 +346,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "bfi",
+      "name": "BFI",
+      "fullName": "Big Five Inventory",
+      "categories": [
+        "Personality Traits"
+      ],
+      "population": "Adults",
+      "items": 44,
+      "description": "A 44-item self-report questionnaire using short trait-descriptive phrases, rated on a 5-point agreement scale, that efficiently measures the Big Five personality dimensions: Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://psdlab.uoregon.edu/measuring-the-big-five-personality-domains/",
+      "citation": "John, O. P., & Srivastava, S. (1999). The Big Five trait taxonomy: History, measurement, and theoretical perspectives. In L. A. Pervin & O. P. John (Eds.), Handbook of personality: Theory and research (2nd ed., pp. 102–138). Guilford Press.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "bgq",
       "name": "BGQ",
       "fullName": "Brief Grief Questionnaire",
@@ -315,6 +374,21 @@
       "url": "https://www.massgeneral.org/assets/mgh/pdf/psychiatry/complicated-grief-questionnaire.pdf",
       "citation": "Shear, M. K., Jackson, C. T., Essock, S. M., Donahue, S. A., & Felton, C. J. (2006). Screening for complicated grief among Project Liberty service recipients 18 months after September 11, 2001. Psychiatric Services, 57(9), 1291–1297. https://doi.org/10.1176/ps.2006.57.9.1291",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "bis-11",
+      "name": "BIS-11",
+      "fullName": "Barratt Impulsiveness Scale, Version 11",
+      "categories": [
+        "Impulsivity"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item self-report questionnaire that measures trait impulsiveness across three second-order factors: attentional, motor, and non-planning impulsiveness. Respondents rate each item on a 4-point frequency scale (rarely/never to almost always/always).",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.impulsivity.org/measurement/bis11/",
+      "citation": "Patton, J. H., Stanford, M. S., & Barratt, E. S. (1995). Factor structure of the Barratt Impulsiveness Scale. Journal of Clinical Psychology, 51(6), 768–774. https://doi.org/10.1002/1097-4679(199511)51:6<768::AID-JCLP2270510607>3.0.CO;2-1",
+      "checked": "2026-08-17"
     },
     {
       "id": "bpaq",
@@ -362,6 +436,65 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "brief-cope",
+      "name": "Brief COPE",
+      "fullName": "Brief COPE Inventory",
+      "categories": [
+        "Coping Styles"
+      ],
+      "population": "Adults",
+      "items": 28,
+      "description": "A 28-item self-report inventory (2 items per subscale) that assesses 14 distinct coping strategies, including both problem-focused approaches (e.g., active coping, planning) and emotion-focused approaches (e.g., denial, self-blame, humor).",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.psy.miami.edu/faculty/ccarver/brief-cope.html",
+      "citation": "Carver, C. S. (1997). You want to measure coping but your protocol's too long: Consider the Brief COPE. International Journal of Behavioral Medicine, 4(1), 92–100. https://doi.org/10.1207/s15327558ijbm0401_6",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "bfne",
+      "name": "Brief FNE",
+      "fullName": "Brief Fear of Negative Evaluation Scale",
+      "categories": [
+        "Fear of Negative Evaluation"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "A 12-item shortened version of the FNE using a 5-point Likert response format, developed to measure the same construct of fear of negative evaluation more efficiently than the original 30-item true/false scale.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://sites.duke.edu/leary/files/2019/05/Brief-FNE.pdf",
+      "citation": "Leary, M. R. (1983). A brief version of the Fear of Negative Evaluation scale. Personality and Social Psychology Bulletin, 9(3), 371–375.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "brief-2",
+      "name": "BRIEF-2",
+      "fullName": "Behavior Rating Inventory of Executive Function, Second Edition",
+      "categories": [
+        "Executive Function"
+      ],
+      "population": "Children and Adolescents",
+      "description": "A rating scale completed by parents or teachers (63 items, ages 5–18) or by adolescents themselves (Self-Report Form, 55 items, ages 11–18) that assesses everyday behaviors reflecting executive function domains such as inhibition, shifting, emotional control, and working memory.",
+      "access": "Copyrighted — requires purchase/license from Psychological Assessment Resources (PAR)",
+      "url": "https://www.parinc.com/products/BRIEF-2",
+      "citation": "Gioia, G. A., Isquith, P. K., Guy, S. C., & Kenworthy, L. (2015). Behavior Rating Inventory of Executive Function, Second Edition (BRIEF-2). Psychological Assessment Resources.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "brs",
+      "name": "BRS",
+      "fullName": "Brief Resilience Scale",
+      "categories": [
+        "Resilience"
+      ],
+      "population": "Adults",
+      "items": 6,
+      "description": "A brief 6-item self-report scale measuring the ability to 'bounce back' or recover from stress, with each item rated on a 5-point scale from strongly disagree to strongly agree.",
+      "access": "Free for clinical/research use — no registration required",
+      "url": "https://ogg.osu.edu/media/documents/MB%20Stream/Brief%20Resilience%20Scale.pdf",
+      "citation": "Smith, B. W., Dalen, J., Wiggins, K., Tooley, E., Christopher, P., & Bernard, J. (2008). The brief resilience scale: Assessing the ability to bounce back. International Journal of Behavioral Medicine, 15(3), 194–200. https://doi.org/10.1080/10705500802222972",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "bsi",
       "name": "BSI",
       "fullName": "Brief Symptom Inventory",
@@ -375,6 +508,21 @@
       "url": "https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Personality-&-Biopsychosocial/Brief-Symptom-Inventory/p/100000450",
       "citation": "Derogatis, L. R., & Melisaratos, N. (1983). The Brief Symptom Inventory: An introductory report. Psychological Medicine, 13(3), 595–605. https://doi.org/10.1017/S0033291700048017",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "bsmas",
+      "name": "BSMAS",
+      "fullName": "Bergen Social Media Addiction Scale",
+      "categories": [
+        "Social Media Addiction"
+      ],
+      "population": "Adults",
+      "items": 6,
+      "description": "A brief self-report scale assessing addictive social media use across six core addiction components (salience, mood modification, tolerance, withdrawal, conflict, relapse), each rated on frequency over the past year.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psytests.org/cyber/bsmasen.html",
+      "citation": "Andreassen, C. S., Billieux, J., Griffiths, M. D., Kuss, D. J., Demetrovics, Z., Mazzoni, E., & Pallesen, S. (2016). The relationship between addictive use of social media and video games and symptoms of psychiatric disorders: A large-scale cross-sectional study. Psychology of Addictive Behaviors, 30(2), 252-262. https://doi.org/10.1037/adb0000160",
+      "checked": "2026-08-17"
     },
     {
       "id": "bsq",
@@ -405,6 +553,21 @@
       "url": "https://www.pearsonassessments.com/store/en/usd/p/100000157.html",
       "citation": "Beck, A. T., Kovacs, M., & Weissman, A. (1979). Assessment of suicidal intention: The Scale for Suicide Ideation. Journal of Consulting and Clinical Psychology, 47(2), 343–352. https://doi.org/10.1037/0022-006X.47.2.343",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "bwas",
+      "name": "BWAS",
+      "fullName": "Bergen Work Addiction Scale",
+      "categories": [
+        "Work Addiction"
+      ],
+      "population": "Adults",
+      "items": 7,
+      "description": "A brief self-report scale measuring work addiction through seven core addiction components (salience, mood modification, tolerance, withdrawal, conflict, relapse, problems), each rated on frequency over the past year.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psytests.org/diag/bwasen.html",
+      "citation": "Andreassen, C. S., Griffiths, M. D., Hetland, J., & Pallesen, S. (2012). Development of a work addiction scale. Scandinavian Journal of Psychology, 53(3), 265-272. https://doi.org/10.1111/j.1467-9450.2012.00947.x",
+      "checked": "2026-08-17"
     },
     {
       "id": "c-ssrs",
@@ -481,6 +644,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "cbi-burnout",
+      "name": "CBI",
+      "fullName": "Copenhagen Burnout Inventory",
+      "categories": [
+        "Burnout"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A self-report questionnaire measuring personal, work-related, and client-related burnout through ratings of fatigue and exhaustion frequency; developed as a free public-domain alternative to proprietary burnout measures.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://nfa.elsevierpure.com/en/publications/the-copenhagen-burnout-inventory-a-new-tool-for-the-assessment-of/",
+      "citation": "Kristensen, T. S., Borritz, M., Villadsen, E., & Christensen, K. B. (2005). The Copenhagen Burnout Inventory: A new tool for the assessment of burnout. Work & Stress, 19(3), 192-207. https://doi.org/10.1080/02678370500297720",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "cd-risc",
+      "name": "CD-RISC",
+      "fullName": "Connor-Davidson Resilience Scale",
+      "categories": [
+        "Resilience"
+      ],
+      "population": "Adults",
+      "items": 25,
+      "description": "A 25-item self-report questionnaire measuring the ability to cope with stress and adversity across domains such as personal competence, trust/tolerance, control, and spirituality; each item is rated on how true it has been over the past month.",
+      "access": "Copyrighted — requires purchase/license from CD-RISC, LLC",
+      "url": "https://connordavidson-resiliencescale.com/",
+      "citation": "Connor, K. M., & Davidson, J. R. T. (2003). Development of a new resilience scale: The Connor-Davidson Resilience Scale (CD-RISC). Depression and Anxiety, 18(2), 76–82. https://doi.org/10.1002/da.10113",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "cdi",
       "name": "CDI",
       "fullName": "Children's Depression Inventory",
@@ -524,6 +717,21 @@
       "url": "https://hoarding.iocdf.org/wp-content/uploads/sites/7/2016/12/Clutter-Image-Rating-3-18-16.pdf",
       "citation": "Frost, R. O., Steketee, G., Tolin, D. F., & Renaud, S. (2008). Development and validation of the Clutter Image Rating. Journal of Psychopathology and Behavioral Assessment, 30(3), 193–203. https://doi.org/10.1007/s10862-007-9068-7",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "ciss",
+      "name": "CISS",
+      "fullName": "Coping Inventory for Stressful Situations",
+      "categories": [
+        "Coping Styles"
+      ],
+      "population": "Adults",
+      "items": 48,
+      "description": "A 48-item self-report inventory that measures three coping styles—task-oriented, emotion-oriented, and avoidance-oriented (with avoidance further split into distraction and social diversion)—in response to stressful situations.",
+      "access": "Copyrighted — requires purchase/license from Multi-Health Systems (MHS)",
+      "url": "https://storefront.mhs.com/collections/ciss",
+      "citation": "Endler, N. S., & Parker, J. D. A. (1990). Multidimensional assessment of coping: A critical evaluation. Journal of Personality and Social Psychology, 58(5), 844–854. https://doi.org/10.1037/0022-3514.58.5.844",
+      "checked": "2026-08-17"
     },
     {
       "id": "cius",
@@ -734,6 +942,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "duwas",
+      "name": "DUWAS",
+      "fullName": "Dutch Work Addiction Scale",
+      "categories": [
+        "Work Addiction"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A self-report scale measuring workaholism through two dimensions—working excessively and working compulsively—rated on a 4-point frequency scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.wilmarschaufeli.nl/publications/Schaufeli/Tests/DUWAS_10_EN.pdf",
+      "citation": "Schaufeli, W. B., Shimazu, A., & Taris, T. W. (2009). Being driven to work excessively hard: The evaluation of a two-factor measure of workaholism in the Netherlands and Japan. Cross-Cultural Research, 43(4), 320-348. https://doi.org/10.1177/1069397109337239",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "eat-26",
       "name": "EAT-26",
       "fullName": "Eating Attitudes Test-26",
@@ -824,6 +1047,51 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "faces-iv",
+      "name": "FACES IV",
+      "fullName": "Family Adaptability and Cohesion Evaluation Scales IV",
+      "categories": [
+        "Family Functioning"
+      ],
+      "population": "Adults",
+      "items": 62,
+      "description": "A self-report family functioning measure built on the Circumplex Model, assessing cohesion and flexibility across six balanced and unbalanced scales, plus supplementary Family Communication and Family Satisfaction scales.",
+      "access": "Copyrighted — requires purchase/license from Life Innovations, Inc.",
+      "url": "http://www.facesiv.com/",
+      "citation": "Olson, D. (2011). FACES IV and the circumplex model: Validation study. Journal of Marital and Family Therapy, 37(1), 64–80.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "fad",
+      "name": "FAD",
+      "fullName": "McMaster Family Assessment Device",
+      "categories": [
+        "Family Functioning"
+      ],
+      "population": "All ages",
+      "items": 60,
+      "description": "A 60-item self-report measure completed by family members (typically age 12 and up) rating statements about their family across six dimensions of the McMaster Model of Family Functioning, plus a General Functioning subscale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://arc.psych.wisc.edu/self-report/mcmaster-family-assessment-device-fad/",
+      "citation": "Epstein, N. B., Baldwin, L. M., & Bishop, D. S. (1983). The McMaster Family Assessment Device. Journal of Marital and Family Therapy, 9(2), 171–180.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "family-apgar",
+      "name": "Family APGAR",
+      "fullName": "Family APGAR Questionnaire",
+      "categories": [
+        "Family Functioning"
+      ],
+      "population": "Adults",
+      "items": 5,
+      "description": "A brief 5-item screening tool assessing an individual's satisfaction with family functioning across Adaptability, Partnership, Growth, Affection, and Resolve, originally developed for use by primary care physicians.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://cdn.mdedge.com/files/s3fs-public/jfp-archived-issues/1978-volume_6-7/JFP_1978-06_v6_i6_the-family-apgar-a-proposal-for-a-family.pdf",
+      "citation": "Smilkstein, G. (1978). The family APGAR: A proposal for a family function test and its use by physicians. The Journal of Family Practice, 6(6), 1231–1239.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "ffmq",
       "name": "FFMQ",
       "fullName": "Five Facet Mindfulness Questionnaire",
@@ -839,6 +1107,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "flourishing-scale",
+      "name": "Flourishing Scale",
+      "fullName": "Flourishing Scale (Diener et al.)",
+      "categories": [
+        "Psychological Well-Being"
+      ],
+      "population": "Adults",
+      "items": 8,
+      "description": "A brief 8-item self-report summary measure of self-perceived success in areas such as relationships, self-esteem, purpose, and optimism, yielding a single flourishing score.",
+      "access": "Free for clinical/research use — no registration required",
+      "url": "https://labs.psychology.illinois.edu/~ediener/FS.html",
+      "citation": "Diener, E., Wirtz, D., Tov, W., Kim-Prieto, C., Choi, D., Oishi, S., & Biswas-Diener, R. (2010). New well-being measures: Short scales to assess flourishing and positive and negative feelings. Social Indicators Research, 97(2), 143–156. https://doi.org/10.1007/s11205-009-9493-y",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "fmps",
       "name": "FMPS",
       "fullName": "Frost Multidimensional Perfectionism Scale",
@@ -852,6 +1135,21 @@
       "url": "https://db.arabpsychology.com/scales/frost-multidimensional-perfectionism-scale-fmps/",
       "citation": "Frost, R. O., Marten, P., Lahart, C., & Rosenblate, R. (1990). The dimensions of perfectionism. Cognitive Therapy and Research, 14(5), 449-468.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "fne",
+      "name": "FNE",
+      "fullName": "Fear of Negative Evaluation Scale",
+      "categories": [
+        "Fear of Negative Evaluation"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item true/false self-report scale measuring apprehension about others' evaluations, distress over negative evaluation, and avoidance of evaluative situations.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.statisticssolutions.com/free-resources/directory-of-survey-instruments/fear-of-negative-evaluation-fne/",
+      "citation": "Watson, D., & Friend, R. (1969). Measurement of social-evaluative anxiety. Journal of Consulting and Clinical Psychology, 33(4), 448–457.",
+      "checked": "2026-08-17"
     },
     {
       "id": "fq",
@@ -871,6 +1169,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "ftnd",
+      "name": "FTND",
+      "fullName": "Fagerström Test for Nicotine Dependence",
+      "categories": [
+        "Nicotine Dependence"
+      ],
+      "population": "Adults",
+      "items": 6,
+      "description": "A brief self-report questionnaire quantifying physical dependence on nicotine from cigarette smoking, yielding a 0-10 score used to gauge cessation-treatment intensity.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://cde.nida.nih.gov/instrument/d7c0b0f5-b865-e4de-e040-bb89ad43202b",
+      "citation": "Heatherton, T. F., Kozlowski, L. T., Frecker, R. C., & Fagerström, K. O. (1991). The Fagerström Test for Nicotine Dependence: A revision of the Fagerström Tolerance Questionnaire. British Journal of Addiction, 86(9), 1119-1127. https://doi.org/10.1111/j.1360-0443.1991.tb01879.x",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "gad-7",
       "name": "GAD-7",
       "fullName": "Generalized Anxiety Disorder 7-item scale",
@@ -884,6 +1197,21 @@
       "url": "https://www.phqscreeners.com",
       "citation": "Spitzer, R. L., Kroenke, K., Williams, J. B. W., & Löwe, B. (2006). A brief measure for assessing generalized anxiety disorder: The GAD-7. Archives of Internal Medicine, 166(10), 1092–1097. https://doi.org/10.1001/archinte.166.10.1092",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "gasp",
+      "name": "GASP",
+      "fullName": "Guilt and Shame Proneness Scale",
+      "categories": [
+        "Shame / Guilt"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A 16-item scenario-based measure distinguishing guilt-proneness (negative behavior-evaluation and repair after private transgressions) from shame-proneness (negative self-evaluation and withdrawal after publicly exposed transgressions).",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://kilthub.cmu.edu/articles/journal_contribution/Introducing_the_GASP_Scale_A_New_Measure_of_Guilt_and_Shame_Proneness/6706226",
+      "citation": "Cohen, T. R., Wolf, S. T., Panter, A. T., & Insko, C. A. (2011). Introducing the GASP scale: A new measure of guilt and shame proneness. Journal of Personality and Social Psychology, 100(5), 947–966. https://doi.org/10.1037/a0022641",
+      "checked": "2026-08-17"
     },
     {
       "id": "ham-a",
@@ -946,6 +1274,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "iadq",
+      "name": "IADQ",
+      "fullName": "International Adjustment Disorder Questionnaire",
+      "categories": [
+        "Adjustment Disorder"
+      ],
+      "population": "Adults",
+      "items": 19,
+      "description": "A brief self-report questionnaire assessing ICD-11-defined adjustment disorder: a checklist of psychosocial stressors, core symptoms of preoccupation with the stressor and failure to adapt, and associated functional impairment, used for screening and provisional diagnosis.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.traumameasuresglobal.com/iadq",
+      "citation": "Shevlin, M., Hyland, P., Ben-Ezra, M., Karatzias, T., Cloitre, M., Vallières, F., Bachem, R., & Maercker, A. (2020). Measuring ICD-11 adjustment disorder: The development and initial validation of the International Adjustment Disorder Questionnaire. Acta Psychiatrica Scandinavica, 141(3), 265–274. https://doi.org/10.1111/acps.13126",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "iat",
       "name": "IAT",
       "fullName": "Internet Addiction Test",
@@ -1006,6 +1349,51 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "iip-32",
+      "name": "IIP-32",
+      "fullName": "Inventory of Interpersonal Problems — 32-Item Short Form",
+      "categories": [
+        "Interpersonal Problems"
+      ],
+      "population": "Adults",
+      "items": 32,
+      "description": "A shortened 32-item version of the IIP-64 covering the same eight interpersonal problem octants with fewer items per scale, designed for use in outcome research where a briefer instrument is needed.",
+      "access": "Copyrighted — requires purchase/license from Mind Garden, Inc.",
+      "url": "https://www.mindgarden.com/inventory-of-interpersonal-problems/211-iip32-transform-survey-hosting.html",
+      "citation": "Barkham, M., Hardy, G. E., & Startup, M. (1996). The IIP-32: A short version of the Inventory of Interpersonal Problems. British Journal of Clinical Psychology, 35(1), 21–35.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "iip-64",
+      "name": "IIP-64",
+      "fullName": "Inventory of Interpersonal Problems",
+      "categories": [
+        "Interpersonal Problems"
+      ],
+      "population": "Adults",
+      "items": 64,
+      "description": "A 64-item self-report questionnaire that identifies the interpersonal difficulties a person experiences most, organized around a circumplex of problem types (e.g., too controlling, too accommodating), commonly used to assess distress before, during, and after psychotherapy.",
+      "access": "Copyrighted — requires purchase/license from Mind Garden, Inc.",
+      "url": "https://www.mindgarden.com/113-inventory-of-interpersonal-problems",
+      "citation": "Horowitz, L. M., Rosenberg, S. E., Baer, B. A., Ureño, G., & Villaseñor, V. S. (1988). Inventory of interpersonal problems: Psychometric properties and clinical applications. Journal of Consulting and Clinical Psychology, 56(6), 885–892.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "irrs",
+      "name": "IRRS",
+      "fullName": "Index of Race-Related Stress",
+      "categories": [
+        "Racial Trauma / Discrimination"
+      ],
+      "population": "Adults",
+      "items": 46,
+      "description": "A self-report inventory assessing the frequency and psychological stress of race-related experiences across cultural, institutional, individual, and collective racism domains, developed within a daily-hassles framework for Black/African American adults.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/232559201_Development_and_Validation_of_the_Index_of_Race-Related_Stress_IRRS",
+      "citation": "Utsey, S. O., & Ponterotto, J. G. (1996). Development and validation of the Index of Race-Related Stress (IRRS). Journal of Counseling Psychology, 43(4), 490–501. https://doi.org/10.1037/0022-0167.43.4.490",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "isas",
       "name": "ISAS",
       "fullName": "Inventory of Statements About Self-Injury",
@@ -1019,6 +1407,21 @@
       "url": "https://www2.psych.ubc.ca/~klonsky/publications/ISASmeasure.pdf",
       "citation": "Klonsky, E. D., & Glenn, C. R. (2009). Assessing the functions of non-suicidal self-injury: Psychometric properties of the Inventory of Statements About Self-Injury (ISAS). Journal of Psychopathology and Behavioral Assessment, 31(3), 215–219. https://doi.org/10.1007/s10862-008-9107-z",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "isel",
+      "name": "ISEL",
+      "fullName": "Interpersonal Support Evaluation List",
+      "categories": [
+        "Social Support"
+      ],
+      "population": "Adults",
+      "items": 40,
+      "description": "A 40-item self-report inventory assessing perceived availability of four types of social support resources (tangible, appraisal, self-esteem, and belonging support) that could be called upon during times of stress.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales",
+      "citation": "Cohen, S., & Hoberman, H. M. (1983). Positive events and social supports as buffers of life change stress. Journal of Applied Social Psychology, 13(2), 99–125.",
+      "checked": "2026-08-17"
     },
     {
       "id": "isi",
@@ -1036,6 +1439,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "iss",
+      "name": "ISS",
+      "fullName": "Internalized Shame Scale",
+      "categories": [
+        "Shame / Guilt"
+      ],
+      "population": "Adults",
+      "items": 30,
+      "description": "A 30-item self-report inventory (24 shame items plus a 6-item self-esteem subscale) that measures trait, internalized shame by asking respondents how frequently they experience each state.",
+      "access": "Copyrighted — requires purchase/license from Multi-Health Systems (MHS)",
+      "url": "https://contextualscience.org/internalized_shame_scale_iss",
+      "citation": "Cook, D. R. (1994). Internalized Shame Scale: Professional manual. Multi-Health Systems.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "lot-r",
+      "name": "LOT-R",
+      "fullName": "Life Orientation Test–Revised",
+      "categories": [
+        "Optimism"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A 10-item self-report measure of dispositional optimism versus pessimism — generalized positive or negative expectancies about the future — with 6 scored items and 4 filler items rated on a 5-point scale.",
+      "access": "Free for clinical/research use — no registration required",
+      "url": "https://www.psy.miami.edu/faculty/ccarver/lot-r.html",
+      "citation": "Scheier, M. F., Carver, C. S., & Bridges, M. W. (1994). Distinguishing optimism from neuroticism (and trait anxiety, self-mastery, and self-esteem): A reevaluation of the Life Orientation Test. Journal of Personality and Social Psychology, 67(6), 1063–1078. https://doi.org/10.1037/0022-3514.67.6.1063",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "lsas",
       "name": "LSAS",
       "fullName": "Liebowitz Social Anxiety Scale",
@@ -1049,6 +1482,21 @@
       "url": "https://nationalsocialanxietycenter.com/liebowitz-sa-scale/",
       "citation": "Liebowitz, M. R. (1987). Social phobia. Modern Problems of Pharmacopsychiatry, 22, 141–173.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "lsrp",
+      "name": "LSRP",
+      "fullName": "Levenson Self-Report Psychopathy Scale",
+      "categories": [
+        "Psychopathy"
+      ],
+      "population": "Adults",
+      "items": 26,
+      "description": "A 26-item self-report questionnaire, rated on a 4-point agreement scale, that measures primary (interpersonal/affective) and secondary (impulsive/antisocial) psychopathic traits in non-institutionalized (community) populations.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7861311/",
+      "citation": "Levenson, M. R., Kiehl, K. A., & Fitzpatrick, C. M. (1995). Assessing psychopathic attributes in a noninstitutionalized population. Journal of Personality and Social Psychology, 68(1), 151–158. https://doi.org/10.1037/0022-3514.68.1.151",
+      "checked": "2026-08-17"
     },
     {
       "id": "maas",
@@ -1094,6 +1542,21 @@
       "url": "https://www.oregon.gov/oha/HSD/AMH/docs/MAST.pdf",
       "citation": "Selzer, M. L. (1971). The Michigan Alcoholism Screening Test: The quest for a new diagnostic instrument. American Journal of Psychiatry, 127(12), 1653–1658. https://doi.org/10.1176/ajp.127.12.1653",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "mbi",
+      "name": "MBI",
+      "fullName": "Maslach Burnout Inventory",
+      "categories": [
+        "Burnout"
+      ],
+      "population": "Adults",
+      "items": 22,
+      "description": "Assesses three dimensions of job-related burnout—emotional exhaustion, depersonalization, and reduced personal accomplishment—via self-rated frequency of work-related feelings.",
+      "access": "Copyrighted — requires purchase/license from Mind Garden, Inc.",
+      "url": "https://www.mindgarden.com/117-maslach-burnout-inventory-mbi",
+      "citation": "Maslach, C., & Jackson, S. E. (1981). The measurement of experienced burnout. Journal of Occupational Behavior, 2(2), 99-113. https://doi.org/10.1002/job.4030020205",
+      "checked": "2026-08-17"
     },
     {
       "id": "mdi",
@@ -1215,6 +1678,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "mspss",
+      "name": "MSPSS",
+      "fullName": "Multidimensional Scale of Perceived Social Support",
+      "categories": [
+        "Social Support"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "A 12-item self-report scale measuring perceived adequacy of social support from three sources: family, friends, and a significant other. Respondents rate each item on a 7-point scale from 'very strongly disagree' to 'very strongly agree'.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://gzimet.wixsite.com/mspss",
+      "citation": "Zimet, G. D., Dahlem, N. W., Zimet, S. G., & Farley, G. K. (1988). The Multidimensional Scale of Perceived Social Support. Journal of Personality Assessment, 52(1), 30–41.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "narq",
+      "name": "NARQ",
+      "fullName": "Narcissistic Admiration and Rivalry Questionnaire",
+      "categories": [
+        "Narcissism"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item self-report questionnaire, rated on a 6-point scale, that assesses grandiose narcissism through two distinct processes — narcissistic admiration (assertive self-enhancement) and narcissistic rivalry (antagonistic self-protection) — each with three underlying facets.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.persoc.net/persoc/uploads/Toolbox/NARQ_English.pdf",
+      "citation": "Back, M. D., Küfner, A. C. P., Dufner, M., Gerlach, T. M., Rauthmann, J. F., & Denissen, J. J. A. (2013). Narcissistic admiration and rivalry: Disentangling the bright and dark sides of narcissism. Journal of Personality and Social Psychology, 105(6), 1013–1037. https://doi.org/10.1037/a0034431",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "nas-pi",
       "name": "NAS-PI",
       "fullName": "Novaco Anger Scale and Provocation Inventory",
@@ -1228,6 +1721,21 @@
       "url": "https://www.wpspublish.com/nas-pi-novaco-anger-scale-and-provocation-inventory",
       "citation": "Novaco, R. W. (2003). The Novaco Anger Scale and Provocation Inventory (NAS-PI). Western Psychological Services.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "neo-pi-r",
+      "name": "NEO-PI-R",
+      "fullName": "Revised NEO Personality Inventory",
+      "categories": [
+        "Personality Traits"
+      ],
+      "population": "Adults",
+      "items": 240,
+      "description": "A 240-item self-report questionnaire, rated on a 5-point scale, that provides a comprehensive assessment of normal adult personality across the five domains of the Five-Factor Model (Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness) and their 30 underlying facets.",
+      "access": "Copyrighted — requires purchase/license from Psychological Assessment Resources (PAR)",
+      "url": "https://www.parinc.com/Products/pkey/276",
+      "citation": "Costa, P. T., Jr., & McCrae, R. R. (1992). Revised NEO Personality Inventory (NEO-PI-R) and NEO Five-Factor Inventory (NEO-FFI) professional manual. Psychological Assessment Resources.",
+      "checked": "2026-08-17"
     },
     {
       "id": "vanderbilt-adhd-diagnostic-rating-scale",
@@ -1260,6 +1768,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "npi-40",
+      "name": "NPI-40",
+      "fullName": "Narcissistic Personality Inventory",
+      "categories": [
+        "Narcissism"
+      ],
+      "population": "Adults",
+      "items": 40,
+      "description": "A 40-item forced-choice self-report inventory (each item pairs a narcissistic statement with a non-narcissistic one) that measures subclinical/normal-range grandiose narcissism, most often used in community and student samples.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "http://openpsychometrics.org/tests/NPI/",
+      "citation": "Raskin, R., & Terry, H. (1988). A principal-components analysis of the Narcissistic Personality Inventory and further evidence of its construct validity. Journal of Personality and Social Psychology, 54(5), 890–902. https://doi.org/10.1037/0022-3514.54.5.890",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "oci-r",
       "name": "OCI-R",
       "fullName": "Obsessive-Compulsive Inventory-Revised",
@@ -1273,6 +1796,21 @@
       "url": "https://psychology-tools.com/test/obsessive-compulsive-inventory-revised",
       "citation": "Foa, E. B., Huppert, J. D., Leiberg, S., Langner, R., Kichic, R., Hajcak, G., & Salkovskis, P. M. (2002). The Obsessive-Compulsive Inventory: Development and validation of a short version. Psychological Assessment, 14(4), 485–495. https://doi.org/10.1037/1040-3590.14.4.485",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "olbi",
+      "name": "OLBI",
+      "fullName": "Oldenburg Burnout Inventory",
+      "categories": [
+        "Burnout"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "Uses positively and negatively worded items to assess two burnout dimensions—exhaustion and disengagement from work—offered as a free alternative to the MBI.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://scales.arabpsychology.com/s/oldenburg-burnout-inventory/",
+      "citation": "Halbesleben, J. R. B., & Demerouti, E. (2005). The construct validity of an alternative measure of burnout: Investigating the English translation of the Oldenburg Burnout Inventory. Work & Stress, 19(3), 208-220. https://doi.org/10.1080/02678370500340728",
+      "checked": "2026-08-17"
     },
     {
       "id": "pai-bor",
@@ -1291,6 +1829,22 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "panas",
+      "name": "PANAS",
+      "fullName": "Positive and Negative Affect Schedule",
+      "categories": [
+        "Positive Affect",
+        "Negative Affect"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item self-report measure with two 10-item mood scales, Positive Affect and Negative Affect, each rated on a 5-point intensity scale over a specified time frame (e.g., right now, past week).",
+      "access": "Free for clinical/research use — no registration required",
+      "url": "https://ogg.osu.edu/media/documents/MB%20Stream/PANAS.pdf",
+      "citation": "Watson, D., Clark, L. A., & Tellegen, A. (1988). Development and validation of brief measures of positive and negative affect: The PANAS scales. Journal of Personality and Social Psychology, 54(6), 1063–1070. https://doi.org/10.1037/0022-3514.54.6.1063",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "panss",
       "name": "PANSS",
       "fullName": "Positive and Negative Syndrome Scale",
@@ -1306,6 +1860,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "paq",
+      "name": "PAQ",
+      "fullName": "Perth Alexithymia Questionnaire",
+      "categories": [
+        "Alexithymia"
+      ],
+      "population": "Adults",
+      "items": 24,
+      "description": "A 24-item self-report measure, rated on a 7-point scale, that assesses difficulty identifying and describing feelings separately for negative and positive emotions, plus externally oriented thinking, addressing a valence gap left by earlier alexithymia scales.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://embrace-autism.com/perth-alexithymia-questionnaire/",
+      "citation": "Preece, D., Becerra, R., Robinson, K., Dandy, J., & Allan, A. (2018). The psychometric assessment of alexithymia: Development and validation of the Perth Alexithymia Questionnaire. Personality and Individual Differences, 132, 32–44. https://doi.org/10.1016/j.paid.2018.05.011",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "pcl-5",
       "name": "PCL-5",
       "fullName": "PTSD Checklist for DSM-5",
@@ -1319,6 +1888,21 @@
       "url": "https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp",
       "citation": "Blevins, C. A., Weathers, F. W., Davis, M. T., Witte, T. K., & Domino, J. L. (2015). The Posttraumatic Stress Disorder Checklist for DSM-5 (PCL-5): Development and initial psychometric evaluation. Journal of Traumatic Stress, 28(6), 489–498. https://doi.org/10.1002/jts.22059",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "pcl-r",
+      "name": "PCL-R",
+      "fullName": "Hare Psychopathy Checklist-Revised",
+      "categories": [
+        "Psychopathy"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "A 20-item clinician-administered rating scale, scored from a semi-structured interview plus file/collateral review, that assesses the interpersonal, affective, lifestyle, and antisocial traits associated with psychopathy, primarily in correctional and forensic settings.",
+      "access": "Copyrighted — requires purchase/license from Multi-Health Systems (MHS)",
+      "url": "https://www.hare.org/scales/pclr.html",
+      "citation": "Hare, R. D. (1980). A research scale for the assessment of psychopathy in criminal populations. Personality and Individual Differences, 1(2), 111–119. https://doi.org/10.1016/0191-8869(80)90028-8",
+      "checked": "2026-08-17"
     },
     {
       "id": "pcs",
@@ -1441,6 +2025,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "pni",
+      "name": "PNI",
+      "fullName": "Pathological Narcissism Inventory",
+      "categories": [
+        "Narcissism"
+      ],
+      "population": "Adults",
+      "items": 52,
+      "description": "A 52-item self-report measure, rated on a 6-point scale, that assesses seven facets of pathological narcissism spanning both grandiosity (e.g., exploitativeness, grandiose fantasy) and vulnerability (e.g., contingent self-esteem, hiding the self), designed to be sensitive to clinical presentations of narcissism.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://levylab.la.psu.edu/wp-content/uploads/sites/9/2022/01/InitialconstructionandvalidationofthePathologicalNarcissismInventory.pdf",
+      "citation": "Pincus, A. L., Ansell, E. B., Pimentel, C. A., Cain, N. M., Wright, A. G. C., & Levy, K. N. (2009). Initial construction and validation of the Pathological Narcissism Inventory. Psychological Assessment, 21(3), 365–379. https://doi.org/10.1037/a0016530",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ppi-r",
+      "name": "PPI-R",
+      "fullName": "Psychopathic Personality Inventory-Revised",
+      "categories": [
+        "Psychopathy"
+      ],
+      "population": "Adults",
+      "items": 154,
+      "description": "A 154-item self-report inventory that captures psychopathic personality traits (including fearless dominance, self-centered impulsivity, and coldheartedness) in both community and offender samples without requiring endorsement of overt criminal behavior.",
+      "access": "Copyrighted — requires purchase/license from Psychological Assessment Resources (PAR)",
+      "url": "https://www.parinc.com/products/PPI-R",
+      "citation": "Lilienfeld, S. O., & Andrews, B. P. (1996). Development and preliminary validation of a self-report measure of psychopathic personality traits in noncriminal populations. Journal of Personality Assessment, 66(3), 488–524. https://doi.org/10.1207/s15327752jpa6603_3",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "pq-16",
       "name": "PQ-16",
       "fullName": "16-Item Prodromal Questionnaire",
@@ -1561,6 +2175,36 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "ptgi",
+      "name": "PTGI",
+      "fullName": "Posttraumatic Growth Inventory",
+      "categories": [
+        "Posttraumatic Growth"
+      ],
+      "population": "Adults",
+      "items": 21,
+      "description": "A 21-item self-report inventory measuring positive psychological change following a highly challenging or traumatic life event across five domains: relating to others, new possibilities, personal strength, spiritual change, and appreciation of life.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://bouldercrest.org/ptg-resource-center/",
+      "citation": "Tedeschi, R. G., & Calhoun, L. G. (1996). The Posttraumatic Growth Inventory: Measuring the positive legacy of trauma. Journal of Traumatic Stress, 9(3), 455–471. https://doi.org/10.1002/jts.2490090305",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ptgi-sf",
+      "name": "PTGI-SF",
+      "fullName": "Posttraumatic Growth Inventory – Short Form",
+      "categories": [
+        "Posttraumatic Growth"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A 10-item short form of the PTGI with two items drawn from each of the original five growth subscales, offering a briefer assessment of posttraumatic growth for research and clinical settings.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://bouldercrest.org/ptg-resource-center/",
+      "citation": "Cann, A., Calhoun, L. G., Tedeschi, R. G., Taku, K., Vishnevsky, T., Triplett, K. N., & Danhauer, S. C. (2010). A short form of the Posttraumatic Growth Inventory. Anxiety, Stress & Coping, 23(2), 127–137. https://doi.org/10.1080/10615800903094273",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "ras",
       "name": "RAS",
       "fullName": "Relationship Assessment Scale",
@@ -1641,6 +2285,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "rs-25",
+      "name": "RS-25",
+      "fullName": "Resilience Scale (Wagnild & Young)",
+      "categories": [
+        "Resilience"
+      ],
+      "population": "Adults",
+      "items": 25,
+      "description": "A 25-item self-report scale assessing personal competence and acceptance of self and life, two components theorized to underlie resilience; each item is rated on a 7-point agreement scale.",
+      "access": "Copyrighted — requires purchase/license from The Resilience Center",
+      "url": "https://www.resiliencecenter.com/products/resilience-scales-and-tools-for-research/the-original-resilience-scale/",
+      "citation": "Wagnild, G. M., & Young, H. M. (1993). Development and psychometric evaluation of the Resilience Scale. Journal of Nursing Measurement, 1(2), 165–178.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "rses",
       "name": "RSES",
       "fullName": "Rosenberg Self-Esteem Scale",
@@ -1654,6 +2313,21 @@
       "url": "https://socy.umd.edu/about-us/using-rosenberg-self-esteem-scale",
       "citation": "Rosenberg, M. (1965). Society and the adolescent self-image. Princeton University Press.",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "ryff-pwb",
+      "name": "Ryff PWB",
+      "fullName": "Ryff Scales of Psychological Well-Being",
+      "categories": [
+        "Psychological Well-Being"
+      ],
+      "population": "Adults",
+      "items": 84,
+      "description": "A theory-based self-report measure of six dimensions of eudaimonic well-being — autonomy, environmental mastery, personal growth, positive relations with others, purpose in life, and self-acceptance — available in a long 84-item form and several shortened forms (54, 42, 18 items).",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://ppc.sas.upenn.edu/resources/questionnaires-researchers/psychological-well-being-scales",
+      "citation": "Ryff, C. D. (1989). Happiness is everything, or is it? Explorations on the meaning of psychological well-being. Journal of Personality and Social Psychology, 57(6), 1069–1081. https://doi.org/10.1037/0022-3514.57.6.1069",
+      "checked": "2026-08-17"
     },
     {
       "id": "sans",
@@ -1916,6 +2590,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "smds",
+      "name": "SMDS",
+      "fullName": "Social Media Disorder Scale",
+      "categories": [
+        "Social Media Addiction"
+      ],
+      "population": "Adolescents",
+      "items": 9,
+      "description": "A yes/no self-report scale, adapted from DSM-5 internet gaming disorder criteria, that screens for problematic, addiction-like social media use among adolescents.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://www.uu.nl/sites/default/files/social-media-disorder-scale-development-and-validation.pdf",
+      "citation": "van den Eijnden, R. J. J. M., Lemmens, J. S., & Valkenburg, P. M. (2016). The Social Media Disorder Scale. Computers in Human Behavior, 61, 478-487. https://doi.org/10.1016/j.chb.2016.03.038",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "smsp",
       "name": "SMSP",
       "fullName": "Severity Measure for Specific Phobia—Adult",
@@ -1944,6 +2633,22 @@
       "url": "https://www.hca.wa.gov/assets/free-or-low-cost/south-oaks-gambling-screen-SOGS.pdf",
       "citation": "Lesieur, H. R., & Blume, S. B. (1987). The South Oaks Gambling Screen (SOGS): A new instrument for the identification of pathological gamblers. American Journal of Psychiatry, 144(9), 1184–1188. https://doi.org/10.1176/ajp.144.9.1184",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "spane",
+      "name": "SPANE",
+      "fullName": "Scale of Positive and Negative Experience",
+      "categories": [
+        "Positive Affect",
+        "Negative Affect"
+      ],
+      "population": "Adults",
+      "items": 12,
+      "description": "A 12-item scale assessing the frequency of positive and negative feelings over the past four weeks, yielding separate positive-feeling and negative-feeling scores that can be combined into an affect balance score.",
+      "access": "Free for clinical/research use — no registration required",
+      "url": "https://labs.psychology.illinois.edu/~ediener/SPANE.html",
+      "citation": "Diener, E., Wirtz, D., Tov, W., Kim-Prieto, C., Choi, D., Oishi, S., & Biswas-Diener, R. (2010). New well-being measures: Short scales to assess flourishing and positive and negative feelings. Social Indicators Research, 97(2), 143–156. https://doi.org/10.1007/s11205-009-9493-y",
+      "checked": "2026-08-17"
     },
     {
       "id": "spin",
@@ -1976,6 +2681,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "sre",
+      "name": "SRE",
+      "fullName": "Schedule of Racist Events",
+      "categories": [
+        "Racial Trauma / Discrimination"
+      ],
+      "population": "Adults",
+      "items": 18,
+      "description": "An 18-item self-report inventory that assesses the frequency of specific racist events experienced in the past year and over one's lifetime, and the degree to which those events were appraised as stressful.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.researchgate.net/publication/247753591_The_Schedule_of_Racist_Events_A_Measure_of_Racial_Discrimination_and_a_Study_of_Its_Negative_Physical_and_Mental_Health_Consequences",
+      "citation": "Landrine, H., & Klonoff, E. A. (1996). The schedule of racist events: A measure of racial discrimination and a study of its negative physical and mental health consequences. Journal of Black Psychology, 22(2), 144–168. https://doi.org/10.1177/00957984960222002",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "srs-2",
       "name": "SRS-2",
       "fullName": "Social Responsiveness Scale, Second Edition",
@@ -1991,6 +2711,21 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "sseit",
+      "name": "SSEIT",
+      "fullName": "Schutte Self-Report Emotional Intelligence Test",
+      "categories": [
+        "Emotional Intelligence"
+      ],
+      "population": "Adults",
+      "items": 33,
+      "description": "A 33-item self-report questionnaire measuring perceived emotional intelligence, including appraisal and expression of emotion, regulation of emotion, and utilization of emotion in problem-solving, rated on a 5-point Likert scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.statisticssolutions.com/free-resources/directory-of-survey-instruments/schutte-self-report-emotional-intelligence-test-sseit/",
+      "citation": "Schutte, N. S., Malouff, J. M., Hall, L. E., Haggerty, D. J., Cooper, J. T., Golden, C. J., & Dornheim, L. (1998). Development and validation of a measure of emotional intelligence. Personality and Individual Differences, 25(2), 167–177. https://doi.org/10.1016/S0191-8869(98)00001-4",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "sses",
       "name": "SSES",
       "fullName": "State Self-Esteem Scale",
@@ -2004,6 +2739,21 @@
       "url": "https://backend.fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Self_Measures_for_Self-Esteem_STATE_SELF-ESTEEM.pdf",
       "citation": "Heatherton, T. F., & Polivy, J. (1991). Development and validation of a scale for measuring state self-esteem. Journal of Personality and Social Psychology, 60(6), 895-910. https://doi.org/10.1037/0022-3514.60.6.895",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "ssq6",
+      "name": "SSQ6",
+      "fullName": "Social Support Questionnaire — Short Form",
+      "categories": [
+        "Social Support"
+      ],
+      "population": "Adults",
+      "items": 6,
+      "description": "A brief 6-item self-report measure asking respondents to list people who provide support in various situations and to rate their satisfaction with the support received, yielding both a Number and a Satisfaction score.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "http://www.psych.uw.edu/research/sarason/files/SocialSupportQuestionnaireShort.pdf",
+      "citation": "Sarason, I. G., Sarason, B. R., Shearin, E. N., & Pierce, G. R. (1987). A brief measure of social support: Practical and theoretical implications. Journal of Social and Personal Relationships, 4(4), 497–510.",
+      "checked": "2026-08-17"
     },
     {
       "id": "staxi-2",
@@ -2051,6 +2801,79 @@
       "checked": "2026-08-14"
     },
     {
+      "id": "tas-20",
+      "name": "TAS-20",
+      "fullName": "Twenty-Item Toronto Alexithymia Scale",
+      "categories": [
+        "Alexithymia"
+      ],
+      "population": "Adults",
+      "items": 20,
+      "description": "The most widely used self-report measure of alexithymia, rated on a 5-point scale, assessing three facets: difficulty identifying feelings, difficulty describing feelings, and externally oriented thinking.",
+      "access": "Copyrighted — requires purchase/license from Dr. Graeme J. Taylor, University of Toronto",
+      "url": "https://www.phenxtoolkit.org/protocols/view/650901",
+      "citation": "Bagby, R. M., Parker, J. D. A., & Taylor, G. J. (1994). The twenty-item Toronto Alexithymia Scale—I. Item selection and cross-validation of the factor structure. Journal of Psychosomatic Research, 38(1), 23–32. https://doi.org/10.1016/0022-3999(94)90005-1",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "teique",
+      "name": "TEIQue",
+      "fullName": "Trait Emotional Intelligence Questionnaire",
+      "categories": [
+        "Emotional Intelligence"
+      ],
+      "population": "Adults",
+      "items": 153,
+      "description": "A comprehensive self-report inventory assessing trait emotional intelligence (emotional self-perceptions and dispositions) across 15 facets grouped into four factors — well-being, self-control, emotionality, and sociability — rated on a 7-point Likert scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psychometriclab.com/trait-emotional-intelligence-questionnaire-teique/",
+      "citation": "Petrides, K. V., & Furnham, A. (2001). Trait emotional intelligence: Psychometric investigation with reference to established trait taxonomies. European Journal of Personality, 15(6), 425–448. https://doi.org/10.1002/per.416",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "tipi",
+      "name": "TIPI",
+      "fullName": "Ten-Item Personality Inventory",
+      "categories": [
+        "Personality Traits"
+      ],
+      "population": "Adults",
+      "items": 10,
+      "description": "A brief 10-item self-report measure (two items per trait, one reverse-scored) that assesses the Big Five personality domains when survey length must be minimized, at some cost to reliability and precision compared to longer instruments.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/",
+      "citation": "Gosling, S. D., Rentfrow, P. J., & Swann, W. B., Jr. (2003). A very brief measure of the Big-Five personality domains. Journal of Research in Personality, 37(6), 504–528. https://doi.org/10.1016/S0092-6566(03)00046-1",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "trail-making-test",
+      "name": "TMT",
+      "fullName": "Trail Making Test",
+      "categories": [
+        "Executive Function"
+      ],
+      "population": "Adults",
+      "description": "A timed paper-and-pencil neuropsychological test of visual scanning, processing speed, and cognitive flexibility. Part A requires connecting numbered circles in sequence; Part B requires alternating between numbers and letters in sequence.",
+      "access": "Public domain — free to use and reproduce",
+      "url": "https://datashare.nida.nih.gov/instrument/trail-making-test",
+      "citation": "Reitan, R. M. (1958). Validity of the Trail Making Test as an indicator of organic brain damage. Perceptual and Motor Skills, 8(3), 271–276. https://doi.org/10.2466/pms.1958.8.3.271",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "tosca-3",
+      "name": "TOSCA-3",
+      "fullName": "Test of Self-Conscious Affect-3",
+      "categories": [
+        "Shame / Guilt"
+      ],
+      "population": "Adults",
+      "description": "A scenario-based self-report measure in which respondents rate how likely they would be to react in shame-, guilt-, externalization-, detachment-, and pride-related ways to everyday hypothetical situations, used to assess trait proneness to shame versus guilt.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://mason.gmu.edu/~jtangney/measures.html",
+      "citation": "Tangney, J. P., Dearing, R. L., Wagner, P. E., & Gramzow, R. (2000). The Test of Self-Conscious Affect-3 (TOSCA-3). George Mason University.",
+      "checked": "2026-08-17"
+    },
+    {
       "id": "r-ucla",
       "name": "UCLA-LS",
       "fullName": "UCLA Loneliness Scale (Revised)",
@@ -2064,6 +2887,80 @@
       "url": "https://backend.fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Self_Measures_for_Loneliness_and_Interpersonal_Problems_UCLA_LONELINESS_REVISED.pdf",
       "citation": "Russell, D., Peplau, L. A., & Cutrona, C. E. (1980). The revised UCLA Loneliness Scale: Concurrent and discriminant validity evidence. Journal of Personality and Social Psychology, 39(3), 472–480. https://doi.org/10.1037/0022-3514.39.3.472",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "upps-p",
+      "name": "UPPS-P",
+      "fullName": "UPPS-P Impulsive Behavior Scale",
+      "categories": [
+        "Impulsivity"
+      ],
+      "population": "Adults",
+      "items": 59,
+      "description": "A 59-item self-report measure that assesses five distinct facets of impulsivity: negative urgency, (lack of) premeditation, (lack of) perseverance, sensation seeking, and positive urgency. Items are rated on a 4-point agreement scale.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://www.impulsivity.org/measurement/upps_p/",
+      "citation": "Cyders, M. A., Smith, G. T., Spillane, N. S., Fischer, S., Annus, A. M., & Peterson, C. (2007). Integration of impulsivity and positive mood to predict risky behavior: Development and validation of a measure of positive urgency. Psychological Assessment, 19(1), 107–118. https://doi.org/10.1037/1040-3590.19.1.107",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "vineland-3",
+      "name": "Vineland-3",
+      "fullName": "Vineland Adaptive Behavior Scales, Third Edition",
+      "categories": [
+        "Adaptive Behavior"
+      ],
+      "population": "All ages",
+      "description": "A semi-structured interview or rating-scale measure of personal and social functioning across Communication, Daily Living Skills, Socialization, and Motor Skills domains, administered from birth through age 90 to inform diagnoses such as intellectual and developmental disabilities.",
+      "access": "Copyrighted — requires purchase/license from Pearson",
+      "url": "https://www.pearsonassessments.com/store/en/usd/p/100001622.html",
+      "citation": "Sparrow, S. S., Cicchetti, D. V., & Saulnier, C. A. (2016). Vineland Adaptive Behavior Scales, Third Edition (Vineland-3). Pearson.",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "wart",
+      "name": "WART",
+      "fullName": "Work Addiction Risk Test",
+      "categories": [
+        "Work Addiction"
+      ],
+      "population": "Adults",
+      "items": 25,
+      "description": "A self-report questionnaire rated on a 4-point scale that screens for workaholism by assessing behaviors such as compulsive overworking, impatience, and difficulty delegating.",
+      "access": "Copyrighted — requires purchase/license from Paulist Press, Inc.",
+      "url": "https://www.paulistpress.com/Promotions/pdfs/pdfs_survival/handout_4.pdf",
+      "citation": "Robinson, B. E. (1999). The Work Addiction Risk Test: Development of a tentative measure of workaholism. Perceptual and Motor Skills, 88(1), 199-210. https://doi.org/10.2466/pms.1999.88.1.199",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "ways-of-coping-questionnaire",
+      "name": "WCQ",
+      "fullName": "Ways of Coping Questionnaire",
+      "categories": [
+        "Coping Styles"
+      ],
+      "population": "Adults",
+      "items": 66,
+      "description": "A 66-item self-report measure (50 scored items across eight coping scales plus 16 filler items) that assesses the thoughts and actions a person uses to manage a specific stressful encounter, distinguishing problem-focused from emotion-focused coping.",
+      "access": "Copyrighted — requires purchase/license from Mind Garden",
+      "url": "https://www.mindgarden.com/158-ways-of-coping-questionnaire",
+      "citation": "Folkman, S., & Lazarus, R. S. (1985). If it changes it must be a process: A study of emotion and coping during three stages of a college examination. Journal of Personality and Social Psychology, 48(1), 150–170. https://doi.org/10.1037/0022-3514.48.1.150",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "wcst",
+      "name": "WCST",
+      "fullName": "Wisconsin Card Sorting Test",
+      "categories": [
+        "Executive Function"
+      ],
+      "population": "All ages",
+      "items": 128,
+      "description": "A card-sorting task measuring abstract reasoning, cognitive flexibility, and perseveration. The examinee sorts response cards (128 total, in two 64-card decks) to match one of four stimulus cards by color, form, or number, with the correct sorting rule changing without warning.",
+      "access": "Copyrighted — requires purchase/license from Psychological Assessment Resources (PAR)",
+      "url": "https://www.parinc.com/products/WCST",
+      "citation": "Heaton, R. K. (1981). A manual for the Wisconsin Card Sorting Test. Psychological Assessment Resources.",
+      "checked": "2026-08-17"
     },
     {
       "id": "whiteley-index",
@@ -2124,6 +3021,36 @@
       "url": "https://www.who.int/tools/whoqol",
       "citation": "The WHOQOL Group. (1998). Development of the World Health Organization WHOQOL-BREF quality of life assessment. Psychological Medicine, 28(3), 551-558. https://doi.org/10.1017/S0033291798006667",
       "checked": "2026-08-14"
+    },
+    {
+      "id": "wisdm-68",
+      "name": "WISDM-68",
+      "fullName": "Wisconsin Inventory of Smoking Dependence Motives",
+      "categories": [
+        "Nicotine Dependence"
+      ],
+      "population": "Adults",
+      "items": 68,
+      "description": "A theoretically derived self-report inventory measuring 13 distinct motivational dimensions of cigarette dependence (e.g., craving, tolerance, automaticity, cue exposure).",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://arc.psych.wisc.edu/self-report/wisconsin-index-of-smoking-dependence-motives-wisdm/",
+      "citation": "Piper, M. E., Piasecki, T. M., Federman, E. B., Bolt, D. M., Smith, S. S., Fiore, M. C., & Baker, T. B. (2004). A multiple motives approach to tobacco dependence: The Wisconsin Inventory of Smoking Dependence Motives (WISDM-68). Journal of Consulting and Clinical Psychology, 72(2), 139-154. https://doi.org/10.1037/0022-006X.72.2.139",
+      "checked": "2026-08-17"
+    },
+    {
+      "id": "wleis",
+      "name": "WLEIS",
+      "fullName": "Wong and Law Emotional Intelligence Scale",
+      "categories": [
+        "Emotional Intelligence"
+      ],
+      "population": "Adults",
+      "items": 16,
+      "description": "A brief self-report measure of perceived emotional intelligence spanning four dimensions — self-emotion appraisal, others'-emotion appraisal, use of emotion, and regulation of emotion — widely used in workplace and organizational research.",
+      "access": "Free for clinical/research use with registration",
+      "url": "https://psytests.org/eq/wleisen.html",
+      "citation": "Wong, C.-S., & Law, K. S. (2002). The effects of leader and follower emotional intelligence on performance and attitude: An exploratory study. The Leadership Quarterly, 13(3), 243–274. https://doi.org/10.1016/S1048-9843(02)00099-1",
+      "checked": "2026-08-17"
     },
     {
       "id": "wsas",
