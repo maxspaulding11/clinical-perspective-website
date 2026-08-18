@@ -1620,6 +1620,20 @@ a:hover { text-decoration: underline; }
   color: #7a4a0c !important;
 }
 
+.fac-new-banner {
+  background: rgba(44,107,65,0.09);
+  border: 1px solid rgba(44,107,65,0.28);
+  border-radius: var(--radius-sm, 10px);
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+.fac-new-banner p {
+  font-size: 0.9rem;
+  color: #2c6b41;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .fac-controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
 #fac-search {
   flex: 1 1 280px;

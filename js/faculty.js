@@ -100,6 +100,13 @@
     $('#fac-stats').innerHTML =
       '<strong>' + faculty + '</strong> faculty confirmed accepting across <strong>' +
       posted.length + '</strong> programs · last updated ' + esc(data.updated || '');
+
+    const newlyPosted = data.programs.filter(p => p.newlyPosted).sort((a, b) => a.school.localeCompare(b.school));
+    if (newlyPosted.length) {
+      $('#fac-new-schools').textContent = newlyPosted.map(p => p.school).join(', ');
+      $('#fac-new-banner').hidden = false;
+    }
+
     render();
   }
 

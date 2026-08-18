@@ -856,7 +856,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "This page (opened directly) contains a 'Faculty Accepting Students: 2026-2027' section, but its per-faculty notes are inconsistent/only partly updated (one entry references 'For Academic Year 2025-26,' another 'AY26-27'), and all reference academic year 2026-27 (Fall 2026 matriculation), not Fall 2027. A separate dedicated 'faculty-accepting-students' subpage linked from search results returned HTTP 404. No reliable Fall 2027 list could be confirmed."
+      "note": "This page (opened directly) contains a 'Faculty Accepting Students: 2026-2027' section, but its per-faculty notes are inconsistent/only partly updated (one entry references 'For Academic Year 2025-26,' another 'AY26-27'), and all reference academic year 2026-27 (Fall 2026 matriculation), not Fall 2027. A separate dedicated 'faculty-accepting-students' subpage linked from search results returned HTTP 404. No reliable Fall 2027 list could be confirmed.",
+      "newlyPosted": true
     },
     {
       "id": "duke-university-phd",
@@ -1714,7 +1715,8 @@
       "maybe": [],
       "notAccepting": [],
       "note": "This sentence appears under a 'List of Clinical Faculty Accepting New Students' heading but only addresses the (now past) Fall 2026 cohort; the page contains no Fall 2027 information or names, so it appears not yet updated for the current cycle.",
-      "pcsas": true
+      "pcsas": true,
+      "newlyPosted": true
     },
     {
       "id": "midwestern-university-psyd",
@@ -3234,7 +3236,8 @@
       ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Independently re-verified 2026-08-17. Page mixes two labels: five faculty (Fazzino, Hamilton, Powers, Thomas, Yi) explicitly say \"2027-28 academic year\" (matches our Fall 2027 cycle) and are listed as accepting. Two others (Muehlenhard, Rempfer) say \"2026-27 academic year\" (a different, earlier cycle) and are omitted rather than marked not-accepting, since that statement does not speak to Fall 2027."
+      "note": "Independently re-verified 2026-08-17. Page mixes two labels: five faculty (Fazzino, Hamilton, Powers, Thomas, Yi) explicitly say \"2027-28 academic year\" (matches our Fall 2027 cycle) and are listed as accepting. Two others (Muehlenhard, Rempfer) say \"2026-27 academic year\" (a different, earlier cycle) and are omitted rather than marked not-accepting, since that statement does not speak to Fall 2027.",
+      "newlyPosted": true
     },
     {
       "id": "university-of-kentucky-phd",
@@ -3734,7 +3737,8 @@
         "Ellen Flannery-Schroeder",
         "Mark L. Robbins"
       ],
-      "note": "Deadline: December 1, 2026. Each faculty profile carries its own accepting/not-accepting sentence, but the page labels the cohort \"2027-2028 academic year\" rather than an explicit \"Fall 2027\" — per the disambiguation rule and the verifier's own recommendation, not treated as confirmed for Fall 2027 without further clarification. For reference, the page's 2027-2028-labeled not-accepting names were: Christopher G. Beevers, April Highlander, David Schnyer, Nathan Cook, Justin Parent, Nicole Weiss, Ellen Flannery-Schroeder, Mark L. Robbins. Dr. Lopez-Vergara was named as accepting on the same page, same caveat applies. Corrected during verification: The URL loads and belongs to URI Psychology, and the quote appears verbatim, and the accepting/notAccepting split matches the page. However, the page states Lopez-Vergara (and by the page's framing, the cohort) is accepting for the '2027-2028 academic year' — an academic-year range, not an explicit 'Fall 2027' semester designation. Per the disambiguation rule, this should not be treated as confirmed for Fall 2027 without further clarification from the page."
+      "note": "Deadline: December 1, 2026. Each faculty profile carries its own accepting/not-accepting sentence, but the page labels the cohort \"2027-2028 academic year\" rather than an explicit \"Fall 2027\" — per the disambiguation rule and the verifier's own recommendation, not treated as confirmed for Fall 2027 without further clarification. For reference, the page's 2027-2028-labeled not-accepting names were: Christopher G. Beevers, April Highlander, David Schnyer, Nathan Cook, Justin Parent, Nicole Weiss, Ellen Flannery-Schroeder, Mark L. Robbins. Dr. Lopez-Vergara was named as accepting on the same page, same caveat applies. Corrected during verification: The URL loads and belongs to URI Psychology, and the quote appears verbatim, and the accepting/notAccepting split matches the page. However, the page states Lopez-Vergara (and by the page's framing, the cohort) is accepting for the '2027-2028 academic year' — an academic-year range, not an explicit 'Fall 2027' semester designation. Per the disambiguation rule, this should not be treated as confirmed for Fall 2027 without further clarification from the page.",
+      "newlyPosted": true
     },
     {
       "id": "university-of-rochester-phd",
@@ -3918,7 +3922,8 @@
       "notAccepting": [
         "Lisa Cromer"
       ],
-      "note": "Deadline: December 1 (per department program page). The department's Clinical Psychology Grad Programs page (utulsa.edu/academics/arts/academics/departments/psychology/clinical-grad/) has a 'FACULTY RECRUITING' section linking to six labs (SPARTA, TRAPT, TACTS, Perinatal Psychobiology, INSPIRE, PLAN). Only the SPARTA lab's own page (director Dr. Lisa Cromer) makes an explicit Fall 2027 statement, and it is a 'not accepting' statement. The TRAPT (Dr. Joanne Davis) and TACTS (Dr. Elana Newman) lab pages were opened directly but contain no explicit Fall 2027 (or any dated) recruiting statement. Pages for the INSPIRE, PLAN, and Perinatal Psychobiology labs could not be located on the university's own site. Because most of the labs in the recruiting section have no dated statement, the program overall is marked pending rather than posted."
+      "note": "Deadline: December 1 (per department program page). The department's Clinical Psychology Grad Programs page (utulsa.edu/academics/arts/academics/departments/psychology/clinical-grad/) has a 'FACULTY RECRUITING' section linking to six labs (SPARTA, TRAPT, TACTS, Perinatal Psychobiology, INSPIRE, PLAN). Only the SPARTA lab's own page (director Dr. Lisa Cromer) makes an explicit Fall 2027 statement, and it is a 'not accepting' statement. The TRAPT (Dr. Joanne Davis) and TACTS (Dr. Elana Newman) lab pages were opened directly but contain no explicit Fall 2027 (or any dated) recruiting statement. Pages for the INSPIRE, PLAN, and Perinatal Psychobiology labs could not be located on the university's own site. Because most of the labs in the recruiting section have no dated statement, the program overall is marked pending rather than posted.",
+      "newlyPosted": true
     },
     {
       "id": "university-of-utah-phd",
