@@ -47,6 +47,37 @@
       (saved ? '★' : '☆') + '</button>';
   }
 
+  const GRE_LABEL = {
+    required:        'GRE required',
+    optional:        'GRE optional',
+    'not accepted':  'GRE not accepted',
+    'not mentioned': 'GRE: not stated'
+  };
+
+  function appInfo(p) {
+    const items = [];
+    if (p.applicationDeadline) {
+      items.push('<span class="fac-appinfo-item">Deadline: <strong>' + esc(p.applicationDeadline) + '</strong>' +
+        (p.deadlineCycle ? ' <span class="fac-appinfo-sub">(' + esc(p.deadlineCycle) + ')</span>' : '') + '</span>');
+    }
+    const gre = GRE_LABEL[p.greRequired];
+    if (gre) items.push('<span class="fac-appinfo-item">' + esc(gre) + '</span>');
+    if (p.numReferences) {
+      items.push('<span class="fac-appinfo-item">' + p.numReferences + ' reference' + (p.numReferences === 1 ? '' : 's') + '</span>');
+    }
+    if (p.applicationFee) items.push('<span class="fac-appinfo-item">Fee: ' + esc(p.applicationFee) + '</span>');
+
+    const other = (p.otherRequirements || []).length
+      ? '<ul class="fac-appinfo-other">' + p.otherRequirements.map(r => '<li>' + esc(r) + '</li>').join('') + '</ul>'
+      : '';
+
+    if (!items.length && !other) return '';
+    return '<div class="fac-appinfo">' +
+      (items.length ? '<div class="fac-appinfo-row">' + items.join('') + '</div>' : '') +
+      other +
+    '</div>';
+  }
+
   function card(p) {
     const count = (p.accepting || []).length;
     const badge = p.status === 'posted'
@@ -63,6 +94,7 @@
         '</div>' +
         '<div class="fac-head-right">' + starBtn(p) + badge + '</div>' +
       '</div>' +
+      appInfo(p) +
       nameList(p.accepting, 'yes', 'Accepting students') +
       nameList(p.maybe, 'maybe', 'Undecided — contact directly') +
       nameList(p.notAccepting, 'no', 'Not accepting this cycle') +
