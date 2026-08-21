@@ -11,6 +11,7 @@
   let query = '';
   let accred = 'apa';
   let statusFilter = 'all';
+  let profByKey = {};
 
   const STATUS_LABEL = {
     posted:     'List posted',
@@ -18,6 +19,18 @@
     unverified: 'No page found yet',
     closed:     'Program closed this cycle'
   };
+
+  // Names in a program's accepting/maybe/notAccepting lists sometimes carry
+  // credentials or punctuation a professor's own record doesn't — normalize
+  // both sides the same way before comparing so those don't cause a miss.
+  function normName(s) {
+    return String(s)
+      .toLowerCase()
+      .replace(/\b(dr|phd|psyd|ph\.d|psy\.d)\b\.?/g, '')
+      .replace(/[.,]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
 
   function matches(p) {
     if (accred === 'pcsas' && !p.pcsas) return false;
@@ -29,12 +42,28 @@
     return hay.indexOf(query) !== -1;
   }
 
-  function nameList(names, cls, label) {
+  function profStarBtn(id) {
+    const saved = window.TCPSaved && window.TCPSaved.isProfSaved(id);
+    return '<button type="button" class="star-btn star-btn-sm' + (saved ? ' is-saved' : '') + '" ' +
+      'data-star-prof="' + esc(id) + '" aria-pressed="' + (saved ? 'true' : 'false') + '" ' +
+      'aria-label="' + (saved ? 'Remove from my list' : 'Save professor to my list') + '" ' +
+      'title="' + (saved ? 'Saved — click to remove' : 'Save to my list') + '">' +
+      (saved ? '★' : '☆') + '</button>';
+  }
+
+  function nameList(names, cls, label, p) {
     if (!names || !names.length) return '';
     return '<div class="fac-group">' +
       '<p class="fac-group-label ' + cls + '">' + label + '</p>' +
       '<ul class="fac-names">' +
-        names.map(n => '<li class="' + cls + '">' + esc(n) + '</li>').join('') +
+        names.map(n => {
+          const profId = profByKey[p.school + '|||' + p.program + '|||' + normName(n)];
+          return profId
+            ? '<li class="' + cls + ' has-star">' +
+                '<span class="fac-name-text">' + esc(n) + '</span>' + profStarBtn(profId) +
+              '</li>'
+            : '<li class="' + cls + '">' + esc(n) + '</li>';
+        }).join('') +
       '</ul></div>';
   }
 
@@ -95,9 +124,9 @@
         '<div class="fac-head-right">' + starBtn(p) + badge + '</div>' +
       '</div>' +
       appInfo(p) +
-      nameList(p.accepting, 'yes', 'Accepting students') +
-      nameList(p.maybe, 'maybe', 'Undecided — contact directly') +
-      nameList(p.notAccepting, 'no', 'Not accepting this cycle') +
+      nameList(p.accepting, 'yes', 'Accepting students', p) +
+      nameList(p.maybe, 'maybe', 'Undecided — contact directly', p) +
+      nameList(p.notAccepting, 'no', 'Not accepting this cycle', p) +
       (p.note ? '<p class="fac-note">' + esc(p.note) + '</p>' : '') +
       (p.sourceQuote
         ? '<p class="fac-quote">“' + esc(p.sourceQuote) + '”</p>'
@@ -142,9 +171,16 @@
     render();
   }
 
-  fetch('../data/programs.json')
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(boot)
+  Promise.all([
+    fetch('../data/programs.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('../data/professors.json').then(r => r.ok ? r.json() : { professors: [] }).catch(() => ({ professors: [] }))
+  ])
+    .then(([progData, profData]) => {
+      (profData.professors || []).forEach(prof => {
+        profByKey[prof.school + '|||' + prof.program + '|||' + normName(prof.name)] = prof.id;
+      });
+      boot(progData);
+    })
     .catch(() => {
       $('#fac-list').innerHTML =
         '<li class="fac-empty">Could not load the program list. Please refresh.</li>';
@@ -172,14 +208,25 @@
   });
 
   $('#fac-list').addEventListener('click', e => {
-    const btn = e.target.closest('[data-star-school]');
-    if (!btn || !window.TCPSaved) return;
-    const saved = window.TCPSaved.toggleSchool(btn.dataset.starSchool);
-    btn.classList.toggle('is-saved', saved);
-    btn.setAttribute('aria-pressed', String(saved));
-    btn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
-    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
-    btn.textContent = saved ? '★' : '☆';
+    const schoolBtn = e.target.closest('[data-star-school]');
+    if (schoolBtn && window.TCPSaved) {
+      const saved = window.TCPSaved.toggleSchool(schoolBtn.dataset.starSchool);
+      schoolBtn.classList.toggle('is-saved', saved);
+      schoolBtn.setAttribute('aria-pressed', String(saved));
+      schoolBtn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
+      schoolBtn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+      schoolBtn.textContent = saved ? '★' : '☆';
+      return;
+    }
+    const profBtn = e.target.closest('[data-star-prof]');
+    if (profBtn && window.TCPSaved) {
+      const saved = window.TCPSaved.toggleProf(profBtn.dataset.starProf);
+      profBtn.classList.toggle('is-saved', saved);
+      profBtn.setAttribute('aria-pressed', String(saved));
+      profBtn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save professor to my list');
+      profBtn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+      profBtn.textContent = saved ? '★' : '☆';
+    }
   });
 
   document.addEventListener('tcp-saved-synced', render);

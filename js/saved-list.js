@@ -15,6 +15,38 @@
     closed:     'Program closed this cycle'
   };
 
+  const GRE_LABEL = {
+    required:        'GRE required',
+    optional:        'GRE optional',
+    'not accepted':  'GRE not accepted',
+    'not mentioned': 'GRE: not stated'
+  };
+
+  function appInfo(p) {
+    if (!p) return '';
+    const items = [];
+    if (p.applicationDeadline) {
+      items.push('<span class="fac-appinfo-item">Deadline: <strong>' + esc(p.applicationDeadline) + '</strong>' +
+        (p.deadlineCycle ? ' <span class="fac-appinfo-sub">(' + esc(p.deadlineCycle) + ')</span>' : '') + '</span>');
+    }
+    const gre = GRE_LABEL[p.greRequired];
+    if (gre) items.push('<span class="fac-appinfo-item">' + esc(gre) + '</span>');
+    if (p.numReferences) {
+      items.push('<span class="fac-appinfo-item">' + p.numReferences + ' reference' + (p.numReferences === 1 ? '' : 's') + '</span>');
+    }
+    if (p.applicationFee) items.push('<span class="fac-appinfo-item">Fee: ' + esc(p.applicationFee) + '</span>');
+
+    const other = (p.otherRequirements || []).length
+      ? '<ul class="fac-appinfo-other">' + p.otherRequirements.map(r => '<li>' + esc(r) + '</li>').join('') + '</ul>'
+      : '';
+
+    if (!items.length && !other) return '';
+    return '<div class="fac-appinfo">' +
+      (items.length ? '<div class="fac-appinfo-row">' + items.join('') + '</div>' : '') +
+      other +
+    '</div>';
+  }
+
   function nameList(names) {
     if (!names || !names.length) return '';
     return '<div class="fac-group">' +
@@ -42,6 +74,7 @@
           badge +
         '</div>' +
       '</div>' +
+      appInfo(p) +
       nameList(p.accepting) +
       '<div class="fac-foot">' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">Check the program\'s own page →</a>' +
@@ -61,6 +94,7 @@
         '<button type="button" class="star-btn is-saved" data-remove-prof="' + esc(p.id) + '" ' +
           'aria-label="Remove from my list" title="Remove from my list">★</button>' +
       '</div>' +
+      appInfo(p._prog) +
       '<ul class="prof-interests">' + interests + '</ul>' +
       '<div class="fac-foot">' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">View their university page →</a>' +
@@ -103,6 +137,10 @@
   ]).then(([progData, profData]) => {
     const programs = progData.programs || [];
     const professors = profData.professors || [];
+
+    const programIndex = {};
+    programs.forEach(rec => { programIndex[rec.school + '|||' + rec.program] = rec; });
+    professors.forEach(p => { p._prog = programIndex[p.school + '|||' + p.program] || null; });
 
     renderSchools(programs);
     renderProfs(professors);
