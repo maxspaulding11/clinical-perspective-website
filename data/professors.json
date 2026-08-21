@@ -39702,6 +39702,462 @@
       ],
       "url": "https://www.yu.edu/faculty/pages/zweig-richard",
       "checked": "2026-08-13"
+    },
+    {
+      "id": "eyal-aharoni-georgia-state-university",
+      "name": "Eyal Aharoni",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "emotion and decision making",
+        "moral psychology",
+        "legal psychology",
+        "forensic psychology",
+        "retribution and punishment",
+        "psychopathy and antisocial behavior"
+      ],
+      "url": "https://psychology.gsu.edu/profile/eyal-aharoni/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "sarah-barber-georgia-state-university",
+      "name": "Sarah Barber",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "memory across the adult lifespan",
+        "age-based stereotype threat",
+        "positivity effect in aging",
+        "collaborative memory",
+        "illusory truth effect"
+      ],
+      "url": "https://psychology.gsu.edu/profile/sarah-barber/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "heather-kleider-offutt-georgia-state-university",
+      "name": "Heather Kleider-Offutt",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "eyewitness memory",
+        "false memory and suggestibility",
+        "face recognition",
+        "heuristic recollection processes",
+        "stereotyping and memory error",
+        "jury decision-making"
+      ],
+      "url": "https://psychology.gsu.edu/profile/heather-kleider-offutt/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "sarah-pope-caldwell-georgia-state-university",
+      "name": "Sarah Pope-Caldwell",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "flexible thinking and learning",
+        "cultural influences on cognition",
+        "comparative human-primate cognition",
+        "problem-solving across cultures"
+      ],
+      "url": "http://www.adaptchildlab.com",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "lee-branum-martin-georgia-state-university",
+      "name": "Lee Branum-Martin",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "multilevel statistical models",
+        "language and literacy",
+        "sign language",
+        "dyslexia in children and adults",
+        "bilingualism and second-language learning",
+        "psychological and educational measurement"
+      ],
+      "url": "https://psychology.gsu.edu/profile/lee-martin/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "sarah-brosnan-georgia-state-university",
+      "name": "Sarah Brosnan",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "economic decision making in primates",
+        "social cognition",
+        "evolution of behavior",
+        "inequity responses",
+        "cooperation and irrational behaviors",
+        "social comparison"
+      ],
+      "url": "https://psychology.gsu.edu/profile/sarah-brosnan/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "vince-calhoun-georgia-state-university",
+      "name": "Vince Calhoun",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "signal processing",
+        "medical image analysis",
+        "brain imaging",
+        "data fusion",
+        "machine learning",
+        "neuroinformatics"
+      ],
+      "url": "https://psychology.gsu.edu/profile/vince-calhoun/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "john-horgan-georgia-state-university",
+      "name": "John Horgan",
+      "school": "Georgia State University",
+      "program": "Clinical Psychology PhD",
+      "state": "GA",
+      "interests": [
+        "terrorism and political violence",
+        "forensic psychology",
+        "terrorist psychology",
+        "violent extremism"
+      ],
+      "url": "https://psychology.gsu.edu/profile/john-horgan/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "annalise-m-rahman-filipiak-wayne-state-university",
+      "name": "Annalise M. Rahman-Filipiak",
+      "school": "Wayne State University",
+      "program": "Clinical Psychology PhD",
+      "state": "MI",
+      "interests": [
+        "alzheimer's disease biomarker disclosure",
+        "social determinants of dementia",
+        "culturally informed dementia assessment",
+        "metacognition in dementia diagnosis",
+        "inclusive recruitment in aging research"
+      ],
+      "url": "https://medschool.umich.edu/profile/6809/annalise-m-rahman-filipiak",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "allegra-anderson-hofstra-university",
+      "name": "Allegra Anderson",
+      "school": "Hofstra University",
+      "program": "Clinical Psychology PhD",
+      "state": "NY",
+      "interests": [
+        "adolescent suicide risk factors",
+        "trauma and adverse childhood experiences",
+        "parenting and emotion regulation",
+        "parent-adolescent interpersonal processes",
+        "psychophysiological assessment of youth"
+      ],
+      "url": "https://www.hofstra.edu/clinical-psychology-phd/faculty.html",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "mark-r-serper-hofstra-university",
+      "name": "Mark R. Serper",
+      "school": "Hofstra University",
+      "program": "Clinical Psychology PhD",
+      "state": "NY",
+      "interests": [
+        "schizophrenia spectrum disorders",
+        "mood and dissociative disorders",
+        "self-continuity and identity",
+        "cognitive deficits in schizophrenia",
+        "personal recovery in schizophrenia"
+      ],
+      "url": "https://sites.hofstra.edu/serperlab/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "joseph-r-scardapane-hofstra-university",
+      "name": "Joseph R. Scardapane",
+      "school": "Hofstra University",
+      "program": "Clinical Psychology PhD",
+      "state": "NY",
+      "interests": [
+        "acceptance and commitment therapy",
+        "dialectical behavior therapy",
+        "mindfulness meditation"
+      ],
+      "url": "https://www.hofstra.edu/clinical-psychology-phd/faculty.html",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "ademola-fawole-psy-d-rowan-university",
+      "name": "Ademola Fawole, Psy.D.",
+      "school": "Rowan University",
+      "program": "Clinical Psychology PhD",
+      "state": "NJ",
+      "interests": [],
+      "url": "https://csm.rowan.edu/departments/psychology/academic-programs/graduate/phd-clinical-psych/people.html",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "cori-mcmahon-psyd-rowan-university",
+      "name": "Cori McMahon, PsyD",
+      "school": "Rowan University",
+      "program": "Clinical Psychology PhD",
+      "state": "NJ",
+      "interests": [
+        "behavioral medicine",
+        "chronic disease management",
+        "hiv/aids care",
+        "cancer, diabetes, cardiovascular disease",
+        "women's health",
+        "end-of-life care"
+      ],
+      "url": "https://cmsru.rowan.edu/faculty-profiles/medicine/teaching-faculty/mcmahon-cori.html",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "david-libon-rowan-university",
+      "name": "David Libon",
+      "school": "Rowan University",
+      "program": "Clinical Psychology PhD",
+      "state": "NJ",
+      "interests": [
+        "alzheimer's disease",
+        "mild cognitive impairment",
+        "vascular dementia",
+        "magnetic resonance imaging",
+        "executive function",
+        "working memory"
+      ],
+      "url": "https://www.researchwithrowan.com/en/persons/david-libon/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "joanna-petrides-psy-d-rowan-university",
+      "name": "Joanna Petrides, Psy.D.",
+      "school": "Rowan University",
+      "program": "Clinical Psychology PhD",
+      "state": "NJ",
+      "interests": [],
+      "url": "https://rowanmedicine.com/services/family-medicine/providers.html",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "robert-mcmillen-ph-d-mississippi-state-university",
+      "name": "Robert McMillen, Ph.D.",
+      "school": "Mississippi State University",
+      "program": "Clinical Psychology PhD",
+      "state": "MS",
+      "interests": [
+        "tobacco control research",
+        "e-cigarette and vaping use",
+        "adolescent smoking prevention",
+        "smoking cessation treatment"
+      ],
+      "url": "https://www.psychology.msstate.edu/directory/rmcmillen",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "kevin-everhart-ph-d-university-of-colorado-denver",
+      "name": "Kevin Everhart, Ph.D.",
+      "school": "University of Colorado Denver",
+      "program": "Clinical Psychology PhD",
+      "state": "CO",
+      "interests": [],
+      "url": "https://clas.ucdenver.edu/psychology/kevin-everhart-phd",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "jeffrey-rings-ph-d-university-of-colorado-denver",
+      "name": "Jeffrey Rings, Ph.D.",
+      "school": "University of Colorado Denver",
+      "program": "Clinical Psychology PhD",
+      "state": "CO",
+      "interests": [
+        "clinical supervision",
+        "ethics",
+        "grief and loss",
+        "crisis intervention",
+        "suicide risk assessment and prevention",
+        "multiculturalism",
+        "veteran mental health"
+      ],
+      "url": "https://clas.ucdenver.edu/psychology/jeffrey-rings-phd",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "thomas-p-harding-binghamton-university",
+      "name": "Thomas P. Harding",
+      "school": "Binghamton University",
+      "program": "Clinical Psychology PhD",
+      "state": "NY",
+      "interests": [
+        "teaching and training",
+        "judgment and decision making",
+        "forensic and disability assessment"
+      ],
+      "url": "https://www.binghamton.edu/psychology/people/profile.html?id=harding",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "brittany-beasley-university-of-southern-california",
+      "name": "Brittany Beasley",
+      "school": "University of Southern California",
+      "program": "Clinical Psychology PhD",
+      "state": "CA",
+      "interests": [],
+      "url": "https://dornsife.usc.edu/profile/brittany-beasley/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "lauren-shapiro-university-of-southern-california",
+      "name": "Lauren Shapiro",
+      "school": "University of Southern California",
+      "program": "Clinical Psychology PhD",
+      "state": "CA",
+      "interests": [],
+      "url": "https://dornsife.usc.edu/profile/lauren-shapiro/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "elizabeth-lisa-a-velkoff-american-university",
+      "name": "Elizabeth (Lisa) A. Velkoff",
+      "school": "American University",
+      "program": "Clinical Psychology PhD",
+      "state": "DC",
+      "interests": [
+        "eating disorders"
+      ],
+      "url": "https://www.american.edu/cas/faculty/lvelkoff.cfm",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "rebecca-pearl-university-of-colorado-boulder",
+      "name": "Rebecca Pearl",
+      "school": "University of Colorado Boulder",
+      "program": "Clinical Psychology PhD",
+      "state": "CO",
+      "interests": [],
+      "url": "https://www.colorado.edu/psych-neuro/graduate-programs/application-information/faculty-recruiting-graduate-students",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "chelsea-r-cawood-eastern-michigan-university",
+      "name": "Chelsea R. Cawood",
+      "school": "Eastern Michigan University",
+      "program": "Clinical Psychology PhD",
+      "state": "MI",
+      "interests": [],
+      "url": "https://medschool.umich.edu/profile/5675/chelsea-r-cawood",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "john-r-weisz-harvard-university",
+      "name": "John R. Weisz",
+      "school": "Harvard University",
+      "program": "Clinical Psychology PhD",
+      "state": "MA",
+      "interests": [
+        "child and adolescent mental health",
+        "youth depression and anxiety treatment",
+        "psychotherapy meta-analysis",
+        "implementation of evidence-based interventions",
+        "community mental health care",
+        "randomized effectiveness trials"
+      ],
+      "url": "https://weiszlab.fas.harvard.edu/biography-0",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "maria-kalantzis-loyola-university-chicago",
+      "name": "Maria Kalantzis",
+      "school": "Loyola University Chicago",
+      "program": "Clinical Psychology PhD",
+      "state": "IL",
+      "interests": [
+        "systemic stress and psychopathology",
+        "psychopathology and health equity",
+        "convergence science methods",
+        "mental health prevention and intervention",
+        "integrating diverse research methods"
+      ],
+      "url": "https://www.luc.edu/psychology/graduate/clinicalpsychologyprogram/clinicalpsychologyfaculty/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "grayson-holmbeck-loyola-university-chicago",
+      "name": "Grayson Holmbeck",
+      "school": "Loyola University Chicago",
+      "program": "Clinical Psychology PhD",
+      "state": "IL",
+      "interests": [
+        "pediatric psychology",
+        "adolescents with physical disabilities",
+        "family dynamics in adolescence",
+        "research design and statistics",
+        "spina bifida",
+        "transition to adulthood"
+      ],
+      "url": "https://www.luc.edu/psychology/people/facultyandstaffdirectory/profiles/holmbeckgrayson.shtml",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "drew-a-curtis-ph-d-university-of-texas-at-tyler",
+      "name": "Drew A. Curtis, Ph.D.",
+      "school": "University of Texas at Tyler",
+      "program": "Clinical Psychology PhD",
+      "state": "TX",
+      "interests": [
+        "pathological lying",
+        "deception in therapy",
+        "training therapists to detect deception",
+        "attitudes toward dishonesty in healthcare",
+        "psychomythology of psychopathology",
+        "myths in abnormal psychology"
+      ],
+      "url": "https://www.uttyler.edu/directory/psychology/drew-curtis.php",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "brian-a-gordon-washington-university-in-st-louis",
+      "name": "Brian A. Gordon",
+      "school": "Washington University in St. Louis",
+      "program": "Clinical Psychology PhD",
+      "state": "MO",
+      "interests": [
+        "healthy aging",
+        "alzheimer's disease",
+        "neuroimaging",
+        "behavior testing",
+        "csf tau and amyloid biomarkers"
+      ],
+      "url": "https://icts.wustl.edu/people/brian-a-gordon-phd/",
+      "checked": "2026-08-21"
+    },
+    {
+      "id": "k-juston-osborne-washington-university-in-st-louis",
+      "name": "K. Juston Osborne",
+      "school": "Washington University in St. Louis",
+      "program": "Clinical Psychology PhD",
+      "state": "MO",
+      "interests": [
+        "psychosis risk mechanisms",
+        "cerebellar abnormalities",
+        "cannabis use and psychosis",
+        "socio-affective deficits",
+        "eeg and neuroimaging methods",
+        "early identification and intervention"
+      ],
+      "url": "https://sites.wustl.edu/ccplab/people/juston-osborne/",
+      "checked": "2026-08-21"
     }
   ]
 }

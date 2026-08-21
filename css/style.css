@@ -1828,11 +1828,13 @@ a:hover { text-decoration: underline; }
 }
 .star-btn:hover { color: var(--maroon); }
 .star-btn.is-saved { color: var(--maroon); }
-.star-btn-sm { font-size: 0.95rem; padding: 0; }
+.star-btn-sm { font-size: 1.15rem; padding: 0; color: var(--ink-soft); }
+.star-btn-sm:hover { color: var(--maroon); }
+.star-btn-sm.is-saved { color: var(--maroon); }
 .fac-names li.has-star {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   padding-right: 8px;
 }
 

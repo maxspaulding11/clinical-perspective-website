@@ -15,6 +15,98 @@
     closed:     'Program closed this cycle'
   };
 
+  // Names in a program's accepting/maybe/notAccepting lists sometimes carry
+  // credentials, parenthetical notes ("(Affiliated Faculty)", "(retired)"),
+  // or hyphenated/double surnames a professor's own record doesn't split the
+  // same way — normalize both sides the same way before comparing.
+  function normName(s) {
+    return String(s)
+      .toLowerCase()
+      .replace(/\([^)]*\)/g, ' ')
+      .replace(/\b(dr|phd|psyd|ph\.d|psy\.d|jr|sr|ii|iii|abpp|mph|mdiv|mscp)\b\.?/g, '')
+      .replace(/[.,]/g, '')
+      .replace(/-/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function nameTokens(s) {
+    return normName(s).split(' ').filter(Boolean);
+  }
+
+  function firstName(s) {
+    return nameTokens(s)[0] || '';
+  }
+
+  // Every token after the first name — covers hyphenated and double surnames
+  // ("Sarah Mattson Weller" → ["mattson", "weller"]) so a list entry that only
+  // gives one piece of a compound surname still finds the right person.
+  function surnameTokens(s) {
+    return nameTokens(s).slice(1);
+  }
+
+  function levenshtein(a, b) {
+    const m = a.length, n = b.length;
+    const dp = [];
+    for (let i = 0; i <= m; i++) dp.push([i]);
+    for (let j = 1; j <= n; j++) dp[0][j] = j;
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        dp[i][j] = a[i - 1] === b[j - 1]
+          ? dp[i - 1][j - 1]
+          : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+      }
+    }
+    return dp[m][n];
+  }
+
+  let profByExactKey = {};
+  let profByLastKey = {};
+  let profsBySchoolProgram = {};
+
+  // Accepting-list names are sometimes nicknames, drop a middle initial, or
+  // carry a slightly different spelling than the professor's own bio page.
+  // Try, in order: exact normalized match; same surname token (unique within
+  // the program); surname + first-name prefix tiebreak; and finally a small
+  // edit-distance fallback for genuine spelling variants (only when it
+  // resolves to exactly one person, so it can't misfire).
+  function findProfId(school, program, rawName) {
+    const exactKey = school + '|||' + program + '|||' + normName(rawName);
+    if (profByExactKey[exactKey]) return profByExactKey[exactKey];
+
+    const surnames = surnameTokens(rawName);
+    const seen = {};
+    let candidates = [];
+    surnames.forEach(tok => {
+      (profByLastKey[school + '|||' + program + '|||' + tok] || []).forEach(c => {
+        if (!seen[c.id]) { seen[c.id] = true; candidates.push(c); }
+      });
+    });
+    if (candidates.length === 1) return candidates[0].id;
+    if (candidates.length > 1) {
+      const fn = firstName(rawName);
+      const pref = candidates.filter(c => c.firstName.indexOf(fn) === 0 || fn.indexOf(c.firstName) === 0);
+      if (pref.length === 1) return pref[0].id;
+    }
+
+    const pool = profsBySchoolProgram[school + '|||' + program] || [];
+    if (pool.length && surnames.length) {
+      const lastTok = surnames[surnames.length - 1];
+      const close = pool.filter(c => c.surnameTokens.some(t => levenshtein(t, lastTok) <= 2));
+      if (close.length === 1) return close[0].id;
+    }
+    return null;
+  }
+
+  function profStarBtn(id) {
+    const saved = window.TCPSaved && window.TCPSaved.isProfSaved(id);
+    return '<button type="button" class="star-btn star-btn-sm' + (saved ? ' is-saved' : '') + '" ' +
+      'data-star-prof="' + esc(id) + '" aria-pressed="' + (saved ? 'true' : 'false') + '" ' +
+      'aria-label="' + (saved ? 'Remove from my list' : 'Save professor to my list') + '" ' +
+      'title="' + (saved ? 'Saved — click to remove' : 'Save to my list') + '">' +
+      (saved ? '★' : '☆') + '</button>';
+  }
+
   const GRE_LABEL = {
     required:        'GRE required',
     optional:        'GRE optional',
@@ -47,12 +139,17 @@
     '</div>';
   }
 
-  function nameList(names) {
+  function nameList(names, p) {
     if (!names || !names.length) return '';
     return '<div class="fac-group">' +
       '<p class="fac-group-label yes">Accepting students</p>' +
       '<ul class="fac-names">' +
-        names.map(n => '<li class="yes">' + esc(n) + '</li>').join('') +
+        names.map(n => {
+          const profId = findProfId(p.school, p.program, n);
+          return profId
+            ? '<li class="yes has-star"><span class="fac-name-text">' + esc(n) + '</span>' + profStarBtn(profId) + '</li>'
+            : '<li class="yes">' + esc(n) + '</li>';
+        }).join('') +
       '</ul></div>';
   }
 
@@ -75,7 +172,7 @@
         '</div>' +
       '</div>' +
       appInfo(p) +
-      nameList(p.accepting) +
+      nameList(p.accepting, p) +
       '<div class="fac-foot">' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">Check the program\'s own page →</a>' +
         (p.checked ? '<span class="fac-checked">Checked ' + esc(p.checked) + '</span>' : '') +
@@ -142,14 +239,35 @@
     programs.forEach(rec => { programIndex[rec.school + '|||' + rec.program] = rec; });
     professors.forEach(p => { p._prog = programIndex[p.school + '|||' + p.program] || null; });
 
+    professors.forEach(prof => {
+      const exactKey = prof.school + '|||' + prof.program + '|||' + normName(prof.name);
+      profByExactKey[exactKey] = prof.id;
+      const surnames = surnameTokens(prof.name);
+      const fn = firstName(prof.name);
+      surnames.forEach(tok => {
+        const lastKey = prof.school + '|||' + prof.program + '|||' + tok;
+        (profByLastKey[lastKey] = profByLastKey[lastKey] || []).push({ id: prof.id, firstName: fn });
+      });
+      const spKey = prof.school + '|||' + prof.program;
+      (profsBySchoolProgram[spKey] = profsBySchoolProgram[spKey] || []).push({ id: prof.id, surnameTokens: surnames });
+    });
+
     renderSchools(programs);
     renderProfs(professors);
 
     $('#saved-schools-list').addEventListener('click', e => {
-      const btn = e.target.closest('[data-remove-school]');
-      if (!btn) return;
-      window.TCPSaved.removeSchool(btn.dataset.removeSchool);
-      renderSchools(programs);
+      const removeBtn = e.target.closest('[data-remove-school]');
+      if (removeBtn) {
+        window.TCPSaved.removeSchool(removeBtn.dataset.removeSchool);
+        renderSchools(programs);
+        return;
+      }
+      const starBtn = e.target.closest('[data-star-prof]');
+      if (starBtn && window.TCPSaved) {
+        window.TCPSaved.toggleProf(starBtn.dataset.starProf);
+        renderSchools(programs);
+        renderProfs(professors);
+      }
     });
 
     $('#saved-profs-list').addEventListener('click', e => {
