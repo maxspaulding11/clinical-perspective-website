@@ -49,7 +49,8 @@
   // ("Sarah Mattson Weller" → ["mattson", "weller"]) so a list entry that only
   // gives one piece of a compound surname still finds the right person.
   function surnameTokens(s) {
-    return nameTokens(s).slice(1);
+    const t = nameTokens(s);
+    return t.length > 1 ? t.slice(1) : t;
   }
 
   function levenshtein(a, b) {

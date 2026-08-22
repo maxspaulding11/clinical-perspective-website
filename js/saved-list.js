@@ -42,7 +42,8 @@
   // ("Sarah Mattson Weller" → ["mattson", "weller"]) so a list entry that only
   // gives one piece of a compound surname still finds the right person.
   function surnameTokens(s) {
-    return nameTokens(s).slice(1);
+    const t = nameTokens(s);
+    return t.length > 1 ? t.slice(1) : t;
   }
 
   function levenshtein(a, b) {
@@ -63,6 +64,7 @@
   let profByExactKey = {};
   let profByLastKey = {};
   let profsBySchoolProgram = {};
+  let statusByProfId = {};
 
   // Accepting-list names are sometimes nicknames, drop a middle initial, or
   // carry a slightly different spelling than the professor's own bio page.
@@ -96,6 +98,23 @@
       if (close.length === 1) return close[0].id;
     }
     return null;
+  }
+
+  function acceptingBadge(p) {
+    const rec = p._prog;
+    if (!rec) return '';
+    if (rec.status !== 'posted') {
+      const label = STATUS_LABEL[rec.status];
+      return label ? '<span class="fac-badge ' + rec.status + '">' + label + '</span>' : '';
+    }
+    const status = statusByProfId[p.id];
+    if (status === 'accepting') {
+      return '<span class="fac-check" title="Accepting doctoral students this cycle" aria-label="Accepting doctoral students this cycle">✓</span>' +
+        '<span class="fac-badge posted">Accepting this cycle</span>';
+    }
+    if (status === 'maybe') return '<span class="fac-badge pending">Maybe — contact directly</span>';
+    if (status === 'not-accepting') return '<span class="fac-badge closed">Not accepting this cycle</span>';
+    return '';
   }
 
   function profStarBtn(id) {
@@ -188,8 +207,11 @@
           '<h3>' + esc(p.name) + '</h3>' +
           '<p class="fac-sub">' + esc(p.school) + (p.program ? ' · ' + esc(p.program) : '') + '</p>' +
         '</div>' +
-        '<button type="button" class="star-btn is-saved" data-remove-prof="' + esc(p.id) + '" ' +
-          'aria-label="Remove from my list" title="Remove from my list">★</button>' +
+        '<div class="fac-head-right">' +
+          '<button type="button" class="star-btn is-saved" data-remove-prof="' + esc(p.id) + '" ' +
+            'aria-label="Remove from my list" title="Remove from my list">★</button>' +
+          acceptingBadge(p) +
+        '</div>' +
       '</div>' +
       appInfo(p._prog) +
       '<ul class="prof-interests">' + interests + '</ul>' +
@@ -250,6 +272,18 @@
       });
       const spKey = prof.school + '|||' + prof.program;
       (profsBySchoolProgram[spKey] = profsBySchoolProgram[spKey] || []).push({ id: prof.id, surnameTokens: surnames });
+    });
+
+    // Resolve each posted program's accepting/maybe/notAccepting names to a
+    // professor id once, using the same matching the star button uses — so
+    // the checkmark and the save star never disagree about who's who.
+    programs.filter(rec => rec.status === 'posted').forEach(rec => {
+      [['accepting', 'accepting'], ['maybe', 'maybe'], ['notAccepting', 'not-accepting']].forEach(([field, status]) => {
+        (rec[field] || []).forEach(name => {
+          const id = findProfId(rec.school, rec.program, name);
+          if (id) statusByProfId[id] = status;
+        });
+      });
     });
 
     renderSchools(programs);

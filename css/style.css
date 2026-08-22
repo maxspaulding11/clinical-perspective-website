@@ -1710,6 +1710,21 @@ a:hover { text-decoration: underline; }
 .fac-badge.unverified { background: var(--cream); color: var(--ink-soft); }
 .fac-badge.closed { background: rgba(91,76,64,0.14); color: var(--ink-soft); }
 
+.fac-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c6b41;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .fac-pcsas {
   display: inline-block;
   font-size: 0.7rem;
