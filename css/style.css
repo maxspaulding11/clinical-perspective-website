@@ -1888,3 +1888,38 @@ a:hover { text-decoration: underline; }
 }
 .saved-group-head h3 { font-family: var(--serif); color: var(--navy); font-size: 1.3rem; margin: 0; }
 .saved-group-count { font-size: 0.85rem; color: var(--ink-soft); flex-shrink: 0; }
+
+.stats-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+.stat-tile {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--maroon);
+  border-radius: var(--radius-sm, 10px);
+  padding: 14px 16px;
+}
+.stat-tile-value {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.15;
+}
+.stat-tile-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 4px 0 0;
+}
+.stat-tile-sub {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin: 3px 0 0;
+}

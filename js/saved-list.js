@@ -222,6 +222,78 @@
     '</li>';
   }
 
+  const MONTH_RE = '(January|February|March|April|May|June|July|August|September|October|November|December)';
+  const DEADLINE_RE = new RegExp('\\b' + MONTH_RE + '\\s+(\\d{1,2}),?\\s+(\\d{4})\\b');
+
+  function parseEarliestDeadline(text) {
+    if (!text) return null;
+    const m = DEADLINE_RE.exec(text);
+    if (!m) return null;
+    const d = new Date(m[1] + ' ' + m[2] + ', ' + m[3]);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function parseFee(text) {
+    if (!text) return null;
+    const m = /\$([\d,]+)/.exec(text);
+    if (!m) return null;
+    const n = parseInt(m[1].replace(/,/g, ''), 10);
+    return isNaN(n) ? null : n;
+  }
+
+  function statTile(label, value, sub) {
+    return '<div class="stat-tile">' +
+      '<p class="stat-tile-value">' + value + '</p>' +
+      '<p class="stat-tile-label">' + esc(label) + '</p>' +
+      (sub ? '<p class="stat-tile-sub">' + sub + '</p>' : '') +
+      '</div>';
+  }
+
+  function renderStatsBox(schools) {
+    const box = $('#saved-stats-box');
+    if (!schools.length) { box.hidden = true; box.innerHTML = ''; return; }
+
+    const tiles = [statTile('Saved schools', schools.length)];
+
+    let earliest = null;
+    schools.forEach(p => {
+      const d = parseEarliestDeadline(p.applicationDeadline);
+      if (d && (!earliest || d < earliest.date)) earliest = { date: d, school: p.school };
+    });
+    if (earliest) {
+      const dateStr = earliest.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      tiles.push(statTile('Earliest deadline', esc(dateStr), esc(earliest.school)));
+    }
+
+    let feeTotal = 0, feeCount = 0;
+    schools.forEach(p => {
+      const fee = parseFee(p.applicationFee);
+      if (fee != null) { feeTotal += fee; feeCount++; }
+    });
+    if (feeCount) {
+      const sub = feeCount === schools.length
+        ? 'across all ' + feeCount + ' saved schools'
+        : 'across ' + feeCount + ' of ' + schools.length + ' with a listed fee';
+      tiles.push(statTile('Total application fees', '$' + feeTotal.toLocaleString(), esc(sub)));
+    }
+
+    let maxRefs = 0, maxRefSchools = [];
+    schools.forEach(p => {
+      if (typeof p.numReferences === 'number' && p.numReferences > 0) {
+        if (p.numReferences > maxRefs) { maxRefs = p.numReferences; maxRefSchools = [p.school]; }
+        else if (p.numReferences === maxRefs) maxRefSchools.push(p.school);
+      }
+    });
+    if (maxRefs > 0) {
+      const shown = maxRefSchools.slice(0, 2).join(', ') +
+        (maxRefSchools.length > 2 ? ' +' + (maxRefSchools.length - 2) + ' more' : '');
+      tiles.push(statTile('Most references needed', maxRefs, esc(shown)));
+    }
+
+    box.hidden = false;
+    box.innerHTML = tiles.join('');
+  }
+
   function renderSchools(programs) {
     const byId = {};
     programs.forEach(p => { byId[p.id] = p; });
@@ -234,6 +306,7 @@
     $('#saved-schools-list').innerHTML = shown.length
       ? shown.map(schoolCard).join('')
       : '<li class="fac-empty">No saved schools yet. <a href="faculty-accepting-students.html">Browse who\'s accepting students →</a></li>';
+    renderStatsBox(shown);
   }
 
   function renderProfs(professors) {
