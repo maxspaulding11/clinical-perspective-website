@@ -367,5 +367,41 @@
     "title": "The first non-dopamine schizophrenia drug in 70 years",
     "date": "2026-08-21",
     "blurb": "Nearly every antipsychotic since the 1950s has blocked dopamine. A muscarinic drug works a completely different way."
+  },
+  {
+    "slug": "does-emdr-really-work",
+    "url": "studies/does-emdr-really-work.html",
+    "instagram": "",
+    "tag": "Myth Check",
+    "title": "Does EMDR really work?",
+    "date": "2026-08-22",
+    "blurb": "A meta-analysis of 11 randomized trials: EMDR clearly beats no treatment, but roughly ties other active therapies."
+  },
+  {
+    "slug": "there-are-two-kinds-of-narcissism",
+    "url": "studies/there-are-two-kinds-of-narcissism.html",
+    "instagram": "",
+    "tag": "Personality",
+    "title": "There are two kinds of narcissism",
+    "date": "2026-08-23",
+    "blurb": "Not every narcissist brags about being the best. Some brag about being the kindest."
+  },
+  {
+    "slug": "do-psychedelics-harm-memory",
+    "url": "studies/do-psychedelics-harm-memory.html",
+    "instagram": "",
+    "tag": "Psychedelics",
+    "title": "Do psychedelics harm memory?",
+    "date": "2026-08-24",
+    "blurb": "An exploratory study of working memory after a single dose. Reassuring — but it had no control group."
+  },
+  {
+    "slug": "younger-substance-users-show-more-psychosis-and-violence",
+    "url": "studies/younger-substance-users-show-more-psychosis-and-violence.html",
+    "instagram": "",
+    "tag": "Addiction",
+    "title": "Younger substance users show more psychosis and violence",
+    "date": "2026-08-25",
+    "blurb": "264 patients followed for six months in Spain, comparing those whose use began early to longer-term older users."
   }
 ]
