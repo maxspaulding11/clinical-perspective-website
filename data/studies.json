@@ -718,5 +718,21 @@
     "doi": "10.3390/medsci14030377",
     "sourceUrl": "https://doi.org/10.3390/medsci14030377",
     "instagram": ""
+  },
+  {
+    "slug": "does-trauma-focused-therapy-help-when-someone-is",
+    "index": 46,
+    "title": "Does trauma-focused therapy help when someone is also living with psychosis?",
+    "tag": "Treatment",
+    "blurb": "305 people with psychosis and PTSD symptoms were randomly assigned to trauma-focused therapy plus usual care or usual care alone. Half of the therapy group saw their PTSD go into remission, compared to just 22% in usual care.",
+    "date": "2026-08-27",
+    "summary": "For a long time, clinicians have been hesitant to use trauma-focused therapy with people who also have psychosis, worried it might be destabilizing. The STAR trial, run across five UK sites, put that caution to the test. Researchers randomly assigned 305 adults with both a psychotic disorder and significant PTSD symptoms to either standard psychiatric care or standard care plus a course of trauma-focused cognitive behavioral therapy adapted for psychosis (delivered over about nine months). The results were striking: in the therapy group, 50% of participants (62 of 125) no longer met criteria for PTSD by the end of treatment, compared to 22% (25 of 116) in the usual-care group. PTSD symptom scores dropped significantly more in the therapy arm too. Importantly, the therapy didn't worsen psychotic symptoms, which had been a major concern driving the reluctance to offer it. The caveat: this was a pragmatic, unblinded-to-participants trial in real NHS clinical settings, and psychotic symptoms themselves didn't significantly improve alongside the PTSD gains, so trauma therapy addressed one problem without necessarily fixing the other.",
+    "journal": "The Lancet Psychiatry",
+    "authors": "Peters E, et al.",
+    "pubdate": "July 2026",
+    "pmid": "42309103",
+    "doi": "10.1016/S2215-0366(26)00090-8",
+    "sourceUrl": "https://doi.org/10.1016/S2215-0366(26)00090-8",
+    "instagram": ""
   }
 ]
