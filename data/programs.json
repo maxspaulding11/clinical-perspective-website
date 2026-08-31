@@ -237,14 +237,22 @@
       "state": "NC",
       "degree": "PhD",
       "url": "https://clinicalpsych.unc.edu/for-applicants/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
       "checked": "2026-08-31",
-      "sourceQuote": "List of faculties accepting student(s) for Fall 2027 has not yet been finalized.",
-      "accepting": [],
-      "maybe": [],
+      "sourceQuote": "Faculty who plan to admit students for Fall 2027 entry to the UNC clinical psychology doctoral program are listed below",
+      "accepting": [
+        "Andrea Hussong",
+        "Deborah Jones",
+        "Stacey Daughters"
+      ],
+      "maybe": [
+        "Jamilah Silver",
+        "Jon Abramowitz",
+        "Tom Rodebaugh"
+      ],
       "notAccepting": [],
-      "note": "Not posted yet as of the check date. Application deadline also listed as TBD.",
+      "note": "Three names on the page are marked '(maybe)' and are recorded as undecided rather than confirmed.",
       "pcsas": true,
       "applicationDeadline": "TBD",
       "deadlineCycle": "2027 admissions",
@@ -260,7 +268,8 @@
         "Significant prior research experience typical of successful applicants"
       ],
       "appInfoSourceUrl": "https://clinicalpsych.unc.edu/for-applicants/",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "adelphi-university-phd",
@@ -3955,14 +3964,18 @@
       "state": "IL",
       "degree": "PhD",
       "url": "https://www.rosalindfranklin.edu/academics/college-of-health-professions/degree-programs/psychology-phd/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
       "checked": "2026-08-31",
-      "sourceQuote": "Faculty Recruiting for Fall 2026: Dr. Brian Feinstein, Dr. Rachel Greenley, Dr. Alissa Haedt-Matt, Dr. Steve Miller",
-      "accepting": [],
+      "sourceQuote": "Faculty Recruiting for Fall 2027",
+      "accepting": [
+        "Scot Hill",
+        "Nancy Jao",
+        "Kristin Schneider",
+        "Monika Waszczuk"
+      ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page explicitly labels its current mentor list as 'Fall 2026,' not Fall 2027, and separately states 'Specific information regarding each year's application cycle is updated on our website in August' — implying the Fall 2027 list had not yet been posted as of this check (Aug 8, 2026). Reporting pending and withholding the stale Fall 2026 names from the accepting field.",
       "applicationDeadline": null,
       "deadlineCycle": null,
       "greRequired": "optional",
@@ -3977,7 +3990,8 @@
         "Cycle opens early September, closes early December"
       ],
       "appInfoSourceUrl": "https://www.rosalindfranklin.edu/academics/college-of-health-professions/degree-programs/psychology-phd/how-to-apply/",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "rowan-university-phd",
@@ -7384,14 +7398,23 @@
       "state": "WI",
       "degree": "PhD",
       "url": "https://psych.wisc.edu/graduate-program/admission-and-requirements/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
       "checked": "2026-08-31",
-      "sourceQuote": "Faculty who ARE considering students for the Fall 2027 admissions cycle will be updated in August 2026: DO NOT review the list below until it is updated and this message is removed in August 2026",
-      "accepting": [],
+      "sourceQuote": "Faculty who ARE considering students for the Fall 2027 admissions cycle are listed below",
+      "accepting": [
+        "James Li",
+        "Diane Gooding",
+        "Katie Howell"
+      ],
       "maybe": [],
-      "notAccepting": [],
-      "note": "The department's own page explicitly warns that the lists currently displayed (both 'considering' and 'not considering' faculty) are stale and not yet updated for the Fall 2027 cycle, so no names were extracted from it. Separately, the Clinical Psychology Program page (https://psych.wisc.edu/graduate-program/clinical-psychology-program/) names the 7 core clinical faculty with admitting privileges as Ammerman, Curtin, Davidson, Gooding, Howell, Li, and Walsh, but does not give current accepting status for Fall 2027.",
+      "notAccepting": [
+        "Kate Walsh",
+        "Brooke Ammerman",
+        "John Curtin",
+        "Richard Davidson"
+      ],
+      "note": "Core clinical faculty only. The department list covers all areas; these were matched against the clinical area's own core faculty page. Dan Grupe, listed there as affiliate clinical faculty (Center for Healthy Minds), is also considering students for Fall 2027.",
       "pcsas": true,
       "applicationDeadline": "December 1",
       "deadlineCycle": null,
@@ -7405,7 +7428,8 @@
         "Fall admission only, no spring/summer"
       ],
       "appInfoSourceUrl": "https://guide.wisc.edu/graduate/psychology/psychology-phd/",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "university-of-wisconsin-milwaukee-phd",
