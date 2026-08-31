@@ -9,7 +9,7 @@
 
   const STATUS_LABEL = {
     pending:    'List not posted yet',
-    unverified: 'No page found yet',
+    unverified: 'Not checked by us yet',
     closed:     'Program closed this cycle'
   };
 
