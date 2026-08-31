@@ -19,6 +19,7 @@
     posted:     'List posted',
     pending:    'Not posted yet',
     unverified: 'Not checked by us yet',
+    cohort:     'Admits by cohort — no mentor list',
     closed:     'Program closed this cycle'
   };
 
@@ -107,8 +108,11 @@
 
   function matches(p) {
     if (accred === 'pcsas' && !p.pcsas) return false;
+    // each button now means exactly its own status, so 'Awaiting list'
+    // no longer sweeps in cohort-admission or closed programs
     if (statusFilter === 'posted'  && p.status !== 'posted')  return false;
-    if (statusFilter === 'pending' && p.status === 'posted')  return false;
+    if (statusFilter === 'pending' && p.status !== 'pending') return false;
+    if (statusFilter === 'cohort'  && p.status !== 'cohort')  return false;
     if (!query) return true;
     const hay = [p.school, p.program, p.state,
                  ...(p.accepting || []), ...(p.maybe || [])].join(' ').toLowerCase();

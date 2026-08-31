@@ -10,6 +10,7 @@
   const STATUS_LABEL = {
     pending:    'List not posted yet',
     unverified: 'Not checked by us yet',
+    cohort:     'Admits by cohort — no mentor list',
     closed:     'Program closed this cycle'
   };
 

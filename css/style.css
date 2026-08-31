@@ -1708,6 +1708,7 @@ a:hover { text-decoration: underline; }
 .fac-badge.posted  { background: rgba(44,107,65,0.12); color: #2c6b41; }
 .fac-badge.pending { background: rgba(176,106,18,0.12); color: #b06a12; }
 .fac-badge.unverified { background: var(--cream); color: var(--ink-soft); }
+.fac-badge.cohort { background: rgba(69,97,158,0.12); color: #45619e; }
 .fac-badge.closed { background: rgba(91,76,64,0.14); color: var(--ink-soft); }
 
 .fac-check {
