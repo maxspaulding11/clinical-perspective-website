@@ -1,6 +1,6 @@
 {
   "cycle": "Fall 2027",
-  "updated": "2026-08-31",
+  "updated": "2026-09-08",
   "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
   "programs": [
     {
@@ -268,8 +268,7 @@
         "Significant prior research experience typical of successful applicants"
       ],
       "appInfoSourceUrl": "https://clinicalpsych.unc.edu/for-applicants/",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "adelphi-university-phd",
@@ -728,14 +727,26 @@
       "state": "AZ",
       "degree": "PhD",
       "url": "https://psychology.asu.edu/degree/phd-training-area/clinical-psychology",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "Recruiting new students for fall 2026",
-      "accepting": [],
+      "checked": "2026-09-08",
+      "sourceQuote": "Recruiting new students (fall 2027)",
+      "accepting": [
+        "William Corbin",
+        "Lauren Friedman",
+        "Abigail Gewirtz",
+        "Joanna Kim",
+        "Madeline Meier",
+        "Nichea Spillane",
+        "Jack Waddell",
+        "Erica Grodin",
+        "Thao Ha",
+        "Frank Infurna",
+        "Jinni Su"
+      ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: November 16, 2026. The clinical PhD faculty/labs page currently tags only one faculty member (Dr. Abigail Gewirtz) with a recruiting notice, and that notice is explicitly for Fall 2026, not Fall 2027 — the Fall 2027 faculty recruiting list has not yet been posted/updated as of this check (Aug 2026). Page separately states Fall 2027 application opens September 1 and the deadline is November 16 (2026).",
+      "note": "The clinical training area page marks each lab individually; these are the labs flagged as recruiting for Fall 2027.",
       "pcsas": true,
       "applicationDeadline": "November 16",
       "deadlineCycle": "Fall 2027 application deadline",
@@ -751,7 +762,8 @@
         "Bachelor's or master's degree in psychology or related field"
       ],
       "appInfoSourceUrl": "https://psychology.asu.edu/degrees/specializations/clinical-psychology",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "auburn-university-phd",
@@ -789,8 +801,7 @@
         "Application closes 11:59pm Eastern on deadline date"
       ],
       "appInfoSourceUrl": "https://cla.auburn.edu/psychological-sciences/graduate-studies/graduate-application-requirements/",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "augsburg-university-psyd",
@@ -3871,14 +3882,17 @@
       "state": "IN",
       "degree": "PhD",
       "url": "https://hhs.purdue.edu/graduate-programs/clinical-psychological-sciences/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "The following faculty are recruiting new students for Fall 2026 admission: Jennifer Brown, Christopher Eckhardt, Bridgette Kelleher, David Rollock",
-      "accepting": [],
+      "checked": "2026-09-08",
+      "sourceQuote": "The following faculty are recruiting new students for Fall 2027 admission:",
+      "accepting": [
+        "Donald Lynam",
+        "Douglas Samuel",
+        "Susan South"
+      ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Deadline: December 1 (online application deadline, for enrollment the following fall). Page explicitly labels the recruiting list as for 'Fall 2026 admission,' not Fall 2027, so as of Aug 8, 2026 this is the prior cycle's list and not yet updated for the Fall 2027 cycle. Reporting pending and leaving names out of accepting per the staleness rule.",
       "pcsas": true,
       "applicationDeadline": "December 1",
       "deadlineCycle": "December 1 for enrollment in fall of the following year",
@@ -3894,7 +3908,8 @@
         "Must identify faculty mentor(s) of interest"
       ],
       "appInfoSourceUrl": "https://www.purdue.edu/academics/ogsps/admissions/gradrequirements/westlafayette/clinical-psychological-sciences/",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "regent-university-psyd",
@@ -3990,8 +4005,7 @@
         "Cycle opens early September, closes early December"
       ],
       "appInfoSourceUrl": "https://www.rosalindfranklin.edu/academics/college-of-health-professions/degree-programs/psychology-phd/how-to-apply/",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "rowan-university-phd",
@@ -4283,8 +4297,7 @@
         "Full-time enrollment required"
       ],
       "appInfoSourceUrl": "https://academics.siu.edu/human-behavioral/psychology/doctoral/clinical/information.php",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "southern-methodist-university-phd",
@@ -4550,8 +4563,7 @@
         "Admission via mentor-match with specific faculty"
       ],
       "appInfoSourceUrl": "https://artsci.tamu.edu/psychological-brain-sciences/academics/graduate/phd-program/frequently-asked-questions.html",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "texas-tech-university-phd",
@@ -4944,12 +4956,12 @@
       "url": "https://www.usd.edu/Academics/Graduate-Programs/Clinical-Psychology",
       "status": "pending",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "The following faculty members will be accepting new graduate students for Fall 2026:",
+      "checked": "2026-09-08",
+      "sourceQuote": "Faculty Accepting Students for Fall 2027 ... The following faculty members will be accepting new graduate students for Fall 2026: Dr. Brianna Byllesby, Dr. BreAnne Danzi, Dr. Jacob Kraft, Dr. Raluca Simons, Dr. Jeff Simons, Dr. Taylor Bosch",
       "accepting": [],
       "maybe": [],
       "notAccepting": [],
-      "note": "State field carried through from roster as given (roster lists 'TN' for University of South Dakota, though the institution is physically located in South Dakota). Page currently posts only the Fall 2026 accepting-faculty list (Byllesby, Caraway, Danzi, Kraft, Simons); no Fall 2027 list found yet.",
+      "note": "Left pending: the page heading says Fall 2027 but the sentence under it says Fall 2026, so which cycle the six names apply to is unclear. Worth rechecking.",
       "applicationDeadline": "December 3",
       "deadlineCycle": null,
       "greRequired": "not mentioned",
@@ -5519,8 +5531,7 @@
         "Fee waiver available per Graduate School policy"
       ],
       "appInfoSourceUrl": "https://psychology.uconn.edu/phd/clinical-psychology/",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "university-of-delaware-phd",
@@ -6002,8 +6013,7 @@
         "Fee waiver for military veterans/spouses/dependents"
       ],
       "appInfoSourceUrl": "https://psychology.as.uky.edu/psych-application-info",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "university-of-la-verne-psyd",
@@ -6211,14 +6221,26 @@
       "state": "MA",
       "degree": "PhD",
       "url": "https://www.umb.edu/academics/program-finder/clinical-psychology-phd/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "The following faculty members are interested in accepting one or more new students for fall 2026 admissions.",
-      "accepting": [],
+      "checked": "2026-09-08",
+      "sourceQuote": "The following faculty members are interested in accepting one or more new students for fall 2027 admissions.",
+      "accepting": [
+        "Sarah Hayes-Skelton",
+        "Heidi Levitt",
+        "Tahirah Abdullah"
+      ],
       "maybe": [],
-      "notAccepting": [],
-      "note": "This page currently displays Fall 2026 recruiting data (Abbey Eisenhower, Sarah Hayes-Skelton, Heidi Levitt, Roberto Renteria) rather than Fall 2027 — it has evidently not yet been updated for the requested cycle, so I am not reporting those names as current Fall 2027 answers. Also checked umb.edu psychology student-resources page; no Fall 2027 update found there either.",
+      "notAccepting": [
+        "Devin Atallah",
+        "Alice Carter",
+        "Abbey Eisenhower",
+        "Susanna Gallor",
+        "Lizabeth Roemer",
+        "Karen Suyemoto",
+        "Roberto Renteria",
+        "Julie Woulfe"
+      ],
       "applicationDeadline": "December 1",
       "deadlineCycle": null,
       "greRequired": "not accepted",
@@ -6233,7 +6255,8 @@
         "Fee waived for UMass Boston alumni/current students"
       ],
       "appInfoSourceUrl": "https://www.umb.edu/academics/program-finder/clinical-psychology-phd/",
-      "appInfoChecked": "2026-08-19"
+      "appInfoChecked": "2026-08-19",
+      "newlyPosted": true
     },
     {
       "id": "university-of-miami-phd",
@@ -6434,14 +6457,25 @@
       "state": "NE",
       "degree": "PhD",
       "url": "https://clinicalpsychology.unl.edu/people/clinical-faculty/",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "Clinical Faculty Accepting New Graduate Students for Fall 2026 / Clinical Faculty Not Accepting New Graduate Students for Fall 2026",
-      "accepting": [],
+      "checked": "2026-09-08",
+      "sourceQuote": "Clinical faculty accepting new graduate students for Fall 2027:",
+      "accepting": [
+        "David DiLillo",
+        "Rebecca Brock",
+        "Keith Cruise",
+        "Tess Neal",
+        "Tierney Lorenz"
+      ],
       "maybe": [],
-      "notAccepting": [],
-      "note": "Page currently shows Fall 2026 status, one cycle stale relative to the Fall 2027 target (accepting for Fall 2026: David DiLillo, Rebecca Brock, Keith Cruise, Tess Neal, Tierney Lorenz; not accepting for Fall 2026: Dennis McChargue, Kathy Chiou, Debra Hope, Mario Scalora, Trey Andrews). Not reporting these as Fall 2027 answers since the page has not yet been updated for that cycle.",
+      "notAccepting": [
+        "Dennis McChargue",
+        "Kathy Chiou",
+        "Debra Hope",
+        "Mario Scalora",
+        "Trey Andrews"
+      ],
       "applicationDeadline": "December 1",
       "deadlineCycle": null,
       "greRequired": "optional",
@@ -6456,7 +6490,8 @@
         "Interview process for selected applicants"
       ],
       "appInfoSourceUrl": "https://psychology.unl.edu/graduate-programs-requirements-and-deadlines/",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "university-of-nevada-las-vegas-phd",
@@ -7340,8 +7375,7 @@
         "Unofficial transcript required, official if admitted"
       ],
       "appInfoSourceUrl": "https://psychology.as.virginia.edu/application-form-and-admission-process",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "university-of-washington-phd",
@@ -7428,8 +7462,7 @@
         "Fall admission only, no spring/summer"
       ],
       "appInfoSourceUrl": "https://guide.wisc.edu/graduate/psychology/psychology-phd/",
-      "appInfoChecked": "2026-08-17",
-      "newlyPosted": true
+      "appInfoChecked": "2026-08-17"
     },
     {
       "id": "university-of-wisconsin-milwaukee-phd",
