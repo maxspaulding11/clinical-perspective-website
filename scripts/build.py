@@ -59,7 +59,9 @@ studies = []
 seen = set()
 for s in raw:
     m = meta[str(s['index'])]
-    slug = slugify(m['title'])
+    # An explicit slug pins the URL so a title can be rewritten without
+    # breaking a page that is already published and indexed.
+    slug = m.get('slug') or slugify(m['title'])
     while slug in seen:
         slug += '-2'
     seen.add(slug)
@@ -602,4 +604,17 @@ if scheduled:
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
+# --------------------------------------------------- canonical/sitemap check
+# Runs last, once every page exists, so a page whose canonical does not match
+# where it actually serves fails the build instead of shipping.
+import check_canonicals
+
+_problems, _n, _notes = check_canonicals.check()
+if _problems:
+    print()
+    print(f'Canonical check FAILED on {len(_problems)} page(s):')
+    for _p in _problems:
+        print(f'  ! {_p}')
+    raise SystemExit(1)
+print(f'Canonicals: {_n} pages checked, all matching their served path and the sitemap.')
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))

@@ -246,12 +246,12 @@ def _write_index(hubs, base_url, header, footer, fmt_date, updated):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guides &mdash; The Clinical Perspective</title>
 <meta name="description" content="Standing guides to the questions readers ask most, each answering one question directly and gathering every study we have covered that bears on it.">
-<link rel="canonical" href="{base_url}/guides/index.html">
+<link rel="canonical" href="{base_url}/guides/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Clinical Perspective">
 <meta property="og:title" content="Guides">
 <meta property="og:description" content="One question per page, answered from the studies we have summarised.">
-<meta property="og:url" content="{base_url}/guides/index.html">
+<meta property="og:url" content="{base_url}/guides/">
 <meta property="og:image" content="{base_url}/assets/logo.png">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">

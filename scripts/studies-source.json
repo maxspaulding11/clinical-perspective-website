@@ -377,7 +377,7 @@
   {
     "index": 26,
     "date": "2026-08-06",
-    "title": "Cognitive training in mandated treatment",
+    "title": "Does cognitive training reduce substance use in mandated treatment?",
     "tag": "Treatment",
     "blurb": "A 10-session group program combining cognitive and goal-management training, tested with 35 participants before and after.",
     "summary": "This study tested a 10‑session group program that combined cognitive training and goal‑management training for people in mandated treatment. Thirty‑five participants completed cognitive tests before and after the program. Results showed clear improvements in executive functions—better inhibition, planning, and cognitive flexibility. However, these gains didn’t translate into changes in self‑reported behavior or reductions in substance use. Overall, the intervention strengthened cognitive skills but didn’t meaningfully affect substance‑use outcomes in the short term.",
@@ -387,7 +387,8 @@
     "pmid": null,
     "doi": "10.1111/bjc.70061",
     "url": null,
-    "instagram": ""
+    "instagram": "",
+    "slug": "cognitive-training-in-mandated-treatment"
   },
   {
     "index": 27,
@@ -422,7 +423,7 @@
   {
     "index": 29,
     "date": "2026-08-09",
-    "title": "The self-esteem myth",
+    "title": "Does low self-esteem cause behavior problems?",
     "tag": "Myth Check",
     "blurb": "A longitudinal meta-analysis of 27 studies found no robust evidence that low self-esteem causes later behavior problems.",
     "summary": "“Boost a kid’s self-esteem and their behavior problems will fade” is one of the most durable ideas in pop psychology. This longitudinal meta-analysis put it to the test, and didn’t find the causal link. Researchers pooled 27 studies (25 independent samples) following 38,489 young people, average age 12, over time. At first glance, low self-esteem and “externalizing” problems (aggression, rule-breaking, acting out) did travel together, showing a weak negative correlation. But correlation isn’t cause. When the researchers used cross-lagged models, the approach that asks whether earlier self-esteem actually predicts later behavior problems after accounting for starting levels, the effect vanished in both directions. Earlier self-esteem did not predict later externalizing problems, and earlier behavior problems did not predict later self-esteem. These null results held steady across age, sex, and study methods. The practical point for educators and parents: don’t expect self-esteem programs to fix behavior problems, and don’t assume that curbing misbehavior will automatically build self-worth. They’re related, but neither reliably drives the other, a useful myth to retire.",
@@ -432,7 +433,8 @@
     "pmid": null,
     "doi": "10.1007/s10964-026-02394-x",
     "url": null,
-    "instagram": ""
+    "instagram": "",
+    "slug": "self-esteem-myth"
   },
   {
     "index": 30,
