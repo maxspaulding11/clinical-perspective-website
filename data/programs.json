@@ -1,6 +1,6 @@
 {
   "cycle": "Fall 2027",
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
   "programs": [
     {
@@ -2546,14 +2546,18 @@
       "state": "IN",
       "degree": "PhD",
       "url": "https://science.indianapolis.iu.edu/academics/degrees-and-programs/_degrees/clinical-psychology-phd-iupui-clpsyphd.html",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "",
-      "accepting": [],
+      "checked": "2026-09-09",
+      "sourceQuote": "I will be reviewing applications for a new student for Fall 2027. / I am planning to recruit a new graduate student for my research laboratory for Fall 2027.",
+      "accepting": [
+        "Adam Hirsh",
+        "Bridgette Kelleher",
+        "Gail Kerver"
+      ],
       "maybe": [],
       "notAccepting": [],
-      "note": "The roster entry carries a note that APA listed this program inactive for the 2024-2025 training year while being sunset. The current program page I opened directly describes the Ph.D. in Clinical Psychology as an active, ongoing Indiana University degree with no inactive/sunset notice visible in its text, but I could not expand or locate a 'Core faculty' accepting/not-accepting roster on this page (its expandable sections did not render extractable content), and a search of mhc.psych.indianapolis.iu.edu and related pages turned up no such roster either. Given the roster's explicit sunset flag and my inability to find a current accepting list, I recommend confirming this program's live status directly with the department before treating it as a normal Fall 2027 admissions target.",
+      "note": "Each mentor posts their own line and the page is mid-update: these three have moved to Fall 2027 while Melissa Cyders, Kevin Rand, Jesse Stewart and Wei Wu still show Fall 2026 statements. Not being listed here is not a no - check the mentor’s own entry.",
       "applicationDeadline": "December 1",
       "deadlineCycle": null,
       "greRequired": "optional",
@@ -2569,7 +2573,8 @@
         "Fall enrollment only"
       ],
       "appInfoSourceUrl": "https://science.indianapolis.iu.edu/academics/degrees-and-programs/_degrees/clinical-psychology-phd-iupui-clpsyphd.html",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "indiana-university-of-pennsylvania-psyd",
@@ -5269,14 +5274,18 @@
       "state": "CA",
       "degree": "PhD",
       "url": "https://psychology.berkeley.edu/graduate/graduate-program/clinical-science/special-instructions-clinical-science-program-applicants",
-      "status": "pending",
+      "status": "posted",
       "cycle": "Fall 2027",
-      "checked": "2026-08-31",
-      "sourceQuote": "Admissions information for Fall 2025. ... The following professors will be admitting new students for Fall 2026: Jasmin Brooks Stephens, Stephen Hinshaw, Keanan Joyner, Hedy Kober, Giovanni Ramos.",
-      "accepting": [],
+      "checked": "2026-09-09",
+      "sourceQuote": "The following professors will be admitting new students for Fall 2027: Jasmin Brooks Stephens, Allison Harvey, Keanan Joyner, Giovanni Ramos",
+      "accepting": [
+        "Jasmin Brooks Stephens",
+        "Allison Harvey",
+        "Keanan Joyner",
+        "Giovanni Ramos"
+      ],
       "maybe": [],
       "notAccepting": [],
-      "note": "Page header says 'Fall 2025' while the body names faculty admitting for 'Fall 2026' — internally stale/inconsistent, and in any case not the Fall 2027 cycle requested. Not reporting these names as current.",
       "pcsas": true,
       "applicationDeadline": "November 16, 2026",
       "deadlineCycle": "Fall 2027 entry",
@@ -5289,7 +5298,8 @@
         "Department does not offer fee waiver (available via Grad Division)"
       ],
       "appInfoSourceUrl": "https://psychology.berkeley.edu/graduate/admission/general-admission",
-      "appInfoChecked": "2026-08-17"
+      "appInfoChecked": "2026-08-17",
+      "newlyPosted": true
     },
     {
       "id": "university-of-california-irvine-phd",
