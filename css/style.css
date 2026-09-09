@@ -1138,6 +1138,24 @@ a:hover { text-decoration: underline; }
 .study-ids { font-size: 0.88rem; margin-bottom: 16px; }
 .study-source .page-actions { margin-top: 0; }
 
+.study-byline {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 6px 0 0;
+}
+.study-byline a { color: var(--maroon); text-decoration: none; font-weight: 600; }
+.study-byline a:hover { text-decoration: underline; }
+
+.study-author {
+  border-left: 3px solid var(--maroon);
+  background: var(--cream);
+  padding: 14px 18px;
+  margin: 28px 0 0;
+  border-radius: 0 6px 6px 0;
+}
+.study-author p { margin: 0; font-size: 0.9rem; line-height: 1.6; color: var(--ink); }
+.study-author a { color: var(--maroon); font-weight: 600; }
+
 .study-disclaimer {
   font-size: 0.85rem;
   color: var(--ink-soft);
