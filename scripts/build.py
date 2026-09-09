@@ -427,6 +427,20 @@ for s in newest_first:
           </a>
         </li>''')
 
+# A reader on the archive is browsing rather than searching, which is exactly
+# who a guide is for. Linking them from the body of the page, not only the nav,
+# is what lets the guides accumulate.
+ARCHIVE_GUIDES = (
+    '<div class="archive-guides">'
+    '<p class="archive-guides-label">Start with a question</p>'
+    '<ul>'
+    + ''.join(f'<li><a href="guides/{h["slug"]}.html">{e(h["h1"])}</a></li>'
+              for h in _h['hubs'])
+    + '</ul>'
+    '<p class="archive-guides-foot">'
+    '<a href="guides/index.html">All guides &rarr;</a></p>'
+    '</div>')
+
 # The archive lists every summary in the served HTML already. This tells a
 # crawler what the list is, and in what order, rather than leaving it to infer.
 ARCHIVE_JSONLD = json.dumps({
@@ -488,6 +502,8 @@ archive = f'''<!DOCTYPE html>
           Each one links back to the original paper so you can verify it yourself.
         </p>
       </div>
+
+      {ARCHIVE_GUIDES}
 
       <div class="tag-filters">
         {chr(10).join('        ' + b for b in tag_buttons)}

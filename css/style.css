@@ -2107,3 +2107,34 @@ a:hover { text-decoration: underline; }
 }
 .study-guides a { color: var(--maroon); font-weight: 600; }
 .study-guides a + a { margin-left: 14px; }
+
+/* The guides, offered on the archive page itself. Someone scrolling 59
+   summaries is browsing rather than searching, which is who a guide is for. */
+.archive-guides {
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 18px 22px;
+  margin: 0 0 28px;
+}
+.archive-guides-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.archive-guides ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.archive-guides li { font-size: 0.94rem; }
+.archive-guides a { color: var(--ink); font-weight: 600; }
+.archive-guides a:hover { color: var(--maroon); }
+.archive-guides-foot { margin: 12px 0 0; font-size: 0.88rem; }
+.archive-guides-foot a { color: var(--maroon); font-weight: 600; }
