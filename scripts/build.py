@@ -646,6 +646,15 @@ if scheduled:
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
+# ---------------------------------------------------------- redirect rules
+# Extensionless URLs still resolve on Netlify even with Pretty URLs off, so
+# every page answers at two addresses. These rules send the duplicate to the
+# canonical one. Generated from the same page list the canonical check walks.
+import render_redirects
+
+_r = render_redirects.render()
+print(f'Redirects: {_r} extensionless rules written into _redirects.')
+
 # --------------------------------------------------- canonical/sitemap check
 # Runs last, once every page exists, so a page whose canonical does not match
 # where it actually serves fails the build instead of shipping.
