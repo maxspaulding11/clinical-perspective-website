@@ -455,6 +455,14 @@ lines.append('</urlset>')
 with open(os.path.join(SITE, 'sitemap.xml'), 'w', encoding='utf-8') as f:
     f.write('\n'.join(lines) + '\n')
 
+# ------------------------------------------------- accepting-students tracker
+# The tracker's programs and faculty names are written into its HTML here.
+# Without this the page ships as an empty shell and none of the names are
+# visible to search engines.
+import render_tracker
+
+_t = render_tracker.render()
+
 print(f'Published {len(studies)} studies (through {studies[-1]["date"]}).')
 if removed:
     print(f'Removed {len(removed)} page(s) no longer published.')
@@ -463,4 +471,5 @@ if scheduled:
     print(f'Holding back {len(scheduled)} scheduled studies dated after {TODAY}.')
     print(f'  Next up: {nxt["date"]} — {nxt["title"]}')
     print('  They go live automatically the next time you build on or after that date.')
+print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))

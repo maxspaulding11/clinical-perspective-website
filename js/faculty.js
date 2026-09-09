@@ -190,7 +190,9 @@
       ? '<span class="fac-badge posted">' + count + ' accepting</span>'
       : '<span class="fac-badge ' + p.status + '">' + STATUS_LABEL[p.status] + '</span>';
 
-    return '<li class="fac-card">' +
+    // keep the id the pre-render writes, so a link to a single program
+    // still resolves after this script replaces the list
+    return '<li class="fac-card" id="program-' + esc(p.id) + '">' +
       '<div class="fac-head">' +
         '<div>' +
           '<h3>' + esc(p.school) + '</h3>' +
