@@ -427,6 +427,29 @@ for s in newest_first:
           </a>
         </li>''')
 
+# The archive lists every summary in the served HTML already. This tells a
+# crawler what the list is, and in what order, rather than leaving it to infer.
+ARCHIVE_JSONLD = json.dumps({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Research Archive",
+    "description": f"Every study covered by The Clinical Perspective: "
+                   f"{len(studies)} plain-English summaries, each linked to its "
+                   f"original source.",
+    "url": f"{BASE_URL}/research.html",
+    "isPartOf": {"@id": f"{BASE_URL}/#website"},
+    "publisher": {"@id": f"{BASE_URL}/#organization"},
+    "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": len(studies),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": s["title"],
+             "url": f"{BASE_URL}/studies/{s['slug']}.html"}
+            for i, s in enumerate(newest_first)
+        ],
+    },
+}, indent=2)
+
 archive = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -445,6 +468,9 @@ archive = f'''<!DOCTYPE html>
 {HEAD_FONTS}
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{ARCHIVE_JSONLD}
+</script>
 </head>
 <body>
 
