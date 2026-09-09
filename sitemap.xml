@@ -45,6 +45,10 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://theclinicalperspective.org/guides/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://theclinicalperspective.org/studies/can-one-day-of-an-inhaled-psychedelic-lift.html</loc>
     <priority>0.8</priority>
   </url>
@@ -279,5 +283,25 @@
   <url>
     <loc>https://theclinicalperspective.org/studies/childhood-trauma-is-the-norm-not-the-exception.html</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/guides/is-emdr-evidence-based.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/guides/vitamin-d-and-depression.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/guides/bipolar-disorder-vs-borderline-personality-disorder.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/guides/psychedelics-and-cognition.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/guides/what-predicts-therapy-dropout.html</loc>
+    <priority>0.9</priority>
   </url>
 </urlset>

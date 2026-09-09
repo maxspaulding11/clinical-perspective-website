@@ -114,6 +114,7 @@ def header(prefix=''):
     </a>
     <nav class="main-nav" id="main-nav">
       <a href="{prefix}research.html">Research</a>
+      <a href="{prefix}guides/index.html">Guides</a>
       <a href="{prefix}about.html">About</a>
       <a href="{prefix}queue.html">Reader Queue</a>
       <a href="{prefix}tools/index.html">Tools</a>
@@ -138,6 +139,7 @@ def footer(prefix=''):
     <div class="footer-links">
       <a href="{IG_PROFILE}" target="_blank" rel="noopener">Instagram</a>
       <a href="{prefix}research.html">Research</a>
+      <a href="{prefix}guides/index.html">Guides</a>
       <a href="{prefix}about.html">About</a>
       <a href="{prefix}tools/index.html">Tools</a>
       <a href="{prefix}index.html#submit">Submit Research</a>
@@ -233,6 +235,31 @@ for existing in os.listdir(STUDY_DIR):
     if existing.endswith('.html') and existing not in keep:
         os.remove(os.path.join(STUDY_DIR, existing))
         removed.append(existing)
+
+# ------------------------------------------------------------------- guides
+# The standing guide pages are rendered before the study pages so each study
+# knows which guides it appears in and can link back to them.
+import hubs
+
+_h = hubs.render(
+    studies, base_url=BASE_URL, header=header, footer=footer,
+    fmt_date=fmt_date, source_url=source_link, author_jsonld=AUTHOR_JSONLD,
+    byline_html=BYLINE_HTML, updated=TODAY)
+HUB_TITLE = {h['slug']: h['h1'] for h in _h['hubs']}
+
+
+def guide_links(slug):
+    """A study that a guide draws on links back to it. This is the internal
+    link that makes a guide accumulate rather than sit orphaned off the nav."""
+    in_guides = _h['membership'].get(slug) or []
+    if not in_guides:
+        return ''
+    links = ' '.join(
+        f'<a href="../guides/{g}.html">{e(HUB_TITLE[g])}</a>' for g in in_guides)
+    label = 'guide' if len(in_guides) == 1 else 'guides'
+    return (f'<p class="study-guides">This study is part of our {label}: '
+            f'{links}</p>')
+
 
 for i, s in enumerate(studies):
     prev_s = studies[i - 1] if i > 0 else None
@@ -350,6 +377,8 @@ for i, s in enumerate(studies):
         it is not a substitute for consultation with a qualified professional.
         Read the full <a href="../legal.html">disclaimer</a>.
       </p>
+
+      {guide_links(s['slug'])}
 
       {TRACKER_HTML}
 
@@ -499,9 +528,12 @@ urls = [
     (f'{BASE_URL}/tools/professor-search.html', '0.8'),
     (f'{BASE_URL}/tools/measures.html', '0.8'),
     (f'{BASE_URL}/legal.html', '0.3'),
+    (f'{BASE_URL}/guides/', '0.8'),
 ]
 for s in newest_first:
     urls.append((f"{BASE_URL}/studies/{s['slug']}.html", '0.8'))
+for h in _h['hubs']:
+    urls.append((f"{BASE_URL}/guides/{h['slug']}.html", '0.9'))
 
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -567,6 +599,7 @@ if scheduled:
     print(f'Holding back {len(scheduled)} scheduled studies dated after {TODAY}.')
     print(f'  Next up: {nxt["date"]} — {nxt["title"]}')
     print('  They go live automatically the next time you build on or after that date.')
+print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))

@@ -1,0 +1,297 @@
+{
+  "_readme": [
+    "Standing guide pages. Each answers one question directly and gathers every study we have covered that bears on it.",
+    "Rules that keep these pages honest, and that anyone editing this file has to keep:",
+    "  1. Every factual claim in 'answer', 'intro' and 'faq' must be supported by a study listed in that hub's sections.",
+    "  2. Study findings are never retyped here. The renderer pulls each study's own blurb from data/studies.json,",
+    "     which was written from the paper and links to its DOI. Prose in this file is framing and navigation.",
+    "  3. If a question can't be answered from the studies listed, say so in the answer rather than filling the gap.",
+    "Rendered by scripts/hubs.py, which build.py calls."
+  ],
+  "hubs": [
+    {
+      "slug": "is-emdr-evidence-based",
+      "title": "Is EMDR Evidence-Based? What the Research Says",
+      "h1": "Is EMDR evidence-based?",
+      "description": "EMDR reduces PTSD symptoms and clearly beats no treatment, but pooled trials do not show it beating other established trauma therapies. What the evidence says, with every claim linked to its source.",
+      "answer": [
+        "Short answer: yes, with a qualification that gets lost in most arguments about it. In the randomized trials that have been run, EMDR reduces PTSD symptom severity, and it clearly outperforms waiting lists and no treatment. What it has not been shown to do is outperform the other established trauma therapies it is usually compared against. Against those, it comes out roughly level.",
+        "That one fact explains most of the contradictory pages you will find on this question. A page calling EMDR highly effective is usually reporting the comparison against no treatment. A page calling it no better than ordinary therapy is usually reporting the comparison against active treatment. Both numbers come out of the same studies. The comparison chosen decides the story.",
+        "One more caveat worth carrying: the authors of the pooled analysis note that most of the trials they included had methodological weaknesses, so confidence in the size of the effect is not absolute."
+      ],
+      "scope": "This page covers what we have summarised. It does not review clinical practice guidelines, and it does not cover studies that try to isolate the eye movements from the rest of the protocol, because we have not summarised one.",
+      "sections": [
+        {
+          "heading": "What the pooled trials show",
+          "intro": "The direct evidence on whether EMDR works, and on what trauma therapy in general appears to be doing when it does work.",
+          "studies": ["does-emdr-really-work", "why-does-trauma-therapy-actually-work-it-may"]
+        },
+        {
+          "heading": "Whether people finish it",
+          "intro": "A therapy only helps the people who stay in it, and completion rates differ between the trauma therapies by more than their outcomes do.",
+          "studies": ["does-seeing-clients-more-often-help-them-finish"]
+        },
+        {
+          "heading": "Trauma therapy in the harder cases",
+          "intro": "EMDR is one of several trauma-focused therapies. These trials test the wider family of them in the situations clinicians have been most cautious about.",
+          "studies": [
+            "does-trauma-focused-therapy-help-when-someone-is",
+            "treating-trauma-and-addiction-at-the-same-time",
+            "treating-moral-injury-in-veterans"
+          ]
+        },
+        {
+          "heading": "How PTSD itself gets measured",
+          "intro": "Every result above rests on a PTSD symptom measure, so it is worth knowing how those measures behave.",
+          "studies": ["does-the-ptsd-checklist-catch-symptom-exaggeration-across"]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does EMDR work for PTSD?",
+          "a": "In pooled randomized trials, yes: it produced a significant reduction in PTSD symptom severity, and against passive controls such as waitlists it looked strongly effective. Against other active trauma treatments the advantage shrank and the two came out roughly comparable."
+        },
+        {
+          "q": "Is EMDR better than CBT or prolonged exposure?",
+          "a": "The pooled evidence we have covered does not show that. Against active comparison treatments EMDR came out roughly level. Separately, a meta-regression across 84 study arms found people were more than twice as likely to complete EMDR as cognitive processing therapy, which is a question about finishing treatment rather than about how well it works."
+        },
+        {
+          "q": "Do the eye movements themselves do anything?",
+          "a": "We have not summarised a study that isolates the eye movements from the rest of the protocol, so this page does not answer that. The trials pooled above test the whole package as delivered."
+        },
+        {
+          "q": "How good is the evidence base?",
+          "a": "Mixed. Eleven randomized controlled trials published over two decades were poolable, and the authors flagged methodological weaknesses in most of them. That is enough to say EMDR beats doing nothing, and not enough to rank it against its alternatives."
+        }
+      ],
+      "related": ["what-predicts-therapy-dropout"]
+    },
+
+    {
+      "slug": "vitamin-d-and-depression",
+      "title": "Vitamin D and Depression: Does Supplementation Help?",
+      "h1": "Does vitamin D help depression?",
+      "description": "In a randomized trial of young people who were both depressed and vitamin-D deficient, eight weeks of high-dose vitamin D did not beat placebo for depression. What the evidence says, linked to its source.",
+      "answer": [
+        "Short answer: not as a treatment for depression on its own. In the randomized trial we have covered, eight weeks of high-dose vitamin D3 did not beat placebo for depression in young people selected for having both major depression and low vitamin D.",
+        "Two qualifications, both from that same trial. It did modestly reduce anxiety. And in the subgroup with moderate-to-severe depression, it reduced both depression and anxiety compared with placebo, although that was an exploratory subgroup analysis and the adolescent slice of it did not clearly benefit. No safety problems, such as raised calcium, appeared.",
+        "So it is a lead worth testing in larger trials for people who are genuinely deficient and more severely depressed, not a standalone treatment, and not a reason to defer established care."
+      ],
+      "scope": "One randomized trial in 108 people aged 10 to 24 who all had low vitamin D. It says nothing about people whose vitamin D is normal, and nothing about doses or durations other than the one tested.",
+      "sections": [
+        {
+          "heading": "The trial",
+          "intro": "The direct test: high-dose vitamin D3 against placebo, in people who were both depressed and deficient.",
+          "studies": ["does-vitamin-d-help-depression"]
+        },
+        {
+          "heading": "What has been shown to help outside a therapist's office",
+          "intro": "The reason people ask about supplements is usually access. These trials test the other low-barrier options against real comparison groups.",
+          "studies": [
+            "lifestyle-medicine-for-depression-without-a-therapist",
+            "does-a-mental-health-app-still-work-without",
+            "app-for-depression-after-breast-cancer"
+          ]
+        },
+        {
+          "heading": "Other compounds studied for mood",
+          "intro": "Where else a drug effect on depression and anxiety has been looked for.",
+          "studies": ["what-glp-1-drugs-do-to-depression-and"]
+        },
+        {
+          "heading": "Why depression scores are slipperier than they look",
+          "intro": "Every result above is a change in a depression score, and those scores move for reasons that have nothing to do with treatment.",
+          "studies": ["changing-the-wording-changes-your-depression-score"]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does vitamin D treat depression?",
+          "a": "Not on the evidence here. In the trial we covered it did not beat placebo for depression overall, even in a group chosen for being deficient."
+        },
+        {
+          "q": "Did it do anything at all?",
+          "a": "It modestly reduced anxiety in the randomized vitamin D group, and in the moderate-to-severe depression subgroup it reduced both depression and anxiety versus placebo. That subgroup finding was exploratory, which means it is a hypothesis for the next trial rather than a result to act on."
+        },
+        {
+          "q": "How much was used, and was it safe?",
+          "a": "4,800 IU of vitamin D3 daily for eight weeks. No safety problems such as hypercalcaemia appeared in this trial."
+        },
+        {
+          "q": "Should I have my vitamin D tested?",
+          "a": "That is a question for a clinician, and this page cannot answer it. What the trial can tell you is that its participants were selected for having low vitamin D, so its results do not extend to people whose levels are normal."
+        }
+      ],
+      "related": ["what-predicts-therapy-dropout"]
+    },
+
+    {
+      "slug": "bipolar-disorder-vs-borderline-personality-disorder",
+      "title": "Bipolar Disorder vs Borderline Personality Disorder: What the Research Says",
+      "h1": "Bipolar disorder vs borderline personality disorder",
+      "description": "The two are confused often enough that researchers built machine-learning models to separate them. What that research found, and what it says about which half of the problem is harder.",
+      "answer": [
+        "These two are confused often enough that researchers have built machine-learning models to try to tell them apart. That effort is itself the most useful evidence available: across five studies covering 591 participants, the models were considerably better at identifying bipolar disorder than borderline personality disorder. The harder half of the problem is BPD, and the authors read that as reflecting a real ongoing difficulty in diagnosing it.",
+        "Diagnostic disagreement is not peculiar to this pair. When 1,038 psychiatrists and physicians across 19 countries read the same standardised cases, they landed on the same diagnosis roughly 55% of the time, and the confusions were systematic rather than random, which points at ambiguity in the diagnostic categories themselves rather than carelessness.",
+        "In broad terms, bipolar disorder is defined by episodes of elevated and depressed mood lasting days to weeks, while borderline personality disorder is defined by a persistent pattern of instability in mood, self-image and relationships, with shifts that tend to be shorter and more often tied to what is happening between people. Neither this page nor any page can make a diagnosis; what it can do is show you what the research has and has not settled."
+      ],
+      "scope": "This page gathers the research we have summarised on distinguishing the two and on BPD itself. It is not a diagnostic checklist and does not reproduce diagnostic criteria.",
+      "sections": [
+        {
+          "heading": "Can the two be told apart reliably?",
+          "intro": "The direct evidence on separating the diagnoses, and on how consistent psychiatric diagnosis is in general.",
+          "studies": [
+            "can-machine-learning-tell-bipolar-disorder-from-bpd",
+            "how-often-do-psychiatrists-actually-agree-on-a"
+          ]
+        },
+        {
+          "heading": "What is known about BPD itself",
+          "intro": "The harder half of the distinction, and what genetics and brain imaging have found in it so far.",
+          "studies": [
+            "first-solid-genetic-map-of-borderline-personality-disorder",
+            "bpd-brain-is-less-flexible-and-more-variable",
+            "finding-the-brain-basis-of-bpd-identity-disturbance",
+            "cluster-b-personality-disorders-what-they-are-and"
+          ]
+        },
+        {
+          "heading": "What psychiatric diagnoses share",
+          "intro": "Part of why categories blur: at the genetic level the boundaries between diagnoses are not clean.",
+          "studies": ["million-genomes-reveal-what-mental-illnesses-share"]
+        },
+        {
+          "heading": "Treatment, and who it reaches",
+          "intro": "What has been tested for BPD, and what predicts who stays in it.",
+          "studies": [
+            "who-drops-out-of-dbt-and-who-improves",
+            "virtual-reality-art-therapy-for-borderline-personality-disorder"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is borderline personality disorder harder to identify than bipolar disorder?",
+          "a": "In the review we covered, machine-learning models were far more accurate at identifying bipolar disorder than BPD. The authors treat that gap as evidence of a genuine difficulty in diagnosing BPD rather than a limitation of the models."
+        },
+        {
+          "q": "How accurate were the models?",
+          "a": "Models built on brain-imaging features reached about 80% accuracy, and smartphone-based mood data distinguished bipolar disorder, BPD and healthy controls with about 75% accuracy. The authors are explicit that more research is needed before any of this is usable clinically."
+        },
+        {
+          "q": "How often do psychiatrists disagree about a diagnosis?",
+          "a": "In a study of 1,038 clinicians across 19 countries reading nine standardised written cases, inter-rater agreement was modest, working out to the same diagnosis roughly 55% of the time, with accuracy against a reference standard averaging about 66%. Schizophrenia cases were the hardest."
+        },
+        {
+          "q": "Can someone have both?",
+          "a": "The studies we have covered set out to distinguish the two and do not report on how often they co-occur, so this page does not answer that. It is a question for a clinician."
+        }
+      ],
+      "related": ["what-predicts-therapy-dropout"]
+    },
+
+    {
+      "slug": "psychedelics-and-cognition",
+      "title": "Do Psychedelics Affect Memory and Cognition? What the Research Says",
+      "h1": "Do psychedelics affect memory and cognition?",
+      "description": "A single dose of psilocybin or MDMA showed no working-memory impairment in healthy volunteers, and better task accuracy three months on. Why that study's missing control group matters.",
+      "answer": [
+        "On the evidence we have covered: a single dose of psilocybin or MDMA showed no sign of impairing working memory in healthy volunteers. Memory task accuracy was actually higher at a three-month follow-up, and EEG recordings showed lasting changes in memory-related brain activity.",
+        "The caveat is large enough that the study's own authors lead with it: there was no control group. An improvement three months after doing a demanding memory task several times cannot be separated from simply having practised it. That is why this counts as an exploratory result rather than a finding.",
+        "It is also one study, at one dose, in healthy volunteers. It says nothing about repeated use, recreational doses, other drugs, or people with psychiatric conditions."
+      ],
+      "scope": "Cognition after single supervised doses in healthy volunteers, plus the trials we have covered on what psychedelics are being tested to treat. Not a safety review, and not evidence about recreational or repeated use.",
+      "sections": [
+        {
+          "heading": "The cognition study",
+          "intro": "The direct test: working memory and EEG before dosing, days after, and three months later.",
+          "studies": ["do-psychedelics-harm-memory"]
+        },
+        {
+          "heading": "What psychedelics are being tested to treat",
+          "intro": "The trials that make the cognition question worth asking in the first place.",
+          "studies": [
+            "can-a-single-dose-of-psilocybin-help-people",
+            "can-one-day-of-an-inhaled-psychedelic-lift"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do psychedelics damage memory?",
+          "a": "The study we covered found no evidence of working-memory impairment from a single dose of psilocybin or MDMA in healthy volunteers. Because it had no control group, it cannot rule impairment in or out with confidence, and it does not speak to repeated use."
+        },
+        {
+          "q": "Why did memory scores improve?",
+          "a": "Nobody knows from this study. Participants completed the same demanding memory task repeatedly across three months, and with no control group, practice is a straightforward explanation that the design cannot exclude."
+        },
+        {
+          "q": "How many people were studied?",
+          "a": "29 people analysed per drug, with 16 taking both after a washout period, all healthy volunteers receiving a single dose."
+        }
+      ],
+      "related": ["is-emdr-evidence-based"]
+    },
+
+    {
+      "slug": "what-predicts-therapy-dropout",
+      "title": "What Predicts Therapy Dropout? What the Research Says",
+      "h1": "What predicts therapy dropout?",
+      "description": "Who the person is, which therapy they get, and how often sessions happen all move completion rates. What the research shows, and why the field cannot agree what finishing even means.",
+      "answer": [
+        "Three things show up in the research we have covered: who the person is, which therapy they are given, and how often the sessions happen.",
+        "On the person: in a study following 85 people through a DBT programme, those with high negative affectivity or anankastia were more likely to drop out, and those with very high negative emotions or psychotic-like traits improved less. Personality functioning moved the most of anything measured, which makes it a candidate marker of progress.",
+        "On the therapy and the schedule: across 84 study arms from 66 PTSD trials, patients were somewhat less likely to complete prolonged exposure than cognitive processing therapy overall, but when prolonged exposure was delivered more often than weekly, the odds of completing it doubled. Patients were also more than twice as likely to complete EMDR as CPT. Scheduling, in other words, is not just logistics.",
+        "And one finding about the field rather than about patients: only about a third of those trials defined what completing treatment even means, which makes dropout rates harder to compare than they should be."
+      ],
+      "scope": "Drawn from a DBT cohort study and a PTSD meta-regression, plus studies on what early sessions predict. Dropout has been studied far more widely than this; these are the studies we have summarised.",
+      "sections": [
+        {
+          "heading": "Who is more likely to leave",
+          "intro": "The person-level predictors, measured dimensionally rather than by diagnosis.",
+          "studies": ["who-drops-out-of-dbt-and-who-improves"]
+        },
+        {
+          "heading": "Which therapy, and how often",
+          "intro": "Completion differs between the established trauma therapies, and session spacing moves it.",
+          "studies": ["does-seeing-clients-more-often-help-them-finish"]
+        },
+        {
+          "heading": "What early sessions predict",
+          "intro": "These studies are about outcome rather than dropout directly, but both bear on what a session is doing when it is working.",
+          "studies": [
+            "crying-in-therapy-predicts-better-outcomes",
+            "why-does-trauma-therapy-actually-work-it-may"
+          ]
+        },
+        {
+          "heading": "Lowering the barrier instead",
+          "intro": "If attendance is the constraint, one response is to change what has to be attended.",
+          "studies": [
+            "does-a-mental-health-app-still-work-without",
+            "lifestyle-medicine-for-depression-without-a-therapist"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which trauma therapy do people finish most often?",
+          "a": "In the meta-regression we covered, patients were more than twice as likely to complete EMDR as cognitive processing therapy, and somewhat less likely to complete prolonged exposure than CPT. Completing a therapy is a separate question from how well it works."
+        },
+        {
+          "q": "Does seeing a therapist more often help people finish?",
+          "a": "For prolonged exposure, yes: delivered more frequently than weekly, the odds of completion doubled. For EMDR the frequency effect was not statistically clear."
+        },
+        {
+          "q": "What personality traits predict dropping out?",
+          "a": "In the DBT study, high negative affectivity and anankastia predicted dropout. Very high negative emotions or psychotic-like traits predicted less improvement rather than dropout as such."
+        },
+        {
+          "q": "Why are dropout rates hard to compare between studies?",
+          "a": "Because only about a third of the trials in that meta-regression defined what counts as completing treatment. Without a shared definition, two studies can report very different dropout rates for the same behaviour."
+        }
+      ],
+      "related": ["is-emdr-evidence-based", "bipolar-disorder-vs-borderline-personality-disorder"]
+    }
+  ]
+}
