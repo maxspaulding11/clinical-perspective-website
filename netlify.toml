@@ -1,0 +1,22 @@
+# Netlify configuration, kept in the repo so the way the site is served is
+# reviewable rather than living only in a dashboard someone has to remember to
+# check.
+
+[build]
+  # No build step: the HTML in this repo is what gets served. Pages are
+  # generated locally by scripts/build.py and committed.
+  publish = "."
+
+[build.processing.html]
+  # Netlify's "Pretty URLs" post-processing rewrote every internal link as it
+  # served the page -- href="research.html" went out as href="/research" -- but
+  # left the canonical tags alone, which still said /research.html. The result
+  # was that every internal link on the site pointed at a URL the page itself
+  # declared was not canonical, and both forms returned 200, so the same page
+  # was reachable and crawlable at two addresses.
+  #
+  # Turning it off makes the served links, the canonical tags and sitemap.xml
+  # all agree on the .html form. scripts/check_canonicals.py enforces the other
+  # half of that agreement at build time, but cannot see this layer, which is
+  # why the setting belongs here in the repo next to it.
+  pretty_urls = false
