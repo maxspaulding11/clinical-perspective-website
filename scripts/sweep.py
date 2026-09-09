@@ -52,7 +52,15 @@ def visible_text(html):
     return re.sub(r"\s+", " ", t).strip()
 
 
+GDOC = re.compile(r"docs\.google\.com/document/d/([A-Za-z0-9_-]+)")
+
+
 def fetch(url):
+    # A Google Doc never finishes rendering inside a headless timeout, but it
+    # will hand over plain text directly. Stony Brook publishes its list this way.
+    m = GDOC.search(url)
+    if m:
+        url = f"https://docs.google.com/document/d/{m.group(1)}/export?format=txt"
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as r:
         raw = r.read()
