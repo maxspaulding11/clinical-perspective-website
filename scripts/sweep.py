@@ -11,11 +11,12 @@ and the reading effort goes where it belongs.
   python scripts/sweep.py --all           recheck every program, cohort included
   python scripts/sweep.py --status posted only that status
   python scripts/sweep.py --no-save       report without updating the snapshot
+  python scripts/sweep.py --no-chrome     skip the browser fallback
 
 Snapshots live in "Tracker Snapshots" beside the Website folder, not inside it:
 third-party page text has no business in the site's git history.
 """
-import argparse, concurrent.futures as cf, hashlib, json, os, re, sys
+import argparse, concurrent.futures as cf, hashlib, json, os, re, shutil, subprocess, sys
 import urllib.request
 from datetime import date
 
@@ -63,6 +64,41 @@ def fetch(url):
     return raw.decode("utf-8", "replace")
 
 
+CHROME_CANDIDATES = [
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
+]
+BLOCK_PAGE = re.compile(
+    r"access denied|forbidden|are you a robot|verify you are human|just a moment|"
+    r"enable javascript|checking your browser", re.I)
+
+
+def find_chrome():
+    for p in CHROME_CANDIDATES:
+        if os.path.exists(p):
+            return p
+    return shutil.which("chrome") or shutil.which("google-chrome")
+
+
+def chrome_fetch(chrome, url, profile, timeout=60):
+    """Render a page in headless Chrome and return its DOM.
+
+    A dozen university sites answer plain HTTP requests with 403 because the
+    request doesn't look like a browser. Chrome carries a real TLS fingerprint
+    and runs the page's JavaScript, which clears most of them -- and it is how
+    Michigan's posted list was eventually found after weeks of 403s.
+    """
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--disable-blink-features=AutomationControlled",
+         f"--user-agent={UA}", "--window-size=1280,900",
+         "--virtual-time-budget=9000", f"--user-data-dir={profile}",
+         "--dump-dom", url],
+        capture_output=True, timeout=timeout)
+    return out.stdout.decode("utf-8", "replace")
+
+
 def scan(text, year):
     """Return the first window where a target-year mention, a recruiting verb
     and a faculty word all appear together."""
@@ -81,6 +117,8 @@ def main():
     ap.add_argument("--year", type=int, default=2027, help="cycle year to look for")
     ap.add_argument("--no-save", action="store_true")
     ap.add_argument("--workers", type=int, default=12)
+    ap.add_argument("--no-chrome", action="store_true",
+                    help="skip the browser fallback for blocked pages")
     args = ap.parse_args()
 
     data = json.load(open(os.path.join(SITE, "data", "programs.json"), encoding="utf-8"))
@@ -113,6 +151,31 @@ def main():
             results[pid] = (text, err)
 
     by_id = {p["id"]: p for p in progs}
+    via_browser = []
+
+    # Second pass: anything that failed, or came back looking like a block
+    # page, gets retried in a real browser engine.
+    if not args.no_chrome:
+        chrome = find_chrome()
+        retry = [pid for pid, (t, e) in results.items()
+                 if e or not t or len(t) < 500 or BLOCK_PAGE.search(t[:400])]
+        if retry and not chrome:
+            print("chrome not found - skipping browser fallback "
+                  f"({len(retry)} pages left unread)\n")
+        elif retry:
+            profile = os.path.join(SNAP, ".chrome-profile")
+            print(f"browser fallback: retrying {len(retry)} page(s)")
+            for pid in retry:
+                try:
+                    text = visible_text(chrome_fetch(chrome, by_id[pid]["url"], profile))
+                except Exception as e:
+                    print(f"    ! {by_id[pid]['school']} - chrome: {type(e).__name__}")
+                    continue
+                if len(text) >= 500 and not BLOCK_PAGE.search(text[:400]):
+                    results[pid] = (text, None)
+                    via_browser.append(pid)
+                    print(f"    + {by_id[pid]['school']} recovered ({len(text)} chars)")
+            print()
     changed, new, failed, flagged = [], [], [], []
     manifest = dict(old)
 
@@ -126,7 +189,9 @@ def main():
             new.append(pid)
         elif prev["hash"] != digest:
             changed.append(pid)
-        manifest[pid] = {"hash": digest, "len": len(text), "checked": date.today().isoformat()}
+        manifest[pid] = {"hash": digest, "len": len(text),
+                         "checked": date.today().isoformat(),
+                         "via": "browser" if pid in via_browser else "http"}
 
         hit = scan(text, args.year)
         if hit:
