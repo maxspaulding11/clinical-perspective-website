@@ -1055,7 +1055,10 @@ a:hover { text-decoration: underline; }
 
 .footer-links {
   display: flex;
-  gap: 24px;
+  /* Six links in a nowrap row ran ~70px past a 375px screen, so every page
+     scrolled sideways on a phone. */
+  flex-wrap: wrap;
+  gap: 12px 24px;
 }
 .footer-links a { color: #e6d7c3; font-size: 0.9rem; }
 .footer-links a:hover { color: var(--cream); }
@@ -1162,6 +1165,19 @@ a:hover { text-decoration: underline; }
   border-left: 3px solid var(--rule);
   padding-left: 14px;
 }
+
+/* Every study links to the accepting-students tracker from body text, not
+   just the nav. Set apart from the author box so the two don't read as one
+   block of small print. */
+.study-tracker {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 28px 0 0;
+}
+.study-tracker p { margin: 0; font-size: 0.92rem; line-height: 1.65; color: var(--ink); }
+.study-tracker a { color: var(--maroon); font-weight: 600; white-space: nowrap; }
 
 .study-nav {
   display: grid;
@@ -1699,9 +1715,21 @@ a:hover { text-decoration: underline; }
 
 .fac-showing { font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 16px; }
 
-.fac-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+/* minmax(0, 1fr): a grid column defaults to the widest item's min-content, and
+   a few notes quote a raw program URL that can't break -- which stretched the
+   single column ~65px past a phone screen and made the whole page scroll
+   sideways. The wrap rule on the card handles those URLs themselves. */
+.fac-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
 
 .fac-card {
+  overflow-wrap: anywhere;
   background: var(--paper);
   border: 1px solid var(--rule);
   border-radius: var(--radius);

@@ -152,6 +152,34 @@ def replace_between(text, start, end, payload):
                         f"{indent}{start}{payload}{indent}{end}")
 
 
+# The cycle year appears in the title, the H1, the visible heading and the
+# social cards. Retyping it in five places once a year is how a tracker ends
+# up advertising last cycle, so it is written from programs.json instead --
+# which keeps the brief's rule that this page keeps one URL forever and only
+# the year changes.
+CYCLE = re.compile(r"Fall\s+\d{4}")
+CYCLE_ELEMENTS = [
+    r"(<title>)(.*?)(</title>)",
+    r"(<meta name=\"description\" content=\")(.*?)(\">)",
+    r"(<meta property=\"og:title\" content=\")(.*?)(\">)",
+    r"(<meta property=\"og:description\" content=\")(.*?)(\">)",
+    r"(<h1 class=\"visually-hidden\">)(.*?)(</h1>)",
+    r"(<h2>Who's Accepting Doctoral Students)(.*?)(</h2>)",
+]
+
+
+def set_cycle(text, cycle):
+    if not CYCLE.fullmatch(cycle or ""):
+        return text  # an unexpected cycle string is left alone rather than guessed at
+    for pat in CYCLE_ELEMENTS:
+        text = re.sub(pat,
+                      lambda m: m.group(1) + CYCLE.sub(cycle, m.group(2)) + m.group(3),
+                      text, count=1, flags=re.S)
+    # the lede's cycle, which the script also fills in on load
+    return re.sub(r'(<(?:span|strong|em|b)[^>]*id="fac-cycle"[^>]*>).*?(</(?:span|strong|em|b)>)',
+                  lambda m: m.group(1) + e(cycle) + m.group(2), text, count=1, flags=re.S)
+
+
 def render():
     data = json.load(open(DATA, encoding="utf-8"))
     programs = sorted(data["programs"], key=lambda p: p["school"].lower())
@@ -161,6 +189,7 @@ def render():
     text = open(PAGE, encoding="utf-8").read()
     cards = "\n" + "\n".join(card(p) for p in programs) + "\n"
     text = replace_between(text, START, END, cards)
+    text = set_cycle(text, data.get("cycle", ""))
 
     # the same three lines the script fills in on load, so they are also
     # present for a crawler that never runs it

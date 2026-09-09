@@ -199,6 +199,27 @@ AUTHOR_BOX_HTML = f'''<aside class="study-author">
         <a href="../about.html#who-writes-this">How these summaries are written &rarr;</a></p>
       </aside>'''
 
+# --------------------------------------------------- tracker cross-link
+# The accepting-students tracker is the page most likely to be searched for
+# by name, and until now the only route to it was the nav bar. Every study
+# carries a link to it in body text instead, with the counts read from
+# programs.json so the anchor text describes what is actually on the page.
+_tracker = json.load(open(os.path.join(SITE, 'data', 'programs.json'), encoding='utf-8'))
+_posted = [p for p in _tracker['programs'] if p['status'] == 'posted']
+TRACKER_CYCLE = _tracker.get('cycle', 'the coming cycle')
+TRACKER_FACULTY = sum(len(p.get('accepting') or []) for p in _posted)
+TRACKER_PROGRAMS = len(_tracker['programs'])
+TRACKER_HTML = f'''<aside class="study-tracker">
+        <p><strong>Applying to clinical psychology doctoral programs?</strong>
+        We keep a free tracker of which faculty are accepting students for
+        {TRACKER_CYCLE} &mdash; {TRACKER_FACULTY} confirmed across
+        {len(_posted)} programs, out of {TRACKER_PROGRAMS} checked. Every name
+        was read from the program&rsquo;s own page and is dated.
+        <a href="../tools/faculty-accepting-students.html">Open the accepting-students
+        tracker &rarr;</a></p>
+      </aside>'''
+
+
 # ---------------------------------------------------------------- study pages
 
 STUDY_DIR = os.path.join(SITE, 'studies')
@@ -329,6 +350,8 @@ for i, s in enumerate(studies):
         it is not a substitute for consultation with a qualified professional.
         Read the full <a href="../legal.html">disclaimer</a>.
       </p>
+
+      {TRACKER_HTML}
 
       <nav class="study-nav" aria-label="More studies">
         {prev_next[0]}
