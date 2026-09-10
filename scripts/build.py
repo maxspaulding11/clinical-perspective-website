@@ -599,11 +599,20 @@ for s in newest_first:
 for h in _h['hubs']:
     urls.append((f"{BASE_URL}/guides/{h['slug']}.html", '0.9'))
 
+# <lastmod> is the part of a sitemap Google actually acts on: it decides what
+# is worth re-crawling. Dates come from git, not file mtimes -- this script
+# rewrites every page on every run, so mtimes would claim all 77 changed today,
+# every day, which teaches a crawler to ignore the field.
+import lastmod
+
+_lm = lastmod.Lookup(BASE_URL)
+
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for loc, pri in urls:
     lines.append('  <url>')
     lines.append(f'    <loc>{loc}</loc>')
+    lines.append(f'    <lastmod>{_lm.for_url(loc)}</lastmod>')
     lines.append(f'    <priority>{pri}</priority>')
     lines.append('  </url>')
 lines.append('</urlset>')
