@@ -55,6 +55,26 @@ def source_link(s):
     return s.get('url')
 
 
+# Entries scaffolded by scripts/draft.py carry "draft": true until the writing
+# is done. They are skipped whatever date they hold, so a half-written entry
+# cannot go live just because the calendar caught up with it.
+drafts = [s for s in raw if s.get('draft')]
+raw = [s for s in raw if not s.get('draft')]
+
+# And a belt to that brace: a placeholder must never reach a published page.
+# The draft flag is a line someone deletes by hand, and the whole point of the
+# marker is that it is the text a reader would have seen.
+TODO_MARK = 'TODO'
+WRITTEN = ('title', 'tag', 'blurb', 'summary')
+unfinished = [(s['index'], f) for s in raw for f in WRITTEN
+              if TODO_MARK in str(s.get(f, ''))]
+if unfinished:
+    print('Build stopped: an entry is published but still has placeholder text.')
+    for idx, field in unfinished:
+        print(f'  ! entry {idx}: {field} still says {TODO_MARK}')
+    print('Finish it, or put back its "draft": true line.')
+    raise SystemExit(1)
+
 studies = []
 seen = set()
 for s in raw:
@@ -643,6 +663,10 @@ if scheduled:
     print(f'Holding back {len(scheduled)} scheduled studies dated after {TODAY}.')
     print(f'  Next up: {nxt["date"]} — {nxt["title"]}')
     print('  They go live automatically the next time you build on or after that date.')
+if drafts:
+    print(f'Skipping {len(drafts)} draft entr{"y" if len(drafts) == 1 else "ies"} '
+          f'(index {", ".join(str(d["index"]) for d in drafts)}) - '
+          f'still being written.')
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
