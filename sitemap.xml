@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://theclinicalperspective.org/tools/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37,7 +37,7 @@
   </url>
   <url>
     <loc>https://theclinicalperspective.org/tools/faculty-accepting-students.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -389,5 +389,95 @@
     <loc>https://theclinicalperspective.org/guides/what-predicts-therapy-dropout.html</loc>
     <lastmod>2026-09-11</lastmod>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/trauma-and-ptsd.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/anxiety-disorders.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/depression.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/substance-use-and-addiction.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/suicide-and-self-harm.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/autism.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/adhd.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/eating-disorders.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/psychosis-and-schizophrenia.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/personality-disorders.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/child-and-adolescent.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/health-disparities.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/lgbtq-mental-health.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/forensic-psychology.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/sleep.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/brain-imaging-and-neuroscience.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/professors/mindfulness-and-acceptance.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

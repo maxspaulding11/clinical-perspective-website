@@ -1,0 +1,157 @@
+{
+  "_readme": [
+    "Topic pages over data/professors.json. Each gathers the faculty who list that topic among their",
+    "research interests, grouped by school.",
+    "",
+    "The rule that keeps these honest: a professor appears on a topic page only because a phrase they",
+    "wrote on their own faculty or lab page matched, and the page shows that phrase verbatim next to",
+    "their name. The site never paraphrases someone's research into a category. If a match looks wrong,",
+    "the quoted phrase is right there to judge it by.",
+    "",
+    "Patterns are word-boundary regexes, case-insensitive, applied to each interest string separately.",
+    "Substring matching is not safe here -- it turns 'psychology of grace' into race research and",
+    "'distress tolerance' into stress research. Before adding a pattern, print what it catches across",
+    "the whole corpus and read the output.",
+    "",
+    "'guides' cross-links a topic to the standing guides in data/hubs.json where the subject overlaps.",
+    "Rendered by scripts/render_topics.py, which build.py calls."
+  ],
+  "topics": [
+    {
+      "slug": "trauma-and-ptsd",
+      "title": "Clinical Psychology Professors Researching Trauma and PTSD",
+      "h1": "Clinical psychology professors researching trauma and PTSD",
+      "blurb": "Faculty who name trauma, PTSD or post-traumatic stress among their research interests, grouped by program.",
+      "pattern": "\\b(trauma|traumas|traumatic|traumatized|ptsd|post-?traumatic)\\b",
+      "guides": ["is-emdr-evidence-based", "what-predicts-therapy-dropout"]
+    },
+    {
+      "slug": "anxiety-disorders",
+      "title": "Clinical Psychology Professors Researching Anxiety Disorders",
+      "h1": "Clinical psychology professors researching anxiety disorders",
+      "blurb": "Faculty who name anxiety, panic or phobias among their research interests, grouped by program.",
+      "pattern": "\\b(anxiety|anxious|panic|phobia|phobias|phobic|agoraphobia|gad)\\b",
+      "guides": []
+    },
+    {
+      "slug": "depression",
+      "title": "Clinical Psychology Professors Researching Depression",
+      "h1": "Clinical psychology professors researching depression",
+      "blurb": "Faculty who name depression or mood disorders among their research interests, grouped by program.",
+      "pattern": "\\b(depression|depressive|depressed|dysthymia|mood disorder|mood disorders)\\b",
+      "guides": ["vitamin-d-and-depression"]
+    },
+    {
+      "slug": "substance-use-and-addiction",
+      "title": "Clinical Psychology Professors Researching Substance Use and Addiction",
+      "h1": "Clinical psychology professors researching substance use and addiction",
+      "blurb": "Faculty who name addiction, alcohol, opioids, cannabis or other substance use among their research interests.",
+      "pattern": "\\b(substance use|substance abuse|substance-use|addiction|addictions|addictive|alcohol|alcoholism|opioid|opioids|cannabis|nicotine|smoking|tobacco|cocaine|drug use)\\b",
+      "guides": []
+    },
+    {
+      "slug": "suicide-and-self-harm",
+      "title": "Clinical Psychology Professors Researching Suicide and Self-Harm",
+      "h1": "Clinical psychology professors researching suicide and self-harm",
+      "blurb": "Faculty who name suicide, suicidality or self-injury among their research interests, grouped by program.",
+      "pattern": "\\b(suicide|suicidal|suicidality|self-?harm|self-?injury|self-?injurious|nssi)\\b",
+      "guides": []
+    },
+    {
+      "slug": "autism",
+      "title": "Clinical Psychology Professors Researching Autism",
+      "h1": "Clinical psychology professors researching autism",
+      "blurb": "Faculty who name autism or autism spectrum disorder among their research interests, grouped by program.",
+      "pattern": "\\b(autism|autistic|asd)\\b",
+      "guides": []
+    },
+    {
+      "slug": "adhd",
+      "title": "Clinical Psychology Professors Researching ADHD",
+      "h1": "Clinical psychology professors researching ADHD",
+      "blurb": "Faculty who name ADHD or attention-deficit/hyperactivity disorder among their research interests.",
+      "pattern": "\\b(adhd|attention-?deficit|attention deficit|hyperactivity)\\b",
+      "guides": []
+    },
+    {
+      "slug": "eating-disorders",
+      "title": "Clinical Psychology Professors Researching Eating Disorders",
+      "h1": "Clinical psychology professors researching eating disorders",
+      "blurb": "Faculty who name eating disorders, disordered eating or body image among their research interests.",
+      "pattern": "\\b(eating disorder|eating disorders|anorexia|bulimia|binge eating|body image|disordered eating)\\b",
+      "guides": []
+    },
+    {
+      "slug": "psychosis-and-schizophrenia",
+      "title": "Clinical Psychology Professors Researching Psychosis and Schizophrenia",
+      "h1": "Clinical psychology professors researching psychosis and schizophrenia",
+      "blurb": "Faculty who name psychosis, schizophrenia or schizotypy among their research interests, grouped by program.",
+      "pattern": "\\b(psychosis|psychotic|schizophrenia|schizotypy|schizotypal|delusions|hallucinations)\\b",
+      "guides": []
+    },
+    {
+      "slug": "personality-disorders",
+      "title": "Clinical Psychology Professors Researching Personality Disorders",
+      "h1": "Clinical psychology professors researching personality disorders",
+      "blurb": "Faculty who name borderline, narcissism, psychopathy or antisocial personality among their research interests.",
+      "pattern": "\\b(personality disorder|personality disorders|borderline|narcissism|narcissistic|psychopathy|psychopathic|antisocial)\\b",
+      "guides": ["bipolar-disorder-vs-borderline-personality-disorder"]
+    },
+    {
+      "slug": "child-and-adolescent",
+      "title": "Clinical Psychology Professors Researching Child and Adolescent Mental Health",
+      "h1": "Clinical psychology professors researching child and adolescent mental health",
+      "blurb": "Faculty who name children, adolescents, youth or pediatric populations among their research interests. The broadest topic here by some distance.",
+      "pattern": "\\b(child|children|childhood|adolescent|adolescents|adolescence|youth|pediatric|paediatric|infant|infants|teen|teens)\\b",
+      "guides": []
+    },
+    {
+      "slug": "health-disparities",
+      "title": "Clinical Psychology Professors Researching Health Disparities and Minority Mental Health",
+      "h1": "Clinical psychology professors researching health disparities and minority mental health",
+      "blurb": "Faculty who name disparities, equity, racism, discrimination, immigration or specific minoritized populations among their research interests.",
+      "pattern": "\\b(disparit\\w*|minority|minoritized|marginalized|underserved|equity|racism|discrimination|immigrant|immigration|latino|latina|latinx|black|african american|asian american|indigenous|native american)\\b",
+      "guides": []
+    },
+    {
+      "slug": "lgbtq-mental-health",
+      "title": "Clinical Psychology Professors Researching LGBTQ Mental Health",
+      "h1": "Clinical psychology professors researching LGBTQ mental health",
+      "blurb": "Faculty who name LGBTQ populations, sexual or gender minority stress, or gender identity among their research interests.",
+      "pattern": "\\b(lgbt|lgbtq|lgbtqia|sexual minority|gender minority|transgender|queer|gender identity|sexual orientation)\\b",
+      "guides": []
+    },
+    {
+      "slug": "forensic-psychology",
+      "title": "Clinical Psychology Professors Researching Forensic Psychology",
+      "h1": "Clinical psychology professors researching forensic psychology",
+      "blurb": "Faculty who name forensic assessment, the criminal legal system, incarceration or violence risk among their research interests.",
+      "pattern": "\\b(forensic|criminal|offender|offenders|offending|incarcerat\\w*|prison|corrections|violence risk|juvenile justice)\\b",
+      "guides": []
+    },
+    {
+      "slug": "sleep",
+      "title": "Clinical Psychology Professors Researching Sleep",
+      "h1": "Clinical psychology professors researching sleep",
+      "blurb": "Faculty who name sleep, insomnia or circadian rhythms among their research interests, grouped by program.",
+      "pattern": "\\b(sleep|insomnia|circadian)\\b",
+      "guides": []
+    },
+    {
+      "slug": "brain-imaging-and-neuroscience",
+      "title": "Clinical Psychology Professors Researching Brain Imaging and Neuroscience",
+      "h1": "Clinical psychology professors researching brain imaging and neuroscience",
+      "blurb": "Faculty who name fMRI, EEG, neuroimaging or neural mechanisms among their research interests, grouped by program.",
+      "pattern": "\\b(neuroimaging|fmri|mri|eeg|erp|meg|neural|brain imaging|neurocircuit\\w*|neurobiolog\\w*)\\b",
+      "guides": []
+    },
+    {
+      "slug": "mindfulness-and-acceptance",
+      "title": "Clinical Psychology Professors Researching Mindfulness and Acceptance-Based Therapy",
+      "h1": "Clinical psychology professors researching mindfulness and acceptance-based therapy",
+      "blurb": "Faculty who name mindfulness, meditation, self-compassion or acceptance and commitment therapy among their research interests.",
+      "pattern": "\\b(mindfulness|mindful|meditation|acceptance and commitment|act|compassion|self-?compassion|contextual behavioral)\\b",
+      "guides": []
+    }
+  ]
+}

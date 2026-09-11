@@ -269,6 +269,15 @@ _h = hubs.render(
     byline_html=BYLINE_HTML, updated=TODAY)
 HUB_TITLE = {h['slug']: h['h1'] for h in _h['hubs']}
 
+# ------------------------------------------------- professors by research topic
+# The professor list answers a name search. These answer the subject search --
+# "PTSD labs clinical psychology PhD" -- which is the bigger of the two and had
+# nothing behind it.
+import render_topics
+
+_tp = render_topics.render(base_url=BASE_URL, header=header, footer=footer,
+                           fmt_date=fmt_date, hub_titles=HUB_TITLE)
+
 
 def guide_links(slug):
     """A study that a guide draws on links back to it. This is the internal
@@ -598,6 +607,9 @@ for s in newest_first:
     urls.append((f"{BASE_URL}/studies/{s['slug']}.html", '0.8'))
 for h in _h['hubs']:
     urls.append((f"{BASE_URL}/guides/{h['slug']}.html", '0.9'))
+urls.append((f'{BASE_URL}/professors/', '0.8'))
+for tp in _tp['topics']:
+    urls.append((f"{BASE_URL}/professors/{tp['slug']}.html", '0.8'))
 
 # <lastmod> is the part of a sitemap Google actually acts on: it decides what
 # is worth re-crawling. Dates come from git, not file mtimes -- this script
@@ -684,6 +696,7 @@ if drafts:
           f'still being written.')
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
+print(f'Topics: {len(_tp["topics"])} pages in professors/ ({sum(x["people"] for x in _tp["topics"])} faculty listings across them).')
 print(f'Professors: {_pr["professors"]} names across {_pr["schools"]} programs written into tools/professor-search.html ({_pr["linked"]} linked to a tracker entry).')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
 # ---------------------------------------------------------- redirect rules
