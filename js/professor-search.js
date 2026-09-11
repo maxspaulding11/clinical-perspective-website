@@ -136,7 +136,9 @@
       .map(i => '<li>' + esc(i) + '</li>')
       .join('');
 
-    return '<li class="fac-card">' +
+    // Keep the id the pre-render writes, so a link to one professor still
+    // resolves after this script replaces the list.
+    return '<li class="fac-card" id="prof-' + esc(p.id) + '">' +
       '<div class="fac-head">' +
         '<div>' +
           '<h3>' + esc(p.name) + '</h3>' +

@@ -664,6 +664,12 @@ import render_tracker
 
 _t = render_tracker.render()
 
+# The professor list had the same problem the tracker did, on five times as
+# many names: 2,640 faculty, all arriving by JavaScript after load.
+import render_professors
+
+_pr = render_professors.render()
+
 print(f'Published {len(studies)} studies (through {studies[-1]["date"]}).')
 if removed:
     print(f'Removed {len(removed)} page(s) no longer published.')
@@ -678,6 +684,7 @@ if drafts:
           f'still being written.')
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
+print(f'Professors: {_pr["professors"]} names across {_pr["schools"]} programs written into tools/professor-search.html ({_pr["linked"]} linked to a tracker entry).')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
 # ---------------------------------------------------------- redirect rules
 # Extensionless URLs still resolve on Netlify even with Pretty URLs off, so

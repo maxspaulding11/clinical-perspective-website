@@ -2138,3 +2138,12 @@ a:hover { text-decoration: underline; }
 .archive-guides a:hover { color: var(--maroon); }
 .archive-guides-foot { margin: 12px 0 0; font-size: 0.88rem; }
 .archive-guides-foot a { color: var(--maroon); font-weight: 600; }
+
+/* Each professor card links to their program's entry on the tracker, which is
+   where accepting-students status is stated. Kept out of the pre-rendered
+   markup on this page so the status is asserted in exactly one place. */
+.prof-tracker-link {
+  color: var(--maroon);
+  font-weight: 600;
+  font-size: 0.85rem;
+}

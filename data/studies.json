@@ -942,5 +942,37 @@
     "doi": "10.1001/jamapsychiatry.2026.0096",
     "sourceUrl": "https://doi.org/10.1001/jamapsychiatry.2026.0096",
     "instagram": ""
+  },
+  {
+    "slug": "do-antidepressants-in-pregnancy-raise-a-childs-risk",
+    "index": 60,
+    "title": "Do antidepressants in pregnancy raise a child's risk of autism or ADHD?",
+    "tag": "Psychopharmacology",
+    "blurb": "A meta-analysis pooled 37 studies covering 648,626 antidepressant-exposed pregnancies and 24,967,806 unexposed ones. Raw estimates showed 35% higher ADHD risk and 69% higher autism risk in exposed children, but the associations shrank or disappeared once confounding was accounted for, and fathers' antidepressant use during pregnancy showed a similar pattern.",
+    "date": "2026-09-10",
+    "summary": "This is one of the most common worries in perinatal psychiatry: is it safe to stay on an antidepressant while pregnant? Researchers searched four databases through May 2025 and pooled 37 studies comparing children born after prenatal antidepressant exposure with children who were not exposed, covering roughly 650,000 exposed and 25 million unexposed pregnancies. At first glance, the numbers look worrying: exposed children had about 35% higher relative risk of ADHD and 69% higher relative risk of autism. But the team then pushed on those numbers. Higher doses were not linked to higher autism risk. Exposure before conception, when the drug could not have reached the fetus, showed similar associations. And in the study's clever check, fathers' antidepressant use during pregnancy was also tied to more ADHD and autism in the children, which points toward shared family, genetic, and illness-related explanations rather than the medication itself. In analyses that adjusted for maternal mental illness and familial factors, most associations weakened or lost significance, and no specific SSRI or SNRI stood out. The authors rated the certainty of evidence as low to very low, and note that observational data can never fully rule out confounding. Their stated interpretation is that antidepressant treatment should continue for pregnant women with moderate-to-severe depression.",
+    "journal": "The Lancet Psychiatry",
+    "authors": "Chan JKN, et al.",
+    "pubdate": "June 2026",
+    "pmid": "42134364",
+    "doi": "10.1016/S2215-0366(26)00089-1",
+    "sourceUrl": "https://doi.org/10.1016/S2215-0366(26)00089-1",
+    "instagram": ""
+  },
+  {
+    "slug": "does-a-parents-depression-drag-down-a-kids",
+    "index": 61,
+    "title": "Does a parent's depression drag down a kid's grades?",
+    "tag": "Myth Check",
+    "blurb": "Researchers tracked about 9,000 families in the Norwegian Mother, Father, and Child Study and compared cousins to strip out shared family background. Small links between parents' psychiatric symptoms and children's 5th-grade test scores disappeared once cousins were compared.",
+    "date": "2026-09-11",
+    "summary": "It is a familiar assumption that a parent's anxiety, depression, ADHD, eating disorder, or drinking problem will show up in their child's report card. This study asked whether that link is actually causal. Using roughly 9,000 families from the large Norwegian Mother, Father, and Child Study, researchers had parents report their own symptoms during pregnancy and again during the child's childhood. The children then took Norway's nationally standardized 5th-grade tests in math, reading comprehension, and English at about age 10. The clever part is the design: instead of comparing unrelated families, the team compared children who are cousins, so that everything siblings-turned-parents share (genes, upbringing, neighborhood, social class) is held constant. In the ordinary analysis, more parental symptoms went with slightly lower reading and math scores, but the effects were tiny, with standardized betas between -0.060 and -0.013. In the cousin comparison, those associations were no longer statistically significant. The authors read this as evidence that parental symptoms do not directly move a child's achievement much on their own. One honest limitation: the families who could be included in the cousin analysis differed from the full sample, so the results may not generalize cleanly to all families, and the design cannot rule out very small effects.",
+    "journal": "European Child & Adolescent Psychiatry",
+    "authors": "Demange PA, et al.",
+    "pubdate": "June 2026",
+    "pmid": "42340381",
+    "doi": "10.1007/s00787-026-03100-9",
+    "sourceUrl": "https://doi.org/10.1007/s00787-026-03100-9",
+    "instagram": ""
   }
 ]
