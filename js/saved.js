@@ -97,6 +97,53 @@
     return now;
   }
 
+  // The bell's markup, repaint and click behaviour live here rather than in
+  // faculty.js, because the tracker and "My List" both draw the same control
+  // and two copies would drift the moment one of them changed.
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  var ON_TITLE = 'You\'ll be told when this program changes';
+  var OFF_TITLE = 'Tell me when this program changes';
+
+  function watchButtonHTML(id) {
+    var on = signedIn && readSet(WATCH_KEY).has(id);
+    return '<button type="button" class="watch-btn' + (on ? ' is-watching' : '') + '" ' +
+      'data-watch-school="' + esc(id) + '" aria-pressed="' + (on ? 'true' : 'false') + '" ' +
+      'title="' + (on ? ON_TITLE : OFF_TITLE) + '">' +
+      '<span aria-hidden="true">' + (on ? '✓' : '🔔') + '</span> ' +
+      '<span class="watch-btn-text">' + (on ? 'Notifying' : 'Notify me') + '</span>' +
+      '</button>';
+  }
+
+  function paintWatchButton(btn, on) {
+    btn.classList.toggle('is-watching', on);
+    btn.classList.remove('watch-btn-needs-auth');
+    btn.setAttribute('aria-pressed', String(on));
+    btn.title = on ? ON_TITLE : OFF_TITLE;
+    btn.firstElementChild.textContent = on ? '✓' : '🔔';
+    btn.querySelector('.watch-btn-text').textContent = on ? 'Notifying' : 'Notify me';
+  }
+
+  // Returns true if this click was a watch toggle and has been dealt with,
+  // so a list's own click handler can stop there.
+  function handleWatchClick(target) {
+    var btn = target.closest && target.closest('[data-watch-school]');
+    if (!btn) return false;
+    var now = toggleWatch(btn.dataset.watchSchool);
+    if (now === null) {
+      // Signed out. Say why rather than doing nothing.
+      btn.querySelector('.watch-btn-text').textContent = 'Sign in to be notified';
+      btn.classList.add('watch-btn-needs-auth');
+    } else {
+      paintWatchButton(btn, now);
+    }
+    return true;
+  }
+
   window.TCPSaved = {
     isSchoolSaved: function (id) { return readSet(SCHOOLS_KEY).has(id); },
     isProfSaved: function (id) { return readSet(PROFS_KEY).has(id); },
@@ -108,6 +155,9 @@
     getProfIds: function () { return Array.from(readSet(PROFS_KEY)); },
     isWatching: function (id) { return signedIn && readSet(WATCH_KEY).has(id); },
     toggleWatch: toggleWatch,
+    watchButtonHTML: watchButtonHTML,
+    paintWatchButton: paintWatchButton,
+    handleWatchClick: handleWatchClick,
     getWatchIds: function () { return signedIn ? Array.from(readSet(WATCH_KEY)) : []; },
     canWatch: function () { return signedIn && !!origin; },
     count: count,

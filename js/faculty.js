@@ -153,29 +153,6 @@
       (saved ? '★' : '☆') + '</button>';
   }
 
-  // The bell, beside the star. Separate control, separate meaning: the star
-  // is "I'm interested", this is "tell me when this changes". Rendered in the
-  // off state by scripts/render_tracker.py so a crawler never sees a state
-  // that belongs to one particular person; this corrects it on load.
-  function watchBtn(p) {
-    const on = window.TCPSaved && window.TCPSaved.isWatching(p.id);
-    return '<button type="button" class="watch-btn' + (on ? ' is-watching' : '') + '" ' +
-      'data-watch-school="' + esc(p.id) + '" aria-pressed="' + (on ? 'true' : 'false') + '" ' +
-      'title="' + (on ? 'You\'ll be told when this program changes' : 'Tell me when this program changes') + '">' +
-      '<span aria-hidden="true">' + (on ? '✓' : '🔔') + '</span> ' +
-      '<span class="watch-btn-text">' + (on ? 'Notifying' : 'Notify me') + '</span>' +
-      '</button>';
-  }
-
-  function paintWatchBtn(btn, on) {
-    btn.classList.toggle('is-watching', on);
-    btn.setAttribute('aria-pressed', String(on));
-    btn.title = on ? 'You\'ll be told when this program changes'
-                   : 'Tell me when this program changes';
-    btn.firstElementChild.textContent = on ? '✓' : '🔔';
-    btn.querySelector('.watch-btn-text').textContent = on ? 'Notifying' : 'Notify me';
-  }
-
   const GRE_LABEL = {
     required:        'GRE required',
     optional:        'GRE optional',
@@ -223,7 +200,7 @@
             (p.pcsas ? ' · <span class="fac-pcsas" title="Accredited by the Psychological Clinical Science Accreditation System">PCSAS accredited</span>' : '') +
           '</p>' +
         '</div>' +
-        '<div class="fac-head-right">' + starBtn(p) + watchBtn(p) + badge + '</div>' +
+        '<div class="fac-head-right">' + starBtn(p) + window.TCPSaved.watchButtonHTML(p.id) + badge + '</div>' +
       '</div>' +
       appInfo(p) +
       nameList(p.accepting, 'yes', 'Accepting students', p) +
@@ -329,18 +306,7 @@
       schoolBtn.textContent = saved ? '★' : '☆';
       return;
     }
-    const watchTarget = e.target.closest('[data-watch-school]');
-    if (watchTarget && window.TCPSaved) {
-      const now = window.TCPSaved.toggleWatch(watchTarget.dataset.watchSchool);
-      if (now === null) {
-        // Not signed in. Say why rather than doing nothing.
-        watchTarget.querySelector('.watch-btn-text').textContent = 'Sign in to be notified';
-        watchTarget.classList.add('watch-btn-needs-auth');
-        return;
-      }
-      paintWatchBtn(watchTarget, now);
-      return;
-    }
+    if (window.TCPSaved && window.TCPSaved.handleWatchClick(e.target)) return;
     const profBtn = e.target.closest('[data-star-prof]');
     if (profBtn && window.TCPSaved) {
       const saved = window.TCPSaved.toggleProf(profBtn.dataset.starProf);

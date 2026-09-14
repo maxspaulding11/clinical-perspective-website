@@ -188,6 +188,7 @@
         '<div class="fac-head-right">' +
           '<button type="button" class="star-btn is-saved" data-remove-school="' + esc(p.id) + '" ' +
             'aria-label="Remove from my list" title="Remove from my list">★</button>' +
+          window.TCPSaved.watchButtonHTML(p.id) +
           badge +
         '</div>' +
       '</div>' +
@@ -364,6 +365,7 @@
     renderProfs(professors);
 
     $('#saved-schools-list').addEventListener('click', e => {
+      if (window.TCPSaved.handleWatchClick(e.target)) return;
       const removeBtn = e.target.closest('[data-remove-school]');
       if (removeBtn) {
         window.TCPSaved.removeSchool(removeBtn.dataset.removeSchool);
