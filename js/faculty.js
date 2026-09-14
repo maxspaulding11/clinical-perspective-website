@@ -241,10 +241,31 @@
       '<strong>' + faculty + '</strong> faculty confirmed accepting across <strong>' +
       posted.length + '</strong> programs · last updated ' + esc(data.updated || '');
 
-    const newlyPosted = data.programs.filter(p => p.newlyPosted).sort((a, b) => a.school.localeCompare(b.school));
+    // Same rule as scripts/render_tracker.py, deliberately: a posting counts
+    // as news for three weeks and then drops out on its own. If this and the
+    // pre-rendered HTML disagreed, the banner would change under the reader a
+    // moment after the page loaded.
+    const NEWLY_WINDOW_DAYS = 21;
+    const cutoff = new Date(Date.now() - NEWLY_WINDOW_DAYS * 86400000)
+      .toISOString().slice(0, 10);
+    const newlyPosted = data.programs
+      .filter(p => p.newlyPostedOn && p.newlyPostedOn >= cutoff)
+      .sort((a, b) => a.school.localeCompare(b.school));
+
+    const banner = $('#fac-new-banner');
     if (newlyPosted.length) {
-      $('#fac-new-schools').textContent = newlyPosted.map(p => p.school).join(', ');
-      $('#fac-new-banner').hidden = false;
+      const since = newlyPosted
+        .map(p => p.newlyPostedOn)
+        .reduce((a, b) => (a < b ? a : b));
+      const parts = since.split('-').map(Number);
+      const label = new Date(parts[0], parts[1] - 1, parts[2])
+        .toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+      $('#fac-new-label').textContent = 'Newly posted since ' + label + ':';
+      // Middle dot, not a comma — three of these school names contain commas.
+      $('#fac-new-schools').textContent = newlyPosted.map(p => p.school).join(' · ');
+      banner.hidden = false;
+    } else {
+      banner.hidden = true;
     }
 
     render();

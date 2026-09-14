@@ -20,6 +20,13 @@ import html
 import json
 import os
 import re
+from datetime import date, timedelta
+
+# How long a posting counts as news. "Newly posted" next to a last-updated date
+# of today implied these programs had posted today, when four of them had done
+# it six days earlier -- so each flag carries the date it was set, and drops out
+# of the banner on its own once it is this old. Nothing to remember to clear.
+NEWLY_WINDOW_DAYS = 21
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
@@ -220,6 +227,27 @@ def freshen_updated(data):
     return newest
 
 
+def day_label(iso):
+    """"September 8" — no year, since the banner only ever spans three weeks."""
+    y, m, d = (int(x) for x in iso.split("-"))
+    return date(y, m, d).strftime("%B") + f" {d}"
+
+
+def set_banner_hidden(text, hidden):
+    """Toggle the banner's hidden attribute, in both directions.
+
+    The previous version only ever stripped `hidden`, so once anything had been
+    newly posted the banner could not turn itself off again: the attribute was
+    gone from the file and there was nothing left to strip. Normalising first
+    and re-adding makes it idempotent whichever way it needs to go."""
+    text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")\s+hidden(\s*>)',
+                  r"\1\2", text, count=1)
+    if hidden:
+        text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")(\s*>)',
+                      r"\1 hidden\2", text, count=1)
+    return text
+
+
 def render():
     data = json.load(open(DATA, encoding="utf-8"))
     freshen_updated(data)
@@ -244,16 +272,28 @@ def render():
     text = re.sub(r'(<p class="fac-showing" id="fac-showing">).*?(</p>)',
                   lambda m: m.group(1) + showing + m.group(2), text, count=1, flags=re.S)
 
-    new = sorted((p["school"] for p in programs if p.get("newlyPosted")), key=str.lower)
-    if new:
-        text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")\s+hidden(>)',
-                      r"\1\2", text, count=1)
+    # Only postings still inside the window count as news.
+    cutoff = (date.today() - timedelta(days=NEWLY_WINDOW_DAYS)).isoformat()
+    recent = sorted(((p["newlyPostedOn"], p["school"]) for p in programs
+                     if p.get("newlyPostedOn") and p["newlyPostedOn"] >= cutoff),
+                    key=lambda pair: pair[1].lower())
+    new = [school for _, school in recent]
+
+    text = set_banner_hidden(text, not recent)
+    if recent:
+        since = day_label(min(d for d, _ in recent))
+        text = re.sub(r'(<strong id="fac-new-label">).*?(</strong>)',
+                      lambda m: m.group(1) + f"Newly posted since {since}:" + m.group(2),
+                      text, count=1, flags=re.S)
         # Separated with a middle dot, not a comma: "University of California,
         # Berkeley" and "University of Massachusetts, Boston" both contain
         # commas, so a comma-joined list read as nine schools instead of six.
         text = re.sub(r'(<span id="fac-new-schools">).*?(</span>)',
                       lambda m: m.group(1) + " &middot; ".join(e(s) for s in new) + m.group(2),
                       text, count=1, flags=re.S)
+    else:
+        text = re.sub(r'(<span id="fac-new-schools">).*?(</span>)',
+                      lambda m: m.group(1) + m.group(2), text, count=1, flags=re.S)
 
     open(PAGE, "w", encoding="utf-8").write(text)
     return {"programs": len(programs), "posted": len(posted), "faculty": faculty,
