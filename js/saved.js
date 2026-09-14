@@ -11,8 +11,17 @@
 
   var SCHOOLS_KEY = 'tcp-saved-schools';
   var PROFS_KEY = 'tcp-saved-profs';
+  var WATCH_KEY = 'tcp-watching';
   var origin = window.SPARE_CHANGE_ORIGIN;
   var signedIn = false; // flips true once we know there's an account session
+
+  // Watching is not like starring. A star is a private bookmark and works
+  // fine with no account, so it lives in localStorage first. A watch is a
+  // request to be told something, and there is nowhere to tell an anonymous
+  // browser — so it only exists on the account. The local copy here is a
+  // render cache so the button doesn't flicker on a repeat visit, and it is
+  // cleared the moment we learn nobody is signed in, because showing
+  // "Notifying" to someone who is signed out would be a lie.
 
   function readSet(key) {
     try {
@@ -76,6 +85,18 @@
     apiSave(kind, id, 'remove');
   }
 
+  // Returns true if now watching, false if no longer, and null if we can't —
+  // which the caller turns into a prompt to sign in rather than a dead click.
+  function toggleWatch(id) {
+    if (!signedIn || !origin) return null;
+    var set = readSet(WATCH_KEY);
+    var now;
+    if (set.has(id)) { set.delete(id); now = false; } else { set.add(id); now = true; }
+    writeSet(WATCH_KEY, set);
+    apiSave('school-watch', id, now ? 'add' : 'remove');
+    return now;
+  }
+
   window.TCPSaved = {
     isSchoolSaved: function (id) { return readSet(SCHOOLS_KEY).has(id); },
     isProfSaved: function (id) { return readSet(PROFS_KEY).has(id); },
@@ -85,6 +106,10 @@
     removeProf: function (id) { remove('professor', id); },
     getSchoolIds: function () { return Array.from(readSet(SCHOOLS_KEY)); },
     getProfIds: function () { return Array.from(readSet(PROFS_KEY)); },
+    isWatching: function (id) { return signedIn && readSet(WATCH_KEY).has(id); },
+    toggleWatch: toggleWatch,
+    getWatchIds: function () { return signedIn ? Array.from(readSet(WATCH_KEY)) : []; },
+    canWatch: function () { return signedIn && !!origin; },
     count: count,
     updateBadges: updateBadges
   };
@@ -97,7 +122,13 @@
   // offline-first cache mirroring the account from here on.
   if (origin && window.spareChangeSession) {
     window.spareChangeSession.then(function (user) {
-      if (!user) return;
+      if (!user) {
+        // Signed out: the star lists stand on their own, but a cached watch
+        // list would claim notifications nobody is going to receive.
+        writeSet(WATCH_KEY, new Set());
+        document.dispatchEvent(new CustomEvent('tcp-saved-synced'));
+        return;
+      }
       signedIn = true;
 
       return fetch(origin + '/api/saved', { credentials: 'include' })
@@ -106,6 +137,11 @@
           if (!data) return;
           var serverSchools = new Set(data.schools || []);
           var serverProfs = new Set(data.professors || []);
+
+          // Watches are not merged the way stars are. There is no offline
+          // watch to push up — the button is only offered to signed-in
+          // people — so the account is simply the answer.
+          writeSet(WATCH_KEY, new Set(data.watching || []));
           var localOnlySchools = Array.from(readSet(SCHOOLS_KEY)).filter(function (id) { return !serverSchools.has(id); });
           var localOnlyProfs = Array.from(readSet(PROFS_KEY)).filter(function (id) { return !serverProfs.has(id); });
 

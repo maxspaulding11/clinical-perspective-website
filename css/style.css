@@ -2271,3 +2271,121 @@ a:hover { text-decoration: underline; }
   .topic-school { grid-template-columns: minmax(0, 1fr); }
   .topic-school-tracker { white-space: normal; }
 }
+
+/* ---------- Notify me ----------
+   Beside the star on each tracker entry. Deliberately reads as a distinct
+   control rather than a second star: saving is private and works signed out,
+   asking to be told is a request that needs an account behind it. */
+.watch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.watch-btn:hover { border-color: var(--maroon); color: var(--maroon); }
+.watch-btn:focus-visible { outline: 2px solid var(--maroon); outline-offset: 2px; }
+.watch-btn.is-watching {
+  border-color: var(--maroon);
+  color: var(--maroon);
+  background: rgba(165, 74, 36, 0.09);
+}
+/* Pressed while signed out: the label becomes the explanation, so the click
+   isn't silently dropped. */
+.watch-btn-needs-auth {
+  border-color: var(--maroon);
+  color: var(--maroon);
+  cursor: default;
+}
+
+@media (max-width: 560px) {
+  /* The badge already wraps here; let the button follow rather than squeezing
+     the school name. */
+  .watch-btn { font-size: 0.76rem; padding: 4px 10px; }
+  .watch-btn .watch-btn-text { display: none; }
+  .watch-btn.is-watching .watch-btn-text,
+  .watch-btn-needs-auth .watch-btn-text { display: inline; }
+}
+
+/* ---------- What changed (My List) ----------
+   Notices about watched programs. Sits above the saved lists because it is the
+   thing that has news in it; hidden entirely when empty. */
+.watch-panel {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 0 0 28px;
+}
+.watch-panel-clear {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--maroon);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.watch-panel-clear:focus-visible { outline: 2px solid var(--maroon); outline-offset: 2px; }
+
+.watch-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 14px; }
+.watch-item {
+  border-left: 3px solid var(--rule);
+  padding-left: 14px;
+}
+.watch-item.is-unread { border-left-color: var(--maroon); }
+.watch-when {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.watch-new {
+  background: rgba(165, 74, 36, 0.12);
+  color: var(--maroon);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-left: 4px;
+}
+.watch-changes { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.watch-changes li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  align-items: baseline;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+.watch-school { font-weight: 700; }
+.watch-prog {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-left: 6px;
+}
+.watch-what { color: var(--maroon); font-weight: 600; }
+.watch-panel-foot {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}

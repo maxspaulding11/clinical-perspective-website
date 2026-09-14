@@ -974,5 +974,53 @@
     "doi": "10.1007/s00787-026-03100-9",
     "sourceUrl": "https://doi.org/10.1007/s00787-026-03100-9",
     "instagram": ""
+  },
+  {
+    "slug": "pesticides-in-pregnancy-and-autism-traits-a-big",
+    "index": 62,
+    "title": "Pesticides in pregnancy and autism traits: a big study finds no link",
+    "tag": "Neurodevelopmental",
+    "blurb": "Researchers measured organophosphate pesticide breakdown products in the urine of 3,339 pregnant women across 20 US sites and later scored their children's autism-related traits. After full adjustment, prenatal exposure showed no association with those traits.",
+    "date": "2026-09-12",
+    "summary": "Organophosphate pesticides are known neurotoxins, and most Americans get low-level exposure through food, so the worry that prenatal exposure might contribute to autism has circulated for years with inconsistent evidence behind it. This analysis pooled harmonized data from 20 study sites in the US ECHO cohort, following mother-child pairs recruited between 1997 and 2019. Scientists measured two markers of organophosphate exposure in the mothers' urine during pregnancy: TCPy and the sum of six dialkyl phosphate metabolites. Years later, parents rated their children on the Social Responsiveness Scale, a standard measure of autism-related traits, at an average age of 6.4 years. Among the 3,339 pairs, crude models actually hinted at slightly lower autism trait scores with higher exposure, but once the researchers adjusted for maternal demographics, behavior, and diet, the associations shrank to nothing, for example a beta of -0.13 (95% CI -0.57 to 0.31) per doubling of TCPy. Results held across boys and girls and across several alternative statistical approaches, and diet quality did not change the picture. Limitations worth noting: exposure came from spot urine samples, which reflect recent intake rather than a whole pregnancy, autism traits were parent-reported rather than clinically diagnosed, and the exposure range studied was typical dietary levels, not occupational ones.",
+    "journal": "JAMA Pediatrics",
+    "authors": "Cavalier HM, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42636007",
+    "doi": "10.1001/jamapediatrics.2026.3785",
+    "sourceUrl": "https://doi.org/10.1001/jamapediatrics.2026.3785",
+    "instagram": ""
+  },
+  {
+    "slug": "can-a-self-paced-online-program-treat-ptsd",
+    "index": 63,
+    "title": "Can a self-paced online program treat PTSD from childhood trauma?",
+    "tag": "Treatment",
+    "blurb": "181 adults with PTSD linked to childhood interpersonal trauma tried an online program combining self-guided modules with optional virtual group sessions. It beat standard care on symptom reduction, with benefits still holding four months later.",
+    "date": "2026-09-13",
+    "summary": "Adults whose PTSD traces back to childhood abuse or other interpersonal trauma often struggle to access specialized treatment, especially outside major cities. This trial tested \"Trauma PORTAL,\" a hybrid program combining eight self-paced online psychoeducation and skills modules with eight optional one-hour virtual group sessions led by trauma therapists. Researchers in Ontario, Canada randomly assigned 181 adults (81% women, average age 41) with PTSD from childhood interpersonal trauma to either Trauma PORTAL or standard care. After eight weeks, the program group's PTSD symptoms (measured on the PCL-5 scale) had dropped about 7 points more than the standard-care group, a moderate effect, and that gap held steady at the 16-week follow-up. No adverse events were reported. The main limitation is that this was a single site with an assessor-blind but not participant-blind design, and it compared the program to routine care rather than to an existing gold-standard trauma therapy, so it shows the approach works better than doing nothing in particular, not that it matches specialized in-person treatment.",
+    "journal": "eClinicalMedicine",
+    "authors": "Ross DC, et al.",
+    "pubdate": "June 2026",
+    "pmid": "42306493",
+    "doi": "10.1016/j.eclinm.2026.104003",
+    "sourceUrl": "https://doi.org/10.1016/j.eclinm.2026.104003",
+    "instagram": ""
+  },
+  {
+    "slug": "bipolar-disorder-may-rewire-the-brains-communication-network",
+    "index": 64,
+    "title": "Bipolar Disorder May Rewire the Brain's Communication Network",
+    "tag": "Neuroscience",
+    "blurb": "Scans of 449 people with bipolar disorder and 510 controls across 16 sites found less efficient, more roundabout brain wiring in emotion and reward circuits, with the disruption tracking illness duration and severity.",
+    "date": "2026-09-14",
+    "summary": "Using diffusion MRI, which maps the brain's white-matter wiring, an international team examined structural connectivity in 449 people diagnosed with bipolar disorder and 510 healthy controls across 16 research sites worldwide, coordinated through the ENIGMA Bipolar Disorder Working Group. Rather than looking at single brain regions, they modeled the brain as a network and measured how efficiently different regions communicate with each other. People with bipolar disorder showed less densely connected networks, longer communication paths between regions, and greater reliance on a small number of 'hub' regions to relay signals -- changes concentrated in circuits tied to emotion regulation, reward processing, and memory, including connections between the amygdala, hippocampus, and frontal cortex. These network disruptions were more pronounced in people with longer illness duration, later age of first episode, and a history of psychosis, while a higher number of past manic episodes was linked to unexpectedly stronger connectivity in some emotion-related circuits. Common medications, including antidepressants, anticonvulsants, and antipsychotics, were associated with reduced connectivity in some circuits, though the effect of lithium was unclear. Because the study captured each person's brain at a single point in time rather than tracking them over years, the researchers can't say whether these network changes cause worsening symptoms, result from them, or simply reflect medication exposure -- only that they travel together.",
+    "journal": "Biological Psychiatry",
+    "authors": "Nabulsi L, et al.",
+    "pubdate": "May 2026",
+    "pmid": "42092437",
+    "doi": "10.1016/j.biopsych.2026.04.020",
+    "sourceUrl": "https://doi.org/10.1016/j.biopsych.2026.04.020",
+    "instagram": ""
   }
 ]

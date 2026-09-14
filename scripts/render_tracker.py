@@ -93,6 +93,21 @@ def star_button(p):
             'aria-label="Save to my list" title="Save to my list">☆</button>')
 
 
+def watch_button(p):
+    """Always written in the off state.
+
+    Whether someone is watching a program is a fact about one person, and this
+    file is one document served to everybody and cached by crawlers. Baking in
+    a real state would show the first visitor's choices to the next one.
+    js/faculty.js corrects it on load once it knows who is asking -- the same
+    reason the star ships un-starred."""
+    return ('<button type="button" class="watch-btn" '
+            f'data-watch-school="{e(p["id"])}" aria-pressed="false" '
+            'title="Tell me when this program changes">'
+            '<span aria-hidden="true">🔔</span> '
+            '<span class="watch-btn-text">Notify me</span></button>')
+
+
 def card(p):
     if p["status"] == "posted":
         badge = ('<span class="fac-badge posted">'
@@ -122,7 +137,7 @@ def card(p):
         f'<h3>{e(p["school"])}</h3>'
         f'<p class="fac-sub">{sub}</p>'
         '</div>'
-        f'<div class="fac-head-right">{star_button(p)}{badge}</div>'
+        f'<div class="fac-head-right">{star_button(p)}{watch_button(p)}{badge}</div>'
         '</div>'
         + app_info(p)
         + name_list(p.get("accepting"), "yes", "Accepting students")

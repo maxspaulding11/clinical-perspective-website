@@ -394,3 +394,90 @@
     $('#saved-profs-list').innerHTML = '<li class="fac-empty">Could not load your saved list. Please refresh.</li>';
   });
 })();
+
+/* ---------- What changed ----------
+   Notices about programs the signed-in person asked to be told about. Written
+   by scripts/watch_notify.py after a publish; nothing is pushed or emailed, so
+   this panel is where they actually get read. Hidden entirely when there is
+   nothing to show, rather than sitting there empty. */
+(function () {
+  'use strict';
+
+  var origin = window.SPARE_CHANGE_ORIGIN;
+  var panel = document.getElementById('watch-panel');
+  var list = document.getElementById('watch-list');
+  var markBtn = document.getElementById('watch-mark-read');
+  if (!origin || !panel || !list) return;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function when(ms) {
+    var days = Math.floor((Date.now() - ms) / 86400000);
+    if (days <= 0) return 'today';
+    if (days === 1) return 'yesterday';
+    if (days < 30) return days + ' days ago';
+    return new Date(ms).toLocaleDateString('en-US',
+      { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  function line(c) {
+    var name = esc(c.school || c.id) +
+      (c.program ? ' <span class="watch-prog">' + esc(c.program) + '</span>' : '');
+    var what;
+    if (c.to === 'closed') {
+      what = 'closed this cycle';
+    } else if (c.from === 'posted' && c.to === 'posted') {
+      what = 'list changed to ' + c.accepting + ' faculty accepting';
+    } else {
+      what = 'posted its list — ' + c.accepting + ' faculty accepting';
+    }
+    return '<span class="watch-school">' + name + '</span>' +
+           '<span class="watch-what">' + esc(what) + '</span>';
+  }
+
+  function render(data) {
+    var items = data.items || [];
+    if (!items.length) { panel.hidden = true; return; }
+
+    list.innerHTML = items.map(function (n) {
+      var changes = Array.isArray(n.changes) ? n.changes : [];
+      return '<li class="watch-item' + (n.read ? '' : ' is-unread') + '">' +
+        '<p class="watch-when">' + esc(when(n.createdAt)) +
+          (n.read ? '' : ' <span class="watch-new">New</span>') + '</p>' +
+        '<ul class="watch-changes">' +
+          changes.map(function (c) { return '<li>' + line(c) + '</li>'; }).join('') +
+        '</ul></li>';
+    }).join('');
+
+    panel.hidden = false;
+    if (markBtn) markBtn.hidden = data.unread === 0;
+  }
+
+  function load() {
+    fetch(origin + '/api/notifications', { credentials: 'include' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) { if (data) render(data); })
+      .catch(function () { /* offline — the panel just stays hidden */ });
+  }
+
+  if (markBtn) {
+    markBtn.addEventListener('click', function () {
+      markBtn.hidden = true;
+      fetch(origin + '/api/notifications', {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'read' })
+      }).then(load).catch(load);
+    });
+  }
+
+  // Only signed-in people have notifications, so wait until we know.
+  if (window.spareChangeSession) {
+    window.spareChangeSession.then(function (user) { if (user) load(); });
+  }
+})();
