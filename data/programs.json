@@ -15,13 +15,13 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following Clinical Area faculty anticipate having an opening for new students in their labs for Fall 2027 Admission:",
    "accepting": [
-    "Denise Chavira",
-    "Tiffany Ho",
-    "Katie Karlsgodt",
     "Anna Lau",
-    "Steve Lee",
+    "Denise Chavira",
+    "Katie Karlsgodt",
+    "Lara Ray",
     "Lauren Ng",
-    "Lara Ray"
+    "Steve Lee",
+    "Tiffany Ho"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -54,17 +54,17 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty will be accepting new students:",
    "accepting": [
-    "Daniel Bagner",
-    "Jonathan Comer",
-    "Yael Dai",
-    "Greg Fabiano",
-    "Raul Gonzalez",
-    "Paulo Graziano",
-    "Kat Hart",
     "Dana McMakin",
-    "Mei Yi Ng",
+    "Daniel Bagner",
+    "Elisa Trucco",
+    "Greg Fabiano",
     "Jeremy Pettit",
-    "Elisa Trucco"
+    "Jonathan Comer",
+    "Kat Hart",
+    "Mei Yi Ng",
+    "Paulo Graziano",
+    "Raul Gonzalez",
+    "Yael Dai"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -98,17 +98,17 @@
    "checked": "2026-09-09",
    "sourceQuote": "To determine whether specific core clinical science faculty are inviting applications for the current application cycle (starting the program in Fall 2027), see below:",
    "accepting": [
-    "Christina Balderrama-Durbin",
-    "Meredith E. Coles",
     "Brandon E. Gibb",
+    "Christina Balderrama-Durbin",
+    "Emily L. Zale",
     "Jennifer Gillis Mattson",
-    "Matthew D. Johnson",
-    "Mark F. Lenzenweger",
-    "Nadine Mastroleo",
-    "Richard Mattson",
     "Jennifer McGrath",
+    "Mark F. Lenzenweger",
+    "Matthew D. Johnson",
+    "Meredith E. Coles",
+    "Nadine Mastroleo",
     "Raymond G. Romanczyk",
-    "Emily L. Zale"
+    "Richard Mattson"
    ],
    "maybe": [],
    "notAccepting": [
@@ -143,25 +143,25 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty accepting students for Fall graduate admissions, marked Yes / Maybe / No by faculty member.",
    "accepting": [
-    "Eyal Aharoni",
-    "Page Anderson",
-    "Sarah Barber",
-    "Heather Offutt",
-    "Sarah Pope-Caldwell",
     "Cynthia Stappenbeck",
     "Erin Tone",
-    "Erin Tully"
+    "Erin Tully",
+    "Eyal Aharoni",
+    "Heather Offutt",
+    "Page Anderson",
+    "Sarah Barber",
+    "Sarah Pope-Caldwell"
    ],
    "maybe": [
-    "Lee Branum-Martin",
-    "Sarah Brosnan",
-    "Vince Calhoun",
-    "Lindsey Cohen",
-    "Sarah Cook",
-    "John Horgan",
     "Gabriel Kuperminc",
     "Isha Metzger",
-    "Rose Sevcik"
+    "John Horgan",
+    "Lee Branum-Martin",
+    "Lindsey Cohen",
+    "Rose Sevcik",
+    "Sarah Brosnan",
+    "Sarah Cook",
+    "Vince Calhoun"
    ],
    "notAccepting": [],
    "note": "Georgia State marks faculty Yes / Maybe / No. “Maybe” means undecided — contact the lab directly. UNRESOLVED: GSU's Yes/No/Maybe table covers the whole psychology department, not just Clinical — a later independent re-check found the department also lists a separate “Clinical concentration faculty” roster, and some names above (e.g. Aharoni, Barber, Offutt) may belong to other concentrations rather than Clinical. That re-check's own attempt to cross-reference the two pages was internally inconsistent, so this list has not been corrected pending a careful manual re-check against psychology.gsu.edu's clinical-concentration faculty roster.",
@@ -194,24 +194,24 @@
    "sourceQuote": "*May be considering applications for Fall 2027*",
    "accepting": [],
    "maybe": [
-    "Stan Huey",
+    "Emilio Valadez",
     "Katharina Kircanski",
-    "Emilio Valadez"
+    "Stan Huey"
    ],
    "notAccepting": [
-    "Chris Beam",
+    "Amy West",
     "Brittany Beasley",
+    "Bruna Martins Klein",
+    "Chris Beam",
+    "Darby Saxbe",
+    "Duke Han",
     "Gerald Davison",
     "Iony Ezawa",
-    "Duke Han",
-    "Bruna Martins Klein",
-    "Darby Saxbe",
-    "Lauren Shapiro",
     "Jonathan Stange",
-    "Susan Luczak",
+    "Lauren Shapiro",
     "Mara Mather",
     "Santiago Morales",
-    "Amy West"
+    "Susan Luczak"
    ],
    "note": "USC publishes two pages with different confidence language about the same three faculty: the student-admissions-outcomes page says they \"are interested in recruiting\" (which this entry originally used), while USC's actual clinical-faculty roster page individually flags them only \"*May be considering applications for Fall 2027*\" and explicitly lists everyone else as not currently flagged (read here as not accepting, per that page's own convention). Updated to the more granular, more cautious roster page — moved from accepting to maybe, and added the notAccepting list the original source didn't provide.",
    "pcsas": true,
@@ -635,9 +635,9 @@
     "Anthony Ahrens",
     "Kathleen Gunthert",
     "Laura Juliano",
+    "Lisa Velkoff",
     "Nathaniel Herr",
-    "Nicole Lorenzo",
-    "Lisa Velkoff"
+    "Nicole Lorenzo"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -732,17 +732,17 @@
    "checked": "2026-09-09",
    "sourceQuote": "Recruiting new students (fall 2027)",
    "accepting": [
-    "William Corbin",
-    "Lauren Friedman",
     "Abigail Gewirtz",
+    "Erica Grodin",
+    "Frank Infurna",
+    "Jack Waddell",
+    "Jinni Su",
     "Joanna Kim",
+    "Lauren Friedman",
     "Madeline Meier",
     "Nichea Spillane",
-    "Jack Waddell",
-    "Erica Grodin",
     "Thao Ha",
-    "Frank Infurna",
-    "Jinni Su"
+    "William Corbin"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -777,12 +777,12 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty will be recruiting graduate students for Fall 2027 admissions: Drs. Tiffany Brown, Travis Evans, Emma Lathan-Powell, Daniel Oesterle, April Smith, and Jennifer Somers.",
    "accepting": [
-    "Tiffany Brown",
-    "Travis Evans",
-    "Emma Lathan-Powell",
-    "Daniel Oesterle",
     "April Smith",
-    "Jennifer Somers"
+    "Daniel Oesterle",
+    "Emma Lathan-Powell",
+    "Jennifer Somers",
+    "Tiffany Brown",
+    "Travis Evans"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -1006,17 +1006,17 @@
    "sourceQuote": "*recruiting new students for Fall 2027",
    "accepting": [
     "Abby Braden",
-    "Rebecca (Becca) Campbell",
-    "Annette Mahoney"
+    "Annette Mahoney",
+    "Rebecca (Becca) Campbell"
    ],
    "maybe": [],
    "notAccepting": [
-    "Eric Dubow",
-    "Dryw Dworsky",
-    "William O'Brien",
-    "Kenneth Pargament",
+    "Carolyn Tompsett",
     "Catherine Stein",
-    "Carolyn Tompsett"
+    "Dryw Dworsky",
+    "Eric Dubow",
+    "Kenneth Pargament",
+    "William O'Brien"
    ],
    "note": "Deadline: December 1. Faculty list page marks recruiting faculty with an asterisk keyed to the footnote 'recruiting new students for Fall 2027'; unmarked faculty were placed in notAccepting since the page's own asterisk convention is binary (marked=recruiting, unmarked=not). Kenneth Pargament is listed as Emeritus.",
    "applicationDeadline": "December 1",
@@ -1501,12 +1501,12 @@
    "checked": "2026-09-09",
    "sourceQuote": "Reviewing for the Clinical Community Track: Dina Birman, Megan Greeson, Lenny Jason, Susan McMahon, Nyssa Snow-Hill, and Anne Saw",
    "accepting": [
+    "Anne Saw",
     "Dina Birman",
-    "Megan Greeson",
     "Lenny Jason",
-    "Susan McMahon",
+    "Megan Greeson",
     "Nyssa Snow-Hill",
-    "Anne Saw"
+    "Susan McMahon"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -1572,8 +1572,8 @@
    "sourceQuote": "For Academic Year 2027-28, Dr. Meghan Butryn is accepting MS in Psychology and PhD in Clinical Psychology students.",
    "accepting": [
     "Meghan L. Butryn",
-    "Pamela A. Geller",
-    "Naomi E. Goldstein"
+    "Naomi E. Goldstein",
+    "Pamela A. Geller"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -1759,18 +1759,18 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty Potentially Accepting Students for Fall 2027",
    "accepting": [
-    "Adam Briggs, Ph.D.",
-    "Chelsea Cawood, Ph.D.",
-    "Chong Man Chow, Ph.D.",
-    "Claudia Drossel, Ph.D., Ph.D.",
-    "Heather Janisse, Ph.D.",
-    "James Todd, Ph.D.",
-    "Jamie Lawler, Ph.D.",
-    "Jin Bo, Ph.D.",
-    "Laura Rowley, Ph.D.",
-    "Rusty McIntyre, Ph.D.",
-    "Sydney Batchelder, Ph.D.",
-    "Tom Waltz, Ph.D., Ph.D."
+    "Adam Briggs",
+    "Chelsea Cawood",
+    "Chong Man Chow",
+    "Claudia Drossel",
+    "Heather Janisse",
+    "James Todd",
+    "Jamie Lawler",
+    "Jin Bo",
+    "Laura Rowley",
+    "Rusty McIntyre",
+    "Sydney Batchelder",
+    "Tom Waltz"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -1804,12 +1804,12 @@
    "checked": "2026-09-09",
    "sourceQuote": "**Faculty mentors considering applications for the Fall 2027 Admission Cycle**",
    "accepting": [
-    "Vanessa Brown",
     "Ali Cohen",
-    "Michael Hallquist",
+    "Brianna Yamasaki",
     "Irwin Waldman",
+    "Michael Hallquist",
     "Phillip Wolff",
-    "Brianna Yamasaki"
+    "Vanessa Brown"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -1965,16 +1965,16 @@
    "checked": "2026-09-09",
    "sourceQuote": "Recruitment status (Fall 2027) — filter option: 'Recruiting a graduate student' (paraphrase; no single verbatim sentence exists on the page)",
    "accepting": [
-    "Sarah Brown",
+    "Brad Schmidt",
+    "Christopher Lonigan",
     "Corinne Carlton-Smith",
     "Jesse Cougle",
-    "Sherelle Harmon",
-    "Thomas Joiner",
-    "Pamela Keel",
     "Michael Kofler",
-    "Christopher Lonigan",
+    "Pamela Keel",
     "Rick Macatee",
-    "Brad Schmidt"
+    "Sarah Brown",
+    "Sherelle Harmon",
+    "Thomas Joiner"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -2006,13 +2006,13 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty members will be reviewing applications, interviewing applicants, and available to mentor incoming students in the Fall 2027 admission cohort:",
    "accepting": [
-    "Dr. Rachel Annunziato",
-    "Dr. Natasha Burke",
-    "Dr. Christopher Conway",
-    "Dr. Elizabeth Raposa",
-    "Dr. Barry Rosenfeld",
-    "Dr. Therese Todd",
-    "Dr. Molly Zimmerman"
+    "Barry Rosenfeld",
+    "Christopher Conway",
+    "Elizabeth Raposa",
+    "Molly Zimmerman",
+    "Natasha Burke",
+    "Rachel Annunziato",
+    "Therese Todd"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -2133,7 +2133,7 @@
    "url": "https://www.georgefox.edu/psyd/admission/index.html",
    "status": "cohort",
    "cycle": "Fall 2027",
-   "checked": "2026-08-31",
+   "checked": "2026-09-14",
    "sourceQuote": "",
    "accepting": [],
    "maybe": [],
@@ -2151,7 +2151,8 @@
     "In-person interview Feb 11 or 12, 2027",
     "TOEFL score 5+ for international students",
     "$500 enrollment deposit if accepted",
-    "Application must verify in PsychologyCAS by Dec 1, 2026"
+    "Application must verify in PsychologyCAS by Dec 1, 2026",
+    "Applications must be verified in PsychologyCAS by December 1, 2026 — submitting by the November 15 deadline is not sufficient on its own; the program asks for at least 10 business days for verification to complete"
    ],
    "appInfoSourceUrl": "https://www.georgefox.edu/psyd/admission/index.html",
    "appInfoChecked": "2026-08-17"
@@ -2199,10 +2200,10 @@
    "checked": "2026-09-09",
    "sourceQuote": "Admissions for 2027-2028: Only the following faculty members are considering Clinical Psychology PhD applicants for students entering the program in the Fall 2027 admissions cycle: Sarah Calabrese, Jody Ganiban, Christina Gee, David Huebner, Sharon Lambert.",
    "accepting": [
-    "Sarah Calabrese",
-    "Jody Ganiban",
     "Christina Gee",
     "David Huebner",
+    "Jody Ganiban",
+    "Sarah Calabrese",
     "Sharon Lambert"
    ],
    "maybe": [],
@@ -2332,10 +2333,10 @@
    "sourceQuote": "Unless otherwise noted below, all core faculty are accepting new graduate students for the forthcoming Fall Semester. Due to the volume of requests, faculty members are not always able to respond to inquiries from prospective applicants.",
    "accepting": [
     "Allegra Anderson",
+    "Mark R. Serper",
     "Mun Yee Kwan",
     "Phyllis S. Ohr",
-    "William C. Sanderson",
-    "Mark R. Serper"
+    "William C. Sanderson"
    ],
    "maybe": [],
    "notAccepting": [
@@ -2894,15 +2895,15 @@
    "sourceQuote": "Drs. Bohnert, Kang, Kalantzis, and Ruchensky will be considering applicants to work under their mentorship. Drs. Conley and Leon do not plan to accept new students this cycle. Dr. Holmbeck is retired and no longer accepting graduate students.",
    "accepting": [
     "Dr. Bohnert",
-    "Dr. Kang",
     "Dr. Kalantzis",
+    "Dr. Kang",
     "Dr. Ruchensky"
    ],
    "maybe": [],
    "notAccepting": [
     "Dr. Conley",
     "Dr. Leon",
-    "Dr. Holmbeck (retired)"
+    "Holmbeck (retired)"
    ],
    "note": "Deadline: 5:00 pm CST on December 1.",
    "applicationDeadline": "November 1, 5:00 pm CST",
@@ -3144,9 +3145,9 @@
    "checked": "2026-09-14",
    "sourceQuote": "Dr. Brooke Ingersoll, Dr. Katy Thakkar, Dr. Amy Drahota, and Dr. Raffles Cowan are accepting graduate students for Fall 2027.",
    "accepting": [
+    "Amy Drahota",
     "Brooke Ingersoll",
     "Katy Thakkar",
-    "Amy Drahota",
     "Raffles Cowan"
    ],
    "maybe": [],
@@ -3205,15 +3206,15 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty members currently accept students in the Clinical Psychology PhD Program:",
    "accepting": [
-    "Aggie Reiger, Ph.D.",
-    "Arazais Oliveros, Ph.D.",
-    "Danielle Nadorff, Ph.D.",
-    "Michael R. Nadorff, Ph.D.",
-    "Robert McMillen, Ph.D."
+    "Aggie Reiger",
+    "Arazais Oliveros",
+    "Danielle Nadorff",
+    "Michael R. Nadorff",
+    "Robert McMillen"
    ],
    "maybe": [
-    "Cliff McKinney, Ph.D.",
-    "Samuel Murphy, Ph.D."
+    "Cliff McKinney",
+    "Samuel Murphy"
    ],
    "notAccepting": [],
    "note": "Deadline: December 1st (every year). Page lists Cliff McKinney under the general 'currently accept students' heading but, unlike the other five names, gives him no explicit 'accepting applications for 2027' annotation, so his 2027 status is ambiguous and he is placed in maybe. Samuel Murphy is explicitly annotated 'potentially accepting applications for 2027' and is also placed in maybe. CORRECTED: verification had added Samuel Murphy, Ph.D., Cliff McKinney, Ph.D. to the accepting list while they remained in maybe, an internal contradiction. Kept in maybe only, per the original reasoning that their Fall 2027 status on the page is annotated ambiguously (no explicit 2027 tag, or only \"potentially\"). Corrected during verification: The quote matches, but the accepting list omits two faculty who are actually listed on the page: Cliff McKinney, Ph.D. and Samuel Murphy, Ph.D.",
@@ -3989,10 +3990,10 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty Recruiting for Fall 2027",
    "accepting": [
-    "Scot Hill",
-    "Nancy Jao",
     "Kristin Schneider",
-    "Monika Waszczuk"
+    "Monika Waszczuk",
+    "Nancy Jao",
+    "Scot Hill"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -4024,29 +4025,29 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty members who are interested in accepting applications for Ph.D. students in the 2026 application cycle are noted below. (Individual entries specify: 'Accepting applications for admissions in 2027' / 'Accepting applications for the 2027 academic year'.)",
    "accepting": [
-    "Bethany Raiff, Ph.D.",
-    "Christina Simmons, Ph.D.",
-    "D.J. Angelone, Ph.D.",
-    "Danielle Arigo, Ph.D.",
-    "Dustin Fife, Ph.D.",
-    "Jeffrey Greeson, Ph.D.",
-    "Jim A. Haugh, Ph.D.",
-    "Katherine Oberle Gotham, Ph.D.",
-    "Meredith C. Jones, Ph.D.",
-    "Steven M. Brunwasser, Ph.D."
+    "Bethany Raiff",
+    "Christina Simmons",
+    "D.J. Angelone",
+    "Danielle Arigo",
+    "Dustin Fife",
+    "Jeffrey Greeson",
+    "Jim A. Haugh",
+    "Katherine Oberle Gotham",
+    "Meredith C. Jones",
+    "Steven M. Brunwasser"
    ],
    "maybe": [],
    "notAccepting": [
-    "Ademola Fawole, Psy.D.",
-    "Cori E. McMahon, Psy.D.",
-    "David J. Libon, Ph.D.",
-    "Gerald Hough, Ph.D.",
-    "Joanna Petrides, Psy.D.",
-    "Michelle Ennis Soreth, Ph.D.",
-    "Roberta Dihoff, Ph.D.",
-    "Shirley S. Wang, Ph.D.",
-    "Tenelle Porter, Ph.D.",
-    "Tom Dinzeo, Ph.D."
+    "Ademola Fawole",
+    "Cori E. McMahon",
+    "David J. Libon",
+    "Gerald Hough",
+    "Joanna Petrides",
+    "Michelle Ennis Soreth",
+    "Roberta Dihoff",
+    "Shirley S. Wang",
+    "Tenelle Porter",
+    "Tom Dinzeo"
    ],
    "note": "Page's general intro references the '2026 application cycle' but every individual faculty entry explicitly states admission year 2027, confirming this is the Fall 2027 entering cohort (applicants apply in the 2026 cycle to start Fall 2027).",
    "applicationDeadline": "December 15",
@@ -4200,21 +4201,21 @@
    "checked": "2026-09-09",
    "sourceQuote": "The list of faculty interested in taking a student for Fall 2027 admission is listed below.",
    "accepting": [
-    "Aaron Blashill, Ph.D.",
-    "Charles Taylor, Ph.D.",
-    "Christina Wierenga, Ph.D.",
-    "David J. Moore, Ph.D.",
-    "Jessica Bomyea, Ph.D.",
-    "Judy Pa, Ph.D.",
-    "Keith Horvath, Ph.D.",
-    "Kelly Courtney, Ph.D.",
-    "Lauren Brookman-Frazee, Ph.D.",
-    "Matthew Herbert, Ph.D.",
-    "Miguel Villodas, Ph.D.",
-    "Natasha Wade, Ph.D.",
-    "Sarah Mattson, Ph.D.",
-    "Tom Marcotte, Ph.D.",
-    "William Pelham, Ph.D."
+    "Aaron Blashill",
+    "Charles Taylor",
+    "Christina Wierenga",
+    "David J. Moore",
+    "Jessica Bomyea",
+    "Judy Pa",
+    "Keith Horvath",
+    "Kelly Courtney",
+    "Lauren Brookman-Frazee",
+    "Matthew Herbert",
+    "Miguel Villodas",
+    "Natasha Wade",
+    "Sarah Mattson",
+    "Tom Marcotte",
+    "William Pelham"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -4502,21 +4503,21 @@
    "checked": "2026-09-09",
    "sourceQuote": "Clinical Psychology Primary Faculty [table columns: Faculty | Area of Study | Accepting Graduate Students | Not Accepting Graduate Students]. Application deadline for the Clinical Psychology PhD program is November 15.",
    "accepting": [
-    "Deborah Drabick, PhD",
-    "Eunice Chen, PhD",
-    "Lauren Alloy, PhD",
-    "Philip Kendall, PhD, ABPP",
-    "Tania Giovanetti, PhD, ABPP",
-    "Thomas Olino, PhD",
-    "Wilson Vincent, PhD, MPH"
+    "Deborah Drabick",
+    "Eunice Chen",
+    "Lauren Alloy",
+    "Philip Kendall",
+    "Tania Giovanetti",
+    "Thomas Olino",
+    "Wilson Vincent"
    ],
    "maybe": [
-    "Michael McCloskey, PhD"
+    "Michael McCloskey"
    ],
    "notAccepting": [
-    "Johanna Jarcho, PhD (Affiliated Faculty)",
-    "Lauren Ellman, PhD",
-    "Robert Fauber, PhD"
+    "Johanna Jarcho (Affiliated Faculty)",
+    "Lauren Ellman",
+    "Robert Fauber"
    ],
    "note": "Deadline: November 15, 2026. Per-faculty cells explicitly say 'Accepting a clinical student for 2027' / 'Will be accepting a clinical student for 2027' / 'May be accepting a clinical student for 2027' / 'Not accepting clinical students for 2027', clearly confirming the Fall 2027 cycle. Michael McCloskey ('May be accepting') placed in maybe per the three-state rule. The sourceQuote above describes the table's structure rather than quoting a single sentence verbatim (Temple presents this as a table, not prose). Independent verification also could not re-confirm Johanna Jarcho's specific not-accepting status on a second read of the page, though the rest of the list matched.",
    "pcsas": true,
@@ -4549,12 +4550,12 @@
    "checked": "2026-09-09",
    "sourceQuote": "Accepting Students for 2027-2028",
    "accepting": [
-    "Brian Albanese",
-    "Angeline Bottera",
-    "Annmarie MacNamara",
-    "Zina Trost",
     "Andres Viana",
-    "Anka Vujanovic"
+    "Angeline Bottera",
+    "Anka Vujanovic",
+    "Annmarie MacNamara",
+    "Brian Albanese",
+    "Zina Trost"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -5283,10 +5284,10 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following professors will be admitting new students for Fall 2027: Jasmin Brooks Stephens, Allison Harvey, Keanan Joyner, Giovanni Ramos",
    "accepting": [
-    "Jasmin Brooks Stephens",
     "Allison Harvey",
-    "Keanan Joyner",
-    "Giovanni Ramos"
+    "Giovanni Ramos",
+    "Jasmin Brooks Stephens",
+    "Keanan Joyner"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -5346,11 +5347,11 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty members are recruiting a new student for the 2026-2027 application round: Dr. Jacqueline Woerner, Dr. Amie Newins, Dr. Jeffrey Bedwell, Dr. Robert Dvorak, and Dr. Lidia Meshesha. The next application deadline is December 1st, 2026 for a start date in August 2027.",
    "accepting": [
-    "Dr. Jacqueline Woerner",
-    "Dr. Amie Newins",
-    "Dr. Jeffrey Bedwell",
-    "Dr. Robert Dvorak",
-    "Dr. Lidia Meshesha"
+    "Amie Newins",
+    "Jacqueline Woerner",
+    "Jeffrey Bedwell",
+    "Lidia Meshesha",
+    "Robert Dvorak"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -5525,11 +5526,11 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty likely to accept students for entering in Fall 27 include: Drs. Burke, Gray, Milan, Park and Treadwell.",
    "accepting": [
-    "Jeffrey Burke",
-    "Sarah Gray",
-    "Stephanie Milan",
     "Crystal Park",
-    "Kimberli Treadwell"
+    "Jeffrey Burke",
+    "Kimberli Treadwell",
+    "Sarah Gray",
+    "Stephanie Milan"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -5778,10 +5779,10 @@
    "checked": "2026-09-09",
    "sourceQuote": "The Psychological Clinical Science Program Area Faculty planning to recruit and mentor new graduate students for admission to the Fall 2027 program are Patrick Goh, Cassandra L. Hendrix, Akihiko Masuda, Brad Nakamura, and Santiago Papini.",
    "accepting": [
-    "Patrick Goh",
-    "Cassandra L. Hendrix",
     "Akihiko Masuda",
     "Brad Nakamura",
+    "Cassandra L. Hendrix",
+    "Patrick Goh",
     "Santiago Papini"
    ],
    "maybe": [],
@@ -5968,11 +5969,11 @@
    "checked": "2026-09-14",
    "sourceQuote": "Accepting graduate student applications for the 2027-28 academic year (five faculty explicitly labeled 2027-28; two others labeled 2026-27, a different cycle, and are not included here).",
    "accepting": [
-    "Tera Fazzino",
-    "Nancy Hamilton",
     "Jessica Powers",
     "Jordan Thomas",
-    "Richard Yi"
+    "Nancy Hamilton",
+    "Richard Yi",
+    "Tera Fazzino"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -6006,8 +6007,8 @@
    "sourceQuote": "Faculty with primary appointments in Clinical Psychology who are reviewing applications for the Fall 2027 cohort and will consider adding a student to their research lab include:",
    "accepting": [
     "Jessica Burris",
-    "Megan Davis",
     "Justin Karr",
+    "Megan Davis",
     "Michelle Martel",
     "Shannon Sauer-Zavala"
    ],
@@ -6240,20 +6241,20 @@
    "checked": "2026-09-14",
    "sourceQuote": "The following faculty members are interested in accepting one or more new students for fall 2027 admissions.",
    "accepting": [
-    "Sarah Hayes-Skelton",
     "Heidi Levitt",
+    "Sarah Hayes-Skelton",
     "Tahirah Abdullah"
    ],
    "maybe": [],
    "notAccepting": [
-    "Devin Atallah",
-    "Alice Carter",
     "Abbey Eisenhower",
-    "Susanna Gallor",
-    "Lizabeth Roemer",
+    "Alice Carter",
+    "Devin Atallah",
+    "Julie Woulfe",
     "Karen Suyemoto",
+    "Lizabeth Roemer",
     "Roberto Renteria",
-    "Julie Woulfe"
+    "Susanna Gallor"
    ],
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -6285,23 +6286,23 @@
    "sourceQuote": "\"Which faculty members might recruit a student for Fall 2027 admission?\" Column: \"Recruiting or might recruit\" - the page merges faculty who are currently planning to recruit with those who only might, so these are recorded as possible rather than confirmed.",
    "accepting": [],
    "maybe": [
-    "Brian Doss",
     "Aaron Heller",
-    "Steven Safren",
+    "Amy Weisman",
+    "Brian Doss",
     "Kiara Timpano",
     "Lara Traeger",
-    "Amy Weisman"
+    "Steven Safren"
    ],
    "notAccepting": [
-    "Michael Antoni",
-    "Sannisha Dale",
-    "Jill Ehrenreich-May",
-    "Spencer Evans",
-    "Gail Ironson",
     "Amanda Jensen-Doss",
     "Annette La Greca",
     "Frank Penedo",
-    "Patrice Saab"
+    "Gail Ironson",
+    "Jill Ehrenreich-May",
+    "Michael Antoni",
+    "Patrice Saab",
+    "Sannisha Dale",
+    "Spencer Evans"
    ],
    "note": "Directly opened psy.miami.edu/graduate/clinical-program/people.html (lists clinical faculty by division - Adult, Child, Health - with no acceptance status shown) and the clinical-program overview and how-to-apply pages; none currently post a Fall 2027 accepting-students list. General web information indicates the department typically posts this information by late August each year, so it may not be up yet.",
    "pcsas": true,
@@ -6333,8 +6334,8 @@
    "checked": "2026-09-09",
    "sourceQuote": "Clinical Faculty currently interested in accepting students for Fall 2027 matriculation:",
    "accepting": [
-    "Luke Hyde",
-    "Craig Rodriguez-Seijas"
+    "Craig Rodriguez-Seijas",
+    "Luke Hyde"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -6367,21 +6368,21 @@
    "checked": "2026-09-09",
    "sourceQuote": "Each clinical faculty profile states its own status, e.g. \"Dr. Smitherman will be reviewing applications to the Clinical Ph.D. Program this year.\" Application deadline December 1.",
    "accepting": [
-    "Todd Smitherman",
-    "Sarah Bilsky",
+    "Aaron Lee",
+    "John Young",
     "Laura Dixon",
     "Laura Drislane",
     "Laura Johnson",
-    "Aaron Lee",
-    "Vanessa Oliphant",
-    "Taylor Rodriguez",
+    "Sarah Bilsky",
     "Stefan Schulenberg",
-    "John Young"
+    "Taylor Rodriguez",
+    "Todd Smitherman",
+    "Vanessa Oliphant"
    ],
    "maybe": [],
    "notAccepting": [
-    "Kristin Austin",
-    "Carey Dowling"
+    "Carey Dowling",
+    "Kristin Austin"
    ],
    "note": "Directly opened olemiss.edu/psychology/academics/graduate-clinical/, olemiss.edu/departments/libarts/psychology/academics/graduate-clinical/index.php, and olemiss.edu/psychology/. Pages list clinical faculty (Kristin Austin, Sarah Bilsky, Lee Cohen, and others) and state 'APPLICATION DEADLINE: December 1' but none give per-faculty accepting status for Fall 2027.",
    "applicationDeadline": "December 1",
@@ -6477,16 +6478,16 @@
    "sourceQuote": "Clinical faculty accepting new graduate students for Fall 2027:",
    "accepting": [
     "David DiLillo",
-    "Rebecca Brock",
     "Keith Cruise",
+    "Rebecca Brock",
     "Tess Neal",
     "Tierney Lorenz"
    ],
    "maybe": [],
    "notAccepting": [
+    "Debra Hope",
     "Dennis McChargue",
     "Kathy Chiou",
-    "Debra Hope",
     "Mario Scalora",
     "Trey Andrews"
    ],
@@ -6925,19 +6926,19 @@
    "checked": "2026-09-09",
    "sourceQuote": "Dr. Lopez-Vergara will be accepting new doctoral graduate students for the 2027-2028 academic year.",
    "accepting": [
-    "Jillian Scheer",
-    "Hector Lopez-Vergara"
+    "Hector Lopez-Vergara",
+    "Jillian Scheer"
    ],
    "maybe": [],
    "notAccepting": [
-    "Christopher G. Beevers",
     "April Highlander",
+    "Christopher G. Beevers",
     "David Schnyer",
-    "Nathan Cook",
-    "Justin Parent",
-    "Nicole Weiss",
     "Ellen Flannery-Schroeder",
-    "Mark L. Robbins"
+    "Justin Parent",
+    "Mark L. Robbins",
+    "Nathan Cook",
+    "Nicole Weiss"
    ],
    "note": "Deadline: December 1, 2026. Each faculty profile carries its own accepting/not-accepting sentence, but the page labels the cohort \"2027-2028 academic year\" rather than an explicit \"Fall 2027\" — per the disambiguation rule and the verifier's own recommendation, not treated as confirmed for Fall 2027 without further clarification. For reference, the page's 2027-2028-labeled not-accepting names were: Christopher G. Beevers, April Highlander, David Schnyer, Nathan Cook, Justin Parent, Nicole Weiss, Ellen Flannery-Schroeder, Mark L. Robbins. Dr. Lopez-Vergara was named as accepting on the same page, same caveat applies. Corrected during verification: The URL loads and belongs to URI Psychology, and the quote appears verbatim, and the accepting/notAccepting split matches the page. However, the page states Lopez-Vergara (and by the page's framing, the cohort) is accepting for the '2027-2028 academic year' — an academic-year range, not an explicit 'Fall 2027' semester designation. Per the disambiguation rule, this should not be treated as confirmed for Fall 2027 without further clarification from the page.",
    "applicationDeadline": "December 1, 2026",
@@ -7147,9 +7148,9 @@
    "checked": "2026-09-09",
    "sourceQuote": "All admissions materials are due by December 1st, 2026 at 11:59 PM for the Fall 2027 cohort. Faculty accepting applications for Fall 2027: Dr. Drew Curtis, Dr. Dennis Combs, Dr. Sarah Sass",
    "accepting": [
-    "Dr. Dennis Combs",
-    "Dr. Drew Curtis",
-    "Dr. Sarah Sass"
+    "Dennis Combs",
+    "Drew Curtis",
+    "Sarah Sass"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -7335,7 +7336,7 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty Accepting Clinical Ph.D. Program Students for Fall 2027",
    "accepting": [
-    "Dr. Eli Klemperer"
+    "Eli Klemperer"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -7367,9 +7368,9 @@
    "checked": "2026-09-09",
    "sourceQuote": "The PhD Program in Clinical Psychology will recruit a cohort for the 2026-2027 academic year. The following faculty hope to admit students to enter Fall 2027: Noelle Hurd, Aaron Reuben, Bethany Teachman",
    "accepting": [
-    "Noelle Hurd",
     "Aaron Reuben",
-    "Bethany Teachman"
+    "Bethany Teachman",
+    "Noelle Hurd"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -7451,15 +7452,15 @@
    "checked": "2026-09-09",
    "sourceQuote": "Faculty who ARE considering students for the Fall 2027 admissions cycle are listed below",
    "accepting": [
-    "James Li",
     "Diane Gooding",
+    "James Li",
     "Katie Howell"
    ],
    "maybe": [],
    "notAccepting": [
-    "Kate Walsh",
     "Brooke Ammerman",
     "John Curtin",
+    "Kate Walsh",
     "Richard Davidson"
    ],
    "note": "Core clinical faculty only. The department list covers all areas; these were matched against the clinical area's own core faculty page. Dan Grupe, listed there as affiliate clinical faculty (Center for Healthy Minds), is also considering students for Fall 2027.",
@@ -7882,17 +7883,17 @@
    "checked": "2026-09-09",
    "sourceQuote": "Seeking a student for the Fall 2027 admissions cycle",
    "accepting": [
-    "Elisa Krackow, PhD",
-    "Hannah Rea, PhD",
-    "Michelle Roley-Roberts, PhD",
-    "Hilary DeShong, PhD",
-    "Kevin Larkin, PhD"
+    "Elisa Krackow",
+    "Hannah Rea",
+    "Hilary DeShong",
+    "Kevin Larkin",
+    "Michelle Roley-Roberts"
    ],
    "maybe": [],
    "notAccepting": [
-    "Janelle Heddings, Ph.D",
-    "Barry Edelstein, PhD",
-    "Amy Fiske, PhD"
+    "Amy Fiske",
+    "Barry Edelstein",
+    "Janelle Heddings"
    ],
    "note": "The department's list was previously Fall-2025-labeled and stale, and a 2026-08-17 recheck could not independently verify (HTTP 403) while disagreeing with the old note on Janelle Heddings's status. A 2026-08-24 recheck independently accessed the page again and found an explicit 'Fall 2027' cycle label, again classifying Heddings as not accepting — consistent with the 08-17 finding and resolving the earlier conflict. Direct WebFetch verification is still blocked by the site (403), but two independent agent visits a week apart now agree, so this is published as posted.",
    "applicationDeadline": null,
@@ -8337,14 +8338,14 @@
    "url": "https://paloaltou.edu/admissions/phd-clinical-psychology",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-14",
    "sourceQuote": "",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "(Roster listed this school's name with a garbled \"Withdrawn, effective ...\" prefix — confirmed this is stray text from an adjacent row in the source PDF, not an actual accreditation withdrawal; this program's accreditation is active.) The roster 'school' field carries an apparent parsing artifact ('Withdrawn, effective Se ptember 30, 2024...') prefixed onto the name; this program's accreditation does not appear to actually be withdrawn (program pages describe an active, ongoing PhD admissions cycle), so this is very likely stray text from an adjacent row in the source roster. Substantively: checked the PhD Clinical Psychology admissions page and faculty page. PAU explicitly uses a rotation model -- 'rather than applying directly to a faculty member, students apply to the PAU PhD program in general' and select a lab in spring of their first year -- so there is no faculty-by-faculty accepting/not-accepting list to report for the application stage. A deadline of 'January 7' appeared on the admissions page but referenced review beginning Nov 1, 2025, indicating it describes the (already-closed) prior cycle, not Fall 2027, so it is not reported here.",
-   "applicationDeadline": "December 1, 2026",
-   "deadlineCycle": "Fall 2027",
+   "note": "Deadline removed 2026-09-14: we were reporting December 1, 2026 for Fall 2027, but the program's page states 'Application Review Begins: November 1, 2025' and 'Apply by January 7, 2026' — the previous cycle, and neither date matches what we had. The page has not been updated for Fall 2027, so no deadline is stated here rather than one we cannot source.",
+   "applicationDeadline": null,
+   "deadlineCycle": null,
    "greRequired": "optional",
    "numReferences": 3,
    "applicationFee": "$80 (PSYCAS first program)",
