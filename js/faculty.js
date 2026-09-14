@@ -12,6 +12,10 @@
   let accred = 'apa';
   let statusFilter = 'all';
   let profByExactKey = {};
+  // Explicit name -> professor id links from data/name-links.json, for the
+  // cases where a program page and a bio page write the same person's name
+  // differently. Consulted before any guessing.
+  let nameLinks = {};
   let profByLastKey = {};
   let profsBySchoolProgram = {};
 
@@ -76,6 +80,11 @@
   // edit-distance fallback for genuine spelling variants (only when it
   // resolves to exactly one person, so it can't misfire).
   function findProfId(school, program, rawName) {
+    // A recorded link wins over anything inferred: it was decided by a person
+    // and can be read in data/name-links.json.
+    const linked = nameLinks[school + '|||' + program + '|||' + rawName];
+    if (linked) return linked;
+
     const exactKey = school + '|||' + program + '|||' + normName(rawName);
     if (profByExactKey[exactKey]) return profByExactKey[exactKey];
 
@@ -273,9 +282,11 @@
 
   Promise.all([
     fetch('../data/programs.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-    fetch('../data/professors.json').then(r => r.ok ? r.json() : { professors: [] }).catch(() => ({ professors: [] }))
+    fetch('../data/professors.json').then(r => r.ok ? r.json() : { professors: [] }).catch(() => ({ professors: [] })),
+    fetch('../data/name-links.json').then(r => r.ok ? r.json() : { links: {} }).catch(() => ({ links: {} }))
   ])
-    .then(([progData, profData]) => {
+    .then(([progData, profData, linkData]) => {
+      nameLinks = linkData.links || {};
       (profData.professors || []).forEach(prof => {
         const exactKey = prof.school + '|||' + prof.program + '|||' + normName(prof.name);
         profByExactKey[exactKey] = prof.id;
