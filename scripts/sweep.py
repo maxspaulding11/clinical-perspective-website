@@ -77,9 +77,13 @@ CHROME_CANDIDATES = [
     r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
     os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
 ]
+# Includes soft failures -- an error page served under HTTP 200. UMKC answers
+# scripted requests for its admissions page that way, so this sweep snapshotted
+# its error page for weeks and would never have reported a change.
 BLOCK_PAGE = re.compile(
     r"access denied|forbidden|are you a robot|verify you are human|just a moment|"
-    r"enable javascript|checking your browser", re.I)
+    r"enable javascript|checking your browser|page error|page not found|"
+    r"404 error|we can't find that page", re.I)
 
 
 def find_chrome():

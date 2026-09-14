@@ -1022,5 +1022,37 @@
     "doi": "10.1016/j.biopsych.2026.04.020",
     "sourceUrl": "https://doi.org/10.1016/j.biopsych.2026.04.020",
     "instagram": ""
+  },
+  {
+    "slug": "do-more-risk-genes-mean-more-severe-schizophrenia",
+    "index": 65,
+    "title": "Do more risk genes mean more severe schizophrenia?",
+    "tag": "Genetics",
+    "blurb": "Researchers compared 346 people hospitalized continuously for at least five years with treatment-resistant schizophrenia against more than 18,000 others. Each standard-deviation rise in schizophrenia polygenic score raised the odds of being in that most severe group by 40% to 80%.",
+    "date": "2026-09-14",
+    "summary": "More than one in five people with schizophrenia get little or no benefit from antipsychotic medication, and a smaller group stays severely ill for years on end. Researchers asked whether that most severe form carries a heavier load of the common genetic variants linked to schizophrenia. They recruited 346 people of European ancestry from Pennsylvania state psychiatric hospitals who met a strict definition: at least five years of continuous hospitalization, active treatment, and no response to three or more antipsychotics. They compared them with 10,757 people with treatment-resistant schizophrenia, 1,148 with schizophrenia generally, and 6,320 people without psychiatric diagnoses, drawn from cohorts in the US, Sweden, and the UK, for 18,571 people in total. For each standard-deviation increase in schizophrenia polygenic score, the odds of being in the continuously hospitalized group rose by 40% to 80% relative to the other schizophrenia groups. A smaller exploratory analysis in 476 people of African ancestry (78 cases) pointed in the same direction with weaker statistical support. The pattern held after accounting for sex and after excluding people with additional diagnoses. Limits worth naming: the comparison groups came from different countries and recruitment settings, which can introduce differences that have nothing to do with genetics; the effect describes group averages rather than any individual's prognosis; and polygenic scores still perform poorly outside European-ancestry samples.",
+    "journal": "Molecular Psychiatry",
+    "authors": "Das U, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42552419",
+    "doi": "10.1038/s41380-026-03806-x",
+    "sourceUrl": "https://doi.org/10.1038/s41380-026-03806-x",
+    "instagram": ""
+  },
+  {
+    "slug": "polish-version-of-the-dark-tetrad-test-mostly",
+    "index": 66,
+    "title": "A Polish Version of the 'Dark Tetrad' Test Mostly Holds Up, With One Weak Spot",
+    "tag": "Assessment",
+    "blurb": "A 931-person validation of the Polish Short Dark Tetrad found the sadism and psychopathy scales performed well, but the Machiavellianism subscale showed weak internal reliability (alpha = .67).",
+    "date": "2026-09-14",
+    "summary": "The Short Dark Tetrad (SD4) is a brief 28-item questionnaire used to measure four socially aversive personality traits: subclinical psychopathy, narcissism, Machiavellianism, and sadism. Because psychological tools built in one language and culture don't always translate cleanly, researchers led by Pawel Debski adapted the SD4 for Polish speakers and tested it on 931 adults (average age about 35, roughly three-quarters women) recruited online. Using split-sample statistical testing, meaning the sample was divided so one half could generate a model and the other half could confirm it, the team compared several ways the four traits might fit together. A model that included both trait-specific scales and one broader underlying \"dark personality\" factor fit the data best. Most subscales showed acceptable reliability, and the sadism items in particular lined up well with an established sadism measure, supporting the tool's validity. However, the Machiavellianism subscale showed weaker internal consistency (alpha = .67), meaning its items didn't hang together as tightly as the other traits' items did. The authors conclude the Polish SD4 is usable as a brief dark-personality screener but say results from the Machiavellianism scale, and comparisons between men and women, should be interpreted cautiously. The sample was an online convenience sample with a gender imbalance and no formal back-translation check, which limits how confidently the findings generalize.",
+    "journal": "Frontiers in Psychiatry",
+    "authors": "Dębski P, et al.",
+    "pubdate": "July 2026",
+    "pmid": "42597212",
+    "doi": "10.3389/fpsyt.2026.1865917",
+    "sourceUrl": "https://doi.org/10.3389/fpsyt.2026.1865917",
+    "instagram": ""
   }
 ]
