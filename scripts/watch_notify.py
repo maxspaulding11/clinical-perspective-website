@@ -101,15 +101,35 @@ def describe(c):
             f'accepting (was "{c["from"]}")')
 
 
+def secret():
+    """The environment first, then a .env beside the repo root.
+
+    The file is there so this is one command rather than an export every
+    time; .gitignore covers it, and the same value lives in the Spare Change
+    project's own environment. If neither has it, this refuses rather than
+    guessing -- the endpoint it guards writes to other people's accounts."""
+    from_env = os.environ.get("NOTIFY_SECRET")
+    if from_env:
+        return from_env
+    path = os.path.join(SITE, ".env")
+    if os.path.exists(path):
+        for line in open(path, encoding="utf-8"):
+            key, _, value = line.partition("=")
+            if key.strip() == "NOTIFY_SECRET":
+                return value.strip().strip('"').strip("'")
+    return None
+
+
 def post(changes, dry_run):
-    secret = os.environ.get("NOTIFY_SECRET")
-    if not secret:
-        raise SystemExit("NOTIFY_SECRET is not set. Refusing to send.")
+    key = secret()
+    if not key:
+        raise SystemExit("NOTIFY_SECRET is not set, in the environment or "
+                         "Website/.env. Refusing to send.")
     body = json.dumps({"changes": changes, "dryRun": dry_run}).encode("utf-8")
     req = urllib.request.Request(
         ENDPOINT, data=body, method="POST",
         headers={"Content-Type": "application/json",
-                 "Authorization": "Bearer " + secret})
+                 "Authorization": "Bearer " + key})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.loads(r.read())
@@ -167,7 +187,7 @@ def main():
     # Counting who is watching needs the server, and the server needs the
     # secret. Without it a dry run can still show what changed, which is the
     # part you actually read before deciding to send.
-    if not args.send and not os.environ.get("NOTIFY_SECRET"):
+    if not args.send and not secret():
         print("\nNOTIFY_SECRET is not set, so this cannot say how many people "
               "are watching.\nThe changes above are what would be sent.")
         return 0
