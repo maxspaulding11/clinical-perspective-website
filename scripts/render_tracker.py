@@ -202,8 +202,27 @@ def set_cycle(text, cycle):
                   lambda m: m.group(1) + e(cycle) + m.group(2), text, count=1, flags=re.S)
 
 
+def freshen_updated(data):
+    """Derive the "last updated" date instead of trusting a typed one.
+
+    It was a hand-maintained field, so it did what hand-maintained fields do:
+    a full sweep updated twelve programs and the page still announced the date
+    of the sweep before it. The newest per-program `checked` date is the honest
+    answer and cannot drift. Written back to the file so js/faculty.js, which
+    renders the same line for readers with JavaScript, agrees with the HTML."""
+    newest = max((p["checked"] for p in data["programs"] if p.get("checked")),
+                 default=data.get("updated", ""))
+    if newest and newest != data.get("updated"):
+        data["updated"] = newest
+        with open(DATA, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+            f.write("\n")
+    return newest
+
+
 def render():
     data = json.load(open(DATA, encoding="utf-8"))
+    freshen_updated(data)
     programs = sorted(data["programs"], key=lambda p: p["school"].lower())
     posted = [p for p in programs if p["status"] == "posted"]
     faculty = sum(len(p.get("accepting") or []) for p in posted)
@@ -229,8 +248,11 @@ def render():
     if new:
         text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")\s+hidden(>)',
                       r"\1\2", text, count=1)
+        # Separated with a middle dot, not a comma: "University of California,
+        # Berkeley" and "University of Massachusetts, Boston" both contain
+        # commas, so a comma-joined list read as nine schools instead of six.
         text = re.sub(r'(<span id="fac-new-schools">).*?(</span>)',
-                      lambda m: m.group(1) + e(", ".join(new)) + m.group(2),
+                      lambda m: m.group(1) + " &middot; ".join(e(s) for s in new) + m.group(2),
                       text, count=1, flags=re.S)
 
     open(PAGE, "w", encoding="utf-8").write(text)
