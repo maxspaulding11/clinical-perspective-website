@@ -188,7 +188,7 @@
         '<div class="fac-head-right">' +
           '<button type="button" class="star-btn is-saved" data-remove-school="' + esc(p.id) + '" ' +
             'aria-label="Remove from my list" title="Remove from my list">★</button>' +
-          window.TCPSaved.watchButtonHTML(p.id) +
+          window.TCPSaved.watchButtonHTML(p.id, p.status) +
           badge +
         '</div>' +
       '</div>' +

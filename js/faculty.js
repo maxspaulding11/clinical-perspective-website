@@ -200,7 +200,7 @@
             (p.pcsas ? ' · <span class="fac-pcsas" title="Accredited by the Psychological Clinical Science Accreditation System">PCSAS accredited</span>' : '') +
           '</p>' +
         '</div>' +
-        '<div class="fac-head-right">' + starBtn(p) + window.TCPSaved.watchButtonHTML(p.id) + badge + '</div>' +
+        '<div class="fac-head-right">' + starBtn(p) + window.TCPSaved.watchButtonHTML(p.id, p.status) + badge + '</div>' +
       '</div>' +
       appInfo(p) +
       nameList(p.accepting, 'yes', 'Accepting students', p) +

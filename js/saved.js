@@ -109,8 +109,16 @@
   var ON_TITLE = 'You\'ll be told when this program changes';
   var OFF_TITLE = 'Tell me when this program changes';
 
-  function watchButtonHTML(id) {
+  // Statuses with nothing left to wait for. Offering to tell somebody when a
+  // list appears, on a program whose list is already up, is noise.
+  var SETTLED = { posted: true, closed: true };
+
+  // Returns '' when there is nothing worth offering — but never when the
+  // person is already watching. Hiding the control along with the invitation
+  // would leave them holding a watch they cannot switch off.
+  function watchButtonHTML(id, status) {
     var on = signedIn && readSet(WATCH_KEY).has(id);
+    if (!on && SETTLED[status]) return '';
     return '<button type="button" class="watch-btn' + (on ? ' is-watching' : '') + '" ' +
       'data-watch-school="' + esc(id) + '" aria-pressed="' + (on ? 'true' : 'false') + '" ' +
       'title="' + (on ? ON_TITLE : OFF_TITLE) + '">' +

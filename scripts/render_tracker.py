@@ -94,13 +94,20 @@ def star_button(p):
 
 
 def watch_button(p):
-    """Always written in the off state.
+    """Always written in the off state, and omitted where there is nothing
+    left to wait for.
 
     Whether someone is watching a program is a fact about one person, and this
     file is one document served to everybody and cached by crawlers. Baking in
     a real state would show the first visitor's choices to the next one.
     js/faculty.js corrects it on load once it knows who is asking -- the same
-    reason the star ships un-starred."""
+    reason the star ships un-starred.
+
+    Which is also why a program whose list is already posted gets no button
+    here even if somebody is watching it: this file cannot know that. The
+    script puts it back for that person, so they can still switch it off."""
+    if p["status"] in ("posted", "closed"):
+        return ""
     return ('<button type="button" class="watch-btn" '
             f'data-watch-school="{e(p["id"])}" aria-pressed="false" '
             'title="Tell me when this program changes">'
