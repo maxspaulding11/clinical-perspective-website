@@ -682,6 +682,12 @@ import render_professors
 
 _pr = render_professors.render()
 
+# The tracker resolves its save buttons from a precomputed map instead of
+# downloading all 2,647 professor records to work them out in the browser.
+import render_starmap
+
+_sm = render_starmap.render()
+
 print(f'Published {len(studies)} studies (through {studies[-1]["date"]}).')
 if removed:
     print(f'Removed {len(removed)} page(s) no longer published.')
@@ -697,6 +703,7 @@ if drafts:
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Topics: {len(_tp["topics"])} pages in professors/ ({sum(x["people"] for x in _tp["topics"])} faculty listings across them).')
+print(f'Star map: {_sm["mapped"]} of {_sm["names"]} names resolved to a professor ({len(_sm["unresolved"])} without a record).')
 print(f'Professors: {_pr["professors"]} names across {_pr["schools"]} programs written into tools/professor-search.html ({_pr["linked"]} linked to a tracker entry).')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
 # ---------------------------------------------------------- redirect rules

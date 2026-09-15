@@ -11,13 +11,12 @@
   let query = '';
   let accred = 'apa';
   let statusFilter = 'all';
-  let profByExactKey = {};
-  // Explicit name -> professor id links from data/name-links.json, for the
-  // cases where a program page and a bio page write the same person's name
-  // differently. Consulted before any guessing.
-  let nameLinks = {};
-  let profByLastKey = {};
-  let profsBySchoolProgram = {};
+  // school|||program|||name -> professor id, precomputed by
+  // scripts/render_starmap.py. This page used to download data/professors.json
+  // (227KB gzipped, mostly research-interest prose) purely to work these out in
+  // the browser, and displayed none of the rest of it. The answer is known at
+  // build time, so it arrives as a 9KB lookup instead.
+  let starMap = {};
 
   const STATUS_LABEL = {
     posted:     'List posted',
@@ -27,92 +26,15 @@
     closed:     'Program closed this cycle'
   };
 
-  // Names in a program's accepting/maybe/notAccepting lists sometimes carry
-  // credentials, parenthetical notes ("(Affiliated Faculty)", "(retired)"),
-  // or hyphenated/double surnames a professor's own record doesn't split the
-  // same way — normalize both sides the same way before comparing.
-  function normName(s) {
-    return String(s)
-      .toLowerCase()
-      .replace(/\([^)]*\)/g, ' ')
-      .replace(/\b(dr|phd|psyd|ph\.d|psy\.d|jr|sr|ii|iii|abpp|mph|mdiv|mscp)\b\.?/g, '')
-      .replace(/[.,]/g, '')
-      .replace(/-/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-
-  function nameTokens(s) {
-    return normName(s).split(' ').filter(Boolean);
-  }
-
-  function firstName(s) {
-    return nameTokens(s)[0] || '';
-  }
-
-  // Every token after the first name — covers hyphenated and double surnames
-  // ("Sarah Mattson Weller" → ["mattson", "weller"]) so a list entry that only
-  // gives one piece of a compound surname still finds the right person.
-  function surnameTokens(s) {
-    const t = nameTokens(s);
-    return t.length > 1 ? t.slice(1) : t;
-  }
-
-  function levenshtein(a, b) {
-    const m = a.length, n = b.length;
-    const dp = [];
-    for (let i = 0; i <= m; i++) dp.push([i]);
-    for (let j = 1; j <= n; j++) dp[0][j] = j;
-    for (let i = 1; i <= m; i++) {
-      for (let j = 1; j <= n; j++) {
-        dp[i][j] = a[i - 1] === b[j - 1]
-          ? dp[i - 1][j - 1]
-          : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
-      }
-    }
-    return dp[m][n];
-  }
-
-  // Accepting-list names are sometimes nicknames, drop a middle initial, or
-  // carry a slightly different spelling than the professor's own bio page.
-  // Try, in order: exact normalized match; same surname token (unique within
-  // the program); surname + first-name prefix tiebreak; and finally a small
-  // edit-distance fallback for genuine spelling variants (only when it
-  // resolves to exactly one person, so it can't misfire).
+  // One lookup, no matching. The rules that used to run here -- exact
+  // normalised compare, surname pass, first-name tiebreak, then an
+  // edit-distance fallback -- now run once in scripts/render_starmap.py, so
+  // their results can be read from a file instead of recomputed in every
+  // visitor's browser. A name with no entry gets no save button, which is what
+  // the matcher did too for the few people whose department has not published
+  // a page for them.
   function findProfId(school, program, rawName) {
-    // A recorded link wins over anything inferred: it was decided by a person
-    // and can be read in data/name-links.json.
-    const linked = nameLinks[school + '|||' + program + '|||' + rawName];
-    if (linked) return linked;
-
-    const exactKey = school + '|||' + program + '|||' + normName(rawName);
-    if (profByExactKey[exactKey]) return profByExactKey[exactKey];
-
-    const surnames = surnameTokens(rawName);
-    const seen = {};
-    let candidates = [];
-    surnames.forEach(tok => {
-      (profByLastKey[school + '|||' + program + '|||' + tok] || []).forEach(c => {
-        if (!seen[c.id]) { seen[c.id] = true; candidates.push(c); }
-      });
-    });
-    if (candidates.length === 1) return candidates[0].id;
-    if (candidates.length > 1) {
-      const fn = firstName(rawName);
-      const pref = candidates.filter(c => c.firstName.indexOf(fn) === 0 || fn.indexOf(c.firstName) === 0);
-      if (pref.length === 1) return pref[0].id;
-    }
-
-    const pool = profsBySchoolProgram[school + '|||' + program] || [];
-    if (pool.length && surnames.length) {
-      const lastTok = surnames[surnames.length - 1];
-      const close = pool.filter(c => {
-        const cSurnames = c.surnameTokens;
-        return cSurnames.some(t => levenshtein(t, lastTok) <= 2);
-      });
-      if (close.length === 1) return close[0].id;
-    }
-    return null;
+    return starMap[school + '|||' + program + '|||' + rawName] || null;
   }
 
   function matches(p) {
@@ -280,25 +202,20 @@
     render();
   }
 
+  // Two files, not three, and the big one is gone: data/professors.json was
+  // 227KB gzipped of research interests fetched on every visit to resolve save
+  // buttons this page never displayed interests for. data/star-map.json is the
+  // same answers at 9KB, and data/name-links.json is no longer needed here
+  // either — it is the source the map is built from, not something the browser
+  // has to read.
   Promise.all([
     fetch('../data/programs.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-    fetch('../data/professors.json').then(r => r.ok ? r.json() : { professors: [] }).catch(() => ({ professors: [] })),
-    fetch('../data/name-links.json').then(r => r.ok ? r.json() : { links: {} }).catch(() => ({ links: {} }))
+    fetch('../data/star-map.json').then(r => r.ok ? r.json() : { map: {} }).catch(() => ({ map: {} }))
   ])
-    .then(([progData, profData, linkData]) => {
-      nameLinks = linkData.links || {};
-      (profData.professors || []).forEach(prof => {
-        const exactKey = prof.school + '|||' + prof.program + '|||' + normName(prof.name);
-        profByExactKey[exactKey] = prof.id;
-        const surnames = surnameTokens(prof.name);
-        const fn = firstName(prof.name);
-        surnames.forEach(tok => {
-          const lastKey = prof.school + '|||' + prof.program + '|||' + tok;
-          (profByLastKey[lastKey] = profByLastKey[lastKey] || []).push({ id: prof.id, firstName: fn });
-        });
-        const spKey = prof.school + '|||' + prof.program;
-        (profsBySchoolProgram[spKey] = profsBySchoolProgram[spKey] || []).push({ id: prof.id, surnameTokens: surnames });
-      });
+    .then(([progData, mapData]) => {
+      // A failed map costs save buttons, not the page: every name still
+      // renders, just without a star.
+      starMap = mapData.map || {};
       boot(progData);
     })
     .catch(() => {

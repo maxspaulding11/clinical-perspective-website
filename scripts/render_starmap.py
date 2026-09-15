@@ -1,0 +1,142 @@
+# -*- coding: utf-8 -*-
+"""Precompute every name-to-professor link the tracker needs.
+
+js/faculty.js used to download data/professors.json -- 227KB gzipped, most of
+it research-interest prose -- for exactly one purpose: turning a name on a
+program's list into a professor id so it could draw a save button. It displayed
+none of the rest. On the site's busiest page in season, that was 227KB per
+visit to render 512 stars.
+
+The answer is already known at build time. Every name resolves either by an
+exact match against that person's own record or by a decision recorded in
+data/name-links.json, and nothing resolves by guessing any more. So the map is
+computed here and shipped as data/star-map.json: 9KB gzipped, a flat
+school|||program|||name -> id lookup with no prose in it.
+
+That also lets faculty.js drop its matcher entirely -- the surname pass, the
+first-name tiebreak, the edit-distance fallback and the Levenshtein
+implementation behind them. The rules that produced those matches now run once,
+here, where their results can be read in a file rather than recomputed in every
+visitor's browser.
+
+Names with no entry get no save button, which is the same behaviour as before
+and is deliberate for the handful of people whose own department has not
+published a page for them yet.
+
+Called from build.py. data/professors.json is still served -- the professor
+search genuinely needs the interests -- just not to this page.
+"""
+import json
+import os
+import re
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SITE = os.path.dirname(HERE)
+PROGRAMS = os.path.join(SITE, "data", "programs.json")
+PROFESSORS = os.path.join(SITE, "data", "professors.json")
+LINKS = os.path.join(SITE, "data", "name-links.json")
+OUT = os.path.join(SITE, "data", "star-map.json")
+
+# Stars render beside all three lists, so all three need resolving.
+FIELDS = ("accepting", "maybe", "notAccepting")
+
+
+def norm(s):
+    """The same normalisation js/faculty.js used, kept identical so the map
+    contains exactly the matches the browser would have made."""
+    s = str(s).lower()
+    s = re.sub(r"\([^)]*\)", " ", s)
+    s = re.sub(r"\b(dr|phd|psyd|ph\.d|psy\.d|jr|sr|ii|iii|abpp|mph|mdiv|mscp)\b\.?", "", s)
+    s = re.sub(r"[.,]", "", s).replace("-", " ")
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def tokens(s):
+    return [t for t in norm(s).split(" ") if t]
+
+
+def surnames(s):
+    """Every token after the first, so a compound surname still matches when a
+    program writes only one piece of it."""
+    t = tokens(s)
+    return t[1:] if len(t) > 1 else t
+
+
+def by_surname(pool, name):
+    """The matcher's second and third passes: a surname unique within the
+    program, then a first-name prefix tiebreak when several share it."""
+    wanted = set(surnames(name))
+    cands = [p for p in pool if wanted & set(surnames(p["name"]))]
+    if len(cands) == 1:
+        return cands[0]["id"], "surname"
+    if len(cands) > 1:
+        first = (tokens(name) or [""])[0]
+        near = [p for p in cands
+                if (tokens(p["name"]) or [""])[0].startswith(first)
+                or first.startswith((tokens(p["name"]) or [""])[0])]
+        if len(near) == 1:
+            return near[0]["id"], "surname+firstname"
+    return None, None
+
+
+def render():
+    programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]
+    professors = json.load(open(PROFESSORS, encoding="utf-8"))["professors"]
+    links = json.load(open(LINKS, encoding="utf-8"))["links"]
+
+    exact = {(p["school"], p["program"], norm(p["name"])): p["id"] for p in professors}
+    pools = {}
+    for p in professors:
+        pools.setdefault((p["school"], p["program"]), []).append(p)
+
+    mapping, total, unresolved = {}, 0, []
+    how = {"link": 0, "exact": 0, "surname": 0, "surname+firstname": 0}
+    inferred = []
+    for prog in programs:
+        for field in FIELDS:
+            for name in (prog.get(field) or []):
+                total += 1
+                key = f"{prog['school']}|||{prog['program']}|||{name}"
+                sp = (prog["school"], prog["program"])
+
+                # Recorded decision, then exact match, then the surname passes
+                # the browser used to run. Every one lands in a file that can
+                # be read, which is the point: the same matching, but auditable
+                # instead of invisible.
+                pid, route = links.get(key), "link"
+                if not pid:
+                    pid, route = exact.get((*sp, norm(name))), "exact"
+                if not pid:
+                    pid, route = by_surname(pools.get(sp, []), name)
+                    if pid:
+                        inferred.append((prog["school"], field, name, pid, route))
+
+                if pid:
+                    mapping[key] = pid
+                    how[route] += 1
+                else:
+                    unresolved.append((prog["school"], field, name))
+
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump({
+            "_readme": "Generated by scripts/render_starmap.py — do not edit. "
+                       "Record name decisions in data/name-links.json instead.",
+            "map": dict(sorted(mapping.items())),
+        }, f, indent=0, ensure_ascii=False)
+        f.write("\n")
+
+    return {"names": total, "mapped": len(mapping), "unresolved": unresolved,
+            "how": how, "inferred": inferred}
+
+
+if __name__ == "__main__":
+    r = render()
+    print(f"star map: {r['mapped']} of {r['names']} names resolved, "
+          f"{len(r['unresolved'])} without a professor record")
+    print("  by route:", r["how"])
+    if r["inferred"]:
+        print()
+        print(f"  {len(r['inferred'])} matched by surname rather than exactly — "
+              f"worth a look, and worth recording in name-links.json:")
+        for school, field, name, pid, route in r["inferred"]:
+            print(f"    [{field}] {school[:30]:<32} {name:<26} -> {pid}  ({route})")
