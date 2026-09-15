@@ -1054,5 +1054,21 @@
     "doi": "10.3389/fpsyt.2026.1865917",
     "sourceUrl": "https://doi.org/10.3389/fpsyt.2026.1865917",
     "instagram": ""
+  },
+  {
+    "slug": "two-ptsd-therapies-work-which-works-better-depends",
+    "index": 67,
+    "title": "Two PTSD therapies work. Which works better depends on which studies you keep.",
+    "tag": "Trauma",
+    "blurb": "A meta-analysis of 163 studies and 48,841 people found both Prolonged Exposure and Cognitive Processing Therapy produced large PTSD symptom reductions (Hedges' g = 1.67), but no patient characteristic predicted which therapy worked better until ten unusual studies were removed.",
+    "date": "2026-09-15",
+    "summary": "Prolonged Exposure (PE) and Cognitive Processing Therapy (CPT) are the two most widely implemented talking treatments for PTSD, and guidelines recommend both. What clinicians still cannot answer is which to offer a particular person. Researchers led by Bingyu Xu screened 5,188 records and pooled 175 treatment arms from 163 studies covering 48,841 participants, then used meta-regression, a method that tests whether study characteristics predict how large an effect a study found, to ask whether the answer depends on age, sex, trauma type, or whether the sample was military or civilian. Pooled across everything, symptom reduction was large: Hedges' g = 1.67, meaning a shift of about one and two-thirds standard deviations. But in the full sample not one moderator mattered, and neither did any interaction with treatment type: statistically, there was no evidence either therapy suited any group better. That changed only after the team removed ten effect sizes flagged as statistical outliers, mostly small studies reporting implausibly large effects, one of them g = 13.48. In that trimmed analysis the overall effect settled at g = 1.55 and PE was associated with larger effects than CPT in non-military samples. Dropout was similar either way, averaging 22.9% for PE and 25.6% for CPT. So the headline about civilians rests on a judgement call about which studies to exclude, and the authors say as much, calling treatment-comparison findings \"sensitive to influential outlying effects.\" Two further cautions: heterogeneity was extreme (I-squared = 98%), so the studies disagreed far more than chance explains, and only 27 of the 163 were randomised trials with an inactive control while 75 had no control group at all, meaning much of that large effect reflects people improving during treatment rather than because of it.",
+    "journal": "European Journal of Psychotraumatology",
+    "authors": "Bingyu Xu, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42712180",
+    "doi": "10.1080/20008066.2026.2709751",
+    "sourceUrl": "https://doi.org/10.1080/20008066.2026.2709751",
+    "instagram": ""
   }
 ]
