@@ -1,7 +1,8 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-08-13",
- "note": "Every entry's research interests were read from that person's own faculty/lab bio page; faculty whose pages didn't state clear research interests were skipped rather than guessed. Entries added on 2026-09-14 to resolve accepting-list names may carry an empty interests list: they are on a program's Fall 2027 accepting list and have a verified bio page, but their interests have not been read yet and will be picked up by the next professor sweep. Sweep in progress across the full program roster.",
+ "updated": "2026-09-14",
+ "interestsRead": "2026-08-13",
+ "note": "Every entry's research interests were read from that person's own faculty/lab bio page; faculty whose pages didn't state clear research interests were skipped rather than guessed. Entries added on 2026-09-14 to resolve accepting-list names may carry an empty interests list: they are on a program's Fall 2027 accepting list and have a verified bio page, but their interests have not been read yet and will be picked up by the next professor sweep. Sweep in progress across the full program roster. 'updated' is the date this file last changed; 'interestsRead' is when the interest sweep itself last ran, which is the date the topic pages cite — records added later may carry no interests, so the two are not the same thing.",
  "professors": [
   {
    "id": "catherine-f-eubanks-adelphi-university",

@@ -85,8 +85,26 @@ def replace_between(text, payload):
                         f"{indent}{START}{payload}{indent}{END}")
 
 
+def freshen_updated(data):
+    """Derive "last updated" rather than trusting a typed one.
+
+    Same trap as the tracker's: professors.json carried a hand-written date, so
+    adding seven records on 14 September left the page still announcing 13
+    August. The newest per-record `checked` date cannot drift. Written back so
+    js/professor-search.js, which renders the same line, agrees with the HTML."""
+    newest = max((p["checked"] for p in data["professors"] if p.get("checked")),
+                 default=data.get("updated", ""))
+    if newest and newest != data.get("updated"):
+        data["updated"] = newest
+        with open(DATA, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+            f.write("\n")
+    return newest
+
+
 def render():
     data = json.load(open(DATA, encoding="utf-8"))
+    freshen_updated(data)
     professors = sorted(data["professors"], key=lambda p: p["name"].lower())
 
     programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]

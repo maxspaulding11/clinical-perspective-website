@@ -121,7 +121,10 @@ def render(*, base_url, header, footer, fmt_date, hub_titles):
     cfg = json.load(open(TOPICS, encoding="utf-8"))
     pdata = json.load(open(PROFESSORS, encoding="utf-8"))
     professors = pdata["professors"]
-    updated = pdata.get("updated", "")
+    # The interests sweep date, not the file's. Records added to resolve an
+    # accepting name can arrive with no interests at all, so "interests last
+    # read" must not move just because the file changed.
+    updated = pdata.get("interestsRead") or pdata.get("updated", "")
 
     programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]
     program_ids = {(p["school"], p["program"]): p["id"] for p in programs}
