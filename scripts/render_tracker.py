@@ -159,6 +159,7 @@ def card(p):
         + name_list(p.get("notAccepting"), "no", "Not accepting this cycle")
         + note + quote
         + '<div class="fac-foot">'
+        f'<a href="../programs/{e(p["id"])}.html">Full entry →</a>'
         f'<a href="{e(p.get("url"))}" target="_blank" rel="noopener">'
         'Check the program’s own page →</a>'
         f'{checked}</div></li>'

@@ -1070,5 +1070,21 @@
     "doi": "10.1080/20008066.2026.2709751",
     "sourceUrl": "https://doi.org/10.1080/20008066.2026.2709751",
     "instagram": ""
+  },
+  {
+    "slug": "how-common-is-treatment-resistant-schizophrenia-japans-largest",
+    "index": 68,
+    "title": "How common is treatment-resistant schizophrenia? Japan's largest study says 28.6%",
+    "tag": "Psychosis",
+    "blurb": "Across 205 Japanese hospitals and 18,914 discharged patients, 28.6% of those formally assessed for treatment resistance met criteria -- but only 52.2% were ever assessed, and fewer than half of those identified were prescribed clozapine.",
+    "date": "2026-09-16",
+    "summary": "When schizophrenia does not respond to two adequate trials of antipsychotic medication it is classified as treatment-resistant, and that label matters because it is the gateway to clozapine, the one drug with established benefit for these patients. How many people fall into this group is the number behind staffing, training and drug policy, and it has never been well established. Researchers led by Yusuke Arai used Japan's EGUIDE project data, covering patients with schizophrenia discharged from 205 institutions between 2016 and 2024, and applied Japan's standardised criteria. Of 18,914 patients, 9,870 underwent a formal treatment-resistance assessment, and of those, 2,819 met criteria: a prevalence of 28.6%. That sits well below the 36.7% pooled estimate from an earlier meta-analysis of 50 studies, but almost exactly on the 28.4% that same review found among its lowest-risk-of-bias studies, which the authors argue is the fair comparison. A second number matters more: of the 2,819 identified, only 46.4% were prescribed clozapine at discharge, and the authors note that even this likely flatters routine care, since hospitals that actively screen also prescribe more. The 28.6% is not a population prevalence, and the paper is explicit about why. Only 52.2% of patients were assessed at all, and those who were came disproportionately from university and private hospitals rather than public ones, so the figure describes the screened subgroup rather than everyone with schizophrenia. Every institution was also authorised to prescribe clozapine, which excludes the hospitals least equipped to recognise resistance, and all were inpatients, so nothing here speaks to outpatient care.",
+    "journal": "Neuropsychopharmacology Reports",
+    "authors": "Yusuke Arai, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42732911",
+    "doi": "10.1002/npr2.70163",
+    "sourceUrl": "https://doi.org/10.1002/npr2.70163",
+    "instagram": ""
   }
 ]

@@ -2389,3 +2389,140 @@ a:hover { text-decoration: underline; }
   color: var(--ink-soft);
   line-height: 1.6;
 }
+
+/* ---------------------------------------------------- program + state pages */
+/* One page per doctoral program (programs/<id>.html) and per state
+   (programs/state/<slug>.html). Most of the furniture is borrowed from the
+   tracker and the guides -- fac-badge, fac-appinfo, fac-group, guide-answer,
+   topic-stats, topic-index -- so only what is genuinely new lives here. */
+
+.prog { max-width: 56rem; }
+
+.prog-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.prog-head h1 { margin: 0 0 0.3rem; }
+.prog-sub {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+.prog-head-right { flex-shrink: 0; padding-top: 0.35rem; }
+
+.prog-lede {
+  font-family: var(--sans);
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.prog-quote { margin: 1.25rem 0 0; }
+.prog-quote figcaption {
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.prog-src {
+  margin: 0.75rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.prog-foot { margin-top: 1.75rem; }
+
+.prog-note {
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.1rem;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.prog-tracker {
+  margin: 1.5rem 0 0;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+
+/* A state page's program list, and the sibling list on a program page. */
+.prog-rows, .prog-siblings, .prog-rest { list-style: none; margin: 0; padding: 0; }
+
+.prog-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.prog-row-link { text-decoration: none; display: block; }
+.prog-row-school {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.06rem;
+  color: var(--navy);
+}
+.prog-row-prog {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+.prog-row-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.prog-row-dl {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.prog-siblings li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.94rem;
+}
+.prog-siblings li span {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin-left: 0.4rem;
+}
+
+.prog-rest li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+.prog-rest-state {
+  display: inline-block;
+  min-width: 10rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.prog-rest li a { margin-right: 0.85rem; }
+
+@media (max-width: 34rem) {
+  .prog-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .prog-rest-state { min-width: 0; display: block; }
+}

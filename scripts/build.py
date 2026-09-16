@@ -278,6 +278,17 @@ import render_topics
 _tp = render_topics.render(base_url=BASE_URL, header=header, footer=footer,
                            fmt_date=fmt_date, hub_titles=HUB_TITLE)
 
+# ------------------------------------------------------- a page per program
+# The tracker can only rank for the head term. Nobody searching "Penn State
+# clinical psychology accepting students" is served by a page carrying all 257
+# programs, so each program gets its own, and each state with enough of them
+# gets a hub. See scripts/render_programs.py for why status is allowed to
+# appear here as well as on the tracker.
+import render_programs
+
+_pg = render_programs.render(base_url=BASE_URL, header=header, footer=footer,
+                             fmt_date=fmt_date)
+
 
 def guide_links(slug):
     """A study that a guide draws on links back to it. This is the internal
@@ -611,6 +622,17 @@ urls.append((f'{BASE_URL}/professors/', '0.8'))
 for tp in _tp['topics']:
     urls.append((f"{BASE_URL}/professors/{tp['slug']}.html", '0.8'))
 
+# Program pages carry the answer to the narrowest, highest-intent query on the
+# site, so they sit above the topic pages. The two with almost nothing on them
+# are generated but left out -- they are marked noindex and submitting them
+# would be asking Google to rate the thinnest thing here.
+urls.append((f'{BASE_URL}/programs/', '0.9'))
+for st in _pg['states']:
+    urls.append((f"{BASE_URL}/programs/state/{st}.html", '0.8'))
+for pid in _pg['programs']:
+    if pid not in _pg['thin']:
+        urls.append((f"{BASE_URL}/programs/{pid}.html", '0.9'))
+
 # <lastmod> is the part of a sitemap Google actually acts on: it decides what
 # is worth re-crawling. Dates come from git, not file mtimes -- this script
 # rewrites every page on every run, so mtimes would claim all 77 changed today,
@@ -703,6 +725,9 @@ if drafts:
 print(f'Guides: {len(_h["hubs"])} pages in guides/, linked from {len(_h["membership"])} studies.')
 print(f'Homepage: {len(home_cards)} latest studies written into index.html.')
 print(f'Topics: {len(_tp["topics"])} pages in professors/ ({sum(x["people"] for x in _tp["topics"])} faculty listings across them).')
+print(f'Programs: {len(_pg["programs"])} program pages + {len(_pg["states"])} state pages in programs/ '
+      f'({_pg["posted"]} programs listing {_pg["people"]} accepting faculty'
+      + (f", {len(_pg['thin'])} too thin to index" if _pg["thin"] else "") + ').')
 print(f'Star map: {_sm["mapped"]} of {_sm["names"]} names resolved to a professor ({len(_sm["unresolved"])} without a record).')
 print(f'Professors: {_pr["professors"]} names across {_pr["schools"]} programs written into tools/professor-search.html ({_pr["linked"]} linked to a tracker entry).')
 print(f'Tracker: {_t["faculty"]} faculty across {_t["posted"]} posted programs written into tools/faculty-accepting-students.html ({_t["programs"]} programs total).')
@@ -728,4 +753,11 @@ if _problems:
         print(f'  ! {_p}')
     raise SystemExit(1)
 print(f'Canonicals: {_n} pages checked, all matching their served path and the sitemap.')
+# Being absent from the sitemap is legitimate for a few pages -- saved.html is
+# a per-visitor list, and a program page with almost nothing on it is marked
+# noindex on purpose -- but it was being computed and then thrown away, so an
+# accidental omission looked exactly like an intended one.
+if _notes:
+    print(f'  Deliberately not in the sitemap ({len(_notes)}): '
+          + ', '.join(n.replace('not in sitemap: ', '') for n in _notes))
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))

@@ -142,6 +142,9 @@
         ? '<p class="fac-quote">“' + esc(p.sourceQuote) + '”</p>'
         : '') +
       '<div class="fac-foot">' +
+        // must match the link the pre-render writes, or it disappears the
+        // moment this script re-renders the list for a filter
+        '<a href="../programs/' + esc(p.id) + '.html">Full entry →</a>' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">Check the program\'s own page →</a>' +
         (p.checked ? '<span class="fac-checked">Checked ' + esc(p.checked) + '</span>' : '') +
       '</div>' +
