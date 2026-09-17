@@ -127,6 +127,39 @@ def render():
                   lambda m: m.group(1) + stats + m.group(2),
                   text, count=1, flags=re.S)
 
+    # The title and description are written here rather than left in the file
+    # because both carry the professor count, and a number typed into the HTML
+    # goes wrong the first time a sweep adds anybody.
+    #
+    # The old title was "Find a Professor by Research Interest", which never
+    # said clinical psychology anywhere -- the <h1> did, but the title is the
+    # stronger signal and it was the one page on the site not leading with the
+    # field. Every sibling does: "Clinical Psychology Programs Accepting
+    # Students", "Clinical Psychology Professors by Research Topic". This one
+    # was the odd one out, and it is also the one that has yet to earn a click.
+    count = f"{len(professors):,}"
+    title = (f"Search {count} Clinical Psychology Professors by "
+             f"Research Interest")
+    # Kept under ~165 characters, which is about where Google stops showing a
+    # description, and deliberately free of apostrophes: e() escapes them to
+    # &#x27; inside the attribute, which is valid but reads badly in the source
+    # next to every other description on the site.
+    desc = (f"Search {count} clinical psychology faculty across {schools} "
+            f"programs by what they research, each interest quoted from their "
+            f"own university page, with accepting-students status.")
+    og_desc = (f"Search {count} clinical psychology faculty by what they "
+               f"research, quoted from their own university page.")
+
+    text = re.sub(r"(<title>).*?(</title>)",
+                  lambda m: m.group(1) + e(title) + m.group(2),
+                  text, count=1, flags=re.S)
+    text = re.sub(r'(<meta name="description" content=")[^"]*(")',
+                  lambda m: m.group(1) + e(desc) + m.group(2), text, count=1)
+    text = re.sub(r'(<meta property="og:title" content=")[^"]*(")',
+                  lambda m: m.group(1) + e(title) + m.group(2), text, count=1)
+    text = re.sub(r'(<meta property="og:description" content=")[^"]*(")',
+                  lambda m: m.group(1) + e(og_desc) + m.group(2), text, count=1)
+
     open(PAGE, "w", encoding="utf-8").write(text)
     return {"professors": len(professors), "schools": schools, "linked": linked}
 
