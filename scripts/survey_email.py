@@ -49,6 +49,8 @@ import json
 import os
 import sys
 import time
+import urllib.error
+import urllib.request
 from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -304,6 +306,45 @@ def read_contacts():
         return list(csv.DictReader(f))
 
 
+def notify_secret():
+    """NOTIFY_SECRET, which authenticates the test-send relay on the app."""
+    from_env = os.environ.get("NOTIFY_SECRET")
+    if from_env:
+        return from_env
+    path = os.path.join(SITE, ".env")
+    if os.path.exists(path):
+        for line in open(path, encoding="utf-8"):
+            k, _, v = line.partition("=")
+            if k.strip() == "NOTIFY_SECRET":
+                return v.strip().strip('"').strip("'")
+    return None
+
+
+def send_test(to, subj, body_html, body_text):
+    """Post one built draft to the app, which holds the Resend key.
+
+    The message is composed here and only posted there, so there is exactly
+    one copy of the survey wording -- see the comment in the route. The links
+    inside are real: clicking one records against whichever program was used
+    to build the sample, which is why the caller says which that was."""
+    key = notify_secret()
+    if not key:
+        raise SystemExit("NOTIFY_SECRET is not set, in the environment or "
+                         "Website/.env. Cannot reach the send relay.")
+    payload = json.dumps({"to": to, "subject": subj,
+                          "html": body_html, "text": body_text}).encode("utf-8")
+    req = urllib.request.Request(
+        APP + "/api/survey/test", data=payload, method="POST",
+        headers={"Content-Type": "application/json",
+                 "Authorization": "Bearer " + key})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as err:
+        raise SystemExit(f"{APP}/api/survey/test returned {err.code}: "
+                         f"{err.read().decode('utf-8', 'replace')[:300]}")
+
+
 def stamp_drafted(ids, today):
     """Write today's date into the "drafted" column for the rows just drafted.
 
@@ -355,6 +396,10 @@ def main():
     ap.add_argument("--redraft", action="store_true",
                     help="include rows already drafted (they are skipped by "
                          "default, so --limit walks forward each day)")
+    ap.add_argument("--test-email", metavar="ADDRESS",
+                    help="mail one sample draft to this address and stop: no "
+                         "row is marked drafted, the spreadsheet is untouched, "
+                         "and the links in it are real and clickable")
     args = ap.parse_args()
 
     data = json.load(open(os.path.join(SITE, "data", "programs.json"),
@@ -372,6 +417,26 @@ def main():
         raise SystemExit(
             "SURVEY_SECRET is not set, in the environment or Website/.env.\n"
             "Refusing to write links that will not verify.")
+
+    # A test needs no contacts file and marks nothing. It exists so the email
+    # can be read in a real inbox while it is still incapable of reaching a
+    # program director, so it returns before anything is read or written.
+    if args.test_email:
+        p = sorted((x for x in programs.values()
+                    if x["status"] == (args.status or "pending")),
+                   key=lambda x: x["school"].lower())[0]
+        answer_links = links(key, p, cycle, "Dr Spaulding", args.test_email)
+        result = send_test(args.test_email, subject(cycle),
+                           as_html(p, cycle, "Dr Spaulding", answer_links),
+                           as_text(p, cycle, "Dr Spaulding", answer_links))
+        print(f"Sent to {result.get('to')} from {result.get('from')}")
+        print(f"Sample built from: {p['school']} — {p['program']} "
+              f"({p['status']})")
+        print("\nThe three links work. Clicking one records a real answer "
+              f"against\n{p['id']}, attributed to {args.test_email}. Tell me "
+              "and I will delete it.")
+        print("\nNothing was marked drafted and the spreadsheet is untouched.")
+        return 0
 
     rows = read_contacts()
     if rows is None:
