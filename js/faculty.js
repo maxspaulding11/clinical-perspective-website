@@ -75,6 +75,54 @@
       '</ul></div>';
   }
 
+  // One place that knows what a star looks like in each state, used both when
+  // somebody clicks one and when the saved list arrives from the account API.
+  function paintStar(btn, saved) {
+    const prof = btn.hasAttribute('data-star-prof');
+    btn.classList.toggle('is-saved', saved);
+    btn.setAttribute('aria-pressed', String(saved));
+    btn.setAttribute('aria-label', saved ? 'Remove from my list'
+      : (prof ? 'Save professor to my list' : 'Save to my list'));
+    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+    btn.textContent = saved ? '★' : '☆';
+  }
+
+  // Correct the stars and bells on the cards that are already on screen,
+  // without rebuilding them.
+  //
+  // This page ships 257 cards pre-rendered, with every star un-starred and
+  // every bell off, because the HTML is one document served to everybody --
+  // it cannot know who is asking. The saved list arrives later, from a fetch
+  // to another origin. Re-rendering the whole list at that point tore down and
+  // rebuilt 257 cards a long way after first paint, which is where this page's
+  // layout shift came from: Cloudflare measured CLS 0.708 on #fac-list, seven
+  // times the threshold for "good", on the page carrying most of the site's
+  // search traffic.
+  //
+  // Nothing about that sync changes which programs match or what a card says.
+  // It changes the state of two buttons, so only those are touched.
+  //
+  // The one case that genuinely needs new markup: somebody watching a program
+  // whose list is already posted. The server omits that bell (it cannot know),
+  // so it has to be created, and for that rare card a rebuild is still right.
+  function repaintSaved() {
+    if (!window.TCPSaved) return;
+    let missingBell = false;
+    document.querySelectorAll('#fac-list .fac-card').forEach(card => {
+      const id = card.id.replace(/^program-/, '');
+      const school = card.querySelector('[data-star-school]');
+      if (school) paintStar(school, window.TCPSaved.isSchoolSaved(id));
+      card.querySelectorAll('[data-star-prof]').forEach(b => {
+        paintStar(b, window.TCPSaved.isProfSaved(b.dataset.starProf));
+      });
+      const bell = card.querySelector('[data-watch-school]');
+      const on = window.TCPSaved.isWatching(id);
+      if (bell) window.TCPSaved.paintWatchButton(bell, on);
+      else if (on) missingBell = true;
+    });
+    if (missingBell) render(true);
+  }
+
   function starBtn(p) {
     const saved = window.TCPSaved && window.TCPSaved.isSchoolSaved(p.id);
     return '<button type="button" class="star-btn' + (saved ? ' is-saved' : '') + '" ' +
@@ -151,7 +199,10 @@
     '</li>';
   }
 
-  function render() {
+  // True until this script has replaced the server's list for the first time.
+  let serverList = true;
+
+  function render(force) {
     const list = $('#fac-list');
     const shown = DATA.programs.filter(matches)
       .sort((a, b) => a.school.localeCompare(b.school));
@@ -159,6 +210,19 @@
     $('#fac-showing').textContent = shown.length
       ? 'Showing ' + shown.length + ' of ' + DATA.programs.length + ' programs checked so far'
       : '';
+
+    // On the first pass there is no filter or search yet, so this would
+    // replace the pre-rendered list with an identical one -- paying a full
+    // teardown and rebuild of 257 cards, after first paint, for no visible
+    // change. Keep the server's markup and just correct the buttons on it.
+    // Any later render (a filter, a search) falls through and rebuilds.
+    if (serverList && !force && shown.length === DATA.programs.length &&
+        list.querySelectorAll('.fac-card').length === shown.length) {
+      serverList = false;
+      repaintSaved();
+      return;
+    }
+    serverList = false;
 
     list.innerHTML = shown.length
       ? shown.map(card).join('')
@@ -176,17 +240,25 @@
       posted.length + '</strong> programs · last updated ' + esc(data.updated || '');
 
     // Same rule as scripts/render_tracker.py, deliberately: a posting counts
-    // as news for three weeks and then drops out on its own. If this and the
-    // pre-rendered HTML disagreed, the banner would change under the reader a
-    // moment after the page loaded.
+    // as news for three weeks and then drops out on its own.
+    //
+    // The cutoff comes from the build, not from this reader's clock. Computing
+    // it here meant the two disagreed as soon as the deployed HTML was a day
+    // old -- and disagreeing means hiding a banner the server had shown, which
+    // drops the 257-card list below it by the banner's height, on every visit,
+    // after first paint. Reading the server's date instead makes that
+    // impossible: a stale build now produces a stale banner rather than a
+    // moving page. Only fall back to the local clock if the attribute is
+    // missing, i.e. the HTML predates this change.
+    const banner = $('#fac-new-banner');
     const NEWLY_WINDOW_DAYS = 21;
-    const cutoff = new Date(Date.now() - NEWLY_WINDOW_DAYS * 86400000)
-      .toISOString().slice(0, 10);
+    const cutoff = (banner && banner.dataset.cutoff) ||
+      new Date(Date.now() - NEWLY_WINDOW_DAYS * 86400000)
+        .toISOString().slice(0, 10);
     const newlyPosted = data.programs
       .filter(p => p.newlyPostedOn && p.newlyPostedOn >= cutoff)
       .sort((a, b) => a.school.localeCompare(b.school));
 
-    const banner = $('#fac-new-banner');
     if (newlyPosted.length) {
       const since = newlyPosted
         .map(p => p.newlyPostedOn)
@@ -250,25 +322,17 @@
   $('#fac-list').addEventListener('click', e => {
     const schoolBtn = e.target.closest('[data-star-school]');
     if (schoolBtn && window.TCPSaved) {
-      const saved = window.TCPSaved.toggleSchool(schoolBtn.dataset.starSchool);
-      schoolBtn.classList.toggle('is-saved', saved);
-      schoolBtn.setAttribute('aria-pressed', String(saved));
-      schoolBtn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
-      schoolBtn.title = saved ? 'Saved — click to remove' : 'Save to my list';
-      schoolBtn.textContent = saved ? '★' : '☆';
+      paintStar(schoolBtn, window.TCPSaved.toggleSchool(schoolBtn.dataset.starSchool));
       return;
     }
     if (window.TCPSaved && window.TCPSaved.handleWatchClick(e.target)) return;
     const profBtn = e.target.closest('[data-star-prof]');
     if (profBtn && window.TCPSaved) {
-      const saved = window.TCPSaved.toggleProf(profBtn.dataset.starProf);
-      profBtn.classList.toggle('is-saved', saved);
-      profBtn.setAttribute('aria-pressed', String(saved));
-      profBtn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save professor to my list');
-      profBtn.title = saved ? 'Saved — click to remove' : 'Save to my list';
-      profBtn.textContent = saved ? '★' : '☆';
+      paintStar(profBtn, window.TCPSaved.toggleProf(profBtn.dataset.starProf));
     }
   });
 
-  document.addEventListener('tcp-saved-synced', render);
+  // Repaint, do not re-render: this fires after a cross-origin fetch, well
+  // past first paint, and rebuilding 257 cards there was the layout shift.
+  document.addEventListener('tcp-saved-synced', repaintSaved);
 })();

@@ -105,6 +105,31 @@
     return p._hay.indexOf(query) !== -1;
   }
 
+  // Shared by the click handler and by the saved-list sync, so the two cannot
+  // drift apart on what a saved star looks like.
+  function paintStar(btn, saved) {
+    btn.classList.toggle('is-saved', saved);
+    btn.setAttribute('aria-pressed', String(saved));
+    btn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
+    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
+    btn.textContent = saved ? '★' : '☆';
+  }
+
+  // Correct the stars already on screen instead of rebuilding the list.
+  //
+  // Same defect the tracker had: this page ships its cards pre-rendered with
+  // every star empty, because the HTML is one document served to everybody,
+  // and the real saved list arrives later from a fetch to another origin.
+  // Re-rendering on arrival tore down and rebuilt every card well after first
+  // paint -- and there are 2,647 names here, so it is the larger of the two.
+  // Nothing in that sync changes which professors match or what a card says.
+  function repaintSaved() {
+    if (!window.TCPSaved) return;
+    document.querySelectorAll('#prof-list [data-star-prof]').forEach(b => {
+      paintStar(b, window.TCPSaved.isProfSaved(b.dataset.starProf));
+    });
+  }
+
   function starBtn(p) {
     const saved = window.TCPSaved && window.TCPSaved.isProfSaved(p.id);
     return '<button type="button" class="star-btn' + (saved ? ' is-saved' : '') + '" ' +
@@ -154,6 +179,19 @@
     '</li>';
   }
 
+  // Note for anyone tempted to skip the first render here the way faculty.js
+  // does: you cannot. The tracker's pre-rendered cards are complete, so
+  // keeping the server's markup loses nothing. These are not -- to keep this
+  // page's HTML down, scripts/render_professors.py deliberately ships each
+  // card without its research interests, star or accepting badge, and this
+  // script is what adds them. Skipping the rebuild would leave the page
+  // permanently missing all three.
+  //
+  // Which also means the first rebuild here is a real content change, not a
+  // redundant one, and it is inherently the larger part of this page's layout
+  // shift. Fixing that properly means either shipping the interests in the
+  // HTML (which the 227KB-to-9KB work deliberately stopped doing) or reserving
+  // the height the cards will grow to -- a separate decision, not a bug.
   function render() {
     const list = $('#prof-list');
     const shown = DATA.professors.filter(matches);
@@ -229,13 +267,10 @@
   $('#prof-list').addEventListener('click', e => {
     const btn = e.target.closest('[data-star-prof]');
     if (!btn || !window.TCPSaved) return;
-    const saved = window.TCPSaved.toggleProf(btn.dataset.starProf);
-    btn.classList.toggle('is-saved', saved);
-    btn.setAttribute('aria-pressed', String(saved));
-    btn.setAttribute('aria-label', saved ? 'Remove from my list' : 'Save to my list');
-    btn.title = saved ? 'Saved — click to remove' : 'Save to my list';
-    btn.textContent = saved ? '★' : '☆';
+    paintStar(btn, window.TCPSaved.toggleProf(btn.dataset.starProf));
   });
 
-  document.addEventListener('tcp-saved-synced', render);
+  // Repaint, do not re-render: this fires after a cross-origin fetch, long
+  // past first paint, and rebuilding 2,647 cards there shifted the page.
+  document.addEventListener('tcp-saved-synced', repaintSaved);
 })();

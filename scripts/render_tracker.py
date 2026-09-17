@@ -234,19 +234,31 @@ def day_label(iso):
     return date(y, m, d).strftime("%B") + f" {d}"
 
 
-def set_banner_hidden(text, hidden):
-    """Toggle the banner's hidden attribute, in both directions.
+def set_banner_hidden(text, hidden, cutoff):
+    """Toggle the banner's hidden attribute, in both directions, and record the
+    cutoff date this build used.
 
     The previous version only ever stripped `hidden`, so once anything had been
     newly posted the banner could not turn itself off again: the attribute was
     gone from the file and there was nothing left to strip. Normalising first
-    and re-adding makes it idempotent whichever way it needs to go."""
-    text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")\s+hidden(\s*>)',
+    and re-adding makes it idempotent whichever way it needs to go.
+
+    The cutoff is published into the markup because js/faculty.js re-decides
+    whether this banner should be shown, and it used to derive the cutoff from
+    the reader's clock while this file derived it from the build's. Those agree
+    right up until the build goes a day stale, and then they disagree -- the
+    script hides a banner the server had shown, and everything below it jumps
+    up a moment after the page loads. The banner sits above a 257-card list, so
+    that is a whole-page shift, which is the shape of the CLS attributed to
+    <body> in the field data. Handing the browser this date means the two can
+    still both be out of date, but they can no longer be out of date
+    differently."""
+    text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")'
+                  r'(?:\s+data-cutoff="[^"]*")?(?:\s+hidden)?(\s*>)',
                   r"\1\2", text, count=1)
-    if hidden:
-        text = re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")(\s*>)',
-                      r"\1 hidden\2", text, count=1)
-    return text
+    attrs = f' data-cutoff="{e(cutoff)}"' + (" hidden" if hidden else "")
+    return re.sub(r'(<div class="fac-new-banner" id="fac-new-banner")(\s*>)',
+                  lambda m: m.group(1) + attrs + m.group(2), text, count=1)
 
 
 def render():
@@ -280,7 +292,7 @@ def render():
                     key=lambda pair: pair[1].lower())
     new = [school for _, school in recent]
 
-    text = set_banner_hidden(text, not recent)
+    text = set_banner_hidden(text, not recent, cutoff)
     if recent:
         since = day_label(min(d for d, _ in recent))
         text = re.sub(r'(<strong id="fac-new-label">).*?(</strong>)',
