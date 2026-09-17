@@ -200,9 +200,44 @@
       ? 'Showing ' + shown.length + ' of ' + DATA.professors.length + ' professors'
       : '';
 
-    list.innerHTML = shown.length
-      ? shown.map(card).join('')
-      : '<li class="fac-empty">Nothing matches that search.</li>';
+    renderList(list, shown);
+  }
+
+  // How many cards go in on the first pass, and how many per batch after.
+  // FIRST_CHUNK only has to cover a tall screen; the rest can arrive after.
+  const FIRST_CHUNK = 150;
+  const CHUNK = 250;
+  let appendTimer = 0;
+
+  // Build the visible part now and the rest in batches.
+  //
+  // Debouncing alone does not save this page: one render of all 2,647 cards
+  // measured 890-1,010ms here, so even a single keystroke after the pause
+  // froze the tab for about a second. The first 150 cards are already far more
+  // than a screenful, so they go in immediately and the remainder is appended
+  // in batches between frames.
+  //
+  // Appending only ever adds below what is already there, so nothing visible
+  // moves and this does not trade the INP problem for a CLS one. Any new query
+  // cancels a batch run still in flight, otherwise the old results would keep
+  // arriving underneath the new ones.
+  function renderList(list, shown) {
+    clearTimeout(appendTimer);
+    if (!shown.length) {
+      list.innerHTML = '<li class="fac-empty">Nothing matches that search.</li>';
+      return;
+    }
+    list.innerHTML = shown.slice(0, FIRST_CHUNK).map(card).join('');
+    let i = FIRST_CHUNK;
+    (function appendMore() {
+      if (i >= shown.length) return;
+      appendTimer = setTimeout(() => {
+        list.insertAdjacentHTML('beforeend',
+          shown.slice(i, i + CHUNK).map(card).join(''));
+        i += CHUNK;
+        appendMore();
+      }, 0);
+    })();
   }
 
   function boot(data, programs) {
@@ -259,9 +294,14 @@
         '<li class="fac-empty">Could not load the professor list. Please refresh.</li>';
     });
 
+  // Same reasoning as the tracker: the handler records the query and returns,
+  // so the typed character paints without waiting for 2,647 cards.
+  let filterTimer = 0;
+
   $('#prof-search').addEventListener('input', e => {
     query = e.target.value.trim().toLowerCase();
-    render();
+    clearTimeout(filterTimer);
+    filterTimer = setTimeout(render, 160);
   });
 
   $('#prof-list').addEventListener('click', e => {

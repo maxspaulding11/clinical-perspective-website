@@ -298,9 +298,24 @@
         '<li class="fac-empty">Could not load the program list. Please refresh.</li>';
     });
 
+  // Filtering runs on a timer rather than on the keystroke.
+  //
+  // Rebuilding the matching cards costs ~90ms on a desktop here and the field
+  // data put this box at 440ms INP, which is what that becomes on a mid-range
+  // phone. Doing it inside the input handler meant every character paid it,
+  // and the character itself could not paint until it finished -- so typing
+  // "trauma" froze the page six times over. Now the handler only records what
+  // was typed, the keystroke paints immediately, and one render runs once the
+  // typing pauses.
+  let filterTimer = 0;
+  function scheduleRender() {
+    clearTimeout(filterTimer);
+    filterTimer = setTimeout(render, 160);
+  }
+
   $('#fac-search').addEventListener('input', e => {
     query = e.target.value.trim().toLowerCase();
-    render();
+    scheduleRender();
   });
   document.querySelectorAll('[data-accred]').forEach(b => {
     b.addEventListener('click', () => {
