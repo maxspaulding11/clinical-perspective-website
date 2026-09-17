@@ -30,8 +30,10 @@ must never be moved to closed because its director ignored an email.
 Needs NOTIFY_SECRET, the same one the notifier uses.
 """
 import argparse
+import collections
 import csv
 import json
+import re
 import os
 import sys
 import urllib.error
@@ -124,6 +126,108 @@ def verdict(answer, program):
     return "new", f"entry says {status}"
 
 
+def flatten_faculty(faculty):
+    """One cell for a spreadsheet: "Name: yes; Name: no"."""
+    if not faculty:
+        return ""
+    return "; ".join(
+        f'{(i.get("name") or "?")}: {i.get("answer")}'
+        for i in faculty if isinstance(i, dict))
+
+
+def name_key(name):
+    """First initial plus surname, lowercased: "a|lau".
+
+    The two datasets disagree about 84 of 363 names. The tracker's accepting
+    lists and the faculty roster are read off different pages by different
+    scripts, so the same person is "Anna Lau" in one and "Anna S. Lau" in the
+    other, "Greg Fabiano" and "Gregory Fabiano", "Katie Karlsgodt" and
+    "Katherine H. Karlsgodt". Comparing the raw strings marked a quarter of
+    answers as agreement when they were the exact opposite -- a director
+    saying "no" about somebody the entry lists, reported as "nothing to do".
+    That is the one mistake this section exists to prevent.
+
+    This gets 330 of 363. It does not attempt nicknames beyond the initial,
+    and where a key is ambiguous the caller must say so rather than guess."""
+    parts = [w for w in re.sub(r"[.,]", " ", name).split() if w]
+    if not parts:
+        return ""
+    if len(parts) == 1:
+        return parts[0].lower()
+    return f"{parts[0][0].lower()}|{parts[-1].lower()}"
+
+
+MARKS = "+-~=?"
+
+
+def faculty_lines(faculty, program):
+    """The per-professor answers, marked up against what the entry claims.
+
+    The marks are the whole value of this section. A director saying yes about
+    somebody the tracker already lists needs no work; a director saying no
+    about somebody the tracker lists as accepting is a name that should come
+    off a page today, and it must not be buried in a list of twelve.
+
+        +   they say yes, the entry does not list them as accepting
+        -   they say no, the entry does list them as accepting
+        ~   a name we could not line up with the entry's list -- check by hand
+        =   the entry already agrees
+        ?   not sure, so nothing to do
+    """
+    if not faculty:
+        return []
+
+    listed = collections.Counter()
+    surnames = collections.Counter()
+    for n in (program.get("accepting") or []):
+        k = name_key(n)
+        listed[k] += 1
+        surnames[k.split("|")[-1]] += 1
+
+    out, notable, unsure = [], 0, 0
+    for item in faculty:
+        if not isinstance(item, dict):
+            continue
+        name = (item.get("name") or "").strip()
+        ans = item.get("answer")
+        k = name_key(name)
+
+        if listed[k] == 1:
+            on_list = True
+        elif listed[k] > 1:
+            on_list = None          # two people share the key
+        elif surnames[k.split("|")[-1]]:
+            on_list = None          # right surname, different initial
+        else:
+            on_list = False
+
+        if on_list is None:
+            mark = "~"
+        elif ans == "yes":
+            mark = "=" if on_list else "+"
+        elif ans == "no":
+            mark = "-" if on_list else "="
+        else:
+            mark = "?"
+
+        if mark in "+-":
+            notable += 1
+        if mark == "~":
+            unsure += 1
+        out.append((mark, name, ans))
+
+    # Changes first, then the ones needing a human, then agreements, then the
+    # shrugs -- otherwise the one name that needs action sits below eleven
+    # that do not.
+    out.sort(key=lambda t: (MARKS.index(t[0]), t[1].lower()))
+    head = f"faculty: {len(out)} answered, {notable} differ from the entry"
+    if unsure:
+        head += f", {unsure} to check by hand"
+    lines = [head]
+    lines += [f"  {m} {n} ({ANSWER_WORDS.get(a, a)})" for m, n, a in out]
+    return lines
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cycle", help="default: the cycle in programs.json")
@@ -168,6 +272,8 @@ def main():
             print(f"      {r.get('respondent') or '?'} <{r.get('email') or '?'}>"
                   f"  {(r.get('createdAt') or '')[:10]}")
             print(f"      {p.get('url', '')}")
+            for line in faculty_lines(r.get("faculty"), p):
+                print(f"      {line}")
         print()
 
     if orphans:
@@ -179,14 +285,16 @@ def main():
             w = csv.writer(f)
             w.writerow(["pile", "program_id", "school", "program",
                         "tracker_status", "they_say", "why", "respondent",
-                        "email", "answered_on", "department_url"])
+                        "email", "answered_on", "department_url",
+                        "faculty_answers"])
             for pile in ("disagrees", "confirms", "new"):
                 for p, r, why in piles[pile]:
                     w.writerow([pile, p["id"], p["school"], p["program"],
                                 p["status"], r.get("answer"), why,
                                 r.get("respondent"), r.get("email"),
                                 (r.get("createdAt") or "")[:10],
-                                p.get("url", "")])
+                                p.get("url", ""),
+                                flatten_faculty(r.get("faculty"))])
         print(f"Spreadsheet: {args.csv}")
 
     if piles["disagrees"]:

@@ -188,7 +188,11 @@ def body_lines(p, cycle, name, answer_links):
         None,  # the answer links get placed here
         ("Each one opens a page that shows what it is about to record and asks "
          "you to confirm, so a mis-click costs nothing. There is no account "
-         "and no form."),
+         "and nothing to fill in."),
+        ("If you answer yes, that page also lists the faculty we have for your "
+         "program, in case you want to mark which of them are taking students. "
+         "That part is entirely optional -- leaving it blank records nothing "
+         "about anyone, and your answer above is saved either way."),
         context(p, cycle),
         ("A person reads every answer before anything changes on the site, so "
          "nothing you click appears anywhere automatically. If your entry "
