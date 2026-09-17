@@ -101,6 +101,24 @@ def describe(c):
             f'accepting (was "{c["from"]}")')
 
 
+def report_email(e, label):
+    """Say what became of the email half of the job.
+
+    Worth printing even when nothing went wrong. The in-app notice and the
+    email are two separate outcomes -- the server writes the notices first
+    and reports a bounce rather than throwing -- so a run that wrote two
+    notices but failed to mail one of them would otherwise be indis-
+    tinguishable from a clean one.
+
+    Addresses only appear here for a failure, which is the one case where
+    you need to know which one to go and fix."""
+    print(f"{label}: {e.get('sent', 0)} sent, {e.get('skipped', 0)} skipped.")
+    if e.get("reason"):
+        print(f"  {e['reason']}")
+    for f in e.get("failures") or []:
+        print(f"  failed: {f.get('to')} - {f.get('error')}")
+
+
 def secret():
     """The environment first, then a .env beside the repo root.
 
@@ -202,13 +220,7 @@ def main():
 
     if args.test_email:
         r = post(changes, dry_run=False, test_email=args.test_email)
-        e = r.get("email") or {}
-        print(f"\nTest: {e.get('sent', 0)} sent to {args.test_email}, "
-              f"{e.get('skipped', 0)} skipped.")
-        if e.get("reason"):
-            print(f"  {e['reason']}")
-        for f in e.get("failures") or []:
-            print(f"  failed: {f.get('to')} - {f.get('error')}")
+        report_email(r.get("email") or {}, f"\nTest to {args.test_email}")
         print("Nothing was written and the state is untouched.")
         return 0
 
@@ -222,6 +234,7 @@ def main():
         return 0
 
     print(f"Wrote {result['wrote']} notification(s).")
+    report_email(result.get("email") or {}, "Email")
     json.dump({"recorded": date.today().isoformat(), "programs": current},
               open(STATE, "w", encoding="utf-8"), indent=1)
     print("State updated.")
