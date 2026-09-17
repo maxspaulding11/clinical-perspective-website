@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-14",
+ "updated": "2026-09-17",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -3544,14 +3544,26 @@
    "state": "OK",
    "degree": "PhD",
    "url": "https://cas.okstate.edu/psychology/about_us/faculty_and_staff.html",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Dr. Ciciolla IS accepting students for 2026 admission / Dr. Chaney is NOT accepting students for 2026 admission",
-   "accepting": [],
+   "checked": "2026-09-17",
+   "sourceQuote": "Dr. Ciciolla IS accepting students for 2027 admission",
+   "accepting": [
+    "Lucia Ciciolla",
+    "Ashley Cole",
+    "Christina Duncan",
+    "DeMond Grant",
+    "Stephanie Mullins-Sweatt",
+    "LaRicka Wingate"
+   ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "Deadline: December 1. The department's Faculty and Staff page tags each clinical faculty member individually as accepting or not accepting, but the label says '2026 admission' (not Fall 2027 or 2027 admission), which as of today (Aug 8, 2026) most plausibly refers to the already-completed Fall 2026 entering cohort, not the cycle now open for Fall 2027. Per the ambiguity rule, not reporting as posted for Fall 2027. Observed 2026 tags (for reference only, not to be relied on for 2027): accepting - Ciciolla, Cole, Duncan, Grant, Sweatt, Wingate; not accepting - Chaney, Kerr, Leffingwell, Wells. The main /psychology/graduate_studies/clinical_program.html page returned HTTP 403 and did not load.",
+   "notAccepting": [
+    "John Chaney",
+    "Kara Kerr",
+    "Thad Leffingwell",
+    "Tony Wells"
+   ],
+   "note": "Deadline: December 1. This is a department-wide faculty directory that states each person's status individually, so there is no single announcement sentence — the quote is one of those per-person lines verbatim. Only faculty the page labels “Clinical Psychology” are recorded; six Experimental Psychology faculty also read “IS accepting” and are excluded. Devin Barlaan is listed as Clinical but directs the Psychological Services Center and carries no statement.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -3566,7 +3578,8 @@
     "Interview Weekend held in February for invited applicants"
    ],
    "appInfoSourceUrl": "https://cas.okstate.edu/psychology/graduate_studies/clinical_program.html",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-09-17"
   },
   {
    "id": "oregon-health-science-university-phd",
@@ -3703,14 +3716,22 @@
    "state": "PA",
    "degree": "PhD",
    "url": "https://psych.la.psu.edu/graduate/prospective-students/psychology-faculty-accepting-new-graduate-students/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-14",
-   "sourceQuote": "The faculty listed below are currently accepting graduate students for the fall 2026 semester.",
-   "accepting": [],
+   "checked": "2026-09-17",
+   "sourceQuote": "The faculty listed below are currently accepting graduate students for the fall 2027 semester.",
+   "accepting": [
+    "Katie Burkhouse",
+    "Chardée Galán",
+    "Frank Hillary",
+    "Cynthia Huang-Pollock",
+    "Kenneth Levy",
+    "Michelle Newman",
+    "Jose Soto"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1. As of 2026-09-14 the department's accepting-students page states 'The faculty listed below are currently accepting graduate students for the fall 2027 semester' and then lists only the five program areas as links, with no faculty names anywhere — the Clinical (Adult and Child) area page carries no accepting information either. So the program says faculty are accepting for Fall 2027 but publishes no list; left pending rather than inferring names.",
+   "note": "Deadline: December 1. The department publishes one page for all five program areas; the seven names here are the Clinical (Adult and Child) group only. The 12 faculty listed under Cognitive, Developmental, Industrial-Organizational and Social are not clinical faculty and are excluded. Read from the live page on 2026-09-17: the page's own og:description is a stale cache that still reads “Clinical (Adult and Child) No data was found”.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -3724,7 +3745,8 @@
     "TOEFL/IELTS required for int'l applicants"
    ],
    "appInfoSourceUrl": "https://psych.la.psu.edu/graduate/prospective-students/how-to-apply/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-09-17"
   },
   {
    "id": "pepperdine-university-psyd",
@@ -4408,14 +4430,20 @@
    "state": "MA",
    "degree": "PhD",
    "url": "https://www.suffolk.edu/cas/degrees-programs/psychology/graduate/phd-in-clinical-psychology/admission-and-aid",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Faculty Accepting New Students for Fall 2026. Applications for the 2026 cycle of the PhD in Clinical Psychology are due on December 1, 2025.",
-   "accepting": [],
+   "checked": "2026-09-17",
+   "sourceQuote": "Faculty Accepting New Students for Fall 2027",
+   "accepting": [
+    "Wesley Barnhart",
+    "Matthew Jerram",
+    "Maha Mian",
+    "Sarah O'Dor",
+    "Sukanya Ray"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The program's Admission and Aid page explicitly labels its faculty list 'Fall 2026' (Wesley Barnhart, David Langer, Gabrielle Liverant, Maha Mian, Sarah O'Dor) with a Dec 1, 2025 deadline for that cycle. As of this check it has not been updated for the Fall 2027 cycle.",
+   "note": "Applications due December 1, 2026; interview weekend February 26-27, 2027. The list sits inside a collapsed accordion on the admissions page, so it is present in the markup but not in the page's rendered text.",
    "applicationDeadline": "December 1, 2026",
    "deadlineCycle": "2027 cycle",
    "greRequired": "optional",
@@ -4430,7 +4458,8 @@
     "TOEFL/IELTS/PTE required for international applicants"
    ],
    "appInfoSourceUrl": "https://www.suffolk.edu/cas/degrees-programs/psychology/graduate/phd-in-clinical-psychology/admission-and-aid",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-09-17"
   },
   {
    "id": "syracuse-university-phd",

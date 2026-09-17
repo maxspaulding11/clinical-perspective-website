@@ -1086,5 +1086,21 @@
     "doi": "10.1002/npr2.70163",
     "sourceUrl": "https://doi.org/10.1002/npr2.70163",
     "instagram": ""
+  },
+  {
+    "slug": "germany-prescribes-mental-health-apps-the-evidence-behind",
+    "index": 69,
+    "title": "Germany prescribes mental-health apps. The evidence behind them is rated \"very low.\"",
+    "tag": "Myth Check",
+    "blurb": "A meta-analysis of the eight prescription-eligible depression and anxiety apps in Germany found a moderate benefit for depression (SMD = -0.49) but graded that evidence \"very low\" quality, and for generalized anxiety the pooled result came from just two trials and was not statistically significant.",
+    "date": "2026-09-17",
+    "summary": "Since 2020, German doctors have been able to prescribe digital health applications, known as DiGAs, the way they prescribe drugs, with statutory insurance covering the cost. Researchers led by A. Schmitz asked what the evidence actually shows. They searched the official DiGA directory, found eight permanently listed apps targeting depression or generalized anxiety disorder, and pooled the 19 randomised trials behind them. For depression, apps beat control conditions by a standardised mean difference of -0.49 (95% CI -0.65 to -0.32) across 3,869 participants, a moderate effect that held up at follow-up (-0.35) and is comparable in size to what face-to-face therapy trials report. The authors are careful to say that comparability is not equivalence, because no trial has ever directly compared the two. For generalized anxiety the pooled estimate was -2.31, but its confidence interval ran from -5.32 to 0.70, meaning the data cannot rule out harm, and it rests on two trials and 295 people. The team graded their own evidence using GRADE, a standard system for rating confidence in a result, and the verdict is the story: \"very low\" for depression at the end of treatment and \"very low\" for anxiety, downgraded for missing blinding, high dropout and inconsistency between studies. Three further details deserve weight. Twelve of the nineteen trials evaluated a single app, Deprexis, so the pooled figure is not evenly representative of the eight. About 20% of participants were also in psychotherapy and about 30% were taking psychiatric medication, so these are not effects of an app alone. And the average participant was 38.7 years old with no data at all on people over 70, while non-German speakers and those with less education were underrepresented -- the groups for whom a prescription app is often argued to matter most.",
+    "journal": "Scientific Reports",
+    "authors": "A. Schmitz, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42728340",
+    "doi": "10.1038/s41598-026-68875-y",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-68875-y",
+    "instagram": ""
   }
 ]
