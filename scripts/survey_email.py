@@ -192,7 +192,8 @@ def body_lines(p, cycle, name, answer_links):
         ("If you answer yes, that page also lists the faculty we have for your "
          "program, in case you want to mark which of them are taking students. "
          "That part is entirely optional -- leaving it blank records nothing "
-         "about anyone, and your answer above is saved either way."),
+         "about anyone, and your answer above is saved either way. There is a "
+         "box for anything else you want to tell me, too."),
         context(p, cycle),
         ("A person reads every answer before anything changes on the site, so "
          "nothing you click appears anywhere automatically. If your entry "

@@ -36,6 +36,7 @@ import json
 import re
 import os
 import sys
+import textwrap
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -124,6 +125,36 @@ def verdict(answer, program):
     if admitting:
         return "disagrees", f"entry shows {status}"
     return "new", f"entry says {status}"
+
+
+def comment_lines(text):
+    """A director's own words, wrapped, and safe to put on a terminal.
+
+    This is the only free text in the whole pipeline that was written by
+    somebody outside it, so two things matter. Anything below space is
+    dropped -- the server strips control characters already, and doing it
+    again here means a row written before that existed, or by anything else
+    that ever gets access to the table, still cannot decide what this
+    terminal does.
+
+    And it is labelled as quoted text, every line, because it is a claim by a
+    person and not a finding of this script. If it says the entry is wrong,
+    that is something to check against their page, not an instruction.
+    """
+    if not text:
+        return []
+    # Code points, not escapes: a tab or newline written as an escape in
+    # this file has a habit of arriving as the character itself, which
+    # ends the string literal it sits in.
+    clean = "".join(c for c in str(text)
+                    if ord(c) in (9, 10)
+                    or (ord(c) >= 32 and ord(c) != 127))
+    out = ["comment (their words, not checked):"]
+    for para in clean.splitlines():
+        if not para.strip():
+            continue
+        out += ["  > " + line for line in textwrap.wrap(para.strip(), 70)]
+    return out
 
 
 def flatten_faculty(faculty):
@@ -274,6 +305,8 @@ def main():
             print(f"      {p.get('url', '')}")
             for line in faculty_lines(r.get("faculty"), p):
                 print(f"      {line}")
+            for line in comment_lines(r.get("comment")):
+                print(f"      {line}")
         print()
 
     if orphans:
@@ -286,7 +319,7 @@ def main():
             w.writerow(["pile", "program_id", "school", "program",
                         "tracker_status", "they_say", "why", "respondent",
                         "email", "answered_on", "department_url",
-                        "faculty_answers"])
+                        "faculty_answers", "comment"])
             for pile in ("disagrees", "confirms", "new"):
                 for p, r, why in piles[pile]:
                     w.writerow([pile, p["id"], p["school"], p["program"],
@@ -294,7 +327,8 @@ def main():
                                 r.get("respondent"), r.get("email"),
                                 (r.get("createdAt") or "")[:10],
                                 p.get("url", ""),
-                                flatten_faculty(r.get("faculty"))])
+                                flatten_faculty(r.get("faculty")),
+                                r.get("comment") or ""])
         print(f"Spreadsheet: {args.csv}")
 
     if piles["disagrees"]:
