@@ -287,9 +287,20 @@ def render():
 
     # Only postings still inside the window count as news.
     cutoff = (date.today() - timedelta(days=NEWLY_WINDOW_DAYS)).isoformat()
-    recent = sorted(((p["newlyPostedOn"], p["school"]) for p in programs
-                     if p.get("newlyPostedOn") and p["newlyPostedOn"] >= cutoff),
-                    key=lambda pair: pair[1].lower())
+    # Newest first, then alphabetical inside a date. Sorting the whole list
+    # alphabetically buried the day's postings among ones three weeks old:
+    # three programs posted on the 17th and sat between Arizona State and
+    # Purdue from the 8th, so nothing on the page said anything had happened
+    # today. js/faculty.js sorts identically -- if the two disagreed the list
+    # would visibly reorder a moment after the page loaded.
+    # Two stable passes: alphabetical, then newest date first. Sorting by name
+    # and date together needs one field reversed and the other not, which a
+    # single key cannot express for strings; sorting twice can, because Python's
+    # sort is stable and the second pass preserves the first inside each date.
+    recent = [(p["newlyPostedOn"], p["school"]) for p in programs
+              if p.get("newlyPostedOn") and p["newlyPostedOn"] >= cutoff]
+    recent.sort(key=lambda pair: pair[1].lower())
+    recent.sort(key=lambda pair: pair[0], reverse=True)
     new = [school for _, school in recent]
 
     text = set_banner_hidden(text, not recent, cutoff)

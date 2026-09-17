@@ -257,7 +257,11 @@
         .toISOString().slice(0, 10);
     const newlyPosted = data.programs
       .filter(p => p.newlyPostedOn && p.newlyPostedOn >= cutoff)
-      .sort((a, b) => a.school.localeCompare(b.school));
+      // Newest first, then alphabetical inside a date — identical to the order
+      // scripts/render_tracker.py writes. If the two disagreed the banner
+      // would visibly reorder a moment after the page loaded.
+      .sort((a, b) => b.newlyPostedOn.localeCompare(a.newlyPostedOn) ||
+                      a.school.localeCompare(b.school));
 
     if (newlyPosted.length) {
       const since = newlyPosted
