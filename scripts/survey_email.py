@@ -2,9 +2,10 @@
 """Draft the accepting-students survey, one email per program, with signed links.
 
     python scripts/survey_email.py --template     make the contacts spreadsheet
-    python scripts/survey_email.py                draft for everyone in it
     python scripts/survey_email.py --limit 20     one day's batch
-    python scripts/survey_email.py --status pending
+    python scripts/survey_email.py --status pending --limit 20
+    python scripts/survey_email.py                everyone not yet drafted
+    python scripts/survey_email.py --redraft --limit 20   do a batch again
 
 Two steps because the addresses do not exist yet and cannot be invented.
 
@@ -15,8 +16,14 @@ program's own page. Nothing here scrapes them -- collecting a list of named
 academics' contact details is a decision a person makes deliberately, the same
 reason scripts/outreach.py leaves [EMAIL] alone.
 
-Step two drafts only for the rows where you have filled both columns, and says
-how many are still blank.
+Step two drafts only for the rows where you have filled the address in, and
+says how many are still blank.
+
+It then writes today's date into that row's "drafted" column and skips it next
+time, so "--limit 20" run daily walks forward through the list instead of
+handing back the same twenty every morning. Nothing here sends anything, so
+"drafted" means drafted; if you draft a batch and do not send it, clear the
+dates or pass --redraft.
 
 Why the email address has to be known before the draft exists: the one-click
 answer is carried by a link signed over the program *and the address it was
@@ -60,6 +67,13 @@ APP = "https://spare.theclinicalperspective.org"
 ASKABLE = ("posted", "pending", "cohort")
 
 ANSWERS = (("yes", "Yes"), ("no", "No"), ("undecided", "Not decided yet"))
+
+# The last column is the one that makes this usable twenty a day for a
+# fortnight. Without it --limit 20 sorts the whole list and hands back the same
+# first twenty every morning, which is worse than useless: it looks like
+# progress. A date in "drafted" takes that row out of the pool.
+COLUMNS = ["program_id", "school", "program", "status", "department_url",
+           "name", "email", "drafted"]
 
 SIGNOFF = """Thank you for your time,
 
@@ -267,11 +281,10 @@ def write_template(programs):
         return 1
     with open(CONTACTS, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["program_id", "school", "program", "status",
-                    "department_url", "name", "email"])
+        w.writerow(COLUMNS)
         for p in programs:
             w.writerow([p["id"], p["school"], p["program"], p["status"],
-                        p.get("url", ""), "", ""])
+                        p.get("url", ""), "", "", ""])
     print(f"Wrote {len(programs)} rows: {CONTACTS}")
     print("\nFill in the last two columns from each program's own page:")
     print("  name   how to address them, e.g. \"Dr Ramirez\" (used as "
@@ -291,6 +304,47 @@ def read_contacts():
         return list(csv.DictReader(f))
 
 
+def stamp_drafted(ids, today):
+    """Write today's date into the "drafted" column for the rows just drafted.
+
+    Every other column is written back exactly as it was read, because this
+    file is a spreadsheet a person is part-way through filling in by hand and
+    losing an afternoon of it would be unforgivable. The column is added if an
+    older template did not have it.
+
+    Excel holds an exclusive lock on an open file, and the likeliest moment to
+    run this is right after editing. So a failure here says what to do and does
+    not pretend the drafts failed -- they are already written."""
+    try:
+        with open(CONTACTS, encoding="utf-8-sig", newline="") as f:
+            reader = csv.DictReader(f)
+            fields = list(reader.fieldnames or COLUMNS)
+            rows = list(reader)
+    except OSError as err:
+        return f"could not re-read the spreadsheet: {err}"
+
+    if "drafted" not in fields:
+        fields.append("drafted")
+    for r in rows:
+        if (r.get("program_id") or "").strip() in ids:
+            r["drafted"] = today
+
+    tmp = CONTACTS + ".tmp"
+    try:
+        with open(tmp, "w", encoding="utf-8-sig", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+            w.writeheader()
+            w.writerows(rows)
+        os.replace(tmp, CONTACTS)
+    except OSError as err:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        return (f"the drafts are written, but the spreadsheet could not be "
+                f"marked: {err}\n  Close it in Excel and run the same command "
+                f"again -- already-drafted rows will simply redraft.")
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--template", action="store_true",
@@ -298,6 +352,9 @@ def main():
     ap.add_argument("--status", choices=ASKABLE, help="only this status")
     ap.add_argument("--limit", type=int,
                     help="stop after this many, for sending in batches")
+    ap.add_argument("--redraft", action="store_true",
+                    help="include rows already drafted (they are skipped by "
+                         "default, so --limit walks forward each day)")
     args = ap.parse_args()
 
     data = json.load(open(os.path.join(SITE, "data", "programs.json"),
@@ -320,7 +377,7 @@ def main():
     if rows is None:
         return 1
 
-    ready, blank, unknown = [], 0, []
+    ready, blank, unknown, done = [], 0, [], 0
     for r in rows:
         pid = (r.get("program_id") or "").strip()
         name = (r.get("name") or "").strip()
@@ -333,6 +390,9 @@ def main():
         if not email:
             blank += 1
             continue
+        if (r.get("drafted") or "").strip() and not args.redraft:
+            done += 1
+            continue
         if args.status and programs[pid]["status"] != args.status:
             continue
         ready.append((programs[pid], name, email))
@@ -342,8 +402,14 @@ def main():
         ready = ready[:args.limit]
 
     if not ready:
-        print(f"Nothing to draft. {blank} row(s) still have no email address.")
-        print(f"Fill some in: {CONTACTS}")
+        print("Nothing to draft.")
+        if done:
+            print(f"  {done} row(s) are already drafted "
+                  f"(--redraft to do them again).")
+        if blank:
+            print(f"  {blank} row(s) still have no email address: {CONTACTS}")
+        if not done and not blank:
+            print(f"  Nothing in the spreadsheet matches: {CONTACTS}")
         return 0
 
     os.makedirs(OUT, exist_ok=True)
@@ -363,10 +429,22 @@ def main():
                     f"{html.escape(subject(cycle))} -->\n"
                     + as_html(p, cycle, name, answer_links) + "\n")
 
+    today = date.today().isoformat()
+    problem = stamp_drafted({p["id"] for p, _, _ in ready}, today)
+
     print(f"Drafted {len(ready)} email(s) into {OUT}")
     print(f"Subject line: {subject(cycle)}")
+    for p, _, email in ready:
+        print(f"  {p['status']}--{p['id']}.html   -> {email}")
+    if problem:
+        print(f"\nWarning: {problem}")
+    else:
+        print(f"\nMarked those {len(ready)} row(s) drafted {today}, so the "
+              f"next run moves on\nto the next batch.")
     if blank:
         print(f"\n{blank} program(s) still have no address in the spreadsheet.")
+    if done:
+        print(f"{done} were drafted on an earlier run and skipped.")
     if unknown:
         print(f"\n{len(unknown)} row(s) name a program that is not askable "
               f"(closed, unverified, or renamed): {', '.join(unknown[:5])}"
