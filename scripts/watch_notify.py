@@ -120,12 +120,16 @@ def secret():
     return None
 
 
-def post(changes, dry_run):
+def post(changes, dry_run, test_email=None):
     key = secret()
     if not key:
         raise SystemExit("NOTIFY_SECRET is not set, in the environment or "
                          "Website/.env. Refusing to send.")
-    body = json.dumps({"changes": changes, "dryRun": dry_run}).encode("utf-8")
+    payload = {"changes": changes, "dryRun": dry_run}
+    if test_email:
+        # The server treats this as "mail one address and write nothing".
+        payload = {"changes": changes, "testEmail": test_email}
+    body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
         ENDPOINT, data=body, method="POST",
         headers={"Content-Type": "application/json",
@@ -146,6 +150,10 @@ def main():
                     help="suppress this program (use for corrections); repeatable")
     ap.add_argument("--seed", action="store_true",
                     help="record the current state as already notified, send nothing")
+    ap.add_argument("--test-email", metavar="ADDRESS",
+                    help="mail one sample notice to this address and stop: no "
+                         "watcher is looked up, nothing is written, the state "
+                         "is untouched")
     args = ap.parse_args()
 
     programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]
@@ -190,6 +198,18 @@ def main():
     if not args.send and not secret():
         print("\nNOTIFY_SECRET is not set, so this cannot say how many people "
               "are watching.\nThe changes above are what would be sent.")
+        return 0
+
+    if args.test_email:
+        r = post(changes, dry_run=False, test_email=args.test_email)
+        e = r.get("email") or {}
+        print(f"\nTest: {e.get('sent', 0)} sent to {args.test_email}, "
+              f"{e.get('skipped', 0)} skipped.")
+        if e.get("reason"):
+            print(f"  {e['reason']}")
+        for f in e.get("failures") or []:
+            print(f"  failed: {f.get('to')} - {f.get('error')}")
+        print("Nothing was written and the state is untouched.")
         return 0
 
     result = post(changes, dry_run=not args.send)
