@@ -68,6 +68,16 @@ APP = "https://spare.theclinicalperspective.org"
 # person before anyone emails its director about it.
 ASKABLE = ("posted", "pending", "cohort")
 
+# PsyD programs are out of scope: Max's call, 2026-09-17. The survey asks a
+# question about doctoral admissions and the tracker covers both degrees, so
+# nothing technical stops it -- this is a decision about who the site is for.
+# Read from programs.json rather than matched against the program name string,
+# because "degree" is the field that means it.
+#
+# --include-psyd puts them back without editing anything, which matters if the
+# decision changes: the contact addresses stay in the spreadsheet either way.
+DEFAULT_DEGREES = ("PhD",)
+
 ANSWERS = (("yes", "Yes"), ("no", "No"), ("undecided", "Not decided yet"))
 
 # The last column is the one that makes this usable twenty a day for a
@@ -422,6 +432,8 @@ def main():
     ap.add_argument("--redraft", action="store_true",
                     help="include rows already drafted (they are skipped by "
                          "default, so --limit walks forward each day)")
+    ap.add_argument("--include-psyd", action="store_true",
+                    help="also draft for PsyD programs (excluded by default)")
     ap.add_argument("--test-email", metavar="ADDRESS",
                     help="mail one sample draft to this address and stop: no "
                          "row is marked drafted, the spreadsheet is untouched, "
@@ -431,7 +443,11 @@ def main():
     data = json.load(open(os.path.join(SITE, "data", "programs.json"),
                           encoding="utf-8"))
     cycle = data.get("cycle", "the coming cycle")
-    programs = {p["id"]: p for p in data["programs"] if p["status"] in ASKABLE}
+    degrees = ("PhD", "PsyD") if args.include_psyd else DEFAULT_DEGREES
+    programs = {p["id"]: p for p in data["programs"]
+                if p["status"] in ASKABLE and p.get("degree") in degrees}
+    excluded = sum(1 for p in data["programs"]
+                   if p["status"] in ASKABLE and p.get("degree") not in degrees)
 
     if args.template:
         ordered = sorted(programs.values(),
@@ -524,6 +540,8 @@ def main():
     problem = stamp_drafted({p["id"] for p, _, _ in ready}, today)
 
     print(f"Drafted {len(ready)} email(s) into {OUT}")
+    if excluded:
+        print(f"({excluded} PsyD program(s) skipped; --include-psyd to add them)")
     print(f"Subject line: {subject(cycle)}")
     for p, _, email in ready:
         print(f"  {p['status']}--{p['id']}.html   -> {email}")
