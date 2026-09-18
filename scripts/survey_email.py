@@ -199,8 +199,29 @@ def body_lines(p, cycle, name, answer_links):
          "nothing you click appears anywhere automatically. If your entry "
          "needs more than a yes or no, just reply and I will fix it the same "
          "day."),
-        "This is a one-off. You will not get a follow-up from me.",
+        closing(p),
     ]
+
+
+def closing(p):
+    """What happens next, which has to match what actually happens.
+
+    The first version of this email promised "This is a one-off. You will not
+    get a follow-up from me." That promise cannot sit in the same message as a
+    plan to write again in November, and a recipient who was told one thing and
+    then got another would be right to treat the second email as spam. So the
+    sentence changes rather than gains a companion.
+
+    Only programmes with nothing posted are told about November, because they
+    are the only ones a second email would have a reason to reach. A programme
+    whose list we have already read has nothing to update, and telling it to
+    expect more mail would be untrue as well as unwelcome.
+    """
+    if p["status"] == "posted":
+        return "This is the only email you will get about it."
+    return ("If nothing is settled yet, I will write once more in November, "
+            "when most programs have decided, and that will be the last of it "
+            "either way.")
 
 
 def rewrap(text, width=78):
