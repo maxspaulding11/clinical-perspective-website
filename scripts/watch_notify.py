@@ -56,6 +56,11 @@ def snapshot(programs):
         p["id"]: {
             "status": p["status"],
             "accepting": len(p.get("accepting") or []),
+            # Carried so the notice can tell "published a list with
+            # nobody on it" from "published a list of maybes". Not
+            # compared for changes: a maybe count moving is usually us
+            # reclassifying a name, not the program doing anything.
+            "maybe": len(p.get("maybe") or []),
             "school": p["school"],
             "program": p["program"],
         }
@@ -80,23 +85,33 @@ def changes_between(old, new):
             out.append({
                 "id": pid, "school": now["school"], "program": now["program"],
                 "from": was["status"], "to": now["status"],
-                "accepting": now["accepting"],
+                "accepting": now["accepting"], "maybe": now["maybe"],
             })
         elif now["status"] == "posted" and was["accepting"] != now["accepting"]:
             out.append({
                 "id": pid, "school": now["school"], "program": now["program"],
                 "from": "posted", "to": "posted",
                 "accepting": now["accepting"], "was": was["accepting"],
+                "maybe": now["maybe"],
             })
     return sorted(out, key=lambda c: c["school"].lower())
 
 
 def describe(c):
+    # "0 faculty accepting" is true of the accepting column and wrong about a
+    # program whose page lists seven people as considering applications. Say
+    # which it is, or the line reads as bad news and gets the program crossed
+    # off a list it belongs on.
+    maybe = c.get("maybe") or 0
     if c["from"] == c["to"] == "posted":
+        tail = f' ({maybe} considering)' if not c["accepting"] and maybe else ""
         return (f'{c["school"]} — accepting list changed from {c["was"]} to '
-                f'{c["accepting"]} faculty')
+                f'{c["accepting"]} faculty{tail}')
     if c["to"] == "closed":
         return f'{c["school"]} — closed this cycle (was "{c["from"]}")'
+    if not c["accepting"] and maybe:
+        return (f'{c["school"]} — posted its list, nobody confirmed accepting '
+                f'but {maybe} considering (was "{c["from"]}")')
     return (f'{c["school"]} — posted its list, {c["accepting"]} faculty '
             f'accepting (was "{c["from"]}")')
 
