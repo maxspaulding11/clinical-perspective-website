@@ -17,6 +17,7 @@ Called from build.py. Safe to re-run: it replaces everything between the
 marker comments.
 """
 import confirmed
+import deadline as deadline_mod
 import html
 import json
 import os
@@ -63,7 +64,8 @@ def app_info(p):
         sub = (f' <span class="fac-appinfo-sub">({e(p["deadlineCycle"])})</span>'
                if p.get("deadlineCycle") else "")
         items.append('<span class="fac-appinfo-item">Deadline: '
-                     f'<strong>{e(p["applicationDeadline"])}</strong>{sub}</span>')
+                     f'<strong>{e(deadline_mod.resolve(p)[0])}</strong>'
+                     f'{sub}</span>')
     gre = GRE_LABEL.get(p.get("greRequired"))
     if gre:
         items.append(f'<span class="fac-appinfo-item">{e(gre)}</span>')

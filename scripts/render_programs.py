@@ -32,6 +32,7 @@ directly, so nothing is unreachable.
 Called from build.py. Every page is rewritten from scratch on every build.
 """
 import confirmed
+import deadline as deadline_mod
 import html
 import json
 import os
@@ -191,8 +192,9 @@ def program_jsonld(p, base_url, fmt_date):
         "provider": {"@type": "CollegeOrUniversity", "name": p["school"],
                      "url": p.get("url") or ""},
     }
-    if p.get("applicationDeadline"):
-        prog["applicationDeadline"] = p["applicationDeadline"]
+    dl_text, dl_iso = deadline_mod.resolve(p)
+    if dl_iso:
+        prog["applicationDeadline"] = dl_iso
     q = []
     cycle = p.get("cycle") or "this cycle"
     n = len(p.get("accepting") or [])
@@ -229,7 +231,7 @@ def program_jsonld(p, base_url, fmt_date):
                           f"{p['school']} {p['program']}?",
                   "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": f"{p['applicationDeadline']}"
+                      "text": f"{dl_text}"
                               + (f" ({p['deadlineCycle']})"
                                  if p.get("deadlineCycle") else "")}})
     graph = [prog, {"@type": "FAQPage", "mainEntity": q},
@@ -393,7 +395,8 @@ def state_page(code, rows, base_url, header, footer, fmt_date, updated):
                  if p["status"] == "posted" and n else
                  f'<span class="fac-badge {e(p["status"])}">'
                  f'{e(STATUS_LABEL.get(p["status"], ""))}</span>')
-        dl = (f'<span class="prog-row-dl">Deadline {e(p["applicationDeadline"])}</span>'
+        dl = (f'<span class="prog-row-dl">Deadline '
+              f'{e(deadline_mod.resolve(p)[0])}</span>'
               if p.get("applicationDeadline") else "")
         items += (f'<li class="prog-row">'
                   f'<a class="prog-row-link" href="../{e(p["id"])}.html">'
