@@ -152,17 +152,27 @@ def surnames_missing(program, text):
     list. A missing surname usually is.
 
     When every single name has gone, that is nearly always a page we are not
-    really reading -- the list moved to a linked document, or the URL now
-    serves a PDF or an error under a 200. Reporting that as "8 of 8 came off
-    the list" would be a confident wrong answer, so the caller separates it.
+    really reading -- the list moved to a linked document, the URL now serves
+    a PDF or an error under a 200, or the list is built by script in the
+    browser so a saved copy holds only the shell. Reporting that as "8 of 8
+    came off the list" would be a confident wrong answer, so the caller
+    separates it.
+
+    "Every" counts only the names actually testable. Short surnames are
+    skipped, and counting them in the denominator is how Washington State
+    reported five of six gone -- a page whose recruiting list is script-built,
+    so not one of the six was really there -- and so missed being called what
+    it was.
     """
-    gone = []
+    gone, checked = [], 0
     for n in (program.get("accepting") or []):
         last = fold(n).replace(",", " ").split()[-1].strip(".")
-        if len(last) > 2 and last not in text:
+        if len(last) <= 2:
+            continue
+        checked += 1
+        if last not in text:
             gone.append(n)
-    everything = bool(gone) and len(gone) == len(program.get("accepting") or [])
-    return gone, everything
+    return gone, bool(gone) and len(gone) == checked
 
 
 def review(data, stale_days):
@@ -197,10 +207,19 @@ def review(data, stale_days):
         if p["status"] == "posted":
             gone, everything = surnames_missing(p, text)
             if gone:
-                f["wrong_source" if everything else "names_gone"].append({
-                    "id": p["id"], "school": p["school"],
-                    "url": p.get("url", ""), "checked": p.get("checked"),
-                    "names": gone, "of": len(p.get("accepting") or [])})
+                h = page_hash(text)
+                row = {"id": p["id"], "school": p["school"],
+                       "url": p.get("url", ""), "checked": p.get("checked"),
+                       "hash": h, "names": gone,
+                       "of": len(p.get("accepting") or [])}
+                # Judged already, against this same page. Yale spells a name
+                # differently from us and Washington State's list is built by
+                # script; both are settled, and repeating them every run is
+                # how the report stops being read.
+                if reviewed.get(p["id"]) == h:
+                    f["already_judged"].append(row)
+                else:
+                    f["wrong_source" if everything else "names_gone"].append(row)
 
     if oldest is not None:
         age = (time.time() - oldest) / 86400.0
@@ -230,11 +249,13 @@ def main():
 
     if args.accept:
         reviewed = load_reviewed()
-        for r in f["posted_but_we_say_pending"]:
+        marked = (f["posted_but_we_say_pending"] + f["names_gone"]
+                  + f["wrong_source"])
+        for r in marked:
             reviewed[r["id"]] = r["hash"]
         save_reviewed(reviewed)
         print("Marked %d program(s) as judged against their current page."
-              % len(f["posted_but_we_say_pending"]))
+              % len(marked))
         print()
 
     if args.json:
