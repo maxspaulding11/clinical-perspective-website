@@ -37,20 +37,37 @@ _WARN = ('<svg class="fac-verified-icon" viewBox="0 0 16 16" aria-hidden="true" 
          'fill="currentColor"/></svg>')
 
 
-def contradicts(answer, status):
+def contradicts(answer, program):
     """Does what they said cut against what the entry shows?
 
-    Mirrors the "disagrees" pile in survey_pull.verdict. "Admitting" against a
-    pending entry is not a contradiction -- the list simply is not out yet --
-    so only these three cases count.
+    "Admitting" against a pending entry is not a contradiction -- the list
+    simply is not out yet -- so only these cases count.
+
+    The awkward one is "not decided yet" against a posted page, because
+    `posted` covers two different claims. A page saying three faculty "plan to
+    admit" does contradict a director who says nothing is settled. A page
+    saying two faculty "may be considering applications" does not: that IS
+    "not decided yet", in the program's own words. So the test is whether the
+    page actually names somebody as accepting, not merely whether a list
+    exists. Three of the four programs flagged on 18 September turned out to
+    be the second kind.
+
+    A cohort program is the exception: it never names anyone, so its status is
+    the whole of its claim and has to be taken at face value.
+
+    survey_pull.verdict imports this so the console report and the web page
+    cannot drift apart.
     """
+    status = program.get("status", "")
     admitting = status in ("posted", "cohort")
     if answer == "yes":
         return status == "closed"
     if answer == "no":
         return admitting
     if answer == "undecided":
-        return admitting
+        if status == "cohort":
+            return True
+        return status == "posted" and bool(program.get("accepting"))
     return False
 
 
@@ -69,7 +86,7 @@ def pill(program, e, fmt_date=None):
     when = c.get("on") or ""
     shown = fmt_date(when) if (fmt_date and when) else when
     cycle = c.get("cycle") or program.get("cycle") or "this cycle"
-    clash = contradicts(answer, program.get("status", ""))
+    clash = contradicts(answer, program)
 
     if clash:
         title = (f"The program told us on {shown} that it is {words} for "
@@ -79,8 +96,10 @@ def pill(program, e, fmt_date=None):
         return (f'<span class="fac-verified is-conflict" title="{e(title)}">'
                 f'{_WARN} The school says: {e(words)}</span>')
 
-    title = (f"Answered by the program itself on {shown}: {words} for {cycle}. "
-             f"Not read off a web page — they told us directly.")
+    how = ("in a reply to our email" if c.get("via") == "email"
+           else "through our survey link")
+    title = (f"Answered by the program itself on {shown}, {how}: {words} for "
+             f"{cycle}. Not read off a web page — they told us directly.")
     # Green is reserved for "yes". A green tick beside a program that told us
     # it is NOT admitting reads as good news at a glance, and somebody
     # scanning a list of 257 entries reads exactly that much. So the marker
@@ -105,7 +124,7 @@ def sentence(program, e, fmt_date=None):
     when = c.get("on") or ""
     shown = fmt_date(when) if (fmt_date and when) else when
     cycle = e(c.get("cycle") or program.get("cycle") or "this cycle")
-    clash = contradicts(answer, program.get("status", ""))
+    clash = contradicts(answer, program)
 
     if clash:
         return (f'<p class="guide-answer-confirmed is-conflict">'

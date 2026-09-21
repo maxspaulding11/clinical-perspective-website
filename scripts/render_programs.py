@@ -131,6 +131,15 @@ def answer(p, fmt_date):
         if m:
             txt += (f" A further {m} {'is' if m == 1 else 'are'} undecided and "
                     f"ask to be contacted directly.")
+    elif p["status"] == "posted" and m:
+        # A list of maybes is not an empty list. Several programs publish
+        # only "may be considering applications" and nothing firmer, and
+        # reporting that as "no faculty are accepting" tells an applicant to
+        # skip a program that is in fact reading applications.
+        txt = (f"<strong>Maybe.</strong> The program has published its "
+               f"{cycle} list{checked}. Nobody on it is confirmed as "
+               f"accepting, but {m} {'is' if m == 1 else 'are'} listed as "
+               f"considering applications and ask to be contacted directly.")
     elif p["status"] == "posted":
         txt = (f"The program has published its {cycle} list{checked}, and no "
                f"faculty on it are accepting new students.")
@@ -188,9 +197,16 @@ def program_jsonld(p, base_url, fmt_date):
     cycle = p.get("cycle") or "this cycle"
     n = len(p.get("accepting") or [])
     if p["status"] == "posted":
-        a = (f"{n} faculty are listed as accepting new doctoral students for "
-             f"{cycle}." if n else
-             f"The {cycle} list is published and no faculty on it are accepting.")
+        m = len(p.get("maybe") or [])
+        if n:
+            a = (f"{n} faculty are listed as accepting new doctoral students "
+                 f"for {cycle}.")
+        elif m:
+            a = (f"No faculty are confirmed as accepting for {cycle}, but {m} "
+                 f"are listed as considering applications.")
+        else:
+            a = (f"The {cycle} list is published and no faculty on it are "
+                 f"accepting.")
     elif p["status"] == "pending":
         a = (f"The program has not yet published which faculty are accepting "
              f"students for {cycle}.")

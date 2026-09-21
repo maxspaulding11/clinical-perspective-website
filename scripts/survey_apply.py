@@ -26,6 +26,15 @@ program; nobody offered to put their name on a public page, and a survey reply
 is not consent to be quoted by name. The name stays in the database, where
 survey_pull.py shows it to the one person who reads these.
 
+Plenty of directors ignore the survey link and just hit reply. Those answers
+are as good as a click and the database cannot see them, so they are kept by
+hand in data/survey-email-answers.json and merged in here. Without that they
+would be written in once and wiped by the next run of this script.
+
+Where both exist for one program, the later date wins, and the survey form
+wins an exact tie -- a click is a deliberate answer to the exact question
+asked, where an email is prose somebody had to read.
+
 Re-runnable. Running it twice changes nothing the second time, and a director
 who corrects themselves later overwrites their own earlier answer.
 
@@ -45,9 +54,46 @@ sys.path.insert(0, HERE)
 from survey_pull import fetch, latest, verdict  # noqa: E402
 
 
+EMAILED = os.path.join(SITE, "data", "survey-email-answers.json")
+
+
 def load():
     with io.open(PROGRAMS, encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def emailed(cycle):
+    """Answers that arrived as a reply, shaped like the database's rows.
+
+    Missing file is not an error -- it only exists because somebody replied.
+    """
+    if not os.path.exists(EMAILED):
+        return []
+    with io.open(EMAILED, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    out = []
+    for a in doc.get("answers", []):
+        c = a.get("cycle") or doc.get("cycle") or cycle
+        if c != cycle:
+            continue
+        out.append({"programId": a["programId"], "answer": a["answer"],
+                    "createdAt": a["on"], "cycle": c, "via": "email"})
+    return out
+
+
+def merge(from_db, from_email):
+    """One answer per program, the later date winning.
+
+    A tie goes to the survey form: it answered the exact question asked, and
+    an email is prose that had to be read and interpreted.
+    """
+    best = {}
+    for r in list(from_email) + list(from_db):
+        pid = r.get("programId")
+        prev = best.get(pid)
+        if prev is None or (r.get("createdAt") or "")[:10] >= (prev.get("createdAt") or "")[:10]:
+            best[pid] = r
+    return list(best.values())
 
 
 def save(data):
@@ -71,7 +117,8 @@ def main():
     cycle = args.cycle or data.get("cycle")
     by_id = {p["id"]: p for p in data["programs"]}
 
-    answers = latest(fetch(cycle))
+    by_email = emailed(cycle)
+    answers = merge(latest(fetch(cycle)), by_email)
     if not answers:
         print("No answers for %s yet. Nothing to record." % cycle)
         return 0
@@ -93,6 +140,10 @@ def main():
             "on": (r.get("createdAt") or "")[:10],
             "cycle": r.get("cycle") or cycle,
         }
+        # Only recorded when it was not the survey form, so the 15 blocks
+        # already written stay byte-identical and this stays a small diff.
+        if r.get("via"):
+            block["via"] = r["via"]
         pile, why = verdict(r["answer"], program)
         if pile == "disagrees":
             contested.append((program, r["answer"], why))
@@ -115,7 +166,8 @@ def main():
     def line(p, b):
         return "  %-52s %s (%s)" % (p["school"][:52], b["answer"], b["on"])
 
-    print("%d answer(s) for %s" % (len(answers), cycle))
+    print("%d answer(s) for %s (%d of them by email)"
+          % (len(answers), cycle, len(by_email)))
     if added:
         print("\nrecorded (%d):" % len(added))
         for p, b in added:
@@ -133,10 +185,8 @@ def main():
         print("\n--- these contradict the entry, and are YOURS to decide (%d) ---"
               % len(contested))
         for p, answer, why in contested:
-            names = len(p.get("accepting") or [])
             print("  %s" % p["school"])
-            print("      they say %s; %s%s"
-                  % (answer, why, " — %d name(s) shown" % names if names else ""))
+            print("      they say %s; %s" % (answer, why))
             print("      %s" % p.get("url", ""))
         print("\nThe page shows both, so nothing here is being hidden from")
         print("readers while it waits. Changing `status` or `accepting` is a")

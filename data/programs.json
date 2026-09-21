@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-17",
+ "updated": "2026-09-21",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -190,13 +190,12 @@
    "url": "https://dornsife.usc.edu/psyc/clinical-faculty/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-21",
    "sourceQuote": "*May be considering applications for Fall 2027*",
    "accepting": [],
    "maybe": [
     "Emilio Valadez",
-    "Katharina Kircanski",
-    "Stan Huey"
+    "Stanley Huey, Jr."
    ],
    "notAccepting": [
     "Amy West",
@@ -244,8 +243,8 @@
    "url": "https://clinicalpsych.unc.edu/for-applicants/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Faculty who plan to admit students for Fall 2027 entry to the UNC clinical psychology doctoral program are listed below",
+   "checked": "2026-09-21",
+   "sourceQuote": "Faculty who plan to admit students for Fall 2027 entry to the UNC clinical psychology doctoral program are listed below. Please note that offers are linked to evolving funding opportunities and may shift as we approach the spring semester. We will update this list if things change.",
    "accepting": [
     "Andrea Hussong",
     "Deborah Jones",
@@ -253,7 +252,6 @@
    ],
    "maybe": [
     "Jamilah Silver",
-    "Jon Abramowitz",
     "Tom Rodebaugh"
    ],
    "notAccepting": [],
@@ -1810,7 +1808,13 @@
     "PSYCAS fee waiver available if eligible"
    ],
    "appInfoSourceUrl": "https://www.emich.edu/psychology/programs/graduate.php",
-   "appInfoChecked": "2026-08-19"
+   "appInfoChecked": "2026-08-19",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-21",
+    "cycle": "Fall 2027",
+    "via": "email"
+   }
   },
   {
    "id": "emory-university-phd",
@@ -2692,7 +2696,13 @@
     "GPA 3.4+ preferred (not stated as strict requirement)"
    ],
    "appInfoSourceUrl": "https://www.jjay.cuny.edu/academics/graduate-programs/phd-psychology",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027",
+    "via": "email"
+   }
   },
   {
    "id": "kansas-city-university-psyd",
@@ -6487,15 +6497,15 @@
    "url": "https://seswps.umkc.edu/academics/psychology-and-counseling/phd-admissions-information.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-14",
+   "checked": "2026-09-21",
    "sourceQuote": "Faculty mentors considering accepting students for Fall 2027 include: Daniel Maitland, Elizabeth Neilson, Valeria Pfeifer, Laurel Watson",
-   "accepting": [
+   "accepting": [],
+   "maybe": [
     "Daniel Maitland",
     "Elizabeth Neilson",
-    "Laurel Watson",
-    "Valeria Pfeifer"
+    "Valeria Pfeifer",
+    "Laurel Watson"
    ],
-   "maybe": [],
    "notAccepting": [],
    "note": "Verified in a browser on 2026-09-14: the four names above are current. UMKC's server answers scripted requests for this page with a 'Page Error' page under an HTTP 200, so automated rechecks silently read an error page and will never notice a change here. This entry has to be confirmed by opening the page in a browser.",
    "applicationDeadline": "December 1, 2026",
@@ -6933,7 +6943,13 @@
     "PhD only; no terminal Master's admission"
    ],
    "appInfoSourceUrl": "https://psychology.sas.upenn.edu/graduate/information-applicants",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-19",
+    "cycle": "Fall 2027",
+    "via": "email"
+   }
   },
   {
    "id": "university-of-pittsburgh-phd",
@@ -7548,14 +7564,14 @@
    "url": "https://psych.wisc.edu/graduate-program/admission-and-requirements/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Faculty who ARE considering students for the Fall 2027 admissions cycle are listed below",
-   "accepting": [
+   "checked": "2026-09-21",
+   "sourceQuote": "Faculty who ARE considering students for the Fall 2027 admissions cycle are listed below. If a faculty member is listed as considering students, it means that they are reviewing applications for students that would start the next Fall. This does not necessarily guarantee that the given faculty member will accept a student, but they will be considering all applicants.",
+   "accepting": [],
+   "maybe": [
     "Diane Gooding",
     "James Li",
-    "Katie Howell"
+    "Kathryn Howell"
    ],
-   "maybe": [],
    "notAccepting": [
     "Brooke Ammerman",
     "John Curtin",

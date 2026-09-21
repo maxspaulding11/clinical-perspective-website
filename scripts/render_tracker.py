@@ -125,8 +125,15 @@ def watch_button(p):
 
 def card(p):
     if p["status"] == "posted":
+        n = len(p.get("accepting") or [])
+        m = len(p.get("maybe") or [])
+        # "0 accepting" beside six names listed as considering applications is
+        # true of the accepting column and wrong about the program. Count what
+        # the card actually goes on to show.
         badge = ('<span class="fac-badge posted">'
-                 f'{len(p.get("accepting") or [])} accepting</span>')
+                 f'{n} accepting</span>' if n or not m else
+                 '<span class="fac-badge posted">'
+                 f'{m} considering</span>')
     else:
         badge = (f'<span class="fac-badge {e(p["status"])}">'
                  f'{e(STATUS_LABEL.get(p["status"], ""))}</span>')
@@ -141,7 +148,7 @@ def card(p):
     # Sits with the status badge rather than in the sub-line: it qualifies how
     # far the status can be trusted, which is the same question the badge
     # answers, and a reader scanning the list reads those two together.
-    verified = confirmed.pill(p, e)
+    verified = confirmed.pill(p, e, full_date)
 
     note = f'<p class="fac-note">{e(p["note"])}</p>' if p.get("note") else ""
     quote = (f'<p class="fac-quote">“{e(p["sourceQuote"])}”</p>'
@@ -233,6 +240,13 @@ def freshen_updated(data):
             json.dump(data, f, indent=1, ensure_ascii=False)
             f.write("\n")
     return newest
+
+
+def full_date(iso):
+    """"September 18, 2026" — with the year, unlike day_label, because this
+    one ends up in a tooltip that outlives the banner's three-week window."""
+    y, m, d = (int(x) for x in iso.split("-"))
+    return date(y, m, d).strftime("%B") + f" {d}, {y}"
 
 
 def day_label(iso):

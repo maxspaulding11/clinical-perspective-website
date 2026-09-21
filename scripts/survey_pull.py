@@ -43,6 +43,9 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
+
+sys.path.insert(0, HERE)
+import confirmed  # noqa: E402
 PROGRAMS = os.path.join(SITE, "data", "programs.json")
 ENDPOINT = "https://spare.theclinicalperspective.org/api/survey/responses"
 
@@ -123,7 +126,14 @@ def verdict(answer, program):
     if status == "pending":
         return "confirms", "entry already says not posted yet"
     if admitting:
-        return "disagrees", f"entry shows {status}"
+        # A posted page that only lists maybes is saying the same thing they
+        # are. confirmed.contradicts holds the rule; see the note there.
+        if confirmed.contradicts("undecided", program):
+            n = len(program.get("accepting") or [])
+            return "disagrees", (f"entry shows {status}"
+                                 + (f" with {n} faculty listed as accepting"
+                                    if n else ""))
+        return "confirms", f"entry shows {status}, but only as maybes"
     return "new", f"entry says {status}"
 
 

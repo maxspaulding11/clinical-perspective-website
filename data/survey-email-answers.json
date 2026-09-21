@@ -1,0 +1,21 @@
+{
+ "_note": "Answers that arrived as an ordinary email reply instead of a click on the survey link. The survey database cannot see these, so without this file they would be lost the next time scripts/survey_apply.py ran. No name and no address is recorded here: data/ is served publicly, and answering a question about your own program is not consent to be quoted by name. The replies themselves stay in Gmail.",
+ "cycle": "Fall 2027",
+ "answers": [
+  {
+   "programId": "john-jay-college-of-criminal-justice-the-graduate-center-cuny-phd",
+   "answer": "yes",
+   "on": "2026-09-18"
+  },
+  {
+   "programId": "university-of-pennsylvania-phd",
+   "answer": "yes",
+   "on": "2026-09-19"
+  },
+  {
+   "programId": "eastern-michigan-university-phd",
+   "answer": "yes",
+   "on": "2026-09-21"
+  }
+ ]
+}
