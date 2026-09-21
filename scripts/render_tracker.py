@@ -16,6 +16,7 @@ in the document before any script runs.
 Called from build.py. Safe to re-run: it replaces everything between the
 marker comments.
 """
+import confirmed
 import html
 import json
 import os
@@ -137,6 +138,11 @@ def card(p):
         sub += (' · <span class="fac-pcsas" title="Accredited by the Psychological '
                 'Clinical Science Accreditation System">PCSAS accredited</span>')
 
+    # Sits with the status badge rather than in the sub-line: it qualifies how
+    # far the status can be trusted, which is the same question the badge
+    # answers, and a reader scanning the list reads those two together.
+    verified = confirmed.pill(p, e)
+
     note = f'<p class="fac-note">{e(p["note"])}</p>' if p.get("note") else ""
     quote = (f'<p class="fac-quote">“{e(p["sourceQuote"])}”</p>'
              if p.get("sourceQuote") else "")
@@ -151,7 +157,8 @@ def card(p):
         f'<h3>{e(p["school"])}</h3>'
         f'<p class="fac-sub">{sub}</p>'
         '</div>'
-        f'<div class="fac-head-right">{star_button(p)}{watch_button(p)}{badge}</div>'
+        f'<div class="fac-head-right">{star_button(p)}{watch_button(p)}'
+        f'{verified}{badge}</div>'
         '</div>'
         + app_info(p)
         + name_list(p.get("accepting"), "yes", "Accepting students")

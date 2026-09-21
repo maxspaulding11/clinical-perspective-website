@@ -228,7 +228,12 @@
     "General USC fee waivers may be available (department does not sponsor)"
    ],
    "appInfoSourceUrl": "https://dornsife.usc.edu/psyc/admissions/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "unc-clinical",
@@ -268,7 +273,12 @@
     "Significant prior research experience typical of successful applicants"
    ],
    "appInfoSourceUrl": "https://clinicalpsych.unc.edu/for-applicants/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "adelphi-university-phd",
@@ -300,7 +310,12 @@
     "Page's stated GRE policy is explicitly for the 2025-2026 cycle, may not reflect current cycle"
    ],
    "appInfoSourceUrl": "https://www.adelphi.edu/program/doctoral/clinical-psychology/faqs/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "adler-university-chicago-psyd",
@@ -929,7 +944,12 @@
     "GRE waiver available by request from PhD applicants"
    ],
    "appInfoSourceUrl": "https://www.biola.edu/degrees/g/clinical-psychology-phd#admissions",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "biola-university-psyd",
@@ -2415,7 +2435,12 @@
     "Updated application materials posted online by October 1 each year"
    ],
    "appInfoSourceUrl": "https://www.isu.edu/psych/graduate-programs/clinical-phd-program/application-information/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-21",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "illinois-institute-of-technology-phd",
@@ -3099,7 +3124,12 @@
     "Applications reviewed starting Dec 1 until spaces filled"
    ],
    "appInfoSourceUrl": "https://miamioh.edu/cas/graduate-programs/psychology/applying-to-graduate-school.html",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "michigan-school-of-psychology-psyd",
@@ -4209,7 +4239,12 @@
     "General university application fee required (amount not stated)"
    ],
    "appInfoSourceUrl": "https://catalog.shsu.edu/graduate-and-professional/college-departments/humanities-social-sciences/psychology-philosophy/clinical-psychology-phd/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "san-diego-state-university-uc-san-diego-phd",
@@ -5763,7 +5798,12 @@
     "Fee waivers may be available through Graduate School"
    ],
    "appInfoSourceUrl": "https://psychology.uga.edu/prospective-clinical-program-applicants",
-   "appInfoChecked": "2026-08-18"
+   "appInfoChecked": "2026-08-18",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-hartford-psyd",
@@ -5984,7 +6024,12 @@
     "Fee waiver available for financial hardship (domestic only)"
    ],
    "appInfoSourceUrl": "https://grad.admissions.uiowa.edu/academics/psychology-phd",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "no",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-kansas-phd",
@@ -6185,7 +6230,12 @@
     "Fee waivers may be available"
    ],
    "appInfoSourceUrl": "https://psyc.umd.edu/graduate/apply-admission",
-   "appInfoChecked": "2026-08-19"
+   "appInfoChecked": "2026-08-19",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-maryland-baltimore-county-phd",
@@ -6461,7 +6511,12 @@
     "International applicants: TOEFL/IELTS required"
    ],
    "appInfoSourceUrl": "https://seswps.umkc.edu/academics/psychology-and-counseling/phd-admissions-information.html",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-missouri-st-louis-phd",
@@ -6657,7 +6712,12 @@
     "International applicants: English proficiency documentation required"
    ],
    "appInfoSourceUrl": "https://healthpsych.charlotte.edu/application-information/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-20",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-north-carolina-wilmington-phd",
@@ -6806,7 +6866,12 @@
     "Fee waiver available for financial hardship"
    ],
    "appInfoSourceUrl": "https://psychology.nd.edu/graduate/admissions-and-funding/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "yes",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-oregon-phd",
@@ -7290,7 +7355,12 @@
     "Fall admission only, no spring/summer"
    ],
    "appInfoSourceUrl": "https://www.utoledo.edu/jhc/psychology/graduate/clinical/apply/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-tulsa-phd",
@@ -7506,7 +7576,12 @@
     "Fall admission only, no spring/summer"
    ],
    "appInfoSourceUrl": "https://guide.wisc.edu/graduate/psychology/psychology-phd/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "confirmed": {
+    "answer": "undecided",
+    "on": "2026-09-18",
+    "cycle": "Fall 2027"
+   }
   },
   {
    "id": "university-of-wisconsin-milwaukee-phd",

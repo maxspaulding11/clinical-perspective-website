@@ -1772,6 +1772,53 @@ a:hover { text-decoration: underline; }
   line-height: 1;
 }
 
+/* "We asked them and they answered." Green when what the program told us sits
+   with what the entry shows; amber when it cuts against it, because a
+   confirmation tick over a contradiction would be the page lying politely. */
+.fac-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  padding: 4px 11px;
+  white-space: nowrap;
+  background: rgba(44,107,65,0.12);
+  color: #2c6b41;
+  cursor: help;
+}
+.fac-verified.is-conflict { background: rgba(176,106,18,0.14); color: #8f5410; }
+.fac-verified.is-neutral { background: var(--cream); color: var(--ink-soft); }
+.fac-verified-icon { width: 13px; height: 13px; flex-shrink: 0; }
+
+.guide-answer-confirmed {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  background: rgba(44,107,65,0.08);
+  color: var(--ink);
+  border-left: 3px solid #2c6b41;
+}
+.guide-answer-confirmed.is-conflict {
+  background: rgba(176,106,18,0.09);
+  border-left-color: #b06a12;
+}
+.guide-answer-confirmed .fac-verified-icon {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  color: #2c6b41;
+}
+.guide-answer-confirmed.is-conflict .fac-verified-icon { color: #b06a12; }
+
 .fac-pcsas {
   display: inline-block;
   font-size: 0.7rem;
@@ -2413,7 +2460,30 @@ a:hover { text-decoration: underline; }
   color: var(--ink-soft);
   font-size: 1.02rem;
 }
-.prog-head-right { flex-shrink: 0; padding-top: 0.35rem; }
+.prog-head-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  padding-top: 0.35rem;
+}
+
+/* What the program's own page said, once the program itself has answered.
+   Still on the page in full -- it is the checkable, quotable source -- but no
+   longer the first thing read. */
+.guide-answer-page { margin: 12px 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+.guide-answer-page-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  margin-bottom: 3px;
+}
 
 .prog-lede {
   font-family: var(--sans);

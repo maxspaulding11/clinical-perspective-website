@@ -31,6 +31,7 @@ directly, so nothing is unreachable.
 
 Called from build.py. Every page is rewritten from scratch on every build.
 """
+import confirmed
 import html
 import json
 import os
@@ -152,9 +153,21 @@ def answer(p, fmt_date):
                f"applications for {cycle}{checked}.")
     else:
         txt = (f"We have not checked this program for {cycle} yet.")
+    # When the program has answered us, that goes first and the line derived
+    # from their web page becomes supporting detail. The page is the weaker
+    # source and usually the older one; leading with it buries the better
+    # answer under a heading a reader takes as the verdict.
+    lead = confirmed.sentence(p, e, fmt_date)
+    if lead:
+        body = (lead
+                + f'<p class="guide-answer-page">'
+                  f'<span class="guide-answer-page-label">What their own page '
+                  f'showed</span>{txt}</p>')
+    else:
+        body = f'<p>{txt}</p>'
     return (f'<div class="guide-answer">'
             f'<p class="guide-answer-label">Accepting students for {cycle}?</p>'
-            f'<p>{txt}</p></div>')
+            f'{body}</div>')
 
 
 def program_jsonld(p, base_url, fmt_date):
@@ -278,6 +291,7 @@ def program_page(p, siblings, base_url, header, footer, fmt_date, has_state):
              'accredited</span>' if p.get("pcsas") else "")
     checked = (f'<span class="fac-checked">Checked '
                f'{e(fmt_date(p["checked"]))}</span>' if p.get("checked") else "")
+    verified = confirmed.pill(p, e, fmt_date)
 
     crumb_state = (f'<a href="state/{e(state_slug(p["state"]))}.html">'
                    f'{e(state_name)}</a> <span>&rsaquo;</span>'
@@ -311,7 +325,7 @@ def program_page(p, siblings, base_url, header, footer, fmt_date, has_state):
           <h1>{e(p["school"])}</h1>
           <p class="prog-sub">{e(p["program"])}{pcsas}</p>
         </div>
-        <div class="prog-head-right">{badge}</div>
+        <div class="prog-head-right">{verified}{badge}</div>
       </div>
 
       {answer(p, fmt_date)}

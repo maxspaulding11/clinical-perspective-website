@@ -619,5 +619,41 @@
     "title": "Germany prescribes mental-health apps. The evidence behind them is rated \"very low.\"",
     "date": "2026-09-17",
     "blurb": "A meta-analysis of the eight prescription-eligible depression and anxiety apps in Germany found a moderate benefit for depression (SMD = -0.49) but graded that evidence \"very low\" quality, and for generalized anxiety the pooled result came from just two trials and was not statistically significant."
+  },
+  {
+    "slug": "borderline-personality-disorder-and-the-body-what-4",
+    "url": "studies/borderline-personality-disorder-and-the-body-what-4.html",
+    "instagram": "",
+    "tag": "Personality",
+    "title": "Borderline personality disorder and the body: what 4 weeks of DBT changed",
+    "date": "2026-09-18",
+    "blurb": "Patients with BPD paid markedly less attention to internal body signals than controls (MAIA-2 2.10 vs 2.87), and that gap tracked their interpersonal problems. After four weeks of residential DBT, only their self-reported attention improved -- the brain and heartbeat measures did not budge."
+  },
+  {
+    "slug": "finland-put-7-session-internet-cbt-for-social",
+    "url": "studies/finland-put-7-session-internet-cbt-for-social.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "Finland put 7-session internet CBT for social anxiety into routine care. Did it work?",
+    "date": "2026-09-19",
+    "blurb": "Across 1,654 physician-referred patients nationwide, a free 7-session therapist-guided internet CBT programme produced a large improvement in social anxiety (d = 1.09), with 41.1% improving reliably and 1.7% getting reliably worse -- but there was no control group."
+  },
+  {
+    "slug": "addiction-treatment-shame-predicted-suicidal-thinking-depression-was",
+    "url": "studies/addiction-treatment-shame-predicted-suicidal-thinking-depression-was.html",
+    "instagram": "",
+    "tag": "Addiction",
+    "title": "In addiction treatment, shame predicted suicidal thinking. Depression was the link.",
+    "date": "2026-09-20",
+    "blurb": "Among 265 people in treatment for substance use disorder in Turkiye, self-stigma predicted suicide-related thinking, and of depression, anxiety and stress, only depression carried the effect. Perceived social support weakened the link at every level tested."
+  },
+  {
+    "slug": "icu-diaries-are-meant-to-prevent-ptsd-correcting",
+    "url": "studies/icu-diaries-are-meant-to-prevent-ptsd-correcting.html",
+    "instagram": "",
+    "tag": "Trauma",
+    "title": "ICU diaries are meant to prevent PTSD. Correcting for publication bias, they didn't.",
+    "date": "2026-09-21",
+    "blurb": "A meta-analysis of 21 studies and 2,180 ICU survivors found that once results were adjusted for publication bias, ICU diaries had no statistically significant effect on PTSD incidence (RR 0.73, CI 0.47-1.12) or severity. Modest benefits for anxiety and depression survived."
   }
 ]
