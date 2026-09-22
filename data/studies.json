@@ -1166,5 +1166,21 @@
     "doi": "10.1111/nicc.70675",
     "sourceUrl": "https://doi.org/10.1111/nicc.70675",
     "instagram": ""
+  },
+  {
+    "slug": "does-semaglutide-protect-thinking-in-psychiatric-patients-13",
+    "index": 74,
+    "title": "Does semaglutide protect thinking in psychiatric patients? 13,007 records say maybe",
+    "tag": "Diagnosis",
+    "blurb": "In a retrospective study of 13,007 US patients with psychiatric diagnoses, those starting semaglutide had fewer recorded cognitive problems at 12 months than those on no diabetes drug (mean score 11.1 vs 14.9). But semaglutide was no better than sitagliptin, which undercuts the drug-specific explanation.",
+    "date": "2026-09-22",
+    "summary": "Cognitive problems -- fogginess, poor memory, trouble concentrating -- run through most psychiatric conditions and respond poorly to existing treatment. Semaglutide, the GLP-1 drug sold as Ozempic and Wegovy, has hinted at cognitive benefits in diabetes and obesity, so researchers led by Riccardo De Giorgi asked whether the same shows up in psychiatric populations. Using NeuroBlu, a database of de-identified US electronic health records, they identified 13,007 adults with a psychiatric diagnosis who had a routine clinician-rated cognitive assessment both before and after starting a diabetes drug, then compared semaglutide against sitagliptin, empagliflozin, glipizide and no treatment. At 12 months, people on semaglutide had a mean cognitive-problem score of 11.1 against 14.9 for those on no diabetes drug, a difference that held against glipizide and empagliflozin too, and was clearest in memory. The catch is in the fourth comparison: semaglutide was statistically indistinguishable from sitagliptin. The authors take that seriously, suggesting both drugs may help by improving blood-sugar control rather than through anything specific to semaglutide -- and noting this contradicts findings in the general diabetes population, where semaglutide did beat sitagliptin. Attention and orientation showed no difference at all. Three limits matter most. This is observational, so people prescribed semaglutide differ from those who were not in ways the records do not capture -- NeuroBlu holds no socioeconomic status, insurance status or lifestyle data. \"Cognition\" here means descriptions a clinician typed during a routine appointment, not a cognitive test, which is far coarser than it sounds. And requiring an assessment both before and after treatment selected for patients with more clinical contact and more cognitive concern, while cognitive assessments were actually less frequent during semaglutide exposure, forcing the analysis to lean more heavily on imputed values.",
+    "journal": "BMJ Mental Health",
+    "authors": "Riccardo De Giorgi, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42624612",
+    "doi": "10.1136/bmjment-2026-302828",
+    "sourceUrl": "https://doi.org/10.1136/bmjment-2026-302828",
+    "instagram": ""
   }
 ]
