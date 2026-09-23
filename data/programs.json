@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-21",
+ "updated": "2026-09-23",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -8712,14 +8712,19 @@
    "state": "MO",
    "degree": "PhD",
    "url": "https://psychology.missouri.edu/grad/clinical-faculty-mentors",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The following Clinical Psychology faculty WILL be accepting students for the fall 2026 admissions class",
-   "accepting": [],
+   "checked": "2026-09-23",
+   "sourceQuote": "The following Clinical Psychology faculty WILL be accepting students for the fall 2027 admissions class: Shawn Christ Ian Gizer Sean Lane Denis McCarthy",
+   "accepting": [
+    "Shawn E. Christ",
+    "Ian Gizer",
+    "Sean Lane",
+    "Denis M. McCarthy"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Page (opened directly) lists faculty recruiting for the Fall 2026 admissions cycle — Ian Gizer, Kristin Hawley, Sean Lane, Denis McCarthy (clinical), plus Ashley Groh (developmental, requires clinical co-mentor) — not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check. This is the Columbia (Mizzou) flagship campus, distinct from the separately-listed Kansas City and St. Louis campus entries.",
+   "note": "Read on the program's own Clinical Faculty Mentors page, which names the fall 2027 admissions class outright and lists only Clinical Psychology faculty. Names are spelled as on this tracker's roster (Shawn E. Christ, Denis M. McCarthy) so the profile links resolve. Kristin Hawley, on last cycle's list, is not on this one. This is the Columbia (Mizzou) flagship campus, distinct from the separately-listed Kansas City and St. Louis campus entries.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -8735,7 +8740,8 @@
     "Fee waivers available for eligible applicants"
    ],
    "appInfoSourceUrl": "https://psychology.missouri.edu/grad/graduate-program-application-information",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-09-23"
   }
  ]
 }

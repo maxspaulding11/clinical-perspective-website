@@ -1182,5 +1182,21 @@
     "doi": "10.1136/bmjment-2026-302828",
     "sourceUrl": "https://doi.org/10.1136/bmjment-2026-302828",
     "instagram": ""
+  },
+  {
+    "slug": "icd-11-makes-clinicians-rate-personality-traits-as",
+    "index": 75,
+    "title": "ICD-11 makes clinicians rate personality traits as present or absent. Can they?",
+    "tag": "Personality",
+    "blurb": "133 Danish clinicians rated 238 patients' ICD-11 personality trait domains both as present/absent and on a 0-4 scale. The yes/no ratings tracked a validated measure moderately well (r = .51 to .57) -- except for Negative Affectivity, where the correlation fell to .27.",
+    "date": "2026-09-23",
+    "summary": "ICD-11 rebuilt personality disorder diagnosis around severity plus up to five trait domains: negative affectivity, detachment, dissociality, disinhibition and anankastia. The domains are conceived as dimensions -- traits people have more or less of -- but the coding system only lets a clinician mark each one present or absent. Researchers led by Gunnar Valdemar Grunert asked what is lost in that compression. They invited around 2,500 clinicians in Danish Mental Health Services; 133 provided complete data, each rating a patient (238 in total, 73% women, average age 33) three ways: a present/absent judgement, a 0-to-4 judgement, and the Informant Personality Inventory for ICD-11, a validated questionnaire serving as the yardstick. The yes/no ratings held up better than one might fear, correlating .51 to .57 with the validated measure across four domains -- moderate, and statistically robust after correction for multiple testing. Negative affectivity was the exception, managing only .27, which the authors flag as the domain where a binary judgement loses most. The 0-to-4 ratings did better overall (.40 to .75), but once corrected for multiple comparisons, only disinhibition and dissociality were significantly better captured dimensionally. Neither years of experience nor professional background predicted who rated more accurately. One feature of the design should temper all of this, and the authors name it: the same clinician produced both the single-item ratings and the criterion questionnaire, so shared method variance -- one person's impression of a patient colouring every measure they complete -- likely inflates the agreement. Recruitment was voluntary and open-ended, which the authors think probably attracted clinicians already interested in personality pathology, inflating estimates further. And the patients were a broad mental-health sample rather than a personality disorder sample, so it remains untested whether severity makes a binary call easier or harder.",
+    "journal": "Personality and Mental Health",
+    "authors": "Gunnar Valdemar Grunert, et al.",
+    "pubdate": "November 2026",
+    "pmid": "42705709",
+    "doi": "10.1002/pmh.70102",
+    "sourceUrl": "https://doi.org/10.1002/pmh.70102",
+    "instagram": ""
   }
 ]
