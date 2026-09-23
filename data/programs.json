@@ -3287,7 +3287,7 @@
    "checked": "2026-09-09",
    "sourceQuote": "The following faculty members currently accept students in the Clinical Psychology PhD Program:",
    "accepting": [
-    "Aggie Reiger",
+    "Aggie Rieger",
     "Arazais Oliveros",
     "Danielle Nadorff",
     "Michael R. Nadorff",
@@ -5406,9 +5406,9 @@
    "sourceQuote": "Drs. Cavell, Lin, Quetsch, Tonkin, & Veilleux will be reviewing applications for Fall 2027. Drs. Bridges, Fugitt, Ham, & Judah will NOT.",
    "accepting": [
     "Dr. Cavell",
-    "Jeff Lin",
+    "Yanli Lin",
     "Dr. Quetsch",
-    "Dr. Tonkin",
+    "Sarah Tonkin",
     "Dr. Veilleux"
    ],
    "maybe": [],
@@ -5418,7 +5418,7 @@
     "Dr. Ham",
     "Dr. Judah"
    ],
-   "note": "This statement on the Clinical Psychology program page explicitly names Fall 2026, not Fall 2027 — it is last cycle's information and has not yet been updated. Per the task's disambiguation rule, not reporting this as current/posted for the Fall 2027 cycle we need. The program states who is reviewing in one sentence, by surname only, so full names come from the links on the same page. Dr Tonkin is still shown by surname because that name is not linked there and guessing a first name is worse than showing none.",
+   "note": "This statement on the Clinical Psychology program page explicitly names Fall 2026, not Fall 2027 — it is last cycle's information and has not yet been updated. Per the task's disambiguation rule, not reporting this as current/posted for the Fall 2027 cycle we need. The program states who is reviewing in one sentence, by surname only, so full names come from the links on the same page. Full names come from the department directory: the clinical faculty member named in that sentence as Lin is Yanli Lin, and Tonkin is Sarah Tonkin.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
