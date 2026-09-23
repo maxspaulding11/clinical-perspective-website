@@ -28,7 +28,12 @@ from datetime import date, timedelta
 # of today implied these programs had posted today, when four of them had done
 # it six days earlier -- so each flag carries the date it was set, and drops out
 # of the banner on its own once it is this old. Nothing to remember to clear.
-NEWLY_WINDOW_DAYS = 21
+#
+# Nine days, not the three weeks it was. At three weeks the banner had grown to
+# twenty-five schools across five lines, which is a list rather than an
+# announcement: the point of it is that something happened recently, and it
+# stops making that point somewhere around a fortnight of postings.
+NEWLY_WINDOW_DAYS = 8
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
@@ -328,7 +333,7 @@ def render():
 
     text = set_banner_hidden(text, not recent, cutoff)
     if recent:
-        since = day_label(min(d for d, _ in recent))
+        since = day_label(cutoff)
         text = re.sub(r'(<strong id="fac-new-label">).*?(</strong>)',
                       lambda m: m.group(1) + f"Newly posted since {since}:" + m.group(2),
                       text, count=1, flags=re.S)

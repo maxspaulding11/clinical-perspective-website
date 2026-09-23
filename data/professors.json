@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-14",
+ "updated": "2026-09-23",
  "interestsRead": "2026-08-13",
  "note": "Every entry's research interests were read from that person's own faculty/lab bio page; faculty whose pages didn't state clear research interests were skipped rather than guessed. Entries added on 2026-09-14 to resolve accepting-list names may carry an empty interests list: they are on a program's Fall 2027 accepting list and have a verified bio page, but their interests have not been read yet and will be picked up by the next professor sweep. Sweep in progress across the full program roster. 'updated' is the date this file last changed; 'interestsRead' is when the interest sweep itself last ran, which is the date the topic pages cite — records added later may carry no interests, so the two are not the same thing.",
  "professors": [
@@ -4923,7 +4923,7 @@
   },
   {
    "id": "dennis-itoga-chaminade-university-of-honolulu",
-   "name": "Dennis Itoga, Psy.D.",
+   "name": "Dennis Itoga",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -4939,7 +4939,7 @@
   },
   {
    "id": "jeffrey-stern-chaminade-university-of-honolulu",
-   "name": "Jeffrey Stern, Ph.D.",
+   "name": "Jeffrey Stern",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -4954,7 +4954,7 @@
   },
   {
    "id": "jolene-young-chaminade-university-of-honolulu",
-   "name": "Jolene Young, Psy.D.",
+   "name": "Jolene Young",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -4970,7 +4970,7 @@
   },
   {
    "id": "joy-tanji-chaminade-university-of-honolulu",
-   "name": "Joy Tanji, Ph.D.",
+   "name": "Joy Tanji",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -4986,7 +4986,7 @@
   },
   {
    "id": "kathryn-chun-chaminade-university-of-honolulu",
-   "name": "Kathryn Chun, Ph.D.",
+   "name": "Kathryn Chun",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -5001,7 +5001,7 @@
   },
   {
    "id": "lawrie-ignacio-chaminade-university-of-honolulu",
-   "name": "Lawrie Ignacio, Psy.D.",
+   "name": "Lawrie Ignacio",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -5016,7 +5016,7 @@
   },
   {
    "id": "marita-padilla-chaminade-university-of-honolulu",
-   "name": "Marita Padilla, Psy.D., A.B.P.P.",
+   "name": "Marita Padilla, A.B.P.P.",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -5031,7 +5031,7 @@
   },
   {
    "id": "sean-scanlan-chaminade-university-of-honolulu",
-   "name": "Sean Scanlan, Ph.D.",
+   "name": "Sean Scanlan",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -5046,7 +5046,7 @@
   },
   {
    "id": "vilmarie-baez-chaminade-university-of-honolulu",
-   "name": "Vilmarie Baez, Psy.D.",
+   "name": "Vilmarie Baez",
    "school": "Chaminade University of Honolulu",
    "program": "Clinical Psychology PsyD",
    "state": "HI",
@@ -5282,7 +5282,7 @@
   },
   {
    "id": "desiree-byrd-city-university-of-new-york",
-   "name": "Desiree Byrd, Ph.D.",
+   "name": "Desiree Byrd",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5297,7 +5297,7 @@
   },
   {
    "id": "emily-a-jones-city-university-of-new-york",
-   "name": "Emily A. Jones, Ph.D.",
+   "name": "Emily A. Jones",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5312,7 +5312,7 @@
   },
   {
    "id": "justin-storbeck-city-university-of-new-york",
-   "name": "Justin Storbeck, Ph.D.",
+   "name": "Justin Storbeck",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5327,7 +5327,7 @@
   },
   {
    "id": "laura-rabin-city-university-of-new-york",
-   "name": "Laura Rabin, Ph.D.",
+   "name": "Laura Rabin",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5341,7 +5341,7 @@
   },
   {
    "id": "melinda-cornwell-city-university-of-new-york",
-   "name": "Melinda Cornwell, Ph.D.",
+   "name": "Melinda Cornwell",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5356,7 +5356,7 @@
   },
   {
    "id": "veronica-j-hinton-city-university-of-new-york",
-   "name": "Veronica J. Hinton, Ph.D.",
+   "name": "Veronica J. Hinton",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5371,7 +5371,7 @@
   },
   {
    "id": "yoko-nomura-city-university-of-new-york",
-   "name": "Yoko Nomura, Ph.D.",
+   "name": "Yoko Nomura",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -5386,7 +5386,7 @@
   },
   {
    "id": "yvette-caro-city-university-of-new-york",
-   "name": "Yvette Caro, Ph.D.",
+   "name": "Yvette Caro",
    "school": "City University of New York",
    "program": "Clinical Psychology PhD",
    "state": "NY",
@@ -6346,7 +6346,7 @@
   },
   {
    "id": "alexander-kranjec-duquesne-university",
-   "name": "Alexander Kranjec, Ph.D.",
+   "name": "Alexander Kranjec",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6361,7 +6361,7 @@
   },
   {
    "id": "derek-hook-duquesne-university",
-   "name": "Derek Hook, Ph.D.",
+   "name": "Derek Hook",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6376,7 +6376,7 @@
   },
   {
    "id": "elizabeth-fein-duquesne-university",
-   "name": "Elizabeth Fein, Ph.D.",
+   "name": "Elizabeth Fein",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6392,7 +6392,7 @@
   },
   {
    "id": "elizabeth-pienkos-duquesne-university",
-   "name": "Elizabeth Pienkos, Ph.D.",
+   "name": "Elizabeth Pienkos",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6407,7 +6407,7 @@
   },
   {
    "id": "hannah-stokes-duquesne-university",
-   "name": "Hannah Stokes, Ph.D.",
+   "name": "Hannah Stokes",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6421,7 +6421,7 @@
   },
   {
    "id": "jessie-goicoechea-duquesne-university",
-   "name": "Jessie Goicoechea, Ph.D.",
+   "name": "Jessie Goicoechea",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6437,7 +6437,7 @@
   },
   {
    "id": "leswin-laubscher-duquesne-university",
-   "name": "Leswin Laubscher, Ph.D.",
+   "name": "Leswin Laubscher",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6452,7 +6452,7 @@
   },
   {
    "id": "lori-e-koelsch-duquesne-university",
-   "name": "Lori E. Koelsch, Ph.D.",
+   "name": "Lori E. Koelsch",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6467,7 +6467,7 @@
   },
   {
    "id": "manisha-nagpal-duquesne-university",
-   "name": "Manisha Nagpal, Ph.D.",
+   "name": "Manisha Nagpal",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6482,7 +6482,7 @@
   },
   {
    "id": "melissa-kalarchian-duquesne-university",
-   "name": "Melissa Kalarchian, Ph.D.",
+   "name": "Melissa Kalarchian",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6497,7 +6497,7 @@
   },
   {
    "id": "russ-walsh-duquesne-university",
-   "name": "Russ Walsh, Ph.D.",
+   "name": "Russ Walsh",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6512,7 +6512,7 @@
   },
   {
    "id": "will-w-adams-duquesne-university",
-   "name": "Will W. Adams, Ph.D.",
+   "name": "Will W. Adams",
    "school": "Duquesne University",
    "program": "Clinical Psychology PhD",
    "state": "PA",
@@ -6717,7 +6717,7 @@
   },
   {
    "id": "aubrey-dueweke-east-tennessee-state-university",
-   "name": "Aubrey Dueweke, Ph.D.",
+   "name": "Aubrey Dueweke",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6732,7 +6732,7 @@
   },
   {
    "id": "diana-m-morelen-east-tennessee-state-university",
-   "name": "Diana M. Morelen, Ph.D.",
+   "name": "Diana M. Morelen",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6748,7 +6748,7 @@
   },
   {
    "id": "jill-stinson-east-tennessee-state-university",
-   "name": "Jill Stinson, Ph.D.",
+   "name": "Jill Stinson",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6763,7 +6763,7 @@
   },
   {
    "id": "julia-c-dodd-east-tennessee-state-university",
-   "name": "Julia C. Dodd, Ph.D.",
+   "name": "Julia C. Dodd",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6779,7 +6779,7 @@
   },
   {
    "id": "kelly-e-moore-east-tennessee-state-university",
-   "name": "Kelly E. Moore, Ph.D.",
+   "name": "Kelly E. Moore",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6793,7 +6793,7 @@
   },
   {
    "id": "meredith-ginley-east-tennessee-state-university",
-   "name": "Meredith Ginley, Ph.D.",
+   "name": "Meredith Ginley",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6808,7 +6808,7 @@
   },
   {
    "id": "rachel-miller-slough-east-tennessee-state-university",
-   "name": "Rachel Miller-Slough, Ph.D.",
+   "name": "Rachel Miller-Slough",
    "school": "East Tennessee State University",
    "program": "Clinical Psychology PhD",
    "state": "TN",
@@ -6823,7 +6823,7 @@
   },
   {
    "id": "brandon-creech-eastern-kentucky-university",
-   "name": "Brandon Creech, Psy.D.",
+   "name": "Brandon Creech",
    "school": "Eastern Kentucky University",
    "program": "Clinical Psychology PsyD",
    "state": "KY",
@@ -6838,7 +6838,7 @@
   },
   {
    "id": "dustin-wygant-eastern-kentucky-university",
-   "name": "Dustin Wygant, Ph.D.",
+   "name": "Dustin Wygant",
    "school": "Eastern Kentucky University",
    "program": "Clinical Psychology PsyD",
    "state": "KY",
@@ -10645,6 +10645,37 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "alexandra-moussa-tooks-indiana-university-bloomington",
+   "name": "Alexandra Moussa-Tooks",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "sensorimotor disturbances in psychosis",
+    "cerebellar neural networks",
+    "hallmark symptoms of psychosis",
+    "translational and clinical neuroscience"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/moussatooks-alexandra.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "amy-holtzworth-munroe-indiana-university-bloomington",
+   "name": "Amy Holtzworth-Munroe",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "intimate partner violence",
+    "typology of male batterers",
+    "social information processing in violent couples",
+    "family law interventions for divorce/separation",
+    "mediation approaches for high-conflict IPV cases"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/holtzworth-munroe-amy.html",
+   "checked": "2026-08-10"
+  },
+  {
    "id": "brian-donofrio-indiana-university-bloomington",
    "name": "Brian D'Onofrio",
    "school": "Indiana University - Bloomington",
@@ -10659,6 +10690,225 @@
    ],
    "url": "https://psych.indiana.edu/directory/faculty/donofrio-brian.html",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "brian-d-onofrio-indiana-university-bloomington",
+   "name": "Brian D'Onofrio",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "developmental psychopathology",
+    "pharmacoepidemiology",
+    "behavior genetics/genetic epidemiology",
+    "health services research",
+    "dissemination and implementation"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/donofrio-brian.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "daniel-p-kennedy-indiana-university-bloomington",
+   "name": "Daniel P. Kennedy",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "social neuroscience",
+    "autism spectrum disorders",
+    "social perception",
+    "eye tracking",
+    "brain connectivity/fMRI"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/kennedy-dan.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "debra-peter-finn-indiana-university-bloomington",
+   "name": "Debra (Peter) Finn",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "cognitive and motivational processes in substance abuse",
+    "working memory and self-regulation",
+    "disinhibitory processes in personality"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/finn-debra-peter.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "ehren-newman-indiana-university-bloomington",
+   "name": "Ehren Newman",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "information processing by neural circuits",
+    "neurophysiology of learning and memory",
+    "modulation of circuit dynamics",
+    "neuromodulation by acetylcholine",
+    "Alzheimer's disease"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/newman-ehren.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "john-bates-indiana-university-bloomington",
+   "name": "John Bates",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "child temperament",
+    "family interaction processes",
+    "development of children's behavior problems",
+    "child social-cognitive and affective characteristics",
+    "children's sleep and daily adjustment"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/bates-john.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "joshua-w-brown-indiana-university-bloomington",
+   "name": "Joshua W. Brown",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "computational models of cognitive control",
+    "fMRI testing of computational model predictions",
+    "neural bases of cognitive impairment in clinical populations",
+    "reinforcement learning and goal-directed behavior",
+    "frontal lobe function"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/brown-joshua-w.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "karin-h-james-indiana-university-bloomington",
+   "name": "Karin H. James",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "action and perception interactions during learning",
+    "development of object recognition",
+    "reading acquisition"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/james-harman-karin.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "krista-m-wisner-indiana-university-bloomington",
+   "name": "Krista M. Wisner",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "persecutory ideation and mistrust in psychopathology",
+    "stress reactivity and distress intolerance",
+    "insular cortex function in psychosis and substance use",
+    "interoceptive processing across psychopathology",
+    "multimodal neuroimaging"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/wisner-krista.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "lauren-rutter-indiana-university-bloomington",
+   "name": "Lauren Rutter",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "dimensions of internalizing psychopathology",
+    "assessment and classification of emotional disorders",
+    "social cognition and neurocognition across the lifespan",
+    "digital technology and mental health"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/rutter-lauren.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "lorenzo-lorenzo-luaces-indiana-university-bloomington",
+   "name": "Lorenzo Lorenzo-Luaces",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "heterogeneity of depression and treatment implications",
+    "low-intensity treatments (bibliotherapy, internet apps)",
+    "stepped care and personalized medicine for depression",
+    "change processes in psychotherapy",
+    "history and classification of major depressive disorder"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/lorenzo-luaces-lorenzo.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "natasha-chaku-indiana-university-bloomington",
+   "name": "Natasha Chaku",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "adolescence",
+    "cognitive development",
+    "developmental science",
+    "puberty and psychopathology",
+    "positive youth outcomes"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/chaku-natasha.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "richard-viken-indiana-university-bloomington",
+   "name": "Richard Viken",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "antisocial behavior",
+    "behavior genetics (twin studies)",
+    "alcohol use and abuse",
+    "cognitive processing in clinical problems",
+    "family process"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/viken-richard.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "tom-james-indiana-university-bloomington",
+   "name": "Tom James",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "object recognition and categorization",
+    "perceptual decision making",
+    "functional neuroimaging",
+    "sensory integration",
+    "priming, adaptation, and perceptual learning"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/james-thomas.html",
+   "checked": "2026-08-10"
+  },
+  {
+   "id": "william-p-hetrick-indiana-university-bloomington",
+   "name": "William P. Hetrick",
+   "school": "Indiana University - Bloomington",
+   "program": "Clinical Psychology PhD",
+   "state": "IN",
+   "interests": [
+    "cerebellar contributions to psychopathology",
+    "brain-behavior relationships in schizophrenia",
+    "temporal processing and response variability",
+    "EEG/ERP and clinical neuropsychological assessment",
+    "global mental health research in East Africa"
+   ],
+   "url": "https://psych.indiana.edu/directory/faculty/hetrick-william-p.html",
+   "checked": "2026-08-10"
   },
   {
    "id": "adam-hirsh-indiana-university-indianapolis",
@@ -10788,256 +11038,6 @@
    ],
    "url": "http://science.indianapolis.iu.edu/people-directory/people/wu-wei.html",
    "checked": "2026-08-11"
-  },
-  {
-   "id": "alexandra-moussa-tooks-indiana-university-bloomington",
-   "name": "Alexandra Moussa-Tooks",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "sensorimotor disturbances in psychosis",
-    "cerebellar neural networks",
-    "hallmark symptoms of psychosis",
-    "translational and clinical neuroscience"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/moussatooks-alexandra.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "amy-holtzworth-munroe-indiana-university-bloomington",
-   "name": "Amy Holtzworth-Munroe",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "intimate partner violence",
-    "typology of male batterers",
-    "social information processing in violent couples",
-    "family law interventions for divorce/separation",
-    "mediation approaches for high-conflict IPV cases"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/holtzworth-munroe-amy.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "brian-d-onofrio-indiana-university-bloomington",
-   "name": "Brian D'Onofrio",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "developmental psychopathology",
-    "pharmacoepidemiology",
-    "behavior genetics/genetic epidemiology",
-    "health services research",
-    "dissemination and implementation"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/donofrio-brian.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "daniel-p-kennedy-indiana-university-bloomington",
-   "name": "Daniel P. Kennedy",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "social neuroscience",
-    "autism spectrum disorders",
-    "social perception",
-    "eye tracking",
-    "brain connectivity/fMRI"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/kennedy-dan.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "debra-peter-finn-indiana-university-bloomington",
-   "name": "Debra (Peter) Finn",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "cognitive and motivational processes in substance abuse",
-    "working memory and self-regulation",
-    "disinhibitory processes in personality"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/finn-debra-peter.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "ehren-newman-indiana-university-bloomington",
-   "name": "Ehren Newman",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "information processing by neural circuits",
-    "neurophysiology of learning and memory",
-    "modulation of circuit dynamics",
-    "neuromodulation by acetylcholine",
-    "Alzheimer's disease"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/newman-ehren.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "john-bates-indiana-university-bloomington",
-   "name": "John Bates",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "child temperament",
-    "family interaction processes",
-    "development of children's behavior problems",
-    "child social-cognitive and affective characteristics",
-    "children's sleep and daily adjustment"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/bates-john.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "joshua-w-brown-indiana-university-bloomington",
-   "name": "Joshua W. Brown",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "computational models of cognitive control",
-    "fMRI testing of computational model predictions",
-    "neural bases of cognitive impairment in clinical populations",
-    "reinforcement learning and goal-directed behavior",
-    "frontal lobe function"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/brown-joshua-w.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "karin-h-james-indiana-university-bloomington",
-   "name": "Karin H. James",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "action and perception interactions during learning",
-    "development of object recognition",
-    "reading acquisition"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/james-harman-karin.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "krista-m-wisner-indiana-university-bloomington",
-   "name": "Krista M. Wisner",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "persecutory ideation and mistrust in psychopathology",
-    "stress reactivity and distress intolerance",
-    "insular cortex function in psychosis and substance use",
-    "interoceptive processing across psychopathology",
-    "multimodal neuroimaging"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/wisner-krista.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "lauren-rutter-indiana-university-bloomington",
-   "name": "Lauren Rutter",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "dimensions of internalizing psychopathology",
-    "assessment and classification of emotional disorders",
-    "social cognition and neurocognition across the lifespan",
-    "digital technology and mental health"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/rutter-lauren.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "lorenzo-lorenzo-luaces-indiana-university-bloomington",
-   "name": "Lorenzo Lorenzo-Luaces",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "heterogeneity of depression and treatment implications",
-    "low-intensity treatments (bibliotherapy, internet apps)",
-    "stepped care and personalized medicine for depression",
-    "change processes in psychotherapy",
-    "history and classification of major depressive disorder"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/lorenzo-luaces-lorenzo.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "natasha-chaku-indiana-university-bloomington",
-   "name": "Natasha Chaku",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "adolescence",
-    "cognitive development",
-    "developmental science",
-    "puberty and psychopathology",
-    "positive youth outcomes"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/chaku-natasha.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "richard-viken-indiana-university-bloomington",
-   "name": "Richard Viken",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "antisocial behavior",
-    "behavior genetics (twin studies)",
-    "alcohol use and abuse",
-    "cognitive processing in clinical problems",
-    "family process"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/viken-richard.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "tom-james-indiana-university-bloomington",
-   "name": "Tom James",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "object recognition and categorization",
-    "perceptual decision making",
-    "functional neuroimaging",
-    "sensory integration",
-    "priming, adaptation, and perceptual learning"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/james-thomas.html",
-   "checked": "2026-08-10"
-  },
-  {
-   "id": "william-p-hetrick-indiana-university-bloomington",
-   "name": "William P. Hetrick",
-   "school": "Indiana University Bloomington",
-   "program": "Clinical Science PhD",
-   "state": "IN",
-   "interests": [
-    "cerebellar contributions to psychopathology",
-    "brain-behavior relationships in schizophrenia",
-    "temporal processing and response variability",
-    "EEG/ERP and clinical neuropsychological assessment",
-    "global mental health research in East Africa"
-   ],
-   "url": "https://psych.indiana.edu/directory/faculty/hetrick-william-p.html",
-   "checked": "2026-08-10"
   },
   {
    "id": "anson-long-indiana-university-of-pennsylvania",
@@ -14106,7 +14106,7 @@
   },
   {
    "id": "robert-mcmillen-ph-d-mississippi-state-university",
-   "name": "Robert McMillen, Ph.D.",
+   "name": "Robert McMillen",
    "school": "Mississippi State University",
    "program": "Clinical Psychology PhD",
    "state": "MS",
@@ -16009,6 +16009,33 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "bonnie-nagel-oregon-health-science-university",
+   "name": "Bonnie Nagel",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "biopsychosocial predictors of risk and resilience for psychopathology",
+    "childhood and adolescence",
+    "young adulthood"
+   ],
+   "url": "https://www.ohsu.edu/people/bonnie-nagel-phd",
+   "checked": "2026-09-23"
+  },
+  {
+   "id": "cydni-williams-oregon-health-science-university",
+   "name": "Cydni Williams",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "outcomes in critically ill hospitalized children",
+    "biopsychosocial outcomes after paediatric critical illness"
+   ],
+   "url": "https://www.ohsu.edu/providers/cydni-williams-md-mcr",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "darren-m-janzen-oregon-health-science-university",
    "name": "Darren M. Janzen",
    "school": "Oregon Health & Science University",
@@ -16054,6 +16081,34 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "elinor-sullivan-oregon-health-science-university",
+   "name": "Elinor Sullivan",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "maternal nutrition, stress and mental health in gestation",
+    "offspring neurobehavioral regulation",
+    "prenatal environment and child health"
+   ],
+   "url": "https://www.ohsu.edu/people/elinor-l-sullivan-phd",
+   "checked": "2026-09-23"
+  },
+  {
+   "id": "hanna-gustafsson-oregon-health-science-university",
+   "name": "Hanna Gustafsson",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "prenatal environment and child health",
+    "early environmental factors",
+    "offspring neurobehavioral regulation"
+   ],
+   "url": "https://www.ohsu.edu/people/hanna-gustafsson-phd",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "jennifer-loftis-oregon-health-science-university",
    "name": "Jennifer Loftis",
    "school": "Oregon Health & Science University",
@@ -16080,6 +16135,23 @@
    ],
    "url": "https://www.ohsu.edu/school-of-medicine/clinical-psychology/clinical-psychology-program-faculty",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "maya-oneil-oregon-health-science-university",
+   "name": "Maya O'Neil",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "veteran brain health",
+    "TBI and blast injury",
+    "suicide prevention",
+    "PTSD",
+    "health systems research",
+    "data harmonization and evidence synthesis"
+   ],
+   "url": "https://www.ohsu.edu/people/maya-e-oneil-phd",
+   "checked": "2026-09-23"
   },
   {
    "id": "rebekah-huber-oregon-health-science-university",
@@ -16139,6 +16211,19 @@
    ],
    "url": "https://www.ohsu.edu/school-of-medicine/translational-neuroeconomics-lab",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "trevor-hall-oregon-health-science-university",
+   "name": "Trevor Hall",
+   "school": "Oregon Health & Science University",
+   "program": "Clinical Psychology PhD",
+   "state": "OR",
+   "interests": [
+    "long-term neuropsychological outcomes in critically ill children",
+    "pediatric neuropsychology"
+   ],
+   "url": "https://www.ohsu.edu/providers/trevor-a-hall-psyd-abpdn",
+   "checked": "2026-09-23"
   },
   {
    "id": "cynthia-e-brown-pacific-university",
@@ -18994,7 +19079,7 @@
   },
   {
    "id": "ademola-fawole-psy-d-rowan-university",
-   "name": "Ademola Fawole, Psy.D.",
+   "name": "Ademola Fawole",
    "school": "Rowan University",
    "program": "Clinical Psychology PhD",
    "state": "NJ",
@@ -19033,7 +19118,7 @@
   },
   {
    "id": "cori-mcmahon-psyd-rowan-university",
-   "name": "Cori McMahon, PsyD",
+   "name": "Cori McMahon",
    "school": "Rowan University",
    "program": "Clinical Psychology PhD",
    "state": "NJ",
@@ -19154,7 +19239,7 @@
   },
   {
    "id": "joanna-petrides-psy-d-rowan-university",
-   "name": "Joanna Petrides, Psy.D.",
+   "name": "Joanna Petrides",
    "school": "Rowan University",
    "program": "Clinical Psychology PhD",
    "state": "NJ",
@@ -20004,6 +20089,31 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "igor-grant-san-diego-state-university-uc-san-diego",
+   "name": "Igor Grant",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "behavioral medicine",
+    "neuropsychology"
+   ],
+   "url": "https://profiles.ucsd.edu/igor.grant",
+   "checked": "2026-09-23"
+  },
+  {
+   "id": "jennifer-iudicello-san-diego-state-university-uc-san-diego",
+   "name": "Jennifer Iudicello",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "neuropsychology"
+   ],
+   "url": "https://profiles.ucsd.edu/jennifer.iudicello",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "jessica-bomyea-san-diego-state-university-uc-san-diego",
    "name": "Jessica Bomyea",
    "school": "San Diego State University - UC San Diego",
@@ -20017,6 +20127,18 @@
    ],
    "url": "https://profiles.ucsd.edu/jessica.bomyea",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "jessica-montoya-san-diego-state-university-uc-san-diego",
+   "name": "Jessica Montoya",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "behavioral medicine"
+   ],
+   "url": "https://profiles.ucsd.edu/jessica.montoya",
+   "checked": "2026-09-23"
   },
   {
    "id": "judy-pa-san-diego-state-university-uc-san-diego",
@@ -20079,6 +20201,31 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "lisa-eyler-san-diego-state-university-uc-san-diego",
+   "name": "Lisa Eyler",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "behavioral medicine",
+    "neuropsychology"
+   ],
+   "url": "https://profiles.ucsd.edu/lisa.eyler",
+   "checked": "2026-09-23"
+  },
+  {
+   "id": "mariana-cherner-san-diego-state-university-uc-san-diego",
+   "name": "Mariana Cherner",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "neuropsychology"
+   ],
+   "url": "https://profiles.ucsd.edu/mariana.cherner",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "matthew-herbert-san-diego-state-university-uc-san-diego",
    "name": "Matthew Herbert",
    "school": "San Diego State University - UC San Diego",
@@ -20109,6 +20256,18 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "nader-amir-san-diego-state-university-uc-san-diego",
+   "name": "Nader Amir",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "experimental psychopathology"
+   ],
+   "url": "https://psychology.sdsu.edu/people/nader-amir/",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "natasha-wade-san-diego-state-university-uc-san-diego",
    "name": "Natasha Wade",
    "school": "San Diego State University - UC San Diego",
@@ -20122,6 +20281,18 @@
    ],
    "url": "https://profiles.ucsd.edu/natasha.wade",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "sarah-mattson-san-diego-state-university-uc-san-diego",
+   "name": "Sarah Mattson",
+   "school": "San Diego State University - UC San Diego",
+   "program": "Clinical Psychology PhD",
+   "state": "CA",
+   "interests": [
+    "neuropsychology"
+   ],
+   "url": "https://psychology.sdsu.edu/people/sarah-mattson-weller/",
+   "checked": "2026-09-23"
   },
   {
    "id": "sarah-mattson-weller-san-diego-state-university-uc-san-diego",
@@ -26529,7 +26700,7 @@
   },
   {
    "id": "amy-wachholtz-university-of-colorado-denver",
-   "name": "Amy Wachholtz, Ph.D., MDiv, MSCP",
+   "name": "Amy Wachholtz",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26545,7 +26716,7 @@
   },
   {
    "id": "elizabeth-allen-university-of-colorado-denver",
-   "name": "Elizabeth Allen, Ph.D.",
+   "name": "Elizabeth Allen",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26559,8 +26730,18 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "jeffrey-a-rings-university-of-colorado-denver",
+   "name": "Jeffrey A. Rings",
+   "school": "University of Colorado Denver",
+   "program": "Clinical Psychology PhD",
+   "state": "CO",
+   "interests": [],
+   "url": "https://clas.ucdenver.edu/psychology/jeffrey-rings-phd",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "jeffrey-rings-ph-d-university-of-colorado-denver",
-   "name": "Jeffrey Rings, Ph.D.",
+   "name": "Jeffrey Rings",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26578,7 +26759,7 @@
   },
   {
    "id": "jim-grigsby-university-of-colorado-denver",
-   "name": "Jim Grigsby, Ph.D.",
+   "name": "Jim Grigsby",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26593,7 +26774,7 @@
   },
   {
    "id": "jonathan-shaffer-university-of-colorado-denver",
-   "name": "Jonathan Shaffer, Ph.D.",
+   "name": "Jonathan Shaffer",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26609,7 +26790,7 @@
   },
   {
    "id": "karena-leo-university-of-colorado-denver",
-   "name": "Karena Leo, Ph.D.",
+   "name": "Karena Leo",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26625,7 +26806,7 @@
   },
   {
    "id": "kevin-everhart-ph-d-university-of-colorado-denver",
-   "name": "Kevin Everhart, Ph.D.",
+   "name": "Kevin Everhart",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26635,7 +26816,7 @@
   },
   {
    "id": "kevin-masters-university-of-colorado-denver",
-   "name": "Kevin Masters, Ph.D.",
+   "name": "Kevin Masters",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26651,7 +26832,7 @@
   },
   {
    "id": "krista-ranby-university-of-colorado-denver",
-   "name": "Krista Ranby, Ph.D.",
+   "name": "Krista Ranby",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26666,8 +26847,18 @@
    "checked": "2026-08-11"
   },
   {
+   "id": "krista-w-ranby-university-of-colorado-denver",
+   "name": "Krista W. Ranby",
+   "school": "University of Colorado Denver",
+   "program": "Clinical Psychology PhD",
+   "state": "CO",
+   "interests": [],
+   "url": "https://clas.ucdenver.edu/psychology/krista-ranby-phd",
+   "checked": "2026-09-23"
+  },
+  {
    "id": "kristin-kilbourn-university-of-colorado-denver",
-   "name": "Kristin Kilbourn, Ph.D.",
+   "name": "Kristin Kilbourn",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -26684,7 +26875,7 @@
   },
   {
    "id": "peter-kaplan-university-of-colorado-denver",
-   "name": "Peter Kaplan, Ph.D.",
+   "name": "Peter Kaplan",
    "school": "University of Colorado Denver",
    "program": "Clinical Psychology PhD",
    "state": "CO",
@@ -29661,7 +29852,7 @@
   },
   {
    "id": "christopher-murphy-university-of-maryland-baltimore-county",
-   "name": "Christopher Murphy, Ph.D.",
+   "name": "Christopher Murphy",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29677,7 +29868,7 @@
   },
   {
    "id": "lira-yoon-university-of-maryland-baltimore-county",
-   "name": "Lira Yoon, Ph.D.",
+   "name": "Lira Yoon",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29693,7 +29884,7 @@
   },
   {
    "id": "molly-franz-university-of-maryland-baltimore-county",
-   "name": "Molly Franz, Ph.D.",
+   "name": "Molly Franz",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29709,7 +29900,7 @@
   },
   {
    "id": "pamela-rakhshan-rouhakhtar-university-of-maryland-baltimore-county",
-   "name": "Pamela Rakhshan Rouhakhtar, Ph.D.",
+   "name": "Pamela Rakhshan Rouhakhtar",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29725,7 +29916,7 @@
   },
   {
    "id": "rebecca-schacht-university-of-maryland-baltimore-county",
-   "name": "Rebecca Schacht, Ph.D.",
+   "name": "Rebecca Schacht",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29740,7 +29931,7 @@
   },
   {
    "id": "shari-waldstein-university-of-maryland-baltimore-county",
-   "name": "Shari Waldstein, Ph.D.",
+   "name": "Shari Waldstein",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -29757,7 +29948,7 @@
   },
   {
    "id": "tasneem-khambaty-university-of-maryland-baltimore-county",
-   "name": "Tasneem Khambaty, Ph.D.",
+   "name": "Tasneem Khambaty",
    "school": "University of Maryland, Baltimore County",
    "program": "Clinical Psychology PhD",
    "state": "MD",
@@ -35370,7 +35561,7 @@
   },
   {
    "id": "drew-a-curtis-ph-d-university-of-texas-at-tyler",
-   "name": "Drew A. Curtis, Ph.D.",
+   "name": "Drew A. Curtis",
    "school": "University of Texas at Tyler",
    "program": "Clinical Psychology PhD",
    "state": "TX",

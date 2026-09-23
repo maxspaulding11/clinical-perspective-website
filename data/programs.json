@@ -2970,7 +2970,7 @@
    "notAccepting": [
     "Dr. Conley",
     "Dr. Leon",
-    "Holmbeck (retired)"
+    "Grayson Holmbeck"
    ],
    "note": "The program page states the deadline as \"Application materials must be received by 5:00 pm CST on November 1\" and notes there is no application fee.",
    "applicationDeadline": "November 1, 5:00 pm CST",
@@ -4649,7 +4649,7 @@
     "Eunice Chen",
     "Lauren Alloy",
     "Philip Kendall",
-    "Tania Giovanetti",
+    "Tania Giovannetti",
     "Thomas Olino",
     "Wilson Vincent"
    ],
@@ -4657,7 +4657,7 @@
     "Michael McCloskey"
    ],
    "notAccepting": [
-    "Johanna Jarcho (Affiliated Faculty)",
+    "Johanna Jarcho",
     "Lauren Ellman",
     "Robert Fauber"
    ],
@@ -5402,11 +5402,11 @@
    "url": "https://psychology.uark.edu/graduate/clinical-psychology/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-23",
    "sourceQuote": "Drs. Cavell, Lin, Quetsch, Tonkin, & Veilleux will be reviewing applications for Fall 2027. Drs. Bridges, Fugitt, Ham, & Judah will NOT.",
    "accepting": [
     "Dr. Cavell",
-    "Dr. Lin",
+    "Jeff Lin",
     "Dr. Quetsch",
     "Dr. Tonkin",
     "Dr. Veilleux"
@@ -5414,11 +5414,11 @@
    "maybe": [],
    "notAccepting": [
     "Dr. Bridges",
-    "Dr. Fugitt",
+    "Jessica Fugitt",
     "Dr. Ham",
     "Dr. Judah"
    ],
-   "note": "This statement on the Clinical Psychology program page explicitly names Fall 2026, not Fall 2027 — it is last cycle's information and has not yet been updated. Per the task's disambiguation rule, not reporting this as current/posted for the Fall 2027 cycle we need.",
+   "note": "This statement on the Clinical Psychology program page explicitly names Fall 2026, not Fall 2027 — it is last cycle's information and has not yet been updated. Per the task's disambiguation rule, not reporting this as current/posted for the Fall 2027 cycle we need. The program states who is reviewing in one sentence, by surname only, so full names come from the links on the same page. Dr Tonkin is still shown by surname because that name is not linked there and guessing a first name is worse than showing none.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
