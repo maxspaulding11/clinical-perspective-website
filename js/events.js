@@ -83,6 +83,20 @@
     if (!S || S.__counted) return !!S;
     S.__counted = true;
 
+    // Watches go through toggleWatch, which returns null when somebody is
+    // signed out and false when they are un-watching. Counting the click
+    // instead counted all three, and the first day recorded 20 watches against
+    // 15 that actually existed -- a measurement that overstates by a third is
+    // worse than none, because it gets believed.
+    if (typeof S.toggleWatch === 'function') {
+      var originalWatch = S.toggleWatch;
+      S.toggleWatch = function () {
+        var now = originalWatch.apply(S, arguments);
+        if (now === true) send('watch');
+        return now;
+      };
+    }
+
     ['toggleSchool', 'toggleProf'].forEach(function (fn) {
       if (typeof S[fn] !== 'function') return;
       var original = S[fn];
@@ -105,11 +119,13 @@
     document.addEventListener('DOMContentLoaded', wrap);
   }
 
+  // Export buttons are counted by click because a click on them IS the
+  // action -- unlike a watch, there is no later success or failure to wait
+  // for. The watch handler that used to live here is gone; see wrap().
   document.addEventListener('click', function (e) {
     var t = e.target;
     if (!t || !t.closest) return;
-    if (t.closest('[data-watch-school]')) send('watch');
-    else if (t.closest('#export-open-btn')) send('export-open');
+    if (t.closest('#export-open-btn')) send('export-open');
     else if (t.closest('.export-btn')) {
       var fmt = t.closest('.export-btn').getAttribute('data-fmt');
       send(fmt === 'gdoc' || fmt === 'gsheet' ? 'export-copy' : 'export-file');
