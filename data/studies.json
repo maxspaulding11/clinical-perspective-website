@@ -1198,5 +1198,37 @@
     "doi": "10.1002/pmh.70102",
     "sourceUrl": "https://doi.org/10.1002/pmh.70102",
     "instagram": ""
+  },
+  {
+    "slug": "states-spend-more-on-suicide-prevention-than-they",
+    "index": 76,
+    "title": "States spend more on suicide prevention than they used to. Not where the deaths are.",
+    "tag": "Public Health",
+    "blurb": "Across 306 enacted state budgets for 2021-2026, states explicitly allocated $7.2 billion to suicide prevention and crisis services, rising from $1.05 to $6.55 per person. But 21.6% of state-years allocated nothing, and a state's suicide rate bore no relationship to what it budgeted.",
+    "date": "2026-09-24",
+    "summary": "The 988 Suicide and Crisis Lifeline launched nationally in 2022, but the infrastructure behind it -- call centres, mobile crisis teams, stabilisation units -- is largely built and paid for by individual states. Researchers led by Jonathan Purtle read every enacted state budget for fiscal years 2021 through 2026, 306 in all, and counted the dollars explicitly labelled for suicide prevention and crisis services. The total was $7.2 billion, and the trend was up: mean per capita funding climbed from $1.05 in 2021 to $6.55 in 2025, with the share of total state budgets rising alongside it. Two findings complicate the good news. First, the spending is wildly uneven and often absent -- the median state-year allocated $0.87 per person, a fraction of the $3.63 mean, and in 66 of the 306 state-years, 21.6% of them, the figure was exactly zero. Second, and most striking, there was no significant association between a state's suicide death rate and how much it budgeted. Need, measured the most direct way available, did not predict funding. What did predict it was legislation: states that had enacted a 988 telecom fee, a small surcharge on phone bills, budgeted more than twice as much per person as states that had not ($7.73 versus $3.13), which the authors offer as a practical financing route. The study counts only money a budget explicitly labels for this purpose, so it undercounts the real total -- city and county funding, general mental health spending and Medicaid crisis services all sit outside it, and by amounts that likely differ state to state. It also counts dollars budgeted rather than dollars spent, and actual expenditure is usually lower. Because suicide rates were measured before each fiscal year, nothing here can say whether the additional money changed outcomes.",
+    "journal": "JAMA Network Open",
+    "authors": "Jonathan Purtle, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42726479",
+    "doi": "10.1001/jamanetworkopen.2026.33372",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.33372",
+    "instagram": ""
+  },
+  {
+    "slug": "cbt-cut-ocd-symptoms-sharply-and-changed-a",
+    "index": 77,
+    "title": "CBT cut OCD symptoms sharply -- and changed a brain signal for holding back",
+    "tag": "Treatment",
+    "blurb": "In a randomized trial of 60 adults with OCD, 77.8% of those receiving 12 CBT sessions met response criteria versus 7.7% on the waitlist, and 37% reached remission. The brain's No-Go P3 signal, an electrical marker of inhibition, increased alongside.",
+    "date": "2026-09-25",
+    "summary": "Cognitive behavioural therapy with exposure and response prevention is the established psychological treatment for obsessive-compulsive disorder, but what it changes in the brain is unsettled. One candidate is response inhibition, the ability to stop an action before you take it, which is measurably weaker in OCD and maps neatly onto the experience of not being able to resist a compulsion. Researchers led by Metin Cinaroglu randomised 60 adults meeting DSM-5 criteria for OCD to 12 individual CBT sessions or a waitlist, and measured both symptoms and EEG during a Go/No-Go task, in which participants press a button for one cue and must withhold it for another. Fifty-three completed both assessments. The clinical results were decisive: 21 of 27 in the CBT group (77.8%) met the standard response threshold of a 35% Y-BOCS reduction, against 2 of 26 on the waitlist (7.7%), and 10 (37%) reached remission, the group moving from the moderate-to-severe range into the mild range. Obsessive beliefs and intolerance of uncertainty dropped in parallel. The electrophysiology moved as predicted too, with the No-Go P3 -- a brain response around 300 to 600 milliseconds after a stop cue, read as the signature of active inhibition -- increasing in amplitude after treatment. That the symptoms improved is not in doubt; the brain interpretation needs more care. The control was a waitlist, not an active therapy, so expectancy, therapist attention and simple engagement are not controlled for, and repeating the same Go/No-Go task invites practice effects that could produce part of the change. The clinician scoring symptom severity knew who had been treated. The EEG used a 14-channel portable headset, which the authors are careful to say supports scalp-level claims only, not statements about specific brain regions. And with 53 completers from a single cultural setting, no follow-up beyond the end of treatment, and no healthy comparison group, it is unknown whether the signal normalised or merely shifted.",
+    "journal": "BMC Psychology",
+    "authors": "Metin Çınaroğlu, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42723132",
+    "doi": "10.1186/s40359-026-05201-1",
+    "sourceUrl": "https://doi.org/10.1186/s40359-026-05201-1",
+    "instagram": ""
   }
 ]

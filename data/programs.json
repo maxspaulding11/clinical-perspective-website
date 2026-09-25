@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-23",
+ "updated": "2026-09-25",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -1306,14 +1306,24 @@
    "state": "OH",
    "degree": "PhD",
    "url": "https://psychsciences.case.edu/graduate/clinical-psych/admissions-information/accepting-students/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The following faculty members are interested in interviewing applicants for the clinical program for the upcoming 2026-27 academic year.",
-   "accepting": [],
-   "maybe": [],
+   "checked": "2026-09-25",
+   "sourceQuote": "The faculty listed below have indicated their current plans for recruiting a new Clinical Psychology PhD student who would begin in Fall 2027. Plans may change during the admissions cycle. (Info last updated 9/24/2026)",
+   "accepting": [
+    "Alison Athey",
+    "Amy Przeworski",
+    "Arin Connell",
+    "Norah Feeny",
+    "R. Elizabeth Capps",
+    "Stacy R. Ryan-Pettes",
+    "Wilson Brown"
+   ],
+   "maybe": [
+    "Rita Obeid"
+   ],
    "notAccepting": [],
-   "note": "This is the department's dedicated 'Accepting Clinical Program Students' page, so it was opened directly. However the posted list (Elizabeth Capps, Wilson Brown, Stacy Ryan-Pettes, Norah Feeny, Arin Connell, Rita Obeid, Amy Przeworski) is explicitly for matriculation in the '2026-27 academic year' i.e. Fall 2026, not Fall 2027. The Fall 2027 list had not yet been posted as of this check, so treated as pending rather than attributing this roster to Fall 2027.",
+   "note": "Deadline: December 1. The page, titled 'Clinical Faculty Recruitment for Fall 2027', splits faculty into 'Expect to consider applicants' (Athey, Brown, Capps, Connell, Feeny, Ryan-Pettes, Przeworski), recorded as accepting, and 'May consider applicants (These faculty members have not yet made a final decision about recruiting a student for Fall 2027...)' (Rita Obeid), recorded as maybe. The page also carries a general 'Plans may change during the admissions cycle'; the page itself draws the firm/tentative line, so that split is followed rather than treating the whole list as a maybe. Alison Athey is new relative to the Fall 2026 list read on 9 September. Capps and Ryan-Pettes are spelled as in our faculty data (the page has 'Elizabeth Capps' and 'Stacy Ryan-Pettes') so their profile links resolve.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -1329,7 +1339,8 @@
     "TOEFL/PTE required for international students"
    ],
    "appInfoSourceUrl": "https://psychsciences.case.edu/graduate/clinical-psych/admissions-information/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-09-25"
   },
   {
    "id": "catholic-university-of-america-phd",
@@ -3284,21 +3295,21 @@
    "url": "https://www.psychology.msstate.edu/graduate-programs/clinical-psychology-program/information-applicants",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-25",
    "sourceQuote": "The following faculty members currently accept students in the Clinical Psychology PhD Program:",
    "accepting": [
     "Aggie Rieger",
     "Arazais Oliveros",
     "Danielle Nadorff",
     "Michael R. Nadorff",
-    "Robert McMillen"
-   ],
-   "maybe": [
-    "Cliff McKinney",
+    "Robert McMillen",
     "Samuel Murphy"
    ],
+   "maybe": [
+    "Cliff McKinney"
+   ],
    "notAccepting": [],
-   "note": "Deadline: December 1st (every year). Page lists Cliff McKinney under the general 'currently accept students' heading but, unlike the other five names, gives him no explicit 'accepting applications for 2027' annotation, so his 2027 status is ambiguous and he is placed in maybe. Samuel Murphy is explicitly annotated 'potentially accepting applications for 2027' and is also placed in maybe. CORRECTED: verification had added Samuel Murphy, Ph.D., Cliff McKinney, Ph.D. to the accepting list while they remained in maybe, an internal contradiction. Kept in maybe only, per the original reasoning that their Fall 2027 status on the page is annotated ambiguously (no explicit 2027 tag, or only \"potentially\"). Corrected during verification: The quote matches, but the accepting list omits two faculty who are actually listed on the page: Cliff McKinney, Ph.D. and Samuel Murphy, Ph.D.",
+   "note": "Deadline: December 1st (every year). Six of the seven names under 'Faculty who accept clinical students' carry the tag 'accepting applications for 2027'. Cliff McKinney is listed without that tag, so his 2027 status is ambiguous and he stays in maybe. Samuel Murphy was tagged 'potentially accepting applications for 2027' when read on 9 September; by 23 September his tag read 'accepting applications for 2027' like the others, so he moved from maybe to accepting. The page spells Aggie Rieger's name 'Reiger'; the spelling Rieger is kept so the profile link resolves.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -3481,16 +3492,19 @@
    "url": "https://www.psychiatry.northwestern.edu/education/clinical-psychology-phd/how-to-apply.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-25",
    "sourceQuote": "The following labs plan to recruit applicants for admission into the PhD program for the upcoming academic year (to begin Fall 2027).",
    "accepting": [
     "Darius Tandon",
+    "Faith Summersett Williams",
     "Michael Newcomb",
+    "Shan Siddiqi",
+    "Siobhan M. Phillips",
     "Tamar Gefen"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source.",
+   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source. As of the page's '09/25/26' update it lists six recruiting labs: Newcomb, Tandon and Gefen as before, plus Faith Summersett Williams, Shan Siddiqi and Siobhan M. Phillips (the page notes Phillips 'will be added to the application portal the week of September 27th'). The page's caveat that recruitment 'is subject to change at any time' depending on funding was already there when the first three were recorded as accepting, and the page also says 'Only faculty listed below will be recruiting', so all six are treated the same way.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "to begin Fall 2027",
@@ -4642,26 +4656,25 @@
    "url": "https://liberalarts.temple.edu/academics/departments-and-programs/psychology/graduate/clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Clinical Psychology Primary Faculty [table columns: Faculty | Area of Study | Accepting Graduate Students | Not Accepting Graduate Students]. Application deadline for the Clinical Psychology PhD program is November 15.",
+   "checked": "2026-09-25",
+   "sourceQuote": "Clinical Psychology Primary Faculty [table columns: Faculty | Area of Study | Accepting Graduate Students | Not Accepting Graduate Students; cells read 'Plans to take a clinical student for 2027' or 'Not accepting clinical students for 2027']",
    "accepting": [
-    "Deborah Drabick",
-    "Eunice Chen",
     "Lauren Alloy",
+    "Lauren Ellman",
+    "Michael McCloskey",
     "Philip Kendall",
     "Tania Giovannetti",
-    "Thomas Olino",
+    "Thomas Olino"
+   ],
+   "maybe": [],
+   "notAccepting": [
+    "Deborah Drabick",
+    "Eunice Chen",
+    "Johanna Jarcho",
+    "Robert Fauber",
     "Wilson Vincent"
    ],
-   "maybe": [
-    "Michael McCloskey"
-   ],
-   "notAccepting": [
-    "Johanna Jarcho",
-    "Lauren Ellman",
-    "Robert Fauber"
-   ],
-   "note": "Deadline: November 15, 2026. Per-faculty cells explicitly say 'Accepting a clinical student for 2027' / 'Will be accepting a clinical student for 2027' / 'May be accepting a clinical student for 2027' / 'Not accepting clinical students for 2027', clearly confirming the Fall 2027 cycle. Michael McCloskey ('May be accepting') placed in maybe per the three-state rule. The sourceQuote above describes the table's structure rather than quoting a single sentence verbatim (Temple presents this as a table, not prose). Independent verification also could not re-confirm Johanna Jarcho's specific not-accepting status on a second read of the page, though the rest of the list matched.",
+   "note": "Deadline: November 15, 2026. Temple revised this table between 9 and 23 September 2026. Each faculty row now reads either 'Plans to take a clinical student for 2027' (Alloy, Ellman, Giovannetti, Kendall, McCloskey, Olino) or 'Not accepting clinical students for 2027' (Chen, Drabick, Fauber, Vincent, and affiliated faculty Jarcho). Compared with our 9 September reading: Chen, Drabick and Vincent moved to not accepting, Ellman moved to accepting, and McCloskey went from 'May be accepting' to 'Plans to take', so he is now under accepting rather than maybe. The page spells the name 'Giovanetti'; the spelling Giovannetti is kept so the profile link resolves. The Area and status columns are hidden at narrow widths on Temple's site, so read the table at desktop width or from the markup. The sourceQuote describes the table's structure because Temple presents this as a table, not prose.",
    "pcsas": true,
    "applicationDeadline": "November 15",
    "deadlineCycle": null,
@@ -5599,14 +5612,15 @@
    "url": "https://www.colorado.edu/psych-neuro/graduate-programs/application-information/faculty-recruiting-graduate-students",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-25",
    "sourceQuote": "Recruitment Plans for Fall 2027 ... If you apply to work with someone who is not actively recruiting students, your application won't be considered.",
    "accepting": [
     "Erik Willcutt",
     "June Gruber",
     "Roselinde Kaiser"
    ],
-   "maybe": [
+   "maybe": [],
+   "notAccepting": [
     "Chandra Reynolds",
     "Cinnamon Bidwell",
     "Joanna Arch",
@@ -5616,8 +5630,7 @@
     "Soo Rhee",
     "Tamar Kodish"
    ],
-   "notAccepting": [],
-   "note": "Page uses three columns for the Clinical subplan: 'Faculty Actively Recruiting Students' (mapped to accepting), 'Faculty Possibly Recruiting Students' (mapped to maybe), and 'Faculty Not Recruiting Students' (empty for Clinical, mapped to notAccepting).",
+   "note": "Page uses three columns for the Clinical subplan: 'Faculty Actively Recruiting Students' (accepting), 'Faculty Possibly Recruiting Students' (maybe) and 'Faculty Not Recruiting Students' (notAccepting). As read on 25 September 2026 the Clinical 'Possibly' column is empty and Arch, Bidwell, Dimidjian, Kodish, Pearl, Reynolds, Rhee and Whisman are under 'Not Recruiting'; on 9 September those eight were recorded as possibly recruiting. The actively recruiting three (Gruber, Kaiser, Willcutt) are unchanged. The page covers the whole department; only the Clinical subplan is counted.",
    "applicationDeadline": "November 20",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -6125,14 +6138,28 @@
    "state": "IA",
    "degree": "PhD",
    "url": "https://psychology.uiowa.edu/graduate/clinical-science",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The following faculty are recruiting new clinical science students for Fall 2026: Teresa Treat, Isaac Petersen, Emily Thomas, and Molly Nikolas. The following faculty may or may nor recruit new clinical science students for Fall 2026: Dan Tranel. The following faculty are not recruiting new clinical science students for Fall 2026: Bengi Baran, Bruce Baratholow, Susan Lutgendorf, Ece Demir-Lira, and Jodie Plumert.",
-   "accepting": [],
+   "checked": "2026-09-25",
+   "sourceQuote": "The following faculty members are considering students for Fall 2027 admission: Bengi Baran, Bruce Bartholow, Debbie Yee, Dan Tranel, Dorit Kliemann",
+   "accepting": [
+    "Bengi Baran",
+    "Bruce Bartholow",
+    "Daniel Tranel",
+    "Debbie Yee",
+    "Dorit Kliemann"
+   ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "This three-tier (yes/maybe/no) list is explicitly for Fall 2026 entry, which is stale relative to the Fall 2027 target (that cohort is already decided as of this check); the page had not yet been updated for the new cycle at time of check. Quoted verbatim for reference but not reported as the current Fall 2027 status. Note: Ece Demir-Lira appears in the 'not recruiting' sentence but does not appear in the separate 'Faculty in clinical science' roster lower on the same page, an inconsistency in the source page itself.",
+   "notAccepting": [
+    "Ece Demir-Lira",
+    "Emily Thomas",
+    "Isaac Petersen",
+    "Molly Nikolas",
+    "Natalie Denburg",
+    "Susan Lutgendorf",
+    "Teresa Treat"
+   ],
+   "note": "Deadline: December 1. Iowa's clinical science page replaced its Fall 2026 list with a Fall 2027 one. Not considering students for Fall 2027: Natalie Denburg, Ece Demir-Lira, Susan Lutgendorf, Molly Nikolas, Isaac Petersen, Teresa Treat, Emily Thomas. 'Dan Tranel' is recorded as Daniel Tranel to match his profile. Dorit Kliemann is named in the program's own recruiting sentence but is not in the page's 'Faculty in clinical science' roster (nor is Ece Demir-Lira); she is kept because this is the clinical program's own list, not a department-wide one. The program's survey answer of 18 September ('not posted yet') predates this list and is kept separately in 'confirmed'.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -6152,7 +6179,8 @@
     "answer": "no",
     "on": "2026-09-18",
     "cycle": "Fall 2027"
-   }
+   },
+   "newlyPostedOn": "2026-09-25"
   },
   {
    "id": "university-of-kansas-phd",
@@ -7404,16 +7432,17 @@
    "url": "https://www.uttyler.edu/academics/colleges-schools/education-psychology/departments/psychology-counseling/graduate/phd-clinical-psychology/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "All admissions materials are due by December 1st, 2026 at 11:59 PM for the Fall 2027 cohort. Faculty accepting applications for Fall 2027: Dr. Drew Curtis, Dr. Dennis Combs, Dr. Sarah Sass",
+   "checked": "2026-09-25",
+   "sourceQuote": "All admissions materials are due by December 1st, 2026 for the Fall 2027 cohort. Faculty accepting applications for Fall 2027: Dr. Drew Curtis Dr. Dennis Combs Dr. Adam McGuire Dr. Sarah Sass",
    "accepting": [
+    "Adam McGuire",
     "Dennis Combs",
     "Drew Curtis",
     "Sarah Sass"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1, 2026, 11:59 PM.",
+   "note": "Deadline: December 1, 2026, 11:59 PM. Adam McGuire was added to the page's list after 9 September.",
    "applicationDeadline": "December 1, 2026",
    "deadlineCycle": "Fall 2027 cohort",
    "greRequired": "not mentioned",
@@ -7597,10 +7626,11 @@
    "url": "https://www.uvm.edu/cas/psychology/phd-program-application-process",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-25",
    "sourceQuote": "Faculty Accepting Clinical Ph.D. Program Students for Fall 2027",
    "accepting": [
-    "Eli Klemperer"
+    "Eli Klemperer",
+    "Kelly Peck"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -7617,7 +7647,8 @@
     "Transcripts required from all institutions attended"
    ],
    "appInfoSourceUrl": "https://www.uvm.edu/cas/psychology/phd-program-application-process",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "note": "The page's clinical heading lists Elias Klemperer and Kelly Peck (Peck added after 9 September; both link to Larner College of Medicine profiles). A separate heading for the Experimental Ph.D. says its list 'will be posted soon' and is not counted here."
   },
   {
    "id": "university-of-virginia-phd",
