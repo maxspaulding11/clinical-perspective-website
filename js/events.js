@@ -36,6 +36,13 @@
     'export-open': 1, 'export-file': 1, 'export-copy': 1
   };
 
+  // Hosts that are a step in our own sign-in, not somewhere anybody came from.
+  // Google's OAuth screen sends people back to us, so the first page after a
+  // sign-in sees accounts.google.com as its referrer and every action in that
+  // tab was being filed under it -- twenty-five in three days, which would
+  // read as a referral source that does not exist.
+  var OWN_FLOW = /^(accounts\.google\.com|accounts\.youtube\.com|login\.microsoftonline\.com|appleid\.apple\.com)$/i;
+
   function landingRef() {
     try {
       var kept = sessionStorage.getItem(REF_KEY);
@@ -48,7 +55,7 @@
         var h = new URL(document.referrer).hostname.replace(/^www\./, '');
         // Our own pages are not a referrer worth recording; we want the
         // outside source that started the visit.
-        if (h && h !== location.hostname.replace(/^www\./, '')) host = h;
+        if (h && h !== location.hostname.replace(/^www\./, '') && !OWN_FLOW.test(h)) host = h;
       }
     } catch (e) { /* malformed referrer */ }
 
