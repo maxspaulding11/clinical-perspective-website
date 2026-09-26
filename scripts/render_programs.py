@@ -48,8 +48,6 @@ try:
 except (IOError, ValueError):
     pass
 import html
-import json
-import os
 
 import render_tracker
 
@@ -227,10 +225,21 @@ def outcomes_block(p, fmt_date):
             f'<p class="odds-sub">{o.get("offers")} offers from '
             f'{o.get("applicants")} applicants</p></div>')
     if match is not None:
+        # The denominator is part of the number, not a footnote. "25%" beside a
+        # university's name is an accusation; "2 of 8 who applied" is a fact
+        # somebody can weigh. And this counts APA-accredited placements only,
+        # which is narrower than "got an internship", so the label says so and
+        # the wider figure sits underneath when the program reports it.
+        sought = o.get("internshipSought")
+        sub = (f'{o.get("internshipMatchedN")} of {sought} who applied'
+               if sought else "most recent year reported")
+        anyp = o.get("anyInternshipPct")
+        if anyp is not None and anyp != match:
+            sub += f' · {anyp}% got an internship of any kind'
         tiles.append(
             f'<div class="odds-tile"><p class="odds-value">{match}%</p>'
-            f'<p class="odds-label">Matched an accredited internship</p>'
-            f'<p class="odds-sub">most recent year reported</p></div>')
+            f'<p class="odds-label">Matched an APA-accredited internship</p>'
+            f'<p class="odds-sub">{sub}</p></div>')
     if med is not None:
         tiles.append(
             f'<div class="odds-tile"><p class="odds-value">{med}</p>'

@@ -33,8 +33,6 @@ try:
 except (IOError, ValueError, NameError):
     pass
 import html
-import json
-import os
 import re
 from datetime import date, timedelta
 
@@ -93,10 +91,16 @@ def odds_chips(p):
                     f'from the program’s own APA disclosure">'
                     f'{o["acceptanceRate"]}% offered a place</span>')
     if o.get("internshipMatchedPct") is not None:
-        bits.append(f'<span class="fac-appinfo-item" title="Students who '
-                    f'obtained an APA/CPA-accredited internship, most recent '
-                    f'year in the program’s own APA disclosure">'
-                    f'{o["internshipMatchedPct"]}% matched an internship</span>')
+        sought = o.get("internshipSought")
+        of = f' of {sought}' if sought else ""
+        bits.append(f'<span class="fac-appinfo-item" title="'
+                    f'{o.get("internshipMatchedN")} of {sought} students who '
+                    f'applied obtained an APA/CPA-accredited internship, most '
+                    f'recent year in the program’s own APA disclosure. '
+                    f'Accredited placements only; some programs place students '
+                    f'in internships that are not accredited.">'
+                    f'{o["internshipMatchedPct"]}%{of} matched an accredited '
+                    f'internship</span>')
     return "".join(bits)
 
 

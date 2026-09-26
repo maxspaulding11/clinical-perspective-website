@@ -57,6 +57,8 @@ ROWS = {
     "matriculated": r"Number matriculated|Number of students matriculated",
     "accredited_internships": r"Students who obtained APA/CPA[- ]accredited internships",
     "any_internship": r"Students who obtained any internship",
+    "sought_internship": r"Students who sought or applied for internships?"
+                         r"(?:[^.]{0,60})?",
     "median_years": r"Median number of years to complete the program",
     "still_enrolled": r"Students still enrolled in program",
 }
@@ -194,11 +196,44 @@ def summarise(rows):
             s["offers"] = o
             s["acceptanceRate"] = round(100.0 * o / a, 1)
 
+    # Internship rows are (count, percent) per year, and getting this wrong is
+    # the most damaging thing this script can do. Three traps, all hit in the
+    # first run:
+    #
+    #   A program with no data for a year writes a dash where the percentage
+    #   goes. The dashes vanish from a numbers-only read, the pairs shift, and
+    #   Carlos Albizu came out as "0% matched" -- which reads as a program
+    #   whose students cannot get placed, when the next row shows most of them
+    #   obtaining APPIC internships that simply are not APA-accredited.
+    #
+    #   A percentage off a denominator of one or two is not a statistic. One
+    #   program showed 25% from a single student. Published beside a
+    #   university's name that is not a finding, it is an accusation.
+    #
+    #   "Accredited" is narrower than "placed". A program can be low on the
+    #   first and fine on the second, so the second is carried alongside and
+    #   the page has to say which it is showing.
     acc = rows.get("accredited_internships") or []
-    if len(acc) >= 2:
-        # trailing pair is (count, percent) for the latest year
-        s["internshipMatchedPct"] = acc[-1]
-        s["internshipMatchedN"] = acc[-2]
+    sought = rows.get("sought_internship") or []
+    anyint = rows.get("any_internship") or []
+    if len(acc) >= 2 and len(acc) % 2 == 0:
+        matched_n, pct = acc[-2], acc[-1]
+        denom = sought[-1] if sought else None
+        # Trust the pair only if the percentage it implies is the percentage
+        # printed. A dash-shifted row fails this and is dropped.
+        consistent = True
+        if denom:
+            implied = round(100.0 * matched_n / denom) if denom else None
+            consistent = implied is not None and abs(implied - pct) <= 6
+        if consistent and (denom is None or denom >= 4):
+            s["internshipMatchedPct"] = pct
+            s["internshipMatchedN"] = matched_n
+            if denom:
+                s["internshipSought"] = denom
+        elif denom is not None and denom < 4:
+            s["internshipTooFew"] = denom
+    if len(anyint) >= 2 and len(anyint) % 2 == 0:
+        s["anyInternshipPct"] = anyint[-1]
 
     med = rows.get("median_years") or []
     if med:
@@ -287,7 +322,8 @@ def main():
                     # stayed in the file after being correctly thrown out.
                     for k in ("applicants", "offers", "acceptanceRate",
                               "internshipMatchedPct", "internshipMatchedN",
-                              "medianYears", "dropped"):
+                              "internshipSought", "internshipTooFew",
+                              "anyInternshipPct", "medianYears", "dropped"):
                         rec.pop(k, None)
                     rec["rows"] = res["rows"]
                     rec.update(summarise(res["rows"]))
