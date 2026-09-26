@@ -38,6 +38,9 @@
     { key: 'gpa', label: 'GPA guidance' },
     { key: 'other', label: 'Other requirements' },
     { key: 'pcsas', label: 'PCSAS accredited' },
+    { key: 'acceptance', label: 'Acceptance rate' },
+    { key: 'match', label: 'Internship match rate' },
+    { key: 'years', label: 'Years to finish' },
     { key: 'confirmed', label: 'What the school told us' },
     { key: 'deptUrl', label: 'Department link' },
     { key: 'appUrl', label: 'Application info link' },
@@ -60,7 +63,7 @@
     unverified: 'Unverified'
   };
 
-  var data = null;      // { programs, profsById }
+  var data = null;      // { programs, profsById, outcomes }
   var modal = null;
 
   function esc(s) {
@@ -108,12 +111,17 @@
     var base = location.pathname.indexOf('/tools/') >= 0 ? '../' : '';
     return Promise.all([
       fetch(base + 'data/programs.json').then(function (r) { return r.json(); }),
-      fetch(base + 'data/professors.json').then(function (r) { return r.json(); })
+      fetch(base + 'data/professors.json').then(function (r) { return r.json(); }),
+      // The APA disclosures. Missing for most programs, so a failure here must
+      // not take the export down with it -- the columns simply come out empty.
+      fetch(base + 'data/outcomes.json').then(function (r) { return r.json(); })
+        .catch(function () { return { programs: {} }; })
     ]).then(function (res) {
       var profs = res[1].professors || res[1];
       var byId = {};
       profs.forEach(function (x) { byId[x.id] = x; });
-      data = { programs: res[0].programs || [], profsById: byId, cycle: res[0].cycle };
+      data = { programs: res[0].programs || [], profsById: byId,
+               cycle: res[0].cycle, outcomes: (res[2] || {}).programs || {} };
       return data;
     });
   }
@@ -159,6 +167,20 @@
       if (chosen.gpa) row['GPA guidance'] = gpaFrom(p);
       if (chosen.other) row['Other requirements'] = (p.otherRequirements || []).join('; ');
       if (chosen.pcsas) row['PCSAS accredited'] = p.pcsas ? 'Yes' : '';
+      var o = data.outcomes[p.id] || {};
+      // Blank rather than a dash when a program's disclosure could not be
+      // read: a dash in a spreadsheet column reads as a reported zero.
+      if (chosen.acceptance) {
+        row['Acceptance rate'] = o.acceptanceRate != null
+          ? o.acceptanceRate + '% (' + o.offers + ' of ' + o.applicants + ')' : '';
+      }
+      if (chosen.match) {
+        row['Internship match rate'] = o.internshipMatchedPct != null
+          ? o.internshipMatchedPct + '%' : '';
+      }
+      if (chosen.years) {
+        row['Years to finish'] = o.medianYears != null ? o.medianYears : '';
+      }
       if (chosen.confirmed) {
         row['What the school told us'] = p.confirmed && p.confirmed.answer
           ? p.confirmed.answer + ' (told us ' + (p.confirmed.on || '') + ')'

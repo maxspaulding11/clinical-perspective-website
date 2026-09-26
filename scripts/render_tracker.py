@@ -16,8 +16,22 @@ in the document before any script runs.
 Called from build.py. Safe to re-run: it replaces everything between the
 marker comments.
 """
+import json
+import os
+
 import confirmed
 import deadline as deadline_mod
+
+# The APA disclosures, read by scripts/outcomes.py. Most programs have none,
+# so every read of this is guarded.
+_OUTCOMES = {}
+_SITE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+try:
+    with open(os.path.join(_SITE_DIR, 'data', 'outcomes.json'),
+              encoding='utf-8') as _f:
+        _OUTCOMES = json.load(_f).get('programs', {})
+except (IOError, ValueError, NameError):
+    pass
 import html
 import json
 import os
@@ -63,6 +77,29 @@ def e(s):
     return html.escape(str(s if s is not None else ""), quote=True)
 
 
+def odds_chips(p):
+    """A compact acceptance and match rate for the card, where there is one.
+
+    Two numbers only. The card already carries a deadline, a GRE line, a
+    reference count and a fee, and a row of six statistics is a row nobody
+    reads. Acceptance rate says whether applying is realistic; match rate says
+    whether finishing is.
+    """
+    o = _OUTCOMES.get(p["id"]) or {}
+    bits = []
+    if o.get("acceptanceRate") is not None:
+        bits.append(f'<span class="fac-appinfo-item" title="'
+                    f'{o.get("offers")} offers from {o.get("applicants")} applicants, '
+                    f'from the program’s own APA disclosure">'
+                    f'{o["acceptanceRate"]}% offered a place</span>')
+    if o.get("internshipMatchedPct") is not None:
+        bits.append(f'<span class="fac-appinfo-item" title="Students who '
+                    f'obtained an APA/CPA-accredited internship, most recent '
+                    f'year in the program’s own APA disclosure">'
+                    f'{o["internshipMatchedPct"]}% matched an internship</span>')
+    return "".join(bits)
+
+
 def app_info(p):
     items = []
     if p.get("applicationDeadline"):
@@ -71,6 +108,7 @@ def app_info(p):
         items.append('<span class="fac-appinfo-item">Deadline: '
                      f'<strong>{e(deadline_mod.resolve(p)[0])}</strong>'
                      f'{sub}</span>')
+    items.extend([odds_chips(p)] if odds_chips(p) else [])
     gre = GRE_LABEL.get(p.get("greRequired"))
     if gre:
         items.append(f'<span class="fac-appinfo-item">{e(gre)}</span>')
