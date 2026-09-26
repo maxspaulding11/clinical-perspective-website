@@ -31,8 +31,22 @@ directly, so nothing is unreachable.
 
 Called from build.py. Every page is rewritten from scratch on every build.
 """
+import json
+import os
+
 import confirmed
 import deadline as deadline_mod
+
+# The APA disclosure every accredited program must publish, read per program by
+# scripts/outcomes.py. Absent for most of them, which is why every use of it is
+# guarded rather than assumed.
+_OUTCOMES = {}
+try:
+    with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                           'data', 'outcomes.json'), encoding='utf-8') as _f:
+        _OUTCOMES = json.load(_f).get('programs', {})
+except (IOError, ValueError):
+    pass
 import html
 import json
 import os
@@ -180,6 +194,62 @@ def answer(p, fmt_date):
             f'{body}</div>')
 
 
+def outcomes_block(p, fmt_date):
+    """What the program's own APA disclosure says about odds and outcomes.
+
+    Every accredited program has to publish this and almost nobody reads it,
+    because it lives in a PDF behind a link called "Student Admissions,
+    Outcomes, and Other Data". The tracker answers "is anyone taking students";
+    this answers the two questions that follow, which are whether you have a
+    realistic chance and whether people who get in actually finish.
+
+    The internship match rate is the one worth staring at. Students who cannot
+    match cannot graduate, so a program sitting well below its peers is telling
+    you something no brochure will.
+
+    Only figures that survived validation appear. A program with nothing
+    readable gets no section rather than an empty one, because a heading over
+    three dashes implies we looked and they publish nothing, and usually the
+    truth is that we could not read their PDF.
+    """
+    o = _OUTCOMES.get(p["id"]) or {}
+    rate = o.get("acceptanceRate")
+    match = o.get("internshipMatchedPct")
+    med = o.get("medianYears")
+    if rate is None and match is None and med is None:
+        return ""
+
+    tiles = []
+    if rate is not None:
+        tiles.append(
+            f'<div class="odds-tile"><p class="odds-value">{rate}%</p>'
+            f'<p class="odds-label">Offered a place</p>'
+            f'<p class="odds-sub">{o.get("offers")} offers from '
+            f'{o.get("applicants")} applicants</p></div>')
+    if match is not None:
+        tiles.append(
+            f'<div class="odds-tile"><p class="odds-value">{match}%</p>'
+            f'<p class="odds-label">Matched an accredited internship</p>'
+            f'<p class="odds-sub">most recent year reported</p></div>')
+    if med is not None:
+        tiles.append(
+            f'<div class="odds-tile"><p class="odds-value">{med}</p>'
+            f'<p class="odds-label">Years to finish</p>'
+            f'<p class="odds-sub">median, students who completed</p></div>')
+
+    src = ""
+    if o.get("source"):
+        src = (f'<p class="prog-src"><a href="{e(o["source"])}" target="_blank" '
+               f'rel="noopener">The program’s own disclosure &nearr;</a></p>')
+
+    return (f'<section class="guide-section"><h2>Odds and outcomes</h2>'
+            f'<div class="odds-row">{"".join(tiles)}</div>'
+            f'<p class="odds-note">Published by the program itself, as every '
+            f'APA-accredited program is required to. Figures are for the most '
+            f'recent year in their table, which is usually a year or two '
+            f'behind.</p>{src}</section>')
+
+
 def program_jsonld(p, base_url, fmt_date):
     url = f"{base_url}/programs/{p['id']}.html"
     prog = {
@@ -274,6 +344,8 @@ def program_page(p, siblings, base_url, header, footer, fmt_date, has_state):
     names_html = (f'<section class="guide-section"><h2>Faculty</h2>{names}'
                   f'{quote}</section>' if names or quote else "")
 
+    out_html = outcomes_block(p, fmt_date)
+
     app = render_tracker.app_info(p)
     app_html = ""
     if app.strip() and app != '<div class="fac-appinfo"></div>':
@@ -348,6 +420,7 @@ def program_page(p, siblings, base_url, header, footer, fmt_date, has_state):
 
       {answer(p, fmt_date)}
       {names_html}
+      {out_html}
       {app_html}
 
       <div class="fac-foot prog-foot">
