@@ -483,3 +483,96 @@
     window.spareChangeSession.then(function (user) { if (user) load(); });
   }
 })();
+
+/* Recently removed, with a way back.
+ *
+ * The removal itself is recorded by saved.js; this only draws it. Names are
+ * resolved from the same two data files the rest of the page uses, so a
+ * restored entry reads as the school or professor it is rather than as a slug.
+ * An id that no longer resolves -- a program dropped from the tracker since --
+ * still gets a row, because the point is to let somebody put back a thing they
+ * did not mean to lose, and a name we can no longer look up is not a reason to
+ * hide it from them.
+ */
+(function () {
+  'use strict';
+
+  function ago(ms) {
+    var mins = Math.round((Date.now() - ms) / 60000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return mins + (mins === 1 ? ' minute ago' : ' minutes ago');
+    var hrs = Math.round(mins / 60);
+    if (hrs < 24) return hrs + (hrs === 1 ? ' hour ago' : ' hours ago');
+    var days = Math.round(hrs / 24);
+    return days + (days === 1 ? ' day ago' : ' days ago');
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function titleCase(id) {
+    return id.split('-').map(function (w) {
+      return w ? w[0].toUpperCase() + w.slice(1) : w;
+    }).join(' ');
+  }
+
+  function render(programs, profs) {
+    var S = window.TCPSaved;
+    var box = document.getElementById('removed-box');
+    var list = document.getElementById('removed-list');
+    if (!S || !S.recentlyRemoved || !box || !list) return;
+
+    var rows = S.recentlyRemoved();
+    if (!rows.length) { box.hidden = true; return; }
+
+    list.innerHTML = rows.map(function (r) {
+      var label;
+      if (r.kind === 'professor') {
+        var pr = profs[r.id];
+        label = pr ? pr.name + ' \u00b7 ' + pr.school : titleCase(r.id);
+      } else {
+        var pg = programs[r.id];
+        label = pg ? pg.school : titleCase(r.id);
+      }
+      return '<li class="removed-item">' +
+        '<span>' + esc(label) + '</span>' +
+        '<span class="removed-when">' + esc(ago(r.at)) + '</span>' +
+        '<button type="button" class="removed-restore" data-kind="' + esc(r.kind) +
+        '" data-id="' + esc(r.id) + '">Restore</button></li>';
+    }).join('');
+    box.hidden = false;
+
+    list.onclick = function (e) {
+      var btn = e.target.closest ? e.target.closest('.removed-restore') : null;
+      if (!btn) return;
+      S.restore(btn.getAttribute('data-kind'), btn.getAttribute('data-id'));
+      location.reload();
+    };
+  }
+
+  function load() {
+    var base = '../data/';
+    Promise.all([
+      fetch(base + 'programs.json').then(function (r) { return r.json(); }),
+      fetch(base + 'professors.json').then(function (r) { return r.json(); })
+    ]).then(function (res) {
+      var pg = {}, pr = {};
+      (res[0].programs || []).forEach(function (x) { pg[x.id] = x; });
+      ((res[1].professors || res[1]) || []).forEach(function (x) { pr[x.id] = x; });
+      render(pg, pr);
+    }).catch(function () {
+      // The data files failing should not hide the list -- slugs are worse
+      // than names but far better than nothing.
+      render({}, {});
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', load);
+  } else {
+    load();
+  }
+})();

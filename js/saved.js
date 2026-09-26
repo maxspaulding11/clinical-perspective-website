@@ -63,6 +63,101 @@
     }).catch(function () { /* offline or request failed — local copy still holds */ });
   }
 
+  // ---------------------------------------------------------------- undo
+  // Removing a star was instant and final. Somebody took one school off their
+  // list, took a second off by accident in the same moment, and had no way to
+  // find out which -- the row is deleted, not flagged, so there is nothing to
+  // look at afterwards. A toast alone would not have helped, because the whole
+  // problem was not noticing.
+  //
+  // So a removal leaves a tombstone here for thirty days and the list page
+  // shows them with a Restore button. This is deliberately local: it lives in
+  // the same storage the list itself does, survives a signed-out visit, and
+  // costs no schema change. It does not follow you to another device, which
+  // is the one thing it cannot do and the page says so.
+  var REMOVED_KEY = 'tcp-removed';
+  var REMOVED_DAYS = 30;
+  var REMOVED_MAX = 50;
+
+  function readRemoved() {
+    try {
+      var raw = localStorage.getItem(REMOVED_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      var cutoff = Date.now() - REMOVED_DAYS * 86400000;
+      return list.filter(function (r) { return r && r.at > cutoff; });
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function writeRemoved(list) {
+    try {
+      localStorage.setItem(REMOVED_KEY, JSON.stringify(list.slice(0, REMOVED_MAX)));
+    } catch (e) { /* storage unavailable -- undo is a nicety, not a promise */ }
+  }
+
+  function tombstone(kind, id) {
+    var list = readRemoved().filter(function (r) {
+      return !(r.kind === kind && r.id === id);
+    });
+    list.unshift({ kind: kind, id: id, at: Date.now() });
+    writeRemoved(list);
+  }
+
+  function forget(kind, id) {
+    writeRemoved(readRemoved().filter(function (r) {
+      return !(r.kind === kind && r.id === id);
+    }));
+  }
+
+  function restore(kind, id) {
+    var set = readSet(keyFor(kind));
+    set.add(id);
+    writeSet(keyFor(kind), set);
+    apiSave(kind, id, 'add');
+    forget(kind, id);
+  }
+
+  // The toast catches the mis-click you notice. The list on the My List page
+  // catches the one you do not, which is the case this was built for -- so if
+  // this never gets seen, nothing is lost.
+  var toastEl = null, toastTimer = null;
+
+  function offerUndo(kind, id) {
+    if (typeof document === 'undefined' || !document.body) return;
+    if (!toastEl) {
+      toastEl = document.createElement('div');
+      toastEl.className = 'undo-toast';
+      toastEl.setAttribute('role', 'status');
+      document.body.appendChild(toastEl);
+    }
+    var what = kind === 'professor' ? 'Professor' : 'School';
+    toastEl.innerHTML = '';
+    var span = document.createElement('span');
+    span.textContent = what + ' removed from your list.';
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'undo-toast-btn';
+    btn.textContent = 'Undo';
+    btn.addEventListener('click', function () {
+      restore(kind, id);
+      hideToast();
+      // Whatever drew the star needs to redraw it, and the pages that show a
+      // list need to show the thing again. A reload is blunt and always right;
+      // repainting three different renderers from here would not be.
+      location.reload();
+    });
+    toastEl.appendChild(span);
+    toastEl.appendChild(btn);
+    toastEl.classList.add('is-up');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 9000);
+  }
+
+  function hideToast() {
+    if (toastEl) toastEl.classList.remove('is-up');
+  }
+
   function toggle(kind, id) {
     var set = readSet(keyFor(kind));
     var nowSaved;
@@ -75,6 +170,7 @@
     }
     writeSet(keyFor(kind), set);
     apiSave(kind, id, nowSaved ? 'add' : 'remove');
+    if (nowSaved) forget(kind, id); else { tombstone(kind, id); offerUndo(kind, id); }
     return nowSaved;
   }
 
@@ -83,6 +179,8 @@
     set.delete(id);
     writeSet(keyFor(kind), set);
     apiSave(kind, id, 'remove');
+    tombstone(kind, id);
+    offerUndo(kind, id);
   }
 
   // Returns true if now watching, false if no longer, and null if we can't —
@@ -166,6 +264,9 @@
     watchButtonHTML: watchButtonHTML,
     paintWatchButton: paintWatchButton,
     handleWatchClick: handleWatchClick,
+    recentlyRemoved: readRemoved,
+    restore: restore,
+    forgetRemoved: forget,
     getWatchIds: function () { return signedIn ? Array.from(readSet(WATCH_KEY)) : []; },
     canWatch: function () { return signedIn && !!origin; },
     count: count,

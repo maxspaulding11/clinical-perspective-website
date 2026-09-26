@@ -2735,3 +2735,56 @@ a:hover { text-decoration: underline; }
   .home-tracker h2 { font-size: 1.5rem; }
   .home-tracker-actions .btn { flex: 1 1 100%; text-align: center; }
 }
+
+/* ------------------------------------------------------------------- undo */
+/* Removing a star used to be instant and final. The toast catches the
+   mis-click somebody notices; the Recently removed list on My List catches
+   the one they do not, which is the failure this was built for. */
+.undo-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, 140%);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--navy);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  padding: 11px 14px 11px 18px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  max-width: calc(100vw - 32px);
+  transition: transform 0.18s ease-out;
+}
+.undo-toast.is-up { transform: translate(-50%, 0); }
+.undo-toast-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.undo-toast-btn:hover { background: rgba(255, 255, 255, 0.16); }
+
+.removed-box { margin-top: 30px; border-top: 1px solid var(--rule); padding-top: 18px; }
+.removed-box h3 { font-family: var(--serif); color: var(--navy); font-size: 1.05rem; margin: 0 0 3px; }
+.removed-note { color: var(--ink-soft); font-size: 0.85rem; margin: 0 0 12px; }
+.removed-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.removed-item {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  padding: 5px 6px 5px 14px; background: var(--cream); font-size: 0.87rem;
+}
+.removed-when { color: var(--ink-soft); font-size: 0.78rem; }
+.removed-restore {
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
+  border: 1px solid var(--navy); color: var(--navy); background: transparent;
+  border-radius: 999px; padding: 3px 12px; cursor: pointer;
+}
+.removed-restore:hover { background: var(--navy); color: #fff; }

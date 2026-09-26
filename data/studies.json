@@ -1230,5 +1230,21 @@
     "doi": "10.1186/s40359-026-05201-1",
     "sourceUrl": "https://doi.org/10.1186/s40359-026-05201-1",
     "instagram": ""
+  },
+  {
+    "slug": "workplace-stress-app-cut-distress-scores-in-half",
+    "index": 78,
+    "title": "A workplace stress app cut distress scores in half. The control group got worse.",
+    "tag": "Digital Health",
+    "blurb": "In a 4-week randomized trial of 201 working adults, distress scores fell from 29.1 to 14.6 in the app group -- but rose from 20.3 to 23.6 in the control group, and 21 people quit the app arm against 2 in the control arm.",
+    "date": "2026-09-26",
+    "summary": "Work stress is one of the most common routes into anxiety and depression, and one of the least well served, particularly where therapy is expensive or stigmatised. Researchers led by Sisi Li tested Neurum, a smartphone tool built on ecological momentary intervention -- the idea of delivering a short CBT, mindfulness or self-regulation exercise in the moment, in the middle of an ordinary working day, rather than in a weekly appointment. They randomised 201 working adults to four weeks of the app or to a control condition, measuring distress with the DASS-21. The headline result is genuinely large: intervention-group scores fell from 29.1 to 14.6, roughly halving, with a large statistical interaction between group and time. Two features of how that number was produced deserve equal billing. First, the control group did not merely fail to improve -- it deteriorated, from 20.3 to 23.6. Part of the gap between groups therefore comes from the comparison condition getting worse, not from the app making people better, and the trial ran during a period of local social unrest and the COVID-19 pandemic, which plausibly explains a drifting control group. Second, attrition was strikingly one-sided: 21 people left the app group against 2 from the control group, a difference the authors attribute to how demanding repeated in-the-moment logging is. The people most likely to find the app burdensome are exactly the ones removed from its results. Actual use was modest -- an average of 9.74 mood journals, 6.27 exercises and about five minutes a day -- and the authors report no dose-response relationship, meaning people who used the app more did not improve more, which is hard to square with the app being the active ingredient. There was no active control, ethnicity was not recorded, and follow-up ended with the intervention, so nothing here speaks to whether the gains lasted.",
+    "journal": "JMIR mHealth and uHealth",
+    "authors": "Sisi Li, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42710031",
+    "doi": "10.2196/72435",
+    "sourceUrl": "https://doi.org/10.2196/72435",
+    "instagram": ""
   }
 ]
