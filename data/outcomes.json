@@ -2561,7 +2561,7 @@
    "note": "table labels not found in the text"
   },
   "university-of-florida-phd": {
-   "source": "https://phhp.ufl.edu/academics/phd-and-professional-programs/phd-clinical-and-health-psychology/student-admissions-outcomes-and-other-data/",
+   "source": "https://phhp.ufl.edu/academics/masters-programs/ma-communication-sciences-and-disorders/student-outcome-data/",
    "shape": "web",
    "read": "2026-09-26",
    "rows": {
@@ -2651,7 +2651,8 @@
     ]
    },
    "internshipTooFew": 0,
-   "medianYears": 6
+   "medianYears": 6,
+   "note": "table labels not found in the text"
   },
   "university-of-georgia-phd": {
    "source": "https://psyc.franklin.uga.edu/student-admissions-outcomes-and-other-data",
@@ -6342,7 +6343,7 @@
   },
   "wisconsin-school-of-professional-psychology-psyd": {
    "source": "https://www.wspp.edu/academics/student-admissions-outcomes-other-data",
-   "shape": "web",
+   "shape": null,
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
@@ -6449,13 +6450,216 @@
    },
    "internshipTooFew": 0,
    "anyInternshipPct": 100,
-   "medianYears": 5.54
+   "medianYears": 5.54,
+   "note": "fetch failed: <urlopen error [Errno 11002] getaddrinfo failed>"
   },
   "xavier-university-psyd": {
    "source": "https://www.xavier.edu/psychology-school/psyd/student-outcomes-apa/index",
    "shape": "web",
    "read": "2026-09-26",
    "note": "table labels not found in the text"
+  },
+  "california-lutheran-university-psyd": {
+   "source": "https://www.callutheran.edu/academics/graduate/psyd-clinical-psychology/student-data.html",
+   "shape": "web",
+   "read": "2026-09-26",
+   "rows": {
+    "accredited_internships": [
+     9,
+     64,
+     8,
+     100,
+     10,
+     76.9,
+     6,
+     67,
+     14,
+     73.7,
+     12,
+     80,
+     12,
+     86,
+     10,
+     71,
+     10,
+     77,
+     13,
+     57
+    ],
+    "any_internship": [
+     14,
+     100,
+     8,
+     100,
+     13,
+     100,
+     7,
+     78,
+     16,
+     84,
+     13,
+     87,
+     13,
+     93,
+     16,
+     94,
+     13,
+     87,
+     21,
+     91
+    ],
+    "sought_internship": [
+     4,
+     8,
+     13,
+     9,
+     19,
+     15,
+     14,
+     18,
+     15,
+     23
+    ],
+    "median_years": [
+     6,
+     6,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     6,
+     5
+    ],
+    "still_enrolled": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     22,
+     3,
+     18,
+     5,
+     31,
+     16,
+     94,
+     15,
+     94,
+     20,
+     95,
+     25,
+     100
+    ]
+   },
+   "internshipMatchedPct": 57,
+   "internshipMatchedN": 13,
+   "internshipSought": 23,
+   "anyInternshipPct": 91,
+   "medianYears": 5
+  },
+  "case-western-reserve-university-phd": {
+   "source": "https://psychsciences.case.edu/graduate/graduate-comm-sciences-programs/communication-sciences-and-disorders-program-outcome-data/",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "clark-university-phd": {
+   "source": "https://cdn.clarku.edu/psychology/wp-content/uploads/sites/41/clinical-psych-admissions-outcomes-data.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "any_internship": [
+     5,
+     100,
+     1,
+     100,
+     2,
+     100,
+     7,
+     100,
+     6,
+     100,
+     1,
+     100,
+     5,
+     100,
+     2,
+     100,
+     4,
+     67,
+     5,
+     100
+    ],
+    "sought_internship": [
+     5,
+     1,
+     2,
+     7,
+     6,
+     1,
+     5,
+     2,
+     6,
+     5
+    ]
+   },
+   "anyInternshipPct": 100
+  },
+  "eastern-kentucky-university-psyd": {
+   "source": "https://files.eku.edu/public/AcademicAffairs/CLASS/Psychology/StudentAdmissions-Outcomes-OtherData-2025.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-texas-at-tyler-phd": {
+   "source": "https://www.uttyler.edu/academics/colleges-schools/health-professions/departments/psychology-counseling/files/student-admissions-outcomes-and-other-data-20250731.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "offers": [
+     6,
+     8,
+     6,
+     6,
+     4,
+     5
+    ],
+    "any_internship": [
+     0,
+     0,
+     0,
+     0,
+     2,
+     100,
+     3,
+     100,
+     5,
+     100
+    ],
+    "sought_internship": [
+     0,
+     0,
+     0,
+     2,
+     100,
+     3,
+     100,
+     5,
+     100
+    ]
+   },
+   "anyInternshipPct": 100
+  },
+  "university-of-texas-southwestern-medical-center-phd": {
+   "source": "https://www.utsouthwestern.edu/programs/clinical-psychology/student-admissions-outcome-data.html",
+   "shape": null,
+   "read": "2026-09-26",
+   "note": "fetch failed: HTTP Error 404: 404"
   }
  }
 }

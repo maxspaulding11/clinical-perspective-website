@@ -45,8 +45,24 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 
 # How programs label the link. The table has one name in the standard and
 # several in practice.
-LINK = re.compile(r"(student admissions[,\s]*outcomes|admissions,?\s*outcomes"
-                  r"|outcomes,?\s*and other data|disclosure of education)", re.I)
+# Programs label this link a dozen ways. The standard calls it "Student
+# Admissions, Outcomes, and Other Data"; in the wild it is also "Program
+# Outcome Data", "Admissions and Outcomes", "Student Outcome Data", the APA
+# form number, or just "Program Data". Matching only the official name found
+# 78 of 180; these variants are the difference between a partial table and
+# none at all.
+LINK = re.compile(
+    r"(student admissions[,\s]*outcomes"
+    r"|admissions,?\s*(and\s*)?outcomes"
+    r"|outcomes,?\s*and other data"
+    r"|student[- ]outcomes?[- ]data"
+    r"|program[- ]outcomes?[- ]data"
+    r"|outcome[- ]data"
+    r"|disclosure of education"
+    r"|C-?2[0-9][a-z]?"
+    r"|admissions[- ]outcomes"
+    r"|program[- ]data[- ]and[- ]outcomes"
+    r"|student[- ]admissions[- ]data)", re.I)
 
 # The row labels are the APA template's own, which is what makes this possible
 # at all: the wording is the same at every accredited program even though the

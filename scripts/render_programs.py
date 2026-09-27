@@ -214,7 +214,8 @@ def outcomes_block(p, fmt_date):
     rate = o.get("acceptanceRate")
     match = o.get("internshipMatchedPct")
     med = o.get("medianYears")
-    if rate is None and match is None and med is None:
+    if (rate is None and match is None and med is None
+            and o.get("anyInternshipPct") is None):
         return ""
 
     tiles = []
@@ -240,6 +241,20 @@ def outcomes_block(p, fmt_date):
             f'<div class="odds-tile"><p class="odds-value">{match}%</p>'
             f'<p class="odds-label">Matched an APA-accredited internship</p>'
             f'<p class="odds-sub">{sub}</p></div>')
+    elif o.get("anyInternshipPct") is not None:
+        # Thirty programs publish a figure for internships of any kind but
+        # their accredited row could not be read. Silence there is worse than
+        # the weaker number, as long as the label is unambiguous: an
+        # unaccredited placement still counts for graduating and often does not
+        # count for licensure, so "of any kind" has to be in the words on the
+        # page and not in a tooltip.
+        tiles.append(
+            f'<div class="odds-tile"><p class="odds-value">'
+            f'{o["anyInternshipPct"]}%</p>'
+            f'<p class="odds-label">Got an internship of any kind</p>'
+            f'<p class="odds-sub">accredited or not — this program’s '
+            f'accredited figure could not be read</p></div>')
+
     if med is not None:
         tiles.append(
             f'<div class="odds-tile"><p class="odds-value">{med}</p>'
