@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-25",
+ "updated": "2026-09-26",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -2969,21 +2969,21 @@
    "url": "https://www.luc.edu/psychology/graduate/clinicalpsychologyprogram/prospectivegraduatestudents/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-09-26",
    "sourceQuote": "Drs. Bohnert, Kang, Kalantzis, and Ruchensky will be considering applicants to work under their mentorship. Drs. Conley and Leon do not plan to accept new students this cycle. Dr. Holmbeck is retired and no longer accepting graduate students.",
    "accepting": [
-    "Dr. Bohnert",
-    "Dr. Kalantzis",
-    "Dr. Kang",
-    "Dr. Ruchensky"
+    "Amy Bohnert",
+    "Maria Kalantzis",
+    "Sungha Kang",
+    "Jared Ruchensky"
    ],
    "maybe": [],
    "notAccepting": [
-    "Dr. Conley",
-    "Dr. Leon",
+    "Colleen Conley",
+    "Scott Leon",
     "Grayson Holmbeck"
    ],
-   "note": "The program page states the deadline as \"Application materials must be received by 5:00 pm CST on November 1\" and notes there is no application fee.",
+   "note": "The program page states the deadline as \"Application materials must be received by 5:00 pm CST on November 1\" and notes there is no application fee. The page names faculty by surname only ('Drs. Bohnert, Kang, Kalantzis, and Ruchensky'); full names are taken from the clinical faculty roster so the profile links resolve.",
    "applicationDeadline": "November 1, 5:00 pm CST",
    "deadlineCycle": "Fall 2027",
    "greRequired": "not accepted",
@@ -3641,24 +3641,24 @@
    "url": "https://cas.okstate.edu/psychology/about_us/faculty_and_staff.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-17",
+   "checked": "2026-09-26",
    "sourceQuote": "Dr. Ciciolla IS accepting students for 2027 admission",
    "accepting": [
-    "Lucia Ciciolla",
-    "Ashley Cole",
-    "Christina Duncan",
     "DeMond Grant",
-    "Stephanie Mullins-Sweatt",
-    "LaRicka Wingate"
+    "Kara Kerr",
+    "LaRicka Wingate",
+    "Lucia Ciciolla",
+    "Stephanie Mullins-Sweatt"
    ],
    "maybe": [],
    "notAccepting": [
+    "Ashley Cole",
+    "Christina Duncan",
     "John Chaney",
-    "Kara Kerr",
     "Thad Leffingwell",
     "Tony Wells"
    ],
-   "note": "This is a department-wide faculty directory that states each person's status individually, so there is no single announcement sentence — the quote is one of those per-person lines verbatim. Only faculty the page labels “Clinical Psychology” are recorded; six Experimental Psychology faculty also read “IS accepting” and are excluded. Devin Barlaan is listed as Clinical but directs the Psychological Services Center and carries no statement.",
+   "note": "This is a department-wide faculty directory that states each person's status individually, so there is no single announcement sentence — the quote is one of those per-person lines verbatim. Only faculty the page labels “Clinical Psychology” are recorded; six Experimental Psychology faculty also read “IS accepting” and are excluded. Devin Barlaan is listed as Clinical but directs the Psychological Services Center and carries no statement. Re-read 26 September 2026: Ashley Cole and Christina Duncan now read 'IS NOT accepting students for 2027 admission' and Kara Kerr now reads 'IS accepting', so the clinical accepting list went from six to five. Mullins-Sweatt appears on the page as 'Dr. Sweatt'.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -7695,17 +7695,16 @@
    "url": "https://psych.uw.edu/graduate/areas/clinical/faculty",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-26",
    "sourceQuote": "Accepting New Grads (live faculty database column, filtered to Adult Clinical / Child Clinical advising areas); cycle confirmed by: 'September 1, 2026: Application will be available online to apply for Autumn 2027'",
    "accepting": [
     "Debrielle T. Jacques",
     "Jennifer Forsyth",
+    "Katherine T. Foster",
+    "Lori Zoellner",
     "Priscilla Lui"
    ],
-   "maybe": [
-    "Katherine T. Foster",
-    "Lori Zoellner"
-   ],
+   "maybe": [],
    "notAccepting": [
     "Angela Fang",
     "Jonathan Kanter",
@@ -7716,7 +7715,7 @@
     "Vibh Forsythe Cox",
     "William George"
    ],
-   "note": "UW's faculty directory covers all 129 department faculty across 7 advising areas (Adult Clinical, Child Clinical, Cognition and Perception, Developmental, Neural Systems and Behavior, Quantitative Psychology, Social and Personality). Filtered to only Adult Clinical (12 faculty) and Child Clinical (8 faculty) to isolate the Clinical Psychology PhD program. The table itself has no 'Fall 2027' label, but the Prospective Students page confirms the current live cycle is Autumn 2027 admissions, so these live accepting statuses were read as pertaining to that cycle. Emeritus/N-A faculty (Corey Fagan, Marsha Linehan, Ronald Smith, Katherine Comtois, Lynn Fainsilber Katz, Wendy Stone) excluded as not applicable.",
+   "note": "UW's faculty directory covers all 129 department faculty across 7 advising areas (Adult Clinical, Child Clinical, Cognition and Perception, Developmental, Neural Systems and Behavior, Quantitative Psychology, Social and Personality). Filtered to only Adult Clinical (12 faculty) and Child Clinical (8 faculty) to isolate the Clinical Psychology PhD program. The table itself has no 'Fall 2027' label, but the Prospective Students page confirms the current live cycle is Autumn 2027 admissions, so these live accepting statuses were read as pertaining to that cycle. Emeritus/N-A faculty (Corey Fagan, Marsha Linehan, Ronald Smith, Katherine Comtois, Lynn Fainsilber Katz, Wendy Stone) excluded as not applicable. Re-read 26 September 2026: Katherine T. Foster and Lori Zoellner, recorded as Maybe on 9 September, now read Yes in the Accepting New Grads column, so they moved to accepting. The eight No entries are unchanged. Melissa Durland (Adult Clinical, clinic director) reads N/A and is excluded like the other N/A entries. The directory pages 10 rows at a time and filters by one advising area at a time, so read both clinical areas with the page size at 100.",
    "pcsas": true,
    "applicationDeadline": "December 1, 2026",
    "deadlineCycle": null,
