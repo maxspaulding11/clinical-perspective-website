@@ -1923,7 +1923,14 @@ a:hover { text-decoration: underline; }
   padding: 30px 10px;
 }
 
-.fac-head-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+/* min-height is holding a shift open, not styling anything. The pre-rendered
+   cards ship this container with the star in it and js/professor-search.js
+   adds the accepting badge afterwards; the badge is the taller of the two, so
+   without a floor the row grew by a few pixels when it arrived. Invisible on
+   desktop, where the name and program beside it are taller than either -- but
+   .fac-head turns into a column under 700px, and there this row's own height
+   is the card's. 28px clears the badge's 12px text plus its 4px padding. */
+.fac-head-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; min-height: 28px; }
 
 .star-btn {
   flex-shrink: 0;

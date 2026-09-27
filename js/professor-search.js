@@ -156,15 +156,31 @@
     return '';
   }
 
-  function card(p) {
+  // The pre-render writes this link on every card and it was being thrown away:
+  // rebuilding the list dropped all 2,672 of them, so the one route from a
+  // professor to their program's accepting-students entry existed in the HTML
+  // and vanished a moment after the page loaded. It is also the reason
+  // render_professors.py does not pre-render the badge -- "the answer is one
+  // click away" only holds while the link survives the rebuild.
+  function trackerLink(p) {
+    const rec = p._prog;
+    if (!rec) return '';
+    return '<a class="prof-tracker-link" ' +
+      'href="faculty-accepting-students.html#program-' + esc(rec.id) + '">' +
+      'Accepting-students status →</a>';
+  }
+
+  // Split from card() because the first pass fills the pre-rendered cards in
+  // place rather than replacing them, and so needs the innards without the
+  // <li>. Anything added here must also be added to full_card() in
+  // scripts/render_professors.py, or the first screenful will change height
+  // when this runs.
+  function cardInner(p) {
     const interests = (p.interests || [])
       .map(i => '<li>' + esc(i) + '</li>')
       .join('');
 
-    // Keep the id the pre-render writes, so a link to one professor still
-    // resolves after this script replaces the list.
-    return '<li class="fac-card" id="prof-' + esc(p.id) + '">' +
-      '<div class="fac-head">' +
+    return '<div class="fac-head">' +
         '<div>' +
           '<h3>' + esc(p.name) + '</h3>' +
           '<p class="fac-sub">' + esc(p.school) + (p.program ? ' · ' + esc(p.program) : '') + '</p>' +
@@ -174,24 +190,40 @@
       '<ul class="prof-interests">' + interests + '</ul>' +
       '<div class="fac-foot">' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">View their university page →</a>' +
+        trackerLink(p) +
         (p.checked ? '<span class="fac-checked">Checked ' + esc(p.checked) + '</span>' : '') +
-      '</div>' +
-    '</li>';
+      '</div>';
+  }
+
+  function card(p) {
+    // Keep the id the pre-render writes, so a link to one professor still
+    // resolves after this script replaces the list.
+    return '<li class="fac-card" id="prof-' + esc(p.id) + '">' + cardInner(p) + '</li>';
   }
 
   // Note for anyone tempted to skip the first render here the way faculty.js
   // does: you cannot. The tracker's pre-rendered cards are complete, so
   // keeping the server's markup loses nothing. These are not -- to keep this
-  // page's HTML down, scripts/render_professors.py deliberately ships each
-  // card without its research interests, star or accepting badge, and this
-  // script is what adds them. Skipping the rebuild would leave the page
+  // page's HTML down, scripts/render_professors.py deliberately ships most
+  // cards without their research interests, star or accepting badge, and this
+  // script is what adds them. Skipping the work entirely would leave the page
   // permanently missing all three.
   //
-  // Which also means the first rebuild here is a real content change, not a
-  // redundant one, and it is inherently the larger part of this page's layout
-  // shift. Fixing that properly means either shipping the interests in the
-  // HTML (which the 227KB-to-9KB work deliberately stopped doing) or reserving
-  // the height the cards will grow to -- a separate decision, not a bug.
+  // So the first pass is a real content change, not a redundant one, and it
+  // was the larger part of this page's layout shift. The note that used to sit
+  // here said fixing it meant either shipping every interest in the HTML
+  // (131KB gzipped to 304KB -- the 227KB-to-9KB work deliberately stopped
+  // doing that) or reserving the height the cards grow to, which cannot be
+  // done honestly because an interest wraps to one line or two depending on
+  // the viewport.
+  //
+  // There is a third option both of those missed: a shift only counts against
+  // CLS if it happens inside the viewport, so only the first screenful has to
+  // ship complete. render_professors.py now pre-renders FULL_CARDS of them in
+  // full and the rest lean, and enhanceInPlace fills the lean ones where they
+  // already sit. The cards that grow are all below the fold, and the ones in
+  // view are byte-identical to what cardInner would have produced, so filling
+  // them changes nothing. Cost of the complete ones: under 4KB gzipped.
   function render() {
     const list = $('#prof-list');
     const shown = DATA.professors.filter(matches);
@@ -221,6 +253,36 @@
   // moves and this does not trade the INP problem for a CLS one. Any new query
   // cancels a batch run still in flight, otherwise the old results would keep
   // arriving underneath the new ones.
+  // Fill the pre-rendered cards where they already are.
+  //
+  // The list arrives from the server with every card in place, so there is
+  // nothing to add or remove -- only innards to complete. Replacing each
+  // card's contents instead of the list's means no card is ever detached, the
+  // page never collapses to a fraction of its height and back, and the cards
+  // that do grow taller are the lean ones below the fold. Chunked for the same
+  // reason renderList is: doing all 2,672 in one pass measured about a second
+  // of blocked main thread.
+  function enhanceInPlace(list) {
+    clearTimeout(appendTimer);
+    const byId = {};
+    DATA.professors.forEach(p => { byId['prof-' + p.id] = p; });
+    // Matched by id rather than by position: this script sorts with
+    // localeCompare and the pre-render sorts with Python's lower(), which do
+    // not agree on every name, and a mismatch here would put the wrong
+    // interests under a name.
+    const cards = Array.prototype.slice.call(list.children);
+    let i = 0;
+    (function fillMore() {
+      const end = Math.min(i + CHUNK, cards.length);
+      for (; i < end; i++) {
+        const p = byId[cards[i].id];
+        if (p) cards[i].innerHTML = cardInner(p);
+      }
+      if (i < cards.length) { appendTimer = setTimeout(fillMore, 0); }
+      else { repaintSaved(); }
+    })();
+  }
+
   function renderList(list, shown) {
     clearTimeout(appendTimer);
     if (!shown.length) {
@@ -281,7 +343,17 @@
     $('#prof-stats').innerHTML =
       '<strong>' + data.professors.length + '</strong> professors across <strong>' +
       schools.size + '</strong> programs · last updated ' + esc(data.updated || '');
-    render();
+
+    // Fill the server's cards in place when they are all still there. A query
+    // typed before the JSON landed, or a pre-render that is out of step with
+    // the JSON, both fall through to a normal render.
+    const list = $('#prof-list');
+    if (!query && list.querySelectorAll('.fac-card').length === data.professors.length) {
+      $('#prof-showing').textContent = '';
+      enhanceInPlace(list);
+    } else {
+      render();
+    }
   }
 
   Promise.all([

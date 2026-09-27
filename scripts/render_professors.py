@@ -11,12 +11,18 @@ as many names.
 Two decisions worth knowing about, because both were measured rather than
 assumed:
 
-  Interests are not pre-rendered. With them the block is 268KB gzipped; with
-  names, school and program alone it is 108KB, which is the tracker's 79KB in
-  the same ballpark. The names are what people search; the interests are what
-  the search box filters on and stay in the JSON for it. Topic pages are the
-  right place for interests as crawlable text, because there they are grouped
-  by subject instead of scattered across 2,640 cards.
+  Interests are not pre-rendered, past the first FULL_CARDS of them. With all
+  of them the block is 268KB gzipped; with names, school and program alone it
+  is 108KB, which is the tracker's 79KB in the same ballpark. The names are
+  what people search; the interests are what the search box filters on and stay
+  in the JSON for it. Topic pages are the right place for interests as
+  crawlable text, because there they are grouped by subject instead of
+  scattered across 2,640 cards.
+
+  The exception is the first screenful, which ships complete because those are
+  the cards a reader is looking at while the script fills the rest in, and
+  growing them under the reader is what put this page at CLS 1.013. See
+  FULL_CARDS.
 
   The accepting/not-accepting badge is not pre-rendered either. Resolving a
   program's list of names to a professor record needs the fuzzy matcher in
@@ -48,6 +54,61 @@ END = "<!-- professors:list end -->"
 
 def e(s):
     return html.escape(str(s if s is not None else ""), quote=True)
+
+
+# How many cards ship complete, with their interests and star button.
+#
+# A layout shift only counts against CLS if it happens inside the viewport, so
+# the cards that grow when js/professor-search.js fills them are free as long
+# as they are below the fold. These are not: they are the ones on screen at
+# first paint, and they are why the page measured 1.013.
+#
+# 12 covers the tallest case -- a 900px phone viewport, whose cards are the
+# narrowest and so the tallest, with .fac-head stacked into a column under
+# 700px. A desktop screen fits fewer. Raising it is cheap (about 300 bytes
+# gzipped each) but pointless; lowering it below what a tall phone shows puts
+# the shift straight back.
+FULL_CARDS = 12
+
+
+def full_card(p, program_id):
+    """The complete card, rendering-identical to cardInner() in professor-search.js.
+
+    Not byte-identical -- this writes &middot; and &rarr; where the script
+    writes the characters themselves -- but the parsed DOM has to match, because
+    the script fills these cards in place a moment after paint and any
+    difference in what it writes is a shift in the part of the page the reader
+    is looking at. If you change one, change both."""
+    interests = "".join(f"<li>{e(i)}</li>" for i in (p.get("interests") or []))
+    # The script writes the separator only when there is a program to put after
+    # it, so this cannot write one unconditionally.
+    sub = e(p["school"]) + (f' &middot; {e(p["program"])}' if p.get("program") else "")
+    tracker = (f'<a class="prof-tracker-link" '
+               f'href="faculty-accepting-students.html#program-{e(program_id)}">'
+               f'Accepting-students status &rarr;</a>' if program_id else "")
+    checked = (f'<span class="fac-checked">Checked {e(p["checked"])}</span>'
+               if p.get("checked") else "")
+    # The star ships unsaved. js/saved.js repaints it from the reader's own list
+    # once that has loaded, and a star changing from outline to solid does not
+    # move anything.
+    star = ('<button type="button" class="star-btn" '
+            f'data-star-prof="{e(p["id"])}" aria-pressed="false" '
+            'aria-label="Save to my list" title="Save to my list">'
+            '&#9734;</button>')
+    return (
+        f'<li class="fac-card" id="prof-{e(p["id"])}">'
+        '<div class="fac-head"><div>'
+        f'<h3>{e(p["name"])}</h3>'
+        f'<p class="fac-sub">{sub}</p>'
+        '</div>'
+        f'<div class="fac-head-right">{star}</div>'
+        '</div>'
+        f'<ul class="prof-interests">{interests}</ul>'
+        '<div class="fac-foot">'
+        f'<a href="{e(p.get("url"))}" target="_blank" rel="noopener">'
+        'View their university page &rarr;</a>'
+        f'{tracker}{checked}</div></li>'
+    )
 
 
 def card(p, program_id):
@@ -110,11 +171,15 @@ def render():
     programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]
     program_id = {(p["school"], p["program"]): p["id"] for p in programs}
 
-    cards, linked = [], 0
-    for p in professors:
+    cards, linked, full = [], 0, 0
+    for i, p in enumerate(professors):
         pid = program_id.get((p["school"], p["program"]))
         linked += bool(pid)
-        cards.append(card(p, pid))
+        if i < FULL_CARDS:
+            full += 1
+            cards.append(full_card(p, pid))
+        else:
+            cards.append(card(p, pid))
 
     text = open(PAGE, encoding="utf-8").read()
     text = replace_between(text, "\n" + "\n".join(cards) + "\n")
@@ -161,10 +226,12 @@ def render():
                   lambda m: m.group(1) + e(og_desc) + m.group(2), text, count=1)
 
     open(PAGE, "w", encoding="utf-8").write(text)
-    return {"professors": len(professors), "schools": schools, "linked": linked}
+    return {"professors": len(professors), "schools": schools, "linked": linked,
+            "full": full}
 
 
 if __name__ == "__main__":
     r = render()
     print(f"professors pre-rendered: {r['professors']} across {r['schools']} "
-          f"programs, {r['linked']} linked to a tracker entry")
+          f"programs, {r['linked']} linked to a tracker entry, "
+          f"{r['full']} shipped complete")
