@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -1351,12 +1351,12 @@
    "url": "https://psychology.catholic.edu/",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-27",
    "sourceQuote": "",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "Attempted https://psychology.catholic.edu/academics/graduate/phd-clinical-psychology/selection-process/index.html and /phd-clinical-psychology/index.html directly; both consistently returned HTTP 403 Forbidden, blocking access to the program's own site. Search snippets describe a Dec 1 application deadline and Feb interview notifications but were not opened as primary sources per the hard rule against using snippets, so no faculty names are reported.",
+   "note": "The program's pages open now; they returned HTTP 403 when first checked. Its Selection Process page (psychology.catholic.edu/academics/graduate/phd-clinical-psychology/selection-process/) describes interviews and decision dates but lists no faculty accepting students, and its wording still refers to the Fall 2026 class. Left pending until the program names faculty for Fall 2027.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -6228,8 +6228,8 @@
    "url": "https://psychology.as.uky.edu/info-clinical-applicants",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "Faculty with primary appointments in Clinical Psychology who are reviewing applications for the Fall 2027 cohort and will consider adding a student to their research lab include:",
+   "checked": "2026-09-27",
+   "sourceQuote": "Faculty with primary appointments in clinical psychology who are reviewing applications for the fall 2027 cohort and will consider adding a student to their research lab are:",
    "accepting": [
     "Jessica Burris",
     "Justin Karr",

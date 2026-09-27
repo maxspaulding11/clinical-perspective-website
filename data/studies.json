@@ -1246,5 +1246,21 @@
     "doi": "10.2196/72435",
     "sourceUrl": "https://doi.org/10.2196/72435",
     "instagram": ""
+  },
+  {
+    "slug": "poverty-predicted-teen-depression-brain-scans-didnt-and",
+    "index": 79,
+    "title": "Poverty predicted teen depression. Brain scans didn't -- and that's the finding.",
+    "tag": "Neuroscience",
+    "blurb": "Following 206 Mexican-origin youth from age 10 to 18, lower family income predicted larger amygdala and hippocampal volumes, and teens' own sense of hardship predicted depression. But brain volume predicted no depression at all, and the mediation model fit worse than one without it.",
+    "date": "2026-09-27",
+    "summary": "A widely held account of how poverty damages mental health runs through the brain: chronic financial stress alters the development of emotion-regulating regions, and those altered regions produce depression. Researchers led by Brandon K. Hayes tested that chain end to end in the California Families Project, following 206 Mexican-origin adolescents with annual measures of family income and economic hardship from age 10 to 16, an MRI scan at 17, and a depression assessment at 18. Each link was examined separately, and the results split apart. Poverty did relate to brain structure: lower average income relative to family need predicted larger amygdala and hippocampal volumes, while teenagers' own reports of hardship predicted a smaller anterior cingulate cortex. Hardship did relate to depression -- but only when the teenagers reported it themselves. And the middle link failed entirely: none of the four brain regions predicted depressive symptoms, the indirect effects through them were not significant, and when the researchers tested a stripped-down model with the mediation removed, that simpler model fit the data better. Parent-reported hardship, the measure the primary analyses were built on, was unrelated to both brain volume and depression. The teenagers' own perception of their family's finances was the only thing that predicted how depressed they were at 18. Several limits are worth naming. The sample was recruited into the neuroimaging sub-study on the basis of depression risk, so it is not a general population. The brain was measured once, at 17, which makes it a snapshot standing in for a developmental process. The depression measure was switched from the preregistered one because attrition had left too little data, a deviation the authors document. And the youth-reported hardship analysis was added after the fact, once the planned model had come up empty -- which is the honest way to report it, but makes it a hypothesis for the next study rather than a result to bank.",
+    "journal": "Journal of Research on Adolescence",
+    "authors": "Brandon K. Hayes, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42663126",
+    "doi": "10.1111/jora.70251",
+    "sourceUrl": "https://doi.org/10.1111/jora.70251",
+    "instagram": ""
   }
 ]
