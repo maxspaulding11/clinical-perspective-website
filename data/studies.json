@@ -1262,5 +1262,37 @@
     "doi": "10.1111/jora.70251",
     "sourceUrl": "https://doi.org/10.1111/jora.70251",
     "instagram": ""
+  },
+  {
+    "slug": "tai-chi-ranked-best-for-depression-in-older",
+    "index": 80,
+    "title": "Tai chi \"ranked best\" for depression in older adults. It didn't beat anything.",
+    "tag": "Myth Check",
+    "blurb": "A network meta-analysis of 23 trials and 1,485 older adults ranked Tai Chi first for depressive symptoms (SUCRA 83.3%). But every head-to-head comparison between exercise types was statistically non-significant, with intervals as wide as -7.02 to 6.00.",
+    "date": "2026-09-28",
+    "summary": "Mind-body exercise is an appealing option for depression in later life: low intensity, little equipment, no drug interactions. The open question is whether the particular practice matters, so researchers led by Zaiwen Wang ran a network meta-analysis -- a method that can compare treatments never tested against each other by linking them through shared comparisons -- across 23 randomised trials covering 728 older adults in intervention groups and 757 in control groups, all averaging over 63 years old. The rankings that came out are the part likely to be quoted: Tai Chi first with a SUCRA of 83.3%, then Pilates, Yoga, Qigong and Square Dancing. Read the comparisons underneath and the ranking dissolves. Tai Chi versus Pilates gave a standardised mean difference of -0.51 with a confidence interval from -7.02 to 6.00. Against Yoga, -1.22 (-5.87 to 3.42). Against Qigong, -1.81 (-5.84 to 2.22). Every interval crosses zero, several by an enormous margin, meaning the data cannot distinguish these practices from one another at all. The only statistically significant finding in the network was Qigong against no intervention (-4.00, -7.32 to -0.68). A SUCRA value is a probability of ranking highly, not a measure of how much better something is, and the authors say so directly, warning that their network was unbalanced and sparse and that the results show \"estimated trends and uncertainty rather than definitive superiority.\" One further limitation is unusually consequential here and the authors flag it themselves: the review searched only English-language databases, excluding Chinese ones, while three of the five interventions compared -- Tai Chi, Qigong and Square Dancing -- are practices whose trials are disproportionately published in Chinese. The defensible takeaway is that gentle group exercise beats doing nothing, and that picking between the types is not yet supported by evidence.",
+    "journal": "Frontiers in Public Health",
+    "authors": "Zaiwen Wang, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42741013",
+    "doi": "10.3389/fpubh.2026.1888299",
+    "sourceUrl": "https://doi.org/10.3389/fpubh.2026.1888299",
+    "instagram": ""
+  },
+  {
+    "slug": "being-treated-badly-predicted-rising-drinking-unless-self",
+    "index": 81,
+    "title": "Being treated badly predicted rising drinking -- unless self-control was quick",
+    "tag": "Addiction",
+    "blurb": "Following 133 college students for three years, those reporting more social mistreatment showed steeper increases in alcohol problems. Faster response inhibition on a lab task blunted that link -- but the crucial three-way test was not significant (p = 0.10).",
+    "date": "2026-09-29",
+    "summary": "Being belittled, excluded or treated unfairly is a reliable predictor of heavy drinking, but not everyone responds that way, and researchers led by Chia-Chuan Yu asked whether the difference lies in self-regulation. They followed 133 college students for three years, measuring alcohol problems annually with the AUDIT and social mistreatment alongside it, and at baseline put everyone through a Stop-Signal Task in an MRI scanner. That task yields two measures: stop-signal reaction time, essentially how fast someone can cancel an action already underway, and post-error slowing, how much they pause after getting one wrong. Drinking problems rose across the three years, and the rise was steeper for students reporting more mistreatment, a significant interaction adding about 2.67% of explained variance. Inhibition mattered too: students with faster stop-signal times showed flatter drinking trajectories, and there was a significant interaction between inhibition and mistreatment, suggesting quicker self-control blunted the effect of being treated badly. The interpretation needs restraint on exactly the point that makes the finding interesting. The three-way test -- whether inhibition changes how mistreatment shapes drinking over time -- came out non-significant at p = 0.10. So the moderation is visible in the cross-section but not confirmed in the trajectory, and the authors describe the brain-behaviour analyses as exploratory throughout. They also note their p-threshold was an uncorrected 0.05 across a set of candidate moderators, which inflates the chance of a false positive. Other limits are worth carrying into any reading of it: these were relatively healthy college students, not people with diagnosed alcohol use disorder; the sample was 64.7% female and the imbalance widened at follow-up; and the mistreatment measure does not distinguish its source, so sexism, racism and ordinary interpersonal unpleasantness are pooled into one score despite plausibly acting differently.",
+    "journal": "Addiction Biology",
+    "authors": "Chia-Chuan Yu, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42732922",
+    "doi": "10.1111/adb.70187",
+    "sourceUrl": "https://doi.org/10.1111/adb.70187",
+    "instagram": ""
   }
 ]

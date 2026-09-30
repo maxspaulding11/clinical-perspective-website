@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-27",
+ "updated": "2026-09-29",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -3492,7 +3492,7 @@
    "url": "https://www.psychiatry.northwestern.edu/education/clinical-psychology-phd/how-to-apply.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-25",
+   "checked": "2026-09-29",
    "sourceQuote": "The following labs plan to recruit applicants for admission into the PhD program for the upcoming academic year (to begin Fall 2027).",
    "accepting": [
     "Darius Tandon",
@@ -3500,11 +3500,12 @@
     "Michael Newcomb",
     "Shan Siddiqi",
     "Siobhan M. Phillips",
-    "Tamar Gefen"
+    "Tamar Gefen",
+    "Changiz Geula"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source. As of the page's '09/25/26' update it lists six recruiting labs: Newcomb, Tandon and Gefen as before, plus Faith Summersett Williams, Shan Siddiqi and Siobhan M. Phillips (the page notes Phillips 'will be added to the application portal the week of September 27th'). The page's caveat that recruitment 'is subject to change at any time' depending on funding was already there when the first three were recorded as accepting, and the page also says 'Only faculty listed below will be recruiting', so all six are treated the same way.",
+   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source. As of the page's '09/25/26' update it lists six recruiting labs: Newcomb, Tandon and Gefen as before, plus Faith Summersett Williams, Shan Siddiqi and Siobhan M. Phillips (the page notes Phillips 'will be added to the application portal the week of September 27th'). The page's caveat that recruitment 'is subject to change at any time' depending on funding was already there when the first three were recorded as accepting, and the page also says 'Only faculty listed below will be recruiting', so all six are treated the same way. The page's 09/29/26 update adds a seventh recruiting lab, Changiz Geula's Laboratory of Cognitive and Molecular Morphometry at the Mesulam Institute (aging and dementia); it sits under the same 'Recruiting Faculty' heading and caveat as the other six, so it is recorded the same way.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "to begin Fall 2027",
@@ -6298,7 +6299,7 @@
    "url": "https://louisville.edu/programs/psychology-clinical-phd",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-09-29",
    "sourceQuote": "Faculty Reviewing Applications for Admission in Fall 2027 (Applications due December 1, 2026)",
    "accepting": [
     "Cheri Levinson",
@@ -6307,7 +6308,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1, 2026.",
+   "note": "Deadline: December 1, 2026. The faculty list is still on the page but now sits inside a collapsed tab (Admission) after a redesign, so it does not show in the page's visible text until that tab is opened.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
@@ -6642,7 +6643,7 @@
    "url": "https://seswps.umkc.edu/academics/psychology-and-counseling/phd-admissions-information.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-25",
+   "checked": "2026-09-29",
    "sourceQuote": "Faculty mentors considering accepting students for Fall 2027 include: Daniel Maitland, Elizabeth Neilson, Valeria Pfeifer, Laurel Watson",
    "accepting": [],
    "maybe": [
@@ -7123,10 +7124,9 @@
    "url": "https://psychology.pitt.edu/people?combine=&programs=38&accepting_grad_student=yes&person_type=45",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-23",
+   "checked": "2026-09-29",
    "sourceQuote": "Department People directory, filtered to Program = Clinical and Accepting Graduate Students? = Yes",
    "accepting": [
-    "Gabriella Alvarez",
     "Julie Fiez",
     "Peter J. Gianaros",
     "Brant Hasler",
@@ -7152,7 +7152,7 @@
     "Rebecca G. Reed",
     "Sophia Choukas-Bradley"
    ],
-   "note": "Pitt does not publish a list; it publishes a directory you filter. These thirteen are what it returns for Program = Clinical and Accepting Graduate Students? = Yes, and the entry's url is that exact query, so anyone can re-run it. Two of them are affiliates of the clinical program holding Psychiatry appointments, Brant Hasler and Beatriz Luna, and several are cross-listed with another area -- Julie Fiez's own profile says she is recruiting for both Clinical and Cognitive for Fall 2027. Frances L Wang is not yet on this tracker's faculty roster, so that name has no profile page to link to. The directory carries no cycle label of its own; the Fall 2027 year was confirmed on an individual profile.",
+   "note": "Pitt does not publish a list; it publishes a directory you filter. These twelve are what it returns for Program = Clinical and Accepting Graduate Students? = Yes, and the entry's url is that exact query, so anyone can re-run it. Two of them are affiliates of the clinical program holding Psychiatry appointments, Brant Hasler and Beatriz Luna, and several are cross-listed with another area -- Julie Fiez's own profile says she is recruiting for both Clinical and Cognitive for Fall 2027. Frances L Wang is not yet on this tracker's faculty roster, so that name has no profile page to link to. The directory carries no cycle label of its own; the Fall 2027 year was confirmed on an individual profile. On 2026-09-29 Gabriella Alvarez no longer came back under Accepting = Yes and now appears under Accepting = No, so she was taken off the accepting list; she had also been recorded under notAccepting, which contradicted her place on the accepting list until this update.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -7336,14 +7336,23 @@
    "state": "FL",
    "degree": "PhD",
    "url": "https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/cl-faculty.aspx",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Note: For an updated list of faculty taking students each year please check in October of the application year. ... * These faculty members expect to admit graduate students into their research groups for Fall 2026 ... ** These faculty members may be interested in admitting graduate students into their research groups for Fall 2026",
-   "accepting": [],
-   "maybe": [],
+   "checked": "2026-09-29",
+   "sourceQuote": "* These faculty members expect to admit graduate students into their research groups for Fall 2027 ** These faculty members may be interested in admitting graduate students into their research groups for Fall 2027",
+   "accepting": [
+    "Robert Schlauch",
+    "Marina Bornovalova",
+    "Tiffany Chenneville",
+    "Peter Clayson",
+    "Edelyn Verona"
+   ],
+   "maybe": [
+    "Diana Rancourt",
+    "Jamie Spiegel"
+   ],
    "notAccepting": [],
-   "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The only recruiting list currently posted is explicitly for Fall 2026 (last cycle), and the page itself instructs applicants to check back in October for the updated list -- i.e., the Fall 2027 list is not posted yet. Not reporting the Fall 2026 asterisked names (which included Bornovalova, Chenneville, Clayson, Gabbidon, Karver, McCrae, Spiegel, Verona, Schlauch) as current.",
+   "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The program's clinical faculty page now marks its recruiting faculty for Fall 2027 (it read Fall 2026 until this update). One asterisk means the faculty member expects to admit a student; two asterisks mean they may be interested, so those two are recorded as undecided rather than accepting. Robert Schlauch, the Area Director and Director of Clinical Training, carries a single asterisk. The markings are a fresh list, not the old one relabelled: Kemesha Gabbidon and Marc Karver were marked for Fall 2026 and are not marked now. The page still says to check back in October for an updated list and to confirm with faculty directly, so it may change again.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "Fall 2027 admission",
@@ -7359,7 +7368,8 @@
     "Fee waiver form available for eligible applicants"
    ],
    "appInfoSourceUrl": "https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx",
-   "appInfoChecked": "2026-08-18"
+   "appInfoChecked": "2026-08-18",
+   "newlyPostedOn": "2026-09-29"
   },
   {
    "id": "university-of-southern-mississippi-phd",
@@ -7786,7 +7796,7 @@
    "url": "https://uwm.edu/psychology/students/graduate/faculty-accepting-new-students/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-09-29",
    "sourceQuote": "Faculty Accepting New Students -- Fall, 2027. Please carefully review the following list of faculty that will recruit new MS or PhD students. [Clinical Psychology section]",
    "accepting": [
     "Deborah Hannula",
@@ -7794,11 +7804,12 @@
     "Christine Larson",
     "Gabriela Nagy",
     "Srishti Sardana",
-    "Ryan Shorey"
+    "Ryan Shorey",
+    "Alex Wallace"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The page is organised by area and these six are the ones under its Clinical Psychology heading. It covers MS as well as PhD students, so being listed is not by itself a statement about doctoral admissions. Krista Lisdahl is the one clinical faculty member on this tracker's roster who is not on the list.",
+   "note": "The page is organised by area and these seven are the ones under its Clinical Psychology heading. It covers MS as well as PhD students, so being listed is not by itself a statement about doctoral admissions. Krista Lisdahl is the one clinical faculty member on this tracker's roster who is not on the list. Alex Wallace was added under the Clinical Psychology heading by 2026-09-29; that name is not yet on this tracker's faculty roster, so it has no profile page to link to.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
