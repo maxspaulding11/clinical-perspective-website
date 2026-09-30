@@ -181,7 +181,7 @@ def review(data, stale_days):
     f = {"posted_but_we_say_pending": [], "already_judged": [],
          "names_gone": [], "wrong_source": [], "no_snapshot": [],
          "stale_snapshot": []}
-    oldest = None
+    oldest = oldest_id = None
 
     for p in data["programs"]:
         text, mtime = snapshot_text(p["id"])
@@ -189,8 +189,11 @@ def review(data, stale_days):
             if p["status"] in ("pending", "posted"):
                 f["no_snapshot"].append({"id": p["id"], "school": p["school"]})
             continue
-        if oldest is None or mtime < oldest:
-            oldest = mtime
+        # Only the entries the routine sweep re-reads. Cohort and closed pages
+        # are refreshed by --all twice a month, so counting them made this
+        # warn "15 days old" straight after a sweep that had just run.
+        if p["status"] in ("pending", "posted") and (oldest is None or mtime < oldest):
+            oldest, oldest_id = mtime, p["id"]
 
         if p["status"] == "pending" and year:
             hits = [h for h in windows(text, year) if not NOT_YET.search(h)]
@@ -225,7 +228,7 @@ def review(data, stale_days):
         age = (time.time() - oldest) / 86400.0
         if age > stale_days:
             f["stale_snapshot"].append({
-                "oldest_days": round(age, 1),
+                "oldest_days": round(age, 1), "oldest_id": oldest_id,
                 "note": "run scripts/sweep.py first; this is only as current "
                         "as the snapshots it reads"})
     return f
@@ -268,8 +271,9 @@ def main():
     print()
 
     for s in f["stale_snapshot"]:
-        print("!! snapshots are %.1f days old -- run scripts/sweep.py first."
-              % s["oldest_days"])
+        print("!! snapshots are %.1f days old (oldest: %s) -- run scripts/sweep.py "
+              "first, or read that page by hand if the sweep keeps failing on it."
+              % (s["oldest_days"], s["oldest_id"]))
         print()
 
     rows = f["posted_but_we_say_pending"]

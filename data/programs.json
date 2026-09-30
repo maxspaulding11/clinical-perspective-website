@@ -140,31 +140,27 @@
    "url": "https://psychology.gsu.edu/faculty-accepting-students-for-fall-graduate-admissions/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Faculty accepting students for Fall graduate admissions, marked Yes / Maybe / No by faculty member.",
+   "checked": "2026-09-29",
+   "sourceQuote": "FACULTY ACCEPTING STUDENTS FOR FALL 2027 ... Faculty listed as \"Yes\" plan to accept a new student for the fall 2027 class.",
    "accepting": [
-    "Cynthia Stappenbeck",
-    "Erin Tone",
-    "Erin Tully",
-    "Eyal Aharoni",
-    "Heather Offutt",
     "Page Anderson",
-    "Sarah Barber",
-    "Sarah Pope-Caldwell"
+    "Lindsey Cohen",
+    "Cynthia Stappenbeck",
+    "Erin Tone"
    ],
    "maybe": [
-    "Gabriel Kuperminc",
-    "Isha Metzger",
-    "John Horgan",
-    "Lee Branum-Martin",
-    "Lindsey Cohen",
-    "Rose Sevcik",
-    "Sarah Brosnan",
+    "Erin Tully",
     "Sarah Cook",
-    "Vince Calhoun"
+    "Gabriel Kuperminc",
+    "MaryAnn Romski",
+    "Rose Sevcik"
    ],
-   "notAccepting": [],
-   "note": "Georgia State marks faculty Yes / Maybe / No. “Maybe” means undecided — contact the lab directly. UNRESOLVED: GSU's Yes/No/Maybe table covers the whole psychology department, not just Clinical — a later independent re-check found the department also lists a separate “Clinical concentration faculty” roster, and some names above (e.g. Aharoni, Barber, Offutt) may belong to other concentrations rather than Clinical. That re-check's own attempt to cross-reference the two pages was internally inconsistent, so this list has not been corrected pending a careful manual re-check against psychology.gsu.edu's clinical-concentration faculty roster.",
+   "notAccepting": [
+    "Lisa Armistead",
+    "Dominic Parrott",
+    "Ciara Glover"
+   ],
+   "note": "Georgia State marks faculty Yes / Maybe / No; \"Maybe\" means undecided, so contact the lab directly. The table covers the whole psychology department, so only the people GSU itself lists under the Clinical program area (psychology.gsu.edu/research, Clinical Faculty and Associated Faculty) are counted here. Yes: Anderson, Cohen, Stappenbeck, Tone. Maybe: Tully, Cook, Kuperminc, Romski, Sevcik. No: Armistead, Parrott, Glover. Left out as belonging to other areas: Aharoni, Calhoun, Dai and Tighe (Neuropsychology and Cognitive Neuroscience; the table also says no clinical-neuropsychology students will be admitted for 2027), Barber, Offutt, Özçalışkan, Pope-Caldwell, Branum-Martin, Brosnan and Beran (other areas), and the School of Public Health list. The Clinical-Community concentration is run jointly with the Community program, whose core faculty not listed above are marked Horgan Maybe and Metzger Maybe; Clinical-Community applicants may want to look at them too. Until 2026-09-29 this entry counted the whole department's table; it was narrowed then, and the same day's page showed Cohen moving to Yes and Tully to Maybe.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",

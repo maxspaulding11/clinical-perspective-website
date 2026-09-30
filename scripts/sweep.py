@@ -80,10 +80,13 @@ CHROME_CANDIDATES = [
 # Includes soft failures -- an error page served under HTTP 200. UMKC answers
 # scripted requests for its admissions page that way, so this sweep snapshotted
 # its error page for weeks and would never have reported a change.
+# Louisville sends headless Chrome to an IT "Browser Update" page instead of
+# the programme page, which read as every published name vanishing.
 BLOCK_PAGE = re.compile(
     r"access denied|forbidden|are you a robot|verify you are human|just a moment|"
     r"enable javascript|checking your browser|page error|page not found|"
-    r"404 error|we can't find that page", re.I)
+    r"404 error|we can't find that page|browser update|update your browser|"
+    r"unsupported browser", re.I)
 
 
 def find_chrome():
