@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-29",
+ "updated": "2026-10-01",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -4151,15 +4151,13 @@
    "url": "https://csm.rowan.edu/departments/psychology/academic-programs/graduate/phd-clinical-psych/people.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Faculty members who are interested in accepting applications for Ph.D. students in the 2026 application cycle are noted below. (Individual entries specify: 'Accepting applications for admissions in 2027' / 'Accepting applications for the 2027 academic year'.)",
+   "checked": "2026-10-01",
+   "sourceQuote": "Faculty members who are interested in accepting applications for Ph.D. students in the 2027 application cycle are noted below. (Individual entries specify: 'Accepting applications for admissions in 2027' / 'Accepting applications for the 2027 academic year'.)",
    "accepting": [
     "Bethany Raiff",
     "Christina Simmons",
     "D.J. Angelone",
-    "Danielle Arigo",
     "Dustin Fife",
-    "Jeffrey Greeson",
     "Jim A. Haugh",
     "Katherine Oberle Gotham",
     "Meredith C. Jones",
@@ -4169,8 +4167,10 @@
    "notAccepting": [
     "Ademola Fawole",
     "Cori E. McMahon",
+    "Danielle Arigo",
     "David J. Libon",
     "Gerald Hough",
+    "Jeffrey Greeson",
     "Joanna Petrides",
     "Michelle Ennis Soreth",
     "Roberta Dihoff",
@@ -4178,7 +4178,7 @@
     "Tenelle Porter",
     "Tom Dinzeo"
    ],
-   "note": "Page's general intro references the '2026 application cycle' but every individual faculty entry explicitly states admission year 2027, confirming this is the Fall 2027 entering cohort (applicants apply in the 2026 cycle to start Fall 2027).",
+   "note": "Each faculty member is tagged individually on the program's people page. Between 9 September and 1 October 2026 the page changed its heading from the '2026 application cycle' to the '2027 application cycle', and Danielle Arigo and Jeffrey Greeson changed from accepting to 'Not currently accepting ... for admissions in 2027'; both have been moved to not accepting.",
    "applicationDeadline": "December 15",
    "deadlineCycle": null,
    "greRequired": "required",
@@ -5085,14 +5085,19 @@
    "state": "MT",
    "degree": "PhD",
    "url": "https://www.umt.edu/psychology/graduates/clinical-psychology/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "The Clinical Psychology program will be accepting applications for entry in the fall of 2027. Specific faculty who will be accepting students under their mentorship will be posted here in September; in the interim, we suggest reviewing faculty profiles.",
-   "accepting": [],
+   "checked": "2026-10-01",
+   "sourceQuote": "Faculty accepting applications for Fall 2027: Dr. Bryan Cochran, Dr. Ciara Hansen, Dr. Caitlin Martin-Wagar, Dr. Julie Olomi",
+   "accepting": [
+    "Bryan Cochran",
+    "Ciara Hansen",
+    "Caitlin Martin-Wagar",
+    "Julie M. Olomi"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The program confirms it is admitting for Fall 2027 and says the faculty list posts in September. It had not appeared when this was checked. Applications are due 12/1/2026.",
+   "note": "Four faculty, read from the clinical program's own page, which promised the list in September and posted it in a single line under the 2026-2027 admissions cycle heading. The page writes 'Dr. Julie Olomi'; she is recorded here as Julie M. Olomi, the spelling of her faculty profile. Applications are due 12/1/2026.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -5107,7 +5112,8 @@
     "Application fee required, amount not stated"
    ],
    "appInfoSourceUrl": "https://www.umt.edu/psychology/graduates/clinical-psychology/apply.php",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-01"
   },
   {
    "id": "the-university-of-south-dakota-phd",
@@ -7083,12 +7089,12 @@
    "url": "https://psychology.sas.upenn.edu/graduate/information-applicants",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-10-01",
    "sourceQuote": "A list of those indicating they will look at applications for Fall 2027 will be added to the webpage before the application opens on October 1, 2026.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The department confirms the cycle is running -- applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry -- but has not yet posted which faculty will review them, which is why this stays pending. The director of clinical training told us by email on 19 September that the program is admitting.",
+   "note": "Penn's PhD is department-wide, not a separate clinical program. On 1 October 2026 the department posted 'Faculty members considering applications for Fall 2027' -- fourteen names across the whole department. Only two of them, Ayelet Meron Ruscio and Martin Seligman, are on our clinical roster; the others (Aguirre, Albarracin, Apicella, Brainard, Burge, Falk, Geffen, Hayes, Jenkins, Roberts, Stocker, Trueswell) work in other areas. This stays pending until someone decides how to report a department-wide list. Applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry. The director of clinical training told us by email on 19 September that the program is admitting.",
    "pcsas": true,
    "applicationDeadline": "December 8, 2026, 11:59 PM EST",
    "deadlineCycle": "Fall 2027 admission",
@@ -7665,16 +7671,17 @@
    "url": "https://psychology.as.virginia.edu/clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The PhD Program in Clinical Psychology will recruit a cohort for the 2026-2027 academic year. The following faculty hope to admit students to enter Fall 2027: Noelle Hurd, Aaron Reuben, Bethany Teachman",
+   "checked": "2026-10-01",
+   "sourceQuote": "The PhD Program in Clinical Psychology will recruit a cohort for the 2026-2027 academic year. The following faculty hope to admit students to enter Fall 2027: Noelle Hurd, Aaron Reuben, Bethany Teachman, Katherine Venturo-Conerly",
    "accepting": [
     "Aaron Reuben",
     "Bethany Teachman",
+    "Katherine Venturo-Conerly",
     "Noelle Hurd"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: Not restated on this page (department-wide PhD deadline is typically December 1). This page's posted recruiting list is explicitly for Fall 2026 entry, not Fall 2027 -- it has not yet been updated for the cycle requested. Hurd, Sequeira, and Teachman are therefore not reported as current Fall 2027 accepters.",
+   "note": "Read from the clinical program's own page. Katherine Venturo-Conerly was added to the list after it was last read on 9 September 2026. The page's first sentence says the program recruits 'for the 2026-2027 academic year', but the list itself names Fall 2027 entry explicitly, which is the cycle this tracker follows.",
    "pcsas": true,
    "applicationDeadline": "December 1, 5:00 PM",
    "deadlineCycle": null,
@@ -7828,14 +7835,26 @@
    "state": "WY",
    "degree": "PhD",
    "url": "https://www.uwyo.edu/psychology/doctoral-programs/clinical/index.html",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Joshua Clapp is not recruiting graduate students for Fall 2026 / Kyle DeYoung is recruiting graduate students for Fall 2026 (every core faculty member's status on this page is explicitly tied to Fall 2026)",
-   "accepting": [],
+   "checked": "2026-10-01",
+   "sourceQuote": "Joshua Clapp is recruiting graduate students for Fall 2027 / Alison Looby is reviewing graduate applications for Fall 2027 / Tara Clapp is not recruiting graduate students for Fall 2027",
+   "accepting": [
+    "Joshua Clapp",
+    "Kyle De Young",
+    "Matt J. Gray",
+    "Christine McKibbin",
+    "Alison Looby"
+   ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "The program's Core Faculty recruiting page labels every faculty member's accepting status for 'Fall 2026' specifically, one cycle behind the Fall 2027 target, and had not been updated at time of check. For reference only (not reported as current), the stale Fall 2026 statuses were: recruiting - Kyle De Young, Matt Gray, Christine McKibbin, Kasey Stanton; reviewing applications - Cynthia Hartung; not recruiting/not reviewing - Joshua Clapp, Tara Clapp, Carolyn Pepper, Anne Stevens, Alison Looby.",
+   "notAccepting": [
+    "Tara Clapp",
+    "Cynthia Hartung",
+    "Carolyn Pepper",
+    "Anne Stevens",
+    "Kasey Stanton"
+   ],
+   "note": "The clinical program's Core Faculty page tags each faculty member individually, and every tag now names Fall 2027 (it read Fall 2026 until this update). Four say they are 'recruiting graduate students for Fall 2027'. Alison Looby's tag reads 'reviewing graduate applications for Fall 2027', a different wording but just as unhedged, so she is listed as accepting too. Read from the rendered page, not the page source. The page writes Kyle DeYoung and Matt Gray; they are recorded under their profile spellings, Kyle De Young and Matt J. Gray.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
@@ -7849,7 +7868,8 @@
     "No strict GPA cutoffs"
    ],
    "appInfoSourceUrl": "https://www.uwyo.edu/psychology/doctoral-programs/apply.html",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-01"
   },
   {
    "id": "vanderbilt-university-phd",

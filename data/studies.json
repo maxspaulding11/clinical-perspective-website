@@ -1294,5 +1294,37 @@
     "doi": "10.1111/adb.70187",
     "sourceUrl": "https://doi.org/10.1111/adb.70187",
     "instagram": ""
+  },
+  {
+    "slug": "invisible-work-of-running-a-household-who-carries",
+    "index": 82,
+    "title": "The invisible work of running a household: who carries it, and what it costs",
+    "tag": "Personality",
+    "blurb": "Across two German surveys of 368 women and 1,871 mothers, women reported doing 84.2% of the invisible household work -- planning, organising, remembering -- against 69.4% of the visible tasks. Mental load correlated with negative affect (r = .36), anxiety (.33) and depression (.26).",
+    "date": "2026-09-30",
+    "summary": "\"Mental load\" names the part of running a household that leaves no trace: remembering the dentist appointment, noticing the shoes have got too small, holding the whole schedule in your head. Researchers led by Stefanie M. Jungmann ran two German online surveys -- 368 women, then 1,871 mothers -- to separate that invisible work from the visible kind and ask what it costs. The split was stark: women reported handling 84.2% of invisible tasks against 69.4% of visible ones, so the inequality is not in the cooking and cleaning but in the thinking behind them. They were also significantly more dissatisfied with how invisible work was divided, and that dissatisfaction belonged almost entirely to mothers: women without children reported essentially no difference between the two kinds of task. The reasons people gave were consistent, and revealing -- the most common were that the work is never finished and simply repeats, that there is too much of it, and that it leaves no break or time for oneself. Mental load tracked with worse mental health: positive affect fell slightly, while negative affect correlated at r = .36, generalised anxiety at .33 and depressive symptoms at .26, all modest-to-moderate associations. Two limits shape what this can support. Both studies are single snapshots, so nothing establishes direction -- carrying more invisible work might raise anxiety, or being anxious might make the same workload feel heavier, and the data cannot separate those. And recruitment ran through university mailing lists, Instagram, X and parent forums with no incentive, which selects for women who already recognise \"mental load\" as describing their life. The percentages should therefore be read as describing this self-selected group, not as a population estimate of how German households divide labour. Notably, some participants reported no burden at all.",
+    "journal": "PLOS One",
+    "authors": "Stefanie M. Jungmann, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42685048",
+    "doi": "10.1371/journal.pone.0356255",
+    "sourceUrl": "https://doi.org/10.1371/journal.pone.0356255",
+    "instagram": ""
+  },
+  {
+    "slug": "only-19-3-of-dutch-forensic-outpatients-had",
+    "index": 83,
+    "title": "Only 19.3% of Dutch forensic outpatients had a personality disorder diagnosis",
+    "tag": "Forensic",
+    "blurb": "Across 15 institutions and 10,560 people in Dutch outpatient forensic mental health, 19.3% carried a personality disorder diagnosis -- below rates in general psychiatric outpatient and detention settings. Of specific diagnoses, 71.2% were \"other specified\" or unspecified.",
+    "date": "2026-10-01",
+    "summary": "In forensic mental health, a personality disorder diagnosis is not a label for its own sake: it shapes risk assessment, what treatment is offered, and how recidivism is managed. Researchers led by Barbera E. Van Reijswoud collected, from fifteen Dutch outpatient forensic institutions, diagnoses for everyone treated in 2023, a total of 10,560 people, to establish how often personality pathology is actually recorded. It was recorded for 19.3%, or 2,033 individuals: 12% with a personality disorder as their primary diagnosis and 7.3% carrying one only as an additional diagnosis. The authors read that as too low rather than reassuring, since systematic reviews put rates in general psychiatric outpatient and detention populations considerably higher, and they conclude personality pathology is under-recognised in this setting. A second pattern supports the interpretation. Among those given a specific diagnosis, 71.2% were coded as \"other specified\" or unspecified personality disorder -- a placeholder rather than a description -- with borderline (12.4%) and antisocial (11.5%) the only named categories above 2%. Over half of the people whose primary diagnosis was a personality disorder were coded with nothing more precise than the general category. Diagnoses were more common among women, middle-aged patients, those in voluntary rather than mandated treatment, and those involved in more serious violent offences. The measurement caveat is large and the authors state it. The fifteen institutions supplied data of differing completeness: six provided only primary diagnoses, and four -- accounting for 61% of all individuals -- reported only broad DSM categories rather than specific ones. Nothing was recorded about how any diagnosis was reached, so structured assessment cannot be distinguished from clinical impression. This is a study of what gets written down, which is precisely the point, but it means the 19.3% is a floor on prevalence, not a measurement of it.",
+    "journal": "Personality and Mental Health",
+    "authors": "Barbera E. Van Reijswoud, et al.",
+    "pubdate": "November 2026",
+    "pmid": "42680701",
+    "doi": "10.1002/pmh.70101",
+    "sourceUrl": "https://doi.org/10.1002/pmh.70101",
+    "instagram": ""
   }
 ]
