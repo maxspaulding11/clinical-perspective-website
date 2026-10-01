@@ -7087,14 +7087,17 @@
    "state": "PA",
    "degree": "PhD",
    "url": "https://psychology.sas.upenn.edu/graduate/information-applicants",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
    "checked": "2026-10-01",
-   "sourceQuote": "A list of those indicating they will look at applications for Fall 2027 will be added to the webpage before the application opens on October 1, 2026.",
-   "accepting": [],
+   "sourceQuote": "Faculty members considering applications for Fall 2027 (updated 10/1/26):",
+   "accepting": [
+    "Ayelet Meron Ruscio",
+    "Martin Seligman"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Penn's PhD is department-wide, not a separate clinical program. On 1 October 2026 the department posted 'Faculty members considering applications for Fall 2027' -- fourteen names across the whole department. Only two of them, Ayelet Meron Ruscio and Martin Seligman, are on our clinical roster; the others (Aguirre, Albarracin, Apicella, Brainard, Burge, Falk, Geffen, Hayes, Jenkins, Roberts, Stocker, Trueswell) work in other areas. This stays pending until someone decides how to report a department-wide list. Applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry. The director of clinical training told us by email on 19 September that the program is admitting.",
+   "note": "Penn admits to a department-wide Psychology PhD, and its applicant page lists faculty across the whole department, not the clinical area alone. The fourteen names it lists for Fall 2027 are Geoffrey Karl Aguirre, Dolores Albarracin, Coren Apicella, David Brainard, Johannes Burge, Emily Falk, Maria Geffen, Matthew Hayes, Anna Jenkins, Gareth Roberts, Ayelet Meron Ruscio, Martin Seligman, Alan Stocker and John Trueswell; of those, Ayelet Meron Ruscio and Martin Seligman are the ones this tracker holds as clinical faculty, so only they are counted here. The others work in other areas, and an applicant interested in clinical work with them should read the page and contact them directly. Applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry.",
    "pcsas": true,
    "applicationDeadline": "December 8, 2026, 11:59 PM EST",
    "deadlineCycle": "Fall 2027 admission",
@@ -7115,7 +7118,8 @@
     "on": "2026-09-19",
     "cycle": "Fall 2027",
     "via": "email"
-   }
+   },
+   "newlyPostedOn": "2026-10-01"
   },
   {
    "id": "university-of-pittsburgh-phd",
