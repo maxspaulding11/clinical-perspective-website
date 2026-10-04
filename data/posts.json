@@ -745,5 +745,23 @@
     "title": "Only 19.3% of Dutch forensic outpatients had a personality disorder diagnosis",
     "date": "2026-10-01",
     "blurb": "Across 15 institutions and 10,560 people in Dutch outpatient forensic mental health, 19.3% carried a personality disorder diagnosis -- below rates in general psychiatric outpatient and detention settings. Of specific diagnoses, 71.2% were \"other specified\" or unspecified."
+  },
+  {
+    "slug": "digital-cbt-programme-cut-nurse-burnout-the-suicide",
+    "url": "studies/digital-cbt-programme-cut-nurse-burnout-the-suicide.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "A digital CBT programme cut nurse burnout. The suicide finding was weaker than billed.",
+    "date": "2026-10-02",
+    "blurb": "In a randomized trial of 501 at-risk US nurses, adding a video-based CBT skills programme to mental-health screening significantly reduced burnout at 6 months (RRR 0.698). The reduction in suicidal ideation did not reach statistical significance, though the paper's conclusion highlights it."
+  },
+  {
+    "slug": "ai-therapist-in-vr-matched-ordinary-cbt-with",
+    "url": "studies/ai-therapist-in-vr-matched-ordinary-cbt-with.html",
+    "instagram": "",
+    "tag": "Digital Health",
+    "title": "An AI therapist in VR matched ordinary CBT -- with 20 students per group",
+    "date": "2026-10-03",
+    "blurb": "In a 3-arm trial of 60 Chinese university students, both a large-language-model VR CBT system and face-to-face CBT beat minimal support for academic anxiety. Traditional CBT's advantage was numerically larger, but the difference between them was not significant (p = 0.103)."
   }
 ]

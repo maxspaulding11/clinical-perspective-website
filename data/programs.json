@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-01",
+ "updated": "2026-10-03",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -4592,14 +4592,23 @@
    "state": "NY",
    "degree": "PhD",
    "url": "https://artsandsciences.syracuse.edu/psychology/graduate-study-psychology/clinical-psychology-graduate-program-overview/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "Our department has eliminated the GRE General Test for admission to the fall 2027 class. [...] Applications are due no later than December 1.",
-   "accepting": [],
+   "checked": "2026-10-03",
+   "sourceQuote": "Dr. Antshel will review applications for Fall 2027 admission.",
+   "accepting": [
+    "Kevin Antshel",
+    "Katie Kidwell",
+    "Sarah Woolf-King",
+    "Michelle J. Zaso"
+   ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "The overview page is now written for the Fall 2027 class -- it names that cycle for both its GRE policy and its interviews -- and the Fall 2026 faculty list that used to sit here has been taken down. No Fall 2027 list of recruiting faculty has gone up in its place, so this stays pending.",
+   "notAccepting": [
+    "Joseph W. Ditre",
+    "Sarah Karalunas",
+    "Aesoon Park"
+   ],
+   "note": "The clinical program's own overview page states each faculty member's status at the end of their profile, so there is no single list sentence and the quote is one of those per-person lines verbatim. Antshel, Kidwell, Woolf-King and Zaso each read 'will review applications for Fall 2027 admission'. Ditre, Karalunas and Park read 'will not accept Ph.D. students this year'. Gellis, Kapuscinski, Sweeney and Vanable read 'does not accept Ph.D. students' (Gellis, Kapuscinski and Sweeney are teaching faculty) and are not counted either way. The page writes 'Dr. Zaso'; she is recorded as Michelle J. Zaso so her profile link resolves. Read from the live page on 3 October 2026; on 21 September the page named the Fall 2027 cycle but carried no faculty statements.",
    "applicationDeadline": "December 1",
    "deadlineCycle": "Fall 2027 class",
    "greRequired": "not accepted",
@@ -4612,7 +4621,8 @@
     "Page still references Fall 2026 cycle as of check"
    ],
    "appInfoSourceUrl": "https://artsandsciences.syracuse.edu/psychology/graduate-study-psychology/clinical-psychology-graduate-program-overview/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-03"
   },
   {
    "id": "teachers-college-columbia-university-phd",
@@ -4699,19 +4709,18 @@
    "url": "https://artsci.tamu.edu/psychological-brain-sciences/academics/graduate/phd-program/training-areas/clinical.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-03",
    "sourceQuote": "Accepting Students for 2027-2028",
    "accepting": [
     "Andres Viana",
     "Angeline Bottera",
     "Anka Vujanovic",
     "Annmarie MacNamara",
-    "Brian Albanese",
     "Zina Trost"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Page uses the ambiguous academic-year label '2026-2027' rather than an explicit 'Fall 2027' statement, so per instructions it is not being treated as confirmed for the Fall 2027 cycle. For reference only (not asserted as applying to Fall 2027), the page's current lists were: accepting - Brian Albanese, Kristy Cuthbert, Annmarie MacNamara, Zina Trost, Andres Viana, Anka Vujanovic; not accepting - John Edens, Sherecce Fields, Robert Heffer.",
+   "note": "The clinical area page carries a faculty table with a column headed 'Accepting Students for 2027-2028', which is the Fall 2027 entering class. Read from the live page on 3 October 2026: Bottera, MacNamara, Trost, Viana and Vujanovic are marked Yes; Albanese, Cuthbert, Edens, Fields and Heffer are marked No. Brian Albanese was marked Yes when the page was first read on 9 September and now reads No, so he has been removed from the accepting list.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not mentioned",

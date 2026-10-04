@@ -1326,5 +1326,37 @@
     "doi": "10.1002/pmh.70101",
     "sourceUrl": "https://doi.org/10.1002/pmh.70101",
     "instagram": ""
+  },
+  {
+    "slug": "digital-cbt-programme-cut-nurse-burnout-the-suicide",
+    "index": 84,
+    "title": "A digital CBT programme cut nurse burnout. The suicide finding was weaker than billed.",
+    "tag": "Treatment",
+    "blurb": "In a randomized trial of 501 at-risk US nurses, adding a video-based CBT skills programme to mental-health screening significantly reduced burnout at 6 months (RRR 0.698). The reduction in suicidal ideation did not reach statistical significance, though the paper's conclusion highlights it.",
+    "date": "2026-10-02",
+    "summary": "Burnout and distress among nurses are severe enough to be described as occupational epidemics, and screening programmes are the common response -- but screening only identifies people, it does not treat them. Researchers led by Bernadette Mazurek Melnyk tested whether adding something to the screening helps. They randomised 501 at-risk nurses recruited across US professional organisations and health systems to psychologically safe mental-health screening and referral alone, or the same plus MINDBODYSTRONG, a seven-session video-based cognitive-behavioural skills programme, then followed them for six months. On anxiety, stress and healthy-lifestyle measures the added programme did better, though the effects were small by conventional standards (absolute d of 0.06 to 0.35). The clearest result was burnout: at six months, nurses in the programme had a significantly lower risk than those who got screening alone (relative risk ratio 0.698, 95% CI 0.528 to 0.929). Engagement with the video sessions was high, with 71% completing all seven, though only 37.4% finished the skills-building activities that follow each one. On suicidal ideation the honest reading differs from the paper's own framing. Risk fell in the programme group and the six-month estimate looks substantial (RRR 0.329), but its confidence interval runs from 0.101 to 1.072 and therefore includes no effect at all. The authors state in their results that the suicidality effects did not reach statistical significance, yet their conclusion describes reduced suicidal ideation and its potential life-saving impact. The burnout finding stands; the suicide claim does not yet. Three further limits: all outcomes were self-reported, suicidal ideation was measured with a single PHQ-9 item rather than a dedicated instrument, and the sample was over 80% non-Hispanic white and over 80% degree-educated, recruited by combining random and convenience sampling. No dose-response relationship appeared for the continuous outcomes.",
+    "journal": "Worldviews on Evidence-Based Nursing",
+    "authors": "Bernadette Mazurek Melnyk, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42712158",
+    "doi": "10.1111/wvn.70171",
+    "sourceUrl": "https://doi.org/10.1111/wvn.70171",
+    "instagram": ""
+  },
+  {
+    "slug": "ai-therapist-in-vr-matched-ordinary-cbt-with",
+    "index": 85,
+    "title": "An AI therapist in VR matched ordinary CBT -- with 20 students per group",
+    "tag": "Digital Health",
+    "blurb": "In a 3-arm trial of 60 Chinese university students, both a large-language-model VR CBT system and face-to-face CBT beat minimal support for academic anxiety. Traditional CBT's advantage was numerically larger, but the difference between them was not significant (p = 0.103).",
+    "date": "2026-10-03",
+    "summary": "If a language model can deliver cognitive behavioural therapy, the bottleneck of therapist availability in university counselling services starts to look solvable. Researchers led by Hao Fang built a system combining virtual reality, a large language model and retrieval-augmented generation -- a method that grounds the model's replies in a specific set of documents, here CBT material, rather than letting it improvise -- and tested it against the real thing. Sixty students at a university in Wuhan with mild or moderate academic anxiety were randomly assigned, twenty per arm, to the system, to face-to-face CBT, or to minimal support, for four weekly 50-minute sessions. Both active treatments beat minimal support on academic anxiety and on heart rate, with large group-by-time interactions. Skin temperature, also measured, showed nothing. The comparison everyone will care about is the one between the two therapies, and it needs stating precisely. The difference in change scores was 2.05 points favouring traditional CBT, and it was not statistically significant (p = 0.103). That is not evidence the two are equivalent: with twenty students per arm this trial had no realistic power to detect a difference of that size, so reading the result as parity conflates no difference found with no difference exists. The point estimate, if anything, favours the human. The authors are unusually candid about the study's standing, calling it a preliminary exploratory single-centre trial and stating that it was not prospectively registered on any public trial registry. Participants could not be blinded, given the obvious difference between wearing a VR headset and sitting with a therapist, though assessors and statisticians were. Follow-up ended with the intervention, so nothing is known beyond six weeks. And safety events and system malfunctions were not tracked as prespecified endpoints, which the authors list as a limitation of their own design.",
+    "journal": "Frontiers in Public Health",
+    "authors": "Hao Fang, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42723816",
+    "doi": "10.3389/fpubh.2026.1874822",
+    "sourceUrl": "https://doi.org/10.3389/fpubh.2026.1874822",
+    "instagram": ""
   }
 ]
