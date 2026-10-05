@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-09-23",
+ "updated": "2026-10-05",
  "interestsRead": "2026-08-13",
  "note": "Every entry's research interests were read from that person's own faculty/lab bio page; faculty whose pages didn't state clear research interests were skipped rather than guessed. Entries added on 2026-09-14 to resolve accepting-list names may carry an empty interests list: they are on a program's Fall 2027 accepting list and have a verified bio page, but their interests have not been read yet and will be picked up by the next professor sweep. Sweep in progress across the full program roster. 'updated' is the date this file last changed; 'interestsRead' is when the interest sweep itself last ran, which is the date the topic pages cite — records added later may carry no interests, so the two are not the same thing.",
  "professors": [
@@ -14644,7 +14644,7 @@
    "id": "allison-m-letkiewicz-northwestern-university",
    "name": "Allison M Letkiewicz",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "cognitive functioning (executive function, decision-making) and internalizing psychopathology",
@@ -14659,7 +14659,7 @@
    "id": "andrea-graham-northwestern-university",
    "name": "Andrea Graham",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "design and optimization of digital mental health interventions",
@@ -14674,7 +14674,7 @@
    "id": "andrea-m-russell-northwestern-university",
    "name": "Andrea M Russell",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "cognitive, psychological, and social determinants of health in older adults",
@@ -14689,7 +14689,7 @@
    "id": "cassandra-l-kisiel-northwestern-university",
    "name": "Cassandra L Kisiel",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "complex developmental trauma and dissociation in children",
@@ -14704,7 +14704,7 @@
    "id": "christina-l-boisseau-northwestern-university",
    "name": "Christina L Boisseau",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "anxiety and obsessive-compulsive spectrum disorders",
@@ -14719,7 +14719,7 @@
    "id": "david-w-johnson-northwestern-university",
    "name": "David W Johnson",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "schools and evidence-based interventions for youth mental health",
@@ -14734,7 +14734,7 @@
    "id": "diana-a-chirinos-northwestern-university",
    "name": "Diana A Chirinos",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "psychoneuroimmunology and behavioral medicine",
@@ -14749,7 +14749,7 @@
    "id": "elena-barbieri-northwestern-university",
    "name": "Elena Barbieri",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "cognitive neuroscience of language and aphasia",
@@ -14764,7 +14764,7 @@
    "id": "inger-e-burnett-zeigler-northwestern-university",
    "name": "Inger E Burnett-Zeigler",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "mental health service utilization and access disparities",
@@ -14779,7 +14779,7 @@
    "id": "jessica-l-schleider-northwestern-university",
    "name": "Jessica L Schleider",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "single-session interventions for youth mental health",
@@ -14794,7 +14794,7 @@
    "id": "jonah-meyerhoff-northwestern-university",
    "name": "Jonah Meyerhoff",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "technology-based suicide prevention interventions",
@@ -14809,7 +14809,7 @@
    "id": "judith-t-moskowitz-northwestern-university",
    "name": "Judith T Moskowitz",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "positive emotion interventions for life stress",
@@ -14824,7 +14824,7 @@
    "id": "karen-abram-northwestern-university",
    "name": "Karen Abram",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "mental health needs of incarcerated youth and adults",
@@ -14839,7 +14839,7 @@
    "id": "linda-a-teplin-northwestern-university",
    "name": "Linda A Teplin",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "mental health needs and outcomes of justice-involved youth",
@@ -14854,7 +14854,7 @@
    "id": "michael-brook-northwestern-university",
    "name": "Michael Brook",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "biopsychosocial determinants of violence",
@@ -14869,7 +14869,7 @@
    "id": "michael-e-newcomb-northwestern-university",
    "name": "Michael E Newcomb",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "health disparities among LGBTQ youth",
@@ -14884,7 +14884,7 @@
    "id": "michael-s-wolf-northwestern-university",
    "name": "Michael S Wolf",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "cognitive and health-system factors in self-management",
@@ -14900,7 +14900,7 @@
    "id": "molly-losh-northwestern-university",
    "name": "Molly Losh",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "autism and related neurodevelopmental conditions",
@@ -14915,7 +14915,7 @@
    "id": "neil-jordan-northwestern-university",
    "name": "Neil Jordan",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "quality and cost of care for chronic illness",
@@ -14929,7 +14929,7 @@
    "id": "phyllis-c-zee-northwestern-university",
    "name": "Phyllis C Zee",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "circadian rhythm and sleep-wake disorders",
@@ -14945,7 +14945,7 @@
    "id": "richard-a-epstein-northwestern-university",
    "name": "Richard A Epstein",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "services research for children facing adversity or special healthcare needs",
@@ -14959,7 +14959,7 @@
    "id": "rinad-s-beidas-northwestern-university",
    "name": "Rinad S Beidas",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "implementation science and behavioral economics",
@@ -14974,7 +14974,7 @@
    "id": "robert-e-hanlon-northwestern-university",
    "name": "Robert E Hanlon",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "forensic neuropsychology",
@@ -14989,7 +14989,7 @@
    "id": "sandra-weintraub-northwestern-university",
    "name": "Sandra Weintraub",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "primary progressive aphasia and frontotemporal dementia",
@@ -15004,7 +15004,7 @@
    "id": "sara-j-becker-northwestern-university",
    "name": "Sara J Becker",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "implementation science in behavioral health",
@@ -15019,7 +15019,7 @@
    "id": "sarah-helseth-northwestern-university",
    "name": "Sarah Helseth",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "health services research and implementation science",
@@ -15034,7 +15034,7 @@
    "id": "shiv-darius-tandon-northwestern-university",
    "name": "Shiv Darius Tandon",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "prevention of maternal and paternal perinatal depression",
@@ -15049,7 +15049,7 @@
    "id": "siobhan-m-phillips-northwestern-university",
    "name": "Siobhan M Phillips",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "determinants and outcomes of physical activity participation",
@@ -15065,7 +15065,7 @@
    "id": "stewart-a-shankman-northwestern-university",
    "name": "Stewart A Shankman",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "clinical mechanisms and risk factors for mood and anxiety disorders",
@@ -15079,7 +15079,7 @@
    "id": "tamar-d-gefen-northwestern-university",
    "name": "Tamar D Gefen",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "interests": [
     "clinical neuropsychology of neurodegenerative disease",
@@ -15089,6 +15089,131 @@
    ],
    "url": "https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=40785",
    "checked": "2026-08-11"
+  },
+  {
+   "id": "michael-bailey-northwestern-university-weinberg",
+   "name": "Michael Bailey",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "sexual orientation",
+    "evolutionary psychology"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/michael-bailey.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "alissa-levy-chung-northwestern-university-weinberg",
+   "name": "Alissa Levy Chung",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "intergenerational transmission of parenting",
+    "the role of early experience in the development of psychopathology"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/alissa-levy-chung.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "dan-mcadams-northwestern-university-weinberg",
+   "name": "Dan McAdams",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "adult personality",
+    "life stories",
+    "culture"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/dan-mcadams.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "vijay-mittal-northwestern-university-weinberg",
+   "name": "Vijay Mittal",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "schizophrenia",
+    "prodrome",
+    "early psychosis",
+    "adolescence",
+    "brain and hormone development",
+    "motor function",
+    "emotion",
+    "cognition"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/vijay-mittal.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "dan-mroczek-northwestern-university-weinberg",
+   "name": "Dan Mroczek",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "lifespan personality development",
+    "influence of personality"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/dan-mroczek.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "robin-nusslock-northwestern-university-weinberg",
+   "name": "Robin Nusslock",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "affective and clinical neuroscience",
+    "mood and anxiety disorders"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/robin-nusslock.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "william-revelle-northwestern-university-weinberg",
+   "name": "William Revelle",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "personality measurement, theory and research"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/william-revelle.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "jennifer-tackett-northwestern-university-weinberg",
+   "name": "Jennifer Tackett",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "externalizing and disinhibitory psychopathology in youth",
+    "genetic and hormonal influences on externalizing problems",
+    "youth personality",
+    "gender and racial/ethnic disparities in externalizing problems"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/jennifer-tackett.html",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "richard-zinbarg-northwestern-university-weinberg",
+   "name": "Richard Zinbarg",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "interests": [
+    "anxiety and its treatment",
+    "measurement theory"
+   ],
+   "url": "https://psychology.northwestern.edu/people/faculty/core/profiles/richard-zinbarg.html",
+   "checked": "2026-10-05"
   },
   {
    "id": "alexandru-cuc-nova-southeastern-university-psyd",

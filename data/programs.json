@@ -983,14 +983,28 @@
    "state": "MA",
    "degree": "PhD",
    "url": "https://www.bu.edu/psych/academics/phd/clinical/applying",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
    "checked": "2026-10-05",
    "sourceQuote": "The mentors listed below with an asterisk (*) will NOT be taking a student for the 2027-2028 class.",
    "accepting": [],
-   "maybe": [],
-   "notAccepting": [],
-   "note": "The page now carries the 2027-2028 (Fall 2027 entry) version of its mentor list, but it only marks who is NOT taking a student, and it also says it is \"difficult for us to predict which mentors will have funding for a student\". Marked as not taking: Todd Farchione, Dan Fulford, Qimin Liu, Kristin Long, Michael Otto, Donna Pincus, Mark Richardson, Martha Tompson. Unmarked: Samuel Meisel, Tibor Palfai, Yakeel Quiroz, Amelia Stanton. Left pending for a human decision on how firm the unmarked names are, since the page never says they will take a student.",
+   "maybe": [
+    "Samuel Meisel",
+    "Tibor Palfai",
+    "Yakeel Quiroz",
+    "Amelia Stanton"
+   ],
+   "notAccepting": [
+    "Todd Farchione",
+    "Dan Fulford",
+    "Qimin Liu",
+    "Kristin Long",
+    "Michael Otto",
+    "Donna Pincus",
+    "Mark Richardson",
+    "Martha Tompson"
+   ],
+   "note": "Unclear at the moment. Boston University's 2027-2028 (Fall 2027 entry) list only marks the mentors who will NOT take a student; it never says the others will, and the same page says it is \"difficult for us to predict which mentors will have funding for a student at the time that you apply\". So the four unmarked mentors are shown as maybe, not accepting: they are the only ones not ruled out. Check with them directly before counting on a place.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -1004,7 +1018,8 @@
     "GRE Subject Test recommended but not required"
    ],
    "appInfoSourceUrl": "https://www.bu.edu/psych/academics/phd/clinical/applying",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-05"
   },
   {
    "id": "bowling-green-state-university-phd",
@@ -3482,13 +3497,13 @@
   {
    "id": "northwestern-university-phd",
    "school": "Northwestern University",
-   "program": "Clinical Psychology PhD",
+   "program": "Clinical Psychology PhD (Feinberg School of Medicine, Chicago)",
    "state": "IL",
    "degree": "PhD",
    "url": "https://www.psychiatry.northwestern.edu/education/clinical-psychology-phd/how-to-apply.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-29",
+   "checked": "2026-10-05",
    "sourceQuote": "The following labs plan to recruit applicants for admission into the PhD program for the upcoming academic year (to begin Fall 2027).",
    "accepting": [
     "Darius Tandon",
@@ -3501,7 +3516,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern's only APA-accredited Clinical Psychology PhD program is administratively housed in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences (this is the same program as the 'Northwestern University Feinberg School of Medicine' roster entry); the university-wide Graduate School (TGS) admissions page for 'Clinical Psychology' points to this same Feinberg program rather than a separate Weinberg College of Arts & Sciences clinical program, so both roster rows are reported from this one source. As of the page's '09/25/26' update it lists six recruiting labs: Newcomb, Tandon and Gefen as before, plus Faith Summersett Williams, Shan Siddiqi and Siobhan M. Phillips (the page notes Phillips 'will be added to the application portal the week of September 27th'). The page's caveat that recruitment 'is subject to change at any time' depending on funding was already there when the first three were recorded as accepting, and the page also says 'Only faculty listed below will be recruiting', so all six are treated the same way. The page's 09/29/26 update adds a seventh recruiting lab, Changiz Geula's Laboratory of Cognitive and Molecular Morphometry at the Mesulam Institute (aging and dementia); it sits under the same 'Recruiting Faculty' heading and caveat as the other six, so it is recorded the same way.",
+   "note": "Deadline: December 1st by 11:59pm Central Time. Northwestern has two separate clinical psychology PhD programs. This entry is the one in the Feinberg School of Medicine's Department of Psychiatry & Behavioral Sciences, on the Chicago campus; the other is in the Department of Psychology in Weinberg College, on the Evanston campus, and has its own entry. They have separate faculty, and you apply to each under a different program code, so the faculty you name have to belong to the program you apply to. (Until 2026-10-05 this note said Feinberg was Northwestern's only clinical PhD; that was wrong, and an applicant wrote in to point it out.) As of the page's '09/25/26' update it lists six recruiting labs: Newcomb, Tandon and Gefen as before, plus Faith Summersett Williams, Shan Siddiqi and Siobhan M. Phillips (the page notes Phillips 'will be added to the application portal the week of September 27th'). The page's caveat that recruitment 'is subject to change at any time' depending on funding was already there when the first three were recorded as accepting, and the page also says 'Only faculty listed below will be recruiting', so all six are treated the same way. The page's 09/29/26 update adds a seventh recruiting lab, Changiz Geula's Laboratory of Cognitive and Molecular Morphometry at the Mesulam Institute (aging and dementia); it sits under the same 'Recruiting Faculty' heading and caveat as the other six, so it is recorded the same way.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "to begin Fall 2027",
@@ -3520,6 +3535,41 @@
    ],
    "appInfoSourceUrl": "https://www.psychiatry.northwestern.edu/education/clinical-psychology-phd/how-to-apply.html",
    "appInfoChecked": "2026-08-17"
+  },
+  {
+   "id": "northwestern-university-weinberg-phd",
+   "school": "Northwestern University",
+   "program": "Clinical Psychology PhD (Weinberg College, Evanston)",
+   "state": "IL",
+   "degree": "PhD",
+   "url": "https://psychology.northwestern.edu/graduate/prospective/information.html",
+   "status": "posted",
+   "cycle": "Fall 2027",
+   "checked": "2026-10-05",
+   "sourceQuote": "Faculty Name / Accepting students Fall 2027 ... Vijay Mittal Yes ... Jennifer Tackett Yes ... Rick Zinbarg Yes",
+   "accepting": [
+    "Vijay Mittal",
+    "Jennifer Tackett",
+    "Richard Zinbarg"
+   ],
+   "maybe": [],
+   "notAccepting": [],
+   "note": "This is the clinical program in the Department of Psychology, Weinberg College, on the Evanston campus, which is research-focused. It is separate from the Feinberg School of Medicine program in Chicago, which has its own entry. The faculty list is a PDF linked from this page, marked Yes or No for Fall 2027, and it covers the whole department. Only the people the department lists as Clinical faculty are counted here (psychology.northwestern.edu/people/faculty/core/clinical.html). Of them, Mittal, Tackett and Zinbarg (\"Rick\" on the PDF) are Yes; the other five clinical faculty on the PDF are No. Alissa Levy Chung, a teaching-track faculty member, is not on the PDF. Yes answers from the department's other areas (Fryberg, Molden, Paller, Perry, Rapp, Rips, Suzuki, Uttal) are left out. When you apply, choose Psychology (program code P50PH), not Clinical Psychology, which is the Feinberg program.",
+   "pcsas": true,
+   "applicationDeadline": "December 1",
+   "deadlineCycle": "for Fall 2027 admission",
+   "greRequired": null,
+   "numReferences": null,
+   "applicationFee": null,
+   "otherRequirements": [
+    "Apply under Psychology (program code P50PH), not Clinical Psychology",
+    "Named faculty must belong to the Weinberg program, not Feinberg",
+    "Application portal opens October 1, 2026; deadline 5 pm Central",
+    "APA and PCSAS accredited"
+   ],
+   "appInfoSourceUrl": "https://psychology.northwestern.edu/graduate/prospective/information.html",
+   "appInfoChecked": "2026-10-05",
+   "newlyPostedOn": "2026-10-05"
   },
   {
    "id": "nova-southeastern-university-phd",
