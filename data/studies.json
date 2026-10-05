@@ -1358,5 +1358,21 @@
     "doi": "10.3389/fpubh.2026.1874822",
     "sourceUrl": "https://doi.org/10.3389/fpubh.2026.1874822",
     "instagram": ""
+  },
+  {
+    "slug": "adhd-medication-varies-sixfold-across-danish-towns-nobody",
+    "index": 86,
+    "title": "ADHD medication varies sixfold across Danish towns. Nobody can explain why.",
+    "tag": "Diagnosis",
+    "blurb": "Across Danish municipalities in 2024, ADHD medication among 4-17 year-olds ranged from 9.6 to 58 per 1,000 children, with diagnoses varying in parallel. Municipal wealth, hospital waiting times and private specialist supply all failed to account for it.",
+    "date": "2026-10-04",
+    "summary": "Whether a child is diagnosed with ADHD and prescribed medication ought to depend on the child. Researchers led by Heidi Sonne used Denmark's national registers -- which cover every resident, with pharmacy records capturing every dispensed prescription regardless of who wrote it -- to see whether it also depends on where they live. Across the country's municipalities in 2024, medication prevalence among 4-to-17-year-olds ranged from 9.6 per 1,000 children in parts of Funen to 58 per 1,000 in parts of North and Central Denmark, roughly a sixfold spread, and diagnoses followed the same geography (15 to 74 per 1,000). The gap widened with age: among 13-to-17-year-olds, medication ranged from 12 to 94 per 1,000 and diagnoses from 22 to 113 per 1,000, meaning that in some municipalities more than one adolescent in ten carried a diagnosis while in others it was closer to one in forty-five. The interesting part is what failed to explain it. The team tested three plausible accounts. Municipal socioeconomic need showed only a borderline inverse association with medication (rho = -0.20, p = 0.049) and none at all with diagnoses. Regional hospital waiting times showed nothing. Private child-psychiatrist capacity showed nothing. The authors are careful about the one association they did find, noting that they ran many correlations without correcting for multiple comparisons, so a p-value of 0.049 should not be leaned on. Two measurement issues shape the nulls. Diagnoses made by private practising child psychiatrists do not enter the national patient registry, though the authors cite evidence that 91% of capturable diagnoses were recorded in the hospital sector. More importantly, the outcomes were measured across 98 municipalities while waiting times and specialist capacity were available only for 5 regions -- a mismatch in resolution that the authors say may itself explain why those factors came out null. The variation is real and well measured; its cause remains open.",
+    "journal": "Basic & Clinical Pharmacology & Toxicology",
+    "authors": "Heidi Sonne, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42669614",
+    "doi": "10.1111/bcpt.70298",
+    "sourceUrl": "https://doi.org/10.1111/bcpt.70298",
+    "instagram": ""
   }
 ]
