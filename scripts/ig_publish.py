@@ -42,7 +42,17 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 MANIFEST = os.path.join(SITE, "data", "reels.json")
 
-API = "https://graph.instagram.com/v23.0"
+# graph.facebook.com, not graph.instagram.com. There are two Instagram APIs
+# and they are not interchangeable: graph.instagram.com serves "Instagram API
+# with Instagram Login", for accounts that stand alone. This account is
+# managed through Meta Business Suite, which means it is a professional
+# account connected to a Facebook Page -- the "Instagram API with Facebook
+# Login" route, which lives on graph.facebook.com and wants instagram_basic,
+# instagram_content_publish and pages_read_engagement.
+#
+# Getting this wrong does not fail obviously. The wrong host answers, and
+# returns an authorisation error that reads like a bad token.
+API = os.environ.get("IG_API_BASE", "https://graph.facebook.com/v23.0")
 
 # A reel of this size finishes in well under a minute, but Instagram's own
 # docs decline to promise a time, so this waits generously and gives up
