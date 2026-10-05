@@ -178,14 +178,28 @@ def find_media(folder):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder", help="a month folder under Posts/Videos")
-    ap.add_argument("docx", help="the matching Lay Summaries & Hashtags .docx")
+    # A month folder is not the same unit as a batch. October 2026 holds the
+    # tail of Post67-87 and all of Post88-108, so its copy lives in two
+    # documents and taking only one would leave a week of posts with no
+    # caption -- which find_media would then report as missing copy rather
+    # than as a missing argument.
+    ap.add_argument("docx", nargs="+",
+                    help="the Lay Summaries & Hashtags .docx files covering "
+                         "that folder; pass as many as it spans")
     ap.add_argument("--year", type=int, required=True)
     ap.add_argument("--time", default="09:00",
                     help="local time of day to post, HH:MM (default 09:00)")
     args = ap.parse_args()
 
     media = find_media(args.folder)
-    copy = parse_docx(args.docx, args.year)
+    copy = {}
+    for path in args.docx:
+        found = parse_docx(path, args.year)
+        clash = set(found) & set(copy)
+        if clash:
+            raise SystemExit("the same post appears in two documents: "
+                             + ", ".join(sorted(clash)))
+        copy.update(found)
 
     missing = sorted(set(media) - set(copy))
     if missing:
