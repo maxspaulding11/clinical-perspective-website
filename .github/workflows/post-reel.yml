@@ -1,0 +1,53 @@
+# Post the day's Reel to Instagram.
+#
+# This runs on GitHub's machines rather than anyone's laptop for one reason:
+# Meta's API has no scheduling. There is no scheduled_publish_time for
+# Instagram the way there is for a Facebook Page -- /media_publish posts the
+# moment it is called -- so something has to be awake at the posting time.
+#
+# A day with nothing queued is not a failure. scripts/ig_publish.py exits 0
+# and says so, because a batch running out is normal and a red cross every
+# morning would train everyone to ignore the one that matters.
+name: Post the day's Reel
+
+on:
+  schedule:
+    # 09:00 America/New_York. GitHub cron is UTC only and does not follow
+    # daylight saving, so this is EDT (UTC-4); between November and March it
+    # fires at 08:00 local instead. Listed twice would double-post, so it is
+    # one line and an hour of drift in winter.
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    # So a missed day can be posted by hand, and so the first live run is a
+    # deliberate button press rather than a wait until tomorrow.
+    inputs:
+      day:
+        description: "Day to post (YYYY-MM-DD). Blank = today."
+        required: false
+      live:
+        description: "Actually post. Unchecked = dry run."
+        type: boolean
+        default: false
+
+# The token is only ever read, and only by the publish step.
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publish
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          python scripts/ig_publish.py \
+            ${{ inputs.day && format('--day {0}', inputs.day) || '' }} \
+            ${{ (github.event_name == 'schedule' || inputs.live) && '--live' || '' }}

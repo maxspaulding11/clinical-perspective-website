@@ -17,11 +17,10 @@ Two things it deliberately does NOT do:
   already writes. If a post is missing its summary or its hashtags, that is
   an error here rather than a thinner caption on the day.
 
-Media is copied into media/reels/ in this repo because Netlify serves the
-repo root, so a committed file is reachable at
-https://theclinicalperspective.org/media/reels/<name> within about twenty
-seconds of a push -- and a public URL is the only form the Instagram API
-accepts. It will not read a local file or an upload.
+Media is staged into media/reels/, which is gitignored here and pushed to a
+separate repo instead -- see BASE_URL. A public URL is the only form the
+Instagram API accepts: it fetches the video and the cover itself, so a local
+path, a localhost address or anything behind a login all fail.
 
 Usage:
   python scripts/ig_manifest.py "../Posts/Videos/October 2026" \
@@ -41,7 +40,16 @@ SITE = os.path.dirname(HERE)
 MEDIA = os.path.join(SITE, "media", "reels")
 OUT = os.path.join(SITE, "data", "reels.json")
 
-BASE_URL = "https://theclinicalperspective.org"
+# Where the media is served from, which is deliberately NOT this site.
+#
+# A batch of Reels is about 33MB against a repo whose entire history is 6MB,
+# so committing them here would grow it by roughly 560MB a year -- permanently,
+# because git keeps every blob forever -- for files that are already public on
+# Instagram the moment they post. They live in their own repo instead, served
+# by GitHub Pages, which can be emptied or deleted outright when it gets large
+# without touching a single thing the site depends on.
+BASE_URL = os.environ.get(
+    "REEL_MEDIA_BASE", "https://maxspaulding11.github.io/tcp-reel-media")
 
 # Instagram rejects a caption over 2,200 characters outright, so a post that
 # would be truncated is a failure to fix here, not on the day.
