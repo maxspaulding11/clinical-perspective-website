@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-03",
+ "updated": "2026-10-05",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -140,7 +140,7 @@
    "url": "https://psychology.gsu.edu/faculty-accepting-students-for-fall-graduate-admissions/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-29",
+   "checked": "2026-10-05",
    "sourceQuote": "FACULTY ACCEPTING STUDENTS FOR FALL 2027 ... Faculty listed as \"Yes\" plan to accept a new student for the fall 2027 class.",
    "accepting": [
     "Page Anderson",
@@ -985,12 +985,12 @@
    "url": "https://www.bu.edu/psych/academics/phd/clinical/applying",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The mentors listed below with an asterisk (*) will NOT be taking a student for the 2026-2027 class.",
+   "checked": "2026-10-05",
+   "sourceQuote": "The mentors listed below with an asterisk (*) will NOT be taking a student for the 2027-2028 class.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The page's current mentor-availability list is explicitly for the 2026-2027 class (i.e., students entering Fall 2026), not Fall 2027. BU's own admissions FAQ indicates applications for the next cycle (Fall 2027 entry) are expected to open in September 2026, so the Fall-2027-specific list is not yet posted. Left accepting/notAccepting empty per instructions rather than carrying forward the stale (Fall 2026) names.",
+   "note": "The page now carries the 2027-2028 (Fall 2027 entry) version of its mentor list, but it only marks who is NOT taking a student, and it also says it is \"difficult for us to predict which mentors will have funding for a student\". Marked as not taking: Todd Farchione, Dan Fulford, Qimin Liu, Kristin Long, Michael Otto, Donna Pincus, Mark Richardson, Martha Tompson. Unmarked: Samuel Meisel, Tibor Palfai, Yakeel Quiroz, Amelia Stanton. Left pending for a human decision on how firm the unmarked names are, since the page never says they will take a student.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -3825,7 +3825,7 @@
    "url": "https://psych.la.psu.edu/graduate/prospective-students/psychology-faculty-accepting-new-graduate-students/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-17",
+   "checked": "2026-10-05",
    "sourceQuote": "The faculty listed below are currently accepting graduate students for the fall 2027 semester.",
    "accepting": [
     "Katie Burkhouse",
@@ -4422,7 +4422,7 @@
    "url": "https://academics.siu.edu/human-behavioral/psychology/doctoral/clinical/information.php",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-14",
+   "checked": "2026-10-05",
    "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
    "accepting": [
     "Amy Lang",
@@ -4556,7 +4556,7 @@
    "url": "https://www.suffolk.edu/cas/degrees-programs/psychology/graduate/phd-in-clinical-psychology/admission-and-aid",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-17",
+   "checked": "2026-10-05",
    "sourceQuote": "Faculty Accepting New Students for Fall 2027",
    "accepting": [
     "Wesley Barnhart",
@@ -8105,7 +8105,7 @@
    "url": "https://psych.washu.edu/find-faculty-advisor",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-05",
    "sourceQuote": "What if I'm Interested in Applying for Admission in Fall 2027? ... below is a list of Faculty that ARE considering admissions [under the 'Clinical' heading]",
    "accepting": [
     "Brian Gordon",
@@ -8113,12 +8113,11 @@
     "Deanna Barch",
     "Denise Head",
     "Ellen Fitzsimmons-Craft",
-    "Juston Osborne",
-    "Rebecca Cox"
+    "Juston Osborne"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Page organizes considering-faculty by area (Aging & Development, Behavior/Brain/Cognition, Clinical, Social & Personality/Cognitive Sciences); only names listed under the 'Clinical' heading were used here, per the rule requiring isolation of the clinical-specific sublist from a shared cross-program page. Juston Osborne is annotated on the source page as '(incoming Clinical faculty, so he does not have a staff page yet).' A combined, department-wide 'NOT Considering FL27 Admission' list also appears on the page (Renee Thompson, Andrew Butler, Lori Markson, Jason Hassenstab, Chad Sylvester, Jeff Zacks, Derek Isaacowitz, Kirsten Gilbert, Richard Abrams, Len Green, Patrick Hill, Julie Bugg, Tamara Hershey, Brian Carpenter, Emily Willroth) but is NOT broken out by area, so none of those names could be reliably confirmed as Clinical-area (vs. one of the department's other four areas) -- per instructions not to guess, notAccepting is left empty rather than including this undifferentiated list.",
+   "note": "Page organizes considering-faculty by area (Aging & Development, Behavior/Brain/Cognition, Clinical, Social & Personality/Cognitive Sciences); only names listed under the 'Clinical' heading were used here, per the rule requiring isolation of the clinical-specific sublist from a shared cross-program page. Juston Osborne is annotated on the source page as '(incoming Clinical faculty, so he does not have a staff page yet).' A combined, department-wide 'NOT Considering FL27 Admission' list also appears on the page (Renee Thompson, Andrew Butler, Lori Markson, Jason Hassenstab, Chad Sylvester, Jeff Zacks, Derek Isaacowitz, Kirsten Gilbert, Richard Abrams, Len Green, Patrick Hill, Julie Bugg, Tamara Hershey, Brian Carpenter, Emily Willroth) but is NOT broken out by area, so none of those names could be reliably confirmed as Clinical-area (vs. one of the department's other four areas) -- per instructions not to guess, notAccepting is left empty rather than including this undifferentiated list. Update 2026-10-05: Rebecca Cox is no longer under the Clinical heading; the page now lists her under \"Contact Directly for information\", alongside Seanna Leath, Josh Oltmanns and Kristin Van Engen. She has been removed from the accepting list; applicants interested in her lab should email her.",
    "pcsas": true,
    "applicationDeadline": null,
    "deadlineCycle": null,
@@ -8745,14 +8744,21 @@
    "state": "CO",
    "degree": "PhD",
    "url": "https://psychology.colostate.edu/clinicalscience/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Applications are due December 1, 2025.",
-   "accepting": [],
+   "checked": "2026-10-05",
+   "sourceQuote": "2026 Admissions Cycle ... Faculty Interested in Taking Students: ... Applications are due December 1, 2026",
+   "accepting": [
+    "Steven Bruce",
+    "Silvia Sara Canetto",
+    "Brad Conner",
+    "Noah Emery",
+    "Reagan Miller-Chagnon",
+    "Teresa Vargas"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Page (opened directly) lists faculty recruiting for the Fall 2026 admissions cycle — Core Faculty: Silvia Canetto, Reagan Miller-Chagnon, Bradley Conner, Noah Emery; Associated Faculty: Emily Merz, Niccole Nelson — not Fall 2027. The Fall 2027 recruiting list had not yet been posted as of this check.",
+   "note": "The list sits inside the collapsed Admissions accordion on the program page. CSU labels it the \"2026 Admissions Cycle\", meaning the year applications are made, not the year of entry: the same block says applications are due December 1, 2026 and interviews run December 2026 to February 2027, so this is the Fall 2027 entering class. The page's own names are Steven Bruce, Silvia Canetto, Bradley Conner, Noah Emery, Reagan Miller-Chagnon and Teresa Vargas; Bruce and Vargas are new since the Fall 2026 list, and Emily Merz and Niccole Nelson, on that list, are not on this one. \"Interested in taking students\" is read as accepting, as it is for San Diego State.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -8766,7 +8772,8 @@
     "2-3 years full-time residence at CSU required"
    ],
    "appInfoSourceUrl": "https://psychology.colostate.edu/apply-to-become-a-psychology-student/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-05"
   },
   {
    "id": "university-of-texas-at-austin-phd",

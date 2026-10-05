@@ -1374,5 +1374,21 @@
     "doi": "10.1111/bcpt.70298",
     "sourceUrl": "https://doi.org/10.1111/bcpt.70298",
     "instagram": ""
+  },
+  {
+    "slug": "how-many-people-fear-dementia-after-56-studies",
+    "index": 87,
+    "title": "How many people fear dementia? After 56 studies, the answer is that we can't tell.",
+    "tag": "Public Health",
+    "blurb": "A systematic review of 56 studies across four continents found reported rates of dementia fear ranging from 12.7% to 68.0% -- figures the authors say should not be treated as directly comparable, because almost every study used a different instrument and threshold.",
+    "date": "2026-10-05",
+    "summary": "Fear of developing dementia shapes real behaviour: whether someone mentions memory lapses to a doctor, agrees to cognitive screening, or avoids the subject entirely. Researchers led by Feng Chen set out to establish how common that fear is among adults who do not have a dementia diagnosis, searching eight databases including four Chinese-language ones, and including 56 studies from mainland China, Hong Kong, Japan, South Korea, the US, the UK, Germany and Israel. The reported figures ranged from 12.7% to 68.0%. That spread is the finding rather than a nuisance around it. The 12.7% came from a single-item question about severe fear put to German adults aged 40 to 70; the 68.0% came from moderate-to-high scores on the Fear of Dementia Scale among older adults in Chinese long-term care institutions. Different constructs, different instruments, different cut-offs, different populations -- and the authors say plainly that these should not be interpreted as directly comparable prevalence estimates, concluding that the evidence does not permit a reliable estimate at all. Their assessment of the measures themselves explains why. Judged against COSMIN, the standard framework for rating health measurement instruments, most scales reported internal consistency and factor structure, but evidence for content validity, cross-cultural measurement invariance, measurement error and responsiveness was limited or absent. In other words, the instruments have not been shown to mean the same thing in different languages and cultures, which is exactly what a cross-country prevalence comparison assumes. What did hold up more consistently, supported mainly by studies the reviewers rated high quality, is that anxiety and depression accompany greater fear of dementia, while social support and good family functioning accompany less -- though the latter rests on only two studies. Fear was higher among people in long-term care, hospitalised older patients, rural older adults, and anyone with memory complaints or a family history of dementia. Most of the 56 studies were cross-sectional, so none of this establishes which way the arrow points.",
+    "journal": "Frontiers in Public Health",
+    "authors": "Feng Chen, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42729249",
+    "doi": "10.3389/fpubh.2026.1930480",
+    "sourceUrl": "https://doi.org/10.3389/fpubh.2026.1930480",
+    "instagram": ""
   }
 ]
