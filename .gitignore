@@ -5,3 +5,10 @@ __pycache__/
 # Secrets for scripts/watch_notify.py — never commit
 .env
 .env.local
+
+# Reel media staged for Instagram publishing — deliberately NOT committed.
+# The whole repo history is 6MB; one batch of Reels is 33MB, so committing
+# them would grow it by ~560MB a year and git never forgets a blob.
+# scripts/ig_manifest.py stages them here, and they are hosted elsewhere.
+# See the note at the top of that script for where.
+media/reels/
