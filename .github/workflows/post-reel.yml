@@ -43,6 +43,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Runs first so a broken token is reported as a broken token, rather
+      # than as a failed post at nine in the morning. It prints the token's
+      # type, whether it expires, its permissions and which Instagram account
+      # it reaches -- and never the token itself, so this log is safe to read
+      # and safe to paste.
+      - name: Check the token
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python scripts/ig_check.py
+
       - name: Publish
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
