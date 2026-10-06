@@ -177,7 +177,13 @@ def find_media(folder):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("folder", help="a month folder under Posts/Videos")
+    # A batch is not a month either. Batch 7 runs 29 October to 18 November,
+    # so its media sits in two folders, and building the manifest from one of
+    # them would silently drop the other three weeks.
+    ap.add_argument("--folder", action="append", required=True,
+                    dest="folders",
+                    help="a month folder under Posts/Videos; repeat it for "
+                         "every folder the batch spans")
     # A month folder is not the same unit as a batch. October 2026 holds the
     # tail of Post67-87 and all of Post88-108, so its copy lives in two
     # documents and taking only one would leave a week of posts with no
@@ -199,7 +205,15 @@ def main():
                          "scheduler already owns)")
     args = ap.parse_args()
 
-    media = find_media(args.folder)
+    media = {}
+    for folder in args.folders:
+        found = find_media(folder)
+        clash = set(found) & set(media)
+        if clash:
+            raise SystemExit("the same post appears in two folders: "
+                             + ", ".join(sorted(clash)))
+        media.update(found)
+        print(f"  {len(found)} post(s) in {os.path.basename(folder)}")
     if args.from_post:
         before = len(media)
         media = {k: v for k, v in media.items()
@@ -248,6 +262,27 @@ def main():
             "caption": caption,
             "captionChars": len(caption),
         })
+
+    # Merge rather than overwrite. The manifest is built one month folder at a
+    # time, and a batch can straddle two months: Post109-129 runs 29 October
+    # to 18 November. Overwriting meant building November dropped every
+    # October post still to come, and ig_sync_media.py --prune would then
+    # have deleted their media. Posts from other folders are kept, still
+    # subject to the --from-post floor.
+    if os.path.exists(OUT):
+        rebuilt = {e["postId"] for e in entries}
+        for e in json.load(open(OUT, encoding="utf-8")).get("posts", []):
+            if e["postId"] in rebuilt:
+                continue
+            num = int(re.sub(r"\D", "", e["postId"].split("_")[0]) or 0)
+            if args.from_post and num < args.from_post:
+                continue
+            entries.append(e)
+        entries.sort(key=lambda e: e["day"])
+        days = [e["day"] for e in entries]
+        doubled = sorted({d for d in days if days.count(d) > 1})
+        if doubled:
+            raise SystemExit("two posts claim the same day: " + ", ".join(doubled))
 
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump({
