@@ -12,11 +12,17 @@ name: Post the day's Reel
 
 on:
   schedule:
-    # 09:00 America/New_York. GitHub cron is UTC only and does not follow
-    # daylight saving, so this is EDT (UTC-4); between November and March it
-    # fires at 08:00 local instead. Listed twice would double-post, so it is
-    # one line and an hour of drift in winter.
-    - cron: "0 13 * * *"
+    # 06:00 America/New_York, to match the Business Suite calendar batch 5 is
+    # scheduled on.
+    #
+    # Two lines, not one. GitHub's cron is UTC and ignores daylight saving, so
+    # 10:00 UTC is 06:00 Eastern in summer and 05:00 in winter -- and batch 7
+    # runs straight through the 1 November changeover. Both candidate hours
+    # fire and scripts/ig_publish.py discards the one that is not 06:00 local,
+    # which costs a few seconds of runner time a day and keeps the post at six
+    # o'clock year-round.
+    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
     # So a missed day can be posted by hand, and so the first live run is a
     # deliberate button press rather than a wait until tomorrow.
@@ -60,4 +66,5 @@ jobs:
         run: |
           python scripts/ig_publish.py \
             ${{ inputs.day && format('--day {0}', inputs.day) || '' }} \
+            ${{ github.event_name == 'schedule' && '--only-at-hour 6' || '' }} \
             ${{ (github.event_name == 'schedule' || inputs.live) && '--live' || '' }}

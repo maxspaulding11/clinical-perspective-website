@@ -208,7 +208,29 @@ def main():
                     help="actually post. Without this, nothing is sent.")
     ap.add_argument("--no-facebook", action="store_true",
                     help="post to Instagram only")
+    ap.add_argument("--only-at-hour", type=int, default=None,
+                    help="do nothing unless it is this hour in America/"
+                         "New_York. Lets a UTC-only cron hit a fixed local "
+                         "time across daylight saving.")
     args = ap.parse_args()
+
+    # GitHub's cron is UTC and does not follow daylight saving, so a single
+    # UTC time drifts by an hour every spring and autumn -- 06:00 Eastern
+    # would quietly become 05:00 on 1 November, in the middle of batch 7.
+    # The workflow fires at both candidate hours and this discards the wrong
+    # one, which costs a few seconds of runner time twice a day and keeps the
+    # post at six o'clock whatever the clocks do.
+    if args.only_at_hour is not None:
+        try:
+            from zoneinfo import ZoneInfo
+            now = datetime.datetime.now(ZoneInfo("America/New_York"))
+        except Exception:  # noqa: BLE001 - no tzdata (Windows without it)
+            print("  cannot resolve America/New_York; skipping the hour check")
+        else:
+            if now.hour != args.only_at_hour:
+                print(f"{now:%Y-%m-%d %H:%M %Z} -- not {args.only_at_hour:02d}:00 "
+                      f"Eastern, so this is the other cron firing. Nothing to do.")
+                return 0
 
     token = os.environ.get("IG_ACCESS_TOKEN")
     ig_user_id = os.environ.get("IG_USER_ID")

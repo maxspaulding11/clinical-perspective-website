@@ -1390,5 +1390,21 @@
     "doi": "10.3389/fpubh.2026.1930480",
     "sourceUrl": "https://doi.org/10.3389/fpubh.2026.1930480",
     "instagram": ""
+  },
+  {
+    "slug": "after-a-first-episode-of-psychosis-fewer-than",
+    "index": 88,
+    "title": "After a first episode of psychosis, fewer than 1 in 5 kept taking the medication",
+    "tag": "Treatment",
+    "blurb": "Among 11,889 young Americans prescribed antipsychotics after a first episode of psychosis, 19.1% were adherent across the following year. Better adherence came with fewer emergency visits -- but claims data counts prescriptions filled, not pills taken.",
+    "date": "2026-10-06",
+    "summary": "A first episode of psychosis almost always ends with a prescription, and the year that follows decides a great deal. Researchers led by Emily Chi used US commercial insurance claims from 2013 to 2021 to follow 11,889 people aged 15 to 40 who had no prior psychosis diagnosis, were diagnosed with a first episode, and were started on an antipsychotic. Adherence was measured as the proportion of days covered by a filled prescription across the 365 days after the first one. Overall, 19.1% met the threshold for adherence, 2,270 of 11,889. Adherence was higher among people diagnosed with schizophrenia than with other psychotic spectrum disorders (prevalence ratio 1.78) and higher among those with mood disorders (1.21). People who were adherent had fewer emergency department visits (incidence rate ratio 0.85) and more outpatient behavioural health visits (1.53), which is what continuing care tends to look like. Two cautions matter. The first is that a claims database sees a pharmacy transaction, not a swallowed tablet, so the true figure is more likely lower than higher. The second is that this is a commercially insured population: everyone in it had twelve months of continuous private coverage, which excludes much of the group where disengagement is most severe. The association between adherence and fewer emergency visits is also not proof of direction, because people who are doing better may simply find it easier to keep filling prescriptions. What the study does establish is the scale of the gap. Whatever is being built to improve outcomes after a first episode has to survive the fact that four in five people are not taking the medication it assumes.",
+    "journal": "JAMA network open",
+    "authors": "Emily Chi, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42783372",
+    "doi": "10.1001/jamanetworkopen.2026.35805",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35805",
+    "instagram": ""
   }
 ]
