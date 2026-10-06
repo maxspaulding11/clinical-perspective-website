@@ -68,3 +68,14 @@ jobs:
             ${{ inputs.day && format('--day {0}', inputs.day) || '' }} \
             ${{ github.event_name == 'schedule' && '--only-at-hour 6' || '' }} \
             ${{ (github.event_name == 'schedule' || inputs.live) && '--live' || '' }}
+
+      # Looks a week ahead, after today's post has already gone out. A missing
+      # Reel is otherwise invisible until the morning it is due -- the first
+      # unattended build left eleven unrendered and reported success, and the
+      # first symptom would have been a failed post weeks later.
+      #
+      # always(), so a publish failure cannot hide a gap coming up behind it.
+      # A red run here means next week needs attention, not that today broke.
+      - name: Check the week ahead
+        if: always()
+        run: python scripts/check_upcoming.py --days 7
