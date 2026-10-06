@@ -26,7 +26,12 @@ SITE = os.path.dirname(HERE)
 ROOT = os.path.dirname(SITE)
 POSTS = os.path.join(ROOT, "Posts")
 
-LONGEST_OK = 32.0
+# Length is reported, not enforced. An earlier version failed a batch at 32
+# seconds, which was never a platform limit -- just the range batch 5 happened
+# to land in. Instagram allows minutes. The only duration worth failing on is
+# one that means the render itself went wrong.
+ABSURD = 120.0
+TOO_SHORT = 5.0
 
 
 def duration(path):
@@ -48,7 +53,7 @@ def main():
     covers = {c["post"]: c for c in json.load(
         io.open(os.path.join(POSTS, "covers.json"), encoding="utf-8"))}
 
-    missing, long_ones, ok = [], [], 0
+    missing, broken, durations, ok = [], [], [], 0
     for post in range(lo, hi + 1):
         c = covers.get(post)
         if not c:
@@ -68,8 +73,11 @@ def main():
                            f"no {', '.join(gaps)}")
             continue
         d = duration(mp4)
-        if d and d > LONGEST_OK:
-            long_ones.append(f"Post{post} {c['slug']}: {d:.1f}s")
+        if d:
+            durations.append((post, c["slug"], d))
+            if d > ABSURD or d < TOO_SHORT:
+                broken.append(f"Post{post} {c['slug']}: {d:.1f}s "
+                              f"-- the render went wrong")
         ok += 1
 
     n = hi - lo + 1
@@ -78,10 +86,15 @@ def main():
         print(f"\n{len(missing)} INCOMPLETE:")
         for m in missing:
             print("  " + m)
-    if long_ones:
-        print(f"\n{len(long_ones)} over {LONGEST_OK:.0f}s "
-              f"(trim the blocks, clear _reelcache/voice-N.*, re-render):")
-        for m in long_ones:
+    if durations:
+        ds = [d for _, _, d in durations]
+        lo_p, lo_s, lo_d = min(durations, key=lambda t: t[2])
+        hi_p, hi_s, hi_d = max(durations, key=lambda t: t[2])
+        print(f"  length: {lo_d:.1f}s (Post{lo_p}) to {hi_d:.1f}s "
+              f"(Post{hi_p}), mean {sum(ds)/len(ds):.1f}s")
+    if broken:
+        print(f"\n{len(broken)} with an impossible length:")
+        for m in broken:
             print("  " + m)
     if missing:
         # Just the numbers. Splitting on ":" left the "(date, slug)" attached
@@ -90,9 +103,9 @@ def main():
                         for m in missing if re.match(r"Post(\d+)", m))
         print(f"\nRender the rest with:\n  python make_reels.py {nums}")
         return 1
-    if long_ones:
+    if broken:
         return 1
-    print("\nEverything rendered, nothing over length.")
+    print("\nEverything rendered.")
     return 0
 
 
