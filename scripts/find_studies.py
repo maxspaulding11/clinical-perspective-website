@@ -186,11 +186,39 @@ def details(pmids):
                 clean(t) for _, t in re.findall(
                     r'<AbstractText(?:\s+Label="([^"]*)")?[^>]*>(.*?)</AbstractText>',
                     a, re.S))
+            # Citation fields, captured here because this is the only place
+            # the record is fetched. Retyping a DOI by hand is how a wrong one
+            # gets published.
+            dm = re.search(r'<ArticleId IdType="doi">(.*?)</ArticleId>', a)
+            names = re.findall(
+                r"<Author[^>]*>.*?<LastName>(.*?)</LastName>.*?<ForeName>(.*?)</ForeName>",
+                a, re.S)
+            authors = (f"{clean(names[0][1])} {clean(names[0][0])}, et al."
+                       if names else "")
+            y = re.search(r"<PubDate>.*?<Year>(\d{4})</Year>"
+                          r"(?:.*?<Month>(\w+)</Month>)?", a, re.S)
+            MN = {"Jan": "January", "Feb": "February", "Mar": "March",
+                  "Apr": "April", "May": "May", "Jun": "June", "Jul": "July",
+                  "Aug": "August", "Sep": "September", "Oct": "October",
+                  "Nov": "November", "Dec": "December"}
+            NUM = {str(i): m for i, m in enumerate(
+                ["", "January", "February", "March", "April", "May", "June",
+                 "July", "August", "September", "October", "November",
+                 "December"])}
+            if y and y.group(2):
+                mon = MN.get(y.group(2), NUM.get(y.group(2).lstrip("0"), y.group(2)))
+                pubdate = f"{mon} {y.group(1)}"
+            else:
+                pubdate = y.group(1) if y else ""
             out[pmid] = {
                 "title": clean(tm.group(1)) if tm else "",
                 "journal": clean(jm.group(1)) if jm else "",
                 "types": re.findall(r"<PublicationType[^>]*>(.*?)</PublicationType>", a),
                 "abstract": abst,
+                "authors": authors,
+                "pubdate": pubdate,
+                "doi": clean(dm.group(1)) if dm else "",
+                "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
             }
         time.sleep(0.4)
     return out
@@ -288,8 +316,25 @@ def main():
                    "candidates": rows}, f, ensure_ascii=False, indent=1)
         f.write("\n")
 
+    # The citation half, in the shape add_batch.py reads, written beside the
+    # candidates so a batch built from this file cannot cite a paper that was
+    # never fetched.
+    cits = os.path.join(OUTDIR, "batch-citations.json")
+    with io.open(cits, "w", encoding="utf-8") as f:
+        json.dump({r["pmid"]: {k: r[k] for k in
+                               ("title", "journal", "authors", "pubdate",
+                                "doi", "url")}
+                   for r in rows}, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+
+    missing_doi = [r["pmid"] for r in rows if not r["doi"]]
+    if missing_doi:
+        print(f"  note: {len(missing_doi)} candidates have no DOI; "
+              f"do not pick those")
+
     print(f"\n{len(rows)} candidates written to")
     print(f"  {os.path.relpath(out, ROOT)}")
+    print(f"  {os.path.relpath(cits, ROOT)}")
     print(f"  next post would be Post{nxt}")
     print("\nTop of the list:")
     for r in rows[:8]:
