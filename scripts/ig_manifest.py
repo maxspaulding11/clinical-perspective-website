@@ -189,9 +189,25 @@ def main():
     ap.add_argument("--year", type=int, required=True)
     ap.add_argument("--time", default="09:00",
                     help="local time of day to post, HH:MM (default 09:00)")
+    # Batch 5 was scheduled by hand in Meta Business Suite's calendar before
+    # any of this existed, and those posts go out at 06:00 whatever this does.
+    # A month folder holds both, so without a floor the manifest claims days
+    # the Business Suite calendar already owns and the same Reel publishes
+    # twice. Whatever is scheduled by hand ends at Post87.
+    ap.add_argument("--from-post", type=int, default=None,
+                    help="ignore posts numbered below this (days another "
+                         "scheduler already owns)")
     args = ap.parse_args()
 
     media = find_media(args.folder)
+    if args.from_post:
+        before = len(media)
+        media = {k: v for k, v in media.items()
+                 if int(re.sub(r"\D", "", k.split("_")[0]) or 0) >= args.from_post}
+        skipped = before - len(media)
+        if skipped:
+            print(f"  skipping {skipped} post(s) below Post{args.from_post} "
+                  f"-- another scheduler owns those days")
     copy = {}
     for path in args.docx:
         found = parse_docx(path, args.year)
