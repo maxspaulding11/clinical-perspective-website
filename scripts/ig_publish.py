@@ -105,6 +105,73 @@ def entry_for(day, manifest):
     return None
 
 
+# ------------------------------------------------------------------ facebook
+#
+# The same Reel, the same caption, the same day, on the Page as well.
+#
+# Facebook's Reel publishing is three calls rather than Instagram's two, and
+# the middle one goes to a different host: rupload.facebook.com, which fetches
+# the video itself when given a file_url header. That is why the media has to
+# be on a public URL for this too -- the same requirement, for the same reason.
+#
+# It needs pages_manage_posts, which instagram_content_publish does not imply.
+
+RUPLOAD = "https://rupload.facebook.com/video-upload/v23.0"
+
+
+def page_for(token):
+    """The Page this token can post to, and a token scoped to it.
+
+    Derived at run time rather than stored as a secret: a Page id is not
+    sensitive, and looking it up means one less value to keep in step by hand.
+    """
+    pages = api("me/accounts", {"fields": "id,name,access_token"}, token=token)
+    data = pages.get("data") or []
+    if not data:
+        raise SystemExit("  no Page is reachable with this token -- it needs "
+                         "pages_show_list and access to the Page")
+    p = data[0]
+    if len(data) > 1:
+        print(f"  {len(data)} Pages reachable; using '{p['name']}'")
+    return p["id"], p.get("access_token") or token, p["name"]
+
+
+def publish_facebook(entry, token):
+    page_id, page_token, page_name = page_for(token)
+    print(f"  facebook page: {page_name}")
+
+    start = api(f"{page_id}/video_reels",
+                {"upload_phase": "start"}, post=True, token=page_token)
+    video_id = start.get("video_id")
+    if not video_id:
+        raise SystemExit(f"  no video_id from the start phase: {start}")
+    print(f"  fb video {video_id}")
+
+    # Phase two is not a Graph call and does not take an access_token
+    # parameter -- the token goes in an Authorization header, and the video
+    # arrives by URL rather than as bytes.
+    req = urllib.request.Request(
+        f"{RUPLOAD}/{video_id}", method="POST", data=b"")
+    req.add_header("Authorization", f"OAuth {page_token}")
+    req.add_header("file_url", entry["videoUrl"])
+    try:
+        with urllib.request.urlopen(req, timeout=180) as r:
+            body = json.loads(r.read().decode() or "{}")
+    except urllib.error.HTTPError as e:
+        raise SystemExit(f"  facebook upload failed {e.code}:\n"
+                         f"{e.read().decode(errors='replace')}")
+    if not body.get("success", True):
+        raise SystemExit(f"  facebook upload reported failure: {body}")
+
+    done = api(f"{page_id}/video_reels", {
+        "upload_phase": "finish",
+        "video_id": video_id,
+        "video_state": "PUBLISHED",
+        "description": entry["caption"],
+    }, post=True, token=page_token)
+    return video_id if done.get("success", True) else None
+
+
 def publish(entry, token, ig_user_id, wait=True):
     print(f"  creating container for {entry['postId']}")
     container = api(f"{ig_user_id}/media", {
@@ -139,6 +206,8 @@ def main():
     ap.add_argument("--day", help="YYYY-MM-DD (default: today, US Eastern)")
     ap.add_argument("--live", action="store_true",
                     help="actually post. Without this, nothing is sent.")
+    ap.add_argument("--no-facebook", action="store_true",
+                    help="post to Instagram only")
     args = ap.parse_args()
 
     token = os.environ.get("IG_ACCESS_TOKEN")
@@ -178,7 +247,21 @@ def main():
         raise SystemExit("IG_ACCESS_TOKEN and IG_USER_ID must be set to post")
 
     media_id = publish(entry, token, ig_user_id)
-    print(f"  published: {media_id}")
+    print(f"  published to instagram: {media_id}")
+
+    if args.no_facebook:
+        return 0
+
+    # Instagram has already gone out by this point. A Facebook failure must
+    # not fail the run and must not be retried by a later re-run, or the
+    # Instagram post would be duplicated -- so it is reported and swallowed.
+    try:
+        fb_id = publish_facebook(entry, token)
+        print(f"  published to facebook: {fb_id}")
+    except SystemExit as e:
+        print(f"  FACEBOOK FAILED (instagram already posted): {e}")
+    except Exception as e:  # noqa: BLE001
+        print(f"  FACEBOOK FAILED (instagram already posted): {e!r}")
     return 0
 
 

@@ -32,7 +32,13 @@ API = os.environ.get("IG_API_BASE", "https://graph.facebook.com/v23.0")
 # What publishing needs on the Facebook-Login route. ads_management and
 # ads_read appear too when the user has a Business Manager role, which is
 # normal and not a problem.
-NEEDED = ["instagram_basic", "instagram_content_publish", "pages_read_engagement"]
+#
+# pages_manage_posts is for the Facebook Page half: the same Reel goes to the
+# Page each day, and instagram_content_publish does not imply it. A token
+# generated before the Page posting was added will not have it, and the
+# symptom is Instagram posting fine while Facebook fails every morning.
+NEEDED = ["instagram_basic", "instagram_content_publish",
+          "pages_read_engagement", "pages_show_list", "pages_manage_posts"]
 
 
 def get(path, params, token):
