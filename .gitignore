@@ -12,3 +12,4 @@ __pycache__/
 # scripts/ig_manifest.py stages them here, and they are hosted elsewhere.
 # See the note at the top of that script for where.
 media/reels/
+data/outcomes.json.bak
