@@ -1406,5 +1406,37 @@
     "doi": "10.1001/jamanetworkopen.2026.35805",
     "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35805",
     "instagram": ""
+  },
+  {
+    "slug": "teenagers-with-opioid-use-disorder-got-medication-a",
+    "index": 89,
+    "title": "Teenagers with opioid use disorder got medication a fraction as often as adults",
+    "tag": "Addiction",
+    "blurb": "Of 229,847 Medicaid-enrolled young people with opioid use disorder, just 3.1% stayed on medication for six months. Among under-18s who reached treatment, 6.6% received any, against 51.2% of those over 18.",
+    "date": "2026-10-07",
+    "summary": "One in a hundred US adolescents and young adults has an opioid use disorder, and there are medications that reliably reduce the risk of dying from it. Researchers led by Scott Hadland used Medicaid claims from every US state between 2016 and 2023 to follow 229,847 people aged 13 to 25 with a diagnosis of opioid use disorder through what addiction medicine calls the cascade of care. Half, 116,458 or 50.7%, started treatment within fourteen days of diagnosis. A third, 75,614, engaged with it, meaning two or more further appointments inside the next month. Of those who engaged, 46.3% received medication, which is 15.2% of everyone diagnosed. The age split is the finding. Among under-18s who had engaged in treatment, 554 of 8,352 received medication: 6.6%. Among those 18 and over, 34,457 of 67,262 did: 51.2%. A teenager who reached treatment was roughly eight times less likely to be offered the medication than a young adult sitting in the same system. Buprenorphine accounted for most prescriptions, methadone a quarter. Overall just 7,070 people, 3.1% or about one in 32, stayed on medication for 180 days or more, the national quality benchmark. Retention was best on methadone at 26.2%. The youngest adolescents and racially minoritised young people progressed least far at every stage. These are administrative claims, so engagement and treatment are billing categories rather than clinical judgements, and Medicaid is not the whole population. But the measures used are the national quality measures, which means this is the system being graded against its own standard.",
+    "journal": "JAMA network open",
+    "authors": "Scott E Hadland, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42826019",
+    "doi": "10.1001/jamanetworkopen.2026.37263",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.37263",
+    "instagram": ""
+  },
+  {
+    "slug": "from-zero-adverse-childhood-experiences-to-six-suicidal",
+    "index": 90,
+    "title": "From zero adverse childhood experiences to six, suicidal thinking went from 6% to 41%",
+    "tag": "Trauma",
+    "blurb": "In 1,850 nineteen-year-olds, rates of depression, PTSD and suicidal ideation climbed step by step with the number of adverse childhood experiences, and discrimination was one of the four domains carrying most of the weight.",
+    "date": "2026-10-08",
+    "summary": "Most of what is known about adverse childhood experiences comes from adults being asked to remember their childhoods, using a checklist that leaves out anything happening outside the home. Researchers led by Jeff Temple did it differently, following a population-based sample recruited from urban and suburban schools in the southern US and analysing 1,850 participants with complete data at around age 19. They counted conventional adversities and community-level ones such as discrimination and neighbourhood violence, then grouped people by exposure: none, one to three, four to five, six or more. The associations are graded, meaning each step up carried more harm rather than everything appearing at a single threshold. Depression: 21.0% among those with no adverse experiences, 46.5% at four to five, 56.9% at six or more. PTSD: 2.1%, then 15.2%, then 30.9%. Suicidal ideation: 6.0%, then 27.8%, then 41.4%. Illicit substance use rose from 0.3% to 10.8%, and experiencing physical dating violence from 2.7% to 14.9%. Academic achievement and college attendance fell as exposure rose. Ten of the fourteen adversity domains were independently associated with key outcomes, and the four that showed up most consistently were emotional abuse, sexual abuse, witnessing domestic violence, and discrimination. That last one is the argument for widening the standard checklist. The limits are real: exposures were reported at the same wave as several outcomes, so this is association rather than causation, and a single southern US sample is not the country. But the pattern is a dose-response one, measured near the time rather than recalled decades later.",
+    "journal": "JAMA network open",
+    "authors": "Jeff R Temple, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42783369",
+    "doi": "10.1001/jamanetworkopen.2026.35834",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35834",
+    "instagram": ""
   }
 ]

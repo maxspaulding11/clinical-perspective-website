@@ -26,11 +26,14 @@ Nothing is inferred. A row that cannot be found is absent rather than zero, and
 a rate is only computed when both of its numbers were actually read.
 """
 import argparse
+import html as html_mod
 import io
 import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import concurrent.futures as cf
@@ -52,17 +55,32 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 # 78 of 180; these variants are the difference between a partial table and
 # none at all.
 LINK = re.compile(
-    r"(student admissions[,\s]*outcomes"
-    r"|admissions,?\s*(and\s*)?outcomes"
-    r"|outcomes,?\s*and other data"
+    r"(student admissions[,\s]*outcomes?"
+    r"|admissions,?\s*(and\s*)?outcomes?"
+    r"|outcomes?,?\s*(and|&)\s*other data"
     r"|student[- ]outcomes?[- ]data"
     r"|program[- ]outcomes?[- ]data"
     r"|outcome[- ]data"
     r"|disclosure of education"
-    r"|C-?2[0-9][a-z]?"
-    r"|admissions[- ]outcomes"
-    r"|program[- ]data[- ]and[- ]outcomes"
-    r"|student[- ]admissions[- ]data)", re.I)
+    # The APA form code, which turns up in filenames far more often than in
+    # link text -- Biola's disclosure is "Download the PDF Report" pointing at
+    # RosemeadPhD_IRC26D_2026.pdf. This alternative was dead: the file held
+    # literal backspace bytes where its word boundaries should have been, so
+    # it could never match anything, and nobody could see why by reading it.
+    r"|(?<![A-Za-z])(?:IR)?C-?2[0-9][a-z]?(?![A-Za-z0-9])"
+    r"|admissions?[- ]outcomes?"
+    r"|program[- ]data[- ]and[- ]outcomes?"
+    r"|student[- ]admissions[- ]data"
+    r"|admissions?[- ]statistics)", re.I)
+
+# Where the disclosure hides when the program page does not link it directly.
+# Adelphi, Biola and DePaul all keep it one click behind a link labelled some
+# variant of "Accreditation", which is why looking at a single page found two
+# thirds of these and no more.
+HOP = re.compile(
+    r"(accreditation|student[- ]outcomes|outcomes\b|student[- ]data"
+    r"|program[- ]data|admissions[- ]data|disclosure"
+    r"|program[- ]information)", re.I)
 
 # The row labels are the APA template's own, which is what makes this possible
 # at all: the wording is the same at every accredited program even though the
@@ -80,9 +98,33 @@ ROWS = {
 }
 
 
-def fetch(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    return urllib.request.urlopen(req, timeout=timeout).read()
+def fetch(url, timeout=30, tries=3):
+    """Fetch, and retry a failure before believing it.
+
+    The first run of the deeper finder reported 147 of 258 pages unfetchable
+    and it was almost entirely our own fault: ten workers each making up to
+    five requests is a burst of a thousand-odd, and university sites throttle
+    that. Retried one at a time, seven of the first eight came back fine.
+
+    So: fewer workers, a pause between attempts, and a retry before a page is
+    written off. A genuine block -- American University returns 403 however
+    politely you ask -- still fails, which is the distinction that matters.
+    """
+    last = None
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            return urllib.request.urlopen(req, timeout=timeout).read()
+        except urllib.error.HTTPError as e:
+            # A refusal is a refusal; retrying it just wastes everyone's time.
+            if e.code in (401, 403, 404, 410):
+                raise
+            last = e
+        except Exception as e:  # noqa: BLE001 - timeouts, resets, DNS
+            last = e
+        if attempt < tries - 1:
+            time.sleep(1.5 * (attempt + 1))
+    raise last
 
 
 def visible(html):
@@ -270,24 +312,88 @@ def save(path, data):
         fh.write("\n")
 
 
-def find_links(programs, workers=10):
+def anchors(html, base):
+    """Every link on the page, with its label decoded.
+
+    Labels are decoded before matching. Georgia State's link reads "Student
+    Admissions, Outcome, &amp; Other Data" in the source, and matching the raw
+    HTML meant the ampersand never lined up."""
+    out = []
+    for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html, re.S | re.I):
+        label = html_mod.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))
+        label = re.sub(r"\s+", " ", label).strip()
+        out.append((urllib.parse.urljoin(base, m.group(1)), label))
+    return out
+
+
+def find_links(programs, workers=4, deep=True):
+    """Look on the program's page, then one hop further.
+
+    One page found 123 of 257. The rest are not missing a disclosure -- APA
+    requires it -- they keep it behind an accreditation page, or label it
+    something the pattern did not know. Following a single hop is worth it;
+    following two would be a crawler.
+    """
     def one(p):
         try:
             html = fetch(p["url"], timeout=22).decode("utf-8", "replace")
         except Exception:
-            return p["id"], None
-        for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html, re.S | re.I):
-            href, label = m.group(1), re.sub(r"<[^>]+>", " ", m.group(2))
+            return p["id"], None, "fetch failed"
+        links = anchors(html, p["url"])
+        for href, label in links:
             if LINK.search(label) or LINK.search(href):
-                return p["id"], urllib.parse.urljoin(p["url"], href)
-        return p["id"], None
+                return p["id"], href, "direct"
+        if not deep:
+            return p["id"], None, "no link on the page"
 
-    found = {}
+        # One hop. Try the most promising candidates only -- an accreditation
+        # page is far likelier than a generic "about".
+        hops, seen = [], set()
+        for href, label in links:
+            if (HOP.search(label) or HOP.search(href)) and href not in seen:
+                seen.add(href)
+                hops.append((href, label))
+        for href, label in hops[:4]:
+            try:
+                sub = fetch(href, timeout=20).decode("utf-8", "replace")
+            except Exception:
+                continue
+            for href2, label2 in anchors(sub, href):
+                if LINK.search(label2) or LINK.search(href2):
+                    return p["id"], href2, f"via '{label[:30]}'"
+
+        # Walk up the path.
+        #
+        # programs.json holds the URL the accepting-students tracker needs --
+        # whichever page lists admitting faculty. That is the right page for
+        # the tracker and the wrong one for this: USC's is /psyc/clinical-
+        # faculty/, Duke's is /graduate/apply/admitting-faculty, Emory's is a
+        # faculty document. The disclosure sits on the program's own page or
+        # its accreditation page, which is usually a level or two above.
+        parts = urllib.parse.urlsplit(p["url"])
+        segs = [s for s in parts.path.split("/") if s]
+        for up in range(1, 4):
+            if len(segs) - up < 0:
+                break
+            parent = urllib.parse.urlunsplit(
+                (parts.scheme, parts.netloc,
+                 "/" + "/".join(segs[:len(segs) - up]) + "/", "", ""))
+            try:
+                html2 = fetch(parent, timeout=20).decode("utf-8", "replace")
+            except Exception:
+                continue
+            for href2, label2 in anchors(html2, parent):
+                if LINK.search(label2) or LINK.search(href2):
+                    return p["id"], href2, f"via parent -{up}"
+        return p["id"], None, f"nothing, {len(hops[:4])} hop(s) and 3 parents"
+
+    found, why = {}, {}
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:
-        for pid, url in ex.map(one, programs):
+        for pid, url, how in ex.map(one, programs):
+            why[pid] = how
             if url:
                 found[pid] = url
-    return found
+    return found, why
 
 
 def main():
@@ -296,6 +402,8 @@ def main():
     ap.add_argument("--find", action="store_true", help="locate disclosure links")
     ap.add_argument("--read", action="store_true", help="read located disclosures")
     ap.add_argument("--report", action="store_true", help="coverage so far")
+    ap.add_argument("--shallow", action="store_true",
+                    help="only the program page, no hop")
     ap.add_argument("--only", help="one program id")
     ap.add_argument("--degree", default="PhD", help="PhD, PsyD or all")
     args = ap.parse_args()
@@ -310,11 +418,26 @@ def main():
         progs = [p for p in progs if p["id"] == args.only]
 
     if args.find:
-        links = find_links(progs)
+        before = sum(1 for p in progs
+                     if store["programs"].get(p["id"], {}).get("source"))
+        links, why = find_links(progs, deep=not args.shallow)
         for pid, url in links.items():
             store["programs"].setdefault(pid, {})["source"] = url
         save(OUTCOMES, store)
-        print("located %d disclosures across %d programs" % (len(links), len(progs)))
+        after = sum(1 for p in progs
+                    if store["programs"].get(p["id"], {}).get("source"))
+        print("located %d of %d programs (%+d on this run)"
+              % (after, len(progs), after - before))
+        # How each one was found, or why it was not. Worth printing: it is
+        # the only way to tell a program that hides its disclosure from one
+        # that blocks the fetch, and they need different fixes.
+        tally = {}
+        for pid, how in why.items():
+            key = how if how in ("direct", "fetch failed") else (
+                "via a hop" if how.startswith("via") else "not found")
+            tally[key] = tally.get(key, 0) + 1
+        for k, v in sorted(tally.items(), key=lambda kv: -kv[1]):
+            print("  %-14s %d" % (k, v))
         return 0
 
     if args.read:

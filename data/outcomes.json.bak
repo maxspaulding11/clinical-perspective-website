@@ -2,17 +2,19 @@
  "note": "APA Student Admissions, Outcomes and Other Data, read per program. See scripts/outcomes.py.",
  "programs": {
   "ucla-clinical": {
-   "source": "https://ucla.box.com/s/8j1jt605fqvehh2fnmnsm7av5amxls23",
+   "source": "https://ucla.box.com/s/juq9lme62r6euj6galvgesf291rrmm97",
    "shape": "web",
    "read": "2026-09-26",
    "note": "no usable text (likely a scan)"
   },
   "alliant-international-university-los-angeles-phd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-la-phd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-la-phd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     17,
+     100,
      18,
      95,
      16,
@@ -30,11 +32,10 @@
      14,
      100,
      11,
-     85,
-     11,
-     79
+     85
     ],
     "sought_internship": [
+     17,
      19,
      19,
      17,
@@ -43,10 +44,10 @@
      18,
      16,
      14,
-     13,
-     14
+     13
     ],
     "median_years": [
+     5.0,
      5.0,
      5.1,
      5.9,
@@ -56,19 +57,20 @@
      5.0,
      5.0,
      5.0,
-     4.9,
      5.0
     ]
    },
-   "anyInternshipPct": 79,
+   "anyInternshipPct": 85,
    "medianYears": 5.0
   },
   "alliant-international-university-san-francisco-bay-phd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-sf-phd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-sf-phd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     15,
+     94,
      17,
      100,
      15,
@@ -86,11 +88,10 @@
      8,
      89,
      3,
-     75,
-     6,
-     67
+     75
     ],
     "sought_internship": [
+     16,
      17,
      16,
      6,
@@ -99,10 +100,10 @@
      11,
      4,
      9,
-     4,
-     9
+     4
     ],
     "median_years": [
+     5.0,
      5.0,
      5.0,
      5.0,
@@ -112,19 +113,20 @@
      5.9,
      5.6,
      5.0,
-     5.0,
      5.0
     ]
    },
-   "anyInternshipPct": 67,
+   "anyInternshipPct": 75,
    "medianYears": 5.0
   },
   "alliant-international-university-fresno-phd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-fresno-phd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-fresno-phd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     5,
+     100,
      12,
      92,
      11,
@@ -142,11 +144,10 @@
      12,
      100,
      6,
-     67,
-     11,
-     92
+     67
     ],
     "sought_internship": [
+     5,
      13,
      11,
      4,
@@ -155,10 +156,10 @@
      8,
      17,
      12,
-     9,
-     12
+     9
     ],
     "median_years": [
+     5.0,
      5.7,
      5.0,
      4.9,
@@ -168,19 +169,20 @@
      4.9,
      4.9,
      5.0,
-     4.9,
      4.9
     ]
    },
-   "anyInternshipPct": 92,
+   "anyInternshipPct": 67,
    "medianYears": 4.9
   },
   "alliant-international-university-san-diego-phd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-sd-phd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-sd-phd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     36,
+     97,
      32,
      100,
      26,
@@ -198,11 +200,10 @@
      10,
      91,
      18,
-     90,
-     10,
-     83
+     90
     ],
     "sought_internship": [
+     37,
      32,
      26,
      19,
@@ -211,10 +212,10 @@
      12,
      17,
      11,
-     20,
-     12
+     20
     ],
     "median_years": [
+     6.1,
      6.0,
      6.9,
      7.4,
@@ -224,11 +225,10 @@
      6.0,
      5.7,
      5.5,
-     5.0,
      6.0
     ]
    },
-   "anyInternshipPct": 83,
+   "anyInternshipPct": 90,
    "medianYears": 6.0
   },
   "arizona-state-university-phd": {
@@ -341,7 +341,7 @@
    "medianYears": 6
   },
   "brigham-young-university-phd": {
-   "source": "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:a22d076f-f203-461d-bda6-9e27e8cee601",
+   "source": "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:fc669b2e-24cd-461c-9cc9-20fc0dedbc2d",
    "shape": "web",
    "read": "2026-09-26",
    "note": "no usable text (likely a scan)"
@@ -647,6 +647,8 @@
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     8,
+     100,
      9,
      100,
      6,
@@ -664,11 +666,10 @@
      4,
      100,
      4,
-     100,
-     7,
-     78
+     100
     ],
     "sought_internship": [
+     8,
      9,
      6,
      6,
@@ -678,10 +679,10 @@
      6,
      8,
      4,
-     4,
-     8
+     4
     ],
     "median_years": [
+     6,
      6,
      6.5,
      6,
@@ -690,13 +691,12 @@
      6.5,
      7,
      6,
-     6,
-     6,
-     6.275
+     6.25,
+     6.5
     ]
    },
-   "anyInternshipPct": 78,
-   "medianYears": 6.275
+   "anyInternshipPct": 100,
+   "medianYears": 6.5
   },
   "east-carolina-university-phd": {
    "source": "https://psychology.ecu.edu/wp-content/pv-uploads/sites/216/2023/04/2025_c-26d-template2.pdf",
@@ -873,11 +873,13 @@
    "note": "table labels not found in the text"
   },
   "fuller-theological-seminary-phd": {
-   "source": "https://fuller.edu/wp-content/uploads/2026/10/2026_c-26d-table-PhD.pdf",
+   "source": "https://fuller.edu/wp-content/uploads/2025/10/2025_c-26d-table-PhD.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     15,
+     75,
      28,
      97,
      19,
@@ -895,11 +897,11 @@
      8,
      80,
      5,
-     71,
-     8,
-     67
+     71
     ],
     "any_internship": [
+     19,
+     95,
      28,
      97,
      19,
@@ -917,11 +919,10 @@
      8,
      80,
      5,
-     71,
-     8,
-     67
+     71
     ],
     "sought_internship": [
+     20,
      29,
      19,
      16,
@@ -930,10 +931,10 @@
      4,
      11,
      10,
-     7,
-     12
+     7
     ],
     "median_years": [
+     6,
      6,
      6,
      7,
@@ -943,34 +944,67 @@
      6,
      6,
      7,
-     6,
      6
     ]
    },
-   "internshipMatchedPct": 67,
-   "internshipMatchedN": 8,
-   "internshipSought": 12,
-   "anyInternshipPct": 67,
+   "internshipMatchedPct": 71,
+   "internshipMatchedN": 5,
+   "internshipSought": 7,
+   "anyInternshipPct": 71,
    "medianYears": 6
   },
   "george-mason-university-phd": {
-   "source": "https://d101vc9winf8ln.cloudfront.net/documents/53808/original/GMU_Student_Admissions_Outcome_and_Other_Data_2026.pdf?1790631428",
+   "source": "https://d101vc9winf8ln.cloudfront.net/documents/53808/original/2025_GMU_Clinical_Student_Admission_Outcomes_CUDCP.pdf?1757877552",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
-     310071007,
-     88510091004100510041007,
-     887,
+     7,
+     100,
+     3,
+     100,
+     7,
+     100,
+     7,
+     88,
+     5,
+     100,
+     9,
+     100,
+     4,
+     100,
+     5,
+     100,
+     4,
+     100,
+     7,
      88
     ],
     "any_internship": [
-     310071007,
-     88510091004100510041007,
-     887,
+     7,
+     100,
+     3,
+     100,
+     7,
+     100,
+     7,
+     88,
+     5,
+     100,
+     9,
+     100,
+     4,
+     100,
+     5,
+     100,
+     4,
+     100,
+     7,
      88
     ],
     "sought_internship": [
+     7,
+     3,
      7,
      8,
      5,
@@ -978,7 +1012,6 @@
      4,
      5,
      4,
-     8,
      8
     ],
     "median_years": [
@@ -993,26 +1026,11 @@
      6,
      6,
      6
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     25,
-     114.2857146,
-     100,
-     583.3333336,
-     100,
-     5,
-     100,
-     5,
-     100
     ]
    },
+   "internshipMatchedPct": 88,
+   "internshipMatchedN": 7,
+   "internshipSought": 8,
    "anyInternshipPct": 88,
    "medianYears": 6
   },
@@ -1078,6 +1096,8 @@
     "accredited_internships": [
      4,
      100,
+     7,
+     100,
      6,
      100,
      4,
@@ -1095,13 +1115,13 @@
      8,
      100,
      4,
-     80,
-     7,
-     100
+     80
     ],
     "any_internship": [
      4,
      100,
+     7,
+     100,
      6,
      100,
      4,
@@ -1119,11 +1139,10 @@
      8,
      100,
      4,
-     80,
-     7,
-     100
+     80
     ],
     "sought_internship": [
+     7,
      6,
      4,
      7,
@@ -1132,11 +1151,11 @@
      6,
      3,
      8,
-     5,
-     7
+     5
     ],
     "median_years": [
      6,
+     5,
      6,
      6,
      6,
@@ -1146,8 +1165,7 @@
      6,
      6,
      5.5,
-     5,
-     58.5
+     5.85
     ],
     "still_enrolled": [
      0,
@@ -1160,32 +1178,32 @@
      0,
      0,
      0,
-     2,
-     50,
-     5,
-     83.33,
+     3,
+     42.86,
      3,
      75,
-     6,
-     100,
+     5,
+     83.33,
      4,
+     100,
+     6,
      100,
      4,
      100
     ]
    },
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 7,
-   "internshipSought": 7,
-   "anyInternshipPct": 100,
+   "internshipMatchedPct": 80,
+   "internshipMatchedN": 4,
+   "internshipSought": 5,
+   "anyInternshipPct": 80,
+   "medianYears": 5.85,
    "dropped": [
     "applicants",
-    "medianYears",
     "offers"
    ]
   },
   "jackson-state-university-phd": {
-   "source": "https://www.jsums.edu/psychology/ph-d-in-clinical-psychology-student-admission-outcomes-and-other-data/program-accreditation-history/",
+   "source": "https://www.jsums.edu/psychology/about/student-admissions-outcome-and-other-data/",
    "shape": "web",
    "read": "2026-09-26",
    "note": "table labels not found in the text"
@@ -1203,7 +1221,7 @@
    "note": "table labels not found in the text"
   },
   "miami-university-phd": {
-   "source": "https://miamioh.edu/cas/departments/psychology/documents/miamiuniversity_c26_2026_508.pdf",
+   "source": "https://miamioh.edu/cas/departments/psychology/documents/miamiuniversity_c26_2025_508.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
@@ -1281,8 +1299,7 @@
    "internshipMatchedN": 4,
    "internshipSought": 4,
    "anyInternshipPct": 100,
-   "medianYears": 6,
-   "note": "no usable text (likely a scan)"
+   "medianYears": 6
   },
   "michigan-state-university-phd": {
    "source": "https://psychology.msu.edu/research/clinical-science/student-outcomes",
@@ -1437,6 +1454,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     9,
+     100,
      8,
      100,
      7,
@@ -1454,11 +1473,11 @@
      8,
      100,
      3,
-     100,
-     5,
      100
     ],
     "any_internship": [
+     9,
+     100,
      8,
      100,
      7,
@@ -1476,11 +1495,10 @@
      8,
      100,
      3,
-     100,
-     5,
      100
     ],
     "sought_internship": [
+     8,
      7,
      4,
      5,
@@ -1488,12 +1506,11 @@
      5,
      3,
      8,
-     3,
-     5
+     3
     ],
     "median_years": [
-     7,
      6,
+     7,
      6,
      6,
      6,
@@ -1509,27 +1526,25 @@
      0,
      0,
      0,
+     2,
+     28.571429,
      1,
      16.666667,
-     0,
-     0,
-     4,
-     80,
      7,
-     87.5,
+     77.777778,
+     5,
+     100,
+     8,
+     100,
      7,
      100,
      3,
      100,
-     5,
-     71.4,
-     4,
-     80
+     7,
+     100
     ]
    },
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 5,
-   "internshipSought": 5,
+   "internshipTooFew": 3,
    "anyInternshipPct": 100,
    "medianYears": 6
   },
@@ -1575,76 +1590,21 @@
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
-    "accredited_internships": [
-     2,
-     100,
-     3,
-     100,
-     3,
-     100,
-     4,
-     100,
-     2,
-     100,
-     4,
-     100,
-     2,
-     100,
-     4,
-     100,
-     8,
-     100,
-     1,
-     100
-    ],
-    "any_internship": [
-     2,
-     100,
-     3,
-     100,
-     3,
-     100,
-     4,
-     100,
-     2,
-     100,
-     4,
-     100,
-     2,
-     100,
-     4,
-     100,
-     8,
-     100,
-     1,
-     100
-    ],
-    "sought_internship": [
-     2,
-     -3,
-     -3,
-     -4,
-     -2,
-     -4,
-     -2,
-     -4,
-     -8,
-     -1
-    ],
     "median_years": [
+     6,
      6,
      6.5,
      6,
      7,
+     6.5,
+     7,
+     7,
      6,
-     577667,
-     6,
-     5
+     5,
+     6.25
     ]
    },
-   "internshipTooFew": -1,
-   "anyInternshipPct": 100,
-   "medianYears": 5
+   "medianYears": 6.25
   },
   "rosalind-franklin-university-of-medicine-and-science-phd": {
    "source": "https://www.rosalindfranklin.edu/academics/college-of-health-professions/degree-programs/psychology-phd/student-admissions-outcomes/",
@@ -1882,6 +1842,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     13,
+     93,
      5,
      63,
      9,
@@ -1899,11 +1861,11 @@
      9,
      100,
      5,
-     100,
-     6,
      100
     ],
     "any_internship": [
+     13,
+     93,
      7,
      88,
      9,
@@ -1921,11 +1883,10 @@
      9,
      100,
      5,
-     100,
-     6,
      100
     ],
     "sought_internship": [
+     14,
      8,
      9,
      9,
@@ -1934,18 +1895,31 @@
      7,
      5,
      9,
-     5,
+     5
+    ],
+    "median_years": [
+     7,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
      6
     ]
    },
    "internshipMatchedPct": 100,
-   "internshipMatchedN": 6,
-   "internshipSought": 6,
-   "anyInternshipPct": 100
+   "internshipMatchedN": 5,
+   "internshipSought": 5,
+   "anyInternshipPct": 100,
+   "medianYears": 6
   },
   "syracuse-university-phd": {
-   "source": "https://artsandsciences.syracuse.edu/documents/1528/Clinical_Student_Admissions_Outcomes_and_Other_Data_2026.docx",
-   "shape": "web",
+   "source": "https://artsandsciences.syracuse.edu/documents/1490/C-26_2025_Final_-_Updated.pdf",
+   "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
@@ -2006,8 +1980,7 @@
     ]
    },
    "internshipTooFew": 3,
-   "anyInternshipPct": 67,
-   "note": "table labels not found in the text"
+   "anyInternshipPct": 67
   },
   "temple-university-phd": {
    "source": "https://liberalarts.temple.edu/sites/liberalarts/files/documents/2026_c-26d-template.xlsx",
@@ -2163,8 +2136,8 @@
    "medianYears": 6
   },
   "the-university-of-memphis-phd": {
-   "source": "https://supportum.memphis.edu/s/1728/c20/home.aspx?gid=2&amp;pgid=61",
-   "shape": null,
+   "source": "https://www.memphis.edu/psychology/graduate/docs/2026-student-admissions-outcome-data.pdf",
+   "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
@@ -2216,8 +2189,7 @@
     ]
    },
    "anyInternshipPct": 100,
-   "medianYears": 6,
-   "note": "fetch failed: HTTP Error 302: The HTTP server returned a redirect error th"
+   "medianYears": 6
   },
   "the-university-of-montana-phd": {
    "source": "https://www.umt.edu/psychology/graduates/clinical-psychology/student-data.php",
@@ -2577,10 +2549,10 @@
    "medianYears": 6
   },
   "university-of-connecticut-phd": {
-   "source": "https://psychology.media.uconn.edu/wp-content/uploads/sites/3504/2026/09/2026-2027_Student-Admissions-Outcomes-Data_APA-accessible.docx",
-   "shape": null,
+   "source": "https://psychology.media.uconn.edu/wp-content/uploads/sites/3504/2025/09/2025-2026_Student-Admissions-Outcomes-Data_APA.docx",
+   "shape": "web",
    "read": "2026-09-26",
-   "note": "fetch failed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+   "note": "table labels not found in the text"
   },
   "university-of-delaware-phd": {
    "source": "https://docs.google.com/spreadsheets/d/12iNUaGJHRBUaxgtVTuYNs-5-qF5Ml_LYViOeDU9RdcY/edit?usp&#61;sharing",
@@ -2683,76 +2655,10 @@
    "note": "table labels not found in the text"
   },
   "university-of-georgia-phd": {
-   "source": "https://psyc.franklin.uga.edu/sites/default/files/2026%20c-26d-table-UGA-updated%2010.6.2026.pdf",
-   "shape": "pdf",
+   "source": "https://psyc.franklin.uga.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
    "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     129,
-     200,
-     134,
-     209,
-     124,
-     363,
-     1,
-     238,
-     164,
-     236
-    ],
-    "offers": [
-     7,
-     15,
-     11,
-     21,
-     9,
-     17,
-     1,
-     14,
-     3,
-     6
-    ],
-    "matriculated": [
-     5527491833
-    ],
-    "any_internship": [
-     3,
-     100,
-     8,
-     100,
-     4,
-     100,
-     8,
-     100,
-     4,
-     100,
-     3,
-     100,
-     4,
-     100,
-     5,
-     100,
-     5,
-     100,
-     8,
-     89
-    ],
-    "sought_internship": [
-     3,
-     -8,
-     -4,
-     -8,
-     -4,
-     -3,
-     -4,
-     -5,
-     -5,
-     -9
-    ]
-   },
-   "applicants": 236,
-   "offers": 6,
-   "acceptanceRate": 2.5,
-   "anyInternshipPct": 89
+   "note": "table labels not found in the text"
   },
   "university-of-hawaii-at-manoa-phd": {
    "source": "https://drive.google.com/file/d/1PPMgCHB3sx2E1ecsM4ewyH7x-_dpop5R/view?usp=sharing",
@@ -2766,6 +2672,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     13,
+     100,
      7,
      100,
      8,
@@ -2783,11 +2691,11 @@
      14,
      93,
      10,
-     100,
-     10,
-     91
+     100
     ],
     "any_internship": [
+     13,
+     100,
      7,
      100,
      8,
@@ -2805,11 +2713,11 @@
      14,
      93,
      10,
-     100,
-     10,
-     91
+     100
     ],
     "sought_internship": [
+     3,
+     7,
      8,
      13,
      11,
@@ -2817,10 +2725,10 @@
      15,
      10,
      15,
-     10,
-     11
+     10
     ],
     "median_years": [
+     5,
      5,
      4.8,
      5.7,
@@ -2830,50 +2738,50 @@
      5.8,
      5.7,
      5.7,
-     5.7,
-     5.41
+     5.34
     ],
     "still_enrolled": [
+     0,
+     0,
      1,
-     7.89,
+     7.69,
      0,
      0,
      0,
      0,
-     0,
-     0,
-     3,
-     25,
-     10,
-     66.67,
+     2,
+     15.38,
+     6,
+     50,
+     13,
+     86.67,
      14,
      87.5,
      12,
      100,
      12,
-     100,
-     13,
      100
     ]
    },
-   "internshipMatchedPct": 91,
+   "internshipMatchedPct": 100,
    "internshipMatchedN": 10,
-   "internshipSought": 11,
-   "anyInternshipPct": 91,
-   "medianYears": 5.41
+   "internshipSought": 10,
+   "anyInternshipPct": 100,
+   "medianYears": 5.34
   },
   "university-of-illinois-at-chicago-phd": {
-   "source": "https://psch.uic.edu/programs/graduate-studies/reseach-clinical-programs-gradudate-studies-clinical/student-admissions-outcomes-and-other-data/",
+   "source": "https://psch.uic.edu/wp-content/uploads/sites/259/2024/11/2024_c-26d-template-1-5.xlsx",
    "shape": "web",
    "read": "2026-09-26",
    "note": "table labels not found in the text"
   },
   "university-of-illinois-at-urbana-champaign-phd": {
-   "source": "https://psychology.illinois.edu/document/1524",
+   "source": "https://psychology.illinois.edu/document/1466",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "applicants": [
+     133,
      209,
      229,
      263,
@@ -2882,10 +2790,10 @@
      222,
      103,
      182,
-     242,
-     317
+     242
     ],
     "matriculated": [
+     3,
      9,
      10,
      5,
@@ -2894,10 +2802,11 @@
      6,
      2,
      4,
-     5,
-     3
+     5
     ],
     "any_internship": [
+     3,
+     100,
      4,
      100,
      6,
@@ -2915,24 +2824,58 @@
      4,
      100,
      5,
-     71,
-     6,
-     100
+     71
     ],
     "sought_internship": [
+     3,
      4,
-     -6,
-     -5,
-     -7,
-     -5,
-     -6,
-     -7,
-     -4,
-     -7,
-     -6
+     6,
+     5,
+     7,
+     5,
+     6,
+     7,
+     4,
+     7
+    ],
+    "median_years": [
+     7.5,
+     7.5,
+     7,
+     7,
+     7,
+     7,
+     6,
+     6.5,
+     7,
+     7,
+     7
+    ],
+    "still_enrolled": [
+     0,
+     0,
+     1,
+     11,
+     1,
+     10,
+     1,
+     20,
+     7,
+     100,
+     2,
+     67,
+     6,
+     100,
+     1,
+     50,
+     3,
+     75,
+     5,
+     100
     ]
    },
-   "anyInternshipPct": 100
+   "anyInternshipPct": 71,
+   "medianYears": 7
   },
   "university-of-iowa-phd": {
    "source": "https://psychology.uiowa.edu/sites/psychology.uiowa.edu/files/2026-02/Student-Admissions-and-Outcomes-FILES_2025-UPDATED_0.pdf",
@@ -3226,113 +3169,10 @@
    "source": "https://psychology.umbc.edu/hsp/clinical/data/",
    "shape": "web",
    "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     7,
-     88,
-     7,
-     88,
-     8,
-     100,
-     9,
-     100,
-     5,
-     83,
-     6,
-     100,
-     7,
-     88,
-     4,
-     100,
-     9,
-     90,
-     10,
-     77
-    ],
-    "any_internship": [
-     7,
-     88,
-     7,
-     88,
-     8,
-     100,
-     9,
-     100,
-     5,
-     83,
-     6,
-     100,
-     7,
-     88,
-     4,
-     100,
-     9,
-     90,
-     10,
-     77
-    ],
-    "sought_internship": [
-     8211,
-     8,
-     8211,
-     8,
-     8211,
-     9,
-     8211,
-     6,
-     8211,
-     6,
-     8211,
-     8,
-     8211,
-     4,
-     8211,
-     10,
-     8211,
-     13,
-     8211
-    ],
-    "median_years": [
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     7.0,
-     6.5,
-     6.1
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     5,
-     63,
-     9,
-     69,
-     5,
-     83,
-     5,
-     100,
-     4,
-     80,
-     8,
-     100,
-     7,
-     100
-    ]
-   },
-   "anyInternshipPct": 77,
-   "medianYears": 6.1
+   "note": "table labels not found in the text"
   },
   "university-of-massachusetts-amherst-phd": {
-   "source": "https://drive.google.com/file/d/17tocJYIhU3Fj9bgBLRvFfKvblrL99in5/view?usp=share_link",
+   "source": "https://drive.google.com/file/d/1lKwxRWWbfmEz__sNA8JS2JOZfhAQtbjh/view?usp=sharing",
    "shape": "web",
    "read": "2026-09-26",
    "note": "no usable text (likely a scan)"
@@ -3488,11 +3328,12 @@
    "medianYears": 6
   },
   "university-of-nevada-las-vegas-phd": {
-   "source": "https://www.unlv.edu/sites/default/files/media/document/2026-10/Psychology_StudentAdmissions-Outcomes-OtherData-Table.pdf",
+   "source": "https://www.unlv.edu/sites/default/files/media/document/2026-08/Psychology-StudentAdmissions-Outcomes-OtherData-Table_.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "applicants": [
+     93,
      87,
      107,
      110,
@@ -3501,10 +3342,10 @@
      196,
      205,
      155,
-     177,
-     181
+     177
     ],
     "offers": [
+     13,
      9,
      15,
      14,
@@ -3513,8 +3354,7 @@
      12,
      12,
      14,
-     12,
-     10
+     12
     ],
     "matriculated": [
      8,
@@ -3522,13 +3362,15 @@
      8,
      8,
      8,
+     8,
      7,
      8,
      8,
-     9,
-     7
+     9
     ],
     "accredited_internships": [
+     10,
+     100,
      5,
      83,
      9,
@@ -3546,11 +3388,11 @@
      6,
      100,
      6,
-     100,
-     7,
      100
     ],
     "any_internship": [
+     10,
+     100,
      5,
      83,
      9,
@@ -3568,11 +3410,10 @@
      6,
      100,
      6,
-     100,
-     7,
      100
     ],
     "sought_internship": [
+     10,
      6,
      9,
      8,
@@ -3581,10 +3422,10 @@
      8,
      9,
      6,
-     6,
-     7
+     6
     ],
     "median_years": [
+     5.76,
      6.01,
      6.01,
      5.99,
@@ -3594,18 +3435,17 @@
      5.96,
      5.86,
      4.99,
-     5.97,
-     5.97
+     5.98
     ]
    },
-   "applicants": 181,
-   "offers": 10,
-   "acceptanceRate": 5.5,
+   "applicants": 177,
+   "offers": 12,
+   "acceptanceRate": 6.8,
    "internshipMatchedPct": 100,
-   "internshipMatchedN": 7,
-   "internshipSought": 7,
+   "internshipMatchedN": 6,
+   "internshipSought": 6,
    "anyInternshipPct": 100,
-   "medianYears": 5.97
+   "medianYears": 5.98
   },
   "university-of-north-carolina-greensboro-phd": {
    "source": "https://psy.uncg.edu/wp-content/uploads/2026/08/2026_UNCGclinical_c-26d.xlsx",
@@ -4119,117 +3959,19 @@
    "note": "table labels not found in the text"
   },
   "university-of-texas-at-austin-phd": {
-   "source": "https://liberalarts.utexas.edu/psychology/graduate-program/clinical-phd-program/program-statistics.html",
-   "shape": "web",
+   "source": "https://liberalarts.utexas.edu/psychology/graduate-program/areas-of-graduate-study/clinical-psychology/program-statistics.html",
+   "shape": null,
    "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     408,
-     415,
-     358,
-     361,
-     360,
-     269,
-     325,
-     403,
-     290,
-     345
-    ],
-    "offers": [
-     7,
-     10,
-     7,
-     13,
-     9,
-     8,
-     7,
-     8,
-     11,
-     12
-    ],
-    "accredited_internships": [
-     2,
-     100,
-     6,
-     100,
-     5,
-     100,
-     8,
-     100,
-     5,
-     100,
-     6,
-     100,
-     6,
-     100,
-     4,
-     100,
-     7,
-     100,
-     4,
-     100
-    ],
-    "any_internship": [
-     2,
-     100,
-     6,
-     100,
-     5,
-     100,
-     8,
-     100,
-     5,
-     100,
-     6,
-     100,
-     6,
-     100,
-     4,
-     100,
-     7,
-     100,
-     4,
-     100
-    ],
-    "sought_internship": [
-     6,
-     5,
-     8,
-     5,
-     6,
-     6,
-     4,
-     7,
-     4
-    ],
-    "median_years": [
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     5,
-     6,
-     6,
-     6.5
-    ]
-   },
-   "applicants": 345,
-   "offers": 12,
-   "acceptanceRate": 3.5,
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 4,
-   "internshipSought": 4,
-   "anyInternshipPct": 100,
-   "medianYears": 6.5
+   "note": "fetch failed: HTTP Error 404: Not Found"
   },
   "alliant-international-university-los-angeles-psyd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-la-psyd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-la-psyd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     39,
+     95,
      37,
      97,
      35,
@@ -4247,11 +3989,10 @@
      28,
      88,
      36,
-     71,
-     57,
-     81
+     71
     ],
     "sought_internship": [
+     41,
      38,
      35,
      25,
@@ -4260,10 +4001,10 @@
      43,
      44,
      32,
-     51,
-     70
+     51
     ],
     "median_years": [
+     4.7,
      4.7,
      4.9,
      4.8,
@@ -4273,19 +4014,20 @@
      4.9,
      4.0,
      4.5,
-     4.9,
-     4.9
+     4.8
     ]
    },
-   "anyInternshipPct": 81,
-   "medianYears": 4.9
+   "anyInternshipPct": 71,
+   "medianYears": 4.8
   },
   "alliant-international-university-sacramento-psyd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-sacramento-psyd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-sacramento-psyd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     8,
+     100,
      13,
      100,
      7,
@@ -4303,11 +4045,10 @@
      24,
      92,
      17,
-     94,
-     14,
-     88
+     94
     ],
     "sought_internship": [
+     8,
      13,
      7,
      21,
@@ -4316,10 +4057,10 @@
      22,
      19,
      26,
-     18,
-     16
+     18
     ],
     "median_years": [
+     4.3,
      4.5,
      3.9,
      3.9,
@@ -4329,19 +4070,20 @@
      4.7,
      4.0,
      4.0,
-     4.0,
      4.0
     ]
    },
-   "anyInternshipPct": 88,
+   "anyInternshipPct": 94,
    "medianYears": 4.0
   },
   "alliant-international-university-san-francisco-bay-psyd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-sf-psyd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-sf-psyd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     48,
+     100,
      26,
      100,
      54,
@@ -4359,11 +4101,10 @@
      41,
      98,
      26,
-     72,
-     27,
-     69
+     72
     ],
     "sought_internship": [
+     48,
      26,
      57,
      45,
@@ -4372,10 +4113,10 @@
      37,
      39,
      42,
-     36,
-     39
+     36
     ],
     "median_years": [
+     4.9,
      5.0,
      5.0,
      4.8,
@@ -4384,20 +4125,21 @@
      4.7,
      4.9,
      4.9,
-     4.9,
-     5.0,
+     4.8,
      4.9
     ]
    },
-   "anyInternshipPct": 69,
+   "anyInternshipPct": 72,
    "medianYears": 4.9
   },
   "alliant-international-university-fresno-psyd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-fresno-psyd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-fresno-psyd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     13,
+     100,
      10,
      100,
      13,
@@ -4415,11 +4157,10 @@
      22,
      100,
      22,
-     92,
-     23,
-     100
+     92
     ],
     "sought_internship": [
+     13,
      10,
      13,
      12,
@@ -4428,10 +4169,10 @@
      13,
      9,
      22,
-     24,
-     23
+     24
     ],
     "median_years": [
+     4.2,
      3.9,
      3.9,
      4.0,
@@ -4441,19 +4182,20 @@
      3.9,
      4.9,
      3.9,
-     4.0,
      3.9
     ]
    },
-   "anyInternshipPct": 100,
+   "anyInternshipPct": 92,
    "medianYears": 3.9
   },
   "alliant-international-university-san-diego-psyd": {
-   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2026-sd-psyd-c26d.pdf",
+   "source": "https://files.alliant.edu/institutional-information/accreditations/clinical-psychology/2025-sd-psyd-c26d.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "any_internship": [
+     41,
+     95,
      41,
      100,
      39,
@@ -4471,11 +4213,10 @@
      39,
      100,
      40,
-     78,
-     65,
-     96
+     78
     ],
     "sought_internship": [
+     43,
      41,
      39,
      38,
@@ -4484,10 +4225,10 @@
      55,
      69,
      39,
-     51,
-     68
+     51
     ],
     "median_years": [
+     5.0,
      4.9,
      5.0,
      5.0,
@@ -4497,12 +4238,11 @@
      4.2,
      4.0,
      4.0,
-     4.0,
-     4.1
+     4.3
     ]
    },
-   "anyInternshipPct": 96,
-   "medianYears": 4.1
+   "anyInternshipPct": 78,
+   "medianYears": 4.3
   },
   "antioch-university-new-england-psyd": {
    "source": "https://www.antioch.edu/wp-content/uploads/2025/10/aune_psyd_2025_c-26.pdf",
@@ -4564,15 +4304,17 @@
    "note": "table labels not found in the text"
   },
   "azusa-pacific-university-psyd": {
-   "source": "https://www.apu.edu/files/student_admissions_outcomes_and_other_data_2026.pdf",
+   "source": "https://www.apu.edu/files/student-admissions-outcomes-and-other-data.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     25,
+     83,
      19,
      76,
-     21,
-     84,
+     19,
+     76,
      19,
      83,
      24,
@@ -4583,14 +4325,14 @@
      84,
      15,
      79,
-     28,
-     80,
-     19,
-     66,
      26,
-     84
+     74,
+     19,
+     70
     ],
     "any_internship": [
+     30,
+     100,
      24,
      96,
      24,
@@ -4603,16 +4345,15 @@
      94,
      24,
      96,
-     18,
-     95,
+     17,
+     89,
      32,
      91,
      27,
-     93,
-     29,
-     94
+     100
     ],
     "sought_internship": [
+     30,
      25,
      25,
      23,
@@ -4621,31 +4362,30 @@
      25,
      19,
      35,
-     29,
-     31
+     27
     ],
     "median_years": [
      5,
      5,
+     5,
      6,
      6,
      5,
      5,
-     6,
      6,
      6,
      6,
      6.1
     ]
    },
-   "internshipMatchedPct": 84,
-   "internshipMatchedN": 26,
-   "internshipSought": 31,
-   "anyInternshipPct": 94,
+   "internshipMatchedPct": 70,
+   "internshipMatchedN": 19,
+   "internshipSought": 27,
+   "anyInternshipPct": 100,
    "medianYears": 6.1
   },
   "baylor-university-psyd": {
-   "source": "https://psychologyneuroscience.artsandsciences.baylor.edu/sites/g/files/ecbvkj701/files/2026-10/APA%20Disclosurers%20Web%20Page%202025-26.pdf",
+   "source": "https://psychologyneuroscience.artsandsciences.baylor.edu/sites/g/files/ecbvkj701/files/2023-10/2023%20Program%20Disclosure.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
@@ -4722,8 +4462,7 @@
    "internshipMatchedN": 5,
    "internshipSought": 5,
    "anyInternshipPct": 100,
-   "medianYears": 5,
-   "note": "table labels not found in the text"
+   "medianYears": 5
   },
   "california-baptist-university-psyd": {
    "source": "https://calbaptist.edu/academics/programs/doctor-of-psychology-clinical-psychology/PsyD%20Student%20Data%202026.pdf",
@@ -4877,11 +4616,13 @@
    "medianYears": 6
   },
   "carlos-albizu-university-miami-campus-psyd": {
-   "source": "https://www.albizu.edu/download/miami-student-admissions-outcomes-and-other-data/?tmstv=1790877488",
+   "source": "https://www.albizu.edu/wp-content/uploads/2025/10/2025-c-26d-template-revised-10.1.25.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     34,
+     54,
      42,
      93,
      31,
@@ -4899,11 +4640,11 @@
      31,
      82,
      28,
-     72,
-     26,
-     68
+     72
     ],
     "any_internship": [
+     60,
+     95,
      43,
      96,
      32,
@@ -4921,11 +4662,10 @@
      33,
      87,
      32,
-     82,
-     31,
      82
     ],
     "sought_internship": [
+     63,
      45,
      34,
      32,
@@ -4934,10 +4674,10 @@
      29,
      20,
      38,
-     39,
-     38
+     39
     ],
     "median_years": [
+     6,
      6,
      5.67,
      5.33,
@@ -4946,22 +4686,23 @@
      6,
      5,
      5,
-     5,
      5
     ]
    },
-   "internshipMatchedPct": 68,
-   "internshipMatchedN": 26,
-   "internshipSought": 38,
+   "internshipMatchedPct": 72,
+   "internshipMatchedN": 28,
+   "internshipSought": 39,
    "anyInternshipPct": 82,
    "medianYears": 5
   },
   "carlos-albizu-university-san-juan-campus-psyd": {
-   "source": "https://www.albizu.edu/download/miami-student-admissions-outcomes-and-other-data/?tmstv=1790877488",
+   "source": "https://www.albizu.edu/wp-content/uploads/2025/10/2025-c-26d-template-revised-10.1.25.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     34,
+     54,
      42,
      93,
      31,
@@ -4979,11 +4720,11 @@
      31,
      82,
      28,
-     72,
-     26,
-     68
+     72
     ],
     "any_internship": [
+     60,
+     95,
      43,
      96,
      32,
@@ -5001,11 +4742,10 @@
      33,
      87,
      32,
-     82,
-     31,
      82
     ],
     "sought_internship": [
+     63,
      45,
      34,
      32,
@@ -5014,10 +4754,10 @@
      29,
      20,
      38,
-     39,
-     38
+     39
     ],
     "median_years": [
+     6,
      6,
      5.67,
      5.33,
@@ -5026,13 +4766,12 @@
      6,
      5,
      5,
-     5,
      5
     ]
    },
-   "internshipMatchedPct": 68,
-   "internshipMatchedN": 26,
-   "internshipSought": 38,
+   "internshipMatchedPct": 72,
+   "internshipMatchedN": 28,
+   "internshipSought": 39,
    "anyInternshipPct": 82,
    "medianYears": 5
   },
@@ -5146,15 +4885,11 @@
    "medianYears": 4.9
   },
   "florida-school-of-professional-psychology-at-national-louis-university-tampa-psyd": {
-   "source": "https://nl.edu/media/nledu/content-assets/documents/FSPP_Student_Admissions_Outcomes_Other_Data_2026-2027.pdf",
-   "shape": "pdf",
+   "source": "https://docs.nl.edu/view/670881796/",
+   "shape": "web",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
-     0,
-     0,
-     0,
-     0,
      18,
      100,
      8,
@@ -5163,80 +4898,9 @@
      100,
      3,
      100,
-     10,
-     100,
-     19,
-     100,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     11,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
+     100
     ],
     "any_internship": [
-     0,
-     0,
-     0,
-     0,
      18,
      100,
      9,
@@ -5245,34 +4909,53 @@
      100,
      3,
      100,
-     10,
-     100,
-     19,
-     100,
-     18,
-     100,
-     9,
-     100,
-     5,
-     100,
-     3,
-     100,
-     10,
-     100,
-     19,
      100
+    ],
+    "sought_internship": [
+     0,
+     18,
+     100,
+     9,
+     100,
+     5,
+     100,
+     3,
+     100,
+     100
+    ],
+    "median_years": [
+     2.304,
+     3.44,
+     4.44,
+     4.88
+    ],
+    "still_enrolled": [
+     1,
+     1.85,
+     2,
+     25,
+     3,
+     100,
+     11,
+     68.75,
+     19,
+     76,
+     29,
+     87.88,
+     31,
+     96.875
     ]
    },
-   "internshipMatchedPct": 0,
-   "internshipMatchedN": 0,
-   "anyInternshipPct": 100
+   "medianYears": 4.88
   },
   "fuller-theological-seminary-psyd": {
-   "source": "https://fuller.edu/wp-content/uploads/2026/10/2026_c-26d-table-PsyD.pdf",
+   "source": "https://fuller.edu/wp-content/uploads/2025/10/2025_c-26d-table-PsyD.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     7,
+     78,
      9,
      60,
      8,
@@ -5290,11 +4973,11 @@
      9,
      100,
      10,
-     77,
-     10,
      77
     ],
     "any_internship": [
+     8,
+     89,
      15,
      100,
      8,
@@ -5312,11 +4995,10 @@
      9,
      100,
      12,
-     92,
-     12,
      92
     ],
     "sought_internship": [
+     9,
      15,
      8,
      12,
@@ -5325,10 +5007,10 @@
      11,
      12,
      9,
-     13,
      13
     ],
     "median_years": [
+     5,
      6,
      5,
      6,
@@ -5338,7 +5020,6 @@
      5,
      5,
      6,
-     5,
      5.75
     ]
    },
@@ -5553,6 +5234,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     6,
+     46,
      18,
      75,
      15,
@@ -5570,11 +5253,11 @@
      31,
      100,
      32,
-     97,
-     28,
-     100
+     97
     ],
     "any_internship": [
+     12,
+     92,
      24,
      100,
      17,
@@ -5592,12 +5275,11 @@
      31,
      100,
      32,
-     97,
-     28,
-     100
+     97
     ],
     "sought_internship": [
-     4,
+     13,
+     24,
      17,
      24,
      33,
@@ -5605,10 +5287,12 @@
      24,
      18,
      31,
-     33,
-     28
+     33
     ],
     "median_years": [
+     4,
+     4,
+     4,
      4,
      4,
      4,
@@ -5619,22 +5303,18 @@
      4
     ]
    },
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 28,
-   "internshipSought": 28,
-   "anyInternshipPct": 100,
+   "internshipMatchedPct": 97,
+   "internshipMatchedN": 32,
+   "internshipSought": 33,
+   "anyInternshipPct": 97,
    "medianYears": 4
   },
   "national-louis-university-psyd": {
-   "source": "https://nl.edu/media/nledu/content-assets/documents/FSPP_Student_Admissions_Outcomes_Other_Data_2026-2027.pdf",
-   "shape": "pdf",
+   "source": "https://docs.nl.edu/view/670881796/",
+   "shape": "web",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
-     0,
-     0,
-     0,
-     0,
      18,
      100,
      8,
@@ -5643,80 +5323,9 @@
      100,
      3,
      100,
-     10,
-     100,
-     19,
-     100,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     11,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
+     100
     ],
     "any_internship": [
-     0,
-     0,
-     0,
-     0,
      18,
      100,
      9,
@@ -5725,27 +5334,44 @@
      100,
      3,
      100,
-     10,
-     100,
-     19,
-     100,
-     18,
-     100,
-     9,
-     100,
-     5,
-     100,
-     3,
-     100,
-     10,
-     100,
-     19,
      100
+    ],
+    "sought_internship": [
+     0,
+     18,
+     100,
+     9,
+     100,
+     5,
+     100,
+     3,
+     100,
+     100
+    ],
+    "median_years": [
+     2.304,
+     3.44,
+     4.44,
+     4.88
+    ],
+    "still_enrolled": [
+     1,
+     1.85,
+     2,
+     25,
+     3,
+     100,
+     11,
+     68.75,
+     19,
+     76,
+     29,
+     87.88,
+     31,
+     96.875
     ]
    },
-   "internshipMatchedPct": 0,
-   "internshipMatchedN": 0,
-   "anyInternshipPct": 100
+   "medianYears": 4.88
   },
   "palo-alto-university-psyd": {
    "source": "https://paloaltou.edu/academic-programs/pau-stanford-psyd-consortium/outcomes-and-data",
@@ -5863,11 +5489,13 @@
    "note": "no usable text (likely a scan)"
   },
   "rutgers-the-state-university-of-new-jersey-psyd": {
-   "source": "https://gsapp.rutgers.edu/sites/default/files/2026-10/2025-2026%20C-26_0.pdf",
+   "source": "https://gsapp.rutgers.edu/sites/default/files/2025-10/C-26%202025.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     14,
+     100,
      20,
      100,
      17,
@@ -5883,13 +5511,13 @@
      20,
      100,
      15,
-     100,
-     19,
      100,
      19,
      100
     ],
     "any_internship": [
+     14,
+     100,
      20,
      100,
      17,
@@ -5906,12 +5534,11 @@
      100,
      15,
      100,
-     19,
      100,
-     19,
-     100
+     526
     ],
     "sought_internship": [
+     14,
      20,
      17,
      17,
@@ -5920,7 +5547,6 @@
      25,
      20,
      15,
-     19,
      19
     ],
     "median_years": [
@@ -5936,21 +5562,23 @@
      5,
      5,
      5,
+     5,
+     5,
      5.1,
      5.1,
      5,
      5,
-     5,
-     5,
-     5,
-     5
+     5.1,
+     5.1,
+     5.1,
+     5.1
     ]
    },
    "internshipMatchedPct": 100,
    "internshipMatchedN": 19,
    "internshipSought": 19,
-   "anyInternshipPct": 100,
-   "medianYears": 5
+   "anyInternshipPct": 526,
+   "medianYears": 5.1
   },
   "the-chicago-school-washington-d-c-campus-psyd": {
    "source": "https://www.thechicagoschool.edu/programs/psychology/clinical-psychology/psyd-washington-dc/student-admissions-outcomes-and-other-data/",
@@ -5958,6 +5586,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     3,
+     21,
      3,
      38,
      9,
@@ -5975,11 +5605,11 @@
      43,
      88,
      43,
-     93,
-     46,
-     82
+     93
     ],
     "any_internship": [
+     14,
+     100,
      8,
      100,
      13,
@@ -5997,11 +5627,11 @@
      46,
      94,
      44,
-     96,
-     49,
-     88
+     96
     ],
     "sought_internship": [
+     4,
+     8,
      13,
      5,
      43,
@@ -6009,23 +5639,24 @@
      64,
      47,
      49,
-     46,
-     56
+     46
     ],
     "median_years": [
-     5.18,
-     6.03,
+     5,
+     5.2,
+     6,
      0.3,
      1.24,
      1.49,
      3.23,
      4.31,
-     4.9,
+     4.85,
      5.49,
-     5.17,
-     4.31
+     3.49
     ],
     "still_enrolled": [
+     0,
+     0,
      0,
      0,
      1,
@@ -6043,16 +5674,14 @@
      54,
      95,
      48,
-     94,
-     54,
-     96
+     94
     ]
    },
-   "internshipMatchedPct": 82,
-   "internshipMatchedN": 46,
-   "internshipSought": 56,
-   "anyInternshipPct": 88,
-   "medianYears": 4.31
+   "internshipMatchedPct": 93,
+   "internshipMatchedN": 43,
+   "internshipSought": 46,
+   "anyInternshipPct": 96,
+   "medianYears": 3.49
   },
   "the-chicago-school-anaheim-psyd": {
    "source": "https://www.thechicagoschool.edu/programs/psychology/clinical-psychology/psyd-anaheim/student-admissions-outcomes-and-other-data/",
@@ -6073,9 +5702,7 @@
      14,
      93,
      25,
-     86,
-     39,
-     83
+     86
     ],
     "any_internship": [
      25,
@@ -6091,9 +5718,7 @@
      15,
      100,
      28,
-     97,
-     43,
-     91
+     97
     ],
     "sought_internship": [
      26,
@@ -6102,11 +5727,9 @@
      31,
      16,
      15,
-     29,
-     47
+     29
     ],
     "median_years": [
-     5,
      5,
      5,
      5,
@@ -6121,22 +5744,22 @@
      1,
      0,
      0,
-     5,
-     22,
-     14,
-     34,
-     43,
-     84,
-     45,
-     87,
-     49,
-     87.5
+     8,
+     35,
+     31,
+     76,
+     46,
+     90,
+     47,
+     90,
+     44,
+     88
     ]
    },
-   "internshipMatchedPct": 83,
-   "internshipMatchedN": 39,
-   "internshipSought": 47,
-   "anyInternshipPct": 91,
+   "internshipMatchedPct": 86,
+   "internshipMatchedN": 25,
+   "internshipSought": 29,
+   "anyInternshipPct": 97,
    "medianYears": 5
   },
   "the-chicago-school-chicago-campus-psyd": {
@@ -6145,8 +5768,10 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     67,
+     83,
      71,
-     89,
+     96,
      68,
      96,
      76,
@@ -6162,11 +5787,11 @@
      51,
      100,
      43,
-     83,
-     62,
-     91
+     83
     ],
     "any_internship": [
+     80,
+     99,
      78,
      98,
      69,
@@ -6184,12 +5809,11 @@
      51,
      100,
      43,
-     83,
-     62,
-     91
+     0
     ],
     "sought_internship": [
-     0,
+     1,
+     80,
      71,
      82,
      61,
@@ -6197,8 +5821,7 @@
      71,
      47,
      51,
-     52,
-     68
+     52
     ],
     "median_years": [
      5,
@@ -6213,32 +5836,31 @@
      5
     ],
     "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     2,
      1,
+     2,
+     2,
+     5,
+     2,
+     4,
+     13,
+     8,
      21,
      38,
-     8,
-     13,
-     20,
-     36,
-     57,
+     54,
      86,
-     58,
-     88,
-     52,
-     96,
+     51,
+     93,
+     61,
+     95,
      65,
-     98
+     97,
+     0
     ]
    },
-   "internshipMatchedPct": 91,
-   "internshipMatchedN": 62,
-   "internshipSought": 68,
-   "anyInternshipPct": 91,
+   "internshipMatchedPct": 83,
+   "internshipMatchedN": 43,
+   "internshipSought": 52,
+   "anyInternshipPct": 0,
    "medianYears": 5
   },
   "the-chicago-school-dallas-campus-psyd": {
@@ -6248,34 +5870,36 @@
    "rows": {
     "accredited_internships": [
      6,
-     2
+     100,
+     1,
+     25
     ],
     "any_internship": [
-     6
+     0
     ],
     "sought_internship": [
-     8211,
-     5
+     8211
     ],
     "median_years": [
      5,
-     83,
-     5
+     83
     ],
     "still_enrolled": [
+     2,
+     12.5,
      8,
-     50,
-     10,
-     66.67,
-     12,
-     70.59,
+     53.33,
+     11,
+     64.71,
      21,
      87.5,
-     52,
-     82
+     23,
+     95.83
     ]
    },
-   "medianYears": 5
+   "dropped": [
+    "medianYears"
+   ]
   },
   "the-chicago-school-los-angeles-psyd": {
    "source": "https://www.thechicagoschool.edu/programs/psychology/clinical-psychology/psyd-los-angeles/student-admissions-outcomes-and-other-data/",
@@ -6283,6 +5907,8 @@
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     3,
+     15,
      5,
      36,
      0,
@@ -6300,11 +5926,11 @@
      17,
      77,
      21,
-     78,
-     25,
-     83
+     78
     ],
     "any_internship": [
+     20,
+     100,
      14,
      100,
      0,
@@ -6322,12 +5948,11 @@
      22,
      100,
      24,
-     89,
-     28,
-     93
+     89
     ],
     "sought_internship": [
-     4,
+     0,
+     14,
      0,
      13,
      4,
@@ -6335,11 +5960,10 @@
      8,
      18,
      22,
-     27,
-     30,
-     8211
+     27
     ],
     "median_years": [
+     5,
      6,
      6,
      6,
@@ -6349,33 +5973,35 @@
      4.5,
      5,
      5,
-     5,
      5
     ],
     "still_enrolled": [
+     1,
+     12.5,
      0,
      0,
      0,
      0,
-     0,
-     0,
-     6,
-     20.69,
+     2,
+     6.667,
      8,
-     25.81,
-     9,
-     29.03,
-     28,
-     84.85,
-     30,
-     88.24,
+     27.59,
+     18,
+     58.06,
+     23,
+     74.19,
+     29,
+     87.88,
      32,
-     96.97,
+     94.12,
      33,
-     97.06
+     100
     ]
    },
-   "anyInternshipPct": 93,
+   "internshipMatchedPct": 78,
+   "internshipMatchedN": 21,
+   "internshipSought": 27,
+   "anyInternshipPct": 89,
    "medianYears": 5
   },
   "the-wright-institute-psyd": {
@@ -6480,12 +6106,18 @@
    "medianYears": 5
   },
   "university-of-indianapolis-psyd": {
-   "source": "https://uindy.edu/cebs/psyd/outcomes",
-   "shape": "web",
+   "source": "https://uindy.edu/cebs/psyd/files/psyd_student_admissions_outcomes_other_data.pdf",
+   "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
-     17,
+     21,
+     91,
+     25,
+     83,
+     27,
+     96,
+     16,
      100,
      19,
      100,
@@ -6496,18 +6128,16 @@
      29,
      100,
      26,
-     100,
-     39,
-     100,
-     30,
-     100,
-     27,
-     93,
-     30,
-     97
+     100
     ],
     "any_internship": [
-     17,
+     23,
+     100,
+     30,
+     100,
+     28,
+     100,
+     16,
      100,
      19,
      100,
@@ -6518,19 +6148,18 @@
      29,
      100,
      26,
-     100,
-     39,
-     100,
-     30,
-     100,
-     27,
-     93,
-     30,
-     97
+     100
     ],
     "sought_internship": [
-     7,
-     8212
+     23,
+     30,
+     28,
+     16,
+     19,
+     27,
+     24,
+     29,
+     26
     ],
     "median_years": [
      5,
@@ -6543,35 +6172,14 @@
      5,
      5,
      5,
-     160
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     3,
-     6,
-     18,
-     29,
-     85,
-     35,
-     97,
-     31,
-     94,
-     37,
-     100
+     5
     ]
    },
-   "anyInternshipPct": 97,
-   "dropped": [
-    "medianYears"
-   ]
+   "internshipMatchedPct": 100,
+   "internshipMatchedN": 26,
+   "internshipSought": 26,
+   "anyInternshipPct": 100,
+   "medianYears": 5
   },
   "western-kentucky-university-psyd": {
    "source": "https://www.wku.edu/psychology/psyd/student-admissions-outcomes-and-other-data_2026.pdf",
@@ -6647,11 +6255,13 @@
    "medianYears": 5
   },
   "widener-university-psyd": {
-   "source": "https://www.widener.edu/sites/default/files/2026-09/PsyD%202026%20Student%20Admissions%20%26%20Outcomes.pdf",
+   "source": "https://www.widener.edu/sites/default/files/2025-09/PsyD%20Student%20Outcomes%202025.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
+     67,
+     100,
      57,
      100,
      59,
@@ -6669,11 +6279,11 @@
      63,
      100,
      63,
-     100,
-     61,
      100
     ],
     "any_internship": [
+     67,
+     100,
      57,
      100,
      59,
@@ -6691,11 +6301,10 @@
      63,
      100,
      63,
-     100,
-     61,
      100
     ],
     "sought_internship": [
+     67,
      57,
      59,
      68,
@@ -6704,8 +6313,7 @@
      63,
      63,
      63,
-     63,
-     61
+     63
     ],
     "median_years": [
      5,
@@ -6722,8 +6330,8 @@
     ]
    },
    "internshipMatchedPct": 100,
-   "internshipMatchedN": 61,
-   "internshipSought": 61,
+   "internshipMatchedN": 63,
+   "internshipSought": 63,
    "anyInternshipPct": 100,
    "medianYears": 5
   },
@@ -6735,7 +6343,7 @@
   },
   "wisconsin-school-of-professional-psychology-psyd": {
    "source": "https://www.wspp.edu/academics/student-admissions-outcomes-other-data",
-   "shape": "web",
+   "shape": null,
    "read": "2026-09-26",
    "rows": {
     "accredited_internships": [
@@ -6842,109 +6450,14 @@
    },
    "internshipTooFew": 0,
    "anyInternshipPct": 100,
-   "medianYears": 5.54
+   "medianYears": 5.54,
+   "note": "fetch failed: <urlopen error [Errno 11002] getaddrinfo failed>"
   },
   "xavier-university-psyd": {
    "source": "https://www.xavier.edu/psychology-school/psyd/student-outcomes-apa/index",
    "shape": "web",
    "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     14,
-     100,
-     13,
-     93,
-     16,
-     100,
-     14,
-     100,
-     15,
-     83,
-     17,
-     100,
-     14,
-     100,
-     16,
-     100,
-     19,
-     95,
-     13,
-     76
-    ],
-    "any_internship": [
-     14,
-     100,
-     14,
-     100,
-     16,
-     100,
-     14,
-     100,
-     16,
-     89,
-     17,
-     100,
-     14,
-     100,
-     16,
-     100,
-     19,
-     95,
-     13,
-     76
-    ],
-    "sought_internship": [
-     4,
-     14,
-     16,
-     14,
-     18,
-     17,
-     14,
-     16,
-     20,
-     17
-    ],
-    "median_years": [
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     5,
-     16,
-     94,
-     17,
-     100,
-     18,
-     95,
-     17,
-     100
-    ]
-   },
-   "internshipMatchedPct": 76,
-   "internshipMatchedN": 13,
-   "internshipSought": 17,
-   "anyInternshipPct": 76,
-   "medianYears": 5
+   "note": "table labels not found in the text"
   },
   "california-lutheran-university-psyd": {
    "source": "https://www.callutheran.edu/academics/graduate/psyd-clinical-psychology/student-data.html",
@@ -7104,7 +6617,7 @@
    "note": "table labels not found in the text"
   },
   "university-of-texas-at-tyler-phd": {
-   "source": "https://www.uttyler.edu/academics/colleges-schools/health-professions/departments/psychology-counseling/files/student-admissions-outcomes-and-other-data-2026.pdf",
+   "source": "https://www.uttyler.edu/academics/colleges-schools/health-professions/departments/psychology-counseling/files/student-admissions-outcomes-and-other-data-20250731.pdf",
    "shape": "pdf",
    "read": "2026-09-26",
    "rows": {
@@ -7114,10 +6627,10 @@
      6,
      6,
      4,
-     5,
-     6
+     5
     ],
     "any_internship": [
+     0,
      0,
      0,
      0,
@@ -7126,8 +6639,6 @@
      3,
      100,
      5,
-     100,
-     8,
      100
     ],
     "sought_internship": [
@@ -7139,1755 +6650,16 @@
      3,
      100,
      5,
-     100,
-     8,
      100
     ]
-   }
+   },
+   "anyInternshipPct": 100
   },
   "university-of-texas-southwestern-medical-center-phd": {
    "source": "https://www.utsouthwestern.edu/programs/clinical-psychology/student-admissions-outcome-data.html",
    "shape": null,
    "read": "2026-09-26",
    "note": "fetch failed: HTTP Error 404: 404"
-  },
-  "gsu-clinical": {
-   "source": "https://psychology.gsu.edu/document/student-admissions-outcome-and-other-data/?wpdmdl=5193&amp;masterkey=604674dfd3fcd",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "unc-clinical": {
-   "source": "https://clinicalpsych.unc.edu/aood/",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "auburn-university-phd": {
-   "source": "https://cla.auburn.edu/media/omvdgsb4/auburn-2026-program-outcomes.xlsx",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "biola-university-phd": {
-   "source": "https://assets.biola.edu/4396738754672012438/attachment/78b9d9734fac0e54ddb3c4ffa27a36a5/1503057556_96418271_RosemeadPhD_IRC26D_2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "biola-university-psyd": {
-   "source": "https://assets.biola.edu/4396738754672012438/attachment/291165a05fdaeff275aab0ecb6b03c3b/Rosemead_PsyD_IR_C-26D_2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "loyola-university-maryland-psyd": {
-   "source": "https://www.loyola.edu/academics/psychology/degrees/masters/outcomes-data.html#",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "still_enrolled": [
-     0,
-     1,
-     4,
-     0,
-     1,
-     3,
-     34,
-     97,
-     43,
-     100,
-     43,
-     100
-    ]
-   }
-  },
-  "northwestern-university-weinberg-phd": {
-   "source": "https://psychology.northwestern.edu/graduate/program-areas/clinical/student-data.html",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "san-diego-state-university-uc-san-diego-phd": {
-   "source": "https://psychology.sdsu.edu/doctoral/clinical/student-admissions-outcome-and-other-data/",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     10,
-     100,
-     12,
-     100,
-     8,
-     100,
-     8,
-     100,
-     14,
-     93,
-     7,
-     100,
-     11,
-     100,
-     9,
-     100,
-     19,
-     100,
-     14,
-     100
-    ],
-    "any_internship": [
-     10,
-     100,
-     12,
-     100,
-     8,
-     100,
-     8,
-     100,
-     14,
-     93,
-     7,
-     100,
-     11,
-     100,
-     9,
-     100,
-     19,
-     100,
-     14,
-     100
-    ],
-    "sought_internship": [
-     0,
-     8211,
-     12,
-     8211,
-     8,
-     8211,
-     8,
-     8211,
-     15,
-     8211,
-     7,
-     8211,
-     11,
-     8211,
-     9,
-     8211,
-     19,
-     8211,
-     14,
-     8211
-    ],
-    "median_years": [
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     1,
-     8.33333333,
-     0,
-     0,
-     5,
-     45.45454545,
-     12,
-     100,
-     15,
-     100,
-     13,
-     92.85714286,
-     12,
-     100,
-     11,
-     100,
-     10,
-     100
-    ]
-   },
-   "anyInternshipPct": 100,
-   "medianYears": 6
-  },
-  "the-chicago-school-psyd": {
-   "source": "https://www.thechicagoschool.edu/wp-content/uploads/2025/09/Student-Outcomes-Data-Tables-2025-.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "uniformed-services-university-of-the-health-sciences-phd": {
-   "source": "https://drive.google.com/file/d/1ZEoaYBgdGFQ4AKzq5dRI5sSIrKmDV20b/view?usp=drive_link",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "no usable text (likely a scan)"
-  },
-  "university-of-alabama-at-tuscaloosa-phd": {
-   "source": "https://psychology.ua.edu/wp-content/uploads/2026/09/2026-AdmissionsandOutcomeData.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     252,
-     232,
-     285,
-     230,
-     208,
-     348,
-     349,
-     264,
-     305,
-     232
-    ],
-    "offers": [
-     12,
-     15,
-     17,
-     19,
-     14,
-     20,
-     16,
-     21,
-     16,
-     13
-    ]
-   },
-   "applicants": 232,
-   "offers": 13,
-   "acceptanceRate": 5.6
-  },
-  "university-of-south-carolina-phd": {
-   "source": "https://sc.edu/study/colleges_schools/artsandsciences/psychology/study/graduate/clinical_community/admissions_outcome.php",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     8,
-     100
-    ],
-    "any_internship": [
-     8,
-     100
-    ],
-    "median_years": [
-     6
-    ],
-    "still_enrolled": [
-     6,
-     100
-    ]
-   },
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 8,
-   "anyInternshipPct": 100,
-   "medianYears": 6
-  },
-  "university-of-southern-mississippi-phd": {
-   "source": "https://mpcacaccreditation.org/wp-content/uploads/2026/08/Enrollment_Retention_Graduation_Outcome-data-20260814.xlsx",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "virginia-commonwealth-university-phd": {
-   "source": "https://psychology.vcu.edu/media/psychology/2026_c-26d-template.xlsx",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "wheaton-college-psyd": {
-   "source": "https://www.wheaton.edu/graduate-school/degrees/psyd-in-clinical-psychology/student-admissions-outcomes-and-other-data",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "palo-alto-university-phd": {
-   "source": "https://paloaltou.edu/hubfs/PhD%20IR%20C-26%202025.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     71,
-     95,
-     60,
-     97,
-     73,
-     89,
-     90,
-     98,
-     74,
-     94,
-     66,
-     94,
-     65,
-     97,
-     70,
-     95,
-     71,
-     90,
-     62,
-     78
-    ],
-    "any_internship": [
-     73,
-     97,
-     61,
-     98,
-     74,
-     90,
-     91,
-     99,
-     74,
-     94,
-     69,
-     99,
-     65,
-     97,
-     71,
-     96,
-     73,
-     92,
-     71,
-     89
-    ],
-    "sought_internship": [
-     75,
-     62,
-     82,
-     92,
-     79,
-     70,
-     67,
-     74,
-     79,
-     80
-    ],
-    "median_years": [
-     5.87,
-     5.91,
-     5.85,
-     5.88,
-     5.91,
-     5.9,
-     5.84,
-     5.8,
-     5.87,
-     5.8,
-     5.87
-    ]
-   },
-   "internshipMatchedPct": 78,
-   "internshipMatchedN": 62,
-   "internshipSought": 80,
-   "anyInternshipPct": 89,
-   "medianYears": 5.87
-  },
-  "fiu-clinical-child": {
-   "source": "https://case.fiu.edu/psychology/students/graduate/phd-in-clinical-science-in-child-and-adolescent-psychology/student-admissions,-outcomes-and-other-data/student-admissions,-outcomes-and-other-data.html",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     95,
-     109,
-     134,
-     143,
-     158,
-     224,
-     226,
-     191,
-     238,
-     371
-    ],
-    "offers": [
-     21,
-     17,
-     14,
-     12,
-     22,
-     24,
-     18,
-     12,
-     16,
-     12
-    ],
-    "matriculated": [
-     11,
-     11,
-     12,
-     7,
-     10,
-     11,
-     10,
-     6,
-     8,
-     8
-    ],
-    "median_years": [
-     6
-    ]
-   },
-   "applicants": 371,
-   "offers": 12,
-   "acceptanceRate": 3.2,
-   "medianYears": 6
-  },
-  "binghamton-clinical": {
-   "source": "https://www.binghamton.edu/psychology/documents/programs-education-and-training-outcomes.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     4,
-     100,
-     3,
-     100,
-     4,
-     100,
-     3,
-     100,
-     7,
-     100,
-     8,
-     100,
-     3,
-     100,
-     4,
-     100,
-     5,
-     100,
-     3,
-     100
-    ],
-    "any_internship": [
-     4,
-     100,
-     3,
-     100,
-     4,
-     100,
-     3,
-     100,
-     7,
-     100,
-     8,
-     100,
-     3,
-     100,
-     4,
-     100,
-     5,
-     100,
-     3,
-     100
-    ],
-    "sought_internship": [
-     4,
-     3,
-     4,
-     3,
-     7,
-     8,
-     3,
-     4,
-     5,
-     3
-    ],
-    "median_years": [
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     5.5,
-     6.0,
-     6.0
-    ]
-   },
-   "internshipTooFew": 3,
-   "anyInternshipPct": 100,
-   "medianYears": 6.0
-  },
-  "adelphi-university-phd": {
-   "source": "https://www.adelphi.edu/psychology/wp-content/uploads/sites/25/2026/10/2026-c-26D-APA-Report.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     16,
-     100,
-     21,
-     100,
-     17,
-     100,
-     18,
-     100,
-     23,
-     88,
-     17,
-     89,
-     23,
-     96,
-     25,
-     86,
-     19,
-     100,
-     18,
-     82
-    ],
-    "any_internship": [
-     16,
-     100,
-     21,
-     100,
-     17,
-     100,
-     18,
-     100,
-     24,
-     92,
-     18,
-     95,
-     23,
-     96,
-     28,
-     97,
-     19,
-     100,
-     20,
-     91
-    ],
-    "sought_internship": [
-     16,
-     21,
-     17,
-     18,
-     26,
-     19,
-     24,
-     29,
-     19,
-     22
-    ],
-    "median_years": [
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-    ]
-   },
-   "internshipMatchedPct": 82,
-   "internshipMatchedN": 18,
-   "internshipSought": 22,
-   "anyInternshipPct": 91,
-   "medianYears": 5
-  },
-  "bowling-green-state-university-phd": {
-   "source": "https://www.bgsu.edu/content/bgsu/en/arts-and-sciences/psychology/graduate-program/clinical/student-admissions-outcomes-and-data.html",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     3,
-     100,
-     7,
-     100,
-     8,
-     100,
-     11,
-     100,
-     8,
-     100,
-     5,
-     83,
-     6,
-     100,
-     8,
-     100,
-     7,
-     100,
-     8,
-     100
-    ],
-    "any_internship": [
-     3,
-     100,
-     7,
-     100,
-     8,
-     100,
-     11,
-     100,
-     8,
-     100,
-     5,
-     83,
-     6,
-     100,
-     8,
-     100,
-     7,
-     100,
-     8,
-     100
-    ],
-    "sought_internship": [
-     7,
-     8,
-     11,
-     8,
-     6,
-     6,
-     8,
-     7,
-     8
-    ],
-    "median_years": [
-     6.4,
-     8.0,
-     6.5,
-     6.2,
-     5.5,
-     6.45,
-     5.95,
-     6.0,
-     6.4,
-     6.5,
-     6.0
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     2,
-     22,
-     2,
-     33,
-     7,
-     78,
-     6,
-     100,
-     5,
-     83,
-     6,
-     75,
-     4,
-     100,
-     8,
-     100
-    ]
-   },
-   "internshipMatchedPct": 100,
-   "internshipMatchedN": 8,
-   "internshipSought": 8,
-   "anyInternshipPct": 100,
-   "medianYears": 6.0
-  },
-  "depaul-university-phd": {
-   "source": "https://dpu-p-001.sitecorecontenthub.cloud/api/public/content/ef6232f6abb047439f09e621143a11e1?v=3d0eca37",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "florida-institute-of-technology-psyd": {
-   "source": "https://www.fit.edu/psychology/academics-and-learning/clinical-psychology/clinical-psychology-psyd-program-data/",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     16,
-     89,
-     20,
-     100,
-     16,
-     94,
-     23,
-     100,
-     22,
-     96,
-     18,
-     90,
-     18,
-     100,
-     16,
-     100,
-     12,
-     86,
-     12,
-     86
-    ],
-    "any_internship": [
-     17,
-     94,
-     20,
-     100,
-     16,
-     94,
-     23,
-     100,
-     22,
-     96,
-     18,
-     90,
-     18,
-     100,
-     16,
-     100,
-     13,
-     93,
-     13,
-     93
-    ],
-    "sought_internship": [
-     8,
-     20,
-     17,
-     23,
-     23,
-     20,
-     18,
-     16,
-     14,
-     14
-    ],
-    "median_years": [
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     3,
-     18,
-     22,
-     92,
-     20,
-     91,
-     22,
-     96,
-     21,
-     100
-    ]
-   },
-   "internshipMatchedPct": 86,
-   "internshipMatchedN": 12,
-   "internshipSought": 14,
-   "anyInternshipPct": 93,
-   "medianYears": 5
-  },
-  "george-fox-university-psyd": {
-   "source": "https://www.georgefox.edu/psyd/Student-Admissions-Outcomes-and-Other-Data.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "idaho-state-university-phd": {
-   "source": "https://www.isu.edu/media/libraries/psychology/Student-Admissions,-Outcomes-and-Other-Data-Fall-2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     7,
-     100,
-     3,
-     100,
-     3,
-     100,
-     5,
-     100,
-     6,
-     100,
-     5,
-     100,
-     8,
-     100,
-     3,
-     100,
-     6,
-     100,
-     7,
-     100
-    ],
-    "any_internship": [
-     7,
-     100,
-     3,
-     100,
-     3,
-     100,
-     5,
-     100,
-     6,
-     100,
-     5,
-     100,
-     8,
-     100,
-     3,
-     100,
-     6,
-     100,
-     7,
-     100
-    ],
-    "sought_internship": [
-     7,
-     100,
-     3,
-     100,
-     3,
-     100,
-     5,
-     100,
-     6,
-     100,
-     5,
-     100,
-     8,
-     100,
-     3,
-     100,
-     6,
-     100,
-     7,
-     100
-    ]
-   },
-   "anyInternshipPct": 100
-  },
-  "indiana-university-bloomington-phd": {
-   "source": "https://psych.indiana.edu/documents/student-admissions-outcomes-and-other-data-2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     127,
-     86,
-     96,
-     89,
-     96,
-     121,
-     119,
-     123,
-     108,
-     156
-    ],
-    "offers": [
-     5,
-     4,
-     8,
-     9,
-     7,
-     9,
-     1,
-     2,
-     8,
-     7
-    ],
-    "matriculated": [
-     4,
-     2,
-     4,
-     3,
-     4,
-     9,
-     1,
-     2,
-     5,
-     5
-    ],
-    "any_internship": [
-     4,
-     100,
-     2,
-     100,
-     3,
-     100,
-     2,
-     100,
-     5,
-     100,
-     1,
-     100,
-     5,
-     100,
-     4,
-     100,
-     1,
-     100,
-     9,
-     90
-    ],
-    "sought_internship": [
-     4,
-     2,
-     3,
-     2,
-     5,
-     1,
-     5,
-     4,
-     1,
-     10,
-     2016,
-     -2017,
-     2017,
-     -2018,
-     2025,
-     -20262024,
-     -20252022,
-     -2023,
-     2023,
-     -2024
-    ]
-   },
-   "applicants": 156,
-   "offers": 7,
-   "acceptanceRate": 4.5,
-   "anyInternshipPct": 90
-  },
-  "la-salle-university-psyd": {
-   "source": "https://www.lasalle.edu/wp-content/uploads/2026/09/2026-Stats-for-the-web-page-9-2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "michigan-school-of-psychology-psyd": {
-   "source": "https://msp.edu/wp-content/uploads/2025/09/2024_c-26d-Student_Admissions_Outcomes_Data.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     2,
-     17,
-     4,
-     27,
-     11,
-     69,
-     14,
-     100,
-     14,
-     100,
-     19,
-     100,
-     6,
-     75
-    ],
-    "any_internship": [
-     15,
-     100,
-     9,
-     100,
-     12,
-     92,
-     11,
-     92,
-     15,
-     100,
-     16,
-     100,
-     14,
-     100,
-     14,
-     100,
-     19,
-     100,
-     8,
-     100
-    ],
-    "sought_internship": [
-     15,
-     9,
-     13,
-     12,
-     15,
-     16,
-     14,
-     14,
-     19,
-     8
-    ],
-    "median_years": [
-     4.5,
-     4.5,
-     5.3,
-     4.5,
-     5,
-     4.5,
-     4,
-     5,
-     4.3,
-     4.5,
-     4.5
-    ]
-   },
-   "internshipMatchedPct": 75,
-   "internshipMatchedN": 6,
-   "internshipSought": 8,
-   "anyInternshipPct": 100,
-   "medianYears": 4.5
-  },
-  "mississippi-state-university-phd": {
-   "source": "https://mstate-my.sharepoint.com/:x:/g/personal/jb2982_msstate_edu/IQD_gbO42O6lTqTdBx_FsIYYAVgzAvonlWK5nrDzlcupdqY?e=POlZvW",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "no usable text (likely a scan)"
-  },
-  "northwestern-university-phd": {
-   "source": "https://www.psychiatry.northwestern.edu/docs/students-admissions-outcomes-data-2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "pacific-university-phd": {
-   "source": "https://pacificu.app.box.com/file/2260280723845?s=rxnsezrb6h3x1eizk2zxzqar012kuuaq",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "no usable text (likely a scan)"
-  },
-  "pacific-university-oregon-psyd": {
-   "source": "https://pacificu.app.box.com/s/7woxwruta26uk3v70ggeelcaaqc18h6c",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "no usable text (likely a scan)"
-  },
-  "roosevelt-university-psyd": {
-   "source": "https://www.roosevelt.edu/sites/default/files/files/pdfs/college-cas/PsyDrequireddata.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     19,
-     100,
-     23,
-     100,
-     15,
-     100,
-     15,
-     100,
-     20,
-     19,
-     100,
-     23,
-     100,
-     15,
-     100,
-     15,
-     100,
-     20,
-     17,
-     85
-    ],
-    "any_internship": [
-     19,
-     100,
-     23,
-     100,
-     15,
-     100,
-     15,
-     100,
-     20,
-     19,
-     100,
-     23,
-     100,
-     15,
-     100,
-     15,
-     100,
-     20,
-     18,
-     90
-    ],
-    "sought_internship": [
-     19,
-     23,
-     15,
-     15,
-     21,
-     19,
-     23,
-     15,
-     15,
-     21,
-     20
-    ],
-    "median_years": [
-     5,
-     5,
-     5,
-     5,
-     6,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-    ],
-    "still_enrolled": [
-     2,
-     11,
-     0,
-     0,
-     9,
-     45,
-     18,
-     90,
-     19,
-     95,
-     23,
-     96,
-     24,
-     88,
-     18,
-     90,
-     20,
-     100,
-     29,
-     100
-    ]
-   },
-   "internshipMatchedPct": 85,
-   "internshipMatchedN": 17,
-   "internshipSought": 20,
-   "anyInternshipPct": 90,
-   "medianYears": 5
-  },
-  "rowan-university-phd": {
-   "source": "https://csm.rowan.edu/departments/psychology/academic-programs/graduate/phd-clinical-psych/data.html",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "southern-illinois-university-carbondale-phd": {
-   "source": "https://academics.siu.edu/human-behavioral/_common/documents/psychology/doctoral/clinical/clinical-student-admissions.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "any_internship": [
-     4,
-     100,
-     6,
-     100,
-     4,
-     67,
-     7,
-     100,
-     3,
-     100,
-     8,
-     100,
-     4,
-     100,
-     6,
-     100,
-     4,
-     100,
-     7,
-     100
-    ]
-   },
-   "anyInternshipPct": 100
-  },
-  "texas-tech-university-phd": {
-   "source": "https://www.depts.ttu.edu/psy/clinical/files/ClinicalStudentAdmissionsOutcomesData2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     51004100111005100910041006100110051005100
-    ],
-    "any_internship": [
-     51004100111005100910041006100110051005100
-    ],
-    "sought_internship": [
-     4,
-     11,
-     5,
-     9,
-     4,
-     6,
-     1,
-     5,
-     5
-    ],
-    "median_years": [
-     6,
-     6.5,
-     6,
-     6,
-     6,
-     6,
-     6,
-     6.5,
-     7,
-     6,
-     6
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     114.2857146,
-     10010,
-     1006,
-     75,
-     7,
-     1005,
-     100
-    ]
-   },
-   "medianYears": 6
-  },
-  "university-of-alabama-at-birmingham-phd": {
-   "source": "https://www.uab.edu/cas/psychology/images/Documents/graduate/Disclosure.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     173,
-     202,
-     177,
-     183,
-     145,
-     156,
-     240,
-     175,
-     199,
-     260,
-     1,
-     910
-    ]
-   }
-  },
-  "university-of-alaska-anchorage-phd": {
-   "source": "https://www.uaa.alaska.edu/academics/college-of-arts-and-sciences/departments/psychology/academic-programs/graduate/phd/student-admissions-outcomes-and-other-data.cshtml",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "applicants": [
-     37,
-     34,
-     35,
-     35,
-     35,
-     35,
-     27,
-     33,
-     38,
-     37
-    ],
-    "matriculated": [
-     0,
-     5,
-     5,
-     5,
-     5,
-     2,
-     3,
-     4,
-     4,
-     4
-    ],
-    "accredited_internships": [
-     100,
-     7,
-     100,
-     6,
-     80,
-     4,
-     100,
-     2,
-     100,
-     3,
-     100,
-     5,
-     100,
-     5,
-     100,
-     2,
-     100,
-     5,
-     100,
-     6
-    ],
-    "any_internship": [
-     100,
-     7,
-     100,
-     6,
-     100,
-     5,
-     100,
-     2,
-     100,
-     3,
-     100,
-     5,
-     100,
-     5,
-     100,
-     2,
-     100,
-     5,
-     100,
-     6
-    ],
-    "sought_internship": [
-     7,
-     6,
-     5,
-     2,
-     3,
-     5,
-     5,
-     2,
-     5,
-     6
-    ],
-    "median_years": [
-     7,
-     8,
-     7,
-     8,
-     11,
-     8,
-     10,
-     8,
-     7,
-     7,
-     8
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     20,
-     1,
-     0,
-     0,
-     20,
-     1,
-     80,
-     4,
-     100,
-     2,
-     100,
-     3,
-     75,
-     3,
-     83,
-     5,
-     100,
-     4
-    ]
-   },
-   "anyInternshipPct": 6,
-   "medianYears": 8
-  },
-  "university-of-new-mexico-phd": {
-   "source": "https://psych.unm.edu/graduate/applicant-information/c-26-2023-2024.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "any_internship": [
-     3,
-     100,
-     8,
-     100,
-     6,
-     100,
-     4,
-     100,
-     8,
-     100,
-     6,
-     100,
-     4,
-     100,
-     4,
-     100,
-     3,
-     100
-    ],
-    "sought_internship": [
-     3,
-     8,
-     6,
-     4,
-     8,
-     6,
-     4,
-     4,
-     3
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     1,
-     33,
-     4,
-     80,
-     0,
-     0,
-     7,
-     100,
-     8,
-     89,
-     4,
-     100,
-     5,
-     100,
-     4,
-     100
-    ]
-   },
-   "anyInternshipPct": 100
-  },
-  "university-of-north-dakota-phd": {
-   "source": "https://arts-sciences.und.edu/academics/psychology/clinical/_files/docs/und-clinical-psych-outcome-data-2024-25.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "rows": {
-    "any_internship": [
-     5,
-     100,
-     7,
-     100,
-     3,
-     100,
-     9,
-     90,
-     4,
-     100,
-     6,
-     100,
-     9,
-     100,
-     4,
-     100,
-     6,
-     100,
-     2,
-     67
-    ],
-    "sought_internship": [
-     5,
-     100,
-     7,
-     100,
-     3,
-     100,
-     10,
-     100,
-     4,
-     100,
-     6,
-     100,
-     9,
-     100,
-     4,
-     100,
-     6,
-     100,
-     3,
-     100
-    ]
-   },
-   "anyInternshipPct": 67
-  },
-  "university-of-san-francisco-psyd": {
-   "source": "https://myusf.usfca.edu/nursing/accreditation",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     7,
-     70,
-     8,
-     80,
-     8,
-     89,
-     6,
-     75,
-     13,
-     100,
-     7,
-     78,
-     11,
-     79,
-     7,
-     70,
-     11,
-     85,
-     17,
-     89
-    ],
-    "any_internship": [
-     10,
-     100,
-     10,
-     100,
-     9,
-     100,
-     7,
-     88,
-     13,
-     100,
-     9,
-     100,
-     14,
-     100,
-     10,
-     100,
-     11,
-     85,
-     19,
-     100
-    ],
-    "sought_internship": [
-     0,
-     100,
-     10,
-     100,
-     9,
-     100,
-     8,
-     100,
-     13,
-     100,
-     9,
-     100,
-     14,
-     100,
-     10,
-     100,
-     11,
-     85,
-     19,
-     100
-    ],
-    "median_years": [
-     0,
-     5,
-     5,
-     5.66,
-     6,
-     6,
-     6,
-     6,
-     5,
-     5,
-     5.66
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     2,
-     14.29,
-     0,
-     0,
-     6,
-     27.27,
-     17,
-     80.95,
-     20,
-     83.33,
-     23,
-     92,
-     0,
-     0
-    ]
-   },
-   "anyInternshipPct": 100,
-   "medianYears": 5.66
-  },
-  "university-of-washington-phd": {
-   "source": "https://psych.uw.edu/graduate/areas/clinical/admissions",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "washington-university-in-st-louis-phd": {
-   "source": "https://apnews.com/article/study-strategies-longterm-memory-cramming-b42ae895d418351dcfd001747869c21c?utm_source=newsletter&amp;utm_medium=email&amp;utm_content=Cramming%20for%20exams%3F%20Experts%20weigh%20in%20on%20how%20to%20study%20better&amp;utm_campaign=Record%2010-2-26",
-   "shape": null,
-   "read": "2026-09-26",
-   "note": "fetch failed: HTTP Error 403: Forbidden"
-  },
-  "west-chester-university-of-pennsylvania-psyd": {
-   "source": "https://www.wcupa.edu/sciences-mathematics/psychology/PsyD/documents/Student-Admissions-outcomes-and-other-data-2026.pdf",
-   "shape": "pdf",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
-  },
-  "william-paterson-university-psyd": {
-   "source": "https://www.wpunj.edu/cohss/departments/psychology/psyd/student-admissions-outcomes-and-other-data.html",
-   "shape": "web",
-   "read": "2026-09-26",
-   "rows": {
-    "accredited_internships": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     4,
-     100,
-     8,
-     100,
-     6,
-     75,
-     6,
-     86,
-     9,
-     82,
-     8,
-     80,
-     9,
-     90,
-     6,
-     75
-    ],
-    "any_internship": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     4,
-     100,
-     8,
-     100,
-     8,
-     100,
-     7,
-     100,
-     11,
-     100,
-     8,
-     80,
-     10,
-     100,
-     6,
-     75
-    ],
-    "sought_internship": [
-     0,
-     0,
-     4,
-     8,
-     8,
-     7,
-     11,
-     10,
-     10,
-     8
-    ],
-    "median_years": [
-     0,
-     0,
-     0,
-     0,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5,
-     5
-    ],
-    "still_enrolled": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     2,
-     17,
-     9,
-     82,
-     9,
-     90,
-     10,
-     100,
-     10,
-     100,
-     10,
-     100,
-     10,
-     100
-    ]
-   },
-   "internshipMatchedPct": 75,
-   "internshipMatchedN": 6,
-   "internshipSought": 8,
-   "anyInternshipPct": 75,
-   "medianYears": 5
-  },
-  "university-of-minnesota-phd": {
-   "source": "https://apps.grad.umn.edu/stats/ad/1081200.shtml",
-   "shape": "web",
-   "read": "2026-09-26",
-   "note": "table labels not found in the text"
   }
  }
 }
