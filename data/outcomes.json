@@ -8888,6 +8888,369 @@
    "shape": "web",
    "read": "2026-09-26",
    "note": "table labels not found in the text"
+  },
+  "usc-clinical": {
+   "source": "https://dornsife.usc.edu/psyc/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "duke-university-phd": {
+   "source": "http://psychandneuro.duke.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "rows": {
+    "applicants": [
+     328,
+     341,
+     289,
+     286,
+     310,
+     267,
+     370
+    ],
+    "offers": [
+     7,
+     4,
+     7,
+     10,
+     8,
+     4,
+     6
+    ]
+   },
+   "applicants": 370,
+   "offers": 6,
+   "acceptanceRate": 1.6
+  },
+  "illinois-institute-of-technology-phd": {
+   "source": "https://www.iit.edu/psychology/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "long-island-university-phd": {
+   "source": "https://liu.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "national-university-j-fk-school-of-psychology-psyd": {
+   "source": "https://www.nu.edu/student-admissions-outcomes-and-other-data",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "accredited_internships": [
+     3,
+     13,
+     2,
+     9,
+     2,
+     7,
+     5,
+     15,
+     7,
+     23,
+     7,
+     50
+    ],
+    "any_internship": [
+     21,
+     88,
+     20,
+     87,
+     18,
+     67,
+     25,
+     76,
+     30,
+     97,
+     14,
+     100
+    ],
+    "sought_internship": [
+     24,
+     23,
+     27,
+     33,
+     31,
+     14
+    ]
+   },
+   "internshipMatchedPct": 50,
+   "internshipMatchedN": 7,
+   "internshipSought": 14,
+   "anyInternshipPct": 100
+  },
+  "nova-southeastern-university-phd": {
+   "source": "https://psychology.nova.edu/_resources/binaries/graduate/clinical-psychology/phd/c-26d-phd-psyd-student-admissions-outcomes-and-other-data-2020.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "accredited_internships": [
+     14,
+     78,
+     10,
+     50,
+     11,
+     69,
+     11,
+     73,
+     8,
+     89,
+     5,
+     100,
+     9,
+     100,
+     9,
+     100,
+     12,
+     133,
+     7,
+     64
+    ],
+    "any_internship": [
+     16,
+     89,
+     15,
+     75,
+     13,
+     81,
+     13,
+     87,
+     9,
+     100,
+     5,
+     100,
+     9,
+     100,
+     9,
+     82,
+     12,
+     92,
+     7,
+     88
+    ],
+    "sought_internship": [
+     18,
+     100,
+     20,
+     100,
+     16,
+     100,
+     15,
+     100,
+     9,
+     100,
+     5,
+     100,
+     9,
+     100,
+     11,
+     100,
+     13,
+     100,
+     8,
+     100
+    ],
+    "median_years": [
+     6
+    ]
+   },
+   "anyInternshipPct": 88,
+   "medianYears": 6
+  },
+  "nova-southeastern-university-psyd": {
+   "source": "https://psychology.nova.edu/_resources/binaries/graduate/clinical-psychology/phd/c-26d-phd-psyd-student-admissions-outcomes-and-other-data-2020.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "accredited_internships": [
+     14,
+     78,
+     10,
+     50,
+     11,
+     69,
+     11,
+     73,
+     8,
+     89,
+     5,
+     100,
+     9,
+     100,
+     9,
+     100,
+     12,
+     133,
+     7,
+     64
+    ],
+    "any_internship": [
+     16,
+     89,
+     15,
+     75,
+     13,
+     81,
+     13,
+     87,
+     9,
+     100,
+     5,
+     100,
+     9,
+     100,
+     9,
+     82,
+     12,
+     92,
+     7,
+     88
+    ],
+    "sought_internship": [
+     18,
+     100,
+     20,
+     100,
+     16,
+     100,
+     15,
+     100,
+     9,
+     100,
+     5,
+     100,
+     9,
+     100,
+     11,
+     100,
+     13,
+     100,
+     8,
+     100
+    ],
+    "median_years": [
+     6
+    ]
+   },
+   "anyInternshipPct": 88,
+   "medianYears": 6
+  },
+  "pepperdine-university-psyd": {
+   "source": "https://gsep.pepperdine.edu/doctorate-clinical-psychology/content/student-admissions-outcomes-and-data-new.pdf",
+   "shape": "pdf",
+   "read": "2026-09-26",
+   "rows": {
+    "any_internship": [
+     22,
+     85,
+     28,
+     93,
+     22,
+     76,
+     22,
+     88,
+     32,
+     91,
+     32,
+     91,
+     22,
+     79,
+     31,
+     97,
+     31,
+     91,
+     26,
+     96
+    ],
+    "sought_internship": [
+     26,
+     30,
+     29,
+     25,
+     35,
+     35,
+     28,
+     32,
+     34,
+     27
+    ]
+   },
+   "anyInternshipPct": 96
+  },
+  "regent-university-psyd": {
+   "source": "https://www.regent.edu/school-of-psychology-and-counseling/about/student-admissions-outcomes-data-doctoral-program-clinical-psychology-psy-d/c-26-public-disclosure/",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-denver-psyd": {
+   "source": "https://www.du.edu/admissions-outcomes-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-maine-phd": {
+   "source": "https://umaine.edu/psychology/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-missouri-st-louis-phd": {
+   "source": "https://www.umsl.edu/psychology/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-north-carolina-wilmington-phd": {
+   "source": "https://uncw.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-rhode-island-phd": {
+   "source": "https://web.uri.edu/psychology/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-tennessee-knoxville-phd": {
+   "source": "https://psychology.utk.edu/graduate-students/student-admissions-outcomes-and-other-data/",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-texas-rio-grande-valley-phd": {
+   "source": "https://www.utrgv.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-toledo-phd": {
+   "source": "https://www.utoledo.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-wyoming-phd": {
+   "source": "https://www.uwyo.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "w-post-campus-psyd": {
+   "source": "https://liu.edu/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
+  },
+  "university-of-missouri-phd": {
+   "source": "https://psychology.missouri.edu/grad/student-admissions-outcomes-and-other-data",
+   "shape": "web",
+   "read": "2026-09-26",
+   "note": "table labels not found in the text"
   }
  }
 }

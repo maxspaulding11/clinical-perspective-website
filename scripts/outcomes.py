@@ -385,7 +385,53 @@ def find_links(programs, workers=4, deep=True):
             for href2, label2 in anchors(html2, parent):
                 if LINK.search(label2) or LINK.search(href2):
                     return p["id"], href2, f"via parent -{up}"
-        return p["id"], None, f"nothing, {len(hops[:4])} hop(s) and 3 parents"
+        # Ask the site for its own index.
+        #
+        # Most of what is left is not missing a disclosure page -- it is a
+        # page nothing links to from where we start. Duke publishes
+        # /student-admissions-outcomes-and-other-data and links it from
+        # nowhere near the admitting-faculty page programs.json points at,
+        # but its sitemap lists it plainly.
+        root = f"{parts.scheme}://{parts.netloc}/"
+        for sm in ("sitemap.xml", "sitemap_index.xml"):
+            try:
+                raw = fetch(urllib.parse.urljoin(root, sm),
+                            timeout=20, tries=1).decode("utf-8", "replace")
+            except Exception:
+                continue
+            locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", raw)
+            # A short sitemap is usually an index of other sitemaps; follow
+            # one level, which is where USC and Adler keep their real lists.
+            nested = [u for u in locs if u.lower().endswith(".xml")][:5]
+            for n in nested:
+                try:
+                    sub = fetch(n, timeout=20, tries=1).decode("utf-8", "replace")
+                    locs += re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", sub)
+                except Exception:
+                    pass
+            for u in locs:
+                if LINK.search(u):
+                    return p["id"], u, "via sitemap"
+            if locs:
+                break
+
+        # Finally, guess the slug. It is APA's own heading, so programs that
+        # build a page for it tend to name it the same way.
+        for slug in ("student-admissions-outcomes-and-other-data",
+                     "student-admissions-outcomes-data",
+                     "student-admissions-outcomes",
+                     "admissions-outcomes-other-data"):
+            for base in (root, urllib.parse.urlunsplit(
+                    (parts.scheme, parts.netloc,
+                     "/" + "/".join(segs[:1]) + "/" if segs else "/", "", ""))):
+                guess = urllib.parse.urljoin(base, slug)
+                try:
+                    r = fetch(guess, timeout=15, tries=1)
+                except Exception:
+                    continue
+                if len(r) > 2000:
+                    return p["id"], guess, "via guessed slug"
+        return p["id"], None, "nothing: hops, parents, sitemap and slugs"
 
     found, why = {}, {}
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:
