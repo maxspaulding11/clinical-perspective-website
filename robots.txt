@@ -1,4 +1,19 @@
+# Crawlers are welcome on the pages. They are not welcome on the data files
+# behind them, which is where the bandwidth goes.
+#
+# data/professors.json is 229KB gzipped, programs.json 79KB and star-map.json
+# 14KB. A crawler that fetches all three gets 322KB of JSON whose contents are
+# already in the HTML it just read -- the professor list, the tracker and the
+# save-button map are all pre-rendered. The browser still fetches them, because
+# robots.txt binds crawlers and not scripts, so nothing on the site changes.
+#
+# Added after Netlify returned usage_exceeded and took the whole site down on
+# 8 October 2026.
+
 User-agent: *
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /media/
 Allow: /
 
 Sitemap: https://theclinicalperspective.org/sitemap.xml
