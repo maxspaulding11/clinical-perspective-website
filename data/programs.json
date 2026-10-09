@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-05",
+ "updated": "2026-10-09",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -239,7 +239,7 @@
    "url": "https://clinicalpsych.unc.edu/for-applicants/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-10-09",
    "sourceQuote": "Faculty who plan to admit students for Fall 2027 entry to the UNC clinical psychology doctoral program are listed below. Please note that offers are linked to evolving funding opportunities and may shift as we approach the spring semester. We will update this list if things change.",
    "accepting": [
     "Andrea Hussong",
@@ -247,11 +247,10 @@
     "Stacey Daughters"
    ],
    "maybe": [
-    "Jamilah Silver",
     "Tom Rodebaugh"
    ],
    "notAccepting": [],
-   "note": "Three names on the page are marked '(maybe)' and are recorded as undecided rather than confirmed.",
+   "note": "Rechecked 2026-10-09: the list is now Hussong, Jones and Daughters, plus Tom Rodebaugh marked '(maybe)' and recorded as undecided. Jamilah Silver, previously listed as a maybe, is no longer on the page.",
    "pcsas": true,
    "applicationDeadline": "TBD",
    "deadlineCycle": "2027 admissions",
@@ -1030,12 +1029,14 @@
    "url": "https://www.bgsu.edu/arts-and-sciences/psychology/graduate-program/clinical/clinical-psychology-faculty.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-09",
    "sourceQuote": "*recruiting new students for Fall 2027",
    "accepting": [
     "Abby Braden",
     "Annette Mahoney",
-    "Rebecca (Becca) Campbell"
+    "Rebecca (Becca) Campbell",
+    "Caroline Kaufman",
+    "Jordyn Tipsword"
    ],
    "maybe": [],
    "notAccepting": [
@@ -1046,7 +1047,7 @@
     "Kenneth Pargament",
     "William O'Brien"
    ],
-   "note": "Faculty list page marks recruiting faculty with an asterisk keyed to the footnote 'recruiting new students for Fall 2027'; unmarked faculty were placed in notAccepting since the page's own asterisk convention is binary (marked=recruiting, unmarked=not). Kenneth Pargament is listed as Emeritus.",
+   "note": "Faculty list page marks recruiting faculty with an asterisk keyed to the footnote 'recruiting new students for Fall 2027'; unmarked faculty were placed in notAccepting since the page's own asterisk convention is binary (marked=recruiting, unmarked=not). Kenneth Pargament is listed as Emeritus. Rechecked 2026-10-09 (page stamped 'Updated: 10/08/2026'): Caroline Kaufman (Spirituality & Health) and Jordyn Tipsword (Health) now carry the recruiting asterisk, in addition to Braden, Campbell and Mahoney.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
@@ -1319,7 +1320,7 @@
    "url": "https://psychsciences.case.edu/graduate/clinical-psych/admissions-information/accepting-students/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-25",
+   "checked": "2026-10-09",
    "sourceQuote": "The faculty listed below have indicated their current plans for recruiting a new Clinical Psychology PhD student who would begin in Fall 2027. Plans may change during the admissions cycle. (Info last updated 9/24/2026)",
    "accepting": [
     "Alison Athey",
@@ -1330,11 +1331,9 @@
     "Stacy R. Ryan-Pettes",
     "Wilson Brown"
    ],
-   "maybe": [
-    "Rita Obeid"
-   ],
+   "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1. The page, titled 'Clinical Faculty Recruitment for Fall 2027', splits faculty into 'Expect to consider applicants' (Athey, Brown, Capps, Connell, Feeny, Ryan-Pettes, Przeworski), recorded as accepting, and 'May consider applicants (These faculty members have not yet made a final decision about recruiting a student for Fall 2027...)' (Rita Obeid), recorded as maybe. The page also carries a general 'Plans may change during the admissions cycle'; the page itself draws the firm/tentative line, so that split is followed rather than treating the whole list as a maybe. Alison Athey is new relative to the Fall 2026 list read on 9 September. Capps and Ryan-Pettes are spelled as in our faculty data (the page has 'Elizabeth Capps' and 'Stacy Ryan-Pettes') so their profile links resolve.",
+   "note": "Deadline: December 1. The page, titled 'Clinical Faculty Recruitment for Fall 2027', splits faculty into 'Expect to consider applicants' (Athey, Brown, Capps, Connell, Feeny, Ryan-Pettes, Przeworski), recorded as accepting, and 'May consider applicants (These faculty members have not yet made a final decision about recruiting a student for Fall 2027...)' (Rita Obeid), recorded as maybe. The page also carries a general 'Plans may change during the admissions cycle'; the page itself draws the firm/tentative line, so that split is followed rather than treating the whole list as a maybe. Alison Athey is new relative to the Fall 2026 list read on 9 September. Capps and Ryan-Pettes are spelled as in our faculty data (the page has 'Elizabeth Capps' and 'Stacy Ryan-Pettes') so their profile links resolve. Rechecked 2026-10-09: the 'May consider applicants' section, which held only Rita Obeid, is no longer on the page. She is taken off the list rather than recorded as not accepting, because the page says nothing about her either way.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -4389,7 +4388,7 @@
    "url": "https://psychology.sdsu.edu/doctoral/clinical/mentorships/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-10-09",
    "sourceQuote": "Faculty Interested in Taking a Student for Fall 2027 [listed by area: Behavioral Medicine, Experimental Psychopathology, Neuropsychology]",
    "accepting": [
     "Nader Amir",
@@ -4411,11 +4410,12 @@
     "William Pelham",
     "Miguel Villodas",
     "Natasha Wade",
-    "Christina Wierenga"
+    "Christina Wierenga",
+    "Cory Weissman"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The page groups faculty by area and cross-lists several across two or three of them, so the twenty here are the distinct names rather than the count of rows. Five have been added since this was last read -- Lisa Eyler, Jessica Montoya, Igor Grant, Nader Amir, Mariana Cherner and Jennifer Iudicello -- and Charles Taylor has come off. The program's own caveat: the list is subject to change and should be re-checked before applying.",
+   "note": "The page groups faculty by area and cross-lists several across two or three of them, so the twenty here are the distinct names rather than the count of rows. Five have been added since this was last read -- Lisa Eyler, Jessica Montoya, Igor Grant, Nader Amir, Mariana Cherner and Jennifer Iudicello -- and Charles Taylor has come off. The program's own caveat: the list is subject to change and should be re-checked before applying. Rechecked 2026-10-09: Cory Weissman (M.D., Ph.D.) has been added under Experimental Psychopathology, making 21 distinct names.",
    "applicationDeadline": "November 15, 2026",
    "deadlineCycle": "Fall 2027 admission",
    "greRequired": "not accepted",
@@ -5308,11 +5308,12 @@
    "url": "https://arts-sciences.buffalo.edu/psychology/graduate/admissions.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Select a faculty research mentor: PhD applicants must list at least one of the following faculty members in the \"Enrollment Information\" section under Faculty member(s) you would like as a mentor. This helps us match you with a research mentor who aligns with your interests. Only the following faculty are accepting students for this application cycle. FOR FALL 2027 ADMISSION",
+   "checked": "2026-10-09",
+   "sourceQuote": "Only the following faculty are accepting students for this application cycle. For Fall 2027 Admission Rebecca Ashare Hollen Reischer Leonard Simms",
    "accepting": [
     "Leonard Simms",
-    "Rebecca Ashare"
+    "Rebecca Ashare",
+    "Hollen Reischer"
    ],
    "maybe": [],
    "notAccepting": [],
@@ -5330,7 +5331,8 @@
     "Must list a faculty mentor of interest"
    ],
    "appInfoSourceUrl": "https://arts-sciences.buffalo.edu/psychology/graduate/admissions.html",
-   "appInfoChecked": "2026-08-18"
+   "appInfoChecked": "2026-08-18",
+   "note": "Rechecked 2026-10-09: Hollen Reischer has been added. The admissions page has a collapsible section per programme. This list is the one under 'PhD in Clinical Psychology'. A separate MA list further down names Anzman-Frasca and Benedict under Clinical Psychology, but it is for the MA, so it is not counted here."
   },
   {
    "id": "university-of-alabama-at-birmingham-phd",
@@ -8275,11 +8277,10 @@
    "url": "https://psychology.wvu.edu/graduate-students/ph-d-in-psychology-clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-09",
    "sourceQuote": "Seeking a student for the Fall 2027 admissions cycle",
    "accepting": [
     "Elisa Krackow",
-    "Hannah Rea",
     "Hilary DeShong",
     "Kevin Larkin",
     "Michelle Roley-Roberts"
@@ -8288,9 +8289,10 @@
    "notAccepting": [
     "Amy Fiske",
     "Barry Edelstein",
-    "Janelle Heddings"
+    "Janelle Heddings",
+    "Hannah Rea"
    ],
-   "note": "The department's list was previously Fall-2025-labeled and stale, and a 2026-08-17 recheck could not independently verify (HTTP 403) while disagreeing with the old note on Janelle Heddings's status. A 2026-08-24 recheck independently accessed the page again and found an explicit 'Fall 2027' cycle label, again classifying Heddings as not accepting — consistent with the 08-17 finding and resolving the earlier conflict. Direct WebFetch verification is still blocked by the site (403), but two independent agent visits a week apart now agree, so this is published as posted.",
+   "note": "The department's list was previously Fall-2025-labeled and stale, and a 2026-08-17 recheck could not independently verify (HTTP 403) while disagreeing with the old note on Janelle Heddings's status. A 2026-08-24 recheck independently accessed the page again and found an explicit 'Fall 2027' cycle label, again classifying Heddings as not accepting — consistent with the 08-17 finding and resolving the earlier conflict. Direct WebFetch verification is still blocked by the site (403), but two independent agent visits a week apart now agree, so this is published as posted. Rechecked 2026-10-09: Hannah Rea is now marked 'Not accepting a student for the Fall 2027 admissions cycle' and has moved to not accepting.",
    "applicationDeadline": null,
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -8561,7 +8563,7 @@
    "url": "https://cla.umn.edu/psychology/graduate/how-apply/faculty-considering-new-advisees",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-09",
    "sourceQuote": "The Psychology PhD program requires all applicants to identify a prospective advisor from the faculty listed as considering accepting advisees in the area of specialization they are applying to.",
    "accepting": [
     "Angus MacDonald",
@@ -8570,12 +8572,13 @@
     "Monica Luciana",
     "Robert Krueger",
     "Scott Vrieze",
-    "Shmuel Lissek",
     "Whitney Ringwald"
    ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "(Roster listed this school's name with a garbled \"Withdrawn, effective ...\" prefix — confirmed this is stray text from an adjacent row in the source PDF, not an actual accreditation withdrawal; this program's accreditation is active.) The roster 'school' field carries an apparent parsing artifact ('Withdrawn, effective October 19, 2024...') prefixed onto the name; this program's APA accreditation does not appear to actually be withdrawn (an active, current faculty-advisees page for the Fall 2027 cycle exists), so this is very likely stray text from an adjacent row in the source roster. Substantively: this is a single department-wide 'Faculty Considering New Advisees' page covering multiple PhD areas (Clinical Science and Psychopathology Research (CSPR), Cognitive and Brain Sciences, Counseling Psychology, Personality/Individual Differences/Behavior Genetics, and Social Psychology) that share one faculty roster. I isolated the CSPR (clinical) faculty only. Excluded as non-clinical: Fletcher (Randy) Charles, Gordon Legge, Paul Schrater (Cognitive and Brain Sciences); Richard M. Lee (Counseling Psychology); Matt McGue (Personality/Individual Differences/Behavior Genetics); Eugene Borgida, Christopher Federico, Alexander Rothman, Jeffry Simpson (Social Psychology) -- all listed on the same page as NOT accepting new advisees, but not in the Clinical Science area. The page explicitly disambiguates the cycle: 'the applications cycle due in Fall [2026] to begin the PhD in Fall 2027' equivalent framing -- page states this is 'as of now' for the current cycle leading to Fall 2027 matriculation.",
+   "notAccepting": [
+    "Shmuel Lissek"
+   ],
+   "note": "(Roster listed this school's name with a garbled \"Withdrawn, effective ...\" prefix — confirmed this is stray text from an adjacent row in the source PDF, not an actual accreditation withdrawal; this program's accreditation is active.) The roster 'school' field carries an apparent parsing artifact ('Withdrawn, effective October 19, 2024...') prefixed onto the name; this program's APA accreditation does not appear to actually be withdrawn (an active, current faculty-advisees page for the Fall 2027 cycle exists), so this is very likely stray text from an adjacent row in the source roster. Substantively: this is a single department-wide 'Faculty Considering New Advisees' page covering multiple PhD areas (Clinical Science and Psychopathology Research (CSPR), Cognitive and Brain Sciences, Counseling Psychology, Personality/Individual Differences/Behavior Genetics, and Social Psychology) that share one faculty roster. I isolated the CSPR (clinical) faculty only. Excluded as non-clinical: Fletcher (Randy) Charles, Gordon Legge, Paul Schrater (Cognitive and Brain Sciences); Richard M. Lee (Counseling Psychology); Matt McGue (Personality/Individual Differences/Behavior Genetics); Eugene Borgida, Christopher Federico, Alexander Rothman, Jeffry Simpson (Social Psychology) -- all listed on the same page as NOT accepting new advisees, but not in the Clinical Science area. The page explicitly disambiguates the cycle: 'the applications cycle due in Fall [2026] to begin the PhD in Fall 2027' equivalent framing -- page states this is 'as of now' for the current cycle leading to Fall 2027 matriculation. Rechecked 2026-10-09: the CSPR table now answers 'No' for Shmuel Lissek, so he has moved to not accepting.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
