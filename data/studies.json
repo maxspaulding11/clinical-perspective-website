@@ -1438,5 +1438,21 @@
     "doi": "10.1001/jamanetworkopen.2026.35834",
     "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35834",
     "instagram": ""
+  },
+  {
+    "slug": "psychodynamic-therapy-for-schizophrenia-finally-got-a-proper",
+    "index": 91,
+    "title": "Psychodynamic therapy for schizophrenia finally got a proper trial. It worked.",
+    "tag": "Treatment",
+    "blurb": "A Berlin randomised trial gave 130 outpatients with schizophrenia-spectrum disorders at least 30 sessions of modified psychodynamic therapy on top of usual care. Psychosocial functioning was better at 24 months and still better at 36.",
+    "date": "2026-10-09",
+    "summary": "Psychodynamic psychotherapy has been used with people with schizophrenia for decades on clinical conviction rather than trial evidence, which is a poor basis for anything. Researchers led by Christiane Montag ran a prospective, single-centre, assessor-blinded randomised trial at the Charite's St Hedwig Hospital in Berlin. Outpatients aged 18 to 64 with schizophrenia or schizoaffective disorder were randomly assigned either to Modified Psychodynamic Psychotherapy for Schizophrenia, a manualised treatment aimed at interpersonal vulnerability with a minimum of 30 sessions, plus treatment as usual, or to treatment as usual alone. Recruitment ran from October 2015 to December 2021 and 130 people took part, 65 in each arm. The primary outcome was psychosocial functioning on the Mini-ICF-APP. Linear mixed models found significant group-by-time interactions favouring the therapy: an adjusted between-group difference of 3.45 points at 24 months and 4.07 at 36 months, with the gap slightly wider at follow-up than at the end of treatment. Adverse events were similar between groups. Three were serious: two participants died by suicide, one in each arm, and the one in the therapy arm had not started sessions; one participant was admitted to a forensic hospital. Read it with its design in mind. It is one centre. Outcome assessors were masked but participants and therapists could not be, which matters when the outcome is a rated judgement of functioning. Anyone with current or past substance misuse needing addiction treatment was excluded, which removes a large share of real caseloads. And the authors note plainly that people with lived experience were not involved in designing or reporting the study.",
+    "journal": "The lancet. Psychiatry",
+    "authors": "Christiane Montag, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42716057",
+    "doi": "10.1016/S2215-0366(26)00240-3",
+    "sourceUrl": "https://doi.org/10.1016/S2215-0366(26)00240-3",
+    "instagram": ""
   }
 ]
