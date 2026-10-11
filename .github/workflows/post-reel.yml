@@ -11,18 +11,26 @@
 name: Post the day's Reel
 
 on:
-  schedule:
-    # 06:00 America/New_York, to match the Business Suite calendar batch 5 is
-    # scheduled on.
-    #
-    # Two lines, not one. GitHub's cron is UTC and ignores daylight saving, so
-    # 10:00 UTC is 06:00 Eastern in summer and 05:00 in winter -- and batch 7
-    # runs straight through the 1 November changeover. Both candidate hours
-    # fire and scripts/ig_publish.py discards the one that is not 06:00 local,
-    # which costs a few seconds of runner time a day and keeps the post at six
-    # o'clock year-round.
-    - cron: "0 10 * * *"
-    - cron: "0 11 * * *"
+  # The daily schedule is OFF, and this is why.
+  #
+  # Meta blocked the developer account on 5 October, it was cleared on the
+  # 6th, Post88 published on the 8th, and it was blocked again on the 9th --
+  # "we've noticed unusual activity on this developer account", on an account
+  # whose entire activity is one Reel a day to its own Instagram. Every run
+  # since has failed in ten seconds at the token check, and three days were
+  # missed before anyone looked.
+  #
+  # A workflow that goes red every morning is worse than one that does not
+  # run: it trains everyone to ignore the red, and it will be ignored on the
+  # morning something else breaks. So posting moved to Meta Business Suite,
+  # scheduled by hand from the pack scripts/schedule_pack.py writes, which
+  # needs no developer account and ran batch 5 for weeks without complaint.
+  #
+  # Nothing here is deleted. If Meta ever leaves the account alone, put the
+  # two cron lines back and it resumes:
+  #     - cron: "0 10 * * *"   # 06:00 Eastern in summer
+  #     - cron: "0 11 * * *"   # 06:00 Eastern in winter
+  # ig_publish.py --only-at-hour 6 discards whichever one is wrong.
   workflow_dispatch:
     # So a missed day can be posted by hand, and so the first live run is a
     # deliberate button press rather than a wait until tomorrow.
