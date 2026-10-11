@@ -1454,5 +1454,37 @@
     "doi": "10.1016/S2215-0366(26)00240-3",
     "sourceUrl": "https://doi.org/10.1016/S2215-0366(26)00240-3",
     "instagram": ""
+  },
+  {
+    "slug": "blood-pressure-drugs-were-a-promising-alcohol-treatment",
+    "index": 92,
+    "title": "Blood-pressure drugs were a promising alcohol treatment. In two large cohorts, they did nothing.",
+    "tag": "Myth Check",
+    "blurb": "Genetics and animal work pointed to L-type calcium channel blockers as a treatment for alcohol use disorder. Checked against the health records of two large US systems, people who started them did not drink less.",
+    "date": "2026-10-10",
+    "summary": "Alcohol use disorder has few effective medications, so a credible new target is worth taking seriously. L-type calcium channel blockers, prescribed for blood pressure, had both genetic and laboratory support behind them. Researchers led by Christopher Rentsch tested whether that support survived contact with patients. They ran two preregistered observational cohort studies on electronic health records, one at the US Department of Veterans Affairs and one at Kaiser Permanente Northern California. New users of brain-penetrant calcium channel blockers, nifedipine or felodipine, were compared with new users of amlodipine, a similar drug that does not cross into the brain, and with patients from the same clinics taking neither. Everyone needed a 180-day washout and at least 60 days of supply, and the groups were matched on propensity scores. The outcome was change in drinks per week, measured with difference-in-differences. In the VA, the difference between the brain-penetrant drug and its non-penetrant comparator was 0.14 drinks per week, with a confidence interval from minus 0.06 to 0.34. Against unexposed patients it was exactly 0.00. Kaiser produced the same answer. Prespecified subgroups by diagnosis, drinking level and sex pointed the same way, though some were small. This is observational, so it cannot rule out an effect a trial might find, and people prescribed one blood-pressure drug rather than another differ in ways matching only partly fixes. But two independent systems, preregistered, agreeing on nothing, is a meaningful result. The authors conclude the evidence does not support repurposing these drugs and that other targets deserve the effort instead.",
+    "journal": "Pharmacoepidemiology and drug safety",
+    "authors": "Christopher T Rentsch, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42802293",
+    "doi": "10.1002/pds.70487",
+    "sourceUrl": "https://doi.org/10.1002/pds.70487",
+    "instagram": ""
+  },
+  {
+    "slug": "online-therapy-for-teen-depression-beat-usual-care",
+    "index": 93,
+    "title": "An online therapy for teen depression beat usual care, and missed its own threshold for mattering",
+    "tag": "Treatment",
+    "blurb": "219 adolescents were randomised to therapist-guided or self-guided internet behavioural activation, or treatment as usual. The guided version won on statistics at p=0.048, then failed the six-point difference the trial had set in advance as clinically meaningful.",
+    "date": "2026-10-11",
+    "summary": "Behavioural activation is a good candidate for digital delivery: it is structured, it is largely about scheduling activity, and it does not depend on a long therapeutic relationship. Researchers led by Rebecca Andersson randomised 219 Swedish adolescents aged 13 to 17 with mild to moderate major depressive disorder, one to one to one, to ten weeks of therapist-guided internet behavioural activation, self-guided internet behavioural activation, or treatment as usual. Both digital arms included modules for parents. The primary outcome was depression severity on the Children's Depression Rating Scale-Revised, rated by blinded evaluators at three-month follow-up. Baseline scores averaged 57.1, well above the clinical threshold of 40. Retention was 82.6%. Mean reductions were 17.0 points for therapist-guided, 16.0 for self-guided, and 11.6 for treatment as usual, which brought both digital groups below the clinical cut-off. The therapist-guided arm beat usual care by an estimated 4.68 points, with a confidence interval running from 0.05 to 9.30 and a p value of 0.048. The self-guided arm was not statistically superior. Here is the part worth sitting with: the trial had set a six-point difference in advance as the smallest change that would count as clinically important, and the result did not reach it. The authors also report that significance disappeared under a different modelling choice, though the effect estimates were similar. Both digital options cost less than usual care, with self-guided the cheapest. The honest summary is the one the authors give: symptoms fell at lower cost, and both the clinical importance and the robustness of that are uncertain.",
+    "journal": "BMJ mental health",
+    "authors": "Rebecca Andersson, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42618279",
+    "doi": "10.1136/bmjment-2026-302619",
+    "sourceUrl": "https://doi.org/10.1136/bmjment-2026-302619",
+    "instagram": ""
   }
 ]

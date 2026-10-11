@@ -817,5 +817,23 @@
     "title": "Psychodynamic therapy for schizophrenia finally got a proper trial. It worked.",
     "date": "2026-10-09",
     "blurb": "A Berlin randomised trial gave 130 outpatients with schizophrenia-spectrum disorders at least 30 sessions of modified psychodynamic therapy on top of usual care. Psychosocial functioning was better at 24 months and still better at 36."
+  },
+  {
+    "slug": "blood-pressure-drugs-were-a-promising-alcohol-treatment",
+    "url": "studies/blood-pressure-drugs-were-a-promising-alcohol-treatment.html",
+    "instagram": "",
+    "tag": "Myth Check",
+    "title": "Blood-pressure drugs were a promising alcohol treatment. In two large cohorts, they did nothing.",
+    "date": "2026-10-10",
+    "blurb": "Genetics and animal work pointed to L-type calcium channel blockers as a treatment for alcohol use disorder. Checked against the health records of two large US systems, people who started them did not drink less."
+  },
+  {
+    "slug": "online-therapy-for-teen-depression-beat-usual-care",
+    "url": "studies/online-therapy-for-teen-depression-beat-usual-care.html",
+    "instagram": "",
+    "tag": "Treatment",
+    "title": "An online therapy for teen depression beat usual care, and missed its own threshold for mattering",
+    "date": "2026-10-11",
+    "blurb": "219 adolescents were randomised to therapist-guided or self-guided internet behavioural activation, or treatment as usual. The guided version won on statistics at p=0.048, then failed the six-point difference the trial had set in advance as clinically meaningful."
   }
 ]
