@@ -216,22 +216,23 @@ def body_lines(p, cycle, name, answer_links):
 def closing(p):
     """What happens next, which has to match what actually happens.
 
-    The first version of this email promised "This is a one-off. You will not
-    get a follow-up from me." That promise cannot sit in the same message as a
-    plan to write again in November, and a recipient who was told one thing and
-    then got another would be right to treat the second email as spam. So the
-    sentence changes rather than gains a companion.
+    This said two different things depending on status, because the plan was
+    to write again in November to programmes with nothing settled. On
+    12 October 2026 Max decided against the follow-up, so there is one ending
+    again: no second email to anybody.
 
-    Only programmes with nothing posted are told about November, because they
-    are the only ones a second email would have a reason to reach. A programme
-    whose list we have already read has nothing to update, and telling it to
-    expect more mail would be untrue as well as unwelcome.
+    The 115 already sent carry the November sentence and cannot be unsent.
+    That is a promise to write, not a promise to stay away, and nobody is
+    harmed by an email that does not arrive -- but nothing drafted from here
+    on should repeat it, which is the whole reason this function changed
+    rather than the send list.
+
+    If the follow-up is ever revived, the sentence has to come back here AND
+    on spare-change/src/app/survey/thanks/page.tsx, which tells the director
+    the same thing after they click. The two drifting apart is how a
+    recipient ends up told one thing and shown another.
     """
-    if p["status"] == "posted":
-        return "This is the only email you will get about it."
-    return ("If nothing is settled yet, I will write once more in November, "
-            "when most programs have decided, and that will be the last of it "
-            "either way.")
+    return "This is the only email you will get about it."
 
 
 def rewrap(text, width=78):
