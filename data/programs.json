@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-11",
+ "updated": "2026-10-13",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -239,18 +239,17 @@
    "url": "https://clinicalpsych.unc.edu/for-applicants/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-09",
+   "checked": "2026-10-13",
    "sourceQuote": "Faculty who plan to admit students for Fall 2027 entry to the UNC clinical psychology doctoral program are listed below. Please note that offers are linked to evolving funding opportunities and may shift as we approach the spring semester. We will update this list if things change.",
    "accepting": [
     "Andrea Hussong",
     "Deborah Jones",
-    "Stacey Daughters"
-   ],
-   "maybe": [
+    "Stacey Daughters",
     "Tom Rodebaugh"
    ],
+   "maybe": [],
    "notAccepting": [],
-   "note": "Rechecked 2026-10-09: the list is now Hussong, Jones and Daughters, plus Tom Rodebaugh marked '(maybe)' and recorded as undecided. Jamilah Silver, previously listed as a maybe, is no longer on the page.",
+   "note": "Rechecked 2026-10-13: the list is Hussong, Jones, Daughters and Rodebaugh. Tom Rodebaugh was marked '(maybe)' on 9 October and recorded as undecided; that marker has since been removed from the page, so he is now listed as accepting like the other three. Jamilah Silver, listed as a maybe in an earlier version, is no longer on the page. The page's own caveat applies to everyone: offers are linked to funding and may shift before spring.",
    "pcsas": true,
    "applicationDeadline": "TBD",
    "deadlineCycle": "2027 admissions",
@@ -1548,7 +1547,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1 (2026 application cycle, for a Fall 2027 start). DePaul's doctoral program is titled 'Clinical-Community Psychology' and alternates tracks by year: the page states 'The Clinical program will accept three students in the Community track during the 2026 application cycle for a fall 2027 start,' while the Child track admits for a fall 2028 start (2027 cycle) with no reviewers listed yet. The names above are the Community-track faculty reviewing Fall 2027 applicants; no separate 'Clinical' track list exists for this cycle.",
+   "note": "Deadline: December 1 (2026 application cycle, for a Fall 2027 start). DePaul's doctoral program is titled 'Clinical-Community Psychology' and alternates tracks by year: the page states 'The Clinical program will accept three students in the Community track during the 2026 application cycle for a fall 2027 start,' while the Child track admits for a fall 2028 start (2027 cycle) with no reviewers listed yet. The names above are the Community-track faculty reviewing Fall 2027 applicants; no separate 'Clinical' track list exists for this cycle. As of 13 October 2026 the source page (the program's admission-requirements page) returns 404, and the program's main page no longer shows the reviewer list, though it still says the community track reviews applications after the December 1, 2026 deadline for fall 2027. The six names above were last confirmed on 9 September 2026 and could not be re-checked.",
    "applicationDeadline": "December 1",
    "deadlineCycle": "fall 2027 start (Community track)",
    "greRequired": "not accepted",
@@ -5446,8 +5445,8 @@
    "url": "https://psychology.arizona.edu/apply-our-graduate-program",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "Fall 2027 Grad Application Cycle - Faculty Reviewing Applications to Accept Students [Clinical Psychology column] Fox, Rina; Grilli, Matt; Ryan, Lee. Updated: 09/21/26",
+   "checked": "2026-10-13",
+   "sourceQuote": "Fall 2027 Grad Application Cycle - Faculty Reviewing Applications to Accept Students [Clinical Psychology column] Fox, Rina; Grilli, Matt; Ryan, Lee. Updated: 09/22/26",
    "accepting": [
     "Rina Fox",
     "Matthew Grilli",
@@ -5455,7 +5454,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The table has a column each for Clinical Psychology, Cognitive and Neural Systems, and Social and Personality Psychology; only the clinical column is counted here. Gene Alexander and John Allen appear on this tracker's clinical roster but are listed by the department under Cognitive and Neural Systems, so they are not counted as accepting clinical applicants. The page carries its own date stamp, Updated 09/21/26.",
+   "note": "The table has a column each for Clinical Psychology, Cognitive and Neural Systems, and Social and Personality Psychology; only the clinical column is counted here. Gene Alexander and John Allen appear on this tracker's clinical roster but are listed by the department under Cognitive and Neural Systems, so they are not counted as accepting clinical applicants. The page carries its own date stamp, Updated 09/22/26. Re-read 13 October 2026: the clinical column is unchanged.",
    "pcsas": true,
    "applicationDeadline": "December 1, 2026",
    "deadlineCycle": "2027-28 academic year",
@@ -6362,7 +6361,7 @@
    "url": "https://louisville.edu/programs/psychology-clinical-phd",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-29",
+   "checked": "2026-10-13",
    "sourceQuote": "Faculty Reviewing Applications for Admission in Fall 2027 (Applications due December 1, 2026)",
    "accepting": [
     "Cheri Levinson",
@@ -6370,8 +6369,14 @@
     "Sara Bufferd"
    ],
    "maybe": [],
-   "notAccepting": [],
-   "note": "Deadline: December 1, 2026. The faculty list is still on the page but now sits inside a collapsed tab (Admission) after a redesign, so it does not show in the page's visible text until that tab is opened.",
+   "notAccepting": [
+    "Nadia Al-Dajani",
+    "Konrad Bresin",
+    "Benjamin Mast",
+    "Yara Mekawi",
+    "Tamara Newton"
+   ],
+   "note": "Deadline: December 1, 2026. The faculty list is still on the page but now sits inside a collapsed tab (Admission) after a redesign, so it does not show in the page's visible text until that tab is opened. Re-read 13 October 2026: the same tab now also carries a 'Faculty NOT Reviewing Applications for Admission in Fall 2027' list (Al-Dajani, Bresin, Mast, Mekawi, Newton), recorded here as not accepting. The accepting list is unchanged.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
@@ -6461,22 +6466,21 @@
    "url": "https://psychology.umbc.edu/hsp-faculty/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-13",
    "sourceQuote": "Below is a listing of all faculty affiliated with Human Services Psychology (HSP) program and the track(s) they are specifically affiliated with. [column header: \"Accepting new students?\"]",
    "accepting": [
-    "Pamela Rakhshan Rouhakhtar"
-   ],
-   "maybe": [
-    "Christopher Murphy",
     "Lira Yoon",
-    "Molly Franz",
+    "Pamela Rakhshan Rouhakhtar",
     "Rebecca Schacht",
     "Tasneem Khambaty"
    ],
+   "maybe": [],
    "notAccepting": [
+    "Christopher Murphy",
+    "Molly Franz",
     "Shari Waldstein"
    ],
-   "note": "This page lists faculty across multiple HSP tracks (Community, Clinical, Behavioral Medicine, No Track Affiliation); only faculty listed under the 'Clinical' track heading are reported here. Deadline of December 1, 2026 for Fall 2027 confirmed on https://psychology.umbc.edu/hsp/application-procedures/, which also instructs applicants to 'confirm the faculty with whom they would like to work are accepting new students' via the hsp-faculty page.",
+   "note": "This page lists faculty across multiple HSP tracks (Community, Clinical, Behavioral Medicine, No Track Affiliation); only faculty listed under the 'Clinical' track heading are reported here. Re-read 13 October 2026: every Clinical-track name now carries a plain Yes or No. Yes: Khambaty, Rakhshan Rouhakhtar, Schacht, Yoon. No: Franz, Murphy, Waldstein. Five of them were previously recorded as undecided, so the entry has been brought into line with the page. The faculty page itself names no cycle; it is tied to Fall 2027 by the program's application page (psychology.umbc.edu/hsp/application-procedures/), which says 'The application deadline is December 1, 2026 for Fall 2027 applications' and tells applicants to confirm their chosen faculty 'are accepting new students' on this list. Khambaty is also listed under the Behavioral Medicine track.",
    "applicationDeadline": "December 1, 2026",
    "deadlineCycle": "Fall 2027 applications",
    "greRequired": "not accepted",
@@ -7902,12 +7906,11 @@
    "url": "https://www.uwyo.edu/psychology/doctoral-programs/clinical/index.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-01",
+   "checked": "2026-10-13",
    "sourceQuote": "Joshua Clapp is recruiting graduate students for Fall 2027 / Alison Looby is reviewing graduate applications for Fall 2027 / Tara Clapp is not recruiting graduate students for Fall 2027",
    "accepting": [
     "Joshua Clapp",
     "Kyle De Young",
-    "Matt J. Gray",
     "Christine McKibbin",
     "Alison Looby"
    ],
@@ -7917,9 +7920,10 @@
     "Cynthia Hartung",
     "Carolyn Pepper",
     "Anne Stevens",
-    "Kasey Stanton"
+    "Kasey Stanton",
+    "Matt J. Gray"
    ],
-   "note": "The clinical program's Core Faculty page tags each faculty member individually, and every tag now names Fall 2027 (it read Fall 2026 until this update). Four say they are 'recruiting graduate students for Fall 2027'. Alison Looby's tag reads 'reviewing graduate applications for Fall 2027', a different wording but just as unhedged, so she is listed as accepting too. Read from the rendered page, not the page source. The page writes Kyle DeYoung and Matt Gray; they are recorded under their profile spellings, Kyle De Young and Matt J. Gray.",
+   "note": "The clinical program's Core Faculty page tags each faculty member individually, and every tag now names Fall 2027 (it read Fall 2026 until this update). Four said they were 'recruiting graduate students for Fall 2027' when first read; three do now (see below). Alison Looby's tag reads 'reviewing graduate applications for Fall 2027', a different wording but just as unhedged, so she is listed as accepting too. Read from the rendered page, not the page source. The page writes Kyle DeYoung and Matt Gray; they are recorded under their profile spellings, Kyle De Young and Matt J. Gray. Re-read 13 October 2026 from the rendered page: Matt Gray's tag now reads 'is not recruiting graduate students for Fall 2027', so he has moved from accepting to not accepting and the accepting list went from five to four.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",

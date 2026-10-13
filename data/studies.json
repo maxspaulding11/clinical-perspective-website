@@ -1486,5 +1486,37 @@
     "doi": "10.1136/bmjment-2026-302619",
     "sourceUrl": "https://doi.org/10.1136/bmjment-2026-302619",
     "instagram": ""
+  },
+  {
+    "slug": "short-burst-of-exercise-cut-alcohol-craving-the",
+    "index": 94,
+    "title": "A short burst of exercise cut alcohol craving. The whole evidence base is six studies.",
+    "tag": "Addiction",
+    "blurb": "A systematic review found a single bout of exercise reduced alcohol craving in young adults with problematic drinking, with a moderate effect size. It pooled six studies, and the authors call for better ones.",
+    "date": "2026-10-12",
+    "summary": "Craving is one of the more tractable targets in problematic drinking, because it fluctuates and can in principle be interrupted. Exercise has been proposed as a way to interrupt it. Researchers led by P Sampedro-Piquero searched four databases for studies published between 2016 and 2026, preregistered the protocol, and looked for trials in which people aged 18 to 29 with problematic alcohol use or alcohol use disorder had their craving assessed after a single bout of exercise. Six studies met the criteria. Pooled with random-effects meta-analysis, acute exercise reduced craving compared with baseline or control conditions, with a Hedges' g of about 0.55, conventionally a moderate effect, alongside moderate heterogeneity between studies. Narratively, the reviewers also found reductions in anxiety and negative mood, changes in stress-related physiological markers, improvements in executive function, and shifts in brain and autonomic activity, though these varied considerably from study to study. The honest framing is in the size of the evidence base rather than the size of the effect. Six studies is very few, the samples within them are small, and a moderate pooled effect drawn from that many is unstable by construction: one more trial pointing the other way would move it noticeably. Nor does a single session tell you anything about whether craving stays lower, or whether drinking itself changes, which is the outcome that matters. What this review establishes is that the idea is worth a proper trial, not that exercise is a treatment.",
+    "journal": "European journal of sport science",
+    "authors": "P Sampedro-Piquero, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42806437",
+    "doi": "10.1002/ejsc.70258",
+    "sourceUrl": "https://doi.org/10.1002/ejsc.70258",
+    "instagram": ""
+  },
+  {
+    "slug": "long-term-psychodynamic-therapy-for-depression-earned-a",
+    "index": 95,
+    "title": "Long-term psychodynamic therapy for depression earned a Strong recommendation and a very-low-certainty rating, in the same paper",
+    "tag": "Treatment",
+    "blurb": "Sixteen trials, 1,992 people, at least nine months of therapy each. Pooled against all comparators the effect was modest but high certainty; against active treatments specifically, the evidence was rated very low.",
+    "date": "2026-10-13",
+    "summary": "Long-term psychodynamic psychotherapy is expensive in time and money, so the question of whether it beats shorter or different treatments is not academic. Researchers led by Max Moser ran a preregistered systematic review and meta-analysis, searching MEDLINE, PsycINFO, Embase and the Cochrane register through January 2025 for randomised trials of therapy lasting at least nine months and at least 30 sessions. Sixteen trials with 1,992 participants qualified. At the end of treatment, the pooled reduction in depressive symptoms against all comparators was a standardised mean difference of 0.34, and against active treatments specifically 0.27. Both are modest effects. Gains were generally sustained at follow-up. A subgroup comparison against active control conditions produced a larger figure, 0.61, and this is where care is needed: that subgroup carried greater heterogeneity and the authors rate its certainty very low. Applying GRADE, they describe high-certainty evidence for symptom reduction across all trials and moderate certainty against active treatments, which under updated empirically-supported-treatment criteria supports a Strong recommendation. The same paper rates the active-control comparison as supporting only a Weak one. Risk of bias was a concern in most of the included studies, and there were too few of them to run moderator analyses. Evidence on functional outcomes, cost, and long-term maintenance was too thin to support a stronger endorsement. So the fair reading is neither headline on its own: the therapy reduces depressive symptoms, by a modest amount, on evidence that is solid in aggregate and weak precisely where it is being compared with the alternatives someone would actually choose between.",
+    "journal": "Depression and anxiety",
+    "authors": "Max Moser, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42787645",
+    "doi": "10.1155/da/6172409",
+    "sourceUrl": "https://doi.org/10.1155/da/6172409",
+    "instagram": ""
   }
 ]
