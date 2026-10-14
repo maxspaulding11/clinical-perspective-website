@@ -433,10 +433,15 @@
     if (c.to === 'closed') {
       what = 'closed this cycle';
     } else if (c.from === 'posted' && c.to === 'posted') {
-      what = 'list changed to ' + c.accepting + ' faculty accepting';
-    } else {
+      what = 'list changed — ' + c.accepting + ' faculty accepting';
+    } else if (c.to === 'posted') {
       what = 'posted its list — ' + c.accepting + ' faculty accepting';
+    } else {
+      what = 'updated';
     }
+    // Who moved, when the notice says. Without it a list where one person
+    // left and another joined reads as no change at all.
+    if (c.detail) what += '. ' + c.detail;
     return '<span class="watch-school">' + name + '</span>' +
            '<span class="watch-what">' + esc(what) + '</span>';
   }

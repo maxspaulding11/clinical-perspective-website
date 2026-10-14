@@ -63,9 +63,72 @@ def snapshot(programs):
             "maybe": len(p.get("maybe") or []),
             "school": p["school"],
             "program": p["program"],
+            # Who is in which column, so --all-changes can say who moved.
+            # Older state files lack this; a program without it on either
+            # side is compared on counts alone.
+            "lists": {k: sorted(p.get(k) or []) for k in BUCKETS},
         }
         for p in programs
     }
+
+
+BUCKETS = ("accepting", "maybe", "notAccepting")
+BUCKET_WORDS = {"accepting": "accepting", "maybe": "considering applications",
+                "notAccepting": "not accepting"}
+STATUS_WORDS = {"posted": "list posted", "pending": "list not posted yet",
+                "cohort": "admits by cohort, no mentor list",
+                "closed": "not accepting this cycle",
+                "unverified": "not checked yet"}
+
+
+def who_moved(was_lists, now_lists):
+    """One sentence per person whose column changed, in the tracker's words."""
+    def where(lists):
+        return {n: k for k in BUCKETS for n in lists.get(k, [])}
+    a, b = where(was_lists), where(now_lists)
+    parts = []
+    for name in sorted(set(a) | set(b)):
+        x, y = a.get(name), b.get(name)
+        if x == y:
+            continue
+        if x is None:
+            parts.append(f"{name} added as {BUCKET_WORDS[y]}.")
+        elif y is None:
+            parts.append(f"{name} is no longer listed (was {BUCKET_WORDS[x]}).")
+        else:
+            parts.append(f"{name} is now {BUCKET_WORDS[y]} (was {BUCKET_WORDS[x]}).")
+    return " ".join(parts)
+
+
+def all_changes_between(old, new):
+    """Every change a watcher could care about, not just the newsworthy ones.
+
+    Turned on with --all-changes for a limited run of sweeps (Max, 2026-10-14:
+    tell watchers about any change, this sweep and the next). It reports any
+    status change and any person moving between columns, even when the
+    accepting count is unchanged -- which the default rule cannot see.
+    Corrections still look like news here, so --skip still applies."""
+    out = []
+    for pid, now in new.items():
+        was = old.get(pid)
+        if was is None:
+            continue
+        base = {"id": pid, "school": now["school"], "program": now["program"],
+                "from": was["status"], "to": now["status"],
+                "accepting": now["accepting"], "maybe": now["maybe"]}
+        moved = ""
+        if "lists" in was and "lists" in now:
+            moved = who_moved(was["lists"], now["lists"])
+        if was["status"] != now["status"]:
+            detail = (f'Status changed from "{STATUS_WORDS.get(was["status"], was["status"])}" '
+                      f'to "{STATUS_WORDS.get(now["status"], now["status"])}".')
+            out.append({**base, "detail": (detail + " " + moved).strip()})
+        elif moved or was["accepting"] != now["accepting"]:
+            c = {**base, "detail": moved}
+            if was["accepting"] != now["accepting"]:
+                c["was"] = was["accepting"]
+            out.append(c)
+    return sorted(out, key=lambda c: c["school"].lower())
 
 
 def changes_between(old, new):
@@ -103,6 +166,10 @@ def describe(c):
     # which it is, or the line reads as bad news and gets the program crossed
     # off a list it belongs on.
     maybe = c.get("maybe") or 0
+    if c.get("detail"):
+        head = (f'{c["school"]} — accepting list {c["was"]} -> {c["accepting"]}. '
+                if "was" in c else f'{c["school"]} — ')
+        return head + c["detail"]
     if c["from"] == c["to"] == "posted":
         tail = f' ({maybe} considering)' if not c["accepting"] and maybe else ""
         return (f'{c["school"]} — accepting list changed from {c["was"]} to '
@@ -187,6 +254,13 @@ def main():
                     help="mail one sample notice to this address and stop: no "
                          "watcher is looked up, nothing is written, the state "
                          "is untouched")
+    ap.add_argument("--all-changes", action="store_true",
+                    help="report every status change and every person moving "
+                         "column, not only postings, closings and count changes")
+    ap.add_argument("--since-rev", metavar="GIT_REV",
+                    help="compare against data/programs.json at this commit "
+                         "instead of the saved state (for re-running a sweep "
+                         "whose state was already advanced)")
     args = ap.parse_args()
 
     programs = json.load(open(PROGRAMS, encoding="utf-8"))["programs"]
@@ -203,8 +277,16 @@ def main():
         print(f"State recorded for {len(current)} programs: {STATE}")
         return 0
 
-    previous = json.load(open(STATE, encoding="utf-8"))
-    found = changes_between(previous.get("programs", {}), current)
+    if args.since_rev:
+        import subprocess
+        raw = subprocess.run(["git", "show", f"{args.since_rev}:data/programs.json"],
+                             cwd=SITE, capture_output=True, check=True).stdout
+        previous = {"recorded": f"commit {args.since_rev}",
+                    "programs": snapshot(json.loads(raw.decode("utf-8"))["programs"])}
+    else:
+        previous = json.load(open(STATE, encoding="utf-8"))
+    compare = all_changes_between if args.all_changes else changes_between
+    found = compare(previous.get("programs", {}), current)
 
     skipped = [c for c in found if c["id"] in args.skip]
     changes = [c for c in found if c["id"] not in args.skip]
