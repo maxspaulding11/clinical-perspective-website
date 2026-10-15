@@ -1518,5 +1518,37 @@
     "doi": "10.1155/da/6172409",
     "sourceUrl": "https://doi.org/10.1155/da/6172409",
     "instagram": ""
+  },
+  {
+    "slug": "17-minute-video-shown-during-a-forensic-exam",
+    "index": 96,
+    "title": "A 17-minute video shown during a forensic exam lowered acute stress. Fifty women took part.",
+    "tag": "Trauma",
+    "blurb": "Three-quarters of sexual assault survivors meet PTSD criteria a month later. A pilot trial tested a short video and a three-week text programme delivered at the forensic examination itself. Promising, and very small.",
+    "date": "2026-10-14",
+    "summary": "Three-quarters of sexual assault survivors meet criteria for PTSD one month afterwards, and the forensic medical examination is often the only moment the health system reliably has with them. Researchers led by Kate Walsh tested whether that moment could carry an intervention. In a pilot trial across four US sexual assault forensic examination programmes, women who had been assaulted within the past seven days were randomised at the examination either to a 17-minute video, teaching social support, mindfulness and gradual self-exposure to feared but safe situations, or to usual care. A week later, those still above threshold for acute stress or opioid misuse were randomised again, to a three-week daily text programme or not. Fifty women took part, average age 28.9. Those assigned the video had lower odds of acute stress, with an odds ratio of 0.13 and a confidence interval from 0.02 to 0.78. They also reported less pain at one week, 2.1 against 3.6. At four weeks the text programme was associated with lower pain scores and the video was not quite statistically so. The design is clever and the setting is the right one. The sample is fifty. A confidence interval running from 0.02 to 0.78 is consistent with an enormous effect or a small one, and in a trial this size the point estimate is the least reliable part of the result. Follow-up is four weeks, which cannot speak to PTSD at three months. This is what a pilot is for: it establishes that the thing can be delivered at all, and that a larger trial is worth running.",
+    "journal": "JAMA network open",
+    "authors": "Kate Walsh, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42814464",
+    "doi": "10.1001/jamanetworkopen.2026.36353",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.36353",
+    "instagram": ""
+  },
+  {
+    "slug": "three-ways-of-detecting-hazardous-drinking-found-three",
+    "index": 97,
+    "title": "Three ways of detecting hazardous drinking found three different groups of patients",
+    "tag": "Assessment",
+    "blurb": "In Swedish primary care records, a questionnaire flagged 26.5% of patients, a blood biomarker 14.6-18.3%, and self-reported weekly drinks 8.5%. Each method found people the other two missed.",
+    "date": "2026-10-15",
+    "summary": "Asking people how much they drink is the standard way of finding hazardous drinking, and it is known to be imperfect. Phosphatidylethanol, or PEth, is a blood marker that reflects alcohol consumption over the previous weeks and is sometimes treated as the objective answer. Researchers led by Viktor Mansson used Swedish regional primary care records linked to national registries to compare them directly, in two samples: 3,679 patients who had both a PEth test and an AUDIT questionnaire score within 90 days, and 8,934 who had a PEth test and a documented self-reported weekly intake. Hazardous use was defined in advance for each: PEth above 210 nanograms per millilitre, AUDIT of 8 or more, or 10 or more drinks a week. The three methods disagreed substantially. The questionnaire classified the most people as hazardous, 26.5%. PEth flagged 14.6% in the first sample and 18.3% in the second. Self-reported weekly drinks flagged the fewest, 8.5%. Crucially, each method identified patients the others did not. PEth correlated only moderately with both self-reports, and the relationship was nonlinear. There were systematic differences too: at similar PEth levels, men and patients with more education or higher income reported drinking more, while younger patients scored higher on AUDIT. That pattern matters, because it means the gap between blood and self-report is not random noise but varies with who the patient is. The authors' conclusion is the practical one: PEth should be read alongside what someone says, not used to overrule it.",
+    "journal": "Annals of family medicine",
+    "authors": "Viktor Månsson, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42767953",
+    "doi": "10.1370/afm.260100",
+    "sourceUrl": "https://doi.org/10.1370/afm.260100",
+    "instagram": ""
   }
 ]

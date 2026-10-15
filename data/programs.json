@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-13",
+ "updated": "2026-10-15",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -1532,22 +1532,21 @@
    "program": "Clinical Psychology PhD",
    "state": "IL",
    "degree": "PhD",
-   "url": "https://www.depaul.edu/academics/programs/clinical-psychology-ma-phd/admission-requirements",
+   "url": "https://csh.depaul.edu/academics/departments-schools/psychology/graduate-ma-phd/clinical-ma-phd/application-process",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Reviewing for the Clinical Community Track: Dina Birman, Megan Greeson, Lenny Jason, Susan McMahon, Nyssa Snow-Hill, and Anne Saw",
+   "checked": "2026-10-15",
+   "sourceQuote": "The following faculty are reviewing applications for the Autumn 2027 Clinical-Community track cohort: Megan Greeson, Leonard Jason, Susan McMahon, Anne Saw, Nyssa Snow-Hill",
    "accepting": [
     "Anne Saw",
-    "Dina Birman",
-    "Lenny Jason",
+    "Leonard Jason",
     "Megan Greeson",
     "Nyssa Snow-Hill",
     "Susan McMahon"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1 (2026 application cycle, for a Fall 2027 start). DePaul's doctoral program is titled 'Clinical-Community Psychology' and alternates tracks by year: the page states 'The Clinical program will accept three students in the Community track during the 2026 application cycle for a fall 2027 start,' while the Child track admits for a fall 2028 start (2027 cycle) with no reviewers listed yet. The names above are the Community-track faculty reviewing Fall 2027 applicants; no separate 'Clinical' track list exists for this cycle. As of 13 October 2026 the source page (the program's admission-requirements page) returns 404, and the program's main page no longer shows the reviewer list, though it still says the community track reviews applications after the December 1, 2026 deadline for fall 2027. The six names above were last confirmed on 9 September 2026 and could not be re-checked.",
+   "note": "Deadline: December 1 (2026 application cycle, for a Fall 2027 start). DePaul's doctoral program alternates tracks by year: the Clinical-Community track admits for Autumn 2027, while the page says the review committee for the Autumn 2028 Clinical-Child track cohort 'has not been formed yet'. The names above are the Community-track faculty reviewing Fall 2027 applicants. The old source page (www.depaul.edu/.../admission-requirements) has returned 404 since at least 13 October 2026; on 15 October 2026 the list was found on the program's new Application process page, in the 'Clinical-Community track review committee' section. It now names five reviewers: Dina Birman, listed on the old page when it was read on 9 September, is no longer on it, so she has been removed. 'Lenny Jason' is now recorded as Leonard Jason, as the page and his profile both give it.",
    "applicationDeadline": "December 1",
    "deadlineCycle": "fall 2027 start (Community track)",
    "greRequired": "not accepted",
