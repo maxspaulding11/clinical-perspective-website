@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-15",
+ "updated": "2026-10-17",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -140,18 +140,18 @@
    "url": "https://psychology.gsu.edu/faculty-accepting-students-for-fall-graduate-admissions/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-05",
+   "checked": "2026-10-17",
    "sourceQuote": "FACULTY ACCEPTING STUDENTS FOR FALL 2027 ... Faculty listed as \"Yes\" plan to accept a new student for the fall 2027 class.",
    "accepting": [
     "Page Anderson",
     "Lindsey Cohen",
     "Cynthia Stappenbeck",
-    "Erin Tone"
+    "Erin Tone",
+    "Gabriel Kuperminc"
    ],
    "maybe": [
     "Erin Tully",
     "Sarah Cook",
-    "Gabriel Kuperminc",
     "MaryAnn Romski",
     "Rose Sevcik"
    ],
@@ -160,7 +160,7 @@
     "Dominic Parrott",
     "Ciara Glover"
    ],
-   "note": "Georgia State marks faculty Yes / Maybe / No; \"Maybe\" means undecided, so contact the lab directly. The table covers the whole psychology department, so only the people GSU itself lists under the Clinical program area (psychology.gsu.edu/research, Clinical Faculty and Associated Faculty) are counted here. Yes: Anderson, Cohen, Stappenbeck, Tone. Maybe: Tully, Cook, Kuperminc, Romski, Sevcik. No: Armistead, Parrott, Glover. Left out as belonging to other areas: Aharoni, Calhoun, Dai and Tighe (Neuropsychology and Cognitive Neuroscience; the table also says no clinical-neuropsychology students will be admitted for 2027), Barber, Offutt, Özçalışkan, Pope-Caldwell, Branum-Martin, Brosnan and Beran (other areas), and the School of Public Health list. The Clinical-Community concentration is run jointly with the Community program, whose core faculty not listed above are marked Horgan Maybe and Metzger Maybe; Clinical-Community applicants may want to look at them too. Until 2026-09-29 this entry counted the whole department's table; it was narrowed then, and the same day's page showed Cohen moving to Yes and Tully to Maybe.",
+   "note": "Georgia State marks faculty Yes / Maybe / No; \"Maybe\" means undecided, so contact the lab directly. The table covers the whole psychology department, so only the people GSU itself lists under the Clinical program area (psychology.gsu.edu/research, Clinical Faculty and Associated Faculty) are counted here. Yes: Anderson, Cohen, Kuperminc, Stappenbeck, Tone. Maybe: Tully, Cook, Romski, Sevcik. No: Armistead, Parrott, Glover. Left out as belonging to other areas: Aharoni, Calhoun, Dai and Tighe (Neuropsychology and Cognitive Neuroscience; the table also says no clinical-neuropsychology students will be admitted for 2027), Barber, Offutt, Özçalışkan, Pope-Caldwell, Branum-Martin, Brosnan and Beran (other areas), and the School of Public Health list. The Clinical-Community concentration is run jointly with the Community program, whose core faculty not listed above are marked Horgan Maybe and Metzger Maybe; Clinical-Community applicants may want to look at them too. Until 2026-09-29 this entry counted the whole department's table; it was narrowed then, and the same day's page showed Cohen moving to Yes and Tully to Maybe. Re-read 17 October 2026: the table now marks Gabriel Kuperminc Yes (previously Maybe); no other clinical entry changed.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not accepted",
@@ -1535,7 +1535,7 @@
    "url": "https://csh.depaul.edu/academics/departments-schools/psychology/graduate-ma-phd/clinical-ma-phd/application-process",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-15",
+   "checked": "2026-10-17",
    "sourceQuote": "The following faculty are reviewing applications for the Autumn 2027 Clinical-Community track cohort: Megan Greeson, Leonard Jason, Susan McMahon, Anne Saw, Nyssa Snow-Hill",
    "accepting": [
     "Anne Saw",
@@ -2050,11 +2050,12 @@
    "url": "https://www.fordham.edu/academics/departments/psychology/graduate-program/phd-in-clinical-psychology/admissions-informationrequirements/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
+   "checked": "2026-10-17",
    "sourceQuote": "The following faculty members will be reviewing applications, interviewing applicants, and available to mentor incoming students in the Fall 2027 admission cohort:",
    "accepting": [
     "Barry Rosenfeld",
     "Christopher Conway",
+    "Dean McKay",
     "Elizabeth Raposa",
     "Molly Zimmerman",
     "Natasha Burke",
@@ -2063,7 +2064,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The page is labelled \"Notice for 2026/2027 admission cycle\" and states: \"The application deadline is November 16, 2026.\"",
+   "note": "The page is labelled \"Notice for 2026/2027 admission cycle\" and states: \"The application deadline is November 16, 2026.\" Re-read 17 October 2026: Dean McKay has been added to the Fall 2027 list, which now names eight faculty (Annunziato, Burke, Conway, McKay, Raposa, Rosenfeld, Todd, Zimmerman).",
    "applicationDeadline": "November 16, 2026",
    "deadlineCycle": "Fall 2027",
    "greRequired": "optional",
@@ -3685,7 +3686,7 @@
    "url": "https://cas.okstate.edu/psychology/about_us/faculty_and_staff.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-26",
+   "checked": "2026-10-17",
    "sourceQuote": "Dr. Ciciolla IS accepting students for 2027 admission",
    "accepting": [
     "DeMond Grant",
@@ -4198,7 +4199,7 @@
    "url": "https://csm.rowan.edu/departments/psychology/academic-programs/graduate/phd-clinical-psych/people.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-01",
+   "checked": "2026-10-17",
    "sourceQuote": "Faculty members who are interested in accepting applications for Ph.D. students in the 2027 application cycle are noted below. (Individual entries specify: 'Accepting applications for admissions in 2027' / 'Accepting applications for the 2027 academic year'.)",
    "accepting": [
     "Bethany Raiff",
@@ -4470,7 +4471,7 @@
    "url": "https://academics.siu.edu/human-behavioral/psychology/doctoral/clinical/information.php",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-11",
+   "checked": "2026-10-17",
    "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
    "accepting": [
     "Amy Lang",
@@ -5444,7 +5445,7 @@
    "url": "https://psychology.arizona.edu/apply-our-graduate-program",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-13",
+   "checked": "2026-10-17",
    "sourceQuote": "Fall 2027 Grad Application Cycle - Faculty Reviewing Applications to Accept Students [Clinical Psychology column] Fox, Rina; Grilli, Matt; Ryan, Lee. Updated: 09/22/26",
    "accepting": [
     "Rina Fox",
@@ -6360,7 +6361,7 @@
    "url": "https://louisville.edu/programs/psychology-clinical-phd",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-13",
+   "checked": "2026-10-17",
    "sourceQuote": "Faculty Reviewing Applications for Admission in Fall 2027 (Applications due December 1, 2026)",
    "accepting": [
     "Cheri Levinson",
@@ -6709,7 +6710,7 @@
    "url": "https://seswps.umkc.edu/academics/psychology-and-counseling/phd-admissions-information.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-11",
+   "checked": "2026-10-17",
    "sourceQuote": "Faculty mentors considering accepting students for Fall 2027 include: Daniel Maitland, Elizabeth Neilson, Valeria Pfeifer, Laurel Watson",
    "accepting": [],
    "maybe": [
@@ -7024,12 +7025,12 @@
    "url": "https://arts-sciences.und.edu/academics/psychology/clinical/faculty.html",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-17",
    "sourceQuote": "Dr. King is recruiting for an incoming clinical doctoral student in the 2025 academic year.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The Core Clinical Faculty page gives each professor's recruiting status inline: Alan King ('recruiting for an incoming clinical doctoral student in the 2025 academic year'), JP Legerski ('currently recruiting graduate students'), Joe Miller ('seeking a graduate student'), Tiffany Russell ('Not currently accepting graduate students'), Richard Wise ('Currently not accepting graduate students'); Justin Douglas McDonald has no statement. Because Dr. King's entry explicitly references the '2025 academic year' and no page-wide update date is shown, the page appears stale and its faculty statuses cannot be confirmed as reflecting the Fall 2027 cycle rather than a leftover prior-year snapshot. No application deadline is stated on this page or the program's requirements page.",
+   "note": "The Core Clinical Faculty page gives each professor's recruiting status inline: Alan King ('recruiting for an incoming clinical doctoral student in the 2025 academic year'), JP Legerski ('currently recruiting graduate students'), Joe Miller ('seeking a graduate student'), Tiffany Russell ('Not currently accepting graduate students'), Richard Wise ('Currently not accepting graduate students'); Justin Douglas McDonald has no statement. Because Dr. King's entry explicitly references the '2025 academic year' and no page-wide update date is shown, the page appears stale and its faculty statuses cannot be confirmed as reflecting the Fall 2027 cycle rather than a leftover prior-year snapshot. No application deadline is stated on this page or the program's requirements page. Re-read 17 October 2026: Tiffany Russell's entry now reads 'Currently accepting graduate students in all UND Psychology graduate programs' (previously not accepting), but Dr. King's line still refers to the '2025 academic year' and no statement names a cycle, so the entry stays pending.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -7153,15 +7154,15 @@
    "url": "https://psychology.sas.upenn.edu/graduate/information-applicants",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-01",
-   "sourceQuote": "Faculty members considering applications for Fall 2027 (updated 10/1/26):",
+   "checked": "2026-10-17",
+   "sourceQuote": "Faculty members considering applications for Fall 2027 (updated 10/16/26):",
    "accepting": [
     "Ayelet Meron Ruscio",
     "Martin Seligman"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Penn admits to a department-wide Psychology PhD, and its applicant page lists faculty across the whole department, not the clinical area alone. The fourteen names it lists for Fall 2027 are Geoffrey Karl Aguirre, Dolores Albarracin, Coren Apicella, David Brainard, Johannes Burge, Emily Falk, Maria Geffen, Matthew Hayes, Anna Jenkins, Gareth Roberts, Ayelet Meron Ruscio, Martin Seligman, Alan Stocker and John Trueswell; of those, Ayelet Meron Ruscio and Martin Seligman are the ones this tracker holds as clinical faculty, so only they are counted here. The others work in other areas, and an applicant interested in clinical work with them should read the page and contact them directly. Applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry.",
+   "note": "Penn admits to a department-wide Psychology PhD, and its applicant page lists faculty across the whole department, not the clinical area alone. The fifteen names it lists for Fall 2027 are Geoffrey Karl Aguirre, Dolores Albarracin, Coren Apicella, David Brainard, Fritz Breithaupt, Johannes Burge, Emily Falk, Maria Geffen, Matthew Hayes, Anna Jenkins, Gareth Roberts, Ayelet Meron Ruscio, Martin Seligman, Alan Stocker and John Trueswell; of those, Ayelet Meron Ruscio and Martin Seligman are the ones this tracker holds as clinical faculty, so only they are counted here. The others work in other areas, and an applicant interested in clinical work with them should read the page and contact them directly. Applications open October 1, 2026 and close December 8, 2026 for Fall 2027 entry. Re-read 17 October 2026: the list was updated 10/16/26 to add Fritz Breithaupt, who is not on this tracker's clinical roster; the clinical names counted here are unchanged.",
    "pcsas": true,
    "applicationDeadline": "December 8, 2026, 11:59 PM EST",
    "deadlineCycle": "Fall 2027 admission",
@@ -8280,7 +8281,7 @@
    "url": "https://psychology.wvu.edu/graduate-students/ph-d-in-psychology-clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-09",
+   "checked": "2026-10-17",
    "sourceQuote": "Seeking a student for the Fall 2027 admissions cycle",
    "accepting": [
     "Elisa Krackow",

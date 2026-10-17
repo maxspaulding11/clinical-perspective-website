@@ -82,11 +82,13 @@ CHROME_CANDIDATES = [
 # its error page for weeks and would never have reported a change.
 # Louisville sends headless Chrome to an IT "Browser Update" page instead of
 # the programme page, which read as every published name vanishing.
+# West Virginia's CDN answers headless Chrome with a CloudFront 403 page just
+# over 500 characters long, which was saved as the snapshot the same way.
 BLOCK_PAGE = re.compile(
     r"access denied|forbidden|are you a robot|verify you are human|just a moment|"
     r"enable javascript|checking your browser|page error|page not found|"
     r"404 error|we can't find that page|browser update|update your browser|"
-    r"unsupported browser", re.I)
+    r"unsupported browser|request could not be satisfied|request blocked", re.I)
 
 
 def find_chrome():
