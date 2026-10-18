@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://theclinicalperspective.org/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/research.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -37,12 +37,12 @@
   </url>
   <url>
     <loc>https://theclinicalperspective.org/tools/faculty-accepting-students.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/tools/professor-search.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -57,12 +57,17 @@
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theclinicalperspective.org/studies/overdose-is-the-leading-cause-of-maternal-death.html</loc>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/studies/182-spanish-court-cases-involving-mania-bipolar-disorder.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -552,27 +557,27 @@
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/is-emdr-evidence-based.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/vitamin-d-and-depression.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/bipolar-disorder-vs-borderline-personality-disorder.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/psychedelics-and-cognition.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theclinicalperspective.org/guides/what-predicts-therapy-dropout.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>

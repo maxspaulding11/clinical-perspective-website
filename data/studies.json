@@ -1566,5 +1566,21 @@
     "doi": "10.1016/j.ijlp.2026.102253",
     "sourceUrl": "https://doi.org/10.1016/j.ijlp.2026.102253",
     "instagram": ""
+  },
+  {
+    "slug": "overdose-is-the-leading-cause-of-maternal-death",
+    "index": 99,
+    "title": "Overdose is the leading cause of maternal death. Staying on medication halved the risk.",
+    "tag": "Addiction",
+    "blurb": "Among 9,360 Tennessee Medicaid pregnancies with opioid use disorder, 1.58% died or overdosed within a year of giving birth. Risk was lowest among those dispensed medication across the full 132-day window.",
+    "date": "2026-10-18",
+    "summary": "Overdose is the leading cause of maternal mortality in the United States, and the postpartum year is when it most often happens. Researchers led by Ahra Kim used Tennessee Medicaid data linked to birth and death certificates and hospital discharge records to follow 9,360 pregnancies among 7,776 people who were dispensed at least one day of medication for opioid use disorder between 90 days before delivery and 41 days after. They counted unique days of buprenorphine or naltrexone supplied across that 132-day window, deduplicating overlapping prescriptions so no calendar day was counted twice, then followed everyone from 42 to 365 days after delivery. The primary outcome was the first occurrence of death from any cause or an overdose. Within the year, 1.58% - 148 people - died or overdosed, at a median of 186 days after delivery, which is to say around six months in, long after most postpartum care has ended. Longer medication duration was associated with lower risk, with the lowest hazard at the full 132 days: an adjusted hazard ratio of 0.52 against a single day, with a confidence interval from 0.31 to 0.88. The median duration was 88 days. This is observational, and that matters here more than usual. People who stay on treatment through pregnancy and beyond differ from those who stop, in housing, in support, in the severity of their illness, and in ways no adjustment fully captures. The association is consistent with medication protecting people and also with stable people staying on medication. What is not in doubt is when the risk peaks, and that it peaks after the point most systems stop paying attention.",
+    "journal": "JAMA network open",
+    "authors": "Ahra Kim, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42826020",
+    "doi": "10.1001/jamanetworkopen.2026.37214",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.37214",
+    "instagram": ""
   }
 ]
