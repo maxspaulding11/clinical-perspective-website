@@ -718,17 +718,26 @@ if _new_html != _html:
         _f.write(_new_html)
     print(f'Homepage: tracker line updated ({_t["faculty"]} faculty, {_t["posted"]} programs).')
 
+# The tracker resolves its save buttons from a precomputed map instead of
+# downloading all 2,647 professor records to work them out in the browser.
+#
+# This has to run BEFORE the professor list, which reads star-map.json to
+# decide which cards get an "accepting this cycle" badge. It used to run
+# after, so the professor page was built from the PREVIOUS build's map and a
+# newly added name needed two builds before its badge appeared. The 17 Oct
+# sweep committed Dean McKay as accepting on the tracker while his professor
+# card had no badge, and nothing was wrong with either renderer -- only the
+# order. render_starmap reads data files and nothing either renderer writes,
+# so it is free to go first.
+import render_starmap
+
+_sm = render_starmap.render()
+
 # The professor list had the same problem the tracker did, on five times as
 # many names: 2,640 faculty, all arriving by JavaScript after load.
 import render_professors
 
 _pr = render_professors.render()
-
-# The tracker resolves its save buttons from a precomputed map instead of
-# downloading all 2,647 professor records to work them out in the browser.
-import render_starmap
-
-_sm = render_starmap.render()
 
 print(f'Published {len(studies)} studies (through {studies[-1]["date"]}).')
 if removed:

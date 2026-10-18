@@ -26,6 +26,16 @@ on:
   # scheduled by hand from the pack scripts/schedule_pack.py writes, which
   # needs no developer account and ran batch 5 for weeks without complaint.
   #
+  # BEFORE re-enabling: the media repo is stale. Post88-129 were moved eight
+  # days later on 15 October (nothing had posted since Post87 on the 7th), and
+  # the date is part of each file's name, so every videoUrl and coverUrl in
+  # data/reels.json now 404s against tcp-reel-media. Nothing uses those URLs
+  # today -- Business Suite uploads the local file -- so they were left alone
+  # rather than pushing 64MB of renamed duplicates into a repo whose history
+  # is already 77MB. Run scripts/ig_sync_media.py --prune first and check one
+  # URL actually resolves; ig_publish.py cannot fetch what is not served, and
+  # check_upcoming.py reports exactly this as "not served" every time it runs.
+  #
   # Nothing here is deleted. If Meta ever leaves the account alone, put the
   # two cron lines back and it resumes:
   #     - cron: "0 10 * * *"   # 06:00 Eastern in summer
