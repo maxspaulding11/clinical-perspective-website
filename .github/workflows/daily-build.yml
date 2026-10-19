@@ -1,0 +1,73 @@
+# Publish the studies that come due, every day.
+#
+# Studies are written weeks ahead and dated. build.py publishes the ones
+# dated on or before today and holds the rest back, so a study only appears
+# when something runs the build on or after its date -- and until now nothing
+# did. The only recurring job touching this repo is the tracker sweep every
+# two days, so a study due on an odd day waited for it: Post99 was due on
+# 18 October and was still unpublished when someone checked on the 19th.
+#
+# Nobody reports this, because nobody outside knows a study was due.
+name: Daily build
+
+on:
+  # 05:00 UTC is just after midnight in New York in both halves of the year
+  # -- 00:00 EST, 01:00 EDT -- so the runner's date and Max's date agree, and
+  # a study dated the 20th publishes early on the 20th rather than during the
+  # evening of the 19th. build.py reads date.today() on the runner, which is
+  # UTC, so this is the whole of the timezone handling.
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+# Only to commit the rebuilt pages back.
+permissions:
+  contents: write
+
+# Never two at once: both would build the same output and the second would
+# fail to push.
+concurrency:
+  group: daily-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The full history, and this is not optional. scripts/lastmod.py
+          # works out each page's sitemap <lastmod> by walking `git log`, so
+          # on a shallow clone every page would look as though it changed in
+          # the only commit present -- exactly the false "everything changed
+          # today" signal that module exists to avoid.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install: the build imports nothing outside the standard
+      # library. pypdf is used by scripts/outcomes.py, which is not run here.
+      - name: Build
+        run: python scripts/build.py
+
+      - name: Commit anything that changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # --porcelain, not `git diff --quiet`: publishing a study creates a
+          # brand-new studies/*.html, which is UNTRACKED. git diff does not
+          # see untracked files, so it would have reported "nothing changed"
+          # on precisely the days this job exists for, and the study would
+          # never have been committed.
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed. No study was due and the tracker has not moved."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Daily build: publish what is due
+
+          Written by .github/workflows/daily-build.yml. build.py publishes
+          every study dated on or before today and holds the rest back."
+          git push
