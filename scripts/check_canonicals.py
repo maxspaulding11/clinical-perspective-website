@@ -77,7 +77,12 @@ def check():
     sitemap_path = os.path.join(SITE, "sitemap.xml")
     if not os.path.exists(sitemap_path):
         problems.append("sitemap.xml is missing")
-        return problems, len(canonicals)
+        # Three values, like the return below. This used to hand back two,
+        # so the one branch whose job is to report a missing sitemap raised
+        # ValueError at the caller's unpack instead of printing the message
+        # it had just written. build.py regenerates the sitemap earlier in
+        # the same run, which is why it has never fired.
+        return problems, len(canonicals), []
 
     listed = set(SITEMAP_LOC.findall(open(sitemap_path, encoding="utf-8").read()))
     for url in sorted(listed - set(canonicals)):
