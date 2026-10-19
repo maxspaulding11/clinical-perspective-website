@@ -19,6 +19,8 @@ Safe to re-run: each guide file is written from scratch every build.
 """
 import html
 import json
+
+import ldjson
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -160,10 +162,10 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
 <link rel="icon" type="image/png" href="../assets/logo.png">
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
-{json.dumps(page_jsonld(hub, base_url, updated, author_jsonld), indent=2)}
+{ldjson.dumps(page_jsonld(hub, base_url, updated, author_jsonld), indent=2)}
 </script>
 <script type="application/ld+json">
-{json.dumps(faq_jsonld(hub), indent=2)}
+{ldjson.dumps(faq_jsonld(hub), indent=2)}
 </script>
 </head>
 <body>

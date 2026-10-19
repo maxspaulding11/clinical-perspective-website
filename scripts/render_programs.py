@@ -32,6 +32,8 @@ directly, so nothing is unreachable.
 Called from build.py. Every page is rewritten from scratch on every build.
 """
 import json
+
+import ldjson
 import os
 
 import confirmed
@@ -336,7 +338,7 @@ def program_jsonld(p, base_url, fmt_date):
                   "item": f"{base_url}/programs/"},
                  {"@type": "ListItem", "position": 3,
                   "name": f"{p['school']} — {p['program']}", "item": url}]}]
-    return json.dumps({"@context": "https://schema.org", "@graph": graph},
+    return ldjson.dumps({"@context": "https://schema.org", "@graph": graph},
                       indent=2)
 
 
@@ -501,7 +503,7 @@ def state_page(code, rows, base_url, header, footer, fmt_date, updated):
                   f'<span class="prog-row-prog">{e(p["program"])}</span></a>'
                   f'<span class="prog-row-meta">{badge}{dl}</span></li>')
 
-    jsonld = json.dumps({
+    jsonld = ldjson.dumps({
         "@context": "https://schema.org",
         "@graph": [
             {"@type": "CollectionPage",
@@ -609,7 +611,7 @@ def index_page(by_state, state_pages, base_url, header, footer, fmt_date,
             f'pages already say &mdash; so they are listed here.</p>'
             f'<ul class="prog-rest">{blocks}</ul></section>')
 
-    jsonld = json.dumps({
+    jsonld = ldjson.dumps({
         "@context": "https://schema.org",
         "@graph": [
             {"@type": "CollectionPage", "name": title, "description": desc,

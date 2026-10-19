@@ -9,6 +9,8 @@ Everything under studies/ plus research.html, data/posts.json, data/studies.json
 and sitemap.xml is regenerated from that one file, so never hand-edit those.
 """
 import json
+
+import ldjson
 import os
 import re
 import html
@@ -375,7 +377,7 @@ for i, s in enumerate(studies):
 <link rel="icon" type="image/png" href="../assets/logo.png">
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
-{json.dumps(jsonld, indent=2, ensure_ascii=False)}
+{ldjson.dumps(jsonld, indent=2)}
 </script>
 </head>
 <body>
@@ -483,7 +485,7 @@ ARCHIVE_GUIDES = (
 
 # The archive lists every summary in the served HTML already. This tells a
 # crawler what the list is, and in what order, rather than leaving it to infer.
-ARCHIVE_JSONLD = json.dumps({
+ARCHIVE_JSONLD = ldjson.dumps({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Research Archive",

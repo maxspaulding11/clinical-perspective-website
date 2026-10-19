@@ -27,6 +27,8 @@ Called from build.py. Each page is written from scratch every build.
 """
 import html
 import json
+
+import ldjson
 import os
 import re
 
@@ -162,7 +164,7 @@ def render(*, base_url, header, footer, fmt_date, hub_titles):
                        f"{len(by_school)} schools who name this among their research "
                        f"interests, quoted from their own pages. {topic['blurb']}")[:300]
 
-        jsonld = json.dumps({
+        jsonld = ldjson.dumps({
             "@context": "https://schema.org",
             "@graph": [
                 {"@type": "CollectionPage",
@@ -270,7 +272,7 @@ def _write_index(summary, base_url, header, footer, updated, total):
     description = (f"Clinical psychology doctoral faculty grouped by what they "
                    f"research, drawn from {total} faculty whose interests were read "
                    f"from their own pages.")
-    jsonld = json.dumps({
+    jsonld = ldjson.dumps({
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Clinical psychology professors by research topic",
