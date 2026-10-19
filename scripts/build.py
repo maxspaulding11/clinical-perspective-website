@@ -792,3 +792,12 @@ if _notes:
     print(f'  Deliberately not in the sitemap ({len(_notes)}): '
           + ', '.join(n.replace('not in sitemap: ', '') for n in _notes))
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))
+
+# ----------------------------------------------------------------- llms.txt
+# Last, because it counts what everything above just produced.
+import render_llms
+
+_llm = render_llms.render()
+print(f"llms.txt: {_llm['programs']} programs, {_llm['accepting']} accepting "
+      f"faculty, {_llm['professors']} professors, {_llm['studies']} studies.")
+

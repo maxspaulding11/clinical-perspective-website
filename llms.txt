@@ -1,0 +1,37 @@
+# The Clinical Perspective
+
+> A free, independently maintained record of which clinical psychology doctoral faculty are accepting new students for Fall 2027, alongside plain-language summaries of peer-reviewed mental health research. No account, no paywall, no adverts.
+
+Last updated 2026-10-17. The figures below are written by the build from the site's own data, not maintained by hand.
+
+## Accepting-students tracker
+
+- [Who's accepting doctoral students](https://theclinicalperspective.org/tools/faculty-accepting-students.html): 509 faculty confirmed accepting across 98 programs that have published a list, from 258 programs at 243 institutions checked so far. Marked up as schema.org Dataset and ItemList.
+- [Search faculty by research interest](https://theclinicalperspective.org/tools/professor-search.html): 2681 faculty, each interest quoted from their own university page.
+- [All programs](https://theclinicalperspective.org/programs/): one page per program, with deadlines, GRE requirements, APA outcome disclosures and the faculty marked up as schema.org Person.
+- [Faculty by research topic](https://theclinicalperspective.org/professors/): the same faculty grouped by what they study.
+
+## How the tracker is compiled
+
+- Every faculty name is read from that program's own admissions or faculty page, and the sentence it came from is quoted on the entry beside the date it was read.
+- Names are never taken from search-engine results or third-party lists. In testing, search under-reported UCLA as 3 faculty where the program's page listed 7, and FIU as 6 where it listed 11.
+- Programs are re-checked every two days through the autumn, and corrections are logged on the entry with their date rather than edited away.
+- "Cohort admission" marks programs that admit to the incoming class and assign an advisor afterwards, so no mentor list exists to publish.
+
+## What this does not cover
+
+- A program absent from the tracker has **not been checked yet**. It does not mean nobody there is accepting.
+- A faculty member absent from a program's list is absent from the program's own published list. Some programs publish no list at all.
+- Lists change through the cycle. The date on each entry is the date that page was last read, and is the right thing to cite alongside the claim.
+- Nothing here is admissions advice, and no part of it is endorsed by the programs it describes.
+
+## Research summaries
+
+- [Research archive](https://theclinicalperspective.org/research.html): 99 peer-reviewed studies summarised in plain language, most recent 2026-10-18. Each links to the paper and names its journal, DOI and PMID.
+- [Guides](https://theclinicalperspective.org/guides/): longer explainers on questions that recur.
+
+## About and terms
+
+- [About, and who writes this](https://theclinicalperspective.org/about.html#who-writes-this)
+- [Disclaimer and privacy](https://theclinicalperspective.org/legal.html)
+- Corrections: theclinicalperspective@gmail.com — corrections to the tracker are made the same day where the program's page supports them.
