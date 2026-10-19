@@ -1914,6 +1914,11 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid var(--rule);
 }
 .fac-foot a { font-size: 0.85rem; font-weight: 600; }
+/* The correction link sits with the real links but must not compete with
+   them: it is for the few readers who have spotted something wrong, not a
+   call to action for everyone else. */
+.fac-foot a.fac-fix { font-weight: 500; color: var(--ink-soft); }
+.fac-foot a.fac-fix:hover { color: var(--ink); }
 .fac-checked { font-size: 0.78rem; color: var(--ink-soft); }
 
 .fac-empty {

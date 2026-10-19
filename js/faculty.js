@@ -163,6 +163,31 @@
     '</div>';
   }
 
+  // The per-entry correction link, and the twin of fix_link() in
+  // scripts/render_tracker.py. The two have to produce the same href: the
+  // pre-rendered one is what a crawler and a no-JS reader get, this one is
+  // what everybody has the moment they type in the filter box, and a reader
+  // who notices a wrong name is most likely to be filtering when they do.
+  function fixLink(p) {
+    const status = { posted: 'list published',
+                     pending: 'no list published yet',
+                     cohort: 'cohort admission',
+                     closed: 'not accepting applications' }[p.status]
+                   || 'not checked yet';
+    const n = (p.accepting || []).length;
+    const detail = n ? n + ' faculty listed as accepting'
+                     : 'no faculty listed as accepting';
+    const body = 'Program: ' + p.school + ' — ' + p.program + '\n' +
+      'Entry: https://theclinicalperspective.org/tools/faculty-accepting-students.html#program-' + p.id + '\n' +
+      'Currently shown: ' + status + ', ' + detail +
+      (p.checked ? ', last checked ' + p.checked : '') +
+      '\n\nWhat is wrong:\n';
+    const href = 'mailto:theclinicalperspective@gmail.com' +
+      '?subject=' + encodeURIComponent('Tracker correction — ' + p.school + ' ' + p.program) +
+      '&body=' + encodeURIComponent(body);
+    return '<a class="fac-fix" href="' + esc(href) + '">Something wrong? →</a>';
+  }
+
   function card(p) {
     const count = (p.accepting || []).length;
     const badge = p.status === 'posted'
@@ -194,6 +219,7 @@
         // moment this script re-renders the list for a filter
         '<a href="../programs/' + esc(p.id) + '.html">Full entry →</a>' +
         '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">Check the program\'s own page →</a>' +
+        fixLink(p) +
         (p.checked ? '<span class="fac-checked">Checked ' + esc(p.checked) + '</span>' : '') +
       '</div>' +
     '</li>';

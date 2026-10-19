@@ -35,6 +35,7 @@ except (IOError, ValueError, NameError):
     pass
 import html
 import re
+from urllib.parse import quote
 from datetime import date, timedelta
 
 # How long a posting counts as news. "Newly posted" next to a last-updated date
@@ -327,8 +328,50 @@ def card(p):
         f'<a href="../programs/{e(p["id"])}.html">Full entry →</a>'
         f'<a href="{e(p.get("url"))}" target="_blank" rel="noopener">'
         'Check the program’s own page →</a>'
+        f'{fix_link(p)}'
         f'{checked}</div></li>'
     )
+
+
+def _enc(s):
+    """quote(), but byte-for-byte what JavaScript's encodeURIComponent does.
+
+    js/faculty.js builds this same href when it re-renders the list, and the
+    two should not differ for no reason. They would by default: Python's
+    quote leaves "/" alone and escapes !*'(), encodeURIComponent does the
+    exact opposite. safe="!*'()" settles it -- "/" is no longer safe, those
+    five are, and the always-safe set (letters, digits, _.-~) already agrees.
+    """
+    return quote(s, safe="!*'()")
+
+
+def fix_link(p):
+    """A correction link on the entry itself, not just at the foot of the page.
+
+    There was one mailto, below 258 programs, saying "spotted something out of
+    date?". Someone who has found a wrong name is then asked to describe which
+    of 258 entries they mean, in their own words, from memory -- and the
+    corrections that do arrive have to be matched back by hand.
+
+    This fills in the subject and the first lines of the body, so a reply can
+    be a sentence and still be unambiguous. The status line is what we
+    currently claim, so a reader who disagrees is contradicting something
+    specific, and the date tells them how old the claim is before they bother.
+    """
+    status = {"posted": "list published", "pending": "no list published yet",
+              "cohort": "cohort admission", "closed": "not accepting "
+              "applications"}.get(p["status"], "not checked yet")
+    n = len(p.get("accepting") or [])
+    detail = f"{n} faculty listed as accepting" if n else "no faculty listed as accepting"
+    body = (f"Program: {p['school']} — {p['program']}\n"
+            f"Entry: {BASE_URL}/tools/faculty-accepting-students.html#program-{p['id']}\n"
+            f"Currently shown: {status}, {detail}"
+            + (f", last checked {p['checked']}" if p.get("checked") else "")
+            + "\n\nWhat is wrong:\n")
+    href = ("mailto:theclinicalperspective@gmail.com"
+            "?subject=" + _enc(f"Tracker correction — {p['school']} {p['program']}")
+            + "&body=" + _enc(body))
+    return f'<a class="fac-fix" href="{e(href)}">Something wrong? →</a>'
 
 
 def replace_between(text, start, end, payload):
