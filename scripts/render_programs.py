@@ -330,7 +330,40 @@ def program_jsonld(p, base_url, fmt_date):
                       "text": f"{dl_text}"
                               + (f" ({p['deadlineCycle']})"
                                  if p.get("deadlineCycle") else "")}})
-    graph = [prog, {"@type": "FAQPage", "mainEntity": q},
+    # The faculty themselves, as people rather than as text inside an answer.
+    #
+    # "Is Dr X accepting students" is the question this site exists to answer,
+    # and until now the only machine-readable claim on the page was the
+    # program. These go here rather than on the tracker for two reasons: each
+    # page carries only its own handful of names instead of all 509 landing in
+    # one document, and a person's affiliation is a fact about the program
+    # page they appear on.
+    #
+    # Only accepting and maybe are listed. Everyone's status is in the HTML
+    # either way, but a machine-readable assertion that a named academic is
+    # NOT taking students is the one most likely to be repeated after it stops
+    # being true, and it is not what anyone is looking for.
+    people = []
+    for names, note in ((p.get("accepting") or [],
+                         f"Listed by {p['school']} as accepting new doctoral "
+                         f"students for {cycle}."),
+                        (p.get("maybe") or [],
+                         f"Listed by {p['school']} as possibly considering "
+                         f"applications for {cycle}.")):
+        for n in names:
+            person = {
+                "@type": "Person",
+                "name": n,
+                "affiliation": {"@type": "CollegeOrUniversity",
+                                "name": p["school"],
+                                "url": p.get("url") or ""},
+                "description": note,
+            }
+            if p.get("checked"):
+                person["description"] += f" Last checked {fmt_date(p['checked'])}."
+            people.append(person)
+
+    graph = [prog, *people, {"@type": "FAQPage", "mainEntity": q},
              {"@type": "BreadcrumbList", "itemListElement": [
                  {"@type": "ListItem", "position": 1, "name": "Home",
                   "item": base_url + "/"},
