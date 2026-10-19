@@ -1,0 +1,23 @@
+# Keep the GitHub Actions this repo runs up to date.
+#
+# There is nothing else here for Dependabot to watch. The site is static
+# HTML built by stdlib Python, so there is no package.json and no
+# requirements.txt -- the one third-party import in scripts/ is pypdf, and it
+# is installed on whoever's machine runs the build rather than declared. If a
+# requirements.txt is ever added, add a pip entry below and Dependabot will
+# start watching it too.
+#
+# The real dependency surface is the spare-change repo, which has its own
+# file for npm.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # One PR at a time. Two actions are in use here; a flood of parallel
+    # update PRs on a repo that otherwise commits straight to main would be
+    # noise, and noise is how a real alert gets scrolled past.
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "deps"
