@@ -112,6 +112,16 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
     # this is derived rather than maintained separately.
     membership = {}
 
+    # The newest study each guide covers, which is what its "updated" date
+    # should say. It used to be the build date, so every guide claimed it had
+    # been updated today, every time anything was built -- false on its face,
+    # and with a daily rebuild it would also move six pages in sitemap.xml
+    # every day and teach a crawler to stop believing the dates there.
+    #
+    # This moves when a study is added to the guide and not otherwise, which
+    # is what "kept current as we cover new studies" actually promises.
+    hub_dates = {}
+
     for hub in hubs:
         sections = []
         for sec in hub["sections"]:
@@ -122,6 +132,9 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
                     raise SystemExit(
                         f"hubs: {hub['slug']} lists a study that does not exist: {slug}")
                 membership.setdefault(slug, []).append(hub["slug"])
+                if s.get("date"):
+                    prev = hub_dates.get(hub["slug"], "")
+                    hub_dates[hub["slug"]] = max(prev, s["date"])
                 cards.append(study_card(s, source_url))
             sections.append(
                 f'<section class="guide-section">'
@@ -131,6 +144,7 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
                 "</section>"
             )
 
+        hub_updated = hub_dates.get(hub["slug"]) or updated
         answer = "".join(f"<p>{e(p)}</p>" for p in hub["answer"])
         faq = "".join(
             f'<div class="guide-faq-item"><h3>{e(f["q"])}</h3><p>{e(f["a"])}</p></div>'
@@ -162,7 +176,7 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
 <link rel="icon" type="image/png" href="../assets/logo.png">
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
-{ldjson.dumps(page_jsonld(hub, base_url, updated, author_jsonld), indent=2)}
+{ldjson.dumps(page_jsonld(hub, base_url, hub_updated, author_jsonld), indent=2)}
 </script>
 <script type="application/ld+json">
 {ldjson.dumps(faq_jsonld(hub), indent=2)}
@@ -184,7 +198,7 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
       <p class="eyebrow">Guide</p>
       <h1>{e(hub["h1"])}</h1>
       {byline_html}
-      <p class="guide-updated">Updated {fmt_date(updated)} &middot; kept current as we cover new studies</p>
+      <p class="guide-updated">Updated {fmt_date(hub_updated)} &middot; kept current as we cover new studies</p>
 
       <div class="guide-answer">
         <p class="guide-answer-label">The short answer</p>
@@ -227,7 +241,8 @@ def render(studies, *, base_url, header, footer, fmt_date, source_url,
                   encoding="utf-8") as f:
             f.write(page)
 
-    _write_index(hubs, base_url, header, footer, fmt_date, updated)
+    _write_index(hubs, base_url, header, footer, fmt_date,
+                 max(hub_dates.values(), default=updated))
     return {"hubs": hubs, "membership": membership}
 
 
