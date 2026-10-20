@@ -2,11 +2,11 @@
 
 > A free, independently maintained record of which clinical psychology doctoral faculty are accepting new students for Fall 2027, alongside plain-language summaries of peer-reviewed mental health research. No account, no paywall, no adverts.
 
-Last updated 2026-10-17. The figures below are written by the build from the site's own data, not maintained by hand.
+Last updated 2026-10-20. The figures below are written by the build from the site's own data, not maintained by hand.
 
 ## Accepting-students tracker
 
-- [Who's accepting doctoral students](https://theclinicalperspective.org/tools/faculty-accepting-students.html): 509 faculty confirmed accepting across 98 programs that have published a list, from 258 programs at 243 institutions checked so far. Marked up as schema.org Dataset and ItemList.
+- [Who's accepting doctoral students](https://theclinicalperspective.org/tools/faculty-accepting-students.html): 504 faculty confirmed accepting across 98 programs that have published a list, from 258 programs at 243 institutions checked so far. Marked up as schema.org Dataset and ItemList.
 - [Search faculty by research interest](https://theclinicalperspective.org/tools/professor-search.html): 2681 faculty, each interest quoted from their own university page.
 - [All programs](https://theclinicalperspective.org/programs/): one page per program, with deadlines, GRE requirements, APA outcome disclosures and the faculty marked up as schema.org Person.
 - [Faculty by research topic](https://theclinicalperspective.org/professors/): the same faculty grouped by what they study.

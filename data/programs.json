@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-17",
+ "updated": "2026-10-20",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -95,25 +95,26 @@
    "url": "https://www.binghamton.edu/psychology/graduate/clinical-psychology/admission.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "To determine whether specific core clinical science faculty are inviting applications for the current application cycle (starting the program in Fall 2027), see below:",
+   "checked": "2026-10-20",
+   "sourceQuote": "To determine whether specific core clinical science faculty are inviting applications for the current application cycle (starting the program in Fall 2027), see below: Christina Balderrama-Durbin is not inviting applications. Meredith E. Coles invites applications. Brandon E. Gibb invites applications. Jennifer Gillis Mattson invites applications. Thomas P. Harding is not inviting applications. Matthew D. Johnson invites applications. Mark F. Lenzenweger is not inviting applications. Nadine Mastroleo invites applications. Richard Mattson invites applications. Jennifer McGrath is not inviting applications. Raymond G. Romanczyk is not inviting applications. Emily L. Zale is not inviting applications.",
    "accepting": [
     "Brandon E. Gibb",
-    "Christina Balderrama-Durbin",
-    "Emily L. Zale",
     "Jennifer Gillis Mattson",
-    "Jennifer McGrath",
-    "Mark F. Lenzenweger",
     "Matthew D. Johnson",
     "Meredith E. Coles",
     "Nadine Mastroleo",
-    "Raymond G. Romanczyk",
     "Richard Mattson"
    ],
    "maybe": [],
    "notAccepting": [
+    "Christina Balderrama-Durbin",
+    "Emily L. Zale",
+    "Jennifer McGrath",
+    "Mark F. Lenzenweger",
+    "Raymond G. Romanczyk",
     "Thomas P. Harding"
    ],
+   "note": "Updated 2026-10-20: the program's admissions page now marks five faculty we had listed as inviting applications as \"not inviting applications\" for Fall 2027 -- Christina Balderrama-Durbin, Mark F. Lenzenweger, Jennifer McGrath, Raymond G. Romanczyk and Emily L. Zale -- so they have moved to not accepting. Six faculty still invite applications. The page tags each core clinical faculty member individually, so every one of the twelve is accounted for.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "Fall 2027 entry (current application cycle)",
@@ -2345,14 +2346,16 @@
    "url": "https://grad.psychology.fas.harvard.edu/admissions",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Only current departmental faculty may serve as primary advisors to students in the Psychology PhD program. Of these faculty members, the following will not be reviewing applications for Fall 2027 admission: Mahzarin Banaji, John Weisz. Please note that this list is dynamic and subject to ongoing updates.",
+   "checked": "2026-10-20",
+   "sourceQuote": "Only current departmental faculty may serve as primary advisors to students in the Psychology PhD program. Of these faculty members, the following will not be reviewing applications for Fall 2027 admission: Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Mark Hatzenbuehler, Jill Hooley, Ellen Langer, Steven Pinker, Daniel Schacter, John Weisz. Please note that this list is dynamic and subject to ongoing updates.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [
-    "John Weisz"
+    "John Weisz",
+    "Jill Hooley",
+    "Mark Hatzenbuehler"
    ],
-   "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. Mahzarin Banaji is social-psychology faculty, not part of the Clinical concentration, so she is omitted from notAccepting here; John Weisz is Clinical/child-clinical faculty and is retained. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty per instructions. Page states the list 'is dynamic and subject to ongoing updates.'",
+   "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. On 2026-10-20 the list grew from two names to ten. Of the ten, John Weisz, Jill Hooley and Mark Hatzenbuehler are Clinical faculty and are recorded here; Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Ellen Langer, Steven Pinker and Daniel Schacter are in other areas of the department and are omitted. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty. Clinical faculty not named on the list (for example Matthew Nock and Richard McNally) are not confirmed as accepting -- the page only says who is not. Page states the list 'is dynamic and subject to ongoing updates.'",
    "pcsas": true,
    "applicationDeadline": "December 15, 2026",
    "deadlineCycle": null,
