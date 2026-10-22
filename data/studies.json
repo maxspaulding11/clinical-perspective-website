@@ -1598,5 +1598,21 @@
     "doi": "10.3346/jkms.2026.41.e212",
     "sourceUrl": "https://doi.org/10.3346/jkms.2026.41.e212",
     "instagram": ""
+  },
+  {
+    "slug": "phase-3-trial-tested-an-app-against-the",
+    "index": 101,
+    "title": "A phase 3 trial tested an app against the symptoms of schizophrenia no drug is approved for",
+    "tag": "Psychosis",
+    "blurb": "No medication is approved for the negative symptoms of schizophrenia. In a 457-person double-blind trial, a smartphone therapeutic beat a sham app on motivation and pleasure, by a modest margin.",
+    "date": "2026-10-22",
+    "summary": "Negative symptoms of schizophrenia - blunted motivation, reduced pleasure, social withdrawal - drive much of the long-term disability, and no drug is approved in the US to treat them. Psychosocial interventions help, but access and sustained engagement limit them. Researchers led by Abhishek Pratap ran CONVOKE, a phase 3, multicentre, double-blind randomised trial at 66 US sites between March 2023 and June 2025, testing CT-155, an investigational smartphone-based digital therapeutic built on established psychosocial techniques, as an add-on to antipsychotic medication. 457 adults already taking up to two antipsychotics were randomised one to one to the therapeutic or to a digital control app, for 16 weeks. The primary outcome was change in the motivation and pleasure subscale of the Clinical Assessment Interview for Negative Symptoms. Both groups improved: the treatment arm by 6.8 points, the control arm by 4.2, a difference of 2.6 points, confidence interval 4.0 to 1.2, p below 0.001. Retention was high in both arms, 70.4% and 76.5% still active at week 15. Three things are worth holding together. The design is strong - double-blind, a digital control rather than a waiting list, phase 3, large. The effect is modest, a small-to-moderate standardised difference. And the control arm improved substantially on its own, which is what a credible sham app looks like and also a reminder of how much of a digital intervention's apparent benefit is attention and structure. The product is industry-developed and industry-funded, which is normal for a phase 3 trial and still worth stating.",
+    "journal": "JAMA network open",
+    "authors": "Abhishek Pratap, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42789268",
+    "doi": "10.1001/jamanetworkopen.2026.35753",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35753",
+    "instagram": ""
   }
 ]
