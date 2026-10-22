@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-20",
+ "updated": "2026-10-22",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -1510,12 +1510,12 @@
    "url": "https://www.clarku.edu/psychology/phd-programs/clinical-psychology/",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "The Clinical Psychology Ph.D. is accepting new student admissions for Fall 2027.",
+   "checked": "2026-10-22",
+   "sourceQuote": "The Clinical Psychology Ph.D. is accepting new student admissions for Fall 2027. All clinical faculty may take a student; select social faculty may take or co-mentor a clinical student.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The program states it is admitting for Fall 2027 but names no faculty, so there is nothing to list yet.",
+   "note": "The program states it is admitting for Fall 2027 and, as of 2026-10-22, that all clinical faculty may take a student, but it names no one, so there is no list to record. 'May' is also a hedge.",
    "applicationDeadline": null,
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -2346,8 +2346,8 @@
    "url": "https://grad.psychology.fas.harvard.edu/admissions",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-20",
-   "sourceQuote": "Only current departmental faculty may serve as primary advisors to students in the Psychology PhD program. Of these faculty members, the following will not be reviewing applications for Fall 2027 admission: Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Mark Hatzenbuehler, Jill Hooley, Ellen Langer, Steven Pinker, Daniel Schacter, John Weisz. Please note that this list is dynamic and subject to ongoing updates.",
+   "checked": "2026-10-22",
+   "sourceQuote": "Only current departmental faculty may serve as primary advisors to students in the Psychology PhD program. Of these faculty members, the following will not be reviewing applications for Fall 2027 admission: Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Mark Hatzenbuehler, Jill Hooley, Joshua Jackson, Ellen Langer, Steven Pinker, Daniel Schacter, John Weisz. Please note that this list is dynamic and subject to ongoing updates.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [
@@ -2355,7 +2355,7 @@
     "Jill Hooley",
     "Mark Hatzenbuehler"
    ],
-   "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. On 2026-10-20 the list grew from two names to ten. Of the ten, John Weisz, Jill Hooley and Mark Hatzenbuehler are Clinical faculty and are recorded here; Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Ellen Langer, Steven Pinker and Daniel Schacter are in other areas of the department and are omitted. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty. Clinical faculty not named on the list (for example Matthew Nock and Richard McNally) are not confirmed as accepting -- the page only says who is not. Page states the list 'is dynamic and subject to ongoing updates.'",
+   "note": "This is a whole-department (not clinical-specific) exclusion list; the department does not publish concentration-specific rosters. On 2026-10-20 the list grew from two names to ten. Of the ten, John Weisz, Jill Hooley and Mark Hatzenbuehler are Clinical faculty and are recorded here; Ashwini Ashokkumar, Mahzarin Banaji, Samuel Gershman, Daniel Gilbert, Ellen Langer, Steven Pinker and Daniel Schacter are in other areas of the department and are omitted. The page publishes only a negative (not-accepting) list; there is no positive list of who is definitely accepting, so 'accepting' is left empty. Clinical faculty not named on the list (for example Matthew Nock and Richard McNally) are not confirmed as accepting -- the page only says who is not. By 2026-10-22 the list had eleven names; the addition, Joshua Jackson, is not clinical faculty and is omitted. Page states the list 'is dynamic and subject to ongoing updates.'",
    "pcsas": true,
    "applicationDeadline": "December 15, 2026",
    "deadlineCycle": null,
@@ -5622,12 +5622,12 @@
    "url": "https://www.artsci.uc.edu/natural-sciences/psychology/academic-programs/phd/newstudents.html",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-10-11",
-   "sourceQuote": "We are currently finalizing our list of faculty mentors who anticipate recrutiting new Ph.D. students for the 2027-2028 doctoral cohort.",
+   "checked": "2026-10-22",
+   "sourceQuote": "The faculty mentors listed below are potentially recruiting new Ph.D. students for the 2027-2028 incoming doctoral class.",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The department had said its list for the 2027-2028 doctoral cohort would be posted in late September 2026. As of 2026-10-11 the page says the list is still being finalized and asks applicants to check back. No names yet. (\"recrutiting\" is the page's own spelling.)",
+   "note": "By 2026-10-22 the department had posted clinical names under the heading above: Pankhuri Aggarwal, Quintino Mano, Monica Mitchell, Tia Solomon and Sarah Whitton, with a note that Dr. Solomon may co-mentor a clinical student alongside a clinical faculty member. The wording is 'potentially recruiting', which is hedged, so the entry stays pending until that is reviewed rather than listing these five as accepting. The page is department-wide; its Behavioral Science list is still being finalized.",
    "applicationDeadline": "December 5",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -5798,14 +5798,15 @@
    "url": "https://www.udel.edu/academics/colleges/cas/units/departments/psychological-and-brain-sciences/graduate-programs/clinical-science-concentration/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-11",
-   "sourceQuote": "Clinical science concentration faculty accepting graduate students for 2027-2028: Naomi Samimi-Sadeh",
+   "checked": "2026-10-22",
+   "sourceQuote": "Clinical science concentration faculty accepting graduate students for 2027–2028: Naomi Samimi-Sadeh, Matt Cohen",
    "accepting": [
-    "Naomi Samimi-Sadeh"
+    "Naomi Samimi-Sadeh",
+    "Matt Cohen"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "One name, and the program asks applicants to check each faculty member's bio page for research interests and current funding before applying.",
+   "note": "Two names. Matt Cohen was added to the clinical science concentration's list by 2026-10-22; his name links to a faculty profile in the College of Health Sciences' Communication Sciences and Disorders department, not Psychological and Brain Sciences, but he is listed on the clinical concentration's own page as accepting its students. The program asks applicants to check each faculty member's bio page for research interests and current funding before applying.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -7198,7 +7199,7 @@
    "url": "https://psychology.pitt.edu/people?combine=&programs=38&accepting_grad_student=yes&person_type=45",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-29",
+   "checked": "2026-10-22",
    "sourceQuote": "Department People directory, filtered to Program = Clinical and Accepting Graduate Students? = Yes",
    "accepting": [
     "Julie Fiez",
@@ -7226,7 +7227,7 @@
     "Rebecca G. Reed",
     "Sophia Choukas-Bradley"
    ],
-   "note": "Pitt does not publish a list; it publishes a directory you filter. These twelve are what it returns for Program = Clinical and Accepting Graduate Students? = Yes, and the entry's url is that exact query, so anyone can re-run it. Two of them are affiliates of the clinical program holding Psychiatry appointments, Brant Hasler and Beatriz Luna, and several are cross-listed with another area -- Julie Fiez's own profile says she is recruiting for both Clinical and Cognitive for Fall 2027. Frances L Wang is not yet on this tracker's faculty roster, so that name has no profile page to link to. The directory carries no cycle label of its own; the Fall 2027 year was confirmed on an individual profile. On 2026-09-29 Gabriella Alvarez no longer came back under Accepting = Yes and now appears under Accepting = No, so she was taken off the accepting list; she had also been recorded under notAccepting, which contradicted her place on the accepting list until this update.",
+   "note": "Pitt does not publish a list; it publishes a directory you filter. These twelve are what it returns for Program = Clinical and Accepting Graduate Students? = Yes, and the entry's url is that exact query, so anyone can re-run it. Two of them are affiliates of the clinical program holding Psychiatry appointments, Brant Hasler and Beatriz Luna, and several are cross-listed with another area -- Julie Fiez's own profile says she is recruiting for both Clinical and Cognitive for Fall 2027. Frances L Wang is not yet on this tracker's faculty roster, so that name has no profile page to link to. The directory carries no cycle label of its own; the Fall 2027 year was confirmed on an individual profile. On 2026-09-29 Gabriella Alvarez no longer came back under Accepting = Yes and now appears under Accepting = No, so she was taken off the accepting list; she had also been recorded under notAccepting, which contradicted her place on the accepting list until this update. On 2026-10-22 she came back under Accepting = Yes, but her own profile says 'For Fall 2027 applications, Dr. Alvarez is recruiting for the Biological and Health program only', so for clinical applicants she stays recorded as not accepting. The directory's flag is per person, not per program, which is why it shows her. Jamie L. Hanson no longer appears under either Yes or No.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
@@ -7982,7 +7983,7 @@
    "url": "https://psychology.vcu.edu/graduate/phd-in-clinical-psychology/clinical-psychology-admissions/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-14",
+   "checked": "2026-10-22",
    "sourceQuote": "Faculty Accepting Applications for Fall 2027",
    "accepting": [
     "Cecelia Valrie",
@@ -7991,11 +7992,12 @@
     "Jared Keeley",
     "Michael Southam-Gerow",
     "Molly A. Bowdring",
-    "Vivian Dzokoto"
+    "Vivian Dzokoto",
+    "Bernard Fuemmeler"
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Page splits accepting faculty by concentration: Behavioral Medicine (Vivian Dzokoto, Jared Keeley, Molly A. Bowdring, Gemma Wallace) and Clinical Child (Michael Southam-Gerow, Heather Jones, Cecelia Valrie). Both concentrations fall under the single roster entry 'Clinical Ph.D.' Bowdring and Wallace were added to the page between 2026-09-09 and 2026-09-14.",
+   "note": "Page splits accepting faculty by concentration: Behavioral Medicine (Vivian Dzokoto, Jared Keeley, Molly A. Bowdring, Gemma Wallace, Bernard Fuemmeler) and Clinical Child (Michael Southam-Gerow, Heather Jones, Cecelia Valrie). Both concentrations fall under the single roster entry 'Clinical Ph.D.' Bowdring and Wallace were added to the page between 2026-09-09 and 2026-09-14; Fuemmeler was added by 2026-10-22, listed without a profile link.",
    "applicationDeadline": "December 1",
    "deadlineCycle": "Fall 2027 entry",
    "greRequired": "not accepted",
@@ -8284,7 +8286,7 @@
    "url": "https://psychology.wvu.edu/graduate-students/ph-d-in-psychology-clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-17",
+   "checked": "2026-10-22",
    "sourceQuote": "Seeking a student for the Fall 2027 admissions cycle",
    "accepting": [
     "Elisa Krackow",
@@ -8385,14 +8387,20 @@
    "state": "KS",
    "degree": "PhD",
    "url": "https://www.wichita.edu/academics/fairmount_las/psychology/graduate/clinical/index.php",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "The following faculty within the clinical program are open to taking new students for the Fall of 2026: Renee Patrick, Brendan Clark, Nabiha Chaudhary, Samantha Gregus Slade, and Thomas Skinner.",
-   "accepting": [],
+   "checked": "2026-10-22",
+   "sourceQuote": "For admission in fall 2027, Drs. Jacquin, Chaudhary, Patrick, Slade, and Clark are open to taking a clinical student.",
+   "accepting": [
+    "Kristine Jacquin",
+    "Nabiha Chaudhary",
+    "M. Renee Patrick",
+    "Samantha Gregus Slade",
+    "C. Brendan Clark"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "Checked the Clinical PhD program page, curriculum page, graduate application page, and faculty/staff contact page on wichita.edu. None post a list of which specific faculty are/aren't accepting doctoral students for Fall 2027 -- applicants are only told to indicate a preferred faculty member. (Search snippets circulated a name list attributed to 'Fall 2026,' but that text could not be located on any Wichita State-hosted page I opened, so per the rules it is not reported.) Deadline (Dec 1) confirmed directly on the program page.",
+   "note": "Read from the Clinical PhD program page, which on 2026-10-22 names five faculty open to taking a clinical student for fall 2027. The page gives surnames only; full names are those on the department's faculty and staff list, except Jacquin, who is not on that list yet. She is Kristine Jacquin, a clinical psychologist whose appointment as professor of forensic psychology at Wichita State was announced in August 2026 by the search firm that recruited her. The sentence replaces an older Fall 2026 list, which named Thomas Skinner and not Jacquin. Deadline December 1.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -8405,7 +8413,8 @@
     "Career/goals statement required"
    ],
    "appInfoSourceUrl": "https://www.wichita.edu/academics/fairmount_las/psychology/graduate/clinical/index.php",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-22"
   },
   {
    "id": "widener-university-psyd",
