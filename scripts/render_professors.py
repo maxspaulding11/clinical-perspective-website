@@ -141,14 +141,14 @@ def badge(p, prog, status):
     return ""
 
 
-def full_card(p, program_id, prog=None, status=None):
-    """The complete card, rendering-identical to cardInner() in professor-search.js.
+def full_card(p, program_id, prog=None, status=None, has_page=False):
+    """The complete card.
 
-    Not byte-identical -- this writes &middot; and &rarr; where the script
-    writes the characters themselves -- but the parsed DOM has to match, because
-    the script fills these cards in place a moment after paint and any
-    difference in what it writes is a shift in the part of the page the reader
-    is looking at. If you change one, change both."""
+    This used to have a twin, cardInner() in js/professor-search.js, and the
+    two had to render identically or the script's repaint shifted the page
+    under the reader. That function is gone: the script no longer builds
+    cards, it only hides and shows the ones already here, so this is the
+    single implementation and can be changed on its own."""
     interests = "".join(f"<li>{e(i)}</li>" for i in (p.get("interests") or []))
     # The script writes the separator only when there is a program to put after
     # it, so this cannot write one unconditionally.
@@ -165,6 +165,13 @@ def full_card(p, program_id, prog=None, status=None):
             f'data-star-prof="{e(p["id"])}" aria-pressed="false" '
             'aria-label="Save to my list" title="Save to my list">'
             '&#9734;</button>')
+    # The link to their own page, where there is one. Without this the
+    # faculty/ pages would be reachable only from the sitemap, and a page
+    # nothing links to is a page a crawler has little reason to believe
+    # matters. render_faculty.py decides who has one; the rule is not
+    # repeated here.
+    profile = (f'<a class="prof-profile-link" href="../faculty/{e(p["id"])}.html">'
+               f'Full profile &rarr;</a>' if has_page else "")
     return (
         f'<li class="fac-card" id="prof-{e(p["id"])}">'
         '<div class="fac-head"><div>'
@@ -177,7 +184,7 @@ def full_card(p, program_id, prog=None, status=None):
         '<div class="fac-foot">'
         f'<a href="{e(p.get("url"))}" target="_blank" rel="noopener">'
         'View their university page &rarr;</a>'
-        f'{tracker}{checked}</div></li>'
+        f'{profile}{tracker}{checked}</div></li>'
     )
 
 
@@ -233,7 +240,7 @@ def freshen_updated(data):
     return newest
 
 
-def render():
+def render(faculty_pages=frozenset()):
     data = json.load(open(DATA, encoding="utf-8"))
     freshen_updated(data)
     professors = sorted(data["professors"], key=lambda p: p["name"].lower())
@@ -254,7 +261,8 @@ def render():
         if FULL_CARDS is None or i < FULL_CARDS:
             full += 1
             badged += bool(badge(p, prog, status))
-            cards.append(full_card(p, pid, prog, status))
+            cards.append(full_card(p, pid, prog, status,
+                                   p["id"] in faculty_pages))
         else:
             cards.append(card(p, pid))
 

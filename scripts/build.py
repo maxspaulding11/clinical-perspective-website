@@ -600,6 +600,28 @@ with open(os.path.join(SITE, 'data', 'studies.json'), 'w', encoding='utf-8') as 
     json.dump(studies, f, indent=2, ensure_ascii=False)
     f.write('\n')
 
+# The tracker resolves its save buttons from a precomputed map instead of
+# downloading all 2,647 professor records to work them out in the browser.
+#
+# This has to run BEFORE the professor list, which reads star-map.json to
+# decide which cards get an "accepting this cycle" badge. It used to run
+# after, so the professor page was built from the PREVIOUS build's map and a
+# newly added name needed two builds before its badge appeared. The 17 Oct
+# sweep committed Dean McKay as accepting on the tracker while his professor
+# card had no badge, and nothing was wrong with either renderer -- only the
+# order. render_starmap reads data files and nothing either renderer writes,
+# so it is free to go first.
+import render_starmap
+
+_sm = render_starmap.render()
+
+# --------------------------------------------------- a page per faculty member
+# After the star map, which tells it who is accepting, and before the sitemap,
+# which needs the ids of the pages it wrote.
+import render_faculty
+
+_fac = render_faculty.render(base_url=BASE_URL, header=header, footer=footer)
+
 # ---------------------------------------------------------------- sitemap
 
 urls = [
@@ -621,6 +643,10 @@ for s in newest_first:
 for h in _h['hubs']:
     urls.append((f"{BASE_URL}/guides/{h['slug']}.html", '0.9'))
 urls.append((f'{BASE_URL}/professors/', '0.8'))
+# A faculty page answers the narrowest query this site gets -- a person's name
+# -- but it is one person's interests, so it sits below a program page.
+for _fid in _fac['written']:
+    urls.append((f"{BASE_URL}/faculty/{_fid}.html", '0.7'))
 for tp in _tp['topics']:
     urls.append((f"{BASE_URL}/professors/{tp['slug']}.html", '0.8'))
 
@@ -720,26 +746,11 @@ if _new_html != _html:
         _f.write(_new_html)
     print(f'Homepage: tracker line updated ({_t["faculty"]} faculty, {_t["posted"]} programs).')
 
-# The tracker resolves its save buttons from a precomputed map instead of
-# downloading all 2,647 professor records to work them out in the browser.
-#
-# This has to run BEFORE the professor list, which reads star-map.json to
-# decide which cards get an "accepting this cycle" badge. It used to run
-# after, so the professor page was built from the PREVIOUS build's map and a
-# newly added name needed two builds before its badge appeared. The 17 Oct
-# sweep committed Dean McKay as accepting on the tracker while his professor
-# card had no badge, and nothing was wrong with either renderer -- only the
-# order. render_starmap reads data files and nothing either renderer writes,
-# so it is free to go first.
-import render_starmap
-
-_sm = render_starmap.render()
-
 # The professor list had the same problem the tracker did, on five times as
 # many names: 2,640 faculty, all arriving by JavaScript after load.
 import render_professors
 
-_pr = render_professors.render()
+_pr = render_professors.render(faculty_pages=set(_fac['written']))
 
 print(f'Published {len(studies)} studies (through {studies[-1]["date"]}).')
 if removed:
@@ -791,6 +802,10 @@ print(f'Canonicals: {_n} pages checked, all matching their served path and the s
 if _notes:
     print(f'  Deliberately not in the sitemap ({len(_notes)}): '
           + ', '.join(n.replace('not in sitemap: ', '') for n in _notes))
+print(f"Faculty: {len(_fac['written'])} pages in faculty/ "
+      f"(skipped {_fac['skipped']['interests']} under two interests, "
+      f"{_fac['skipped']['dead_link']} with a dead profile link"
+      + (f"; {_fac['removed']} removed" if _fac['removed'] else "") + ").")
 print('Tags:', ', '.join(f'{k} ({len(v)})' for k, v in sorted(by_tag.items())))
 
 # ----------------------------------------------------------------- llms.txt

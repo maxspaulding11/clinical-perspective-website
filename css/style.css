@@ -2844,3 +2844,56 @@ a:hover { text-decoration: underline; }
   .odds-tile { flex: 1 1 100%; }
   .odds-value { font-size: 1.6rem; }
 }
+
+
+/* ---- a page per faculty member (scripts/render_faculty.py) ---- */
+.fac-page { max-width: 760px; }
+
+/* The one question this site exists to answer, so it reads as a statement
+   rather than a badge. Colours match the tracker's groups deliberately:
+   green/amber/grey mean the same thing on both pages. */
+.fac-page-status {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  margin: 0 0 28px;
+}
+.fac-page-status.is-accepting {
+  background: rgba(44,107,65,0.08);
+  border-color: rgba(44,107,65,0.25);
+}
+.fac-page-status.is-accepting strong { color: #245634; }
+.fac-page-status.is-maybe {
+  background: rgba(176,106,18,0.08);
+  border-color: rgba(176,106,18,0.25);
+}
+.fac-page-status.is-maybe strong { color: #8c5410; }
+.fac-page-status.is-not-accepting,
+.fac-page-status.is-unknown {
+  background: var(--cream);
+  color: var(--ink-soft);
+}
+.fac-page-status a { color: var(--maroon); font-weight: 600; }
+
+.fac-page-note {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.fac-page-interests {
+  margin: 0 0 30px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+.fac-page-interests li { margin-bottom: 4px; }
+
+.fac-page-links { margin: 0; font-size: 0.9rem; font-weight: 600; }
+.fac-page-links a { color: var(--maroon); display: inline-block; margin-right: 18px; }
+
+/* Their own page, from the search card. Same weight as the other two links
+   in the footer; this is not a lesser destination. */
+.prof-profile-link { color: var(--maroon); }
