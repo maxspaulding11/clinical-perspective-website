@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -5620,14 +5620,20 @@
    "state": "OH",
    "degree": "PhD",
    "url": "https://www.artsci.uc.edu/natural-sciences/psychology/academic-programs/phd/newstudents.html",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-22",
+   "checked": "2026-10-23",
    "sourceQuote": "The faculty mentors listed below are potentially recruiting new Ph.D. students for the 2027-2028 incoming doctoral class.",
    "accepting": [],
-   "maybe": [],
+   "maybe": [
+    "Pankhuri Aggarwal",
+    "Quintino Mano",
+    "Monica Mitchell",
+    "Tia Solomon",
+    "Sarah W. Whitton"
+   ],
    "notAccepting": [],
-   "note": "By 2026-10-22 the department had posted clinical names under the heading above: Pankhuri Aggarwal, Quintino Mano, Monica Mitchell, Tia Solomon and Sarah Whitton, with a note that Dr. Solomon may co-mentor a clinical student alongside a clinical faculty member. The wording is 'potentially recruiting', which is hedged, so the entry stays pending until that is reviewed rather than listing these five as accepting. The page is department-wide; its Behavioral Science list is still being finalized.",
+   "note": "Clinical names only, read from the department's Faculty Accepting New Students page under its 'Clinical Faculty' heading; the page also lists Behavioral Science faculty, which are not included. All five are recorded as undecided rather than accepting because the page says 'potentially recruiting', which is a hedge. Tia Solomon is a co-mentor only: the page says 'For clinical applicants, Dr. Solomon may co-mentor a clinical student with a clinical faculty member', so she would not be a clinical applicant's sole or primary mentor. '2027-2028 incoming doctoral class' means students starting in Fall 2027.",
    "applicationDeadline": "December 5",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -5639,7 +5645,8 @@
     "Minimum 24 quarter/16 semester credits in non-intro psychology courses including research methods and statistics"
    ],
    "appInfoSourceUrl": "https://www.artsci.uc.edu/natural-sciences/psychology/academic-programs/phd/appinfo.html",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-23"
   },
   {
    "id": "university-of-colorado-at-colorado-springs-phd",
