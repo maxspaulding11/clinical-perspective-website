@@ -30,6 +30,12 @@ Last updated 2026-10-23. The figures below are written by the build from the sit
 - [Research archive](https://theclinicalperspective.org/research.html): 101 peer-reviewed studies summarised in plain language, most recent 2026-10-22. Each links to the paper and names its journal, DOI and PMID.
 - [Guides](https://theclinicalperspective.org/guides/): longer explainers on questions that recur.
 
+## Reuse
+
+- The accepting-students tracker is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): quote it, republish it or build on it, including commercially, with credit to The Clinical Perspective and a link back. No permission needed.
+- That covers the compilation — which programs were checked, which faculty each names, the status recorded and the dates the pages were read. It does not cover the sentences quoted from each program's own page, which are those institutions' words, nor the research summaries, which are separate. [Full scope](https://theclinicalperspective.org/legal.html#tracker-licence).
+- Please carry the date shown on an entry alongside any figure taken from it.
+
 ## About and terms
 
 - [About, and who writes this](https://theclinicalperspective.org/about.html#who-writes-this)

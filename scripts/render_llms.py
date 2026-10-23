@@ -115,6 +115,22 @@ def render():
              f"that recur.")
     L.append("")
 
+    L.append("## Reuse")
+    L.append("")
+    L.append("- The accepting-students tracker is published under "
+             "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): "
+             "quote it, republish it or build on it, including "
+             "commercially, with credit to The Clinical Perspective and a "
+             "link back. No permission needed.")
+    L.append(f"- That covers the compilation — which programs were checked, "
+             f"which faculty each names, the status recorded and the dates "
+             f"the pages were read. It does not cover the sentences quoted "
+             f"from each program's own page, which are those institutions' "
+             f"words, nor the research summaries, which are separate. "
+             f"[Full scope]({BASE}/legal.html#tracker-licence).")
+    L.append("- Please carry the date shown on an entry alongside any figure "
+             "taken from it.")
+    L.append("")
     L.append("## About and terms")
     L.append("")
     L.append(f"- [About, and who writes this]({BASE}/about.html#who-writes-this)")
