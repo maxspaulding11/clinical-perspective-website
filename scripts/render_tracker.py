@@ -76,10 +76,18 @@ def dataset_jsonld(data, programs, posted, faculty):
     from what a reader sees -- which is the whole failure mode of a typed
     "last updated" field, and why freshen_updated() exists.
 
-    Deliberately no "license": the site does not state reuse terms anywhere,
-    and inventing a CC licence in machine-readable form would be asserting
-    something nobody has decided. usageInfo points at the terms that do
-    exist instead.
+    The licence is CC BY 4.0, decided 23 October 2026, and it is the field
+    that decides whether anything may quote this at all -- without one the
+    safest reading is "all rights reserved", which is what an assistant
+    weighing whether to reproduce a figure will assume.
+
+    It covers the compilation: which programs were checked, which faculty
+    each names, the status recorded, and the dates the pages were read. Not
+    the sentences quoted from each program's own page, which are those
+    institutions' words and stay theirs; not the research summaries, which
+    are a different thing on the same site. legal.html#tracker-licence says
+    so in full, and usageInfo still points there, because a licence URL on
+    its own does not convey that scope.
     """
     cycle = data.get("cycle", "")
     return {
@@ -99,7 +107,9 @@ def dataset_jsonld(data, programs, posted, faculty):
         "dateModified": data.get("updated", ""),
         "temporalCoverage": cycle,
         "spatialCoverage": {"@type": "Place", "name": "United States"},
-        "usageInfo": f"{BASE_URL}/legal.html",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "usageInfo": f"{BASE_URL}/legal.html#tracker-licence",
+        "creditText": "The Clinical Perspective",
         "creator": {
             "@type": "Person",
             "name": "Maxamus Spaulding",

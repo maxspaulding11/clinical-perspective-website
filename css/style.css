@@ -1918,6 +1918,15 @@ a:hover { text-decoration: underline; }
    them: it is for the few readers who have spotted something wrong, not a
    call to action for everyone else. */
 .fac-foot a.fac-fix { font-weight: 500; color: var(--ink-soft); }
+/* The reuse line, set like the note above it rather than as a banner. */
+.fac-licence {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-align: center;
+  max-width: 62ch;
+  margin: 10px auto 0;
+  line-height: 1.6;
+}
 .fac-foot a.fac-fix:hover { color: var(--ink); }
 .fac-checked { font-size: 0.78rem; color: var(--ink-soft); }
 
