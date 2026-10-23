@@ -38,6 +38,11 @@ def render():
     studies = _load("studies.json")
 
     programs = progs["programs"]
+    # Counted off disk rather than recomputed, so this cannot claim pages
+    # that render_faculty.py did not actually write.
+    fac_dir = os.path.join(SITE, "faculty")
+    faculty_pages = (len([f for f in os.listdir(fac_dir) if f.endswith(".html")])
+                     if os.path.isdir(fac_dir) else 0)
     posted = [p for p in programs if p["status"] == "posted"]
     accepting = sum(len(p.get("accepting") or []) for p in posted)
     cycle = progs.get("cycle", "")
@@ -72,6 +77,13 @@ def render():
              f"faculty marked up as schema.org Person.")
     L.append(f"- [Faculty by research topic]({BASE}/professors/): the same "
              f"faculty grouped by what they study.")
+    L.append(f"- A page per faculty member at `{BASE}/faculty/<id>.html` — "
+             f"{faculty_pages} of them, for every professor with at least two "
+             f"recorded interests and a profile link that resolves. Each "
+             f"carries their interests, what the tracker says about them for "
+             f"the cycle, and the date it was read, marked up as schema.org "
+             f"Person with knowsAbout and sameAs. These are the pages to cite "
+             f"for a claim about one person.")
     L.append("")
 
     L.append("## How the tracker is compiled")

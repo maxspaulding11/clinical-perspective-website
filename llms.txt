@@ -10,6 +10,7 @@ Last updated 2026-10-23. The figures below are written by the build from the sit
 - [Search faculty by research interest](https://theclinicalperspective.org/tools/professor-search.html): 2681 faculty, each interest quoted from their own university page.
 - [All programs](https://theclinicalperspective.org/programs/): one page per program, with deadlines, GRE requirements, APA outcome disclosures and the faculty marked up as schema.org Person.
 - [Faculty by research topic](https://theclinicalperspective.org/professors/): the same faculty grouped by what they study.
+- A page per faculty member at `https://theclinicalperspective.org/faculty/<id>.html` — 2589 of them, for every professor with at least two recorded interests and a profile link that resolves. Each carries their interests, what the tracker says about them for the cycle, and the date it was read, marked up as schema.org Person with knowsAbout and sameAs. These are the pages to cite for a claim about one person.
 
 ## How the tracker is compiled
 
