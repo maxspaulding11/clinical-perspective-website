@@ -1614,5 +1614,21 @@
     "doi": "10.1001/jamanetworkopen.2026.35753",
     "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.35753",
     "instagram": ""
+  },
+  {
+    "slug": "twenty-five-years-of-us-data-suggest-filicide",
+    "index": 102,
+    "title": "Twenty-five years of US data suggest filicide is not one crime but four",
+    "tag": "Forensic",
+    "blurb": "Analysing 3,974 incidents from 1999 to 2023, researchers found offender age, sex and method varied sharply depending on the age of the child, arguing against treating filicide as a single phenomenon.",
+    "date": "2026-10-24",
+    "summary": "Filicide - the killing of a child by a parent or parental figure - is rare enough that most research on it rests on small samples, which is a poor basis for the risk assessments and prevention programmes built on top. Researchers led by Jeffrey Walsh used 25 years of the National Incident-Based Reporting System, 1999 to 2023, covering 3,974 incidents, and used multinomial logistic regression to compare offender, victim and incident characteristics across four categories defined by the victim's age: neonaticide, within 24 hours of birth; infanticide, from one day to under a year; child filicide, one to seventeen; and adult filicide, eighteen and over. The categories differed significantly from one another on offender age, offender sex, race, weapon use and victim demographics. Neonaticide was most often associated with younger female offenders, and with what the coding calls personal weapons rather than any external implement. Adult filicide typically involved older male offenders and firearms. The practical argument the authors make follows from that: a single prevention or risk-assessment framework applied across all four is unlikely to fit any of them well, because the populations and the circumstances are not the same. The data have the limits of police-reported incident data generally. NIBRS does not cover every US jurisdiction across the whole period, cases are recorded as reported rather than as adjudicated, and the maternal mental health information that would matter most clinically - particularly for neonaticide and infanticide - is not in this dataset at all. What it offers is scale, on a question where almost everything else is small.",
+    "journal": "Journal of interpersonal violence",
+    "authors": "Jeffrey A Walsh, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42093573",
+    "doi": "10.1177/08862605261444011",
+    "sourceUrl": "https://doi.org/10.1177/08862605261444011",
+    "instagram": ""
   }
 ]
