@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -6896,15 +6896,15 @@
    "url": "https://psych.unm.edu/graduate/applicant-information/application-instructions.html",
    "status": "pending",
    "cycle": "Fall 2027",
-   "checked": "2026-09-21",
-   "sourceQuote": "Faculty who are interested in accepting a new student for Fall 2026:",
+   "checked": "2026-10-24",
+   "sourceQuote": "Faculty who are interested in accepting a new student for Fall 2027:",
    "accepting": [],
    "maybe": [],
    "notAccepting": [],
-   "note": "The program's own application-instructions page has not been rolled over for this cycle: its only faculty-acceptance list is still headed \"Faculty who are interested in accepting a new student for Fall 2026\", and its GRE note still says \"For Fall 2026 admission\". Those fourteen names are last cycle's and are not counted here. The December 1 deadline is stated without a year as a standing annual one -- \"For best consideration your application must be submitted by December 1st\" -- so for Fall 2027 entry that means December 1, 2026.",
+   "note": "Left pending on purpose. On 2026-10-24 the application-instructions page rolled its list over to \"Faculty who are interested in accepting a new student for Fall 2027\", but it is a department-wide list: the page tells applicants to first choose a concentration, and the ten names span UNM's concentrations, not only clinical. Listed: Cassandra Boness, James Cavanagh, Benjamin Clark, Joshua Grubbs, Geoffrey Miller, Laura Ornelas, Eric Ruthruff, Kamilla Venner, Jacob Vigil, Jane Ellen Smith. Of these only Jane Ellen Smith is on our UNM clinical roster, so the list cannot yet be split into clinical and non-clinical names; none are counted until it is. The page also states the GRE is waived \"for this application cycle\". The December 1 deadline is a standing annual one, so for Fall 2027 entry it means December 1, 2026.",
    "pcsas": true,
    "applicationDeadline": "December 1",
-   "deadlineCycle": "December 1 is the program's standing annual deadline; its page still shows Fall 2026",
+   "deadlineCycle": "December 1 is the program's standing annual deadline (for Fall 2027 entry, December 1, 2026)",
    "greRequired": "optional",
    "numReferences": 3,
    "applicationFee": null,
@@ -6912,8 +6912,7 @@
     "Letter of intent required",
     "CV/resume required",
     "Identify 2-3 preferred faculty advisors",
-    "Virtual Open House interviews in February",
-    "Page shows Fall 2026 cycle, may be outdated"
+    "Virtual Open House interviews in February"
    ],
    "appInfoSourceUrl": "https://psych.unm.edu/graduate/applicant-information/application-instructions.html",
    "appInfoChecked": "2026-08-17"
