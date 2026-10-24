@@ -6904,7 +6904,7 @@
    "note": "Left pending on purpose. On 2026-10-24 the application-instructions page rolled its list over to \"Faculty who are interested in accepting a new student for Fall 2027\", but it is a department-wide list: the page tells applicants to first choose a concentration, and the ten names span UNM's concentrations, not only clinical. Listed: Cassandra Boness, James Cavanagh, Benjamin Clark, Joshua Grubbs, Geoffrey Miller, Laura Ornelas, Eric Ruthruff, Kamilla Venner, Jacob Vigil, Jane Ellen Smith. Of these only Jane Ellen Smith is on our UNM clinical roster, so the list cannot yet be split into clinical and non-clinical names; none are counted until it is. The page also states the GRE is waived \"for this application cycle\". The December 1 deadline is a standing annual one, so for Fall 2027 entry it means December 1, 2026.",
    "pcsas": true,
    "applicationDeadline": "December 1",
-   "deadlineCycle": "December 1 is the program's standing annual deadline (for Fall 2027 entry, December 1, 2026)",
+   "deadlineCycle": "December 1 is the program's standing annual deadline",
    "greRequired": "optional",
    "numReferences": 3,
    "applicationFee": null,
