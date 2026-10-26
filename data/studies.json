@@ -1630,5 +1630,21 @@
     "doi": "10.1177/08862605261444011",
     "sourceUrl": "https://doi.org/10.1177/08862605261444011",
     "instagram": ""
+  },
+  {
+    "slug": "when-a-weapon-was-involved-in-partner-violence",
+    "index": 103,
+    "title": "When a weapon was involved in partner violence, panic and PTSD followed. Depression did not.",
+    "tag": "Trauma",
+    "blurb": "Following 1,114 Australian women across six waves, researchers found weapon-involved intimate partner violence predicted panic and PTSD symptoms even after accounting for other violence and prior symptoms, while depression showed no such association.",
+    "date": "2026-10-26",
+    "summary": "A weapon in intimate partner violence signals lethality and control in a way that other violence may not, but whether that translates into a distinct mental health signature is hard to establish, because weapon-involved violence rarely occurs on its own. Researchers led by Tyson Whitten used a prospective cohort recruited from public antenatal clinics in Sydney and Melbourne in 2015 and 2016, following 1,114 women across six waves at 12 to 18 month intervals. At each wave they measured symptom counts for major depression, panic disorder, PTSD and adult separation anxiety, and asked about past-year weapon-involved violence, non-weapon physical violence, and psychological abuse. Over the follow-up, 43 women, 3.9%, reported weapon-involved violence; 171, 15.4%, reported non-weapon physical violence; and 726, 65.2%, reported psychological abuse. The models adjusted for the other forms of violence occurring at the same time, for past violence, and for each woman's own earlier symptom levels, which is what makes the result interesting. After all that, weapon involvement remained associated with panic disorder symptoms and with PTSD symptoms. It was not associated with depression or with separation anxiety. The specificity is the finding: this is not a general worsening of mental health but a pattern concentrated in fear-based conditions, which is what you would predict if the mechanism runs through perceived threat to life. The caution is the exposed group's size. Forty-three women is small, the confidence intervals are correspondingly wide, and the cohort began in antenatal clinics, so it is not a general population sample.",
+    "journal": "JAMA network open",
+    "authors": "Tyson Whitten, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42804205",
+    "doi": "10.1001/jamanetworkopen.2026.36313",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.36313",
+    "instagram": ""
   }
 ]
