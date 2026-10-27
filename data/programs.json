@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-24",
+ "updated": "2026-10-27",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -3246,7 +3246,7 @@
    "url": "https://psychology.msu.edu/programs/clinical/prospective-students.html",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-14",
+   "checked": "2026-10-27",
    "sourceQuote": "Dr. Brooke Ingersoll, Dr. Katy Thakkar, Dr. Amy Drahota, and Dr. Raffles Cowan are accepting graduate students for Fall 2027.",
    "accepting": [
     "Amy Drahota",
@@ -3256,7 +3256,7 @@
    ],
    "maybe": [],
    "notAccepting": [],
-   "note": "This sentence appears under a 'List of Clinical Faculty Accepting New Students' heading but only addresses the (now past) Fall 2026 cohort; the page contains no Fall 2027 information or names, so it appears not yet updated for the current cycle.",
+   "note": "The sentence is shown in a highlighted notice at the top of the Clinical Science Prospective Students page, naming the cycle (Fall 2027) explicitly. Re-read 27 October 2026; the page carries no other faculty list. (An earlier note here said the page only addressed Fall 2026; that was out of date.)",
    "pcsas": true,
    "applicationDeadline": null,
    "deadlineCycle": null,
@@ -4474,13 +4474,12 @@
    "url": "https://academics.siu.edu/human-behavioral/psychology/doctoral/clinical/information.php",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-17",
-   "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
+   "checked": "2026-10-27",
+   "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 Maria Aparcero Suero Amy Lang Eric Lee ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
    "accepting": [
     "Amy Lang",
     "Eric Lee",
-    "Maria Aparcero Suero",
-    "Mary Louise Cashel"
+    "Maria Aparcero Suero"
    ],
    "maybe": [],
    "notAccepting": [
@@ -4489,7 +4488,7 @@
     "Robert Morgan",
     "Tamara Kang"
    ],
-   "note": "Correction on 2026-09-14: Daryl G Kroner was previously listed here as accepting, but the program's page now names him among the faculty NOT seeking students for Fall 2027. Moved accordingly. The page keeps a separate Fall 2026 list further down; only the Fall 2027 sections were used.",
+   "note": "Correction on 2026-09-14: Daryl G Kroner was previously listed here as accepting, but the program's page now names him among the faculty NOT seeking students for Fall 2027. Moved accordingly. The page keeps a separate Fall 2026 list further down; only the Fall 2027 sections were used. Re-read 27 October 2026: Mary Louise Cashel, who was on the Fall 2027 list when it was read on 17 October, is no longer named anywhere on the page, so she has been removed from the accepting list. The page does not list her as not seeking students either, so she is not recorded as not accepting.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -8292,7 +8291,7 @@
    "url": "https://psychology.wvu.edu/graduate-students/ph-d-in-psychology-clinical-psychology",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-22",
+   "checked": "2026-10-27",
    "sourceQuote": "Seeking a student for the Fall 2027 admissions cycle",
    "accepting": [
     "Elisa Krackow",
@@ -8307,7 +8306,7 @@
     "Janelle Heddings",
     "Hannah Rea"
    ],
-   "note": "The department's list was previously Fall-2025-labeled and stale, and a 2026-08-17 recheck could not independently verify (HTTP 403) while disagreeing with the old note on Janelle Heddings's status. A 2026-08-24 recheck independently accessed the page again and found an explicit 'Fall 2027' cycle label, again classifying Heddings as not accepting — consistent with the 08-17 finding and resolving the earlier conflict. Direct WebFetch verification is still blocked by the site (403), but two independent agent visits a week apart now agree, so this is published as posted. Rechecked 2026-10-09: Hannah Rea is now marked 'Not accepting a student for the Fall 2027 admissions cycle' and has moved to not accepting.",
+   "note": "The department's list was previously Fall-2025-labeled and stale, and a 2026-08-17 recheck could not independently verify (HTTP 403) while disagreeing with the old note on Janelle Heddings's status. A 2026-08-24 recheck independently accessed the page again and found an explicit 'Fall 2027' cycle label, again classifying Heddings as not accepting — consistent with the 08-17 finding and resolving the earlier conflict. Direct WebFetch verification is still blocked by the site (403), but two independent agent visits a week apart now agree, so this is published as posted. Rechecked 2026-10-09: Hannah Rea is now marked 'Not accepting a student for the Fall 2027 admissions cycle' and has moved to not accepting. Read by hand in a browser on 27 October 2026 (the site still blocks scripts with HTTP 403): no change.",
    "applicationDeadline": null,
    "deadlineCycle": null,
    "greRequired": "optional",
