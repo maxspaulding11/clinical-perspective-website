@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-10-27",
+ "updated": "2026-10-29",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -51,7 +51,7 @@
    "url": "https://case.fiu.edu/psychology/students/graduate/phd-in-clinical-science-in-child-and-adolescent-psychology/admissions/",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
+   "checked": "2026-10-29",
    "sourceQuote": "The following faculty will be accepting new students:",
    "accepting": [
     "Dana McMakin",
@@ -59,7 +59,6 @@
     "Elisa Trucco",
     "Greg Fabiano",
     "Jeremy Pettit",
-    "Jonathan Comer",
     "Kat Hart",
     "Mei Yi Ng",
     "Paulo Graziano",
@@ -84,7 +83,8 @@
     "Fee waivers available for Fall 2027 applicants in need"
    ],
    "appInfoSourceUrl": "https://case.fiu.edu/psychology/students/graduate/phd-in-clinical-science-in-child-and-adolescent-psychology/admissions/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "note": "Rechecked 29 October 2026: the \"Fall 2027 Graduate Student Recruitment\" list now names ten faculty. Jonathan Comer, on it when it was read on 9 September, is no longer named anywhere on the page, so he comes off the accepting list. He is not moved to not-accepting, because the page says nothing about him either way."
   },
   {
    "id": "binghamton-clinical",
@@ -1508,14 +1508,21 @@
    "state": "MA",
    "degree": "PhD",
    "url": "https://www.clarku.edu/psychology/phd-programs/clinical-psychology/",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-22",
-   "sourceQuote": "The Clinical Psychology Ph.D. is accepting new student admissions for Fall 2027. All clinical faculty may take a student; select social faculty may take or co-mentor a clinical student.",
-   "accepting": [],
+   "checked": "2026-10-29",
+   "sourceQuote": "The Clinical Psychology Ph.D. is accepting new student admissions for Fall 2027. The following faculty will be reviewing applications for our PhD program in clinical psychology:",
+   "accepting": [
+    "Esteban Cardemil",
+    "James Cordova",
+    "Abbie Goldberg",
+    "Amy Heberle",
+    "Nicole Overstreet",
+    "Kathleen Palm Reed"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The program states it is admitting for Fall 2027 and, as of 2026-10-22, that all clinical faculty may take a student, but it names no one, so there is no list to record. 'May' is also a hedge.",
+   "note": "Six faculty, read from the clinical program's own page on 29 October 2026, in a list that directly follows the line \"The Clinical Psychology Ph.D. is accepting new student admissions for Fall 2027\". Until this check the page said only that all clinical faculty may take a student and named no one. The page writes \"Kathy Palm Reed\"; she is recorded under her full name, Kathleen Palm Reed. Nicole Overstreet trained as a social psychologist and is not on our clinical roster for Clark, but she is kept because the clinical program itself names her as reviewing clinical applications, consistent with its earlier statement that select social faculty may take or co-mentor a clinical student.",
    "applicationDeadline": null,
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -1525,7 +1532,8 @@
     "Admissions paused for Fall 2026 cohort; Fall 2027 status not stated on site"
    ],
    "appInfoSourceUrl": "https://www.clarku.edu/psychology/phd-programs/clinical-psychology/",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-29"
   },
   {
    "id": "depaul-university-phd",
@@ -5115,14 +5123,21 @@
    "state": "TN",
    "degree": "PhD",
    "url": "https://www.memphis.edu/psychology/graduate/clinadmission.php",
-   "status": "pending",
+   "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-09",
-   "sourceQuote": "Drs. Berlin, Brockdorf, Golden, McDevitt-Murphy, Murphy, and Rudd will be admitting for Fall 2026.",
-   "accepting": [],
+   "checked": "2026-10-29",
+   "sourceQuote": "Drs. Berlin, Berman, Brockdorf, McDevitt-Murphy, Rudd, and Williams will be admitting for Fall 2027.",
+   "accepting": [
+    "Kristoffer Berlin",
+    "Jeffrey Berman",
+    "Alexandra Brockdorf",
+    "Meghan McDevitt-Murphy",
+    "M. David Rudd",
+    "Joah Williams"
+   ],
    "maybe": [],
    "notAccepting": [],
-   "note": "The admissions page currently only publishes the Fall 2026 admitting-faculty list (the prior cycle); no Fall 2027 list has been posted yet as of this check.",
+   "note": "Six faculty, read from the clinical program's admission page on 29 October 2026, which replaced its Fall 2026 sentence with a Fall 2027 one. The page gives surnames only; each matches exactly one member of the program's clinical faculty, so they are recorded under full names. Compared with the Fall 2026 list, Berman and Williams are new, and Golden and Murphy are no longer named. Interview day is 5 February.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "not mentioned",
@@ -5136,7 +5151,8 @@
     "Truthful disclosure of felony/licensure history required"
    ],
    "appInfoSourceUrl": "https://www.memphis.edu/psychology/graduate/clinadmission.php",
-   "appInfoChecked": "2026-08-17"
+   "appInfoChecked": "2026-08-17",
+   "newlyPostedOn": "2026-10-29"
   },
   {
    "id": "the-university-of-montana-phd",
