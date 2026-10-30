@@ -1662,5 +1662,21 @@
     "doi": "10.1186/s12888-026-08424-z",
     "sourceUrl": "https://doi.org/10.1186/s12888-026-08424-z",
     "instagram": ""
+  },
+  {
+    "slug": "274-social-science-findings-were-re-run-one",
+    "index": 105,
+    "title": "274 social science findings were re-run. One study and one replication still cannot settle it.",
+    "tag": "Myth Check",
+    "blurb": "Analysing the SCORE replication project, statisticians found that the standard methods for judging replication success cannot reliably decide at typical sample sizes, and that pooling the original with its replication lands much nearer the replication.",
+    "date": "2026-10-30",
+    "summary": "The SCORE project replicated 274 effects drawn from business, economics, education, political science, psychology and sociology, and applied thirteen different methods for deciding whether a replication had succeeded. Researchers led by Robbie van Aert asked a prior question: do those methods work? They ran a numerical study with properties matched to the SCORE data, and the answer was largely no. At the sample sizes typical of an original study and its replication, the methods cannot reliably determine whether a replication succeeded. There is simply not enough information in two studies to settle the question, however the arithmetic is arranged. That has a consequence worth absorbing: a headline that a finding failed to replicate is often as uncertain as the finding it is judging. The second half takes a different approach, estimating the underlying effect size by combining the original and the replication using meta-analytic estimators that correct for bias in the original. These performed close to unbiased. Applied to SCORE, the combined estimates sat substantially closer to the replication's effect size than the original's, which is the expected signature of published original findings being inflated by selection and publication pressure. Across the pairs, the null hypothesis of no effect was rejected in between 59.2% and 81.3% of cases depending on method, so this is not a story of most findings being nothing - it is a story of most findings being smaller than first reported. The recommendation is methodological: check that a replication-assessment method behaves properly for your data before trusting what it says.",
+    "journal": "PloS one",
+    "authors": "Robbie C M van Aert, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42814755",
+    "doi": "10.1371/journal.pone.0358126",
+    "sourceUrl": "https://doi.org/10.1371/journal.pone.0358126",
+    "instagram": ""
   }
 ]

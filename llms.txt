@@ -28,7 +28,7 @@ Last updated 2026-10-29. The figures below are written by the build from the sit
 
 ## Research summaries
 
-- [Research archive](https://theclinicalperspective.org/research.html): 104 peer-reviewed studies summarised in plain language, most recent 2026-10-28. Each links to the paper and names its journal, DOI and PMID.
+- [Research archive](https://theclinicalperspective.org/research.html): 105 peer-reviewed studies summarised in plain language, most recent 2026-10-30. Each links to the paper and names its journal, DOI and PMID.
 - [Guides](https://theclinicalperspective.org/guides/): longer explainers on questions that recur.
 
 ## Reuse
