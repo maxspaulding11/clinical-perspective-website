@@ -1710,5 +1710,21 @@
     "doi": "10.1080/20008066.2026.2721926",
     "sourceUrl": "https://doi.org/10.1080/20008066.2026.2721926",
     "instagram": ""
+  },
+  {
+    "slug": "meta-analysis-of-drug-cue-brain-imaging-found",
+    "index": 108,
+    "title": "A meta-analysis of drug-cue brain imaging found one reliable cluster, and it was not the striatum",
+    "tag": "Neuroscience",
+    "blurb": "Pooling neuroimaging studies of how brains respond to drug cues, researchers found convergence in the ventral anterior cingulate cortex only. The striatal reward hyperreactivity the field usually invokes did not converge reliably.",
+    "date": "2026-11-03",
+    "summary": "Showing someone pictures of their drug and watching what their brain does is one of addiction neuroscience's central paradigms, and the usual summary of it involves a hyperreactive reward circuit centred on the striatum. Researchers led by Maximilian Fascher tested how well that holds up. They ran a systematic search and an activation likelihood estimation meta-analysis, looking specifically at case-control contrasts - how people with a substance use disorder differ from controls when both view drug cues against control cues - which avoids some of the stimulus-matching confounds that trouble within-group designs. One reliable convergence cluster emerged, in the ventral anterior cingulate cortex, a region associated with reward, reasoning and social cognition, sitting where reward pathways intersect the default-mode network. Reliable striatal convergence was not observed. The cluster was also context-dependent in an informative way: contrasted against neutral cues, the effect held regardless of how long someone had been abstinent, but contrasted against natural reward cues - food, money, social images - it declined with longer abstinence. Contributions were less likely from alcohol studies and were sensitive to whether the comparison images matched for human content, which is a reminder that a face in a photograph is doing work of its own. None of this says drug cues do not matter. It says the clean story about a hyperactive reward centre is not what the pooled imaging data converge on, and that what you compare the drug cue against substantially determines what you find.",
+    "journal": "Translational psychiatry",
+    "authors": "Maximilian Fascher, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42816490",
+    "doi": "10.1038/s41398-026-04458-9",
+    "sourceUrl": "https://doi.org/10.1038/s41398-026-04458-9",
+    "instagram": ""
   }
 ]
