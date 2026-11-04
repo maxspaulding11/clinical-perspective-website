@@ -1726,5 +1726,21 @@
     "doi": "10.1038/s41398-026-04458-9",
     "sourceUrl": "https://doi.org/10.1038/s41398-026-04458-9",
     "instagram": ""
+  },
+  {
+    "slug": "insomnia-app-was-not-distinguishable-from-a-sleeping",
+    "index": 109,
+    "title": "An insomnia app was not distinguishable from a sleeping pill, in a trial too small to tell them apart",
+    "tag": "Digital Health",
+    "blurb": "A five-week unguided CBT-for-insomnia app and zolpidem cut the time it took to fall asleep by similar amounts. With 24 patients, the authors themselves say the trial was underpowered to show a difference either way.",
+    "date": "2026-11-04",
+    "summary": "Can an app that delivers cognitive behavioural therapy for insomnia, with no therapist involved, stand in for a sleeping pill? This exploratory randomised trial, led by Eiji Shimizu, compared a concise five-week, fully unguided app against zolpidem, a common sleeping pill, at 5 mg a day. Participants had chronic difficulty falling asleep that persisted after a four-week run-in period of sleep hygiene education, so they were people for whom simple advice had already failed. The primary outcome was the change in how long people said it took them to fall asleep. At week five, the app group had improved by about 21 minutes and the zolpidem group by about 22, and the difference between groups was not significant. Five weeks after treatment ended, the app group's improvement had held, at about 29 minutes, while the zolpidem group had partly relapsed, to about 16; again the difference was not statistically significant. The app group showed significantly greater improvement in dysfunctional beliefs about sleep at week ten. No treatment-related adverse events occurred with the app; one case of daytime sleepiness occurred with zolpidem. The important caveat is the size of the trial. Only 24 people were randomised, follow-up numbers were smaller still, and the authors describe the study as exploratory and underpowered. A trial this size cannot show that an app and a pill are equally effective; it can only fail to find a difference. What it offers is a plausible signal that the app's benefit lasts after treatment stops, which is worth testing in a trial large enough to answer the question.",
+    "journal": "Sleep medicine",
+    "authors": "Eiji Shimizu, et al.",
+    "pubdate": "December 2026",
+    "pmid": "42623797",
+    "doi": "10.1016/j.sleep.2026.109222",
+    "sourceUrl": "https://doi.org/10.1016/j.sleep.2026.109222",
+    "instagram": ""
   }
 ]
