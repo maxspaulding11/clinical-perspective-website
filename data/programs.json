@@ -1,6 +1,6 @@
 {
  "cycle": "Fall 2027",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "note": "Every entry with status 'posted' was read from the program's own page on the date in 'checked'. Faculty names are never taken from search results or third-party lists.",
  "programs": [
   {
@@ -4484,12 +4484,13 @@
    "url": "https://academics.siu.edu/human-behavioral/psychology/doctoral/clinical/information.php",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-10-27",
-   "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 Maria Aparcero Suero Amy Lang Eric Lee ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
+   "checked": "2026-11-03",
+   "sourceQuote": "Faculty Seeking Students for Admission in Fall 2027 Maria Aparcero Suero Amy Lang Eric Lee Heekyung Lee ... Faculty not seeking students for admission in Fall 2027 are: Dr. Robert Morgan, Dr. Michelle Kibby, Dr. Tamara Kang, Dr. Daryl G Kroner",
    "accepting": [
     "Amy Lang",
     "Eric Lee",
-    "Maria Aparcero Suero"
+    "Maria Aparcero Suero",
+    "Heekyung Lee"
    ],
    "maybe": [],
    "notAccepting": [
@@ -4498,7 +4499,7 @@
     "Robert Morgan",
     "Tamara Kang"
    ],
-   "note": "Correction on 2026-09-14: Daryl G Kroner was previously listed here as accepting, but the program's page now names him among the faculty NOT seeking students for Fall 2027. Moved accordingly. The page keeps a separate Fall 2026 list further down; only the Fall 2027 sections were used. Re-read 27 October 2026: Mary Louise Cashel, who was on the Fall 2027 list when it was read on 17 October, is no longer named anywhere on the page, so she has been removed from the accepting list. The page does not list her as not seeking students either, so she is not recorded as not accepting.",
+   "note": "Correction on 2026-09-14: Daryl G Kroner was previously listed here as accepting, but the program's page now names him among the faculty NOT seeking students for Fall 2027. Moved accordingly. The page keeps a separate Fall 2026 list further down; only the Fall 2027 sections were used. Re-read 27 October 2026: Mary Louise Cashel, who was on the Fall 2027 list when it was read on 17 October, is no longer named anywhere on the page, so she has been removed from the accepting list. The page does not list her as not seeking students either, so she is not recorded as not accepting. Re-read 3 November 2026: Heekyung Lee has been added to the Fall 2027 'Faculty Seeking Students' list, which now names four faculty. She is on our SIU clinical roster and is recorded as accepting.",
    "applicationDeadline": "December 1",
    "deadlineCycle": null,
    "greRequired": "optional",
@@ -7436,21 +7437,20 @@
    "url": "https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/cl-faculty.aspx",
    "status": "posted",
    "cycle": "Fall 2027",
-   "checked": "2026-09-29",
+   "checked": "2026-11-03",
    "sourceQuote": "* These faculty members expect to admit graduate students into their research groups for Fall 2027 ** These faculty members may be interested in admitting graduate students into their research groups for Fall 2027",
    "accepting": [
     "Robert Schlauch",
     "Marina Bornovalova",
     "Tiffany Chenneville",
     "Peter Clayson",
-    "Edelyn Verona"
-   ],
-   "maybe": [
+    "Edelyn Verona",
     "Diana Rancourt",
     "Jamie Spiegel"
    ],
+   "maybe": [],
    "notAccepting": [],
-   "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The program's clinical faculty page now marks its recruiting faculty for Fall 2027 (it read Fall 2026 until this update). One asterisk means the faculty member expects to admit a student; two asterisks mean they may be interested, so those two are recorded as undecided rather than accepting. Robert Schlauch, the Area Director and Director of Clinical Training, carries a single asterisk. The markings are a fresh list, not the old one relabelled: Kemesha Gabbidon and Marc Karver were marked for Fall 2026 and are not marked now. The page still says to check back in October for an updated list and to confirm with faculty directly, so it may change again.",
+   "note": "Deadline: December 1 (Priority Deadline, per https://www.usf.edu/arts-sciences/departments/psychology/graduate/clinical/prospective-graduate-students/index.aspx). The program's clinical faculty page now marks its recruiting faculty for Fall 2027 (it read Fall 2026 until this update). One asterisk means the faculty member expects to admit a student; two asterisks mean they may be interested, so those two are recorded as undecided rather than accepting. Robert Schlauch, the Area Director and Director of Clinical Training, carries a single asterisk. The markings are a fresh list, not the old one relabelled: Kemesha Gabbidon and Marc Karver were marked for Fall 2026 and are not marked now. The page still says to check back in October for an updated list and to confirm with faculty directly, so it may change again. Re-read 3 November 2026: Diana Rancourt and Jamie Spiegel, previously marked with two asterisks (may be interested), now carry a single asterisk like the other five, meaning they expect to admit a student for Fall 2027, so they have moved from undecided to accepting. No one on the page carries two asterisks now, although the legend still defines them. Read from the live HTML; none of the markings are inside HTML comments.",
    "pcsas": true,
    "applicationDeadline": "December 1",
    "deadlineCycle": "Fall 2027 admission",
