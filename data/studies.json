@@ -1742,5 +1742,21 @@
     "doi": "10.1016/j.sleep.2026.109222",
     "sourceUrl": "https://doi.org/10.1016/j.sleep.2026.109222",
     "instagram": ""
+  },
+  {
+    "slug": "brain-stimulation-for-borderline-personality-disorder-showed-no",
+    "index": 110,
+    "title": "Brain stimulation for borderline personality disorder showed no advantage over a sham",
+    "tag": "Personality",
+    "blurb": "Thirty women with borderline personality disorder and recent self-harm received fifteen sessions of real or sham rTMS. Over six months, the two groups did not change differently on any primary outcome, and both self-harmed less.",
+    "date": "2026-11-05",
+    "summary": "Borderline personality disorder involves intense emotional dysregulation and high rates of self-harm and suicidal behaviour, and effective treatments remain limited. This double-blind, sham-controlled trial tested repetitive transcranial magnetic stimulation, or rTMS, as a possible option. Thirty women with borderline personality disorder and recent non-suicidal self-injury or suicidal behaviour received 15 sessions of either active 10-Hz rTMS or sham stimulation targeting the right dorsolateral prefrontal cortex over three weeks. They were assessed at baseline, after treatment, and at three and six months, and the analysis accounted for concurrent treatment and trauma history. The primary analyses compared the trajectory of each group over time, which is the test of whether the stimulation itself does anything. No significant group-by-time interactions were found on any primary outcome. Exploratory analyses within each group produced a mixed picture. The active group reported less depression immediately after treatment, with borderline-significant reductions at three and six months. But impulsivity fell in the sham group at three and six months, dissociation fell in the sham group at three months, and self-harming and suicidal behaviour decreased in both groups. When the placebo arm improves on its own measures, within-group change in the active arm is not evidence of a stimulation effect, and the authors are explicit that these findings do not establish stimulation-specific efficacy. The trial was small, and a larger one could still detect a modest benefit. But the comparison it was designed to make, real stimulation against sham stimulation, showed no advantage. It is a useful reminder that people in a trial often improve in both arms, which is exactly why the sham comparison matters.",
+    "journal": "Journal of affective disorders",
+    "authors": "Martin Horký, et al.",
+    "pubdate": "December 2026",
+    "pmid": "42697251",
+    "doi": "10.1016/j.jad.2026.122473",
+    "sourceUrl": "https://doi.org/10.1016/j.jad.2026.122473",
+    "instagram": ""
   }
 ]
