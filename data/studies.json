@@ -1774,5 +1774,21 @@
     "doi": "10.1080/20008066.2026.2697563",
     "sourceUrl": "https://doi.org/10.1080/20008066.2026.2697563",
     "instagram": ""
+  },
+  {
+    "slug": "pooled-across-eleven-trials-two-newer-antidepressants-showed",
+    "index": 112,
+    "title": "Pooled across eleven trials, two newer antidepressants showed no significant benefit over placebo",
+    "tag": "Psychopharmacology",
+    "blurb": "Pooling 11 placebo-controlled trials of esmethadone and rapastinel for major depression, a meta-analysis found depression scores improved by less than a point more than placebo, a difference that was not statistically significant.",
+    "date": "2026-11-07",
+    "summary": "Esmethadone and rapastinel are two candidates that have been tested in randomised trials as potential treatments for major depressive disorder. This systematic review and meta-analysis searched PubMed, Scopus, Embase, CENTRAL and ClinicalTrials.gov to December 2025 for randomised trials comparing either drug with placebo, alone or as an add-on, in adults with major depression. Efficacy was measured as the difference in change on the Montgomery-Asberg Depression Rating Scale, and safety as the risk of experiencing at least one adverse event. Eleven trials were included. Across them, the drugs reduced depression scores by 0.62 points more than placebo, a difference that was not statistically significant. The pooled risk ratio for adverse events was 1.09, also not significant, indicating side effects were about as common as on placebo. Subgroup analyses found comparable results for monotherapy and add-on treatment, and between the two drugs: esmethadone produced a numerically larger reduction, 3.77 points against 0.04 for rapastinel, but the difference between them was not significant. The authors summarise this as consistent, non-significant improvement with placebo-like safety. Two readings follow. The first is the plain one: pooled across the available trials, the two drugs did not clearly outperform placebo on the standard depression scale. The second is a caution about the method itself. Combining two different drugs in one analysis can dilute a modest signal in one of them, and the esmethadone figure is large enough to justify separate scrutiny with more trials. What the review does establish is that the interest in these drugs has not yet been matched by a measurable clinical benefit.",
+    "journal": "East Asian archives of psychiatry : official journal of the Hong Kong College of Psychiatrists = Dong Ya jing shen ke xue zhi : Xianggang jing shen ke yi xue yuan qi kan",
+    "authors": "M A Muneer, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42802397",
+    "doi": "10.12809/eaap2664",
+    "sourceUrl": "https://doi.org/10.12809/eaap2664",
+    "instagram": ""
   }
 ]
