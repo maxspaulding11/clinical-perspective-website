@@ -1790,5 +1790,21 @@
     "doi": "10.12809/eaap2664",
     "sourceUrl": "https://doi.org/10.12809/eaap2664",
     "instagram": ""
+  },
+  {
+    "slug": "virtual-reality-therapy-beat-a-short-course-of",
+    "index": 113,
+    "title": "Virtual reality therapy beat a short course of CBT for persistent voices in treatment-resistant schizophrenia",
+    "tag": "Psychosis",
+    "blurb": "In a trial of 136 people with treatment-resistant schizophrenia, nine sessions of virtual reality-assisted therapy reduced the severity of persistent voices more than nine sessions of targeted CBT, with a moderate difference at three months.",
+    "date": "2026-11-08",
+    "summary": "Auditory verbal hallucinations are among the most distressing symptoms of schizophrenia, and they often persist despite treatment. Virtual reality-assisted therapy is one of a new generation of relational interventions that target the person's relationship with their voices and their beliefs about them. Comparative evidence against active interventions has been lacking, which leaves open whether it does anything an established therapy does not. This assessor-blind randomised trial, run at an academic centre in Montreal between 2019 and 2026, compared it directly with a short course of cognitive behavioural therapy targeting voices. Each treatment lasted nine sessions and was delivered by trained psychotherapists. In total, 136 adults with schizophrenia or schizoaffective disorder and persistent voices were randomised; their mean age was 40.3, and 56.6% were taking clozapine. The primary outcome was voice severity on the auditory hallucination subscale of the Psychotic Symptoms Rating Scale, measured at baseline, after treatment and three months later. In intention-to-treat analyses, a significant time-by-treatment interaction favoured virtual reality therapy, with a moderate effect size of 0.614 at three months. Both groups improved within themselves: virtual reality therapy showed large effects, and CBT moderate ones that were smaller at three months than immediately after treatment. On secondary outcomes, including overall psychotic symptoms, there were no between-group differences, though both therapies improved emotional regulation and acceptance of voices, and virtual reality therapy also reduced maladaptive beliefs about voices and improved self-esteem. The caveats are a single centre, a comparison with a short CBT course rather than a longer standard one, and CBT occasionally delivered by videoconference during COVID-19. The result is nonetheless notable: an advantage over an active, targeted therapy, specifically on the symptom both were designed to treat.",
+    "journal": "JMIR mental health",
+    "authors": "Mélissa Beaudoin, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42748056",
+    "doi": "10.2196/106791",
+    "sourceUrl": "https://doi.org/10.2196/106791",
+    "instagram": ""
   }
 ]
