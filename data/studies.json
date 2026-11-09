@@ -1806,5 +1806,21 @@
     "doi": "10.2196/106791",
     "sourceUrl": "https://doi.org/10.2196/106791",
     "instagram": ""
+  },
+  {
+    "slug": "after-correcting-for-publication-bias-therapys-main-effect",
+    "index": 114,
+    "title": "After correcting for publication bias, therapy's main effect on bullying victims' symptoms was no longer significant",
+    "tag": "Treatment",
+    "blurb": "A meta-analysis of 23 studies of CBT and imagery therapy for bullying victims found moderate-to-large symptom reductions, but after adjusting for publication bias, the main effect on internalising symptoms dropped to g = 0.26 and was no longer significant.",
+    "date": "2026-11-09",
+    "summary": "Being bullied is associated with internalising symptoms such as depression, anxiety and post-traumatic stress, and with impaired everyday functioning. Cognitive behavioural therapy and imagery-based interventions have both been studied as ways to help. This systematic review and meta-analysis searched four databases and identified 23 studies in bullying victims: 15 applying individual CBT and 8 applying imagery interventions. It pooled changes from before to after treatment, and from before treatment to follow-up. The unadjusted results were encouraging. Internalising symptoms fell from pre- to post-treatment with an effect of g = 0.72 across 21 studies, and the improvement was maintained at follow-up, g = 0.54. Self-perception and coping improved by a similar amount, g = 0.75. But heterogeneity was large, ranging from 68% to 98%, meaning the studies disagreed considerably. The key step came next. After adjusting for publication bias, the pre-post effect on internalising symptoms dropped to g = 0.26 and was no longer statistically significant. Other estimates moved differently: the adjusted effect for self-perception and coping rose to g = 0.98, and the follow-up effect on internalising symptoms fell to g = 0.37 but remained significant. A further limitation is built into the design. Because the pooled analyses were within-group, pre-post comparisons rather than comparisons against control groups, any improvement that would have happened with time alone is counted as a treatment effect. The authors conclude cautiously that both approaches may offer benefits, but that heterogeneity, methodological limitations and publication bias warrant care, and that high-quality controlled trials are needed. The lesson for readers is general: a pooled effect is only as good as the studies that made it into print, and correcting for the missing ones can change the story.",
+    "journal": "Clinical psychology & psychotherapy",
+    "authors": "Meng Liang, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42658011",
+    "doi": "10.1002/cpp.70330",
+    "sourceUrl": "https://doi.org/10.1002/cpp.70330",
+    "instagram": ""
   }
 ]
