@@ -1870,5 +1870,21 @@
     "doi": "10.1016/j.jad.2026.122506",
     "sourceUrl": "https://doi.org/10.1016/j.jad.2026.122506",
     "instagram": ""
+  },
+  {
+    "slug": "ten-years-of-brain-scans-in-depression-tracked",
+    "index": 118,
+    "title": "Ten years of brain scans in depression tracked the course of illness, not the diagnosis",
+    "tag": "Neuroscience",
+    "blurb": "Repeated MRI over up to ten years found that grey matter decline in the hippocampus and prefrontal cortex tracked how severe someone's illness course had been, not simply whether they had a depression diagnosis.",
+    "date": "2026-11-13",
+    "summary": "Brain imaging studies of major depressive disorder have mostly been cross-sectional, comparing patients and controls once. That design cannot distinguish a progressive decline from changes that come and go with the state of the illness. This study, from the single-centre Münster Neuroimaging Cohort, took a longitudinal approach. Inpatients with initially acute depression and volunteer controls from the general population underwent between three and six MRI scans, spaced roughly two years apart, over up to ten years. The analysis included 206 people, 57 with depression and 149 controls, contributing 791 scans. Using longitudinal voxel-based morphometry focused on fronto-limbic regions, with exploratory whole-brain analyses, the researchers asked whether grey matter volume trajectories were associated with diagnosis, cumulative illness severity, or acute illness severity. The clearest finding was an interaction between cumulative illness severity and time in the hippocampus and the dorsolateral prefrontal cortex: people with a heavier illness course over the years showed steeper grey matter decline, while those with more favourable clinical courses did not. These associations were largely robust across sensitivity analyses that varied data inclusion and controlled for acute severity and medication. By contrast, there was little evidence for different grey matter trajectories between patients and controls per se, or for main effects of cumulative or acute severity. The authors conclude that grey matter changes in depression track individual illness trajectories rather than diagnosis alone or symptom fluctuations, supporting both progressive decline and relative stability depending on the course. The obvious constraint is sample size: 57 patients at one centre is small for a brain imaging study, even with many scans each. But the design answers a question cross-sectional studies cannot, and its central point is a useful corrective. A diagnosis of depression does not by itself predict what happens in the brain; how the illness unfolds may.",
+    "journal": "JAMA network open",
+    "authors": "Anna Kraus, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42734915",
+    "doi": "10.1001/jamanetworkopen.2026.33507",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.33507",
+    "instagram": ""
   }
 ]
