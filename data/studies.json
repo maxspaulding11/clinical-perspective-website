@@ -1886,5 +1886,21 @@
     "doi": "10.1001/jamanetworkopen.2026.33507",
     "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.33507",
     "instagram": ""
+  },
+  {
+    "slug": "same-ptsd-questionnaire-gave-rates-from-18-to",
+    "index": 119,
+    "title": "The same PTSD questionnaire gave rates from 18 to 38 percent depending on how symptoms were grouped",
+    "tag": "Assessment",
+    "blurb": "Testing the Swedish PCL-5 against clinician interviews in 248 trauma-exposed adults, researchers found good reliability, limited specificity, and probable PTSD rates that ranged from 18% to 38% across symptom-grouping rules.",
+    "date": "2026-11-14",
+    "summary": "The PTSD Checklist for DSM-5 is a self-report questionnaire used to screen for PTSD, and its scores also feed into prevalence estimates and research. The Swedish version had not been evaluated against a clinician-administered assessment, nor had its latent structure been tested. This study examined both in 248 trauma-exposed adults, 79% of them female, who completed the PCL-5 and other measures and were interviewed with the Clinician-Administered PTSD Scale for DSM-5. On reliability, the questionnaire performed well: good internal consistency, temporal stability and convergent validity. Its weakness was specificity. Scores were not specific to PTSD and appeared to partly reflect broader internalising distress. The structural analyses were more complicated. Several of the latent models researchers commonly test had problems with admissibility. Among the models tested, the Anhedonia model was the only one that improved fit while remaining admissible. The most practically important finding concerned classification. When the different symptom-cluster mappings were translated into rules for deciding who has probable PTSD, the resulting rates ranged from 18% to 38% in the same group of people answering the same questions. Against the clinician interview, threshold scores of 31 to 33 gave the best balance between sensitivity and specificity, although confidence intervals indicated non-negligible uncertainty, and lower thresholds may be preferable where the aim is to catch cases for further assessment. The authors conclude that the Swedish PCL-5 is a reliable and valid screening tool, but that it should not be used as a stand-alone diagnostic instrument, and that the choice of threshold should depend on the setting. The threshold estimates are preliminary and need replication. The broader lesson is that a prevalence figure carries the scoring decisions that produced it.",
+    "journal": "European journal of psychotraumatology",
+    "authors": "Kristina Bondjers, et al.",
+    "pubdate": "December 2026",
+    "pmid": "42635035",
+    "doi": "10.1080/20008066.2026.2705788",
+    "sourceUrl": "https://doi.org/10.1080/20008066.2026.2705788",
+    "instagram": ""
   }
 ]
