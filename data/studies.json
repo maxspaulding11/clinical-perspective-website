@@ -1918,5 +1918,21 @@
     "doi": "10.1136/bmjment-2025-302372",
     "sourceUrl": "https://doi.org/10.1136/bmjment-2025-302372",
     "instagram": ""
+  },
+  {
+    "slug": "depression-was-far-less-common-than-previous-estimates",
+    "index": 121,
+    "title": "Depression was far less common than previous estimates among hospital-recruited adults in four African countries",
+    "tag": "Public Health",
+    "blurb": "Among 7,073 adults recruited from hospital settings in Uganda, Kenya, Ethiopia and South Africa, 0.9% had current and 5.1% lifetime major depression, substantially lower than earlier estimates for the region.",
+    "date": "2026-11-16",
+    "summary": "Major depressive disorder is a significant contributor to the mental health burden across Africa, and less is known about the factors associated with it in different African settings. This study assessed current and lifetime major depression, and associated factors, among 7,073 adults recruited from hospital settings in Uganda, Kenya, Ethiopia and South Africa, within the NeuroGAP-Psychosis study. The prevalence of current major depression was 0.9%, and of lifetime major depression 5.1%. Both figures are substantially lower than prior estimates from the region. Multilevel logistic regression identified the factors associated with each. Current depression was significantly associated with negative life events, alcohol use, and scores on the Kessler psychological distress scale. Lifetime depression was associated with age, female sex, chronic pain, frequent headaches, and a positive screen for psychosis. The authors suggest two possible reasons for the lower rates: the population that was studied, and cultural variations in the way symptoms of depression are expressed. Both explanations are worth taking seriously. Participants were recruited from hospital settings for a study focused on psychosis, which is not the same as a random sample of the general population, so these numbers should not be read as national prevalence figures. And if depression is expressed differently in these settings, as the authors suggest, diagnostic questions may systematically miss some of it. A low prevalence figure can reflect less illness or less sensitive measurement, and a single study cannot fully separate the two. The authors conclude that targeted, culturally responsive interventions are needed. The findings also make a case for checking that the tools used to count depression are fit for the populations being counted.",
+    "journal": "Nature communications",
+    "authors": "Allan Kalungi, et al.",
+    "pubdate": "August 2026",
+    "pmid": "42802163",
+    "doi": "10.1038/s41467-026-77189-6",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-77189-6",
+    "instagram": ""
   }
 ]
