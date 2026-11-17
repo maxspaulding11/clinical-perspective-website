@@ -1934,5 +1934,21 @@
     "doi": "10.1038/s41467-026-77189-6",
     "sourceUrl": "https://doi.org/10.1038/s41467-026-77189-6",
     "instagram": ""
+  },
+  {
+    "slug": "cbt-and-emdr-for-traumatised-children-could-not",
+    "index": 122,
+    "title": "CBT and EMDR for traumatised children could not be separated on PTSD, across only five trials",
+    "tag": "Trauma",
+    "blurb": "A meta-analysis found just five trials, 248 children, comparing CBT and EMDR directly. There was no significant difference in PTSD symptoms by child or parent report; depression was lower after EMDR.",
+    "date": "2026-11-17",
+    "summary": "Post-traumatic stress disorder is common among children and adolescents exposed to trauma, and cognitive behavioural therapy and eye movement desensitisation and reprocessing are both widely used to treat it. Which works better is a recurring question. This updated systematic review and meta-analysis searched PubMed, EMBASE, CENTRAL, CINAHL, ProQuest Dissertations and Theses, and PsycInfo for randomised controlled trials directly comparing CBT and EMDR on PTSD symptoms in children and adolescents aged 6 to 18. Study quality was assessed with the Cochrane Risk of Bias tool, and results were pooled with random-effects models. Only five trials, with 248 participants, met the criteria. There was no statistically significant difference in PTSD symptoms between CBT and EMDR, whether symptoms were reported by children (standardised mean difference 0.18) or by parents (0.23), and heterogeneity was zero in both analyses. For anxiety, the pooled estimate was not statistically significant and heterogeneity was substantial, at 69%. Depression symptoms were higher after CBT than after EMDR, with a standardised mean difference of 0.44 and no heterogeneity. The authors conclude that the comparative effects of the two therapies on PTSD and anxiety remain inconclusive, and that although EMDR was associated with lower depression, the evidence rests on few trials and the estimates should be interpreted with caution. Two points are worth making plainly. First, a non-significant difference is not a demonstration of equivalence. The confidence intervals for PTSD were wide enough to include a small difference between the therapies, and five small trials cannot narrow them. Second, the depression finding, while consistent across trials, also rests on that small base. What this review shows most clearly is how little direct comparative evidence exists for one of the most frequently asked questions in child trauma treatment.",
+    "journal": "European journal of psychotraumatology",
+    "authors": "Irada Meoon, et al.",
+    "pubdate": "December 2026",
+    "pmid": "42831259",
+    "doi": "10.1080/20008066.2026.2731855",
+    "sourceUrl": "https://doi.org/10.1080/20008066.2026.2731855",
+    "instagram": ""
   }
 ]
