@@ -1966,5 +1966,21 @@
     "doi": "10.2196/96331",
     "sourceUrl": "https://doi.org/10.2196/96331",
     "instagram": ""
+  },
+  {
+    "slug": "score-built-from-life-history-risk-factors-held",
+    "index": 124,
+    "title": "A score built from life-history risk factors held up when tested on a new group of people at risk of psychosis",
+    "tag": "Psychosis",
+    "blurb": "The Psychosis Polyrisk Score, which tallies environmental and developmental risk factors, separated 1,642 people at clinical high risk from 519 community controls well in an independent sample, and better once refined.",
+    "date": "2026-11-19",
+    "summary": "The Psychosis Polyrisk Score was developed as a simpler measure, summarising a person's exposure to environmental and developmental risk factors for psychosis, and earlier studies suggested it could separate people at clinical high risk from community controls. This study carried out a formal external validation in a large independent sample from the Accelerating Medicines Partnership Schizophrenia programme: 1,642 people at clinical high risk and 519 community controls. The original model showed good discrimination, with a C-index of 0.777, and good calibration after recalibration, with an intercept of 0 and a slope close to 1. The researchers then refined the model by adding new predictors, perceived loneliness and neighbourhood quality, and by making existing predictors such as ethnicity, childhood trauma and parental severe mental illness more granular. Evaluated with repeated nested cross-validation, the refined model reached a C-index of 0.876, compared with 0.796 for the original model retrained on the new data, with good calibration. The authors conclude that the score generalises well and improves with refinement, and suggest it could be a scalable tool within stepped assessment, identifying individuals who warrant further evaluation. Two cautions help place that claim. The comparison group was community controls, and separating people at high risk from the general community is easier than separating them from other help-seekers with anxiety, depression or other difficulties, which is the situation in which a screen would be used in practice. The refined model's performance is also an internal cross-validated estimate and will need its own external test. Within those limits, it is careful validation work on a scalable tool that could make early assessment easier to reach.",
+    "journal": "BMJ mental health",
+    "authors": "Riccardo Stefanelli, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42805768",
+    "doi": "10.1136/bmjment-2026-302838",
+    "sourceUrl": "https://doi.org/10.1136/bmjment-2026-302838",
+    "instagram": ""
   }
 ]
