@@ -1998,5 +1998,21 @@
     "doi": "10.1111/jmft.70162",
     "sourceUrl": "https://doi.org/10.1111/jmft.70162",
     "instagram": ""
+  },
+  {
+    "slug": "later-life-depression-physical-slowing-was-linked-to",
+    "index": 126,
+    "title": "In later-life depression, physical slowing was linked to a higher risk of later Parkinson's disease",
+    "tag": "Diagnosis",
+    "blurb": "Among 6,326 people diagnosed with depression at 40 or older, psychomotor retardation was associated with a 57% higher hazard of a later Parkinson's diagnosis, a signal visible up to 2.5 years beforehand.",
+    "date": "2026-11-21",
+    "summary": "Depression is associated with an increased risk of developing Parkinson's disease. Neuroimaging research points to overlapping mechanisms between Parkinson's and psychomotor retardation, a feature of some depressive episodes. This study asked whether, among people with depression, psychomotor retardation was linked to later Parkinson's disease. It was a retrospective cohort study using electronic healthcare records from a large mental health service in London, covering people diagnosed with depression at age 40 or over, with linkage to general hospital records to identify Parkinson's diagnoses between 2007 and 2023. Psychomotor retardation was identified from the records and treated as a time-varying exposure in a mixed-effects Cox model, which allows a person's status to change over time. Among 6,326 patients, there were 17,998 observation intervals and 138 new cases of Parkinson's disease. In the adjusted model, having psychomotor retardation was associated with a higher subsequent hazard of Parkinson's disease, with a hazard ratio of 1.57. Secondary analyses found a significant difference in the probability of psychomotor retardation up to 2.5 years before the Parkinson's diagnosis. The authors argue that because the association extends over a long period, it cannot be explained solely by early Parkinson's being mistaken for depression, and that psychomotor retardation may be a marker of prodromal Parkinson's disease. Several limitations apply. Psychomotor retardation was drawn from routine clinical records rather than a standardised rating, so recording may vary between clinicians. The number of Parkinson's cases was modest, and the relative increase in risk, while meaningful, still leaves most slowed patients without Parkinson's. The finding therefore works as a clinical clue rather than a screening test. For people diagnosed with depression in mid or later life who show this slowing, it supports paying attention to motor and neurological signs over time.",
+    "journal": "Journal of affective disorders",
+    "authors": "Hamilton Morrin, et al.",
+    "pubdate": "December 2026",
+    "pmid": "42567208",
+    "doi": "10.1016/j.jad.2026.122339",
+    "sourceUrl": "https://doi.org/10.1016/j.jad.2026.122339",
+    "instagram": ""
   }
 ]
