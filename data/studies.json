@@ -2014,5 +2014,21 @@
     "doi": "10.1016/j.jad.2026.122339",
     "sourceUrl": "https://doi.org/10.1016/j.jad.2026.122339",
     "instagram": ""
+  },
+  {
+    "slug": "adolescents-who-walked-more-had-fewer-mental-health",
+    "index": 127,
+    "title": "Adolescents who walked more had fewer mental health problems, in an observational study",
+    "tag": "Public Health",
+    "blurb": "In 5,515 adolescents from the ABCD Study, higher daily step counts were associated with fewer mental health problems and thicker cortex in two regions, with no threshold or plateau in the association.",
+    "date": "2026-11-22",
+    "summary": "Adolescents are becoming less physically active, and daily step count has become a widely used and easily measured indicator of activity. Little is known, though, about how steps relate to adolescent mental health, academic performance and brain development. This cohort study used data from the Adolescent Brain Cognitive Development Study, a large longitudinal study across 21 US sites, and included 5,515 adolescents, 47.9% female, with a mean age of 11.93, who had valid pedometer data and usable brain imaging. Average daily step count over the previous three weeks was examined in relation to mental health, academic performance and brain structure, and structural equation modelling tested whether step-related brain differences statistically mediated associations with outcomes one year later. Higher step count was associated with lower total mental health problems and with greater cortical thickness in the paracentral and rostral anterior cingulate regions. The association showed a dose-response pattern: mental health problems were progressively lower in higher step categories compared with the group taking under 5000 steps a day, with no evidence of a threshold or plateau. In mediation analyses, greater paracentral thickness statistically mediated the association between higher daily steps and fewer mental health problems a year later. The authors conclude that every step counts and highlight the potential value of promoting daily steps in adolescents. The study is large and the measurement of activity is objective, both genuine strengths. But it is observational. Adolescents who take more steps are likely to differ from less active peers in other ways, such as health, sleep, family resources and neighbourhood, and the statistical mediation through cortical thickness describes a pattern in the data rather than demonstrating a biological mechanism. The findings make a strong case for testing whether increasing activity improves adolescent mental health, ideally in a trial.",
+    "journal": "JAMA network open",
+    "authors": "Qingyang Li, et al.",
+    "pubdate": "October 2026",
+    "pmid": "42821264",
+    "doi": "10.1001/jamanetworkopen.2026.36973",
+    "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.36973",
+    "instagram": ""
   }
 ]
