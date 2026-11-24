@@ -2046,5 +2046,21 @@
     "doi": "10.12809/eaap2658",
     "sourceUrl": "https://doi.org/10.12809/eaap2658",
     "instagram": ""
+  },
+  {
+    "slug": "after-anti-nmda-receptor-encephalitis-two-in-three",
+    "index": 129,
+    "title": "After anti-NMDA receptor encephalitis, two in three patients still had symptoms, and the psychiatric picture had changed",
+    "tag": "Neuroscience",
+    "blurb": "Assessed at a median of 22 months after onset, 67% of 70 patients with NMDA receptor encephalitis still had symptoms, most often memory problems. Psychiatric symptoms shifted from psychosis to mood, and brain changes tracked outcomes.",
+    "date": "2026-11-24",
+    "summary": "Anti-NMDA receptor encephalitis is an autoimmune encephalitis. It often presents with prominent psychiatric symptoms, including psychosis, and it is treated with immunotherapy. Yet many continue to have neurological or psychiatric problems, and the brain basis of those lingering symptoms has been unclear. This cross-sectional study included 70 patients with post-acute NMDA receptor encephalitis referred to Charité-Universitätsmedizin Berlin, each matched by age and sex to a healthy control. Assessments took place at a median of 22.2 months after disease onset. Outcomes were measured with clinical scales, psychiatric phenotyping and neuropsychological testing, and structural MRI was analysed for morphological complexity using fractal dimensionality, with normative modelling relating brain changes to outcomes. Patients had been severely affected at the peak of illness and showed significant improvement by the post-acute stage. Nevertheless, 47 (67%) continued to show residual symptoms, most commonly memory dysfunction, in 43 (61%), and psychiatric symptoms, in 25 (36%). Among patients with persistent symptoms, the psychiatric picture had shifted from a psychosis-dominant phenotype at peak illness to an affective-dominant one in the post-acute stage. Imaging revealed reduced morphological complexity in both hippocampi and in a fronto-cingulo-temporal cluster. Patients with persistent symptoms showed stronger alterations than those without, and greater alterations were associated with poorer visuospatial and verbal memory. The authors propose fractal dimensionality as a promising imaging marker of long-term outcomes and call for structured post-acute care. Some caution is warranted: the design is cross-sectional, so the peak-illness picture was necessarily reconstructed in retrospect, the time since onset varied widely between patients, and a tertiary referral centre may see more severe cases than average. The clinical message is still clear. For many patients, the acute illness resolving is not the same as recovery, and mood and memory problems deserve follow-up long after the acute phase.",
+    "journal": "The lancet. Psychiatry",
+    "authors": "Stephan Krohn, et al.",
+    "pubdate": "September 2026",
+    "pmid": "42586080",
+    "doi": "10.1016/S2215-0366(26)00191-4",
+    "sourceUrl": "https://doi.org/10.1016/S2215-0366(26)00191-4",
+    "instagram": ""
   }
 ]
